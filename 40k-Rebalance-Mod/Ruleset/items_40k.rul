@@ -124,8 +124,52 @@ items:
     clipSize: 10
 
 ##### Banner #####
-  - type: STR_BANNER
+  - type: STR_CAPTAIN_BANNER #          
+    categories: [ STR_CAT_EQUIPMENT]
     specialIconSprite: 201
+    size: 0.3
+    confAimed:
+      shots: 1              
+      name: STR_FTE
+    weight: 60
+    bigSprite: 223
+    floorSprite: 109
+    handSprite: 240
+    bulletSprite: 1
+    fireSound: 779
+    explosionHitSound: 791 #Kruger
+    hitAnimation: 96 #XSOUND
+    power: 10
+    damageBonus:
+      bravery: 2.2
+    damageType: 6
+    damageAlter:
+      RandomType: 3
+      RadiusEffectiveness: 0.3
+      ArmorEffectiveness: 0.0
+      ToStun: 0.1
+      ToMorale: -0.18
+      ToTime: -1.00
+    accuracyMultiplier:
+      firing: 0.0
+      bravery: 2.2
+    accuracyAimed: 100
+    costAimed:
+      time: 70
+      energy: 90
+      morale: 15
+    clipSize: -1
+    flatRate: true
+    battleType: 1
+    arcingShot: true
+    maxRange: 20
+    bulletSpeed: 80
+    experienceTrainingMode: 32
+    invWidth: 2
+    invHeight: 3
+    fixedWeapon: true
+    armor: 12
+
 
 extraSprites:
   - type: SPICONS.DAT
