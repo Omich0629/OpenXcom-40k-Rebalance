@@ -36,4 +36,4 @@ manufacture:
 
 armors:
   - type: STR_CAPTAIN_UC
-    specialWeapon: STR_BANNER
+    specialWeapon: STR_CAPTAIN_BANNER
