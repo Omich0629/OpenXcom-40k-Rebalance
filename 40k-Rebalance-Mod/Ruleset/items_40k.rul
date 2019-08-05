@@ -122,3 +122,12 @@ items:
 #Magazine's capacity has been changed to 10. Capacity of 2 is not fun at all.
   - type: STR_BLASTER_BOMB
     clipSize: 10
+
+##### Banner #####
+  - type: STR_BANNER
+    specialIconSprite: 201
+
+extraSprites:
+  - type: SPICONS.DAT
+    files:
+      201: Resources/SPICONS/SPICONLEADERSHIP.png
