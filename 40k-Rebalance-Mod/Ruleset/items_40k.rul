@@ -1,0 +1,124 @@
+items:
+########### BOLTERS ###########
+#Bolter pattern "Godwyn"
+#Makes it compatible with all magazines
+  - type: STR_RIFLE
+    compatibleAmmo:
+      - STR_RIFLE_CLIP
+      - STR_RIFLE_CLIP_MC
+      - STR_RIFLE_CLIP_AP
+      - STR_RIFLE_CLIP_EX
+
+#Bolt-Pistol "Ceres"
+#Makes it compatible with all magazines
+
+  - type: STR_PISTOL
+    compatibleAmmo:
+      - STR_PISTOL_CLIP
+      - STR_PISTOL_CLIP_EX
+      - STR_PISTOL_CLIP_AP
+      - STR_PISTOL_CLIP_MC
+
+#Pattern "Ultra" bolter 
+#Gives it +10% accuracy to make difference between it and "Godwyn".
+
+  - type: STR_RIFLEB
+    accuracySnap: 90
+    accuracyAuto: 76
+
+#Pattern "Ultra" bolt-pistol
+#Gives it auto-shot option to make difference between it and "Ceres".
+
+  - type: STR_PISTOLB
+    accuracyAuto: 62
+    tuAuto: 33
+
+
+#Ammo for Bolters and Bolt-Pistols
+#Make them buyable and change their cost
+
+  - type: STR_RIFLE_CLIP
+    costBuy: 600
+    costSell: 300
+
+  - type: STR_RIFLE_CLIP_EX
+    costBuy: 800
+    costSell: 400
+ 
+  - type: STR_RIFLE_CLIP_AP
+    costBuy: 1200
+    costSell: 600
+
+  - type: STR_PISTOL_CLIP
+    costBuy: 300
+    costSell: 150
+
+  - type: STR_PISTOL_CLIP_EX
+    costBuy: 400
+    costSell: 200
+
+  - type: STR_PISTOL_CLIP_AP
+    costBuy: 600
+    costSell: 300
+
+########### KRAK WEAPONS ###########
+#It's an anti-armor weapon, not just a version of frag weapon.
+
+#krak grenade
+  - type: STR_KRAK_GRENADE
+    damageAlter:
+      ToArmorPre: 0.2
+      ArmorEffectiveness: 0.7
+      ToArmor: 0.2
+
+#krak rocket
+#Some armor penetration and less power to balance it.
+  - type: STR_LARGE_ROCKET
+    damageAlter:
+      ToArmorPre: 0.2
+      ArmorEffectiveness: 0.7
+      ToArmor: 0.2
+    power: 100
+
+#krak magazine for IG grenade launcher
+  - type: STR_KRAK_GRENADE_DRUM
+    damageAlter:
+      ToArmorPre: 0.2
+      ArmorEffectiveness: 0.7
+      ToArmor: 0.2
+
+########### MELTA WEAPONS ###########
+#Melta grenade
+#Now actually deals damage to armor
+
+  - type: STR_MGRENADE
+    damageAlter: #DA MELTA
+      ToArmor: 0.4
+      ToArmorPre: 0.4
+      ToHealth: 0.8
+
+#Melta bomb
+#Huge amount of armor damage.
+
+  - type: STR_HIGH_EXPLOSIVE
+    damageAlter: 
+      ToArmor: 0.4
+      ToArmorPre: 0.4
+      ToHealth: 0.8
+
+
+
+#Multi-Melta
+#Now have same TU cost as normal melta, but fires twice.
+  - type: STR_BLASTER_LAUNCHER
+    weight: 25
+    tuSnap: 40
+
+  - type: STR_BLASTER_LAUNCHER_TERRAN
+    weight: 25
+    tuSnap: 40
+
+#Multi-Melta ammo
+#Magazine's capacity has been changed to 10. Capacity of 2 is not fun at all.
+  - type: STR_BLASTER_BOMB
+    clipSize: 10
