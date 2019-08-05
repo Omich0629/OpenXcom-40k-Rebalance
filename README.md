@@ -1,1 +1,1 @@
-# OpenXcom-40k-Rebalance
+OpenXcom-40k-Rebalance-Mod
