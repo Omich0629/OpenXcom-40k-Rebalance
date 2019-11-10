@@ -435,8 +435,10 @@ items:
 
     flatRate: false
 
-    accuracyAimed: 100
-    tuAimed: 66
+    accuracySnap: 45
+    accuracyAimed: 90
+    tuSnap: 40
+    tuAimed: 60
 
     power: 100
     damageType: 3
@@ -460,19 +462,12 @@ items:
 #Chaos Dreadnought Plasma Cannon
   - type: SECTOPOD_WEAPON
     bigSprite: 290
-#    tuSnap: 0
+
     flatRate: false
 
     tuSnap: 45
     accuracySnap: 75
     SnapRange: 24
-
-#    tuAuto: 45
-#    accuracyAuto: 75
-#    autoRange: 24
-#    confAuto:
-#      shots: 1
-#      name: STR_CUSTOM_SNAPSHOT
 
     tuAimed: 90
     aimRange: 24

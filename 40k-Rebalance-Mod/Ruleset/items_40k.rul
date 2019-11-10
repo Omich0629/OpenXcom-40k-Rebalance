@@ -1991,19 +1991,22 @@ items:
 
 #Dreadnought Plasma Cannon
 #Maximum 2 snap shots or 1 aimed shot per turn
-#Too heavy for reaction fire
 #Range 24
   - type: AUX_HOVERTANK_PLASMA
     bigSprite: 284
-    tuSnap: 0
+#    tuSnap: 0
     flatRate: false
 
-    tuAuto: 45
-    accuracyAuto: 75
-    autoRange: 24
-    confAuto:
-      shots: 1
-      name: STR_CUSTOM_SNAPSHOT
+    tuSnap: 45
+    accuracySnap: 75
+    SnapRange: 24
+
+#    tuAuto: 45
+#    accuracyAuto: 75
+#    autoRange: 24
+#    confAuto:
+#      shots: 1
+#      name: STR_CUSTOM_SNAPSHOT
 
     tuAimed: 90
     aimRange: 24
@@ -2039,8 +2042,10 @@ items:
 
     flatRate: false
 
-    accuracyAimed: 100
-    tuAimed: 66
+    accuracySnap: 45
+    accuracyAimed: 90
+    tuSnap: 40
+    tuAimed: 60
 
     power: 100
     damageType: 3
@@ -2061,7 +2066,6 @@ items:
     listOrder: 2820
 
 #Dreadnought Lascannon
-#Too heavy for reaction fire
   - type: AUX_HOVERTANK_LASER
     bigSprite: 286
     flatRate: false
@@ -2073,13 +2077,8 @@ items:
       ToArmor: 0.0
       ToStun: 0.0
 
-    accuracySnap: 0
-    tuSnap: 0
-
-    accuracyAimed: 85
-    tuAimed: 30
-    confAimed:
-      name: STR_CUSTOM_SNAPSHOT
+    accuracySnap: 85
+    tuSnap: 30
 
     accuracyAuto: 50
     tuAuto: 50

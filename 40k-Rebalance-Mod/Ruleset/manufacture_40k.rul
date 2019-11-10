@@ -441,7 +441,7 @@ manufacture:
       STR_ALIEN_HABITAT: 1
 
 
-#Dreadnought Castraferrum Armor. 
+#Dreadnought / Plasma Cannon
 #Armed with plasma. So requires plasma technology.
   - name: STR_DREAD2_ARMOR
     category: STR_PERSONAL_ARMOR
@@ -453,12 +453,9 @@ manufacture:
     cost: 300000
     requiresBaseFunc: [TEC]
     requiredItems:
-      STR_ALIEN_ALLOYS: 50
-      STR_UFO_CONSTRUCTION: 20
-      STR_ALIEN_HABITAT: 1
+      STR_ALIEN_ALLOYS: 20
 
-#Dreadnought Mortis Armor. 
-#Armed with Lascannon.
+#Dreadnought / Lascannon
   - name: STR_DREAD4_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
@@ -468,12 +465,9 @@ manufacture:
     cost: 300000
     requiresBaseFunc: [TEC]
     requiredItems:
-      STR_ALIEN_ALLOYS: 50
-      STR_UFO_CONSTRUCTION: 20
-      STR_ALIEN_HABITAT: 1
+      STR_ALIEN_ALLOYS: 20
  
-#Dreadnought Hellfire Armor. 
-#Armed with missile launcher.
+#Dreadnought / Missile Launcher 
   - delete: STR_HWP_FUSION_BOMB
  
   - name: STR_DREAD3_ARMOR
@@ -485,15 +479,9 @@ manufacture:
     cost: 300000
     requiresBaseFunc: [TEC]
     requiredItems:
-      STR_ALIEN_ALLOYS: 50
-      STR_UFO_CONSTRUCTION: 20
-      STR_ALIEN_HABITAT: 1 
+      STR_ALIEN_ALLOYS: 20
 
-
-
-
-#Dreadnought/Assault Cannon 
-#Armed with Assault Cannon and Flamer.
+#Dreadnought / Assault Cannon
   - name: STR_DREAD5_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
@@ -504,9 +492,7 @@ manufacture:
     cost: 300000
     requiresBaseFunc: [TEC]
     requiredItems:
-      STR_ALIEN_ALLOYS: 50
-      STR_UFO_CONSTRUCTION: 20
-      STR_ALIEN_HABITAT: 1 
+      STR_ALIEN_ALLOYS: 20
  
 #Meltagun
   - name: STR_HEAVY_LASER
