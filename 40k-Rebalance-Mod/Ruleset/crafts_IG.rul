@@ -1,0 +1,26 @@
+crafts:
+#Chimera APC
+  - type: STR_CHIMERA
+
+    requires:
+      - STR_CHIMERA_TECH
+
+#Valkyrie Drop Transport
+  - type: STR_VALKYRIE_GRAV_DROP
+    requires:
+      - STR_VALKYRIE_DROP_TECH
+
+#Taurox APC
+  - type: STR_TAUROX
+    requires:
+      - STR_TAUROX_REQUISITION
+
+#Tauros light craft
+  - type: STR_TAUROS
+    requires:
+      - STR_TAUROS_REQUISITION
+
+#Gorgon heavy transport
+  - type: STR_GORGON
+    requires:
+      - STR_GORGON_TECH

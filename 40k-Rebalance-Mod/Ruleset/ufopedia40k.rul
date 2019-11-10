@@ -1,0 +1,31 @@
+ufopaedia:
+
+  - id: STR_PERSONAL_ARMOR_UC
+    type_id: 15
+    section: STR_ARMORPEDIA
+    image_id: CODEX_MK7_ARMOR.SPK
+    requires:
+      - STR_MK7_ARMOR
+    text: STR_PERSONAL_ARMOR_UFOPEDIA
+    listOrder: 5200
+
+#test
+
+  - id: STR_IG_ROCKET_LAUNCHER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_IG_ROCKET_LAUNCHER_UFOPEDIA
+    requires:
+      - STR_ROCKET_LAUNCHER_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    listOrder: 12250
+
+  - delete: STR_HEAVY_CANNON
+
+  - id: STR_HEAVY_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_HEAVY_CANNON_UFOPEDIA
+    requires:
+      - STR_SNIPER_RIFLE_TECH
+    listOrder: 11900

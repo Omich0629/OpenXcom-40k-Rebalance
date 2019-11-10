@@ -1,0 +1,133 @@
+crafts:
+#T1#
+#Stormtalon (T1 fighter)
+  - type: STR_INTERCEPTOR
+    requires:
+      - STR_SPACE_MARINES_OPERATIONS
+    weapons: 2
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+
+
+#Landspeeder
+  - type: STR_SPEEDC
+    weapons: 2
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+    maxAltitude: 1
+
+#Drop pods.
+#Delete a single one. It's useless.
+  - delete: STR_DROP
+#    costBuy: 160000
+#    costRent: 160000
+#    requires:
+#      - STR_DROPPODS_REQ
+
+  - type: STR_SKYRANGER
+    requires:
+      - STR_DROPPODS_REQ
+
+#STORMRAVEN CRAFT
+#Fixed map. Can fit 8 soldiers.
+  - type: STR_FIRESTORM 
+    requires:
+      - STR_NEW_FIGHTER_CRAFT
+    soldiers: 8
+
+
+  - delete: STR_THUNDERHAWNK
+#Thunderhawnk (NEW)
+
+  - type: STR_LIGHTNING
+    requires:
+      - STR_NEW_FIGHTER_TRANSPORTER
+    damageMax: 1500
+    pilots: 2
+    vehicles: 2
+    battlescapeTerrainData:
+      name: THUNDERHAWK
+      mapDataSets:
+        - BLANKS
+        - THUNDERHAWK_NEW
+      mapBlocks:
+        - name: THUNDERHAWK_NEW
+          width: 10
+          length: 20
+          items:
+            STR_LEFT_THUNDERHAWK_SPAWNER:
+              - [3, 15, 1]
+            STR_RIGHT_THUNDERHAWK_SPAWNER:
+              - [6, 15, 1]
+          fuseTimers:
+            STR_LEFT_THUNDERHAWK_SPAWNER: [0, 0]
+            STR_RIGHT_THUNDERHAWK_SPAWNER: [0, 0]
+    soldiers: 24
+
+    deployment:
+      - [4, 15, 1, 4]
+      - [5, 15, 1, 4]
+      - [4, 14, 1, 4]
+      - [5, 14, 1, 4]
+      - [4, 13, 1, 4]
+      - [5, 13, 1, 4]
+      - [4, 12, 1, 4]
+      - [5, 12, 1, 4]
+      - [4, 11, 1, 4]
+      - [5, 11, 1, 4]
+      - [4, 9, 1, 4]
+      - [5, 9, 1, 4]
+      - [4, 8, 1, 4]
+      - [5, 8, 1, 4]
+      - [4, 7, 1, 4]
+      - [5, 7, 1, 4]
+      - [4, 6, 1, 4]
+      - [5, 6, 1, 4]
+      - [4, 5, 1, 4]
+      - [5, 5, 1, 4]
+      - [4, 4, 1, 4]
+      - [5, 4, 1, 4]
+      - [4, 3, 1, 4]
+      - [5, 3, 1, 4]
+
+#Thunderhawnk T
+  - delete: STR_AVENGER
+  - delete: STR_TTASS
+  - delete: STR_TTDEV
+  - delete: STR_TTSCT
+  - delete: STR_TTCHAOS
+
+#STORMEAGLE
+  - type: STR_STORMEAGLE
+    damageMax: 950
+    soldiers: 16
+    deployment:
+      - [4, 11, 0, 0]
+      - [5, 11, 0, 0]
+      - [4, 10, 0, 0]
+      - [5, 10, 0, 0]
+      - [4, 9, 0, 0]
+      - [5, 9, 0, 0]
+      - [4, 8, 0, 0]
+      - [5, 8, 0, 0]
+      - [4, 7, 0, 0]
+      - [5, 7, 0, 0]
+      - [4, 6, 0, 0]
+      - [5, 6, 0, 0]
+      - [4, 5, 0, 0]
+      - [5, 5, 0, 0]
+      - [4, 4, 0, 0]
+      - [5, 4, 0, 0]
+
+#"First Company"
+  - delete: STR_CHAPTERARMY
+
+

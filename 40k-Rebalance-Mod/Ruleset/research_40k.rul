@@ -1,0 +1,1126 @@
+research:
+  - delete: STR_LASER_PISTOL
+  - delete: STR_LASER_RIFLE
+  - delete: STR_SMOKE
+  - delete: STR_PERSONAL_ARMOR
+
+#delete strategies research
+  - delete: STR_SCOUT
+  - delete: STR_DEVASTATOR
+  - delete: STR_ASSAULT
+  - delete: STR_TATICAL
+
+#delete some vehicles
+  - delete: STR_CHAPTERARMYR
+
+#
+  - name: STR_VETERAN
+    cost: 50
+    points: 0
+    dependencies:
+      - STR_GENERALLOCK
+    unlocks: []
+
+
+#Space Marines tech tree
+########## T1 ##########
+###First Technology
+  - name: STR_SPACE_MARINES_OPERATIONS
+    cost: 10
+    points: 0
+    listOrder: 100
+    unlocks:
+      - STR_MARINES_STRATEGY
+      - STR_SPEEDR
+      - STR_CHAPTER_ARMORS
+      - STR_APOC_BAY
+      - STR_CHAPTER_WEAPONS
+      - STR_COMPONENT_MANUFACTURING
+    disables:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+
+##### T1 Squad Technologies Block #####
+
+### Chapter Armors ###
+  - name: STR_CHAPTER_ARMORS
+    cost: 50
+    points: 10
+    listOrder: 100
+    dependencies:
+      - STR_GENERALLOCK
+
+#Advanced Scout Armor
+  - name: STR_SCOUTH_RESEARCH
+    cost: 100
+    points: 20
+    listOrder: 100
+    dependencies:
+      - STR_CHAPTER_ARMORS
+
+#Mk7 Power Armor
+  - name: STR_MK7_ARMOR
+    cost: 200
+    points: 20
+    listOrder: 100
+    dependencies:
+      - STR_CHAPTER_ARMORS
+
+#Devastator equipment for Power Armor
+  - name: STR_DEV_ARMOR
+    cost: 200
+    points: 20
+    listOrder: 100
+    dependencies:
+      - STR_MK7_ARMOR
+
+#Assault equipment for Power Armor
+  - name: STR_ASS_ARMOR
+    cost: 200
+    points: 20
+    listOrder: 100
+    dependencies:
+      - STR_MK7_ARMOR
+
+#Mk7 Sergeant Armor
+  - name: STR_SARGENT_ARMOR
+    cost: 200
+    points: 20
+    listOrder: 100
+    dependencies:
+      - STR_MK7_ARMOR
+
+#Mk7 Apothecary Armor
+  - name: STR_MEDI_KIT
+    cost: 200
+    points: 20
+    listOrder: 100
+    dependencies:
+      - STR_MK7_ARMOR
+      - STR_APOC_BAY
+
+### Biomedical and Training ###
+
+#Apothecarion Facility
+  - name: STR_APOC_BAY
+    cost: 100
+    points: 10
+    listOrder: 100
+    dependencies:
+      - STR_GENERALLOCK
+    unlocks: []
+
+#Marine Training Facility
+  - name: STR_TRAINFACILITYR 
+    cost: 150
+    points: 10
+    listOrder: 100
+    dependencies:
+      - STR_APOC_BAY
+
+#Transformation to Space Marine
+  - name: STR_PROMOTION_MARINE
+    cost: 250
+    points: 10
+    listOrder: 100
+    dependencies:
+      - STR_APOC_BAY
+      - STR_TRAINFACILITYR
+
+### Chapter Weapons ###
+#Header Technology
+  - name: STR_CHAPTER_WEAPONS
+    cost: 50
+    points: 10
+    listOrder: 100
+    dependencies:
+      - STR_GENERALLOCK
+    unlocks:
+      - STR_LASCAN
+      - STR_HEAVY_BOLTER_TECH
+      - STR_ROCKET_LAUNCHER_TECH
+      - STR_CHAINSWORD_TECH
+      - STR_POWERFIST_TECH
+
+#Heavy Bolter Requisition
+  - name: STR_HEAVY_BOLTER_TECH
+    cost: 0
+    points: 0
+    listOrder: 100
+    dependencies:
+      - STR_CHAPTER_WEAPONS
+
+#Missile Launcher Requisition
+#Same as for Imperial Guard.
+#Unlocks same ammo, but different weapon
+  - name: STR_ROCKET_LAUNCHER_TECH
+    cost: 0
+    points: 0
+    listOrder: 100
+    dependencies:
+      - STR_CHAPTER_WEAPONS
+
+#Sniper Rifle Requisition
+  - name: STR_SNIPER_RIFLE_TECH
+    cost: 0
+    points: 0
+    listOrder: 100
+    dependencies:
+      - STR_CHAPTER_WEAPONS
+
+#Chainsword Requisition
+  - name: STR_CHAINSWORD_TECH
+    cost: 0
+    points: 0
+    listOrder: 100
+    dependencies:
+      - STR_CHAPTER_WEAPONS
+
+#Powerfist Requisition
+  - name: STR_POWERFIST_TECH
+    cost: 0
+    points: 0
+    listOrder: 100
+    dependencies:
+      - STR_CHAPTER_WEAPONS
+
+#Lascannon
+  - name: STR_LASCAN
+    cost: 460
+    points: 10
+    listOrder: 100
+    dependencies:
+      - STR_LASER_WEAPONS
+
+#Craft Lascannon
+  - name: STR_LASER_CANNON
+    cost: 420
+    points: 15
+    listOrder: 100
+    dependencies:
+      - STR_LASCAN
+
+#Lascannon Defence
+  - type: STR_LASER_DEFENSE
+    listOrder: 100
+    dependencies:
+      - STR_LASER_CANNON
+
+### T1 Craft technologies Block ###
+
+#Lanspeeder (T1 First Craft)
+  - name: STR_SPEEDR
+    cost: 50
+    points: 10
+    listOrder: 700
+    dependencies:
+      - STR_GENERALLOCK
+
+#Assault Bike
+#Requires assault equipment
+  - name: STR_BIKE_TECH
+    cost: 50
+    points: 10
+    listOrder: 700
+    dependencies:
+      - STR_SPEEDR
+      - STR_ASS_ARMOR
+
+#Drop Pods
+  - name: STR_DROPPODS_REQ
+    cost: 150
+    points: 10
+    listOrder: 700
+    dependencies:
+      - STR_SPEEDR
+
+### Manufactoring technologies###
+
+#Component Manufacturing
+#Header Technology
+  - name: STR_COMPONENT_MANUFACTURING
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_GENERALLOCK
+
+#Adamantium component
+  - name: STR_ALIEN_ALLOYS
+    cost: 100
+    points: 10
+    needItem: false
+    dependencies:
+      - STR_COMPONENT_MANUFACTURING
+
+#Promethium
+  - name: STR_ELERIUM_115
+    cost: 100
+    points: 10
+    needItem: false
+    dependencies:
+      - STR_COMPONENT_MANUFACTURING
+
+#Cogitators
+  - name: STR_UFO_NAVIGATION
+    cost: 150
+    points: 15
+    needItem: false
+    listOrder: 100
+    dependencies:
+      - STR_ALIEN_ALLOYS
+
+#Ceramite plates
+  - name: STR_UFO_CONSTRUCTION
+    cost: 150
+    points: 15
+    needItem: false
+    listOrder: 100
+    dependencies:
+      - STR_ELERIUM_115
+
+#Power Source
+  - name: STR_UFO_POWER_SOURCE
+    cost: 150
+    points: 15
+    needItem: false
+    dependencies:
+      - STR_ALIEN_ALLOYS
+      - STR_ELERIUM_115
+
+#Adamantium Forges
+  - name: STR_STEELMILLR #facility
+    cost: 200
+    points: 20
+    dependencies:
+      - STR_ALIEN_ALLOYS
+      - STR_ELERIUM_115
+    listOrder: 100
+
+###### T2 #####
+#Chapter Mid-tier Requisitions
+  - name: STR_MT #
+    cost: 200
+    points: 200
+    dependencies:
+      - STR_SPACE_MARINES_OPERATIONS
+      - STR_MK7_ARMOR
+      - STR_PROMOTION_MARINE
+      - STR_LASER_CANNON
+      - STR_STEELMILLR
+    unlocks:
+      - STR_MIDTIER_PREREQ
+      - STR_CRAFTADD
+      - STR_TEC_BAYR
+      - STR_PLASMA_WEAPONS
+      - STR_MELTA_WEAPONS
+      - STR_GRAVITON_WEAPONS
+    cutscene: c2
+
+## Some Strange Stuff.
+#(Mid-tier pre-req.) 
+  - name: STR_MIDTIER_PREREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_IMPERIAL_GUARD_MIDTIER
+      - STR_MT
+
+### T2 Crafts ###
+#Craft AUX Systems
+  - name: STR_CRAFTADD
+    cost: 200
+    points: 30
+    dependencies:
+      - STR_GENERALLOCK
+#      - STR_MT
+#      - STR_IMPERIAL_GUARD_MIDTIER
+
+#Stormhawk craft
+  - name: STR_STORMHAWKR
+    cost: 150
+    points: 10
+    listOrder: 700
+    dependencies:
+      - STR_CRAFTADD
+      - STR_MT
+
+#Stormraven Gunship Requisition
+  - name: STR_NEW_FIGHTER_CRAFT
+    cost: 600
+    points: 30
+    dependencies: 
+      - STR_STORMHAWKR
+      - STR_MT
+    unlocks: []
+
+###Melta Technology###
+#Header Technology for Melta Branch.
+
+#Unlocks on T2.
+  - name: STR_MELTA_WEAPONS
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_GENERALLOCK
+#      - STR_MT
+#      - STR_IMPERIAL_GUARD_MIDTIER
+
+#We need any Melta weapon to start our own manufacturing.
+  - name: STR_MELTA_TECHNOLOGY
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_CHAOS_MELTAGUN
+      - STR_BLASTER_LAUNCHER
+
+#Chaos Melta Weapons. Only one is required to start research of the branch.
+
+#Chaos Melta gun.
+  - name: STR_CHAOS_MELTAGUN
+    cost: 100
+    points: 25
+    dependencies:
+      - STR_MELTA_WEAPONS
+    getOneFree:
+      - STR_MELTA_TECHNOLOGY
+    needItem: true
+
+#Chaos Multi-Melta.
+  - name: STR_BLASTER_LAUNCHER
+    cost: 900
+    points: 30
+    dependencies:
+      - STR_MELTA_WEAPONS
+    getOneFree:
+      - STR_MELTA_TECHNOLOGY
+    needItem: true
+
+# Normal Melta Weapons
+
+#Normal Melta gun
+  - name: STR_HEAVY_LASER
+    cost: 460
+    points: 10
+    dependencies:
+      - STR_MELTA_WEAPONS
+      - STR_MELTA_TECHNOLOGY
+
+##Disposable melta devices
+#Melta Grenade
+  - name: STR_MGRENADE
+    cost: 100
+    points: 25
+    dependencies:
+      - STR_HEAVY_LASER
+
+#Melta Bomb
+  - name: STR_MELTABOMB
+    cost: 100
+    points: 25
+    dependencies:
+      - STR_MGRENADE  
+
+#Normal Multi-Melta Requisition
+  - name: STR_FUSION_MISSILE
+    cost: 900
+    points: 30
+    dependencies:
+      - STR_HEAVY_LASER
+    getOneFree:
+      - STR_BLASTER_BOMB
+
+#Multi-Melta Ammo
+  - name: STR_BLASTER_BOMB
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_FUSION_MISSILE
+
+#Craft Multi-Melta
+  - name: STR_FUSION_BALL_LAUNCHER
+    cost: 800
+    points: 30
+    dependencies:
+      - STR_FUSION_MISSILE
+
+#Multi-Melta Defence
+  - name: STR_FUSION_DEFENSE
+    cost: 800
+    points: 30
+    dependencies:
+      - STR_FUSION_MISSILE
+
+
+### Plasma Technology ###
+##Dependencies for plasma technologies. Derived from original Xcom.
+  - delete: STR_PLASMA_CANNON_DEP1
+  - delete: STR_PLASMA_CANNON_DEP2
+
+#Header Technology for Plasma Branch.
+#Unlocks on T2.
+  - name: STR_PLASMA_WEAPONS
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_GENERALLOCK
+#      - STR_MT
+#      - STR_IMPERIAL_GUARD_MIDTIER
+
+#We need any Plasma weapon to start manufacturing our own plasma weapons.
+  - name: STR_PLASMA_TECHNOLOGY
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_PLASMA_PISTOL
+      - STR_PLASMA_RIFLE
+      - STR_HEAVY_PLASMA
+
+#Chaos plasma weapons. You really need ony one to start research this branch.
+
+#Chaos Plasma Pistol.
+  - name: STR_PLASMA_PISTOL
+    cost: 600
+    points: 20
+    dependencies:
+      - STR_PLASMA_WEAPONS
+    getOneFree:
+      - STR_PLASMA_TECHNOLOGY
+    needItem: true
+
+#Chaos Plasma Gun.
+  - name: STR_PLASMA_RIFLE
+    cost: 700
+    points: 25
+    dependencies:
+      - STR_PLASMA_WEAPONS
+    getOneFree:
+      - STR_PLASMA_TECHNOLOGY
+    needItem: true
+
+#Chaos Heavy Plasma.
+  - name: STR_HEAVY_PLASMA
+    cost: 800
+    points: 30
+    dependencies:
+      - STR_PLASMA_WEAPONS
+    getOneFree:
+      - STR_PLASMA_TECHNOLOGY
+    needItem: true
+
+#Normal Plasma Weapons.
+
+#Normal Plasma Pistol. Ammo for Free.
+  - name: STR_PLASMA_PISTOL_TERRAN
+    cost: 600
+    points: 20
+    dependencies:
+      - STR_PLASMA_WEAPONS
+      - STR_PLASMA_TECHNOLOGY
+    getOneFree:
+      - STR_PLASMA_PISTOL_CLIP
+
+  - name: STR_PLASMA_PISTOL_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_PLASMA_PISTOL_TERRAN
+
+
+#Normal Plasma Gun. Ammo for Free.
+  - name: STR_PLASMA_RIFLE_TERRAN
+    cost: 700
+    points: 25
+    dependencies:
+      - STR_PLASMA_PISTOL_TERRAN
+
+  - name: STR_PLASMA_RIFLE_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_PLASMA_RIFLE_TERRAN
+
+#Normal Heavy Plasma. Ammo for Free.
+
+  - name: STR_HEAVY_PLASMA_TERRAN
+    cost: 800
+    points: 30
+    dependencies:
+      - STR_PLASMA_RIFLE_TERRAN
+
+  - name: STR_HEAVY_PLASMA_CLIP
+    cost: 0
+    points: 0
+    dependencies: 
+      - STR_HEAVY_PLASMA_TERRAN
+
+#Craft Plasma
+  - name: STR_PLASMA_CANNON
+    cost: 660
+    points: 25
+    dependencies:
+      - STR_HEAVY_PLASMA_TERRAN
+
+#Plasma Defence
+  - name: STR_PLASMA_DEFENSE
+    cost: 620
+    points: 25
+    dependencies:
+      - STR_PLASMA_CANNON
+
+
+### Techmarine and stuff ###
+#Cult of The Machine
+#Renamed "Techmarine requisitions".
+  - name: STR_TEC_BAYR 
+    cost: 200
+    points: 15
+    dependencies:
+      - STR_GENERALLOCK
+#      - STR_MT
+#      - STR_IMPERIAL_GUARD_MIDTIER
+
+#Auspex (Motion Scanner)
+  - name: STR_MOTION_SCANNER
+    listOrder: 900
+    dependencies:
+      - STR_TEC_BAYR
+
+#Defence corridor facility
+  - name: STR_DEFENSE_CORRIDORR
+    cost: 100
+    points: 15
+    listOrder: 900
+    dependencies:
+      - STR_TEC_BAYR
+
+#Cloaking Shroud
+  - name: STR_MIND_SHIELD
+    cost: 360
+    points: 25
+    dependencies:
+      - STR_TEC_BAYR
+
+#Live Enemy Navigators
+  - name: STR_FLOATER_NAVIGATOR
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_ENEMY_ENCRYPTION
+
+  - name: STR_SNAKEMAN_NAVIGATOR
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_ENEMY_ENCRYPTION
+
+  - name: STR_MUTON_NAVIGATOR
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_ENEMY_ENCRYPTION
+
+  - name: STR_SECTOID_NAVIGATOR
+    unlocks:
+      - STR_ALIEN_ORIGINS
+    getOneFree:
+      - STR_ENEMY_ENCRYPTION
+
+#Navigator's interrogation result
+  - name: STR_ENEMY_ENCRYPTION
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_FLOATER_NAVIGATOR
+      - STR_SNAKEMAN_NAVIGATOR
+      - STR_MUTON_NAVIGATOR
+      - STR_SECTOID_NAVIGATOR
+
+#Decoder
+  - name: STR_HYPER_WAVE_DECODER
+    cost: 670
+    points: 25
+    dependencies:
+      - STR_TEC_BAYR
+      - STR_ENEMY_ENCRYPTION
+
+###Master Crafting###
+  - name: STR_MASTER_CRAFTING
+    cost: 200
+    points: 30
+    dependencies:
+      - STR_TEC_BAYR
+  
+  - delete: STR_MASTER_CRAFTING_AMMO
+  - delete: STR_CHAINSWORD_MC
+  - delete: STR_HEAVY_PLASMA_MC
+
+### T2 Armors ###
+
+#Veteran Armors
+  - name: STR_VETERAN_ARMORS
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_MT
+
+#Chaplain Armor
+  - name: STR_CHAP_ARMOR
+    cost: 560
+    points: 20
+    dependencies:
+      - STR_VETERAN_ARMORS
+
+#Promotion to Veteran Marine
+  - name: STR_PROMOTION_VETERAN_MARINE
+    cost: 500
+    points: 20
+    dependencies:
+      - STR_VETERAN_ARMORS
+
+#Delete honor armors research
+  - delete: STR_HONOR_ARMOR
+  - delete: STR_HONOR_ARMOR_RESEARCH
+  - delete: STR_SIGNAL_ARMOR_RESEARCH
+
+#Stasis Tombs as pre-req. for Dreadnought
+  - name: STR_ALIEN_REPRODUCTION
+    cost: 335
+    points: 30
+    needItem: true
+    dependencies:
+      - STR_SPACE_MARINES_OPERATIONS
+
+#Dreadnought Technology
+  - name: STR_DREADNOUGHT_TECH
+    cost: 335
+    points: 30
+    dependencies:
+      - STR_ALIEN_REPRODUCTION
+      - STR_TEC_BAYR
+      - STR_VETERAN_ARMORS
+
+#Centurion Armor
+  - name: STR_CENT_ARMORR
+    cost: 330
+    points: 20
+    dependencies:
+      - STR_TEC_BAYR
+      - STR_VETERAN_ARMORS
+
+### Grav Technology ###
+#Header Research
+  - name: STR_GRAVITON_WEAPONS
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_GENERALLOCK
+#      - STR_MT
+#      - STR_IMPERIAL_GUARD_MIDTIER
+
+#We need Chaos Graviton Gun to start the actual research
+  - name: STR_GRAVITON_TECHNOLOGY
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SMALL_LAUNCHER
+
+#Chaos Gravgun and ammo
+  - name: STR_SMALL_LAUNCHER
+    cost: 450
+    points: 30
+    dependencies:
+      - STR_GRAVITON_WEAPONS
+    getOneFree:
+      - STR_GRAVITON_TECHNOLOGY
+    needItem: true
+
+#Normal Graviton Gun. Ammo For Free.
+  - name: STR_SMALL_LAUNCHER_TERRAN
+    cost: 450
+    points: 30
+    dependencies:
+      - STR_GRAVITON_WEAPONS
+      - STR_GRAVITON_TECHNOLOGY
+
+  - name: STR_STUN_BOMB
+    cost: 0
+    points: 0
+    dependencies: 
+      - STR_SMALL_LAUNCHER_TERRAN
+
+#Grav-Shield
+  - name: STR_GRAV_SHIELD
+    cost: 930
+    points: 25
+    dependencies:
+      - STR_SMALL_LAUNCHER_TERRAN
+
+###Side Operations###
+  - name: STR_SIDEOPERATIONS # MISSION 1
+    cost: 200
+    points: 25
+    dependencies:
+      - STR_MT
+  - name: STR_TATICALTRAININFO # MISSION 2
+    cost: 200
+    points: 25
+    needItem: true
+    dependencies:
+      - STR_SIDEOPERATIONS
+  - name: STR_DISTRESSDATA # MISSION 3
+    cost: 200
+    points: 25
+    needItem: true
+  - name: STR_UNLOCKED1 #4 UNLOCK1
+    cost: 200
+    points: 25
+    dependencies:
+      - STR_DISTRESSDATA
+  - name: STR_UNLOCKED2 #4 UNLOCK2 was the final lock
+    cost: 200
+    points: 25
+    dependencies:
+      - STR_DISTRESSDATA
+  - name: STR_COMPLETEMAP #4 MISSION 4
+    cost: 200
+    points: 25
+    needItem: true
+    dependencies:
+      - STR_TATICALTRAININFO
+  - name: STR_GENESEED # MISSION 6
+    cost: 200
+    points: 25
+    needItem: true
+  - name: STR_MISSION6REPORT # MISSION 7
+    cost: 100
+    points: 25
+    needItem: true
+  - name: STR_MISSION7REPORT # MISSION 8
+    cost: 100
+    points: 25
+    needItem: true
+  - name: STR_MISSION8REPORT # MISSION 9
+    cost: 100
+    points: 25
+    needItem: true
+  - name: STR_COMPLETRELIC #4 MISSION 5
+    cost: 200
+    points: 25
+    needItem: true
+
+###### T3 #####
+#Chapter High-tier Requisitions
+
+  - name: STR_ULTIMATE_CRAFT
+    cost: 900
+    points: 30
+    dependencies:
+      - STR_PROMOTION_VETERAN_MARINE
+      - STR_PLASMA_CANNON
+      - STR_FUSION_BALL_LAUNCHER
+    unlocks:
+      - STR_INVESTIGATION
+
+### T3 Crafts ###
+
+#Stormeagle
+  - name: STR_STORMEAGLE_INTERCEPTOR
+    cost: 900
+    points: 30
+    dependencies:
+      - STR_ULTIMATE_CRAFT
+
+#Thunderhawk
+  - name: STR_NEW_FIGHTER_TRANSPORTER
+    dependencies:
+      - STR_STORMEAGLE_INTERCEPTOR
+
+
+### Psi ###
+#Now in T3
+
+#Librarium (Firts research in)
+  - name: STR_LIBRARY
+    dependencies:
+      - STR_ULTIMATE_CRAFT
+    unlocks:
+      - STR_MIND_PROBE
+      - STR_TOME_OF_FEAR
+      - STR_PSI_AMP
+      - STR_TOME_OF_WEAKNESS
+      - STR_PATCHSMOKE
+
+  - delete: STR_SPELLSR
+
+#Librarian armor mk7
+  - name: STR_LIBRARIAN_ARMOR
+    dependencies:
+      - STR_LIBRARY
+
+#Tome of The Vision
+#Mind control
+  - name: STR_MIND_PROBE
+    cost: 600
+    points: 25
+    dependencies:
+      - STR_ULTIMATE_CRAFT
+      - STR_IMPERIAL_GUARD_HIGHTIER
+    needItem: false
+
+#Tome of Fear
+  - name: STR_TOME_OF_FEAR
+    cost: 600
+    points: 25
+    dependencies:
+      - STR_ULTIMATE_CRAFT
+      - STR_IMPERIAL_GUARD_HIGHTIER
+    needItem: false
+
+#Tome of The Mind
+  - name: STR_PSI_AMP
+    cost: 600
+    points: 25
+    dependencies:
+      - STR_ULTIMATE_CRAFT
+      - STR_IMPERIAL_GUARD_HIGHTIER
+    needItem: false
+
+#Tome of Weakness
+  - name: STR_TOME_OF_WEAKNESS
+    cost: 600
+    points: 25
+    dependencies:
+      - STR_ULTIMATE_CRAFT
+      - STR_IMPERIAL_GUARD_HIGHTIER
+    needItem: false
+
+#Tome of Smoke
+  - name: STR_PATCHSMOKE
+    cost: 600
+    points: 25
+    dependencies:
+      - STR_ULTIMATE_CRAFT
+      - STR_IMPERIAL_GUARD_HIGHTIER
+    needItem: false
+
+
+#Chapel???
+  - name: STR_PSI_LAB
+    dependencies:
+      - STR_IMPERIAL_GUARD_HIGHTIER
+
+
+### Terminator Armor ###
+#Chapter Armory (facility)
+  - name: STR_CHAPTER_ARMORY
+    cost: 200
+    points: 10
+    dependencies:
+      - STR_ULTIMATE_CRAFT
+
+#Terminator Armor
+  - name: STR_POWER_SUIT
+    cost: 560
+    points: 20
+    dependencies:
+      - STR_CHAPTER_ARMORY
+
+#Assault Terminator Armor
+  - name: STR_FLYING_SUIT
+    cost: 560
+    points: 20
+    dependencies:
+      - STR_POWER_SUIT
+
+#Sergeant Terminator Armor
+  - name: STR_TSARGENT
+    cost: 560
+    points: 20
+    dependencies:
+      - STR_POWER_SUIT
+
+#Apothecary Terminator Armor
+  - name: STR_TERMINATOR_APOTHECARY
+    cost: 560
+    points: 20
+    dependencies:
+      - STR_POWER_SUIT
+
+#Chaplain Terminator Armor
+  - name: STR_TERMINATOR_CHAPLAIN
+    cost: 560
+    points: 20
+    dependencies:
+      - STR_POWER_SUIT
+
+#Librarian Terminator Armor
+  - name: STR_TERMINATOR_LIBRARIAN
+    cost: 560
+    points: 20
+    dependencies:
+      - STR_POWER_SUIT
+      - STR_LIBRARY
+
+#Captain Terminator Armor
+  - name: STR_CAPTAIN_SUIT
+    cost: 560
+    points: 20
+    dependencies:
+      - STR_POWER_SUIT
+
+### Terminator Weapons ###
+#Chapter Special Weapons
+  - name: STR_CHAPTER_SPECIAL_WEAPONS
+    cost: 200
+    points: 10
+    dependencies:
+      - STR_ULTIMATE_CRAFT
+
+#Power Dagger
+  - name: STR_POWER_DAGGER
+    cost: 280
+    points: 20
+    dependencies:
+      - STR_CHAPTER_SPECIAL_WEAPONS
+
+
+#Lightning Claws
+  - name: STR_LIGHTNING_CLAWS
+    cost: 560
+    points: 20
+    dependencies:
+      - STR_CHAPTER_SPECIAL_WEAPONS
+
+#Thunder Hammer
+  - name: STR_HAMMER
+    cost: 560
+    points: 20
+    dependencies:
+      - STR_CHAPTER_SPECIAL_WEAPONS
+
+#Power Sword
+  - name: STR_POWER_SWORD
+    cost: 560
+    points: 20
+    dependencies:
+      - STR_CHAPTER_SPECIAL_WEAPONS
+
+
+### Storm Bolter ###
+#Chaos Storm Bolter. Ammo for free.
+  - name: STR_CHB
+    cost: 430
+    points: 25
+    needItem: true
+
+  - name: STR_HB_CLIP
+    cost: 0
+    points: 0
+    dependencies: 
+      - STR_CHB
+
+#Normal Storm Bolter
+  - name: STR_HB
+    cost: 860
+    points: 20
+    dependencies:
+      - STR_CHAPTER_SPECIAL_WEAPONS
+      - STR_CHB
+
+### Autocannon ###
+#Chaos version of Assault cannon (Reaper Autocannon). Ammo for free.
+  - name: STR_CASSC
+    cost: 430
+    points: 25
+    needItem: true
+
+  - name: STR_ASSC_CLIP
+    cost: 0
+    points: 0
+    dependencies: 
+      - STR_CASSC
+
+#Normal Assault cannon
+
+  - name: STR_ASSC
+    cost: 860
+    points: 20
+    dependencies:
+      - STR_CASSC
+      - STR_CHAPTER_SPECIAL_WEAPONS
+
+### Heavy Flamer ###
+
+  - name: STR_HFLAMERR
+    cost: 860
+    points: 20
+    dependencies:
+      - STR_CHAPTER_SPECIAL_WEAPONS
+
+
+### INVESTIGATION ###
+#Header Technology
+  - name: STR_INVESTIGATION
+    cost: 0
+    points: 0
+    listOrder: 100
+    dependencies:
+      - STR_GENERALLOCK
+
+
+#Final Solution
+  - name: STR_THE_MARTIAN_SOLUTION
+    cost: 500
+    points: 60
+    dependencies:
+      - STR_INVESTIGATION
+      - STR_ALIEN_ORIGINS
+      - STR_LEADER_PLUS
+
+#Ending The Warp
+  - name: STR_CYDONIA_OR_BUST #cutcscene c3
+    cost: 600
+    cutscene: c3
+    points: 60
+    dependencies:
+      - STR_COMMANDER_PLUS
+    unlockFinalMission: false
+
+##Live Enemy Leaders, Commanders and some other guys.
+  - name: STR_SECTOID_COMMANDER
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_COMMANDER_PLUS
+      - STR_ALIEN_ORIGINS
+
+  - name: STR_SECTOID_LEADER
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_ALIEN_ORIGINS
+
+  - name: STR_ETHEREAL_COMMANDER
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_COMMANDER_PLUS
+      - STR_ALIEN_ORIGINS
+
+  - name: STR_ETHEREAL_LEADER
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_ALIEN_ORIGINS
+
+  - name: STR_ETHEREAL_SOLDIER
+    unlocks:
+      - STR_ALIEN_ORIGINS
+
+
+### Orbital Communications ###
+#DELETE?
+  - name: STR_NAVY_COMUNICATIONS
+    cost: 860
+    points: 15
+    dependencies:
+      - STR_ULTIMATE_CRAFT
+
+
+
+

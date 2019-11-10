@@ -1,0 +1,47 @@
+facilities:
+#Hospital for Imperial Guard
+  - type: STR_HOSPITAL
+    requires:
+      - STR_MEDICINE_TECH
+    spriteShape: 1
+    spriteFacility: 900
+    buildCost: 550000
+    buildTime: 20
+    monthlyCost: 30000
+    refundValue: 250000
+    maxAllowedPerBase: 1
+    sickBayAbsoluteBonus: 0.5
+    sickBayRelativeBonus: 0.0
+    mapName: HOSPITAL_50
+    listOrder: 802
+
+#Headquarters
+  - type: STR_HEADQUARTERS
+    requires:
+      - STR_REGIMENT_OFFICERS
+    spriteShape: 1
+    spriteFacility: 901
+    size: 1
+    buildCost: 600000
+    buildTime: 25
+    monthlyCost: 300000
+    workshops: 10
+    provideBaseFunc: [HQ]
+    mapName: HQ_51
+    listOrder: 800
+
+#Mechanicus Bay
+  - type: STR_MECH_BAY
+    requires:
+      - STR_TEC_BAYR
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    spriteShape: 1
+    spriteFacility: 35
+    buildCost: 550000
+    buildTime: 20
+    monthlyCost: 30000
+    refundValue: 250000
+    provideBaseFunc: [TEC]
+    maxAllowedPerBase: 1
+    mapName: XBASE_28
+    listOrder: 804

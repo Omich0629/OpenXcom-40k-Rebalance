@@ -1,0 +1,300 @@
+extraStrings:
+  - type: en-US
+    strings:
+###Global stuff###
+
+      STR_UFO_NAVIGATION: "Cogitator"
+      STR_STEELMILLR: "Adamantium Forges"
+      STR_COMPONENT_MANUFACTURING: "Component Manufacturing"
+
+#Custom attacks for special purposes
+      STR_CUSTOM_DOUBLE_SHOT: "Double Shot"
+      STR_CUSTOM_SNAPSHOT: "Snap Shot"
+
+
+###############################
+### Space Marines Tech Tree ###
+###############################
+
+      STR_SPACE_MARINES_OPERATIONS: "Space Marines Operations"
+
+#New type of soldier and ranks
+      STR_SCOUT_SOLDIER: "Scout"
+
+      STR_SCOUT_RANK_0: "Scout"
+      STR_SCOUT_RANK_1: "Scout"
+      STR_SCOUT_RANK_2: "Scout"
+      STR_SCOUT_RANK_3: "Scout"
+
+      STR_SM_RANK_0: "Battle Brother"
+      STR_SM_RANK_1: "Battle Brother"
+      STR_SM_RANK_2: "Battle Brother"
+      STR_SM_RANK_3: "Battle Brother"
+      STR_SM_RANK_4: "Battle Brother"
+
+      STR_DREADNOUGHT_RANK_0: "Dreadnought"
+      STR_DREADNOUGHT_RANK_1: "Dreadnought"
+      STR_DREADNOUGHT_RANK_2: "Dreadnought"
+      STR_DREADNOUGHT_RANK_3: "Dreadnought"
+      STR_DREADNOUGHT_RANK_4: "Dreadnought"
+
+#T1
+      STR_CHAPTER_WEAPONS: "Chapter Weapons"
+      STR_CHAPTER_ARMORS: "Chapter Armors"
+      STR_LASCAN: "Lascannon Mk. VII Mars Pattern"
+
+      STR_MOTION_SCANNER: "Auspex"
+      STR_MOTION_SCANNER: "Auspex"
+
+      AUX_BOLTER: "Twin-linked Bolter"
+
+      STR_HC_AP_AMMO: "Sniper Rifle AP Ammo"
+      STR_HC_HE_AMMO: "Sniper Rifle HE Ammo"
+      STR_HC_I_AMMO: "Sniper Rifle I Ammo"
+
+
+#Standard mk7 Armor
+      STR_MK7_ARMOR: "Mk7 Power Armor"
+      STR_TATICAL_ARMOR: "Mk7 Armor Set"
+      STR_PERSONAL_ARMOR_UC: "Mk7 Power Armor"
+
+#Devastator Equipment for Mk7 Armor
+      STR_DEV_ARMOR: "Mk7 Devastator Equipment" #Store Item for Devastator equipment
+      STR_DEV_ARMOR_UC: "Mk7 Devastator Equipment"
+
+#Assault Equipment for Mk7 Armor
+      STR_ASS_ARMOR: "Mk7 Assault Equipment" #Store Item for assault equipment
+      STR_ASS_ARMOR_UC: "Mk7 Assault Equipment"
+
+#Sergeant Armor
+      STR_SARGENT_ARMOR: "Mk7 Sergeant Armor"
+
+
+#Apothecary stuff
+      STR_APOC_BAY: "Apothecarion"
+      MED: "Apothecarion"
+      STR_FIRST_AID_KIT: "First Aid Kit"
+      STR_MEDI_KIT: "Mk7 Apothecary Armor"
+      STR_TRAINFACILITYR: "Chapter Training"
+
+      STR_PROMOTE_TO_MARINE: "Promote to Marine"
+      STR_PROMOTION_MARINE: "Space Marine Transformation"
+
+      STR_FLAMER_TECH: "Flamer Requisition"
+      STR_ROCKET_LAUNCHER_TECH: "Missile Launcher Requisition"
+      STR_HEAVY_BOLTER_TECH: "Heavy Bolter Requisition"
+      STR_POWERFIST_TECH: "Powerfist Requisition"
+      STR_CHAINSWORD_TECH: "Chainsword Requisition"
+      STR_SNIPER_RIFLE_TECH: "Sniper Rifle Requisition"
+
+#Crafts
+      STR_BIKE_TECH: "Assault Bike"
+      STR_DROPPODS_REQ: "Drop Pods Requisition"
+
+
+#T2
+      STR_MELTA_WEAPONS: "Melta Weapons"
+      STR_MELTA_TECHNOLOGY: "Melta Technology"
+      STR_PLASMA_WEAPONS: "Plasma Weapons"
+      STR_PLASMA_TECHNOLOGY: "Plasma Technology"
+
+      STR_GRAVITON_WEAPONS: "Graviton Weapons"
+#Non-Lethal Grav-Gun
+      STR_NONLETHAL_GRAVGUN: "Non-Lethal Graviton Gun"
+      STR_NONLETHAL_GRAVROUND: "Non-Lethal Graviton Gun Round"
+
+#Rename Techmarine requisitions.
+      STR_TEC_BAYR: "Cult of The Machine"
+#Pre-requirement for decoder.
+      STR_ENEMY_ENCRYPTION: "Encryption Algorithm"
+#Craft mulit-melta
+      STR_FUSION_BALL_LAUNCHER: "Craft Multi-Melta"
+
+#Craft Plasma Cannon Ammo
+      STR_PLASMA_BEAM_UC: "CRAFT PLASMA CANNON"
+      STR_PLASMA_BEAM: "Craft Plasma Cannon"
+      STR_PLASMA_BEAM_AMMO: "Craft Plasma Cannon Charge"
+
+
+#T2 Armors
+      STR_VETERAN_ARMORS: "Veteran Armors"
+      STR_ZEAL_BUFF: "Zeal" #Chaplain Armor Buff
+
+      STR_DEV_VETERAN_ARMOR_UC: "Mk7 Veteran Devastator Armor"
+
+#New type of soldier and ranks
+      STR_PROMOTION_VETERAN_MARINE: "Promotion to Veteran Marine" #Research
+      STR_PROMOTE_TO_VETERAN_MARINE: "Promote to Veteran Marine" #Soldier menu
+
+      STR_VETERAN_SOLDIER: "Veteran Marine"
+
+      STR_SM_VETERAN_RANK_0: "Veteran Marine"
+      STR_SM_VETERAN_RANK_1: "Veteran Marine"
+      STR_SM_VETERAN_RANK_2: "Veteran Marine"
+      STR_SM_VETERAN_RANK_3: "Veteran Marine"
+      STR_SM_VETERAN_RANK_4: "Veteran Marine"
+
+
+#Dreadnought Stuff
+
+      STR_DREADNOUGHT_TECH: "Dreadhought Armor"
+
+      STR_DREAD_MELEE_WEAPON: "Dreadhought Bolter Fist"
+      AUX_DREAD_FLAMER: "Dreadhought Flamer Fist"
+
+
+
+      DREAD_ARMOR_UC: "Dreadnought/Flamer"
+      STR_DREAD1_ARMOR: "Dreadnought/Flamer"
+
+      DREAD_ARMOR2_UC: "Dreadnought/Plasma Cannon"
+      STR_DREAD2_ARMOR: "Dreadnought/Plasma Cannon"
+
+      DREAD_ARMOR3_UC: "Dreadnought/Missile Launcher"
+      STR_DREAD3_ARMOR: "Dreadnought/Missile Launcher"
+
+      DREAD_ARMOR4_UC: "Dreadnought/Lascannon"
+      STR_DREAD4_ARMOR: "Dreadnought/Lascannon"
+
+      DREAD_ARMOR5_UC: "Dreadnought/Assault Cannon"
+      STR_DREAD5_ARMOR: "Dreadnought/Assault Cannon"
+
+
+#Combi-Plasma. Test.
+      STR_COMBIPLASMA: "Combi-Plasma"
+      STR_MC_COMBIPLASMA: "Master Crafted Combi-Plasma"
+      STR_BOLT_SNAP_SHOT: "Snap Shot"
+      STR_BOLT_AUTO_SHOT: "Auto Shot"
+      STR_PLASMA_SNAP_SHOT: "Plasma Shot"
+
+#Heavy Plasma rename
+      STR_HEAVY_PLASMA_TERRAN: "Plasma Cannon"
+      STR_HEAVY_PLASMA_MC: "Master Crafted Plasma Cannon"
+      STR_HEAVY_PLASMA: "Chaos Plasma Cannon"
+
+##T3##
+      STR_INVESTIGATION: "Investigation"
+
+#Librarian stuff
+      STR_LIBRARIAN_ARMOR: "MK7 Librarian Armor"
+      LIBRARIAN_STAFF: "Librarian Staff"
+      STR_SMITE_SPELL: "Smite"
+      STR_FORCE_DOME: "Force Dome"
+
+##SPELLBOOKS###
+      STR_TOME_OF_FEAR: "Tome of Fear"
+      STR_TOME_OF_WEAKNESS: "Tome of Weakness"
+      STR_WEAKNESS_SPELL: "Weakness"
+
+### T3 Armor (TERMINATORS) ###
+      STR_CHAPTER_ARMORY:  "Chapter Armory"
+
+      STR_TERMINATOR_APOTHECARY_UC: "Terminator Apothecary Armor"
+      STR_TERMINATOR_APOTHECARY: "Terminator Apothecary Armor"
+      STR_TERMINATOR_APOTHECARY_CORPSE: "Terminator Apothecary Corpse"
+
+      STR_TERMINATOR_CHAPLAIN_UC: "Terminator Chaplain Armor"
+      STR_TERMINATOR_CHAPLAIN: "Terminator Chaplain Armor"
+      STR_TERMINATOR_CHAPLAIN_CORPSE: "Terminator Chaplain Corpse"
+
+      STR_TERMINATOR_LIBRARIAN_UC: "Terminator Librarian Armor"
+      STR_TERMINATOR_LIBRARIAN: "Terminator Librarian Armor"
+      STR_TERMINATOR_LIBRARIAN_CORPSE: "Terminator Librarian Corpse"
+
+      STR_CAPTAIN_UC: "Terminator Captian Armor"
+      STR_CAPTAIN_SUIT: "Terminator Captian Armor"
+      STR_CAPTAIN_CORPSE: "Terminator Captian Corpse"
+
+# T3 Weapons #
+      STR_CHAPTER_SPECIAL_WEAPONS: "Chapter Special Weapons"
+      STR_LIGHTNING_CLAWS: "Lightning Claws"
+      STR_POWER_DAGGER: "Power Dagger"
+
+
+      STR_HB_CLIP_EX: "Storm Bolter Clip EX"
+      STR_HB_CLIP_AP: "Storm Bolter Clip AP"
+      STR_HB_BELT: "Storm Bolter Ammo Belt"
+
+      STR_ASSCANNON_UC: "CRAFT ASSAULT CANNON"
+      STR_ASSCANNON: "Craft Assault Cannon"
+
+################################
+### Imperial Guard Tech Tree ###
+################################
+##T1##
+
+#New Chainsword for IG
+      STR_IG_CHAINSWORD: "Officer's Chainsword"
+
+#Missile Launcher for Imparial Guard
+      STR_IG_ROCKET_LAUNCHER: "Guard Missile Launcher"
+
+#Green Ammo containers for heavy bolter
+      STR_AC_AP_AMMO_GUARD: "AP Case"
+      STR_AC_HE_AMMO_GUARD: "HE Case"
+      STR_AC_I_AMMO_GUARD: "I Case"
+      STR_AC_MC_AMMO_GUARD: "Master Crafted Heavy Bolter Ammo"
+
+#Armor and medicine
+      STR_CARAPACE_ARMOR_TECH: "Carapace Armor Requisition"
+      STR_MEDICINE_TECH: "Military medicine"
+      STR_HOSPITAL: "Hospital"
+      STR_FLAK_MEDIC_TECH: "Flak Armor/Medic"
+      STR_CARAPACE_MEDIC_TECH: "Carapace Armor/Medic"
+      STR_OGRYN_CARAPACE_TECH: "Ogryn Carapace Armor"
+
+#Heavy Weapons research
+      STR_GUARD_HEAVY_WEAPONS: "Guard Heavy Weapons"
+      STR_GUARD_GRENADE_LAUNCHER_TECH: "Grenade Launcher Requisition"
+
+#Sentinel
+      STR_SENTINEL_LASCANNON: "Sentinel/Lascannon"
+      STR_SENTINEL_MISSILE: "Sentinel/Missile"
+
+#Guard Laser weapons
+      STR_LONG_LAS_TECH: "Long-Las Requisition"
+      STR_MOUNTED_LASCANNON_TECH: "Mounted Lascannon"
+
+#T1 Guard Transports
+      STR_CHIMERA_TECH: "Chimera APC"
+      STR_VALKYRIE_DROP_TECH: "Valkyrie Drop Transport"
+
+##T2##
+#Crafts
+      STR_TAUROX_REQUISITION: "Taurox APC"
+      STR_TAUROS_REQUISITION: "Tauros Light Vehicle"
+      STR_MARAUDER_REQUISITION: "Marauder Requisition"
+
+#Mechanicus Bay
+      STR_MECH_BAY: "Mechanicus Bay"
+#Enginseer stuff
+      STR_ENGINSEER: "Enginseer"
+      STR_ENGINSEER_REQUISITION: "Enginseer Requisition"
+      STR_ENGINSEER_CORPSE: "Enginseer Corpse"
+      STR_ENGINSEER_ARMOR_UC: "Enginseer Robes"
+
+      STR_OMNISSIAN_AXE: "Omnissian Axe"
+
+
+#Hellgun and Volleygun stuff
+      STR_HELLGUN_ARMOR: "Hellgun equipment"
+      STR_VOLLEYGUN_ARMOR: "Volley Gun equipment"
+
+##T3##
+#Craft
+      STR_GORGON_TECH: "Gorgon Requisition"
+
+#Sororitas
+      STR_SORORITAS_REQUISITION: "Adeptas Sororitas Requisition"
+
+#Mounted Autocannon
+      STR_MOUNTED_AUTOCANNON_TECH: "Mounted Autocannon"
+
+      STR_VALKYRIE_DROP_TECH: "Valkyrie Drop Transport"
+
+#Regiment Officers facility
+      STR_HEADQUARTERS: "Headquarters"
+
+
+#### CODEX #####
+      STR_IG_ROCKET_LAUNCHER_UFOPEDIA: "Some Text for testing purposes."

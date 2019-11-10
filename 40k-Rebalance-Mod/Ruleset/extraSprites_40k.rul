@@ -1,0 +1,731 @@
+extraSprites:
+#SPECIAL ICONS
+  - type: SPICONS.DAT
+    files:
+      201: Resources/SPICONS/SPICON_LEADERSHIP.png
+      202: Resources/SPICONS/SPICON_INSPIRE.png
+      203: Resources/SPICONS/SPICON_ZEAL.png
+      204: Resources/SPICONS/SPICON_CHAIN_MELEE.png
+      205: Resources/SPICONS/SPICON_SHIELD.png
+
+
+  - type: SMOKE.PCK
+    width: 320
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+#ANIMATIONS
+
+      100: Resources/Animations/SM_TU_Buff_Hit.gif #TU BUFF (10 frames)
+
+      111: Resources/Animations/GravGun_Hit.gif #GRAV GUN (10 frames)
+      121: Resources/Animations/SM_Morale_Buff_Hit.gif #MORALE BUFF (10 frames)
+      131: Resources/Animations/Lightning_Hit.png #LIGHTNING STRIKE (10 frames)
+      141: Resources/Animations/Shield_Buff_Hit.gif #Shield Buff (10 frames)
+
+#RANKS
+      300: Resources/Ranks/Enginseer_rankBattleSprite.png #Enginseer rank (1 frame)
+
+
+#AOE EFFECTS (EXPLOSIONS)
+  - type: X1.PCK                         
+    width: 1024
+    height: 448
+    subX: 128
+    subY: 64
+    files:
+
+      88: Resources/Sprites/XFIRE.png
+      96: Resources/Sprites/XSOUND.png
+      104: Resources/Sprites/XSmoke.png
+      184: Resources/Sprites/184EX.png
+
+#BIG SPRITES (INVENTORY SPRITES)
+  - type: BIGOBS.PCK
+    files:
+#ARMORS (100 - 200)
+      100: Resources/Armor/SM/ULTRAMARINES/Mk7_Armor/Mk7_Armor_Corpse_Inv.png
+      101: Resources/Armor/SM/ULTRAMARINES/Mk7_Sergeant/Mk7_Sergeant_Corpse_Inv.png
+      102: Resources/Armor/SM/ULTRAMARINES/Mk7_Apothecary/Mk7_Apothecary_Corpse_Inv.png
+      103: Resources/Armor/SM/ULTRAMARINES/Mk7_Techmarine/Mk7_Techmarine_Corpse_Inv.png
+      104: Resources/Armor/SM/ULTRAMARINES/Mk7_Honor_Guard/Mk7_HonorGuard_Corpse_Inv.png
+      105: Resources/Armor/SM/ULTRAMARINES/Mk7_Chaplain/Mk7_Chaplain_Corpse_Inv.png
+      106: Resources/Armor/SM/ULTRAMARINES/Mk7_Librarian/Mk7_Librarian_Corpse_Inv.png
+      107: Resources/Armor/SM/ULTRAMARINES/Terminator_Armor/Term_Armor_Corpse_Inv.png
+      108: Resources/Armor/SM/ULTRAMARINES/Terminator_Apothecary/Term_Apothecary_Corpse_Inv.png
+      109: Resources/Armor/SM/ULTRAMARINES/Terminator_Chaplain/Term_Chaplain_Corpse_Inv.png
+      110: Resources/Armor/SM/ULTRAMARINES/Terminator_Sergeant/Term_Sergeant_Corpse_Inv.png
+      111: Resources/Armor/SM/ULTRAMARINES/Terminator_Librarian/Term_Librarian_Corpse_Inv.png
+      112: Resources/Armor/SM/ULTRAMARINES/Terminator_Captain/Term_Captain_Corpse_Inv.png
+
+
+      150: Resources/Armor/IG/Enginseer/Enginseer_Corpse_Inv.gif
+
+#ITEMS (201 - ?)
+      222: Resources/Items/Common/Chainsword/ChainSword_BigSprite.gif
+      223: Resources/Items/Common/Chainsword/MC_ChainSword_BigSprite.gif
+      224: Resources/Items/SM/Combi_Plasma/Combi_Plasma_Inv.gif
+      225: Resources/Items/SM/Combi_Plasma/MC_Combi_Plasma_Inv.gif
+      226: Resources/Items/IG/IG_Missile_Launcher/IG_MLauncher_Inv.gif
+      227: Resources/Items/IG/IG_Missile_Launcher/IG_MLauncher_Inv_deployed.gif
+      228: Resources/Items/IG/IG_Heavy_Bolter/IG_HeavyBolter_AP_Case_Inv.gif
+      229: Resources/Items/IG/IG_Heavy_Bolter/IG_HeavyBolter_EX_Case_Inv.gif
+      230: Resources/Items/IG/IG_Heavy_Bolter/IG_HeavyBolter_I_Case_Inv.gif
+      231: Resources/Items/Common/Multimelta/Multimelta_Inv.gif
+      232: Resources/Items/Common/Multimelta/Multimelta_Charge_Inv.gif
+      233: Resources/Items/Common/Omnissian_Axe/Omnissian_Axe_Inv.png
+      234: Resources/Items/IG/Vox_Caster/IG_Vox_Caster_Inv.png
+      235: Resources/Items/Enemy/Ork_Turrets/Ork_Cannon_Inv.gif
+      236: Resources/Items/Enemy/Ork_Turrets/Ork_Turret_Inv.gif
+      237: Resources/Items/Enemy/Chaos_Sentinel/C_Sentinel_Launcher_Inv.png
+      238: Resources/Items/SM/First_Aid_Kit/FirstAidKit_Inv.GIF
+      239: Resources/Items/Common/Heavy_Plasma/Heavy_Plasma_Inv.gif
+      240: Resources/Items/Common/NonLethal_Grav_Round/NonLethal_Grav_Round_Inv.gif
+      241: Resources/Items/Common/Melta_Bomb/Melta_Bomb_Inv.gif
+      242: Resources/Items/SM/Crozius_Arcanum/Crozius_Arcanum_Inv.gif
+      243: Resources/Items/SM/Narthecium/Narthecium_Inv.gif
+      244: Resources/Items/SM/Stormraven_Turret_Lascannon/Stormraven_LeftTurret_Inv.png
+      245: Resources/Items/SM/Stormraven_Turret_Lascannon/Stormraven_RightTurret_Inv.png
+      246: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Inv.gif
+      247: Resources/Items/SM/Librarian_Staff/Librarian_Staff_Inv.png
+      248: Resources/Items/Common/Spellbooks/TomeOfVision_Inv.gif
+      249: Resources/Items/Common/Spellbooks/TomeOfMind_Inv.gif
+      250: Resources/Items/Common/Spellbooks/TomeOfSmoke_Inv.gif
+      251: Resources/Items/Common/Spellbooks/TomeOfWeakness_Inv.gif
+      252: Resources/Items/Common/Spellbooks/TomeOfFear_Inv.gif
+      253: Resources/Items/SM/Lightning_Claws/Lightning_Claws_Inv.png
+      254: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_Inv.gif
+      255: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_AP_Clip_Inv.gif
+      256: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_EX_Clip_Inv.gif
+      257: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_I_Clip_Inv.gif
+      258: Resources/Items/SM/SM_Lascannon/Lascannon_Astartes_Inv.gif
+      259: Resources/Items/SM/Power_Fist/Power_Fist_Inv.gif
+      260: Resources/Items/SM/Power_Sword/Power_Sword_Inv.gif
+      261: Resources/Items/Enemy/Chaos_Power_Sword/Chaos_Power_Sword_Inv.gif
+      262: Resources/Items/SM/Power_Dagger/Power_Dagger_Inv.gif
+      263: Resources/Items/Enemy/Chaos_Power_Dagger/Chaos_Power_Dagger_Inv.gif
+      264: Resources/Items/SM/SM_Heavy_Bolter/SM_HeavyBolter_Inv.gif
+      265: Resources/Items/SM/SM_Heavy_Bolter/SM_HeavyBolter_AP_Case_Inv.gif
+      266: Resources/Items/SM/SM_Heavy_Bolter/SM_HeavyBolter_EX_Case_Inv.gif
+      267: Resources/Items/SM/SM_Heavy_Bolter/SM_HeavyBolter_I_Case_Inv.gif
+      268: Resources/Items/SM/SM_Missile_Launcher/SM_MLauncher_Inv.gif
+      269: Resources/Items/SM/Assault_Cannon/Assault_Cannon_Inv.gif
+      270: Resources/Items/SM/Stormbolter/Stormbolter_Inv.gif
+      271: Resources/Items/SM/Stormbolter/Stormbolter_Clip_Inv.gif
+      272: Resources/Items/SM/Stormbolter/Stormbolter_Clip_EX_Inv.gif
+      273: Resources/Items/SM/Stormbolter/Stormbolter_Clip_AP_Inv.gif
+      274: Resources/Items/Enemy/Chaos_Stormbolter/Chaos_Stormbolter_Inv.gif
+      275: Resources/Items/Enemy/Chaos_Boltpistol/Chaos_Boltpistol_Inv.gif
+      276: Resources/Items/SM/Stormbolter/Stormbolter_Belt_Inv.png
+      277: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Ammo_Inv.gif
+      278: Resources/Items/Common/Frag_Grenade/Frag_Granade_Inv.gif
+      279: Resources/Items/Common/Krak_Grenade/Krak_Granade_Inv.gif
+      280: Resources/Items/Common/Smoke_Grenade/Smoke_Granade_Inv.gif
+      281: Resources/Items/Common/Proximity_Grenade/Proximity_Grenade_Inv.gif
+      282: Resources/Items/SM/Dreadnought_Weapons/Dreadnought_Fist_Inv.png
+      283: Resources/Items/SM/Dreadnought_Weapons/Dreadnought_Flamer_Inv.png
+      284: Resources/Items/SM/Dreadnought_Weapons/Dreadnought_Plasma_Inv.png
+      285: Resources/Items/SM/Dreadnought_Weapons/Dreadnought_Missile_Inv.png
+      286: Resources/Items/SM/Dreadnought_Weapons/Dreadnought_Lascannon_Inv.png
+      287: Resources/Items/SM/Dreadnought_Weapons/Dreadnought_Assault_Cannon_Inv.png
+      288: Resources/Items/Enemy/Chaos_Dreadnought_Weapons/Chaos_Dreadnought_Fist_Inv.png
+      289: Resources/Items/Enemy/Chaos_Dreadnought_Weapons/Chaos_Dreadnought_Missile_Inv.png
+      290: Resources/Items/Enemy/Chaos_Dreadnought_Weapons/Chaos_Dreadnought_Plasma_Inv.png
+
+#FLOOR OBJECTS
+  - type: FLOOROB.PCK
+    files:
+#ARMORS (100 - 200)
+      100: Resources/Armor/SM/ULTRAMARINES/Mk7_Armor/Mk7_Armor_Corpse_Floor.png
+      101: Resources/Armor/SM/ULTRAMARINES/Mk7_Sergeant/Mk7_Sergeant_Corpse_Floor.png
+      102: Resources/Armor/SM/ULTRAMARINES/Mk7_Apothecary/Mk7_Apothecary_Corpse_Floor.png
+      103: Resources/Armor/SM/ULTRAMARINES/Mk7_Bike/Mk7_Bike_Corpse1_Floor.png
+      104: Resources/Armor/SM/ULTRAMARINES/Mk7_Bike/Mk7_Bike_Corpse2_Floor.png
+      105: Resources/Armor/SM/ULTRAMARINES/Mk7_Bike/Mk7_Bike_Corpse3_Floor.png
+      106: Resources/Armor/SM/ULTRAMARINES/Mk7_Bike/Mk7_Bike_Corpse4_Floor.png
+      107: Resources/Armor/SM/ULTRAMARINES/Mk7_Techmarine/Mk7_Techmarine_Corpse_Floor.png
+      108: Resources/Armor/SM/ULTRAMARINES/Mk7_Honor_Guard/Mk7_HonorGuard_Corpse_Floor.png
+      109: Resources/Armor/SM/ULTRAMARINES/Mk7_Chaplain/Mk7_Chaplain_Corpse_Floor.png
+      110: Resources/Armor/SM/ULTRAMARINES/Mk7_Librarian/Mk7_Librarian_Corpse_Floor.png
+      111: Resources/Armor/SM/ULTRAMARINES/Terminator_Armor/Term_Armor_Corpse_Floor.png
+      112: Resources/Armor/SM/ULTRAMARINES/Terminator_Apothecary/Term_Apothecary_Corpse_Floor.png
+      113: Resources/Armor/SM/ULTRAMARINES/Terminator_Chaplain/Term_Chaplain_Corpse_Floor.png
+      114: Resources/Armor/SM/ULTRAMARINES/Terminator_Sergeant/Term_Sergeant_Corpse_Floor.png
+      115: Resources/Armor/SM/ULTRAMARINES/Terminator_Librarian/Term_Librarian_Corpse_Floor.png
+      116: Resources/Armor/SM/ULTRAMARINES/Terminator_Captain/Term_Captain_Corpse_Floor.png
+
+      150: Resources/Armor/IG/Enginseer/Enginseer_Corpse_Floor.gif
+
+#ITEMS (201 - ?)
+      221: Resources/Items/Common/Chainsword/MC_ChainSword_FloorSprite.gif
+      222: Resources/Items/Common/Chainsword/ChainSword_FloorSprite.gif
+      223: Resources/Items/Common/Heavy_Plasma/Heavy_Plasma_Floor.gif
+      224: Resources/Items/SM/Combi_Plasma/Combi_Plasma_Floor.gif
+      225: Resources/Items/SM/Combi_Plasma/MC_Combi_Plasma_Floor.gif
+      226: Resources/Items/IG/IG_Missile_Launcher/IG_MLauncher_Floor.gif
+      227: Resources/Items/SM/First_Aid_Kit/FirstAidKit_Floor.GIF
+      228: Resources/Items/IG/IG_Heavy_Bolter/IG_HeavyBolter_Case_Floor.gif
+      229: Resources/Items/Common/Omnissian_Axe/Omnissian_Axe_Floor.png
+      230: Resources/Items/Common/NonLethal_Grav_Round/NonLethal_Grav_Round_Floor.gif
+      231: Resources/Items/Common/Melta_Bomb/Melta_Bomb_Floor.GIF
+      232: Resources/Items/SM/Crozius_Arcanum/Crozius_Arcanum_Floor.gif
+      233: Resources/Items/SM/Librarian_Staff/Librarian_Staf_Floor.gif
+      234: Resources/Items/Common/Spellbooks/Spellbook_Floor.gif
+      235: Resources/Items/SM/Lightning_Claws/Lightning_Claws_Floor.gif
+      236: Resources/Items/Common/Multimelta/Multimelta_Floor.gif
+      237: Resources/Items/Common/Multimelta/Multimelta_Charge_Floor.gif
+      238: Resources/Items/Common/Heavy_Plasma/Heavy_Plasma_Charge_Floor.gif
+      239: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Floor.gif
+      240: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_Floor.gif
+      241: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_Clip_Floor.gif
+      242: Resources/Items/SM/SM_Lascannon/Lascannon_Astartes_Floor.gif
+      243: Resources/Items/SM/Power_Fist/Power_Fist_Floor.gif
+      244: Resources/Items/SM/Power_Sword/Power_Sword_Floor.gif
+      245: Resources/Items/Enemy/Chaos_Power_Sword/Chaos_Power_Sword_Floor.gif
+      246: Resources/Items/SM/Power_Dagger/Power_Dagger_Floor.gif
+      247: Resources/Items/SM/SM_Heavy_Bolter/SM_HeavyBolter_Floor.gif
+      248: Resources/Items/SM/SM_Heavy_Bolter/SM_HeavyBolter_Case_Floor.gif
+      249: Resources/Items/SM/SM_Missile_Launcher/SM_MLauncher_Floor.gif
+      250: Resources/Items/SM/Assault_Cannon/Assault_Cannon_Floor.gif
+      251: Resources/Items/SM/Stormbolter/Stormbolter_Floor.gif
+      252: Resources/Items/SM/Stormbolter/Stormbolter_Clip_Floor.gif
+      253: Resources/Items/Enemy/Chaos_Boltpistol/Chaos_Boltpistol_Floor.gif
+      254: Resources/Items/SM/Stormbolter/Stormbolter_Belt_Floor.gif
+      255: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Ammo_Floor.gif
+      256: Resources/Items/Common/Krak_Grenade/Krak_Granade_Floor.png
+      257: Resources/Items/Common/Proximity_Grenade/Proximity_Grenade_Floor.gif
+
+
+#HAND OBJECTS (contains 8 images)
+  - type: HANDOB.PCK
+    height: 40
+    width: 256
+    subX: 32
+    subY: 40
+    files:
+      240: Resources/Items/Common/Chainsword/MC_ChainSword_HandSprite.png
+      248: Resources/Items/Common/Chainsword/ChainSword_HandSprite.png
+      256: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Hand.png
+      264: Resources/Items/SM/Combi_Plasma/Combi_Plasma_Hand.png
+      272: Resources/Items/SM/Combi_Plasma/MC_Combi_Plasma_Hand.png
+      280: Resources/Items/IG/IG_Missile_Launcher/IG_MLauncher_Hand.png
+      288: Resources/Items/IG/IG_Missile_Launcher/IG_MLauncher_Hand_deployed.png
+      296: Resources/Items/Common/Omnissian_Axe/Omnissian_Axe_Hand.png
+      304: Resources/Items/SM/First_Aid_Kit/FirstAidKit_Hand.png
+      312: Resources/Items/IG/IG_Heavy_Bolter/IG_HeavyBolter_Case_Hand.gif
+      320: Resources/Items/Common/NonLethal_Grav_Round/NonLethal_Grav_Round_Hand.png
+      328: Resources/Items/Common/Melta_Bomb/Melta_Bomb_Hand.png
+      336: Resources/Items/SM/Crozius_Arcanum/Crozius_Arcanum_Hand.png
+      344: Resources/Items/Common/Multimelta/Multimelta_Hand.png
+      352: Resources/Items/Common/Multimelta/Multimelta_Charge_Hand.gif
+      360: Resources/Items/SM/Librarian_Staff/Librarian_Staff_Hand.png
+      368: Resources/Items/Common/Spellbooks/Spellbook_Hand.gif
+      376: Resources/Items/SM/Lightning_Claws/Lightning_Claws_Hand.png
+      384: Resources/Items/Common/Heavy_Plasma/Heavy_Plasma_Hand.png
+      392: Resources/Items/Common/Heavy_Plasma/Heavy_Plasma_Charge_Hand.gif
+      400: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_Hand.png
+      408: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_Clip_Hand.gif
+      416: Resources/Items/SM/SM_Lascannon/Lascannon_Astartes_Hand.png
+      424: Resources/Items/SM/Power_Fist/Power_Fist_Hand.png
+      432: Resources/Items/SM/Power_Sword/Power_Sword_Hand.png
+      440: Resources/Items/Enemy/Chaos_Power_Sword/Chaos_Power_Sword_Hand.png
+      448: Resources/Items/SM/Power_Dagger/Power_Dagger_Hand.png
+      456: Resources/Items/SM/SM_Heavy_Bolter/SM_HeavyBolter_Hand.png
+      464: Resources/Items/SM/SM_Heavy_Bolter/SM_HeavyBolter_Case_Hand.png
+      472: Resources/Items/SM/SM_Missile_Launcher/SM_MLauncher_Hand.png
+      480: Resources/Items/SM/Assault_Cannon/Assault_Cannon_Hand.png
+      488: Resources/Items/SM/Stormbolter/Stormbolter_Hand.png
+      496: Resources/Items/SM/Stormbolter/Stormbolter_Clip_Hand.gif
+      504: Resources/Items/Enemy/Chaos_Boltpistol/Chaos_Boltpistol_Hand.png
+      512: Resources/Items/SM/Stormbolter/Stormbolter_Belt_Hand.gif
+      520: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Ammo_Hand.png
+      528: Resources/Items/Common/Frag_Grenade/Frag_Granade_Hand.png
+      536: Resources/Items/Common/Krak_Grenade/Krak_Granade_Hand.png
+      544: Resources/Items/Common/Proximity_Grenade/Proximity_Grenade_Hand.png
+
+#PROJECTILES ( The corresponding file id is 35*[bulletSprite] )
+  - type: Projectiles                         
+    width: 105
+    height: 3
+    subX: 3
+    subY: 3
+    files:
+      385: Resources/Sprites/terranplasma_bullet.gif #11
+      420: Resources/Sprites/LAS.gif   #12
+      490: Resources/Sprites/GRAV.gif  #14
+      595: Resources/Sprites/17heavyplasma.gif  #17
+
+#BASEBITS
+  - type: BASEBITS.PCK
+    files:
+#RANKS
+
+      800: Resources/Ranks/Enginseer_rankSprite.png
+#BASE BITS
+      900: Resources/Basebits/basebits_hospital.png
+      901: Resources/Basebits/basebits_HQ.png
+      903: Resources/Basebits/basebits_Forge1.gif
+      904: Resources/Basebits/basebits_Forge2.gif
+      905: Resources/Basebits/basebits_Forge3.gif
+      906: Resources/Basebits/basebits_Forge4.gif
+      907: Resources/Basebits/basebits_Forge_shape1.gif
+      908: Resources/Basebits/basebits_Forge_shape2.gif
+      909: Resources/Basebits/basebits_Forge_shape3.gif
+      910: Resources/Basebits/basebits_Forge_shape4.gif
+
+#HIT ANIMATIONS
+  - type: HIT.PCK 
+    width: 128
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      28: Resources/Sprites/MeleeShock.gif
+      44: Resources/Sprites/Meleechain.gif
+      48: Resources/Sprites/MeleeWhite.gif
+
+
+
+#Enginseer tinyrank
+  - type: TinyRanks
+    width: 42
+    height: 28
+    subX: 7
+    subY: 7
+    files:
+      100: Resources/Ranks/Enginseer_rankTinySprite.png
+
+#Custom armor previews
+  - type: CustomArmorPreviews
+    width: 360
+    height: 60
+    subX: 12
+    subY: 20
+    files:
+      0: Resources/UnitUI/SM_unit_preview.png   #   0 -89
+      100: Resources/UnitUI/IG_unit_preview.png # 100- 89
+
+#ARMOR BATTLESCAPE SPRITES
+
+#### SM ####
+
+#Mk7 Power Armor sprites
+  - type: MK7_ARMOR.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Mk7_Armor/Mk7_Armor_Battlescape.png
+
+#Mk7 Assault Equipment sprites
+  - type: MK7_ASSAULT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Mk7_Assault/Mk7_Assault_Battlescape.png
+
+#Mk7 Devastator Equipment sprites
+  - type: MK7_DEVASTATOR.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Mk7_Devastator/Mk7_Devastator_Battlescape.png
+
+#Mk7 Sergeant Armor sprites
+  - type: MK7_SERGEANT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Mk7_Sergeant/Mk7_Sergeant_Battlescape.png
+
+#Mk7 Apothecary Armor sprites
+  - type: MK7_APOTHECARY.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Mk7_Apothecary/Mk7_Apothecary_Battlescape.png
+
+#Mk7 Assault Bike sprites
+  - type: MK7_BIKE.PCK
+    width: 256
+    height: 840
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Mk7_Bike/Mk7_Bike_Battlescape.png
+
+#Mk7 Techmarine Armor sprites
+  - type: MK7_TECHMARINE.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Mk7_Techmarine/Mk7_Techmarine_Battlescape.png
+
+#Mk7 Honor Guard Armor sprites
+  - type: MK7_HONORGUARD.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Mk7_Honor_Guard/Mk7_HonorGuard_Battlescape.png
+
+#Mk7 Vanguard Armor sprites
+  - type: MK7_VANGUARD.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Mk7_Vanguard/Mk7_Vanguard_Battlescape.png
+
+#Mk7 Veteran Devastator Armor sprites
+  - type: MK7_VETERAN_DEV.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Mk7_Veteran_Devastator/Mk7_VeteranDevastator_Battlescape.png
+
+#Mk7 Veteran Sergeant Armor sprites
+  - type: MK7_VETERAN_SERGEANT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Mk7_Veteran_Sergeant/Mk7_VeteranSergeant_Battlescape.png
+
+#Mk7 Chaplain Armor sprites
+  - type: MK7_CHAPLAIN.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Mk7_Chaplain/Mk7_Chaplain_Battlescape.png
+
+#Mk7 Librarian Armor sprites
+  - type: MK7_LIBRARIAN.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Mk7_Librarian/Mk7_Librarian_Battlescape.png
+
+#Terminator Armor sprites
+  - type: TERM_ARMOR.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Terminator_Armor/Term_Armor_Battlescape.png
+
+#Terminator Armor sprites
+  - type: TERM_ASSAULT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Terminator_Assault/Term_Assault_Battlescape.png
+
+#Terminator Apothecary sprites
+  - type: TERM_APOTHECARY.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Terminator_Apothecary/Term_Apothecary_Battlescape.png
+
+#Terminator Chaplain sprites
+  - type: TERM_CHAPLAIN.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Terminator_Chaplain/Term_Chaplain_Battlescape.png
+
+#Terminator Chaplain sprites
+  - type: TERM_SERGEANT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Terminator_Sergeant/Term_Sergeant_Battlescape.png
+
+#Terminator Librarian sprites
+  - type: TERM_LIBRARIAN.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Terminator_Librarian/Term_Librarian_Battlescape.png
+
+#Terminator Captain sprites
+  - type: TERM_CAPTAIN.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Terminator_Captain/Term_Captain_Battlescape.png
+
+#Stormraven Lascannon turret
+  - type: STORMRAVEN_LASCANNON.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Craft_Stormraven_Turret/Stormraven_Turret_Battlescape.png
+
+#Dreadnought/Flamer
+  - type: DREADNOUGHT_FLAMER.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Flamer/Dreadnought_Flamer_Battlescape.png
+
+#Dreadnought/Plasma Cannon
+  - type: DREADNOUGHT_PLASMA.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Plasma/Dreadnought_Plama_Battlescape.png
+
+#Dreadnought/Missile Launcher
+  - type: DREADNOUGHT_MISSILE.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Missile/Dreadnought_Missile_Battlescape.png
+
+#Dreadnought/Lascannon
+  - type: DREADNOUGHT_LASCANNON.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Lascannon/Dreadnought_Lascannon_Battlescape.png
+
+#Dreadnought/Assault Cannon
+  - type: DREADNOUGHT_ASSAULT_CANNON.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Assault_Cannon/Dreadnought_Assault_Cannon_Battlescape.png
+
+
+#### IG #####
+
+#Enginseer sprites
+  - type: ENGINSEER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/Enginseer/Enginseer_Armor_Battlescape.png
+
+#IG Officer Carapace with vox-caster
+  - type: CARAPACE_VOXCASTER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/IG_Officer/Officer_Carapace_Battlescape.png
+
+#IG Officer Flak Armor with vox-caster
+  - type: FLAK_VOXCASTER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/IG_Officer/Officer_Flak_Battlescape.png
+
+#ARMOR INVENTORY SPRITES
+
+#### SM #####
+
+#Mk7 Armor Inventory sprites
+  - typeSingle: MK7_ARMOR__1__MK7_ARMOR_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Armor/Mk7_Armor_Inv_Male.gif
+  - typeSingle: MK7_ARMOR__1__MK7_ARMOR_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Armor/Mk7_Armor_Inv_Female.gif
+
+#Mk7 Assault Equipment Inventory sprites
+  - typeSingle: MK7_ASSAULT__1__MK7_ASSAULT_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Assault/Mk7_Assault_Inv_Male.gif
+  - typeSingle: MK7_ASSAULT__1__MK7_ASSAULT_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Assault/Mk7_Assault_Inv_Female.gif
+
+#Mk7 Devastator Equipment Inventory sprites
+  - typeSingle: MK7_DEVASTATOR__1__MK7_DEVASTATOR_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Devastator/Mk7_Devastator_Inv_Male.gif
+  - typeSingle: MK7_DEVASTATOR__1__MK7_DEVASTATOR_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Devastator/Mk7_Devastator_Inv_Female.gif
+
+#Mk7 Sergeant Armor Inventory sprites
+  - typeSingle: MK7_SERGEANT__1__MK7_SERGEANT_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Sergeant/Mk7_Sergeant_Inv_Male.gif
+  - typeSingle: MK7_SERGEANT__1__MK7_SERGEANT_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Sergeant/Mk7_Sergeant_Inv_Female.gif
+
+#Mk7 Apothecary Armor Inventory sprites
+  - typeSingle: MK7_APOTHECARY__1__MK7_APOTHECARY_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Apothecary/Mk7_Apothecary_Inv_Male.gif
+  - typeSingle: MK7_APOTHECARY__1__MK7_APOTHECARY_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Apothecary/Mk7_Apothecary_Inv_Female.gif
+
+#Bike sprites
+  - typeSingle: MK7_BIKE__1__MK7_BIKE_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Bike/Mk7_Bike_Inv_Male.gif
+  - typeSingle: MK7_BIKE__1__MK7_BIKE_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Bike/Mk7_Bike_Inv_Female.gif
+
+#Mk7 Techmarine Armor Inventory sprites
+  - typeSingle: MK7_TECHMARINE__1__MK7_TECHMARINE_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Techmarine/Mk7_Techmarine_Inv_Male.gif
+  - typeSingle: MK7_TECHMARINE__1__MK7_TECHMARINE_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Techmarine/Mk7_Techmarine_Inv_Female.gif
+
+#Mk7 Honor Guard Armor Inventory sprites
+  - typeSingle: MK7_HONOR_GUARD__1__MK7_HONOR_GUARD_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Honor_Guard/Mk7_HonorGuard_Inv_Male.gif
+  - typeSingle: MK7_HONOR_GUARD__1__MK7_HONOR_GUARD_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Honor_Guard/Mk7_HonorGuard_Inv_Female.gif
+
+#Mk7 Vanguard Armor Inventory sprites
+  - typeSingle: MK7_VANGUARD__1__MK7_VANGUARD_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Vanguard/Mk7_Vanguard_Inv_Male.gif
+  - typeSingle: MK7_VANGUARD__1__MK7_VANGUARD_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Vanguard/Mk7_Vanguard_Inv_Female.gif
+
+#Mk7 Veteran Devastator Armor Inventory sprites
+  - typeSingle: MK7_VETERAN_DEVASTATOR__1__MK7_VETERAN_DEVASTATOR_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Veteran_Devastator/Mk7_VeteranDevastator_Inv_Male.gif
+  - typeSingle: MK7_VETERAN_DEVASTATOR__1__MK7_VETERAN_DEVASTATOR_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Veteran_Devastator/Mk7_VeteranDevastator_Inv_Female.gif
+
+#Mk7 Veteran Sergenat Armor Inventory sprites
+  - typeSingle: MK7_VETERAN_SERGEANT__1__MK7_VETERAN_SERGEANT_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Veteran_Sergeant/Mk7_VeteranSergeant_Inv_Male.gif
+  - typeSingle: MK7_VETERAN_SERGEANT__1__MK7_VETERAN_SERGEANT_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Veteran_Sergeant/Mk7_VeteranSergeant_Inv_Female.gif
+
+#Mk7 Chaplain Armor Inventory sprites
+  - typeSingle: MK7_CHAPLAIN__1__MK7_CHAPLAIN_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Chaplain/Mk7_Chaplain_Inv_Male.gif
+  - typeSingle: MK7_CHAPLAIN__1__MK7_CHAPLAIN_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Chaplain/Mk7_Chaplain_Inv_Female.gif
+
+#Mk7 Librarian Armor Inventory sprites
+  - typeSingle: MK7_LIBRARIAN__1__MK7_LIBRARIAN_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Librarian/Mk7_Librarian_Inv_Male.gif
+  - typeSingle: MK7_LIBRARIAN__1__MK7_LIBRARIAN_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Librarian/Mk7_Librarian_Inv_Female.gif
+
+#Terminator Armor Inventory sprites
+  - typeSingle: TERM_ARMOR__1__TERM_ARMOR_MF
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Armor/Term_Armor_Inv_MaleFemale.gif
+
+#Terminator Apothecary Inventory sprites
+  - typeSingle: TERM_APOTHECARY__1__TERM_APOTHECARY_MF
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Apothecary/Term_Apothecary_Inv_MaleFemale.gif
+
+#Terminator Chaplain Inventory sprites
+  - typeSingle: TERM_CHAPLAIN__1__TERM_CHAPLAIN_MF
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Chaplain/Term_Chaplain_Inv_MaleFemale.gif
+
+#Terminator Sergeant Inventory sprites
+  - typeSingle: TERM_SERGEANT__1__TERM_SERGEANT_MF
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Sergeant/Term_Sergeant_Inv_MaleFemale.gif
+
+#Terminator Librarian Inventory sprites
+  - typeSingle: TERM_LIBRARIAN__1__TERM_LIBRARIAN_MF
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Librarian/Term_Librarian_Inv_MaleFemale.gif
+
+#Terminator Captain Inventory sprites
+  - typeSingle: TERM_CAPTAIN__1__TERM_CAPTAIN_MF
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Captain/Term_Captain_Inv_MaleFemale.gif
+
+#Dreadnought/Flamer
+  - type: DREADNOUGHT_FLAMER.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Flamer/Dreadnought_Flamer_Inv.png
+
+#Dreadnought/Plasma Cannon
+  - type: DREADNOUGHT_PLASMA.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Plasma/Dreadnought_Plama_Inv.png
+
+#Dreadnought/Missile Launcher
+  - type: DREADNOUGHT_MISSILE.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Missile/Dreadnought_Missile_Inv.png
+
+#Dreadnought/Lascannon
+  - type: DREADNOUGHT_LASCANNON.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Lascannon/Dreadnought_Lascannon_Inv.png
+
+#Dreadnought/Assault Cannon
+  - type: DREADNOUGHT_ASSAULT_CANNON.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Assault_Cannon/Dreadnought_Assault_Cannon_Inv.png
+
+
+#### IG ####
+
+#Enginseer's inventory
+  - type: ENGINSEER_INV.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/IG/Enginseer/Enginseer_Armor_Inv.gif
+
+
+
+#### CODEX IMAGES #####
+  - type: CODEX_MK7_ARMOR.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Codex/Codex_Mk7_Armor.png
+

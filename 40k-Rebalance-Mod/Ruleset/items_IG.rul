@@ -1,0 +1,306 @@
+items:
+#Stubber
+
+#  - type: STR_STUB_GUN
+#    tags:
+#      ITEM_HAS_RANDOMIZED_SPRITES: 0
+
+#Missile launcher for Imperial Guard
+  - type: STR_IG_ROCKET_LAUNCHER #                       12100
+    requiresBuy:
+      - STR_ROCKET_LAUNCHER_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    categories: [STR_CAT_ROCKETL]
+    size: 0.4
+    dropoff: 5
+    costBuy: 14000
+    costSell: 3000
+    weight: 50
+    bigSprite: 226
+    floorSprite: 226
+    handSprite: 280
+    bulletSprite: 0
+    fireSound: 52
+    compatibleAmmo:
+      - STR_SMALL_ROCKET
+      - STR_LARGE_ROCKET
+      - STR_INCENDIARY_ROCKET
+
+    tuSnap: 0
+
+    tuAuto: 55
+    accuracyAuto: 45
+    confAuto:
+      shots: 1
+      name: STR_CUSTOM_SNAPSHOT
+
+    tuAimed: 85
+    accuracyAimed: 95
+
+    battleType: 1
+    kneelBonus: 150
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 60
+    listOrder: 12100
+    tags:
+      ITEM_HAS_BIPOD: 1
+
+
+###Green ammo containers for Guard Heavy Bolter
+#Armor Piercing
+  - type: STR_AC_AP_AMMO_GUARD #HEAVYBOLTER
+    categories: [STR_CAT_BOLTER]  
+    size: 0.1
+    requiresBuy:
+      - STR_HEAVY_BOLTER_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 1200
+    costSell: 800
+    weight: 20
+    bigSprite: 228
+    floorSprite: 228
+    handSprite: 312
+    hitSound: 708
+    hitAnimation: 26
+    damageAlter: #DA BOLTER
+      ToArmorPre: 0.05
+      ArmorEffectiveness: 0.9
+      ToArmor: 0.1
+      ToHealth: 1.0
+      ToStun: 0.5
+    explosionSpeed: 5
+    power: 70
+    damageType: 1
+    clipSize: 80
+    battleType: 2
+    armor: 30
+    invWidth: 2
+    invHeight: 2
+    autoShots: 5
+    listOrder: 12020
+
+#Explosive
+  - type: STR_AC_HE_AMMO_GUARD #HEAVYBOLTER                 12030
+    categories: [STR_CAT_BOLTER]
+    size: 0.1
+    requiresBuy:
+      - STR_HEAVY_BOLTER_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 1500
+    costSell: 1180
+    weight: 20
+    bigSprite: 229
+    floorSprite: 228
+    handSprite: 312
+    hitSound: 708
+    hitAnimation: 0
+    power: 50
+    damageType: 3
+    clipSize: 80
+    battleType: 2
+    armor: 30
+    invWidth: 2
+    invHeight: 2
+    autoShots: 5
+    listOrder: 12040
+
+#Incendiary
+  - type: STR_AC_I_AMMO_GUARD #HEAVYBOLTER                  12040
+    categories: [STR_CAT_BOLTER]
+    size: 0.1
+    requiresBuy:
+      - STR_HEAVY_BOLTER_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 1400
+    costSell: 1050
+    weight: 20
+    bigSprite: 230
+    floorSprite: 228
+    handSprite: 312
+    hitSound: 708
+    hitAnimation: 0
+    power: 40
+    damageType: 2
+    damageAlter:
+      RandomType: 2 #TFTD [50% - 150%]
+      ToHealth: 1.0
+      ToMorale: 0.5
+    blastRadius: 1
+    clipSize: 80
+    battleType: 2
+    armor: 30
+    invWidth: 2
+    invHeight: 2
+    autoShots: 5
+    listOrder: 12040
+
+#Guard Heavy bolter. Compatible to guard version on ammo cases.
+  - type: STR_HEAVY_BOLTER_GUARD
+    requiresBuy:
+      - STR_HEAVY_BOLTER_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    compatibleAmmo:
+      - STR_AC_AP_AMMO_GUARD
+      - STR_AC_HE_AMMO_GUARD
+      - STR_AC_I_AMMO_GUARD
+
+#Carapace Armor. Add requiresBuy
+  - type: STR_GUARD_ARMORH                 #20
+    requiresBuy:
+      - STR_CARAPACE_ARMOR_TECH
+    size: 0.4
+    listOrder: 6700
+    costBuy: 20000
+    costSell: 10000
+    transferTime: 10
+    weight: 10
+
+#Medic's flak armor
+  - type: STR_GUARD_ARMORS_MEDIC
+    requiresBuy:
+      - STR_FLAK_MEDIC_TECH
+    size: 0.2
+    costBuy: 15000
+    costSell: 7500
+    transferTime: 10
+    listOrder: 6660
+
+#Medic's carapace armor
+  - type: STR_MEDIC_CARAPACE_ARMOR
+    requiresBuy:
+      - STR_CARAPACE_MEDIC_TECH
+    size: 0.2
+    costBuy: 35000
+    costSell: 12500
+    transferTime: 10
+    listOrder: 6661
+
+#Grenade Launcher and Ammo
+  - type: STR_GRENADE_LAUNCHER
+    requiresBuy:
+      - STR_GUARD_GRENADE_LAUNCHER_TECH
+
+  - type: STR_FRAG_GRENADE_DRUM
+    requiresBuy:
+      - STR_GUARD_GRENADE_LAUNCHER_TECH
+
+  - type: STR_KRAK_GRENADE_DRUM
+    requiresBuy:
+      - STR_GUARD_GRENADE_LAUNCHER_TECH
+
+  - type: STR_INCENDIARY_GRENADE_DRUM
+    requiresBuy:
+      - STR_GUARD_GRENADE_LAUNCHER_TECH
+
+#Sentinel Lascannon
+  - type: STR_SENTINEL_ARMOR                #6800
+    requiresBuy:
+      - STR_SENTINEL_LASCANNON
+    size: 2
+    costBuy: 360000
+    costSell: 140000
+
+#Sentinel Missile and ammo
+  - type: STR_GUARD_ARMORS_SENTINEL_MISSILE
+    requiresBuy:
+      - STR_SENTINEL_MISSILE
+    size: 2
+    costBuy: 420000
+    costSell: 184000
+    transferTime: 50
+
+  - type: STR_SENTINEL_FRAG_MISSILES
+    requiresBuy:
+      - STR_SENTINEL_MISSILE
+
+  - type: STR_SENTINEL_KRAKK_MISSILES
+    requiresBuy:
+      - STR_SENTINEL_MISSILE
+
+
+#Long-Las and hotshot ammo
+  - type: STR_LONGLAS
+    requiresBuy:
+      - STR_LONG_LAS_TECH
+
+  - type: STR_LASGUN_CLIP_HOTSHOT
+    requiresBuy:
+      - STR_LONG_LAS_TECH
+
+#Craft Quad-Linked Lascannon
+  - type: STR_CRAFT_QUADLASER
+    requiresBuy:
+      - STR_LASER_CANNON
+    size: 3.0
+    costSell: 66000
+    transferTime: 48
+    listOrder: 1910
+
+#Storage objects for hellgun and volley gun armors.
+  - type: STR_HELLGUN_ARMOR
+    size: 0.4
+    #listOrder: 20
+    #costBuy: 20000
+    costSell: 10000
+    transferTime: 10
+    listOrder: 7210
+
+  - type: STR_VOLLEYGUN_ARMOR
+    size: 0.4
+    #listOrder: 20
+    #costBuy: 20000
+    costSell: 10000
+    transferTime: 10
+    listOrder: 7220
+
+#Officers Sword
+  - type: STR_OFFICERS_SWORD
+    categories: [STR_CAT_MELEE]
+    requiresBuy:
+      - STR_REGIMENT_OFFICERS
+    costBuy: 20000
+    costSell: 10000
+
+#Enginseer's corpse
+  - type: STR_ENGINSEER_CORPSE
+    name: STR_CORPSE
+    weight: 15
+    bigSprite: 150
+    floorSprite: 150
+    invWidth: 2
+    invHeight: 3
+    armor: 26
+    recover: false
+
+
+
+  - type: STR_OFFICER_BASIC_VOX
+    weight: 9
+    bulletSprite: -1
+    bulletSpeed: 20
+    damageType: 3
+    power: 100
+    tuAuto: 90
+    accuracyAuto: 150
+    confAuto:
+      name: STR_CALL_AIRSTRIKE
+    #artillerySpread: 5
+    #sprayAutoWaypoints: 2
+    clipSize: 9
+    battleType: 1
+    experienceTrainingMode: 19
+    recover: false
+    fixedWeapon: true
+
+
+  - type: INV_NULL_VOX_CASTER
+    weight: 9
+    invWidth: 3
+    invHeight: 3
+    bigSprite: 234
+    defaultInventorySlot: STR_BACK_PACK
+    fixedWeapon: true
+    recover: false

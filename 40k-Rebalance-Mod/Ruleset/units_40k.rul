@@ -1,0 +1,622 @@
+units:
+### FRIENDLY UNITS ###
+
+  - delete: STR_STORMTURRET
+
+  - type: STR_STORMTURRET
+    race: STR_STORMRAVEN
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 100
+      stamina: 1
+      health: 200
+      bravery: 100
+      reactions: 120
+      firing: 120
+      throwing: 0
+      strength: 90
+      psiStrength: 250
+      psiSkill: 0
+      melee: 0
+    armor: STORMRAVEN_ARMOR
+    standHeight: 23
+    kneelHeight: 16
+    value: 25
+    deathSound: 23
+    intelligence: 4
+    aggression: 5
+    sniper: 50
+    spotter: 1
+    energyRecovery: 34
+    livingWeapon: true
+    zombiImmune: true
+    bleedImmune: true
+    stunImmune: true
+    painImmune: true
+    builtInWeapons:
+      - STR_STORMRAVEN_LASCANNON_LEFT
+      - STR_LASCAN_CLIP
+      - STR_STORMRAVEN_LASCANNON_RIGHT
+      - STR_LASCAN_CLIP
+
+#Tarantula turrets
+#Fix morale loss
+  - type: STR_TANK_ROCKET_LAUNCHER
+    moraleLossWhenKilled: 0
+
+  - type: STR_T_BOLTER
+    moraleLossWhenKilled: 0
+
+
+#"Civilian" Guards from terror missions
+#Not recruitable anymore 
+  - delete: MALE_CIVILIAN
+
+  - type: MALE_CIVILIAN
+    race: STR_CIVILIAN
+    stats:
+      tu: 35
+      stamina: 65
+      health: 30
+      bravery: 80
+      reactions: 30
+      firing: 30
+      throwing: 50
+      strength: 20
+      psiStrength: 5
+      psiSkill: 0
+      melee: 50
+    armor: GUARD_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [41, 42, 43]
+    builtInWeaponSets:
+      - - STR_LASER_PISTOLG
+        - STR_LASPISTOL_CLIP
+        - STR_LASPISTOL_CLIP
+        - STR_SMOKE_GRENADE
+      - - STR_LASER_PISTOLG
+        - STR_LASPISTOL_CLIP
+        - STR_LASPISTOL_CLIP
+        - STR_GRENADE
+      - - STR_LASER_RIFLEG
+        - STR_LASGUN_CLIP
+        - STR_LASGUN_CLIP
+        - STR_GRENADE
+
+  - delete: FEMALE_CIVILIAN
+
+  - type: FEMALE_CIVILIAN
+    race: STR_CIVILIAN
+    stats:
+      tu: 35
+      stamina: 65
+      health: 30
+      bravery: 80
+      reactions: 30
+      firing: 30
+      throwing: 50
+      strength: 20
+      psiStrength: 5
+      psiSkill: 0
+      melee: 50
+    armor: GUARD_ARMOROF
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    energyRecovery: 20
+    deathSound: [44, 45, 46]
+    builtInWeaponSets:
+      - - STR_LASER_PISTOLG
+        - STR_LASPISTOL_CLIP
+        - STR_LASPISTOL_CLIP
+        - STR_SMOKE_GRENADE
+      - - STR_LASER_PISTOLG
+        - STR_LASPISTOL_CLIP
+        - STR_LASPISTOL_CLIP
+        - STR_GRENADE
+      - - STR_LASER_RIFLEG
+        - STR_LASGUN_CLIP
+        - STR_LASGUN_CLIP
+        - STR_GRENADE
+
+### ENEMY UNITS ###
+
+#Chaos Space Marine Havoc
+#Recreate without annoing aggro sound
+
+  - delete: STR_HAVOC
+
+  - type: STR_HAVOC #CHAOS MUTON_ARMORHAVOC
+    race: STR_ETHEREAL
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 68
+      stamina: 96
+      health: 60
+      bravery: 80
+      reactions: 75
+      firing: 74
+      throwing: 80
+      strength: 80
+      psiStrength: 50
+      psiSkill: 0
+      melee: 85
+    armor: MUTON_ARMORHAVOC
+    standHeight: 20
+    kneelHeight: 15
+    value: 20
+    deathSound: [723, 724, 725, 726, 727, 728, 729, 730, 731, 732]
+######    aggroSound: 807 
+    intelligence: 6
+    aggression: 1
+    spotter: 1
+    sniper: 50
+    energyRecovery: 40
+    builtInWeaponSets:
+      - - STR_ALIEN_GRENADE
+      - - STR_ALIEN_GRENADE
+      - - STR_ALIEN_GRENADE
+
+#Chaos Space Marine Havoc (Tzeentch)
+#Recreate without annoing aggro sound
+
+  - delete: STR_HAVOC_TZEENTC
+
+  - type: STR_HAVOC_TZEENTC
+    race: STR_TZEENTCH
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 68
+      stamina: 96
+      health: 60
+      bravery: 80
+      reactions: 75
+      firing: 74
+      throwing: 80
+      strength: 120
+      psiStrength: 200
+      psiSkill: 0
+      melee: 85
+    armor: MUTON_ARMORHAVOCT
+    standHeight: 20
+    kneelHeight: 15
+    value: 20
+    deathSound: [723, 724, 725, 726, 727, 728, 729, 730, 731, 732]
+###    aggroSound: 807
+    intelligence: 6
+    aggression: 1
+    spotter: 1
+    sniper: 50
+    energyRecovery: 40
+    builtInWeaponSets:
+      - - STR_ASSCTZ
+        - STR_ASSC_CLIP
+        - STR_ASSC_CLIP
+      - - STR_ASSCTZ
+        - STR_ASSC_CLIP
+        - STR_ASSC_CLIP
+      - - STR_ASSCTZ
+        - STR_ASSC_CLIP
+        - STR_ASSC_CLIP
+
+#Chaos Space Marine Havoc (Slaanesh)
+#Recreate without annoing aggro sound
+
+  - delete: STR_HAVOC_SLAANESH
+
+  - type: STR_HAVOC_SLAANESH
+    race: STR_SLAANESH
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 68
+      stamina: 96
+      health: 60
+      bravery: 80
+      reactions: 75
+      firing: 74
+      throwing: 80
+      strength: 120
+      psiStrength: 50
+      psiSkill: 0
+      melee: 85
+    armor: MUTON_ARMORHAVOCS
+    standHeight: 20
+    kneelHeight: 15
+    value: 20
+    deathSound: [723, 724, 725, 726, 727, 728, 729, 730, 731, 732]
+###    aggroSound: 807
+    intelligence: 6
+    aggression: 1
+    spotter: 1
+    sniper: 50
+    energyRecovery: 40
+    builtInWeaponSets:
+      - - STR_SONIC_CANON
+      - - STR_SONIC_CANON
+      - - STR_SONIC_CANON
+
+#Chaos Space Marine Havoc (Nurgle)
+#Recreate without annoing aggro sound
+
+  - delete: STR_HAVOC_NURGLE
+
+  - type: STR_HAVOC_NURGLE     
+    race: STR_NURGLE
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 68
+      stamina: 96
+      health: 80
+      bravery: 80
+      reactions: 75
+      firing: 74
+      throwing: 80
+      strength: 80
+      psiStrength: 50
+      psiSkill: 0
+      melee: 85
+    armor: MUTON_ARMORHAVOCN
+    standHeight: 20
+    kneelHeight: 15
+    value: 20
+    deathSound: [723, 724, 725, 726, 727, 728, 729, 730, 731, 732]
+###    aggroSound: 807
+    intelligence: 6
+    aggression: 1
+    spotter: 1
+    sniper: 50
+    energyRecovery: 40
+    builtInWeaponSets:
+      - - STR_ALIEN_GRENADE
+      - - STR_ALIEN_GRENADE
+      - - STR_ALIEN_GRENADE
+
+#Chaos Space Marine (Rubric)
+#Recreate without annoing aggro sound
+
+  - delete: STR_TZEENTCH_SOLDIER
+
+  - type: STR_TZEENTCH_SOLDIER
+    race: STR_TZEENTCH
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 68
+      stamina: 96
+      health: 60
+      bravery: 80
+      reactions: 75
+      firing: 74
+      throwing: 80
+      strength: 80
+      psiStrength: 200
+      psiSkill: 0
+      melee: 85
+    armor: MUTON_ARMORTZEENTCH
+    standHeight: 20
+    kneelHeight: 15
+    value: 20
+    deathSound: [723, 724, 725, 726, 727, 728, 729, 730, 731, 732]
+###    aggroSound: 805
+    intelligence: 6
+    aggression: 1
+    spotter: 1
+    energyRecovery: 40
+    builtInWeaponSets:
+      - - STR_BOLTERR
+        - STR_RIFLE_CLIP_R
+        - STR_RIFLE_CLIP_R
+      - - STR_BOLTERR
+        - STR_RIFLE_CLIP_R
+        - STR_RIFLE_CLIP_R
+        - STR_ALIEN_GRENADE
+      - - STR_FLAMETHROWERTZ
+        - STR_FLAMETHROWER_CLIP
+        - STR_FLAMETHROWER_CLIP
+
+#Chaos Space Marine (Noise Marine)
+#Recreate without annoing aggro sound
+
+  - delete: STR_SLAANESH_SOLDIER
+
+  - type: STR_SLAANESH_SOLDIER
+    race: STR_SLAANESH
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 68
+      stamina: 96
+      health: 60
+      bravery: 80
+      reactions: 75
+      firing: 74
+      throwing: 80
+      strength: 80
+      psiStrength: 50
+      psiSkill: 0
+      melee: 85
+    armor: MUTON_ARMORSLAANESH
+    standHeight: 20
+    kneelHeight: 15
+    value: 20
+    deathSound: [723, 724, 725, 726, 727, 728, 729, 730, 731, 732]
+###    aggroSound: 805
+    intelligence: 6
+    aggression: 1
+    spotter: 1
+    energyRecovery: 40
+    builtInWeaponSets:
+      - - STR_BOLTERC
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+      - - STR_BOLTERC
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_ALIEN_GRENADE
+      - - STR_PLASMA_RIFLE
+        - STR_PLASMA_RIFLE_CLIP
+        - STR_PLASMA_RIFLE_CLIP
+        - STR_ALIEN_GRENADE
+
+#Chaos Space Marine (Plague Marine)
+#Recreate without annoing aggro sound
+
+  - delete: STR_NURGLE_SOLDIER
+
+  - type: STR_NURGLE_SOLDIER
+    race: STR_NURGLE
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 68
+      stamina: 96
+      health: 80
+      bravery: 80
+      reactions: 75
+      firing: 74
+      throwing: 80
+      strength: 80
+      psiStrength: 50
+      psiSkill: 0
+      melee: 85
+    armor: MUTON_ARMORNURGLEA
+    standHeight: 20
+    kneelHeight: 15
+    value: 20
+    deathSound: [723, 724, 725, 726, 727, 728, 729, 730, 731, 732]
+###    aggroSound: 805
+    intelligence: 6
+    aggression: 1
+    spotter: 1
+    energyRecovery: 40
+    builtInWeaponSets:
+      - - STR_BOLTERN
+        - STR_RIFLE_CLIP_N
+        - STR_RIFLE_CLIP_N
+      - - STR_BOLTERN
+        - STR_RIFLE_CLIP_N
+        - STR_RIFLE_CLIP_N
+        - STR_ALIEN_GRENADE
+      - - STR_BOLTERN
+        - STR_RIFLE_CLIP_N
+        - STR_RIFLE_CLIP_N
+        - STR_ALIEN_GRENADE
+
+#Chaos Space Marine (Knorhe berserker)
+#Recreate without ANNOING aggro sound
+
+  - delete: STR_KHRONE_TERRORIST
+
+  - type: STR_KHRONE_TERRORIST
+    race: STR_KHRONE
+    rank: STR_LIVE_SOLDIER
+    isLeeroyJenkins: true
+    stats:
+      tu: 120
+      stamina: 96
+      health: 60
+      bravery: 100
+      reactions: 75
+      firing: 74
+      throwing: 80
+      strength: 48
+      psiStrength: 100
+      psiSkill: 0
+      melee: 85
+    armor: STR_MUTON_ARMORB
+    standHeight: 20
+    kneelHeight: 15
+    value: 50
+    deathSound: [723, 724, 725, 726, 727, 728, 729, 730, 731, 732]
+###    aggroSound: 808
+    intelligence: 2
+    aggression: 7
+    energyRecovery: 60
+    livingWeapon: false
+    builtInWeaponSets:
+      - - STR_BOLTPISTOL_CHAOS
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_AXE
+      - - STR_BOLTPISTOL_CHAOS
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_AXE
+        - STR_ALIEN_GRENADE
+      - - STR_PLASMA_PISTOL
+        - STR_PLASMA_PISTOL_CLIP
+        - STR_PLASMA_PISTOL_CLIP
+        - STR_PLASMA_PISTOL_CLIP
+        - STR_AXE
+        - STR_ALIEN_GRENADE
+
+#Chaos Space Marine (Chaos Traitor)
+#Recreate without annoing aggro sound
+
+  - delete: STR_ETHEREAL_SOLDIER
+
+  - type: STR_ETHEREAL_SOLDIER
+    race: STR_ETHEREAL
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 68
+      stamina: 96
+      health: 60
+      bravery: 80
+      reactions: 75
+      firing: 74
+      throwing: 80
+      strength: 80
+      psiStrength: 50
+      psiSkill: 0
+      melee: 85
+    armor: STR_MUTON_ARMOR0
+    standHeight: 20
+    kneelHeight: 15
+    value: 20
+    deathSound: [723, 724, 725, 726, 727, 728, 729, 730, 731, 732]
+###    aggroSound: 805
+    intelligence: 6
+    aggression: 1
+    spotter: 1
+    energyRecovery: 40
+    builtInWeaponSets:
+      - - STR_BOLTERC
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+      - - STR_BOLTERC
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_ALIEN_GRENADE
+      - - STR_PLASMA_RIFLE
+        - STR_PLASMA_RIFLE_CLIP
+        - STR_PLASMA_RIFLE_CLIP
+        - STR_ALIEN_GRENADE
+
+#Chaos Space Marine (Chaos Traitor #2)
+#Recreate without annoing aggro sound
+
+  - delete: STR_ETHEREAL_SOLDIER_NW
+
+
+  - type: STR_ETHEREAL_SOLDIER_NW
+    race: STR_ETHEREAL
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 68
+      stamina: 96
+      health: 60
+      bravery: 80
+      reactions: 75
+      firing: 74
+      throwing: 80
+      strength: 80
+      psiStrength: 50
+      psiSkill: 0
+      melee: 85
+    armor: STR_MUTON_ARMOR0
+    standHeight: 20
+    kneelHeight: 15
+    value: 20
+    deathSound: [723, 724, 725, 726, 727, 728, 729, 730, 731, 732]
+###    aggroSound: 806
+    intelligence: 6
+    aggression: 1
+    spotter: 1
+    energyRecovery: 40
+
+#Chaos Space Marine (Raptor)
+#Recreate without annoing aggro sound
+
+  - delete: STR_FLOATER_SOLDIER
+
+  - type: STR_FLOATER_SOLDIER
+    race: STR_FLOATER
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 120
+      stamina: 90
+      health: 60
+      bravery: 80
+      reactions: 60
+      firing: 54
+      throwing: 62
+      strength: 70
+      psiStrength: 25
+      psiSkill: 0
+      melee: 76
+    armor: STR_FLOATER_ARMOR0
+    standHeight: 21
+    kneelHeight: 16
+    value: 15
+    deathSound: [723, 724, 725, 726, 727, 728, 729, 730, 731, 732]
+    intelligence: 2
+    aggression: 2
+    spotter: 1
+###    aggroSound: 805
+    energyRecovery: 60
+    moveSound: -1
+    builtInWeaponSets:
+      - - STR_BOLTPISTOL_CHAOS
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_AXE
+      - - STR_BOLTPISTOL_CHAOS
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_AXE
+        - STR_ALIEN_GRENADE
+      - - STR_BOLTPISTOL_CHAOS
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_AXE
+        - STR_ALIEN_GRENADE
+
+#Chaos Space Marine (Warptalon)
+#Recreate without annoing aggro sound
+
+  - delete: STR_WARPTALON_SOLDIER
+
+  - type: STR_WARPTALON_SOLDIER
+    race: STR_WARPTALON
+    rank: STR_LIVE_SOLDIER
+    isLeeroyJenkins: true
+    stats:
+      tu: 120
+      stamina: 90
+      health: 60
+      bravery: 80
+      reactions: 60
+      firing: 54
+      throwing: 62
+      strength: 70
+      psiStrength: 25
+      psiSkill: 0
+      melee: 76
+    armor: STR_WARPTALON_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 15
+    deathSound: [723, 724, 725, 726, 727, 728, 729, 730, 731, 732]
+###    aggroSound: 809
+    intelligence: 2
+    aggression: 2
+    energyRecovery: 60
+    moveSound: -1
+    livingWeapon: true
+    builtInWeapons:
+      - STR_CHAOS_CLAWS2
+      - STR_CHAOS_CLAWS
+
+#Chaos Dread Test
+#  - type: STR_SECTOPOD_TERRORIST
+
+
+#  - type: STR_SECTOPOD2_TERRORIST

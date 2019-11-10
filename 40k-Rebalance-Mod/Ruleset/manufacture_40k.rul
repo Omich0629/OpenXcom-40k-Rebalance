@@ -1,0 +1,1055 @@
+manufacture:
+#Delete Chaos Armor manufacturing
+#For now.
+  - delete: STR_CHAOS_BEHEMOTH_ARMOR
+  - delete: STR_CHAOS_SORC_ARMOR
+  - delete: STR_CHAOS_MARINE_ARMOR
+  - delete: STR_CHAOS_SERGEANT_ARMOR
+  - delete: STR_CHAOS_RAPTOR_ARMOR
+  - delete: STR_CHAOS_HAVOC_ARMOR
+  - delete: STR_CHAOS_TERMINATOR_ARMOR
+  - delete: STR_CHAOS_LORD_ARMOR
+
+#Honor Armors. No need to produce.
+  - delete: STR_HONOR_ARMOR
+  - delete: STR_ASS_ARMOR_HONOR
+  - delete: STR_SIGNAL_ARMOR
+
+#MC ammo
+  - delete: STR_PISTOL_CLIP_MC
+  - delete: STR_RIFLE_CLIP_MC
+  - delete: STR_AC_MC_AMMO
+
+#Improved Stormhawk. Delete for now.
+  - delete: STR_STORMHAWKS
+  - delete: STR_THUNDERHAWNK
+
+#Thunderhawk variations. Delete for now.
+  - delete: STR_AVENGER
+  - delete: STR_TTASS
+  - delete: STR_TTDEV
+  - delete: STR_TTSCT
+  - delete: STR_TTCHAOS
+  - delete: STR_CHAPTERARMY
+
+#Spellbooks
+  - delete: STR_PATCHMORAL
+  - delete: STR_PATCHSMOKE
+  - delete: STR_PATCHSPEED
+  - delete: STR_MIND_PROBE
+
+#"Orbital beacon"-HWP and AMMO
+#Delete for now.
+  - delete: STR_TANK_LASER_CANNON
+  - delete: STR_NOVA_BOMB
+
+#Master Crafted Graviton Gun
+  - delete: STR_GRAVGUN_MC
+
+#Master Crafted Heavy Plasma
+  - delete: STR_HEAVY_PLASMA_MC
+
+######## COMPONENTS ########
+
+#Adamantium
+
+  - name: STR_ALIEN_ALLOYS
+    category: STR_UFO_COMPONENT
+    requires:
+      - STR_ALIEN_ALLOYS
+      - STR_ELERIUM_115
+    space: 10
+    time: 100
+    cost: 3000
+    requiredItems:
+      STR_ELERIUM_115: 1
+    requiresBaseFunc: [MILL]
+
+#Cogitator
+  - name: STR_UFO_NAVIGATION
+    category: STR_UFO_COMPONENT
+    requires:
+      - STR_UFO_NAVIGATION
+    space: 18
+    time: 1600
+    cost: 150000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 3
+
+#Ceramite
+  - name: STR_UFO_CONSTRUCTION
+    category: STR_UFO_COMPONENT
+    requires:
+      - STR_UFO_CONSTRUCTION
+    space: 10
+    time: 100
+    cost: 1000
+    requiredItems:
+      STR_ELERIUM_115: 1
+    producedItems:
+      STR_UFO_CONSTRUCTION: 2
+
+#Power Source
+  - name: STR_UFO_POWER_SOURCE
+    category: STR_UFO_COMPONENT
+    requires:
+      - STR_UFO_POWER_SOURCE
+    space: 22
+    time: 1400
+    cost: 130000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+      STR_ELERIUM_115: 16
+
+######## T1 STUFF ########
+
+#First Aid Kit
+  - name: STR_FIRST_AID_KIT
+    category: STR_EQUIPMENT
+    requires:
+      - STR_APOC_BAY
+    space: 2
+    time: 50
+    cost: 10000
+
+#Lascannon Mars Pattern
+  - name: STR_LASCAN
+    category: STR_WEAPON
+    requires:
+      - STR_LASCAN
+      - STR_SPACE_MARINES_OPERATIONS
+    space: 4
+    time: 700
+    cost: 32000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+
+#Lascannon Large Power Cell
+  - name: STR_LASCAN_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_LASCAN
+      - STR_SPACE_MARINES_OPERATIONS
+    space: 2
+    time: 100
+    cost: 5000
+
+#Advanced Scout Armor manufacturing. No Badges to produce, it's just not worth it.
+  - name: STR_SCOUTH
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SCOUTH_RESEARCH
+    space: 4
+    time: 200
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+
+#Mk7 Power Armor
+  - name: STR_TATICAL_ARMOR
+    requires:
+      - STR_MK7_ARMOR
+    space: 12
+    time: 800
+    cost: 22000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 40
+      STR_UFO_CONSTRUCTION: 10
+
+#Mk7 Assault Equipment
+  - name: STR_ASS_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ASS_ARMOR
+    space: 6
+    time: 400
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+
+#Mk7 Devastator Equipment
+
+  - name: STR_DEV_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_DEV_ARMOR
+    space: 6
+    time: 400
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+
+#Mk7 Apothecary armor
+  - name: STR_APOT_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_MEDI_KIT
+    space: 12
+    time: 800
+    cost: 44000
+    requiresBaseFunc: [MED]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 40
+      STR_UFO_CONSTRUCTION: 10
+      STR_ALIEN_HABITAT: 1
+
+#Sergeant Armor. Requires 1 Badge to manufacture.
+#Has TU-buff.
+
+  - name: STR_SARGENT_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SARGENT_ARMOR
+    space: 12
+    time: 800
+    cost: 44000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 40
+      STR_UFO_CONSTRUCTION: 10
+      STR_ALIEN_HABITAT: 1
+
+#Craft Lascannon
+  - name: STR_LASER_CANNON
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_LASER_CANNON
+    space: 8
+    time: 700
+    cost: 180000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+
+#Power Fist
+  - name: STR_POWERFIST
+    category: STR_WEAPON
+    requires:
+      - STR_POWERFIST_TECH
+    space: 4
+    time: 250
+    cost: 60000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+
+######## T2 STUFF ########
+#Energy Scanner
+  - name: STR_SCANNER
+    requires:
+      - STR_CRAFTADD
+    category: STR_CRAFT_EQUIPMENT
+    space: 8
+    time: 700
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+      STR_UFO_NAVIGATION: 1
+    listOrder: 1
+
+#Decoy Flare Launcher
+  - name: STR_FLARE_LAUNCH
+    requires:
+      - STR_CRAFTADD  
+    category: STR_CRAFT_EQUIPMENT
+    space: 8
+    time: 700
+    cost: 50000
+    requiredItems:
+      STR_ELERIUM_115: 20
+    listOrder: 1
+
+#Reinforced Armor
+  - name: STR_HULL_PLATING
+    requires:
+      - STR_CRAFTADD  
+    category: STR_CRAFT_EQUIPMENT
+    space: 10
+    time: 700
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 80
+      STR_UFO_CONSTRUCTION: 20
+    listOrder: 1
+
+#Advanced Cygnus
+  - name: STR_TARGETER
+    requires:
+      - STR_CRAFTADD  
+    category: STR_CRAFT_EQUIPMENT
+    space: 8
+    time: 700
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+      STR_UFO_NAVIGATION: 1
+    listOrder: 1
+
+#Advanced Turbofans
+  - name: STR_THRUSTER
+    requires:
+      - STR_CRAFTADD  
+    category: STR_CRAFT_EQUIPMENT
+    space: 10
+    time: 700
+    cost: 50000
+    requiredItems:
+      STR_UFO_POWER_SOURCE: 1
+    listOrder: 1
+
+#Advanced Graticule
+  - name: STR_RETICULE
+    requires:
+      - STR_CRAFTADD  
+    category: STR_CRAFT_EQUIPMENT
+    space: 8
+    time: 700
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+      STR_UFO_NAVIGATION: 1 
+    listOrder: 1
+
+#Stormraven Craft
+  - name: STR_FIRESTORM
+    requires:
+      - STR_NEW_FIGHTER_CRAFT
+    space: 30
+    time: 14000
+    cost: 400000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 400
+      STR_UFO_CONSTRUCTION: 100
+      STR_UFO_POWER_SOURCE: 1
+      STR_UFO_NAVIGATION: 1
+
+#Auspex (Motion Scanner)
+  - name: STR_MOTION_SCANNER
+    category: STR_EQUIPMENT
+    requires:
+      - STR_MOTION_SCANNER
+    space: 4
+    time: 220
+    cost: 34000
+
+#Master Crafted Boltpistol
+  - name: STR_MCPISTOL
+    category: STR_WEAPON
+    requires:
+      - STR_MASTER_CRAFTING
+      - STR_PLASMA_PISTOL_TERRAN
+    space: 4
+    time: 2000
+    cost: 122000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+      STR_ALIEN_HABITAT: 1
+
+#Master Crafted Bolter
+  - name: STR_MCRIFLE
+    category: STR_WEAPON
+    requires:
+      - STR_MASTER_CRAFTING
+      - STR_PLASMA_RIFLE_TERRAN
+    space: 4
+    time: 2000
+    cost: 122000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 3
+      STR_ALIEN_HABITAT: 1
+
+#Master Crafted Plasma Pistol
+  - name: STR_MCPLASMA_PISTOL
+    category: STR_WEAPON
+    requires:
+      - STR_MASTER_CRAFTING
+      - STR_PLASMA_PISTOL
+      - STR_PLASMA_PISTOL_CLIP
+    space: 4
+    time: 2000
+    cost: 122000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+      STR_ALIEN_HABITAT: 1
+
+#Master Crafted Plasmagun
+  - name: STR_MCPLASMA_RIFLE
+    category: STR_WEAPON
+    requires:
+      - STR_MASTER_CRAFTING
+      - STR_PLASMA_RIFLE
+      - STR_PLASMA_RIFLE_CLIP
+    space: 4
+    time: 2000
+    cost: 122000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 3
+      STR_ALIEN_HABITAT: 1
+
+#Master Crafted Chainsword
+  - name: STR_CHAINSWORD_MC
+    category: STR_WEAPON
+    requires:
+      - STR_MASTER_CRAFTING
+      - STR_CHAINSWORD_TECH
+    space: 4
+    time: 2000
+    cost: 122000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+      STR_ALIEN_HABITAT: 1
+
+#Mk7 Chaplain Armor
+  - name: STR_CHAP_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_CHAP_ARMOR
+    space: 12
+    time: 1000
+    cost: 150000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_UFO_CONSTRUCTION: 10
+      STR_ALIEN_HABITAT: 1
+
+#Mk7 Techmarine Armor. 
+#Requires 'Cult of The machine' and 'Space Marines Operations' to unlock
+#REquires Techmarine Bay to manufacture 
+  - name: STR_TECH_ARMOR                 #1 BADGE 1
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_TEC_BAYR
+      - STR_SPACE_MARINES_OPERATIONS
+    space: 12
+    time: 1000
+    cost: 150000
+    requiresBaseFunc: [TEC]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_UFO_CONSTRUCTION: 10
+      STR_ALIEN_HABITAT: 1
+
+#Centurion Warsuit.
+  - name: STR_CENT_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_CENT_ARMORR
+    space: 16
+    time: 1200
+    cost: 150000
+    requiresBaseFunc: [TEC]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 100
+      STR_UFO_CONSTRUCTION: 30
+      STR_ALIEN_HABITAT: 1
+
+
+#Dreadnought Castraferrum Armor. 
+#Armed with plasma. So requires plasma technology.
+  - name: STR_DREAD2_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_DREADNOUGHT_TECH
+      - STR_PLASMA_CANNON
+    space: 30
+    time: 2000
+    cost: 300000
+    requiresBaseFunc: [TEC]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_UFO_CONSTRUCTION: 20
+      STR_ALIEN_HABITAT: 1
+
+#Dreadnought Mortis Armor. 
+#Armed with Lascannon.
+  - name: STR_DREAD4_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_DREADNOUGHT_TECH
+    space: 30
+    time: 2000
+    cost: 300000
+    requiresBaseFunc: [TEC]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_UFO_CONSTRUCTION: 20
+      STR_ALIEN_HABITAT: 1
+ 
+#Dreadnought Hellfire Armor. 
+#Armed with missile launcher.
+  - delete: STR_HWP_FUSION_BOMB
+ 
+  - name: STR_DREAD3_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_DREADNOUGHT_TECH
+    space: 30
+    time: 2000
+    cost: 300000
+    requiresBaseFunc: [TEC]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_UFO_CONSTRUCTION: 20
+      STR_ALIEN_HABITAT: 1 
+
+
+
+
+#Dreadnought/Assault Cannon 
+#Armed with Assault Cannon and Flamer.
+  - name: STR_DREAD5_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_DREADNOUGHT_TECH
+      - STR_ASSC
+    space: 30
+    time: 2000
+    cost: 300000
+    requiresBaseFunc: [TEC]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_UFO_CONSTRUCTION: 20
+      STR_ALIEN_HABITAT: 1 
+ 
+#Meltagun
+  - name: STR_HEAVY_LASER
+    category: STR_WEAPON
+    requires:
+      - STR_HEAVY_LASER
+    space: 4
+    time: 700
+    cost: 32000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+
+#Meltagun Ammo
+  - name: STR_MELTA_AMMO
+    category: STR_AMMUNITION  
+    requires:
+      - STR_HEAVY_LASER
+    space: 2
+    time: 70
+    cost: 4000
+    requiredItems:
+      STR_ELERIUM_115: 4
+
+#Multimelta
+  - name: STR_BLASTER_LAUNCHER_TERRAN
+    category: STR_WEAPON
+    requires:
+      - STR_FUSION_MISSILE
+    space: 6
+    time: 900
+    cost: 64000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+
+#Multimelta Ammo
+  - name: STR_BLASTER_BOMB
+    requires:
+      - STR_FUSION_MISSILE
+    space: 2
+    time: 90
+    cost: 8000
+    requiredItems:
+      STR_ELERIUM_115: 8
+
+#Melta Grenade
+  - name: STR_MGRENADE
+    category: STR_WEAPON
+    requires:
+      - STR_MGRENADE
+    space: 2
+    time: 200
+    cost: 50000
+    requiredItems:
+      STR_ELERIUM_115: 5
+    producedItems:
+      STR_MGRENADE: 5
+
+#Melta Bomb
+  - name: STR_HIGH_EXPLOSIVE
+    category: STR_WEAPON
+    requires:
+      - STR_MELTABOMB
+    space: 2
+    time: 200
+    cost: 50000
+    requiredItems:
+      STR_ELERIUM_115: 5
+
+#Craft Multi-Melta
+  - name: STR_FUSION_BALL_LAUNCHER
+    requires:
+      - STR_FUSION_BALL_LAUNCHER
+    space: 10
+    time: 900
+    cost: 250000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+
+#Craft Multi-Melta Ammo
+  - name: STR_FUSION_BALL
+    requires:
+      - STR_FUSION_BALL_LAUNCHER
+    category: STR_CRAFT_AMMUNITION
+    space: 6
+    time: 200
+    cost: 25000
+    requiredItems:
+      STR_ELERIUM_115: 10
+
+#Plasma Pistol
+  - name: STR_PLASMA_PISTOL_TERRAN
+    requires:
+      - STR_PLASMA_PISTOL_TERRAN
+    space: 4
+    time: 600
+    cost: 56000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+
+#Plasma Pistol Ammo
+  - name: STR_PLASMA_PISTOL_CLIP
+    requires:
+      - STR_PLASMA_PISTOL_TERRAN
+    space: 4
+    time: 60
+    cost: 2000
+    requiredItems:
+      STR_ELERIUM_115: 1
+
+#Plasmagun
+  - name: STR_PLASMA_RIFLE_TERRAN
+    requires:
+      - STR_PLASMA_RIFLE_TERRAN
+    space: 4
+    time: 800
+    cost: 88000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+
+#Plasmagun Ammo
+  - name: STR_PLASMA_RIFLE_CLIP
+    requires:
+      - STR_PLASMA_RIFLE_TERRAN
+    space: 4
+    time: 80
+    cost: 4000
+    requiredItems:
+      STR_ELERIUM_115: 2
+
+#Heavy Plasma
+  - name: STR_HEAVY_PLASMA_TERRAN
+    requires:
+      - STR_HEAVY_PLASMA_TERRAN
+    space: 6
+    time: 1000
+    cost: 122000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+
+#Heavy Plasma Ammo
+  - name: STR_HEAVY_PLASMA_CLIP
+    requires:
+      - STR_HEAVY_PLASMA_TERRAN
+    space: 4
+    time: 100
+    cost: 6000
+    requiredItems:
+      STR_ELERIUM_115: 4
+
+#Craft Plasma Cannon
+  - name: STR_PLASMA_BEAM
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_PLASMA_CANNON
+    space: 10
+    time: 1000
+    cost: 225000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+
+#Craft Plasma Cannon Ammo
+  - name: STR_PLASMA_BEAM_AMMO
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_PLASMA_CANNON
+    space: 6
+    time: 100
+    cost: 22000
+    requiredItems:
+      STR_ELERIUM_115: 10
+
+#Graviton Gun
+  - name: STR_SMALL_LAUNCHER_TERRAN
+    requires:
+      - STR_SMALL_LAUNCHER_TERRAN
+    space: 4
+    time: 1000
+    cost: 80000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+
+#Graviton Gun Round
+  - name: STR_STUN_BOMB
+    requires:
+      - STR_SMALL_LAUNCHER_TERRAN
+    space: 2
+    time: 200
+    cost: 8000
+    requiredItems:
+      STR_ELERIUM_115: 2
+
+#Graviton Gun Stun Round
+  - name: STR_NONLETHAL_GRAVROUND
+    category: STR_AMMUNITION
+    requires:
+      - STR_SMALL_LAUNCHER_TERRAN
+    space: 2
+    time: 200
+    cost: 8000
+    requiredItems:
+      STR_ELERIUM_115: 2
+
+######## T3 STUFF ########
+#Stormeagle
+  - name: STR_STORMEAGLE
+    category: STR_CRAFT
+    requires:
+      - STR_STORMEAGLE_INTERCEPTOR
+    space: 34
+    time: 18000
+    cost: 800000
+    listOrder: 3350
+    requiredItems:
+      STR_ALIEN_ALLOYS: 600
+      STR_UFO_CONSTRUCTION: 150
+      STR_UFO_POWER_SOURCE: 1
+      STR_UFO_NAVIGATION: 1
+
+#Thunderhawk
+  - name: STR_LIGHTNING
+    requires:
+      - STR_NEW_FIGHTER_TRANSPORTER
+    space: 36
+    time: 34000
+    cost: 1000000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 800
+      STR_UFO_CONSTRUCTION: 200
+      STR_UFO_POWER_SOURCE: 2
+      STR_UFO_NAVIGATION: 2
+
+#Thunderhawk Battle Cannon
+  - name: STR_THUNDER_CANNON
+    requires:
+      - STR_NEW_FIGHTER_TRANSPORTER
+    category: STR_CRAFT_WEAPON
+    space: 10
+    time: 2000
+    cost: 300000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 40
+    listOrder: 1
+
+#Mk7 Librarian armor
+  - name: STR_LIB_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_LIBRARIAN_ARMOR
+    space: 12
+    time: 1000
+    cost: 150000
+    requiresBaseFunc: [LIB]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_UFO_CONSTRUCTION: 10
+      STR_ALIEN_HABITAT: 2
+
+#Tome of Vision
+  - name: STR_MIND_PROBE
+    category: STR_SPELLS
+    requires:
+      - STR_MIND_PROBE
+    space: 2
+    time: 800
+    cost: 100000
+
+#Tome of Fear
+  - name: STR_TOME_OF_FEAR
+    category: STR_SPELLS
+    requires:
+      - STR_TOME_OF_FEAR
+    space: 2
+    time: 800
+    cost: 100000
+
+#Tome of Mind
+  - name: STR_PSI_AMP
+    category: STR_SPELLS
+    requires:
+      - STR_PSI_AMP
+    space: 2
+    time: 800
+    cost: 100000
+
+#Tome of Weakness
+  - name: STR_TOME_OF_WEAKNESS
+    category: STR_SPELLS
+    requires:
+      - STR_TOME_OF_WEAKNESS
+    space: 2
+    time: 800
+    cost: 100000
+
+#Tome of Smoke
+  - name: STR_PATCHSMOKE
+    category: STR_SPELLS
+    requires:
+      - STR_PATCHSMOKE
+    space: 2
+    time: 800
+    cost: 100000
+
+#Terminator Armor
+  - name: STR_POWER_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_POWER_SUIT
+    space: 16
+    time: 1200
+    cost: 200000
+    requiresBaseFunc: [ARMO]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 120
+      STR_UFO_CONSTRUCTION: 50
+      STR_ALIEN_HABITAT: 1
+
+#Terminator Assault Armor
+  - name: STR_FLYING_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_FLYING_SUIT
+    space: 16
+    time: 1200
+    cost: 220000
+    requiresBaseFunc: [ARMO]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 130
+      STR_UFO_CONSTRUCTION: 50
+      STR_ALIEN_HABITAT: 1
+
+#Terminator Sergeant Armor
+  - name: STR_TSARGENT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_TSARGENT
+    space: 16
+    time: 1200
+    cost: 220000
+    requiresBaseFunc: [ARMO]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 120
+      STR_UFO_CONSTRUCTION: 50
+      STR_ALIEN_HABITAT: 2
+
+#Terminator Apothecary Armor
+  - name: STR_TERMINATOR_APOTHECARY
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_TERMINATOR_APOTHECARY
+    space: 16
+    time: 1200
+    cost: 220000
+    requiresBaseFunc: [ARMO, MED]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 130
+      STR_UFO_CONSTRUCTION: 50
+      STR_ALIEN_HABITAT: 2
+
+#Terminator Chaplain Armor
+  - name: STR_TERMINATOR_CHAPLAIN
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_TERMINATOR_CHAPLAIN
+    space: 16
+    time: 1200
+    cost: 220000
+    requiresBaseFunc: [ARMO]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 130
+      STR_UFO_CONSTRUCTION: 50
+      STR_ALIEN_HABITAT: 2
+
+#Terminator Librarian Armor
+  - name: STR_TERMINATOR_LIBRARIAN
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_TERMINATOR_LIBRARIAN
+    space: 16
+    time: 1200
+    cost: 220000
+    requiresBaseFunc: [ARMO, LIB]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 130
+      STR_UFO_CONSTRUCTION: 50
+      STR_ALIEN_HABITAT: 3
+
+#Terminator Captain Armor
+  - name: STR_CAPTAIN_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_CAPTAIN_SUIT
+    space: 16
+    time: 1200
+    cost: 300000
+    requiresBaseFunc: [ARMO]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 130
+      STR_UFO_CONSTRUCTION: 50
+      STR_ALIEN_HABITAT: 3
+
+###T3 WEAPONS###
+
+#Power Dagger
+  - name: STR_POWER_DAGGER
+    category: STR_WEAPON
+    requires:
+      - STR_POWER_DAGGER
+    space: 4
+    time: 300
+    cost: 40000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+
+#Power Sword
+  - name: STR_POWER_SWORD
+    category: STR_WEAPON
+    requires:
+      - STR_POWER_SWORD
+    space: 4
+    time: 600
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 15
+
+#Lightning Claw
+  - name: STR_CLAWS
+    category: STR_WEAPON
+    requires:
+      - STR_LIGHTNING_CLAWS
+    space: 4
+    time: 500
+    cost: 80000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 12
+
+#Thunder Hammer
+  - name: STR_HAMMER
+    category: STR_WEAPON
+    requires:
+      - STR_HAMMER
+    space: 6
+    time: 1000
+    cost: 120000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+
+#Heavy Flamer
+  - name: STR_HFLAMER
+    category: STR_WEAPON
+    requires:
+      - STR_HFLAMERR
+    space: 6
+    time: 1000
+    cost: 120000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+
+#Heavy Flamer Fuel
+  - name: STR_HFLAMER_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_HFLAMER_FUEL_MANUFACTURING
+    space: 6
+    time: 100
+    cost: 10000
+    requiredItems:
+      STR_ELERIUM_115: 10
+
+
+#Storm Bolter
+  - name: STR_HB
+    requires:
+      - STR_HB
+    space: 6
+    time: 1000
+    cost: 72000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+
+#Storm Bolter Standard Ammo
+  - name: STR_HB_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_HB
+    space: 4
+    time: 100
+    cost: 6200
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+
+#Storm Bolter EX Ammo
+  - name: STR_HB_CLIP_EX
+    category: STR_AMMUNITION
+    requires:
+      - STR_HB
+    space: 4
+    time: 100
+    cost: 6800
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    producedItems:
+      STR_HB_CLIP_EX: 1
+
+#Storm Bolter AP Ammo
+  - name: STR_HB_CLIP_AP
+    category: STR_AMMUNITION
+    requires:
+      - STR_HB
+    space: 4
+    time: 100
+    cost: 7400
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    producedItems:
+      STR_HB_CLIP_AP: 1
+
+#Assault Cannon
+  - name: STR_ASSC
+    requires:
+      - STR_ASSC
+    space: 10
+    time: 1000
+    cost: 120000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+
+#Assault Cannon Ammo
+  - name: STR_ASSC_CLIP
+    requires:
+      - STR_ASSC
+    space: 4
+    time: 100
+    cost: 12000
+    requiredItems:
+      STR_ELERIUM_115: 10
+
+#Craft Assault Cannon
+  - name: STR_ASSCANNON
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_ASSC
+    space: 10
+    time: 1000
+    cost: 120000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20

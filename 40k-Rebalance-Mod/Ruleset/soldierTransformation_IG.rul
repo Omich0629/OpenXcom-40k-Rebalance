@@ -1,0 +1,49 @@
+soldierTransformation:
+
+  - delete: STR_VETERAN_PROMOTION
+
+  - name: STR_VETERAN_PROMOTION
+    requires:
+      - STR_STORMTROOPER_REQUISITION
+    producedSoldierType: STR_GUARD_VETERAN
+#    producedSoldierArmor: STR_STORMTROOPER_CARAPACE_ARMOR
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    allowedSoldierTypes:
+      - STR_GUARDSM
+    cost: 100000
+    requiredMinStats:
+      tu: 50
+      stamina: 55
+      health: 35
+      bravery: 50
+      reactions: 40
+      firing: 60
+      throwing: 50
+      strength: 30
+      melee: 55
+
+  - delete: STR_PROMOTE_OFFICER
+
+  - name: STR_PROMOTE_OFFICER
+    requires:
+      - STR_REGIMENT_OFFICERS
+    producedSoldierType: STR_GUARD_OFFICER
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    allowedSoldierTypes:
+      - STR_GUARDSM
+    #requiredRank: 3
+    requiresBaseFunc: [HQ]
+    requiredMinStats:
+      tu: 50
+      stamina: 55
+      health: 35
+      bravery: 60
+      reactions: 50
+      firing: 50
+      strength: 20
+      melee: 50
+    cost: 120000

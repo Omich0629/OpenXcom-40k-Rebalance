@@ -1,0 +1,589 @@
+items:
+#ENEMY WEAPONS
+
+#Chaos stubber
+#  - type: STR_STUB_GUN_CHAOS
+#    tags:
+#      ITEM_HAS_RANDOMIZED_SPRITES: 0
+
+
+### CHAOS MISSILE LAUCNERS ###
+ 
+#Chaos Missile Laucher
+  - type: STR_CHAOS_ROCKET_LAUNCHER
+
+    tuSnap: 0
+
+    tuAuto: 55
+    accuracyAuto: 55
+
+    confAuto:
+      shots: 1
+      name: STR_CUSTOM_SNAPSHOT
+
+    tuAimed: 85
+    accuracyAimed: 115
+
+#Nurgle Missile launcher
+  - type: AUX_NURGLE_ROCKET_LAUNCHER
+
+    tuSnap: 0
+
+    tuAuto: 55
+    accuracyAuto: 55
+
+    confAuto:
+      shots: 1
+      name: STR_CUSTOM_SNAPSHOT
+
+    tuAimed: 85
+    accuracyAimed: 115
+
+
+### Chaos Bolters ###
+
+#Chaos Bolt pistol
+
+  - delete: STR_BOLTPISTOL_CHAOS
+
+  - type: STR_BOLTPISTOL_CHAOS
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.2
+    dropoff: 5
+    requires:
+      - STR_ALIENS_ONLY
+    costBuy: 0
+    costSell: 1000
+    weight: 15
+    bigSprite: 275
+    floorSprite: 253
+    handSprite: 504
+    bulletSprite: 6
+    fireSound: 707
+    compatibleAmmo:
+      - STR_PISTOL_CLIP
+      - STR_PISTOL_CLIP_EX
+      - STR_PISTOL_CLIP_AP
+    accuracySnap: 55
+    tuSnap: 21
+    battleType: 1
+    twoHanded: false
+    invWidth: 2
+    invHeight: 2
+    armor: 30
+    bulletSpeed: 30
+    attraction: 5
+    listOrder: 10140
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+
+
+#Chaos Bolter
+  - type: STR_BOLTERC
+    compatibleAmmo:
+      - STR_RIFLE_CLIP
+      - STR_RIFLE_CLIP_AP
+      - STR_RIFLE_CLIP_EX
+
+#Nurgle Bolter
+  - type: STR_BOLTERN
+    compatibleAmmo:
+      - STR_RIFLE_CLIP
+      - STR_RIFLE_CLIP_N
+      - STR_RIFLE_CLIP_R
+      - STR_RIFLE_CLIP_AP
+      - STR_RIFLE_CLIP_EX
+
+#"Rubric" Bolter (Tzeench)
+  - type: STR_BOLTERR
+    compatibleAmmo:
+      - STR_RIFLE_CLIP
+      - STR_RIFLE_CLIP_R
+      - STR_RIFLE_CLIP_AP
+      - STR_RIFLE_CLIP_EX
+
+#### CHAOS MELTA WEAPONS ###
+
+#Chaos Meltagun
+  - type: STR_CHAOS_MELTAGUN
+    weight: 20
+    bulletSpeed: 50
+    maxRange: 10
+
+#Chaos Multi-melta
+
+  - type: STR_BLASTER_LAUNCHER
+    weight: 40
+    bulletSpeed: 50
+    tuSnap: 0
+    accuracySnap: 0
+    tuAuto: 50
+    accuracyAuto: 80
+    confAuto:
+      shots: 2
+    maxRange: 15
+
+#### CHAOS PLASMA WEAPONS ###
+
+#Chaos Plasma Pistol
+  - type: STR_PLASMA_PISTOL
+    tuSnap: 35
+
+#Chaos Plasmagun
+  - type: STR_PLASMA_RIFLE
+    tuSnap: 30
+    snapRange: 18
+    tuAuto: 0
+
+#Chaos Heavy Plasma (Plasma Cannon)
+  - type: STR_HEAVY_PLASMA
+
+    tuSnap: 0
+
+    tuAuto: 45
+    accuracyAuto: 75
+    autoRange: 24
+    confAuto:
+      shots: 1
+      name: STR_CUSTOM_SNAPSHOT
+
+    tuAimed: 90
+    aimRange: 24
+    accuracyAimed: 110
+
+#### CHAOS FLAMER WEAPONS ###
+
+#Chaos Flamer
+  - type: STR_FLAMETHROWER_CHAOS
+    tuSnap: 0
+
+    tuAimed: 25
+    tuAuto: 40
+    autoShots: 3
+    accuracyAuto: 150
+    accuracyAimed: 150
+    confAimed:
+      name: STR_CUSTOM_SNAPSHOT
+    maxRange: 6
+
+#Warpflamer
+  - type: STR_FLAMETHROWERTZ
+    tuSnap: 0
+
+    tuAimed: 25
+    tuAuto: 40
+    autoShots: 3
+    accuracyAuto: 150
+    accuracyAimed: 150
+    confAimed:
+      name: STR_CUSTOM_SNAPSHOT
+    maxRange: 6
+
+### Chaos Stormbolter (Combi-Bolter)
+  - type: STR_CHB
+    bigSprite: 274
+
+    bulletSprite: 6
+    fireSound: 707
+    bulletSpeed: 30
+    compatibleAmmo:
+      - STR_HB_CLIP
+      - STR_HB_CLIP_EX
+      - STR_HB_CLIP_AP
+    accuracySnap: 75
+    tuSnap: 25
+    confSnap:
+      shots: 2
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+
+#### CHAOS MELEE WEAPONS ###
+#Chain Axe
+  - type: STR_AXE
+    weight: 30
+    tuMelee: 25
+    power: 90
+    damageBonus:
+      strength: 0.0
+      melee: 0.0
+    damageAlter:
+      ToArmorPre: 0.3
+      ToHealth: 1.0
+      ToWound: 0.05
+      ToEnergy: 0.0
+      RandomWound: false
+    accuracyMelee: 100
+    meleeMultiplier:
+      strength: 0.0
+      melee: 0.4
+      flatHundred: 0.4
+
+#Warptalon's claw
+  - type: STR_CHAOS_CLAWS
+
+    accuracyMelee: 100
+    meleeMultiplier:
+      strength: 0.4
+      melee: 0.4
+
+    power: 40
+    damageBonus:
+      strength: 0.2
+      melee: 0.2
+
+    damageAlter:
+      ArmorEffectiveness: 0.7
+      ToArmorPre: 0.1
+      ToHealth: 1.0
+
+    tuMelee: 25
+    flatRate: false
+
+#Warptalon's claw number 2
+  - type: STR_CHAOS_CLAWS2
+
+    accuracyMelee: 100
+    meleeMultiplier:
+      strength: 0.4
+      melee: 0.4
+
+    power: 40
+    damageBonus:
+      strength: 0.2
+      melee: 0.2
+
+    damageAlter:
+      ArmorEffectiveness: 0.7
+      ToArmorPre: 0.1
+      ToHealth: 1.0
+
+    tuMelee: 25
+    flatRate: false
+
+#Chaos Power Sword
+  - type: STR_CPOWER_SWORD
+    bigSprite: 261
+    floorSprite: 245
+    handSprite: 440
+
+    weight: 50
+
+    tuMelee: 25
+    flatRate: false
+
+    power: 80
+    damageBonus:
+      strength: 0.1
+      melee: 0.2
+
+    damageAlter:
+      ArmorEffectiveness: 0.7
+      ToArmorPre: 0.1
+      ToHealth: 1.0
+
+    accuracyMelee: 100
+    meleeMultiplier:
+      strength: 0.0
+      melee: 0.4
+      flatHundred: 0.4
+
+#Chaos Power Dagger
+  - type: STR_CPOWER_DAGGER
+    bigSprite: 263
+
+    weight: 10
+    power: 20
+    damageType: 7
+    damageBonus:
+      reactions: 0.4
+      melee: 0.4
+    damageAlter:
+      ArmorEffectiveness: 0.9
+      ToArmorPre: 0.1
+      ToHealth: 1.0
+
+    accuracyMelee: 100
+    meleeMultiplier:
+      reactions: 0.2
+      melee: 0.2
+      flatHundred: 0.5
+
+    tuMelee: 15
+    flatRate: false
+
+    invWidth: 1
+    invHeight: 3
+
+#### PLAGUE (BLIGHT) WEAPONS ####
+#plague bolter ammo
+  - type: STR_RIFLE_CLIP_N
+    damageAlter: #DA BLIGHT
+      ToArmorPre: 0.2
+      ToArmor: 0.1
+      ToHealth: 1.0
+      ToStun: 0.2
+      ToWound: 0.1
+      ToEnergy: 0.5
+      RandomWound: false
+
+#blight grenade
+  - type: STR_ALIEN_GRENADE
+    damageAlter: #DA BLIGHT
+      ToArmorPre: 0.2
+      ToArmor: 0.1
+      ToHealth: 1.0
+      ToStun: 0.2
+      ToWound: 0.1
+      ToEnergy: 0.5
+      RandomWound: false
+
+#blight rocket
+  - type: STR_BLIGHT_ROCKET
+    damageAlter: #DA BLIGHT
+      ToArmorPre: 0.2
+      ToArmor: 0.1
+      ToHealth: 1.0
+      ToStun: 0.2
+      ToWound: 0.1
+      ToEnergy: 0.5
+      RandomWound: false
+
+#### CHAOS DREADNOUGHT WEAPONS ###
+#Chaos Dreadnought fist with bolter
+
+  - delete: STR_CHAOS_DREAD_MELEE_WEAPON
+
+  - type: STR_CHAOS_DREAD_MELEE_WEAPON
+    weight: 3
+    bigSprite: 288
+    battleType: 1
+    clipSize: -1
+    flatRate: false
+
+#projectile
+    bulletSprite: 6
+    fireSound: 707
+    bulletSpeed: 50
+    explosionSpeed: 5
+    hitSound: 708
+    hitAnimation: 26
+
+    damageType: 1
+    power: 60
+
+    damageAlter: #DA BOLTER
+      ToArmorPre: 0.05
+      ArmorEffectiveness: 0.9
+      ToArmor: 0.1
+      ToHealth: 1.0
+      ToStun: 0.5
+
+    accuracyAimed: 75
+    tuAimed: 20
+    confAimed:
+      shots: 2
+      name: STR_CUSTOM_DOUBLE_SHOT
+
+    accuracyAuto: 50
+    tuAuto: 50
+    confAuto:
+      shots: 6
+
+#melee
+
+    meleeSound: 710 # 710 powerfist miss
+    meleeHitSound: 772 # 772 powerfist hit
+    meleeAnimation: 28 # 28 bolt anitmation
+    meleeType: 7
+    meleePower: 100
+    accuracyMelee: 100
+    meleeMultiplier:
+      strength: 0.0
+      melee: 0.5
+      flatHundred: 0.5
+    meleeBonus:
+      strength: 0.0
+      melee: 0.0
+    meleeAlter:
+      ArmorEffectiveness: 0.9
+      ToArmorPre: 0.3
+      ToHealth: 1.0
+    tuMelee: 25
+    flatMelee:
+      time: false
+
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_HAND
+    invWidth: 2
+    invHeight: 3
+    recover: false
+
+#Chaos Dreadnought Missile Launcher (Krak missiles)
+
+  - delete: DM_WEAPON
+
+  - type: DM_WEAPON
+    bigSprite: 289
+    hitAnimation: 184
+
+    weight: 1
+    bigSprite: 203
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 52
+
+    flatRate: false
+
+    accuracyAimed: 100
+    tuAimed: 66
+
+    power: 100
+    damageType: 3
+    damageAlter:
+      ToArmorPre: 0.2
+      ArmorEffectiveness: 0.7
+      ToArmor: 0.2
+
+    blastRadius: 1
+    clipSize: 8
+
+    battleType: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_HAND
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    listOrder: 2820
+
+
+#Chaos Dreadnought Plasma Cannon
+  - type: SECTOPOD_WEAPON
+    bigSprite: 290
+#    tuSnap: 0
+    flatRate: false
+
+    tuSnap: 45
+    accuracySnap: 75
+    SnapRange: 24
+
+#    tuAuto: 45
+#    accuracyAuto: 75
+#    autoRange: 24
+#    confAuto:
+#      shots: 1
+#      name: STR_CUSTOM_SNAPSHOT
+
+    tuAimed: 90
+    aimRange: 24
+    accuracyAimed: 110
+
+    power: 90
+    damageAlter:
+      RandomType: 0
+      ToArmor: 0.1
+      ToArmorPre: 0.1
+      ToHealth: 1.0
+      ArmorEffectiveness: 0.8
+      RadiusReduction: 10.0
+    blastRadius: 1
+
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_HAND
+
+
+#### ORK TURRETS ###
+
+#Ork turrets nerf
+  - delete: STR_VINDICATOR_ORK
+
+  - type: STR_VINDICATOR_ORK
+    size: 6
+    weight: 1
+    bigSprite: 235
+    bulletSprite: 4
+    bulletSpeed: 50
+    fireSound: 12
+    accuracyAimed: 50
+    tuAimed: 1
+    costAimed:
+      energy: 50
+    flatRate: true
+    battleType: 1
+    maxRange: 30
+    aimRange: 20
+    minRange: 5
+    clipSize: -1
+    invWidth: 2
+    invHeight: 3
+    damageType: 1
+    power: 100
+    explosionHitSound: 112 #Smoke
+    hitAnimation: 104 #XSmoke
+    blastRadius: 5
+    damageAlter: #VINDICATOR
+      ArmorEffectiveness: 0.9
+      ToArmorPre: 0.9
+      ToHealth: 0.9
+    fixedWeapon: true
+    recover: false
+
+  - delete: ORKTURRET_WEAPON
+
+  - type: ORKTURRET_WEAPON
+    weight: 3
+    bigSprite: 236
+    fireSound: [115, 116, 117]
+    hitSound: 113
+    hitAnimation: 26
+    power: 60
+    accuracyAuto: 35
+    tuAuto: 1
+    costAuto:
+      energy: 60
+    autoRange: 20
+    flatRate: true
+    battleType: 1
+    damageAlter: #DA BOLTER  DOUBLE SHOT
+      RandomType: 6
+      ToArmorPre: 0.2
+      ArmorEffectiveness: 0.9
+      ToArmor: 0.2
+      ToHealth: 2.0
+      ToStun: 0.4
+    explosionSpeed: 5
+    bulletSpeed: 50
+    damageType: 1
+    autoShots: 5
+    sprayWaypoints: 2
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    bulletSprite: 6
+    recover: false
+
+### CHAOS CENTINTEL ROCKET LAUNCHER ###
+
+  - delete: STR_C_ROCKETS
+
+#No waypoints.
+  - type: STR_C_ROCKETS 
+    weight: 0
+    bigSprite: 237
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 52
+    accuracyAimed: 115
+    tuAimed: 75
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    hitSound: 0
+    hitAnimation: 0
+    power: 85
+    damageType: 3
+    clipSize: 4
+    recover: false

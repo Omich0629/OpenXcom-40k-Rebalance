@@ -1,0 +1,100 @@
+facilities:
+#Armory. Requires T3, not T2.
+  - type: STR_ARMORY
+    requires:
+      - STR_ULTIMATE_CRAFT
+
+#Apothecary Bay. Get healing bonus from techmarines.
+  - type: STR_APOC_BAY
+    requires:
+      - STR_APOC_BAY
+    sickBayAbsoluteBonus: 0.5
+    sickBayRelativeBonus: 0.4
+
+#Techmarines Bay. No healing bonus.
+#Unlocks for space marines only
+  - type: STR_TEC_BAY
+    requires:
+      - STR_TEC_BAYR
+      - STR_SPACE_MARINES_OPERATIONS
+    sickBayAbsoluteBonus: 0.0
+    sickBayRelativeBonus: 0.0
+
+#Empty Hangar.
+  - type: STR_HANGAR
+    size: 2
+    mapName: HANGAR_52
+
+
+#Adamantium Forge 2x2
+
+  - delete: STR_STEELMILL
+
+  - type: STR_STEELMILL
+    requires:
+      - STR_STEELMILLR
+    spriteFacility: 903
+    spriteShape: 903
+    size: 2
+    buildCost: 2000000
+    buildTime: 30
+    monthlyCost: 100000
+    workshops: 100
+    storage: 100
+    provideBaseFunc: [MILL]
+    mapName: FORGE_56
+    listOrder: 800
+
+#Commuunication center. Without enemy spawners.
+
+  - type: STR_COMUNICATIONS
+    mapName: COMU_60
+
+#LIFT
+
+  - type: STR_ACCESS_LIFT
+    mapName: LIFT_64
+
+
+#Training module
+
+  - type: STR_TRAINFACILITY
+    trainingRooms: 40
+
+#Chapter Armory
+  - type: STR_ARMORY
+    requires:
+      - STR_CHAPTER_ARMORY
+
+#Librarium
+
+  - delete: STR_LIBRARY
+
+  - type: STR_LIBRARY
+    requires:
+      - STR_LIBRARY
+    spriteShape: 1
+    spriteFacility: 34
+    buildCost: 750000
+    buildTime: 24
+    monthlyCost: 16000
+    refundValue: 250000
+    provideBaseFunc: [LIB]
+    psiLabs: 10
+    maxAllowedPerBase: 1
+    mapName: XBASE_27
+    listOrder: 803
+
+
+#CHAPEL?
+  - type: STR_PSIONIC_LABORATORY
+    requires:
+      - STR_PSI_LAB
+    spriteShape: 1
+    spriteFacility: 31
+    buildCost: 750000
+    buildTime: 24
+    monthlyCost: 16000
+    psiLabs: 10
+    provideBaseFunc: [PSI]
+    mapName: XBASE_14

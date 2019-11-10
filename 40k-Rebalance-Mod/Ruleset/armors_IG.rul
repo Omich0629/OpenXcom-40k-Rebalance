@@ -1,0 +1,202 @@
+armors:
+
+#Medic's Flak Armor. Same bonuses as for normal Flak armor
+#For Guards only.
+
+  - type: STR_GUARD_ARMORS_MEDIC_UC
+    stats:
+       tu: 10
+       stamina: 10
+       bravery: -10 #always multiples of 10
+    units:
+      - STR_GUARDSM
+
+#Carapace Armors
+#STR penalty is -5 now.
+
+  - type: STR_GUARD_ARMORH_UC
+    stats:
+       tu: -10
+       stamina: -10
+       bravery: 10 #always multiples of 10
+       strength: -5
+
+#For Guards only.
+  - type: STR_MEDIC_CARAPACE_ARMOR
+    stats:
+       tu: -10
+       stamina: -10
+       bravery: 10 #always multiples of 10
+       strength: -5
+    units:
+      - STR_GUARDSM
+
+#Stormtroopers\scions related armor
+#+20 to all armor
+#Scion armor is for Scions only. Same for Stormtrooper armor
+
+  - type: STR_STORMTROOPER_CARAPACE_ARMOR
+    frontArmor: 70
+    sideArmor: 70
+    rearArmor: 70
+    underArmor: 70
+    units:
+      - STR_GUARD_VETERAN
+
+  - type: STR_SCION_CARAPACE_ARMOR
+    frontArmor: 70
+    sideArmor: 70
+    rearArmor: 70
+    underArmor: 70
+    units:
+      - STR_STORMTROOPER
+
+  - type: STR_STORMTROOPER_CARAPACE_ARMOR_HELLGUN
+    storeItem: STR_HELLGUN_ARMOR
+    frontArmor: 70
+    sideArmor: 70
+    rearArmor: 70
+    underArmor: 70
+    units:
+      - STR_GUARD_VETERAN
+
+  - type: STR_SCION_CARAPACE_ARMOR_HELLGUN
+    storeItem: STR_HELLGUN_ARMOR
+    frontArmor: 70
+    sideArmor: 70
+    rearArmor: 70
+    underArmor: 70
+    units:
+      - STR_STORMTROOPER
+
+
+  - type: STR_STORMTROOPER_CARAPACE_ARMOR_VOLLEYGUN
+    storeItem: STR_VOLLEYGUN_ARMOR
+    frontArmor: 70
+    sideArmor: 70
+    rearArmor: 70
+    underArmor: 70
+    units:
+      - STR_GUARD_VETERAN
+
+  - type: STR_SCION_CARAPACE_ARMOR_VOLLEYGUN
+    storeItem: STR_VOLLEYGUN_ARMOR
+    frontArmor: 70
+    sideArmor: 70
+    rearArmor: 70
+    underArmor: 70
+    units:
+      - STR_STORMTROOPER
+
+  - type: STR_ENGINSEER_ARMOR_UC #DR4
+    visibilityAtDay: 40
+    visibilityAtDark: 9
+    spriteSheet: ENGINSEER.PCK
+    customArmorPreviewIndex: 117 #Second spritesheet. range from 100 to 189 or so.
+    spriteInv: ENGINSEER_INV
+    corpseBattle:
+      - STR_ENGINSEER_CORPSE
+    frontArmor: 100
+    sideArmor: 90
+    rearArmor: 80
+    underArmor: 70
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.1 #PLASMA
+      - 0.8 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    builtInWeapons:
+      - INV_NULL_3X3
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - STR_OMNISSIAN_AXE
+    specialWeapon: AUX_PROBE
+    invs:
+      - id: STR_RIGHT_HAND
+        costs:
+          STR_BEHIND_SHOLDER: 6
+      - id: STR_LEFT_HAND
+        costs:
+          STR_BEHIND_SHOLDER: 6
+      - id: STR_BACK_PACK
+        costs:
+          STR_BEHIND_SHOLDER: 16
+      - id: STR_BELT
+        costs:
+          STR_BEHIND_SHOLDER: 8
+      - id: STR_RIGHT_LEG
+        costs:
+          STR_BEHIND_SHOLDER: 10
+      - id: STR_LEFT_LEG
+        costs:
+          STR_BEHIND_SHOLDER: 10
+      - id: STR_GROUND
+        costs:
+          STR_BEHIND_SHOLDER: 18
+      - id: STR_BEHIND_SHOLDER
+        x: 145
+        y: 35
+        type: 1
+        costs:
+          STR_RIGHT_HAND: 6
+          STR_LEFT_HAND: 6
+          STR_BEHIND_SHOLDER: 0
+          STR_BACK_PACK: 16
+          STR_BELT: 8
+          STR_RIGHT_LEG: 6
+          STR_LEFT_LEG: 6
+          STR_GROUND: 6
+      - id: STR_BACKPACK
+        type: 1
+    size: 1
+
+#Guard Officer Armors
+#Why this armor even exists?
+  - type: STR_OFFICER_FLAK_ARMOR
+    spriteSheet: FLAK_VOXCASTER.PCK
+    builtInWeapons:
+     - INV_NULL_VOX_CASTER
+
+#Some armor for officer's carapace, and -5 STR penalty
+  - type: STR_OFFICER_CARAPACE_ARMOR
+    spriteSheet: CARAPACE_VOXCASTER.PCK
+    frontArmor: 70
+    sideArmor: 70
+    rearArmor: 70
+    underArmor: 70
+    stats:
+       tu: -10
+       stamina: -10
+       strength: -5
+    builtInWeapons:
+     - INV_NULL_VOX_CASTER
+
+#Chimera Turret
+  - type: STR_CHIMERA_TURRET_ARMOR
+    frontArmor: 130
+    sideArmor: 130
+    rearArmor: 130
+    underArmor: 150
+    damageModifier: #VEICULE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA

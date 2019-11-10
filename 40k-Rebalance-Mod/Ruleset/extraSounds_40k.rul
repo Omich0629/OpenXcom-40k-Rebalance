@@ -1,0 +1,72 @@
+extraSounds:
+  - type: BATTLE.CAT
+    files:
+      100: Resources/Sound/Kbanner.wav
+      101: Resources/Sound/CORAGE1.wav
+      102: Resources/Sound/CORAGE2.wav
+      103: Resources/Sound/CORAGE3.wav
+      104: Resources/Sound/CORAGE4.wav
+      105: Resources/Sound/CORAGE5.wav
+      106: Resources/Sound/CORAGE6.wav
+      107: Resources/Sound/CORAGE7.wav
+      108: Resources/Sound/CORAGE8.wav
+      109: Resources/Sound/ChainswordHit.wav
+      110: Resources/Sound/PowerSwordMiss.wav
+      111: Resources/Sound/PowerSwordHit.wav
+      112: Resources/Sound/Smoke.wav
+      115: Resources/Sound/bigshoota_fire1.wav
+      116: Resources/Sound/bigshoota_fire2.wav
+      117: Resources/Sound/bigshoota_fire3.wav
+      118: Resources/Sound/GravGun_Fire.wav
+      119: Resources/Sound/GravGun_Hit.wav
+
+###
+      700: Resources/Sound/Dreadnought_Walk.wav
+      707: Resources/Sound/Boltfire.wav
+      708: Resources/Sound/BoltHit.wav
+      710: Resources/Sound/PowerFist_Miss.wav
+
+#Marine death
+      713: Resources/Sound/DEATH_MARINE1.wav 
+      714: Resources/Sound/DEATH_MARINE2.wav
+      715: Resources/Sound/DEATH_MARINE3.wav
+      716: Resources/Sound/DEATH_MARINE4.wav
+      717: Resources/Sound/DEATH_MARINE5.wav
+      718: Resources/Sound/DEATH_MARINE6.wav
+      719: Resources/Sound/DEATH_MARINE7.wav
+      720: Resources/Sound/DEATH_MARINE8.wav
+      721: Resources/Sound/DEATH_MARINE9.wav
+      722: Resources/Sound/DEATH_MARINE10.wav
+#Chaos Marine death
+      723: Resources/Sound/DEATH_CHAOS_MARINE1.wav
+      724: Resources/Sound/DEATH_CHAOS_MARINE2.wav
+      725: Resources/Sound/DEATH_CHAOS_MARINE3.wav
+      726: Resources/Sound/DEATH_CHAOS_MARINE4.wav
+      727: Resources/Sound/DEATH_CHAOS_MARINE5.wav
+      728: Resources/Sound/DEATH_CHAOS_MARINE6.wav
+      729: Resources/Sound/DEATH_CHAOS_MARINE7.wav
+      730: Resources/Sound/DEATH_CHAOS_MARINE8.wav
+      731: Resources/Sound/DEATH_CHAOS_MARINE9.wav
+      732: Resources/Sound/DEATH_CHAOS_MARINE10.wav
+#Sororitas death
+      744: Resources/Sound/DEATH_SORORITAS1.wav 
+      745: Resources/Sound/DEATH_SORORITAS2.wav
+      746: Resources/Sound/DEATH_SORORITAS3.wav
+      747: Resources/Sound/DEATH_SORORITAS4.wav
+      748: Resources/Sound/DEATH_SORORITAS5.wav
+      749: Resources/Sound/DEATH_SORORITAS6.wav
+      750: Resources/Sound/DEATH_SORORITAS7.wav
+      751: Resources/Sound/DEATH_SORORITAS8.wav
+      752: Resources/Sound/DEATH_SORORITAS9.wav
+
+      758: Resources/Sound/chaplain_fire1.wav #chap fire
+      759: Resources/Sound/chaplain_fire2.wav
+      760: Resources/Sound/chaplain_fire3.wav
+      761: Resources/Sound/chaplain_fire4.wav
+      762: Resources/Sound/chaplain_fire5.wav
+      763: Resources/Sound/chaplain_fire6.wav
+      771: Resources/Sound/Flame_Hit.wav
+      772: Resources/Sound/PowerFist_Hit.wav
+      778: Resources/Sound/Mind.wav
+      864: Resources/Sound/LightningHit.wav
+      865: Resources/Sound/Lascannon_Fire.wav

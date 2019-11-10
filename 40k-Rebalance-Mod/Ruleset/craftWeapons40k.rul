@@ -1,0 +1,92 @@
+craftWeapons:
+  - type: STR_STINGRAY               #R 40       A 6        D 60     Acc 65
+    damage: 80 #20 more dmg
+    range: 40
+    accuracy: 65
+    reloadCautious: 64
+    reloadStandard: 48
+    reloadAggressive: 32
+    ammoMax: 12 #4 more ammo
+  - type: STR_AVALANCHE              #R 50       A 3        D100     Acc 75
+    damage: 125 #25 more dmg
+    range: 50
+    accuracy: 75
+    reloadCautious: 96
+    reloadStandard: 72
+    reloadAggressive: 48
+    ammoMax: 6 #3 more ammo
+  - type: STR_CANNON_UC              #R 30       A 100      D10      Acc 40
+    damage: 12 # +2
+    range: 30
+    accuracy: 40
+    reloadCautious: 5 #+1
+    reloadStandard: 5 #+1
+    reloadAggressive: 5 #+1
+    ammoMax: 200 #x2
+    rearmRate: 100
+  - type: STR_FUSION_BALL_UC         #R 10       A 2        D230     Acc 90
+    damage: 230
+    range: 10
+    accuracy: 90
+    reloadCautious: 64
+    reloadStandard: 48
+    reloadAggressive: 32
+    ammoMax: 15 #13 more ammo
+  - type: STR_LASER_CANNON_UC        #R 30      A 10        D70      Acc  45
+    damage: 70
+    range: 30
+    accuracy: 45
+    reloadCautious: 24
+    reloadStandard: 24
+    reloadAggressive: 24
+    ammoMax: 70 #+60, more ammo, 4900 total dmg
+  - type: STR_PLASMA_BEAM_UC         #R 40      A 5         D120     Acc 30
+    damage: 120
+    range: 40
+    accuracy: 50 #more accuracy
+    reloadCautious: 24
+    reloadStandard: 24
+    reloadAggressive: 24
+    ammoMax: 35 #+30, More ammo, 4200 total dmg
+    clip: STR_PLASMA_BEAM_AMMO
+  - type: STR_THUNDER_CANNON_UC      #R 40      A 2         D300     Acc 30
+    damage: 300
+    range: 45 #+5
+    accuracy: 40 #+10
+    reloadCautious: 48
+    reloadStandard: 48
+    reloadAggressive: 48
+    ammoMax: 6 #+4 ammo
+  - type: STR_ASSCANNON_UC           #R 30      A 50        D20      Acc 40
+    damage: 30 #+10 
+    range: 40
+    accuracy: 40
+    reloadCautious: 3 #-1
+    reloadStandard: 3 #-1
+    reloadAggressive: 3 #-1
+    ammoMax: 100 #x2
+#Addons
+  - type: STR_THRUSTER_UC
+    stats:
+      avoidBonus: 5 #+2? 3?
+      speedMax: 250
+  - type: STR_TARGETER_UC
+    stats:
+      radarRange: 50
+      hitBonus: 10
+  - type: STR_HULL_PLATING_UC
+    stats:
+      damageMax: 200 # -50
+      armor: 4   #+2
+  - type: STR_FLARE_LAUNCH_UC
+    stats:
+      avoidBonus: 15  #+5
+  - type: STR_SCANNER_UC
+    stats:
+      radarRange: 1000
+  - type: STR_RETICULE_UC
+    stats:
+      powerBonus: 10
+items: #craft Related
+  - type: STR_FUSION_BALL
+    clipSize: 5

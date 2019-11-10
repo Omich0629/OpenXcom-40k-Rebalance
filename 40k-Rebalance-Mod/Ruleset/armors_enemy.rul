@@ -1,0 +1,1260 @@
+armors:
+### CHAOS SM ARMORS (NOT TERMINATORS) ####
+
+#Chaos Space Marine (Chaos Traitor)
+
+  - type: STR_MUTON_ARMOR0
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Chaos Havoc
+  - type: MUTON_ARMORHAVOC
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier: #CHAOS ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Tzeentch Marine Havoc (Rubric Havoc)
+  - type: MUTON_ARMORHAVOCT
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Plague Marine Havoc (Plague Havoc)
+  - type: MUTON_ARMORHAVOCN
+    frontArmor: 90
+    sideArmor: 70
+    rearArmor: 60
+    underArmor: 60
+    damageModifier: #NURGLE CHAOS ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Chaos Space Marine Sorcerer (Chaos Sorcerer)
+
+  - type: STR_MUTON_ARMOR1
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Khorne Berserker
+  - type: STR_MUTON_ARMORB
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier: #CHAOS ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Noise Space Marine
+  - type: MUTON_ARMORSLAANESH
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier: #CHAOS ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+
+#Noise Marine Havoc
+  - type: MUTON_ARMORHAVOCS
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier: #CHAOS ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Tzeentch Sorcerer
+  - type: MUTON_ARMORTZS
+    frontArmor: 55
+    sideArmor: 55
+    rearArmor: 55
+    underArmor: 45
+    damageModifier: #CHAOS ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+
+#Tzeentch Space Marine (Rubric Marine)
+  - type: MUTON_ARMORTZEENTCH
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier: #CHAOS ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Plague Marine
+  - type: MUTON_ARMORNURGLE
+    frontArmor: 90
+    sideArmor: 70
+    rearArmor: 60
+    underArmor: 60
+    damageModifier: #NURGLE CHAOS ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+
+#Plague Marine (Another variation)
+  - type: MUTON_ARMORNURGLEA
+    frontArmor: 90
+    sideArmor: 70
+    rearArmor: 60
+    underArmor: 60
+    damageModifier: #CHAOS ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+
+#Chaos Raptor
+  - type: STR_FLOATER_ARMOR0
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier: #CHAOS ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Chaos Raptor (Another variation)
+  - type: STR_FLOATER_ARMOR1
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier: #CHAOS ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Chaos Raptor (Yet another variation)
+  - type: FLOATER_ARMOR2
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier: #CHAOS ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Warptalon
+  - type: STR_WARPTALON_ARMOR
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+### CHAOS SM TERMINATOR ARMORS ### 
+
+#Chaos Terminator
+  - type: STR_MUTON_ARMOR2
+    frontArmor: 120
+    sideArmor: 100
+    rearArmor: 90
+    underArmor: 80
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+
+#Chaos Champion (Terminator variation)
+  - type: MUTON_ARMOR5
+    frontArmor: 120
+    sideArmor: 100
+    rearArmor: 90
+    underArmor: 80
+    damageModifier: #TERMINATOR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+
+#Nurgle champion (Terminator variation)
+  - type: STR_MUTON_ARMORNURGLEC
+    frontArmor: 110
+    sideArmor: 90
+    rearArmor: 80
+    underArmor: 70
+    damageModifier: #TERMINATOR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+
+#Plague Terminator
+  - type: STR_MUTON_ARMORNURGLE
+    frontArmor: 110
+    sideArmor: 90
+    rearArmor: 80
+    underArmor: 70
+    damageModifier: #TERMINATOR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+
+### MISC CHAOS SM ARMORS ###
+
+#Chaos Centurion (Behemoth)
+  - type: BEHEMOTH_ARMOR
+    frontArmor: 120
+    sideArmor: 120
+    rearArmor: 120
+    underArmor: 140
+    damageModifier: #CENT ARMOR
+      - 1.0 #none
+      - 0.9 #AP
+      - 0.2 #FLAMES
+      - 0.9 #HE
+      - 0.9 #LASCANON
+      - 0.9 #PLASMA
+      - 0.9 #STUN
+      - 0.9 #MELEE
+      - 0.9 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 0.9 #MELTA
+
+#Obliterator
+  - type: OBLITERATOR_ARMOR
+    frontArmor: 150
+    sideArmor: 120
+    rearArmor: 100
+    underArmor: 90
+    damageModifier: #TERMINATOR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Chaos Dreadnought
+  - type: SECTOPOD_ARMOR
+    frontArmor: 160
+    sideArmor: 140
+    rearArmor: 110
+    underArmor: 150
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 1.2 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.2 #MELTA
+
+#Chaos Dreadnought (Variation)
+  - type: SECTOPOD_ARMOR2
+    frontArmor: 160
+    sideArmor: 140
+    rearArmor: 110
+    underArmor: 150
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 1.2 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.2 #MELTA
+
+#Predator Main Turret
+  - type: PREDATOR_ARMOR
+    frontArmor: 130
+    sideArmor: 130
+    rearArmor: 130
+    underArmor: 150
+    damageModifier: #VEHICLE ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.2 #MELTA
+
+#Predator Heavy Bolter
+  - type: PREDATOR_SIDE_ARMOR
+    frontArmor: 50
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 50
+    damageModifier: #VEICULE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.2 #MELTA
+
+### CHAOS SORORITAS ARMORS ### 
+
+#Slaanesh sister?
+  - type: STR_ADEPTAS_SLAANESH
+    frontArmor: 90
+    sideArmor: 70
+    rearArmor: 60
+    underArmor: 60
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Tzeentch Sister (Chaos Rubric Sister)
+  - type: STR_ADEPTAS_TZEENTCH
+    frontArmor: 90
+    sideArmor: 70
+    rearArmor: 60
+    underArmor: 60
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Khorne Sister (Chaos Blood Sister)
+  - type: STR_ADEPTAS_KHORNE
+    frontArmor: 90
+    sideArmor: 70
+    rearArmor: 60
+    underArmor: 60
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Nurgle Sister (Chaos Plague Sister)
+  - type: STR_ADEPTAS_NURGLE
+    frontArmor: 30
+    sideArmor: 60
+    rearArmor: 60
+    underArmor: 60
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+### CHAOS DAEMONS ARMORS ### 
+
+#Plaguebearer (Nurgle Daemon)
+  - type: STR_CELATID_ARMOR
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    damageModifier: #NURGLE ARMOR
+      - 0.9 #none
+      - 0.9 #AP
+      - 1.5 #FLAMES
+      - 0.9 #HE
+      - 0.9 #LASCANON
+      - 0.9 #PLASMA
+      - 0.9 #STUN
+      - 0.9 #MELEE
+      - 0.1 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Juggernaut (Khorne Deamon)
+  - type: STR_REAPER_ARMOR
+    frontArmor: 130
+    sideArmor: 130
+    rearArmor: 130
+    underArmor: 150
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.9 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.2 #MELTA
+
+#Winged Daemon
+  - type: CYBERDISC_ARMOR
+    frontArmor: 50
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 50
+    damageModifier: #DAEMON ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+
+#Chaos Daemon
+  - type: STR_SILACOID_ARMORT
+    frontArmor: 30
+    sideArmor: 30
+    rearArmor: 30
+    underArmor: 10
+    damageModifier: #DEAMON ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Slaanesh Daemonette
+  - type: STR_CHRYSSALID_ARMOR
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 5
+    damageModifier: #NAKED
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 0.7 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+
+#Tzeentch Flamer
+  - type: STR_FLAMER_ARMOR
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 5
+    damageModifier: #FLAMER
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+### CULTIST ARMORS ### 
+
+#Cultist
+  - type: STR_SECTOID_ARMOR0
+    frontArmor: 4
+    sideArmor: 3
+    rearArmor: 2
+    underArmor: 2
+    damageModifier: #CULTIST ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.2 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Cultist (Variation)
+  - type: STR_CULTIST_ARMOR
+    frontArmor: 5
+    sideArmor: 4
+    rearArmor: 3
+    underArmor: 3
+    damageModifier: #CULTIST ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.2 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Cultist Priest
+  - type: STR_SECTOID_ARMORP
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 20
+    damageModifier: #CULTIST ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.2 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+### TRAITOR GUARDSMAN ARMORS ### 
+
+#Traitor Guardsman
+  - type: SNAKEMAN_ARMOR1
+    frontArmor: 20
+    sideArmor: 24
+    rearArmor: 22
+    underArmor: 20
+    damageModifier: #GUARD ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Traitor Guardsman (Variation)
+  - type: SNAKEMAN_ARMOR2
+    frontArmor: 26
+    sideArmor: 26
+    rearArmor: 22
+    underArmor: 20
+    damageModifier: #GUARD ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Traitor Guardsman (Carapace)
+  - type: SNAKEMAN_ARMORH
+    frontArmor: 50
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 50
+    damageModifier: #GUARD ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Traitor Guardsman (Navigator)
+  - type: SNAKEMAN_ARMORN
+    frontArmor: 10
+    sideArmor: 8
+    rearArmor: 6
+    underArmor: 6
+    damageModifier: #GUARD ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Traitor Guardsman Sergeant Armor
+#No shield. More armor.
+#Had to delete and recreate it
+
+  - delete: SNAKEMAN_ARMORC
+
+  - type: SNAKEMAN_ARMORC
+    visibilityAtDay: 40
+    visibilityAtDark: 20
+    spriteSheet: SNAKEMANC.PCK
+    spriteInv: ICG4
+    corpseBattle:
+      - STR_SNAKEMAN_CORPSE
+    frontArmor: 50
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 50
+    drawingRoutine: 0
+    damageModifier: #GUARD ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+
+#Chaos Sentinel
+  - type: STR_CHAOS_SENTINEL_ARMOR
+    frontArmor: 90
+    sideArmor: 90
+    rearArmor: 80
+    underArmor: 100
+    damageModifier: #VEHICLE ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.9 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.2 #MELTA
+
+#Traitor Chimera Turret
+  - type: STR_TRAITOR_CHIMERA_TURRET_ARMOR
+    frontArmor: 130
+    sideArmor: 130
+    rearArmor: 130
+    underArmor: 150
+    damageModifier: #VEICULE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA
+
+### GREY KNIGHTS ARMORS ### 
+#Grey Knight 
+  - type: STR_GREYKNIGHT_ARMOR
+    frontArmor: 150
+    sideArmor: 120
+    rearArmor: 100
+    underArmor: 90
+    damageModifier: #TERMINATOR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+
+#Grey Knight (Variation)
+  - type: STR_GREYKNIGHT_ARMOR_BA
+    frontArmor: 150
+    sideArmor: 120
+    rearArmor: 100
+    underArmor: 90
+    damageModifier: #TERMINATOR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+
+#Grey Knight (Variation)
+  - type: STR_GREYKNIGHT_ARMOR_NS
+    frontArmor: 150
+    sideArmor: 120
+    rearArmor: 100
+    underArmor: 90
+    damageModifier: #TERMINATOR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+
+
+### TYRANID ARMORS ###
+
+#Genestealer
+  - type: GENE_ARMOR
+    frontArmor: 34
+    sideArmor: 34
+    rearArmor: 34
+    underArmor: 34
+    damageModifier: #TYRAND ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.2 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Genestealer (Variation)
+  - type: GENE_ARMOR2
+    frontArmor: 34
+    sideArmor: 34
+    rearArmor: 34
+    underArmor: 34
+    damageModifier: #TYRAND ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.2 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Genestealer (Variation)
+  - type: GENE_ARMOR3
+    frontArmor: 34
+    sideArmor: 34
+    rearArmor: 34
+    underArmor: 34
+    damageModifier: #TYRAND ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.2 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Carnifex
+  - type: CARNI_ARMOR
+    frontArmor: 50
+    sideArmor: 60
+    rearArmor: 40
+    underArmor: 60
+    damageModifier: #TYRAND ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+### ORK ARMORS ###
+
+#Gretchin
+  - type: STR_GROTS_ARMOR
+    frontArmor: 4
+    sideArmor: 3
+    rearArmor: 2
+    underArmor: 2
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.2 #MELEE
+      - 1.6 #ACID
+      - 0.0 #SMOKE
+
+#Ork Boy
+  - type: STR_ORK_ARMORL
+    frontArmor: 30
+    sideArmor: 20
+    rearArmor: 15
+    underArmor: 20
+    damageModifier: #GUARD ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Ork 'ard Boy
+  - type: STR_ORK_ARMORM
+    frontArmor: 45
+    sideArmor: 35
+    rearArmor: 25
+    underArmor: 20
+    damageModifier: #GUARD ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Ork Nob
+  - type: STR_ORK_ARMORH
+    frontArmor: 65
+    sideArmor: 55
+    rearArmor: 45
+    underArmor: 40
+    damageModifier: #GUARD ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Killa Kan
+  - type: STR_ORK_KILLA_ARMOR
+    frontArmor: 160
+    sideArmor: 140
+    rearArmor: 110
+    underArmor: 150
+    damageModifier: #DREADNOUGHT ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 1.2 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.2 #MELTA
+
+### ELDAR ARMORS ###
+
+#Eldar Guardian
+  - type: STR_ELDAR_ARMOR
+    frontArmor: 20
+    sideArmor: 18
+    rearArmor: 16
+    underArmor: 12
+    damageModifier: #ELDAR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.5 #FLAMES
+      - 1.0 #HE
+      - 0.7 #LASCANON
+      - 0.7 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Eldar Banshee
+  - type: STR_ELDAR_ARMOR2
+    frontArmor: 60
+    sideArmor: 50
+    rearArmor: 40
+    underArmor: 45
+    damageModifier: #ELDAR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.5 #FLAMES
+      - 1.0 #HE
+      - 0.7 #LASCANON
+      - 0.7 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Eldar Seer
+  - type: STR_ELDAR_ARMOR3
+    frontArmor: 60
+    sideArmor: 50
+    rearArmor: 40
+    underArmor: 45
+    damageModifier: #ELDAR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.5 #FLAMES
+      - 1.0 #HE
+      - 0.7 #LASCANON
+      - 0.7 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+
+#Grav Platform
+  - type: STR_ELDAR_PLAT_ARMOR
+    frontArmor: 50
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 50
+    damageModifier: #VEHICLE ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.9 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.2 #MELTA
+
+

@@ -1,0 +1,70 @@
+soldierTransformation:
+
+  - name: STR_PROMOTE_TO_MARINE
+    requires:
+      - STR_PROMOTION_MARINE
+    requiredItems:
+      STR_TATICAL_ARMOR: 1
+    cost: 40000
+    producedSoldierType: STR_SOLDIER
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    keepSoldierArmor: true
+    allowedSoldierTypes:
+      - STR_SCOUT_SOLDIER
+    requiresBaseFunc: [MED]
+    requiredMinStats:
+      tu: 70
+      stamina: 70
+      health: 60
+      firing: 70
+      throwing: 70
+      strength: 40
+      melee: 70
+
+  - name: STR_PROMOTE_TO_VETERAN_MARINE
+    requires:
+      - STR_PROMOTION_VETERAN_MARINE
+    requiredItems:
+      STR_ALIEN_HABITAT: 1
+    cost: 100000
+    producedSoldierType: STR_VETERAN_SOLDIER
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    keepSoldierArmor: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+    requiredMinStats:
+      tu: 90
+      stamina: 90
+      health: 70
+      firing: 90
+      throwing: 70
+      strength: 70
+      melee: 90
+
+
+  - name: STR_RESURRECT_MARINE
+    requires:
+      - STR_DREADNOUGHT_TECH
+    cost: 850000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 200
+      STR_UFO_CONSTRUCTION: 100
+      STR_UFO_POWER_SOURCE: 1
+      STR_ALIEN_REPRODUCTION: 1
+      STR_ALIEN_HABITAT: 1
+    producedSoldierType: STR_FALLEN
+    producedSoldierArmor: DREAD_ARMOR_UC
+    allowsDeadSoldiers: true
+    allowsLiveSoldiers: false
+    needsCorpseRecovered: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_VETERAN_SOLDIER
+    requiresBaseFunc: [TEC]
+    transferTime: 24
+    recoveryTime: 0
+    lowerBoundAtMinStats: true

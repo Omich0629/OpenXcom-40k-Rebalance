@@ -1,0 +1,22 @@
+craftWeapons:
+  - type: STR_CRAFT_MULTILASER_UC
+    damage: 70
+    range: 30
+    accuracy: 35
+    reloadCautious: 12 # +4
+    reloadStandard: 12 # +4
+    reloadAggressive: 12 # +4
+  - type: STR_CRAFT_QUADLASER_UC
+    damage: 70
+    range: 30
+    accuracy: 40
+    reloadCautious: 6 #/2
+    reloadStandard: 6 #/2
+    reloadAggressive: 6 #/2
+  - type: STR_CRAFT_AUTOCANNON_UC
+    damage: 30
+    range: 35
+    accuracy: 40
+    reloadCautious: 2 #-4
+    reloadStandard: 2 #-4
+    reloadAggressive: 2 #-4

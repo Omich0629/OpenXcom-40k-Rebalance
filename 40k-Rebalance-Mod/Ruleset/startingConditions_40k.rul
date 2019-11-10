@@ -1,0 +1,10 @@
+startingConditions:
+
+  - type: STR_FINAL_MISSION_MARINES
+    allowedCraft:
+      - STR_LIGHTNING
+
+
+  - type: STR_CHAOS_FINAL_LANDING
+    allowedCraft:
+      - STR_CHAOS_THUNDERHAWNK
