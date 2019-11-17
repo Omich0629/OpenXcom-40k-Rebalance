@@ -3,6 +3,7 @@ research:
   - delete: STR_LASER_RIFLE
   - delete: STR_SMOKE
   - delete: STR_PERSONAL_ARMOR
+  - delete: STR_LASCAN
 
 #delete strategies research
   - delete: STR_SCOUT
@@ -135,19 +136,20 @@ research:
     dependencies:
       - STR_GENERALLOCK
     unlocks:
-      - STR_LASCAN
       - STR_HEAVY_BOLTER_TECH
       - STR_ROCKET_LAUNCHER_TECH
       - STR_CHAINSWORD_TECH
       - STR_POWERFIST_TECH
+      - STR_LASCANNON_TECH
 
 #Heavy Bolter Requisition
+#Same as for Imperial Guard. Opens by 'unlocks' instructions.
   - name: STR_HEAVY_BOLTER_TECH
     cost: 0
     points: 0
     listOrder: 100
     dependencies:
-      - STR_CHAPTER_WEAPONS
+      - STR_GENERALLOCK
 
 #Missile Launcher Requisition
 #Same as for Imperial Guard.
@@ -157,7 +159,7 @@ research:
     points: 0
     listOrder: 100
     dependencies:
-      - STR_CHAPTER_WEAPONS
+      - STR_GENERALLOCK
 
 #Sniper Rifle Requisition
   - name: STR_SNIPER_RIFLE_TECH
@@ -165,7 +167,7 @@ research:
     points: 0
     listOrder: 100
     dependencies:
-      - STR_CHAPTER_WEAPONS
+      - STR_GENERALLOCK
 
 #Chainsword Requisition
   - name: STR_CHAINSWORD_TECH
@@ -173,7 +175,7 @@ research:
     points: 0
     listOrder: 100
     dependencies:
-      - STR_CHAPTER_WEAPONS
+      - STR_GENERALLOCK
 
 #Powerfist Requisition
   - name: STR_POWERFIST_TECH
@@ -181,15 +183,15 @@ research:
     points: 0
     listOrder: 100
     dependencies:
-      - STR_CHAPTER_WEAPONS
+      - STR_GENERALLOCK
 
 #Lascannon
-  - name: STR_LASCAN
+  - name: STR_LASCANNON_TECH
     cost: 460
     points: 10
     listOrder: 100
     dependencies:
-      - STR_LASER_WEAPONS
+      - STR_GENERALLOCK
 
 #Craft Lascannon
   - name: STR_LASER_CANNON
@@ -197,7 +199,7 @@ research:
     points: 15
     listOrder: 100
     dependencies:
-      - STR_LASCAN
+      - STR_LASCANNON_TECH
 
 #Lascannon Defence
   - type: STR_LASER_DEFENSE
@@ -331,8 +333,7 @@ research:
     points: 30
     dependencies:
       - STR_GENERALLOCK
-#      - STR_MT
-#      - STR_IMPERIAL_GUARD_MIDTIER
+
 
 #Stormhawk craft
   - name: STR_STORMHAWKR
@@ -352,17 +353,16 @@ research:
       - STR_MT
     unlocks: []
 
-###Melta Technology###
-#Header Technology for Melta Branch.
+### MELTA TECHNOLOGY ###
 
+#Header Technology for Melta Branch.
 #Unlocks on T2.
   - name: STR_MELTA_WEAPONS
     cost: 50
     points: 10
     dependencies:
       - STR_GENERALLOCK
-#      - STR_MT
-#      - STR_IMPERIAL_GUARD_MIDTIER
+
 
 #We need any Melta weapon to start our own manufacturing.
   - name: STR_MELTA_TECHNOLOGY
@@ -455,15 +455,13 @@ research:
   - delete: STR_PLASMA_CANNON_DEP1
   - delete: STR_PLASMA_CANNON_DEP2
 
-#Header Technology for Plasma Branch.
+#Header Technology
 #Unlocks on T2.
   - name: STR_PLASMA_WEAPONS
     cost: 50
     points: 10
     dependencies:
       - STR_GENERALLOCK
-#      - STR_MT
-#      - STR_IMPERIAL_GUARD_MIDTIER
 
 #We need any Plasma weapon to start manufacturing our own plasma weapons.
   - name: STR_PLASMA_TECHNOLOGY
@@ -575,8 +573,6 @@ research:
     points: 15
     dependencies:
       - STR_GENERALLOCK
-#      - STR_MT
-#      - STR_IMPERIAL_GUARD_MIDTIER
 
 #Auspex (Motion Scanner)
   - name: STR_MOTION_SCANNER
@@ -643,11 +639,14 @@ research:
       - STR_ENEMY_ENCRYPTION
 
 ###Master Crafting###
+#For Space Marines only
   - name: STR_MASTER_CRAFTING
     cost: 200
     points: 30
     dependencies:
       - STR_TEC_BAYR
+      - STR_SPACE_MARINES_OPERATIONS
+
   
   - delete: STR_MASTER_CRAFTING_AMMO
   - delete: STR_CHAINSWORD_MC
@@ -901,13 +900,6 @@ research:
       - STR_ULTIMATE_CRAFT
       - STR_IMPERIAL_GUARD_HIGHTIER
     needItem: false
-
-
-#Chapel???
-  - name: STR_PSI_LAB
-    dependencies:
-      - STR_IMPERIAL_GUARD_HIGHTIER
-
 
 ### Terminator Armor ###
 #Chapter Armory (facility)

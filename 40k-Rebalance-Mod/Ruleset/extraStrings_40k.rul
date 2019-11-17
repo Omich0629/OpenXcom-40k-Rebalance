@@ -3,6 +3,8 @@ extraStrings:
     strings:
 ###Global stuff###
 
+      STR_GENERALLOCK: "General Lock"
+
       STR_UFO_NAVIGATION: "Cogitator"
       STR_STEELMILLR: "Adamantium Forges"
       STR_COMPONENT_MANUFACTURING: "Component Manufacturing"
@@ -41,7 +43,9 @@ extraStrings:
 #T1
       STR_CHAPTER_WEAPONS: "Chapter Weapons"
       STR_CHAPTER_ARMORS: "Chapter Armors"
-      STR_LASCAN: "Lascannon Mk. VII Mars Pattern"
+
+      STR_LASCANNON_TECH: "Lascannon"
+      STR_LASCAN: "Astartes Lascannon"
 
       STR_MOTION_SCANNER: "Auspex"
       STR_MOTION_SCANNER: "Auspex"
@@ -223,36 +227,40 @@ extraStrings:
 ################################
 ##T1##
 
-#New Chainsword for IG
-      STR_IG_CHAINSWORD: "Officer's Chainsword"
+#T1 Header Technologies
+      STR_REGIMENTAL_VEHICLES: "Regimental Vehicles"
+      STR_REGIMENTAL_WEAPONS: "Regimental Weapons"
+      STR_MILITARY_PERSONNEL: "Military Personnel"
+      STR_REGIMENTAL_ARMOR: "Regimental Armors"
+
+#Regimental Weapons
+
+
+
 
 #Missile Launcher for Imparial Guard
       STR_IG_ROCKET_LAUNCHER: "Guard Missile Launcher"
 
 #Green Ammo containers for heavy bolter
-      STR_AC_AP_AMMO_GUARD: "AP Case"
-      STR_AC_HE_AMMO_GUARD: "HE Case"
-      STR_AC_I_AMMO_GUARD: "I Case"
-      STR_AC_MC_AMMO_GUARD: "Master Crafted Heavy Bolter Ammo"
+      STR_AC_AP_AMMO_GUARD: "Guard Heavy Bolter AP Case"
+      STR_AC_HE_AMMO_GUARD: "Guard Heavy Bolter HE Case"
+      STR_AC_I_AMMO_GUARD: "Guard Heavy Bolter I Case"
 
 #Armor and medicine
       STR_CARAPACE_ARMOR_TECH: "Carapace Armor Requisition"
-      STR_MEDICINE_TECH: "Military medicine"
+      STR_MEDICINE_TECH: "Military Medicine"
       STR_HOSPITAL: "Hospital"
       STR_FLAK_MEDIC_TECH: "Flak Armor/Medic"
       STR_CARAPACE_MEDIC_TECH: "Carapace Armor/Medic"
       STR_OGRYN_CARAPACE_TECH: "Ogryn Carapace Armor"
 
-#Heavy Weapons research
-      STR_GUARD_HEAVY_WEAPONS: "Guard Heavy Weapons"
-      STR_GUARD_GRENADE_LAUNCHER_TECH: "Grenade Launcher Requisition"
+      STR_GRENADE_LAUNCHER_TECH: "Grenade Launcher Requisition"
 
 #Sentinel
       STR_SENTINEL_LASCANNON: "Sentinel/Lascannon"
       STR_SENTINEL_MISSILE: "Sentinel/Missile"
 
 #Guard Laser weapons
-      STR_LONG_LAS_TECH: "Long-Las Requisition"
       STR_MOUNTED_LASCANNON_TECH: "Mounted Lascannon"
 
 #T1 Guard Transports

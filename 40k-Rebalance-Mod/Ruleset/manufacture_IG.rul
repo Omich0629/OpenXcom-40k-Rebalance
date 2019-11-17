@@ -6,6 +6,21 @@ manufacture:
   - delete: STR_UNPACK_COMMISSIONS
   - delete: STR_HOTSHOT_VOLLEY_GUN
 
+#Mounted stuff
+  - delete: STR_GUARD_ARMORS_MOUNTED_AUTOCANNON
+  - delete: STR_GUARD_ARMORS_MOUNTED_LASCANNON
+
+#Guard Lascannon
+  - name: STR_LASCANNON_HANDHELD
+    requires:
+      - STR_LASCANNON_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+
+  - name: STR_LASCANNON_CLIP_SMALL
+    requires:
+      - STR_LASCANNON_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+
 #New chainsword for IG officers
 
   - name: STR_COMMISSAR_REQUISITION
@@ -36,16 +51,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 25
 
-#Mounted Lascannon
-  - name: STR_GUARD_ARMORS_MOUNTED_LASCANNON
-    category: STR_WEAPON
-    requires:
-      - STR_MOUNTED_LASCANNON_TECH
-    space: 4
-    time: 500
-    cost: 56000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 100
+
 
 #Stormtrooper Requisition
   - name: STR_STORMTROOPER_REQUISITION
@@ -92,10 +98,7 @@ manufacture:
     producedItems: 
       STR_VOLLEYGUN_ARMOR: 1
 
-#Mounted Autocannon
-  - name: STR_GUARD_ARMORS_MOUNTED_AUTOCANNON
-    requires:
-      - STR_MOUNTED_AUTOCANNON_TECH
+
 
 #Officer Requisition
   - name: STR_OFFICER_REQUISITION
@@ -111,7 +114,7 @@ manufacture:
     spawnedPersonType: STR_GUARD_OFFICER
     producedItems:
       STR_OFFICERS_SWORD: 1
-      STR_LASER_PISTOL: 1
+      STR_LASER_PISTOLG: 1
       STR_LASPISTOL_CLIP: 2
 
 #Psyker
@@ -126,23 +129,8 @@ manufacture:
       STR_ALIEN_HABITAT: 1
     spawnedPersonType: STR_PSYKER
     producedItems:
-      STR_LASER_PISTOL: 1
+      STR_LASER_PISTOLG: 1
       STR_LASPISTOL_CLIP: 2
-
-#Adeptas Sororitas
-  - name: STR_SORORITAS_REQUISITION
-    category: STR_ADVANCEMENT
-    requires:
-      - STR_SORORITAS_REQUISITION
-    space: 0
-    time: 500
-    cost: 100000
-    requiredItems:
-      STR_ALIEN_HABITAT: 1
-    spawnedPersonType: STR_ADEPTAS
-    producedItems:
-      STR_RIFLE: 1
-      STR_RIFLE_CLIP: 2
 
 #Enginseer Requisition
   - name: STR_ENGINSEER_REQUISITION
@@ -158,5 +146,5 @@ manufacture:
       STR_ALIEN_HABITAT: 1
     spawnedPersonType: STR_ENGINSEER
     producedItems:
-      STR_LASER_PISTOL: 1
+      STR_LASER_PISTOLG: 1
       STR_LASPISTOL_CLIP: 2

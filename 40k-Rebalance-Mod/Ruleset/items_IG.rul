@@ -1,12 +1,31 @@
 items:
+
+  - delete: STR_LASER_RIFLE
+  - delete: STR_LASER_PISTOL
+
 #Stubber
 
 #  - type: STR_STUB_GUN
 #    tags:
 #      ITEM_HAS_RANDOMIZED_SPRITES: 0
 
+
+
+#Lascarabine
+  - type: STR_LASCARBINE
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+
+
+
+#Photon Flash Grenade
+#BROKEN AS FUCK
+  - type: STR_PHOTON_GRENADE
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+
 #Missile launcher for Imperial Guard
-  - type: STR_IG_ROCKET_LAUNCHER #                       12100
+  - type: STR_IG_ROCKET_LAUNCHER
     requiresBuy:
       - STR_ROCKET_LAUNCHER_TECH
       - STR_IMPERIAL_GUARD_OPERATIONS
@@ -181,19 +200,19 @@ items:
 #Grenade Launcher and Ammo
   - type: STR_GRENADE_LAUNCHER
     requiresBuy:
-      - STR_GUARD_GRENADE_LAUNCHER_TECH
+      - STR_GRENADE_LAUNCHER_TECH
 
   - type: STR_FRAG_GRENADE_DRUM
     requiresBuy:
-      - STR_GUARD_GRENADE_LAUNCHER_TECH
+      - STR_GRENADE_LAUNCHER_TECH
 
   - type: STR_KRAK_GRENADE_DRUM
     requiresBuy:
-      - STR_GUARD_GRENADE_LAUNCHER_TECH
+      - STR_GRENADE_LAUNCHER_TECH
 
   - type: STR_INCENDIARY_GRENADE_DRUM
     requiresBuy:
-      - STR_GUARD_GRENADE_LAUNCHER_TECH
+      - STR_GRENADE_LAUNCHER_TECH
 
 #Sentinel Lascannon
   - type: STR_SENTINEL_ARMOR                #6800
@@ -276,7 +295,7 @@ items:
     recover: false
 
 
-
+#Vox-Caster
   - type: STR_OFFICER_BASIC_VOX
     weight: 9
     bulletSprite: -1
@@ -295,7 +314,7 @@ items:
     recover: false
     fixedWeapon: true
 
-
+#Vox-Caster Inventory Sprite
   - type: INV_NULL_VOX_CASTER
     weight: 9
     invWidth: 3
