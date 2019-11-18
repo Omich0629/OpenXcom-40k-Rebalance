@@ -1,22 +1,64 @@
 items:
-
+#Ultramarine-themed lasguns. Useless.
   - delete: STR_LASER_RIFLE
   - delete: STR_LASER_PISTOL
 
-#Stubber
+### LASER WEAPONS ###
 
-#  - type: STR_STUB_GUN
-#    tags:
-#      ITEM_HAS_RANDOMIZED_SPRITES: 0
+#Lasgun (Standard)
+  - type: STR_LASER_RIFLEG
+    bigSprite: 291
+    floorSprite: 258
+    handSprite: 552
+
+    #Melee bayonet
+    meleePower: 20
+    damageBonus:
+      reactions: 0.4
+      melee: 0.4
+    accuracyMelee: 100
+    meleeMultiplier:
+      reactions: 0.2
+      melee: 0.2
+      flatHundred: 0.5
+    tuMelee: 15
+    flatMelee:
+      time: false
 
 
+#Lasgun Clip
+  - type: STR_LASGUN_CLIP
+    bigSprite: 292
+    floorSprite: 259
+    handSprite: 560
+
+#Laspistol (Standard)
+  - type: STR_LASER_PISTOLG
+    bigSprite: 293
+    floorSprite: 260
+    handSprite: 568
+
+#Laspistol Clip
+  - type: STR_LASPISTOL_CLIP
+    bigSprite: 294
+    floorSprite: 261
+    handSprite: 576
 
 #Lascarabine
   - type: STR_LASCARBINE
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
 
+#Long-Las and hotshot ammo
+  - type: STR_LONGLAS
+    requiresBuy:
+      - STR_LONG_LAS_TECH
 
+  - type: STR_LASGUN_CLIP_HOTSHOT
+    requiresBuy:
+      - STR_LONG_LAS_TECH
+
+#######################
 
 #Photon Flash Grenade
 #BROKEN AS FUCK
@@ -240,14 +282,7 @@ items:
       - STR_SENTINEL_MISSILE
 
 
-#Long-Las and hotshot ammo
-  - type: STR_LONGLAS
-    requiresBuy:
-      - STR_LONG_LAS_TECH
 
-  - type: STR_LASGUN_CLIP_HOTSHOT
-    requiresBuy:
-      - STR_LONG_LAS_TECH
 
 #Craft Quad-Linked Lascannon
   - type: STR_CRAFT_QUADLASER

@@ -132,6 +132,12 @@ extraSprites:
       288: Resources/Items/Enemy/Chaos_Dreadnought_Weapons/Chaos_Dreadnought_Fist_Inv.png
       289: Resources/Items/Enemy/Chaos_Dreadnought_Weapons/Chaos_Dreadnought_Missile_Inv.png
       290: Resources/Items/Enemy/Chaos_Dreadnought_Weapons/Chaos_Dreadnought_Plasma_Inv.png
+      291: Resources/Items/IG/Lasgun/Lasgun_Inv.gif
+      292: Resources/Items/IG/Lasgun/Lasgun_Clip_Inv.png
+      293: Resources/Items/IG/Laspistol/Laspistol_Inv.gif
+      294: Resources/Items/IG/Laspistol/Laspistol_Clip_Inv.png
+      295: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Inv.gif
+      296: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Inv.gif
 
 #FLOOR OBJECTS
   - type: FLOOROB.PCK
@@ -195,7 +201,12 @@ extraSprites:
       255: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Ammo_Floor.gif
       256: Resources/Items/Common/Krak_Grenade/Krak_Granade_Floor.png
       257: Resources/Items/Common/Proximity_Grenade/Proximity_Grenade_Floor.gif
-
+      258: Resources/Items/IG/Lasgun/Lasgun_Floor.gif
+      259: Resources/Items/IG/Lasgun/Lasgun_Clip_Floor.png
+      260: Resources/Items/IG/Laspistol/Laspistol_Floor.gif
+      261: Resources/Items/IG/Laspistol/Laspistol_Clip_Floor.png
+      262: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Floor.gif
+      263: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Floor.gif
 
 #HAND OBJECTS (contains 8 images)
   - type: HANDOB.PCK
@@ -243,6 +254,12 @@ extraSprites:
       528: Resources/Items/Common/Frag_Grenade/Frag_Granade_Hand.png
       536: Resources/Items/Common/Krak_Grenade/Krak_Granade_Hand.png
       544: Resources/Items/Common/Proximity_Grenade/Proximity_Grenade_Hand.png
+      552: Resources/Items/IG/Lasgun/Lasgun_Hand.png
+      560: Resources/Items/IG/Lasgun/Lasgun_Clip_Hand.png
+      568: Resources/Items/IG/Laspistol/Laspistol_Hand.png
+      576: Resources/Items/IG/Laspistol/Laspistol_Clip_Hand.png
+      584: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Hand.png
+      592: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Hand.png
 
 #PROJECTILES ( The corresponding file id is 35*[bulletSprite] )
   - type: Projectiles                         

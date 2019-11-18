@@ -7,6 +7,33 @@ items:
 #      ITEM_HAS_RANDOMIZED_SPRITES: 0
 
 
+#### CHAOS LASER WEAPONS ###
+  - type: STR_LASER_RIFLEC
+    bigSprite: 295
+    floorSprite: 262
+    handSprite: 584
+
+    #Melee bayonet
+    meleePower: 20
+    damageBonus:
+      reactions: 0.4
+      melee: 0.4
+    accuracyMelee: 100
+    meleeMultiplier:
+      reactions: 0.2
+      melee: 0.2
+      flatHundred: 0.5
+    tuMelee: 15
+    flatMelee:
+      time: false
+
+
+  - type: STR_LASER_PISTOLC
+    bigSprite: 296
+    floorSprite: 263
+    handSprite: 592
+
+
 ### CHAOS MISSILE LAUCNERS ###
  
 #Chaos Missile Laucher
