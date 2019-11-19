@@ -141,9 +141,9 @@ manufacture:
       - STR_SCOUTH_RESEARCH
     space: 4
     time: 200
-    cost: 10000
+    cost: 15000
     requiredItems:
-      STR_ALIEN_ALLOYS: 5
+      STR_UFO_CONSTRUCTION: 10
 
 #Mk7 Power Armor
   - name: STR_TATICAL_ARMOR

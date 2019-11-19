@@ -321,7 +321,7 @@ extraSprites:
     subY: 20
     files:
       0: Resources/UnitUI/SM_unit_preview.png   #   0 -89
-      100: Resources/UnitUI/IG_unit_preview.png # 100- 89
+      100: Resources/UnitUI/IG_unit_preview.png # 100- 189
 
 #ARMOR BATTLESCAPE SPRITES
 
