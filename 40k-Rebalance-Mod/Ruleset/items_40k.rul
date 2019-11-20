@@ -92,6 +92,7 @@ items:
 
 
 #SM Missile Launcher
+#Too heavy for reaction fire
 
   - type: STR_ROCKET_LAUNCHER
     bigSprite: 268
@@ -100,6 +101,18 @@ items:
     requiresBuy:
       - STR_ROCKET_LAUNCHER_TECH
       - STR_SPACE_MARINES_OPERATIONS
+
+    tuSnap: 0
+
+    tuAuto: 55
+    accuracyAuto: 55
+
+    confAuto:
+      shots: 1
+      name: STR_CUSTOM_SNAPSHOT
+
+    tuAimed: 85
+    accuracyAimed: 115
 
 #Missiles
   - type: STR_SMALL_ROCKET
@@ -893,6 +906,7 @@ items:
 
 #Multi-Melta and ammo
 #Now have same TU cost as normal melta, fires twice.
+#Too heavy for reaction fire.
 
   - type: STR_BLASTER_LAUNCHER_TERRAN
     bigSprite: 231
@@ -900,11 +914,11 @@ items:
     handSprite: 344
     weight: 40
     bulletSpeed: 50
-
-    accuracySnap: 80
-    tuSnap: 50
-
-    confSnap:
+    tuSnap: 0
+    accuracySnap: 0
+    tuAuto: 50
+    accuracyAuto: 80
+    confAuto:
       shots: 2
     maxRange: 15
 
@@ -939,6 +953,8 @@ items:
 
 ########## LASCANNON REBALANCE #############
 #Astartes Lascannon
+#Compatible with large clips only
+#Too heavy for reaction fire
 
   - type: STR_LASCAN
     bigSprite: 258
@@ -947,6 +963,18 @@ items:
 
     compatibleAmmo:
       - STR_LASCAN_CLIP
+
+    accuracySnap: 0
+    tuSnap: 0
+
+    tuAuto: 55
+    accuracyAuto: 60
+    confAuto:
+      shots: 1
+      name: STR_CUSTOM_SNAPSHOT
+
+    accuracyAimed: 94
+    tuAimed: 90
 
 
 #Ammo
@@ -1075,6 +1103,7 @@ items:
 
 ### Heavy plasma (Plasma Cannon) ###
 #Maximum 2 snap shots or 1 aimed shot per turn
+#Too heavy for reaction fire
 #Range 24
 
   - type: STR_HEAVY_PLASMA_TERRAN
@@ -1083,9 +1112,14 @@ items:
     floorSprite: 223
     handSprite: 384
 
-    tuSnap: 45
-    accuracySnap: 75
-    snapRange: 24
+    tuSnap: 0
+
+    tuAuto: 45
+    accuracyAuto: 75
+    autoRange: 24
+    confAuto:
+      shots: 1
+      name: STR_CUSTOM_SNAPSHOT
 
     tuAimed: 90
     aimRange: 24
@@ -1093,10 +1127,14 @@ items:
 
 #Master Crafted Heavy Plasma
   - type: STR_HEAVY_PLASMA_MC
+    tuSnap: 0
 
-    tuSnap: 45
-    accuracySnap: 75
-    snapRange: 24
+    tuAuto: 45
+    accuracyAuto: 75
+    autoRange: 24
+    confAuto:
+      shots: 1
+      name: STR_CUSTOM_SNAPSHOT
 
     tuAimed: 90
     aimRange: 24
@@ -1956,11 +1994,19 @@ items:
 #Range 24
   - type: AUX_HOVERTANK_PLASMA
     bigSprite: 284
+#    tuSnap: 0
     flatRate: false
 
     tuSnap: 45
     accuracySnap: 75
     SnapRange: 24
+
+#    tuAuto: 45
+#    accuracyAuto: 75
+#    autoRange: 24
+#    confAuto:
+#      shots: 1
+#      name: STR_CUSTOM_SNAPSHOT
 
     tuAimed: 90
     aimRange: 24

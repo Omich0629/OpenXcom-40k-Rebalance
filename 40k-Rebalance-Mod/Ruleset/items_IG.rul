@@ -87,8 +87,13 @@ items:
       - STR_LARGE_ROCKET
       - STR_INCENDIARY_ROCKET
 
-    tuSnap: 55
-    accuracySnap: 45
+    tuSnap: 0
+
+    tuAuto: 55
+    accuracyAuto: 45
+    confAuto:
+      shots: 1
+      name: STR_CUSTOM_SNAPSHOT
 
     tuAimed: 85
     accuracyAimed: 95
