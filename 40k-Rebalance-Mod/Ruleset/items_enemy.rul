@@ -39,32 +39,9 @@ items:
 #Chaos Missile Laucher
   - type: STR_CHAOS_ROCKET_LAUNCHER
 
-    tuSnap: 0
-
-    tuAuto: 55
-    accuracyAuto: 55
-
-    confAuto:
-      shots: 1
-      name: STR_CUSTOM_SNAPSHOT
-
-    tuAimed: 85
-    accuracyAimed: 115
 
 #Nurgle Missile launcher
   - type: AUX_NURGLE_ROCKET_LAUNCHER
-
-    tuSnap: 0
-
-    tuAuto: 55
-    accuracyAuto: 55
-
-    confAuto:
-      shots: 1
-      name: STR_CUSTOM_SNAPSHOT
-
-    tuAimed: 85
-    accuracyAimed: 115
 
 
 ### Chaos Bolters ###
@@ -142,11 +119,9 @@ items:
   - type: STR_BLASTER_LAUNCHER
     weight: 40
     bulletSpeed: 50
-    tuSnap: 0
-    accuracySnap: 0
-    tuAuto: 50
-    accuracyAuto: 80
-    confAuto:
+    tuSnap: 50
+    accuracySnap: 80
+    confSnap:
       shots: 2
     maxRange: 15
 
@@ -165,14 +140,9 @@ items:
 #Chaos Heavy Plasma (Plasma Cannon)
   - type: STR_HEAVY_PLASMA
 
-    tuSnap: 0
-
-    tuAuto: 45
-    accuracyAuto: 75
-    autoRange: 24
-    confAuto:
-      shots: 1
-      name: STR_CUSTOM_SNAPSHOT
+    tuSnap: 45
+    accuracySnap: 75
+    snapRange: 24
 
     tuAimed: 90
     aimRange: 24
