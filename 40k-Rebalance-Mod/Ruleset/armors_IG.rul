@@ -298,6 +298,201 @@ armors:
 
 #####################################
 
+#Sentinel / Lascannon
+  - delete: STR_SENTINEL_ARMOR_UC
+
+  - type: STR_SENTINEL_ARMOR_UC
+    visibilityAtDay: 60
+    visibilityAtDark: 60
+    heatVision: 50
+    instantWoundRecovery: true
+    spriteSheet: SENTINEL_LASCANNON.PCK
+    #spriteInv: MAN_36
+    customArmorPreviewIndex: [160, 161, 162]
+    storeItem: STR_SENTINEL_ARMOR
+    corpseGeo:  STR_BIKE_CORPSE
+    corpseBattle:
+      - 5_SENT1
+      - 5_SENT2
+      - 5_SENT3
+      - 5_SENT4
+    frontArmor: 120
+    sideArmor: 110
+    rearArmor: 100
+    underArmor: 130
+    size: 2
+    moveSound: 700
+    stats:
+       tu: 50
+       stamina: 0
+       firing: 0
+       health: 50
+       bravery: 0 #always multiples of 10
+       reactions: -40
+       throwing: 0
+       strength: 0
+       psiStrength: 0
+       psiSkill: 0
+       melee: 0
+    recovery:
+      energy:
+        flatHundred: 1.0
+    units:
+      - STR_GUARDSM
+    damageModifier: #VEHICLE ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 5
+    builtInWeapons:
+      - STR_SLASCAN
+      - INV_NULL_SENTINEL_LH
+      - INV_NULL_SENTINEL_BACK_LASER
+      - INV_NULL_SENTINEL_BELT
+      - INV_NULL_SENTINEL_LL
+      - INV_NULL_2X1_RL
+    specialWeapon: AUX_SENTINEL_STOMP
+    allowsKneeling: false
+
+  - type: STR_SENTINEL_ARMOR_UC
+    layersDefaultPrefix: GUARD
+    layersSpecificPrefix:
+      0: SENTINEL_LASCANNON
+      4: SENTINEL_PILOT
+    layersDefinition:
+      F0: ["Prop", "F0", "F0_Hair_Tight", "", "Female", "", "", "", ""]
+      F1: ["Prop", "F1", "F1_Hair_Tight", "", "Female", "", "", "", ""]
+      F2: ["Prop", "F2", "F2_Hair_Tight", "", "Female", "", "", "", ""]
+      F3: ["Prop", "F3", "F3_Hair_Tight", "", "Female", "", "", "", ""]
+      F4: ["Prop", "F4", "F4_Hair_Tight", "", "Female", "", "", "", ""]
+      F5: ["Prop", "F5", "F5_Hair_Tight", "", "Female", "", "", "", ""]
+      F6: ["Prop", "F6", "F6_Hair_Tight", "", "Female", "", "", "", ""]
+      F7: ["Prop", "F7", "F7_Hair_Tight", "", "Female", "", "", "F7_Hair_Over", ""]
+      F8: ["Prop", "F8", "F8_Hair_Tight", "F8_Hair", "Female", "", "", "", ""]
+      F9: ["Prop", "F9", "F9_Hair_Tight", "F9_Hair", "Female", "", "", "", ""]
+      M0: ["Prop", "M0", "M0_Hair_Tight", "M0_Hair", "Male", "", "", "", ""]
+      M1: ["Prop", "M1", "M1_Hair_Tight", "M1_Hair", "Male", "", "", "", ""]
+      M2: ["Prop", "M2", "M2_Hair_Tight", "", "Male", "", "", "", ""]
+      M3: ["Prop", "M3", "M3_Hair_Tight", "M3_Hair", "Male", "", "", "", ""]
+      M4: ["Prop", "M4", "", "", "Male", "", "", "", ""]
+      M5: ["Prop", "M5", "M5_Hair_Tight", "", "Male", "", "", "", ""]
+      M6: ["Prop", "M6", "M6_Hair_Tight", "", "Male", "", "", "M6_Hair_Over", ""]
+      M7: ["Prop", "M7", "M7_Hair_Tight", "", "Male", "", "", "", ""]
+      M8: ["Prop", "M8", "M8_Hair_Tight", "", "Male", "", "", "", ""]
+      M9: ["Prop", "M9", "", "", "Male", "", "", "", ""]
+
+
+#####################################
+#Sentinel / Missile Launcher
+
+  - delete: STR_GUARD_ARMORS_SENTINEL_MISSILE_UC
+
+  - type: STR_GUARD_ARMORS_SENTINEL_MISSILE_UC
+    visibilityAtDay: 60
+    visibilityAtDark: 60
+    heatVision: 50
+    instantWoundRecovery: true
+    spriteSheet: SENTINEL_MISSILE.PCK
+    #spriteInv: GUARD_SENTINEL_MISSILE
+    customArmorPreviewIndex: [163, 164, 165]
+    storeItem: STR_GUARD_ARMORS_SENTINEL_MISSILE
+    corpseGeo:  STR_BIKE_CORPSE
+    corpseBattle:
+      - 5_SENT1
+      - 5_SENT2
+      - 5_SENT3
+      - 5_SENT4
+    frontArmor: 120
+    sideArmor: 110
+    rearArmor: 100
+    underArmor: 130
+    size: 2
+    weight: -20
+    moveSound: 700
+    stats:
+       tu: 50
+       stamina: 0
+       firing: 0
+       health: 50
+       bravery: 0 #always multiples of 10
+       reactions: -40
+       throwing: 0
+       strength: 0
+       psiStrength: 0
+       psiSkill: 0
+       melee: 0
+    recovery:
+      energy:
+        flatHundred: 1.0
+    units:
+      - STR_GUARDSM	
+    damageModifier: #VEHICLE ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 5
+    builtInWeapons:
+      - STR_SENTINEL_MISSILE_LAUNCHER_LEFT
+      - STR_SENTINEL_KRAKK_MISSILES
+      - STR_SENTINEL_MISSILE_LAUNCHER_RIGHT
+      - STR_SENTINEL_KRAKK_MISSILES
+      - INV_NULL_SENTINEL_LH
+      - INV_NULL_SENTINEL_BACK_MISSILE
+      - INV_NULL_SENTINEL_BELT
+      - INV_NULL_SENTINEL_LL
+      - INV_NULL_2X1_RL
+    specialWeapon: AUX_SENTINEL_STOMP
+    allowsKneeling: false
+
+  - type: STR_GUARD_ARMORS_SENTINEL_MISSILE_UC
+    layersDefaultPrefix: GUARD
+    layersSpecificPrefix:
+      0: SENTINEL_MISSILE
+      4: SENTINEL_PILOT
+    layersDefinition:
+      F0: ["Prop", "F0", "F0_Hair_Tight", "", "Female", "", "", "", ""]
+      F1: ["Prop", "F1", "F1_Hair_Tight", "", "Female", "", "", "", ""]
+      F2: ["Prop", "F2", "F2_Hair_Tight", "", "Female", "", "", "", ""]
+      F3: ["Prop", "F3", "F3_Hair_Tight", "", "Female", "", "", "", ""]
+      F4: ["Prop", "F4", "F4_Hair_Tight", "", "Female", "", "", "", ""]
+      F5: ["Prop", "F5", "F5_Hair_Tight", "", "Female", "", "", "", ""]
+      F6: ["Prop", "F6", "F6_Hair_Tight", "", "Female", "", "", "", ""]
+      F7: ["Prop", "F7", "F7_Hair_Tight", "", "Female", "", "", "F7_Hair_Over", ""]
+      F8: ["Prop", "F8", "F8_Hair_Tight", "F8_Hair", "Female", "", "", "", ""]
+      F9: ["Prop", "F9", "F9_Hair_Tight", "F9_Hair", "Female", "", "", "", ""]
+      M0: ["Prop", "M0", "M0_Hair_Tight", "M0_Hair", "Male", "", "", "", ""]
+      M1: ["Prop", "M1", "M1_Hair_Tight", "M1_Hair", "Male", "", "", "", ""]
+      M2: ["Prop", "M2", "M2_Hair_Tight", "", "Male", "", "", "", ""]
+      M3: ["Prop", "M3", "M3_Hair_Tight", "M3_Hair", "Male", "", "", "", ""]
+      M4: ["Prop", "M4", "", "", "Male", "", "", "", ""]
+      M5: ["Prop", "M5", "M5_Hair_Tight", "", "Male", "", "", "", ""]
+      M6: ["Prop", "M6", "M6_Hair_Tight", "", "Male", "", "", "M6_Hair_Over", ""]
+      M7: ["Prop", "M7", "M7_Hair_Tight", "", "Male", "", "", "", ""]
+      M8: ["Prop", "M8", "M8_Hair_Tight", "", "Male", "", "", "", ""]
+      M9: ["Prop", "M9", "", "", "Male", "", "", "", ""]
+
+#####################################
+
 #Stormtroopers\scions related armor
 #+20 to all armor
 #Scion armor is for Scions only. Same for Stormtrooper armor

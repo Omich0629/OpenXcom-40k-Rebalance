@@ -145,8 +145,9 @@ extraStrings:
 
       STR_DREAD_MELEE_WEAPON: "Dreadhought Bolter Fist"
       AUX_DREAD_FLAMER: "Dreadhought Flamer Fist"
-
-
+      STR_DREAD_MISSILE_LAUNCHER: "Dreadhought Missile Launcher"
+      STR_DREAD_MISSILES: "Dreadhought Missiles"
+      AUX_DREAD_ASSAULT_CANNON_AMMO: "Dreadhought Assault Cannon Ammo"
 
       DREAD_ARMOR_UC: "Dreadnought/Flamer"
       STR_DREAD1_ARMOR: "Dreadnought/Flamer"
@@ -259,6 +260,9 @@ extraStrings:
 #Sentinel
       STR_SENTINEL_LASCANNON: "Sentinel/Lascannon"
       STR_SENTINEL_MISSILE: "Sentinel/Missile"
+
+      STR_SENTINEL_MISSILE_LAUNCHER_LEFT: "Sentinel Missile Launcher"
+      STR_SENTINEL_MISSILE_LAUNCHER_RIGHT: "Sentinel Missile Launcher"
 
 #Guard Laser weapons
       STR_MOUNTED_LASCANNON_TECH: "Mounted Lascannon"

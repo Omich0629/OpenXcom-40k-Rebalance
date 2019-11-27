@@ -7,6 +7,7 @@ extraSprites:
       203: Resources/SPICONS/SPICON_ZEAL.png
       204: Resources/SPICONS/SPICON_CHAIN_MELEE.png
       205: Resources/SPICONS/SPICON_SHIELD.png
+      206: Resources/SPICONS/SPICON_MECHANICAL_MELEE.png
 
 
   - type: SMOKE.PCK
@@ -63,6 +64,8 @@ extraSprites:
       150: Resources/Armor/IG/Enginseer/Enginseer_Corpse_Inv.gif
 
 #ITEMS (201 - ?)
+      220: Resources/Items/Common/Null_Objects/Null_Lefthand.png
+      221: Resources/Items/Common/Null_Objects/Null_Void_4x3.png
       222: Resources/Items/Common/Chainsword/ChainSword_BigSprite.gif
       223: Resources/Items/Common/Chainsword/MC_ChainSword_BigSprite.gif
       224: Resources/Items/SM/Combi_Plasma/Combi_Plasma_Inv.gif
@@ -138,6 +141,11 @@ extraSprites:
       294: Resources/Items/IG/Laspistol/Laspistol_Clip_Inv.png
       295: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Inv.gif
       296: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Inv.gif
+      297: Resources/Items/IG/Sentinel_Weapons/Sentinel_Missile_Left_Inv.png
+      298: Resources/Items/IG/Sentinel_Weapons/Sentinel_Missile_Right_Inv.png
+      299: Resources/Items/IG/Sentinel_Weapons/Sentinel_Missile_Clip_Inv.png
+      300: Resources/Items/SM/Dreadnought_Weapons/Dreadnought_Missile_Clip_Inv.png
+      301: Resources/Items/SM/Dreadnought_Weapons/Dreadnougth_Cannon_Clip_Inv.png
 
 #FLOOR OBJECTS
   - type: FLOOROB.PCK
@@ -591,6 +599,24 @@ extraSprites:
     files:
       0: Resources/Armor/IG/IG_Officer/Officer_Flak_Battlescape.png
 
+#Sentinel with Lascannon
+  - type: SENTINEL_LASCANNON.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Armor/IG/Sentinel_Lascannon/Sentinel_Lascannon_Battlescape.png
+
+#Sentinel with Missile Launcher
+  - type: SENTINEL_MISSILE.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Armor/IG/Sentinel_Missile/Sentinel_Missile_Battlescape.png
+
 #ARMOR INVENTORY SPRITES
 
 #### SM #####
@@ -736,9 +762,35 @@ extraSprites:
     files:
       0: Resources/Armor/IG/Enginseer/Enginseer_Armor_Inv.gif
 
+#Sentinel's Pilot inventory
+
+  - typeSingle: SENTINEL_PILOT__4__Male
+    fileSingle: Resources/Armor/IG/Sentinel_Pilot/Sentinel_Pilot_M_Inv.png
+
+  - typeSingle: SENTINEL_PILOT__4__Female
+    fileSingle: Resources/Armor/IG/Sentinel_Pilot/Sentinel_Pilot_F_Inv.png
+
+#Sentinel with Lascannon (inventory)
+
+  - typeSingle: SENTINEL_LASCANNON__0__Prop
+    fileSingle: Resources/Armor/IG/Sentinel_Lascannon/Sentinel_Lascannon_Inv.png
+
+#Sentinel with Missile Launcher (inventory)
+
+  - typeSingle: SENTINEL_MISSILE__0__Prop
+    fileSingle: Resources/Armor/IG/Sentinel_Missile/Sentinel_Missile_Inv.png
+
 
 
 #### CODEX IMAGES #####
+#Codex background
+  - type: BACK08.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/Codex_Item_Background.png
+
   - type: CODEX_MK7_ARMOR.SPK
     singleImage: true
     width: 320

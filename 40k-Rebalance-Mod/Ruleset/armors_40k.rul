@@ -896,8 +896,7 @@ armors:
     builtInWeapons:
       - AUX_BOLTER #AUX_TANK_CANNON
       - AUX_RAM
-      - INV_NULL_3X3
-      - INV_NULL_4X2
+      - INV_NULL_4X3_BELT
 
 #LAYERS
 
@@ -2053,7 +2052,7 @@ armors:
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
-      - INV_NULL_4X2
+      - INV_NULL_4X3_BELT
 
 #####################################
 #Dreadnought/Plasma Cannon
@@ -2105,7 +2104,7 @@ armors:
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
-      - INV_NULL_4X2
+      - INV_NULL_4X3_BELT
 
 #####################################
 #Dreadnought/Missile Launcher
@@ -2152,12 +2151,13 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 20
     builtInWeapons:
-      - AUX_HOVERTANK_LAUNCHER
+      - STR_DREAD_MISSILE_LAUNCHER
+      - STR_DREAD_MISSILES
       - STR_DREAD_MELEE_WEAPON
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
-      - INV_NULL_4X2
+      - INV_NULL_4X3_BELT
 
 #####################################
 #Dreadnought/Lascannon
@@ -2210,7 +2210,7 @@ armors:
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
-      - INV_NULL_4X2
+      - INV_NULL_4X3_BELT
 
 #####################################
 #Dreadnought/Assault Cannon
@@ -2259,11 +2259,12 @@ armors:
     drawingRoutine: 20
     builtInWeapons:
       - AUX_DREAD_ASSC
+      - AUX_DREAD_ASSAULT_CANNON_AMMO
       - STR_DREAD_MELEE_WEAPON
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
-      - INV_NULL_4X2  
+      - INV_NULL_4X3_BELT  
 
 #####################################
 #Unit armors

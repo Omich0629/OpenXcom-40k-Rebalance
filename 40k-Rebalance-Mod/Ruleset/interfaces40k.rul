@@ -1,0 +1,13 @@
+interfaces:
+  - type: articleItem
+    elements:
+      - id: button
+        color: 16   # orange 144
+      - id: text
+        color: 239   # grey 239
+        color2: 239  # light blue 244
+      - id: list
+        color: 239   # grey 239
+        color2: 239  # light blue 244
+      - id: ammoColor
+        color: 213    # red 32

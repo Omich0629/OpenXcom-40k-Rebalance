@@ -6,6 +6,19 @@ items:
   - delete: STR_RIFLE_CLIP_MC
   - delete: STR_AC_MC_AMMO
 
+#### NULL SLOT ITEMS ####
+  - type: INV_NULL_4X3_BELT
+    weight: 0
+    bigSprite: 221
+    invWidth: 4
+    invHeight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_BELT
+    recover: false
+
+  - type: INV_NULL_SENTINEL_LH
+    bigSprite: 220
+
 #### Grenades ####
 #Frag Grenade
   - type: STR_GRENADE
@@ -1983,23 +1996,37 @@ items:
   - delete: AUX_HOVERTANK_LAUNCHER
   - delete: STR_HWP_FUSION_BOMB
 
-  - type: AUX_HOVERTANK_LAUNCHER
+  - type: STR_DREAD_MISSILE_LAUNCHER
     bigSprite: 285
-    hitAnimation: 184
 
     weight: 1
-    bigSprite: 203
     floorSprite: 0
     handSprite: 0
     bulletSprite: 0
     fireSound: 52
 
+    compatibleAmmo:
+      - STR_DREAD_MISSILES
+
     flatRate: false
 
-    accuracySnap: 45
-    accuracyAimed: 90
-    tuSnap: 40
-    tuAimed: 60
+    accuracySnap: 55
+    accuracyAimed: 115
+    tuSnap: 55
+    tuAimed: 75
+
+    battleType: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_HAND
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    listOrder: 2820
+
+  - type: STR_DREAD_MISSILES
+    bigSprite: 300
+    hitAnimation: 184
+    weight: 1
 
     power: 100
     damageType: 3
@@ -2010,14 +2037,9 @@ items:
 
     blastRadius: 1
     clipSize: 8
-
-    battleType: 1
-    fixedWeapon: true
-    defaultInventorySlot: STR_RIGHT_HAND
     invWidth: 2
-    invHeight: 3
-    recover: false
-    listOrder: 2820
+    invHeight: 2
+    battleType: 2
 
 #Dreadnought Lascannon
   - type: AUX_HOVERTANK_LASER
@@ -2046,15 +2068,27 @@ items:
 #Dreadnought Assault Cannon
   - type: AUX_DREAD_ASSC
     bigSprite: 287
+
+    compatibleAmmo:
+      - AUX_DREAD_ASSAULT_CANNON_AMMO
+
+    accuracyAuto: 50
+    tuAuto: 45
+    autoRange: 30
+    autoShots: 5
+
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_HAND
+
+  - type: AUX_DREAD_ASSAULT_CANNON_AMMO
+    bigSprite: 301
     hitSound: 13
     hitAnimation: 26
 
-    compatibleAmmo: []
-
-    damageType: 1
-    power: 200
+    weight: 1
+    power: 100
     clipSize: 100
-
+    damageType: 1
     damageAlter: #DA BOLTER
       ToArmorPre: 0.05
       ArmorEffectiveness: 0.9
@@ -2064,15 +2098,9 @@ items:
     bulletSpeed: 50
     explosionSpeed: 5
 
-    accuracyAuto: 50
-    tuAuto: 45
-    autoRange: 30
-    autoShots: 5
-
-    power: 90
-
-    fixedWeapon: true
-    defaultInventorySlot: STR_RIGHT_HAND
+    invWidth: 2
+    invHeight: 2
+    battleType: 2
 
 ##################
 #Tarantula Rocket Sentry.

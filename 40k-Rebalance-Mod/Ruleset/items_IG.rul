@@ -59,6 +59,116 @@ items:
       - STR_LONG_LAS_TECH
 
 #######################
+###SENTINEL WEAPONS ###
+
+#Sentinel Melee Skill
+  - type: AUX_SENTINEL_STOMP
+    specialIconSprite: 206
+
+
+#Sentinel lascannon
+  - type: STR_SLASCAN
+    accuracySnap: 60
+    accuracyAimed: 94
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.4
+    power: 120
+#Hotshot effect
+    damageAlter:
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToHealth: 1.0
+      ToArmor: 0.0
+      ToStun: 0.0
+
+
+#Sentinel Missile Launcher
+#4 krak missiles per launcher
+
+  - delete: STR_SENTINEL_FRAG_MISSILES
+  - delete: STR_SENTINEL_KRAKK_MISSILES
+  - delete: STR_SENTINEL_MISSILE_LAUNCHER
+
+  - type: STR_SENTINEL_MISSILE_LAUNCHER_LEFT
+    bigSprite: 297
+
+    weight: 1
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 52
+
+    compatibleAmmo:
+      - STR_SENTINEL_KRAKK_MISSILES
+
+    flatRate: false
+
+    accuracyAimed: 115
+    accuracySnap: 55
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.4
+    tuAimed: 75
+    tuSnap: 55
+
+    battleType: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_HAND
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    listOrder: 2820
+
+  - type: STR_SENTINEL_MISSILE_LAUNCHER_RIGHT
+    bigSprite: 298
+
+    weight: 1
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 52
+
+    compatibleAmmo:
+      - STR_SENTINEL_KRAKK_MISSILES
+
+    flatRate: false
+
+    accuracyAimed: 115
+    accuracySnap: 55
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.4
+    tuAimed: 75
+    tuSnap: 55
+
+    battleType: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_HAND
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    listOrder: 2820
+
+  - type: STR_SENTINEL_KRAKK_MISSILES
+    bigSprite: 299
+    hitAnimation: 184
+    weight: 1
+
+    power: 100
+    damageType: 3
+    damageAlter:
+      ToArmorPre: 0.2
+      ArmorEffectiveness: 0.7
+      ToArmor: 0.2
+    blastRadius: 1
+    clipSize: 4
+
+    invWidth: 2
+    invHeight: 2
+    battleType: 2
+
+#######################
 
 #Photon Flash Grenade
 #BROKEN AS FUCK
@@ -251,7 +361,7 @@ items:
     requiresBuy:
       - STR_GRENADE_LAUNCHER_TECH
 
-#Sentinel Lascannon
+#Sentinel with Lascannon
   - type: STR_SENTINEL_ARMOR                #6800
     requiresBuy:
       - STR_SENTINEL_LASCANNON
