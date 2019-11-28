@@ -314,33 +314,30 @@ items:
       - STR_AC_I_AMMO_GUARD
 
 #Carapace Armor. Add requiresBuy
-  - type: STR_GUARD_ARMORH                 #20
-    requiresBuy:
-      - STR_CARAPACE_ARMOR_TECH
+  - type: STR_GUARD_ARMORH
+    costBuy: 0
+    costSell: 10000
+    requiresBuy: []
     size: 0.4
     listOrder: 6700
-    costBuy: 20000
-    costSell: 10000
     transferTime: 10
     weight: 10
 
 #Medic's flak armor
   - type: STR_GUARD_ARMORS_MEDIC
-    requiresBuy:
-      - STR_FLAK_MEDIC_TECH
-    size: 0.2
-    costBuy: 15000
+    costBuy: 0
     costSell: 7500
+    requiresBuy: []
+    size: 0.2
     transferTime: 10
     listOrder: 6660
 
 #Medic's carapace armor
   - type: STR_MEDIC_CARAPACE_ARMOR
-    requiresBuy:
-      - STR_CARAPACE_MEDIC_TECH
-    size: 0.2
-    costBuy: 35000
+    costBuy: 0
     costSell: 12500
+    requiresBuy: []
+    size: 0.2
     transferTime: 10
     listOrder: 6661
 
@@ -363,18 +360,16 @@ items:
 
 #Sentinel with Lascannon
   - type: STR_SENTINEL_ARMOR                #6800
-    requiresBuy:
-      - STR_SENTINEL_LASCANNON
+    requiresBuy: []
     size: 2
-    costBuy: 360000
+    costBuy: 0
     costSell: 140000
 
 #Sentinel Missile and ammo
   - type: STR_GUARD_ARMORS_SENTINEL_MISSILE
-    requiresBuy:
-      - STR_SENTINEL_MISSILE
+    requiresBuy: []
     size: 2
-    costBuy: 420000
+    costBuy: 0
     costSell: 184000
     transferTime: 50
 

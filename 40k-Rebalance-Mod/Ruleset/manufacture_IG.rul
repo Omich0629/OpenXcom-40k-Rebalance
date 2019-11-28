@@ -5,69 +5,57 @@ manufacture:
   - delete: STR_UNPACK_PSYKER_REQUISITION
   - delete: STR_UNPACK_COMMISSIONS
   - delete: STR_HOTSHOT_VOLLEY_GUN
-
-#Mounted stuff
   - delete: STR_GUARD_ARMORS_MOUNTED_AUTOCANNON
   - delete: STR_GUARD_ARMORS_MOUNTED_LASCANNON
 
+### WEAPONS ###
+
 #Guard Lascannon
   - name: STR_LASCANNON_HANDHELD
+    category: STR_WEAPON
     requires:
       - STR_LASCANNON_TECH
       - STR_IMPERIAL_GUARD_OPERATIONS
+    space: 4
+    time: 500
+    cost: 25000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
 
+#Lascannon Ammo
   - name: STR_LASCANNON_CLIP_SMALL
+    category: STR_AMMUNITION
     requires:
       - STR_LASCANNON_TECH
       - STR_IMPERIAL_GUARD_OPERATIONS
+    space: 2
+    time: 10
+    cost: 350
 
-#New chainsword for IG officers
-
-  - name: STR_COMMISSAR_REQUISITION
-    category: STR_ADVANCEMENT
+#Autocannon 
+  - name: STR_AUTOCANNON_HANDHELD
+    category: STR_WEAPON
     requires:
-      - STR_IMPERIAL_GUARD_OPERATIONS
-      - STR_COMMISSAR_REQUISITION
-    space: 0
+      - STR_AUTOCANNON_GUARD
+    space: 4
     time: 500
-    cost: 100000
+    cost: 40000
     requiredItems:
-      STR_ALIEN_HABITAT: 1
-    spawnedPersonType: STR_COMMISSAR
-    producedItems:
-      STR_CHAINSWORD: 1
-      STR_PISTOL: 1
-      STR_PISTOL_CLIP: 2
+      STR_ALIEN_ALLOYS: 7
 
-
-#Ogryn Carapace Armor
-  - name: STR_OGRYN_CARAPACE
-    category: STR_PERSONAL_ARMOR
+#Autocannon Ammo
+  - name: STR_AUTOCANNON_CLIP
+    category: STR_AMMUNITION
     requires:
-      - STR_OGRYN_CARAPACE_TECH
-    space: 8
-    time: 400
-    cost: 17500
+      - STR_AUTOCANNON_GUARD
+    space: 4
+    time: 60
+    cost: 4500
     requiredItems:
-      STR_ALIEN_ALLOYS: 25
+      STR_ELERIUM_115: 5
 
 
-
-#Stormtrooper Requisition
-  - name: STR_STORMTROOPER_REQUISITION
-    category: STR_ADVANCEMENT
-    requires:
-      - STR_STORMTROOPER_REQUISITION
-    space: 0
-    time: 500
-    cost: 100000
-    requiredItems:
-      STR_ALIEN_HABITAT: 1
-    spawnedPersonType: STR_STORMTROOPER
-    producedItems: 
-      STR_GRENADE: 3
-      STR_KNIF: 1
-
+### DELETE IT LATER ###
 #Hellgun manufacture
 
   - name: STR_HELLGUN_ARMOR
@@ -98,7 +86,149 @@ manufacture:
     producedItems: 
       STR_VOLLEYGUN_ARMOR: 1
 
+#########################
 
+### ARMOR ###
+
+#Flak (Medic)
+  - name: STR_GUARD_ARMORS_MEDIC
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_FLAK_MEDIC_TECH
+    space: 4
+    time: 100
+    cost: 7000
+
+#Carapace Armor
+  - name: STR_GUARD_ARMORH
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_CARAPACE_ARMOR_TECH
+    space: 4
+    time: 200
+    cost: 12000
+    requiredItems:
+      STR_UFO_CONSTRUCTION: 10
+
+#Carpace Armor (Medic)
+  - name: STR_MEDIC_CARAPACE_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_CARAPACE_MEDIC_TECH
+    space: 4
+    time: 250
+    cost: 15000
+    requiredItems:
+      STR_UFO_CONSTRUCTION: 10
+
+#Ogryn Carapace Armor
+  - name: STR_OGRYN_CARAPACE
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_OGRYN_CARAPACE_TECH
+    space: 6
+    time: 300
+    cost: 17500
+    requiredItems:
+      STR_UFO_CONSTRUCTION: 20
+
+#Bullgryn (shielded ogryn)
+  - name: STR_BULLGRYN_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_BULLGRYN_ARMOR
+    space: 8
+    time: 400
+    cost: 25000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+      STR_UFO_CONSTRUCTION: 20
+
+### SENTINELS ###
+
+#Sentinel with Lascannon
+  - name: STR_SENTINEL_ARMOR
+    category: STR_PERSONAL_ARMOR  
+    requires:
+      - STR_SENTINEL_LASCANNON
+    space: 12
+    time: 600
+    cost: 60000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 54
+      STR_UFO_CONSTRUCTION: 20
+      STR_ELERIUM_115: 40
+
+#Sentinel with Missile Launcher
+  - name: STR_GUARD_ARMORS_SENTINEL_MISSILE
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SENTINEL_MISSILE
+    space: 12
+    time: 600
+    cost: 70000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 52
+      STR_UFO_CONSTRUCTION: 20
+      STR_ELERIUM_115: 40
+
+#Sentinel with Flamer
+  - name: STR_GUARD_ARMORS_SENTINEL_HEAVY_FLAMER
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SENTINEL_FLAMER
+    space: 12
+    time: 600
+    cost: 85000
+    requiredItems: 
+      STR_ALIEN_ALLOYS: 54
+      STR_UFO_CONSTRUCTION: 20
+      STR_ELERIUM_115: 40
+
+#Sentinel with Multimelta
+  - name: STR_GUARD_ARMORS_SENTINEL_MULTIMELTA
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SENTINEL_MULTIMELTA
+    space: 12
+    time: 900
+    cost: 120000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 56
+      STR_UFO_CONSTRUCTION: 20
+      STR_ELERIUM_115: 40
+
+#Sentinel with Autocannon
+  - name: STR_GUARD_ARMORS_SENTINEL_AUTOCANNON
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SENTINEL_AUTOCANNON
+    space: 12
+    time: 600
+    cost: 85000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 58
+      STR_UFO_CONSTRUCTION: 20
+      STR_ELERIUM_115: 40
+
+### PERSONNEL REQUISITION ###
+
+#Commissar
+  - name: STR_COMMISSAR_REQUISITION
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+      - STR_COMMISSAR_REQUISITION
+    space: 0
+    time: 500
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_HABITAT: 1
+    spawnedPersonType: STR_COMMISSAR
+    producedItems:
+      STR_CHAINSWORD: 1
+      STR_PISTOL: 1
+      STR_PISTOL_CLIP: 2
 
 #Officer Requisition
   - name: STR_OFFICER_REQUISITION
@@ -148,3 +278,18 @@ manufacture:
     producedItems:
       STR_LASER_PISTOLG: 1
       STR_LASPISTOL_CLIP: 2
+
+#Stormtrooper Requisition
+  - name: STR_STORMTROOPER_REQUISITION
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_STORMTROOPER_REQUISITION
+    space: 0
+    time: 500
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_HABITAT: 1
+    spawnedPersonType: STR_STORMTROOPER
+    producedItems: 
+      STR_GRENADE: 3
+      STR_KNIF: 1
