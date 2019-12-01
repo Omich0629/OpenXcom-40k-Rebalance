@@ -5,8 +5,10 @@ items:
 
 ### LASER WEAPONS ###
 
-#Lasgun (Standard)
+#Lasgun (Guard)
   - type: STR_LASER_RIFLEG
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
     bigSprite: 291
     floorSprite: 258
     handSprite: 552
@@ -24,7 +26,8 @@ items:
     tuMelee: 15
     flatMelee:
       time: false
-
+    invWidth: 2
+    invHeight: 3
 
 #Lasgun Clip
   - type: STR_LASGUN_CLIP
@@ -32,8 +35,10 @@ items:
     floorSprite: 259
     handSprite: 560
 
-#Laspistol (Standard)
+#Laspistol (Guard)
   - type: STR_LASER_PISTOLG
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
     bigSprite: 293
     floorSprite: 260
     handSprite: 568
@@ -44,7 +49,7 @@ items:
     floorSprite: 261
     handSprite: 576
 
-#Lascarabine
+#Lascarabine (Guard)
   - type: STR_LASCARBINE
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS

@@ -13,6 +13,7 @@ extraStrings:
       STR_CUSTOM_DOUBLE_SHOT: "Double Shot"
       STR_CUSTOM_SNAPSHOT: "Snap Shot"
 
+      STR_FIRE_EXTINGUISHER: "Fire Extinguisher"
 
 ###############################
 ### Space Marines Tech Tree ###

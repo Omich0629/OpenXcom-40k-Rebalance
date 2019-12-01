@@ -102,7 +102,42 @@ items:
     allowSelfHeal: true
     isConsumable: true
 
+#Fire Extinguisher
+  - type: STR_FIRE_EXTINGUISHER
+    bigSprite: 302
+    floorSprite: 264
+    handSprite: 600
 
+    size: 0.2
+    costBuy: 800
+    costSell: 400
+    weight: 6
+    clipSize: 4
+
+    battleType: 1
+
+    bulletSprite: 1
+    fireSound: 771
+    explosionHitSound: 771
+    hitAnimation: 104
+    bulletSpeed: 80
+
+    power: 20
+    damageType: 9
+    damageAlter:
+      IgnoreSelfDestruct: true
+      RandomType: 3
+      ToStun: 0.5
+    blastRadius: 1
+
+    tuAimed: 25
+    accuracyAimed: 150
+    maxRange: 6
+
+    invWidth: 1
+    invHeight: 2
+    isFireExtinguisher: true
+    experienceTrainingMode: 32
 
 #SM Missile Launcher
 
@@ -126,6 +161,12 @@ items:
   - type: STR_INCENDIARY_ROCKET
     requiresBuy:
       - STR_ROCKET_LAUNCHER_TECH
+    power: 90
+    damageAlter:
+      RandomType: 2 #TFTD [50% - 150%]
+      ToHealth: 1.0
+      ToMorale: 0.5
+    blastRadius: 2
 
 #Heavy Bolter and ammo
   - type: STR_AUTO_CANNON

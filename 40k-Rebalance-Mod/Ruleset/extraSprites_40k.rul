@@ -146,6 +146,7 @@ extraSprites:
       299: Resources/Items/IG/Sentinel_Weapons/Sentinel_Missile_Clip_Inv.png
       300: Resources/Items/SM/Dreadnought_Weapons/Dreadnought_Missile_Clip_Inv.png
       301: Resources/Items/SM/Dreadnought_Weapons/Dreadnougth_Cannon_Clip_Inv.png
+      302: Resources/Items/Common/Fire_Extinguisher/Fire_Extinguisger_Inv.gif
 
 #FLOOR OBJECTS
   - type: FLOOROB.PCK
@@ -215,6 +216,7 @@ extraSprites:
       261: Resources/Items/IG/Laspistol/Laspistol_Clip_Floor.png
       262: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Floor.gif
       263: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Floor.gif
+      264: Resources/Items/Common/Fire_Extinguisher/Fire_Extinguisger_Floor.png
 
 #HAND OBJECTS (contains 8 images)
   - type: HANDOB.PCK
@@ -268,6 +270,7 @@ extraSprites:
       576: Resources/Items/IG/Laspistol/Laspistol_Clip_Hand.png
       584: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Hand.png
       592: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Hand.png
+      600: Resources/Items/Common/Fire_Extinguisher/Fire_Extinguisger_Hand.png
 
 #PROJECTILES ( The corresponding file id is 35*[bulletSprite] )
   - type: Projectiles                         

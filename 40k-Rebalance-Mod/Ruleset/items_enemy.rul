@@ -26,7 +26,8 @@ items:
     tuMelee: 15
     flatMelee:
       time: false
-
+    invWidth: 2
+    invHeight: 3
 
   - type: STR_LASER_PISTOLC
     bigSprite: 296
