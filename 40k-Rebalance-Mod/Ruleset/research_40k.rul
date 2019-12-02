@@ -246,8 +246,8 @@ research:
       - STR_GENERALLOCK
 
 #Adamantium component
-  - name: STR_ALIEN_ALLOYS
-    cost: 100
+  - name: STR_UFO_CONSTRUCTION
+    cost: 150
     points: 10
     needItem: false
     dependencies:
@@ -268,10 +268,10 @@ research:
     needItem: false
     listOrder: 100
     dependencies:
-      - STR_ALIEN_ALLOYS
+      - STR_UFO_CONSTRUCTION
 
 #Ceramite plates
-  - name: STR_UFO_CONSTRUCTION
+  - name: STR_ALIEN_ALLOYS
     cost: 150
     points: 15
     needItem: false
@@ -285,15 +285,16 @@ research:
     points: 15
     needItem: false
     dependencies:
-      - STR_ALIEN_ALLOYS
+      - STR_UFO_CONSTRUCTION
       - STR_ELERIUM_115
 
-#Adamantium Forges
-  - name: STR_STEELMILLR #facility
+#Adamantium Forge
+#facility
+  - name: STR_STEELMILLR
     cost: 200
     points: 20
     dependencies:
-      - STR_ALIEN_ALLOYS
+      - STR_UFO_CONSTRUCTION
       - STR_ELERIUM_115
     listOrder: 100
 

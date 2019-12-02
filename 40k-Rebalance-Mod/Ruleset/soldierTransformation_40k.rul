@@ -52,7 +52,7 @@ soldierTransformation:
     cost: 850000
     requiredItems:
       STR_ALIEN_ALLOYS: 200
-      STR_UFO_CONSTRUCTION: 100
+      STR_UFO_CONSTRUCTION: 40
       STR_UFO_POWER_SOURCE: 1
       STR_ALIEN_REPRODUCTION: 1
       STR_ALIEN_HABITAT: 1

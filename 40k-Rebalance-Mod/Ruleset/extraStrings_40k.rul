@@ -9,6 +9,12 @@ extraStrings:
       STR_STEELMILLR: "Adamantium Forges"
       STR_COMPONENT_MANUFACTURING: "Component Manufacturing"
 
+      STR_ALIEN_ALLOYS: "Ceramite Component"
+      STR_UFO_CONSTRUCTION: "Adamantium Component"
+
+
+
+
 #Custom attacks for special purposes
       STR_CUSTOM_DOUBLE_SHOT: "Double Shot"
       STR_CUSTOM_SNAPSHOT: "Snap Shot"

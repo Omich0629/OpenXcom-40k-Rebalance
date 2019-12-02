@@ -50,13 +50,15 @@ manufacture:
   - delete: STR_HEAVY_PLASMA_MC
 
 ######## COMPONENTS ########
+#Adamantium is STR_UFO_CONSTRUCTION
+#Ceramite is STR_ALIEN_ALLOYS
+#Deal with it.
 
 #Adamantium
-
-  - name: STR_ALIEN_ALLOYS
+  - name: STR_UFO_CONSTRUCTION
     category: STR_UFO_COMPONENT
     requires:
-      - STR_ALIEN_ALLOYS
+      - STR_UFO_CONSTRUCTION
       - STR_ELERIUM_115
     space: 10
     time: 100
@@ -74,20 +76,21 @@ manufacture:
     time: 1600
     cost: 150000
     requiredItems:
-      STR_ALIEN_ALLOYS: 3
+      STR_UFO_CONSTRUCTION: 3
 
 #Ceramite
-  - name: STR_UFO_CONSTRUCTION
+  - name: STR_ALIEN_ALLOYS
     category: STR_UFO_COMPONENT
     requires:
-      - STR_UFO_CONSTRUCTION
+      - STR_ALIEN_ALLOYS
     space: 10
     time: 100
     cost: 1000
     requiredItems:
       STR_ELERIUM_115: 1
     producedItems:
-      STR_UFO_CONSTRUCTION: 2
+      STR_ALIEN_ALLOYS: 2
+    requiresBaseFunc: []
 
 #Power Source
   - name: STR_UFO_POWER_SOURCE
@@ -98,7 +101,7 @@ manufacture:
     time: 1400
     cost: 130000
     requiredItems:
-      STR_ALIEN_ALLOYS: 5
+      STR_UFO_CONSTRUCTION: 5
       STR_ELERIUM_115: 16
 
 ######## T1 STUFF ########
@@ -122,7 +125,7 @@ manufacture:
     time: 700
     cost: 32000
     requiredItems:
-      STR_ALIEN_ALLOYS: 4
+      STR_UFO_CONSTRUCTION: 4
 
 #Lascannon Large Power Cell
   - name: STR_LASCAN_CLIP
@@ -143,7 +146,7 @@ manufacture:
     time: 200
     cost: 15000
     requiredItems:
-      STR_UFO_CONSTRUCTION: 10
+      STR_ALIEN_ALLOYS: 10
 
 #Mk7 Power Armor
   - name: STR_TATICAL_ARMOR
@@ -151,10 +154,10 @@ manufacture:
       - STR_MK7_ARMOR
     space: 12
     time: 800
-    cost: 22000
+    cost: 132000
     requiredItems:
-      STR_ALIEN_ALLOYS: 40
-      STR_UFO_CONSTRUCTION: 10
+      STR_ALIEN_ALLOYS: 50
+      STR_UFO_CONSTRUCTION: 8
 
 #Mk7 Assault Equipment
   - name: STR_ASS_ARMOR
@@ -163,7 +166,7 @@ manufacture:
       - STR_ASS_ARMOR
     space: 6
     time: 400
-    cost: 10000
+    cost: 20000
     requiredItems:
       STR_ALIEN_ALLOYS: 10
 
@@ -175,7 +178,7 @@ manufacture:
       - STR_DEV_ARMOR
     space: 6
     time: 400
-    cost: 10000
+    cost: 20000
     requiredItems:
       STR_ALIEN_ALLOYS: 10
 
@@ -186,11 +189,11 @@ manufacture:
       - STR_MEDI_KIT
     space: 12
     time: 800
-    cost: 44000
+    cost: 152000
     requiresBaseFunc: [MED]
     requiredItems:
-      STR_ALIEN_ALLOYS: 40
-      STR_UFO_CONSTRUCTION: 10
+      STR_ALIEN_ALLOYS: 50
+      STR_UFO_CONSTRUCTION: 8
       STR_ALIEN_HABITAT: 1
 
 #Sergeant Armor. Requires 1 Badge to manufacture.
@@ -202,10 +205,10 @@ manufacture:
       - STR_SARGENT_ARMOR
     space: 12
     time: 800
-    cost: 44000
+    cost: 152000
     requiredItems:
-      STR_ALIEN_ALLOYS: 40
-      STR_UFO_CONSTRUCTION: 10
+      STR_ALIEN_ALLOYS: 50
+      STR_UFO_CONSTRUCTION: 8
       STR_ALIEN_HABITAT: 1
 
 #Craft Lascannon
@@ -217,7 +220,7 @@ manufacture:
     time: 700
     cost: 180000
     requiredItems:
-      STR_ALIEN_ALLOYS: 10
+      STR_UFO_CONSTRUCTION: 10
 
 #Power Fist
   - name: STR_POWERFIST
@@ -228,7 +231,7 @@ manufacture:
     time: 250
     cost: 60000
     requiredItems:
-      STR_ALIEN_ALLOYS: 10
+      STR_UFO_CONSTRUCTION: 10
 
 ######## T2 STUFF ########
 #Energy Scanner
@@ -240,7 +243,7 @@ manufacture:
     time: 700
     cost: 50000
     requiredItems:
-      STR_ALIEN_ALLOYS: 5
+      STR_UFO_CONSTRUCTION: 5
       STR_UFO_NAVIGATION: 1
     listOrder: 1
 
@@ -265,7 +268,7 @@ manufacture:
     time: 700
     cost: 50000
     requiredItems:
-      STR_ALIEN_ALLOYS: 80
+      STR_ALIEN_ALLOYS: 100
       STR_UFO_CONSTRUCTION: 20
     listOrder: 1
 
@@ -278,7 +281,7 @@ manufacture:
     time: 700
     cost: 50000
     requiredItems:
-      STR_ALIEN_ALLOYS: 5
+      STR_UFO_CONSTRUCTION: 5
       STR_UFO_NAVIGATION: 1
     listOrder: 1
 
@@ -303,7 +306,7 @@ manufacture:
     time: 700
     cost: 50000
     requiredItems:
-      STR_ALIEN_ALLOYS: 5
+      STR_UFO_CONSTRUCTION: 5
       STR_UFO_NAVIGATION: 1 
     listOrder: 1
 
@@ -313,10 +316,10 @@ manufacture:
       - STR_NEW_FIGHTER_CRAFT
     space: 30
     time: 14000
-    cost: 400000
+    cost: 544000
     requiredItems:
-      STR_ALIEN_ALLOYS: 400
-      STR_UFO_CONSTRUCTION: 100
+      STR_ALIEN_ALLOYS: 300
+      STR_UFO_CONSTRUCTION: 80
       STR_UFO_POWER_SOURCE: 1
       STR_UFO_NAVIGATION: 1
 
@@ -339,7 +342,7 @@ manufacture:
     time: 2000
     cost: 122000
     requiredItems:
-      STR_ALIEN_ALLOYS: 2
+      STR_UFO_CONSTRUCTION: 2
       STR_ALIEN_HABITAT: 1
 
 #Master Crafted Bolter
@@ -352,7 +355,7 @@ manufacture:
     time: 2000
     cost: 122000
     requiredItems:
-      STR_ALIEN_ALLOYS: 3
+      STR_UFO_CONSTRUCTION: 3
       STR_ALIEN_HABITAT: 1
 
 #Master Crafted Plasma Pistol
@@ -366,7 +369,7 @@ manufacture:
     time: 2000
     cost: 122000
     requiredItems:
-      STR_ALIEN_ALLOYS: 2
+      STR_UFO_CONSTRUCTION: 2
       STR_ALIEN_HABITAT: 1
 
 #Master Crafted Plasmagun
@@ -380,7 +383,7 @@ manufacture:
     time: 2000
     cost: 122000
     requiredItems:
-      STR_ALIEN_ALLOYS: 3
+      STR_UFO_CONSTRUCTION: 3
       STR_ALIEN_HABITAT: 1
 
 #Master Crafted Chainsword
@@ -393,7 +396,7 @@ manufacture:
     time: 2000
     cost: 122000
     requiredItems:
-      STR_ALIEN_ALLOYS: 2
+      STR_UFO_CONSTRUCTION: 2
       STR_ALIEN_HABITAT: 1
 
 #Mk7 Chaplain Armor
@@ -403,10 +406,10 @@ manufacture:
       - STR_CHAP_ARMOR
     space: 12
     time: 1000
-    cost: 150000
+    cost: 200000
     requiredItems:
       STR_ALIEN_ALLOYS: 50
-      STR_UFO_CONSTRUCTION: 10
+      STR_UFO_CONSTRUCTION: 16
       STR_ALIEN_HABITAT: 1
 
 #Mk7 Techmarine Armor. 
@@ -419,11 +422,11 @@ manufacture:
       - STR_SPACE_MARINES_OPERATIONS
     space: 12
     time: 1000
-    cost: 150000
+    cost: 200000
     requiresBaseFunc: [TEC]
     requiredItems:
       STR_ALIEN_ALLOYS: 50
-      STR_UFO_CONSTRUCTION: 10
+      STR_UFO_CONSTRUCTION: 16
       STR_ALIEN_HABITAT: 1
 
 #Centurion Warsuit.
@@ -433,11 +436,11 @@ manufacture:
       - STR_CENT_ARMORR
     space: 16
     time: 1200
-    cost: 150000
+    cost: 200000
     requiresBaseFunc: [TEC]
     requiredItems:
       STR_ALIEN_ALLOYS: 100
-      STR_UFO_CONSTRUCTION: 30
+      STR_UFO_CONSTRUCTION: 20
       STR_ALIEN_HABITAT: 1
 
 
@@ -453,7 +456,7 @@ manufacture:
     cost: 300000
     requiresBaseFunc: [TEC]
     requiredItems:
-      STR_ALIEN_ALLOYS: 20
+      STR_UFO_CONSTRUCTION: 20
 
 #Dreadnought / Lascannon
   - name: STR_DREAD4_ARMOR
@@ -465,7 +468,7 @@ manufacture:
     cost: 300000
     requiresBaseFunc: [TEC]
     requiredItems:
-      STR_ALIEN_ALLOYS: 20
+      STR_UFO_CONSTRUCTION: 20
  
 #Dreadnought / Missile Launcher 
   - delete: STR_HWP_FUSION_BOMB
@@ -479,7 +482,7 @@ manufacture:
     cost: 300000
     requiresBaseFunc: [TEC]
     requiredItems:
-      STR_ALIEN_ALLOYS: 20
+      STR_UFO_CONSTRUCTION: 20
 
 #Dreadnought / Assault Cannon
   - name: STR_DREAD5_ARMOR
@@ -492,7 +495,7 @@ manufacture:
     cost: 300000
     requiresBaseFunc: [TEC]
     requiredItems:
-      STR_ALIEN_ALLOYS: 20
+      STR_UFO_CONSTRUCTION: 20
  
 #Meltagun
   - name: STR_HEAVY_LASER
@@ -503,7 +506,7 @@ manufacture:
     time: 700
     cost: 32000
     requiredItems:
-      STR_ALIEN_ALLOYS: 2
+      STR_UFO_CONSTRUCTION: 2
 
 #Meltagun Ammo
   - name: STR_MELTA_AMMO
@@ -525,7 +528,7 @@ manufacture:
     time: 900
     cost: 64000
     requiredItems:
-      STR_ALIEN_ALLOYS: 2
+      STR_UFO_CONSTRUCTION: 2
 
 #Multimelta Ammo
   - name: STR_BLASTER_BOMB
@@ -569,7 +572,7 @@ manufacture:
     time: 900
     cost: 250000
     requiredItems:
-      STR_ALIEN_ALLOYS: 20
+      STR_UFO_CONSTRUCTION: 20
 
 #Craft Multi-Melta Ammo
   - name: STR_FUSION_BALL
@@ -590,7 +593,7 @@ manufacture:
     time: 600
     cost: 56000
     requiredItems:
-      STR_ALIEN_ALLOYS: 1
+      STR_UFO_CONSTRUCTION: 1
 
 #Plasma Pistol Ammo
   - name: STR_PLASMA_PISTOL_CLIP
@@ -610,7 +613,7 @@ manufacture:
     time: 800
     cost: 88000
     requiredItems:
-      STR_ALIEN_ALLOYS: 2
+      STR_UFO_CONSTRUCTION: 2
 
 #Plasmagun Ammo
   - name: STR_PLASMA_RIFLE_CLIP
@@ -630,7 +633,7 @@ manufacture:
     time: 1000
     cost: 122000
     requiredItems:
-      STR_ALIEN_ALLOYS: 4
+      STR_UFO_CONSTRUCTION: 4
 
 #Heavy Plasma Ammo
   - name: STR_HEAVY_PLASMA_CLIP
@@ -651,7 +654,7 @@ manufacture:
     time: 1000
     cost: 225000
     requiredItems:
-      STR_ALIEN_ALLOYS: 20
+      STR_UFO_CONSTRUCTION: 20
 
 #Craft Plasma Cannon Ammo
   - name: STR_PLASMA_BEAM_AMMO
@@ -672,7 +675,7 @@ manufacture:
     time: 1000
     cost: 80000
     requiredItems:
-      STR_ALIEN_ALLOYS: 2
+      STR_UFO_CONSTRUCTION: 2
 
 #Graviton Gun Round
   - name: STR_STUN_BOMB
@@ -703,11 +706,11 @@ manufacture:
       - STR_STORMEAGLE_INTERCEPTOR
     space: 34
     time: 18000
-    cost: 800000
+    cost: 624000
     listOrder: 3350
     requiredItems:
-      STR_ALIEN_ALLOYS: 600
-      STR_UFO_CONSTRUCTION: 150
+      STR_ALIEN_ALLOYS: 450
+      STR_UFO_CONSTRUCTION: 100
       STR_UFO_POWER_SOURCE: 1
       STR_UFO_NAVIGATION: 1
 
@@ -717,10 +720,10 @@ manufacture:
       - STR_NEW_FIGHTER_TRANSPORTER
     space: 36
     time: 34000
-    cost: 1000000
+    cost: 748000
     requiredItems:
-      STR_ALIEN_ALLOYS: 800
-      STR_UFO_CONSTRUCTION: 200
+      STR_ALIEN_ALLOYS: 600
+      STR_UFO_CONSTRUCTION: 150
       STR_UFO_POWER_SOURCE: 2
       STR_UFO_NAVIGATION: 2
 
@@ -733,7 +736,7 @@ manufacture:
     time: 2000
     cost: 300000
     requiredItems:
-      STR_ALIEN_ALLOYS: 40
+      STR_UFO_CONSTRUCTION: 30
     listOrder: 1
 
 #Mk7 Librarian armor
@@ -743,11 +746,11 @@ manufacture:
       - STR_LIBRARIAN_ARMOR
     space: 12
     time: 1000
-    cost: 150000
+    cost: 230000
     requiresBaseFunc: [LIB]
     requiredItems:
       STR_ALIEN_ALLOYS: 50
-      STR_UFO_CONSTRUCTION: 10
+      STR_UFO_CONSTRUCTION: 20
       STR_ALIEN_HABITAT: 2
 
 #Tome of Vision
@@ -802,11 +805,11 @@ manufacture:
       - STR_POWER_SUIT
     space: 16
     time: 1200
-    cost: 200000
+    cost: 220000
     requiresBaseFunc: [ARMO]
     requiredItems:
-      STR_ALIEN_ALLOYS: 120
-      STR_UFO_CONSTRUCTION: 50
+      STR_ALIEN_ALLOYS: 150
+      STR_UFO_CONSTRUCTION: 30
       STR_ALIEN_HABITAT: 1
 
 #Terminator Assault Armor
@@ -816,11 +819,11 @@ manufacture:
       - STR_FLYING_SUIT
     space: 16
     time: 1200
-    cost: 220000
+    cost: 270000
     requiresBaseFunc: [ARMO]
     requiredItems:
-      STR_ALIEN_ALLOYS: 130
-      STR_UFO_CONSTRUCTION: 50
+      STR_ALIEN_ALLOYS: 150
+      STR_UFO_CONSTRUCTION: 40
       STR_ALIEN_HABITAT: 1
 
 #Terminator Sergeant Armor
@@ -830,11 +833,11 @@ manufacture:
       - STR_TSARGENT
     space: 16
     time: 1200
-    cost: 220000
+    cost: 270000
     requiresBaseFunc: [ARMO]
     requiredItems:
-      STR_ALIEN_ALLOYS: 120
-      STR_UFO_CONSTRUCTION: 50
+      STR_ALIEN_ALLOYS: 150
+      STR_UFO_CONSTRUCTION: 30
       STR_ALIEN_HABITAT: 2
 
 #Terminator Apothecary Armor
@@ -844,11 +847,11 @@ manufacture:
       - STR_TERMINATOR_APOTHECARY
     space: 16
     time: 1200
-    cost: 220000
+    cost: 270000
     requiresBaseFunc: [ARMO, MED]
     requiredItems:
-      STR_ALIEN_ALLOYS: 130
-      STR_UFO_CONSTRUCTION: 50
+      STR_ALIEN_ALLOYS: 150
+      STR_UFO_CONSTRUCTION: 35
       STR_ALIEN_HABITAT: 2
 
 #Terminator Chaplain Armor
@@ -858,11 +861,11 @@ manufacture:
       - STR_TERMINATOR_CHAPLAIN
     space: 16
     time: 1200
-    cost: 220000
+    cost: 320000
     requiresBaseFunc: [ARMO]
     requiredItems:
-      STR_ALIEN_ALLOYS: 130
-      STR_UFO_CONSTRUCTION: 50
+      STR_ALIEN_ALLOYS: 150
+      STR_UFO_CONSTRUCTION: 35
       STR_ALIEN_HABITAT: 2
 
 #Terminator Librarian Armor
@@ -872,11 +875,11 @@ manufacture:
       - STR_TERMINATOR_LIBRARIAN
     space: 16
     time: 1200
-    cost: 220000
+    cost: 320000
     requiresBaseFunc: [ARMO, LIB]
     requiredItems:
-      STR_ALIEN_ALLOYS: 130
-      STR_UFO_CONSTRUCTION: 50
+      STR_ALIEN_ALLOYS: 150
+      STR_UFO_CONSTRUCTION: 35
       STR_ALIEN_HABITAT: 3
 
 #Terminator Captain Armor
@@ -886,11 +889,11 @@ manufacture:
       - STR_CAPTAIN_SUIT
     space: 16
     time: 1200
-    cost: 300000
+    cost: 320000
     requiresBaseFunc: [ARMO]
     requiredItems:
-      STR_ALIEN_ALLOYS: 130
-      STR_UFO_CONSTRUCTION: 50
+      STR_ALIEN_ALLOYS: 150
+      STR_UFO_CONSTRUCTION: 35
       STR_ALIEN_HABITAT: 3
 
 ###T3 WEAPONS###
@@ -904,7 +907,7 @@ manufacture:
     time: 300
     cost: 40000
     requiredItems:
-      STR_ALIEN_ALLOYS: 5
+      STR_UFO_CONSTRUCTION: 5
 
 #Power Sword
   - name: STR_POWER_SWORD
@@ -915,7 +918,7 @@ manufacture:
     time: 600
     cost: 100000
     requiredItems:
-      STR_ALIEN_ALLOYS: 15
+      STR_UFO_CONSTRUCTION: 15
 
 #Lightning Claw
   - name: STR_CLAWS
@@ -926,7 +929,7 @@ manufacture:
     time: 500
     cost: 80000
     requiredItems:
-      STR_ALIEN_ALLOYS: 12
+      STR_UFO_CONSTRUCTION: 12
 
 #Thunder Hammer
   - name: STR_HAMMER
@@ -937,7 +940,7 @@ manufacture:
     time: 1000
     cost: 120000
     requiredItems:
-      STR_ALIEN_ALLOYS: 20
+      STR_UFO_CONSTRUCTION: 20
 
 #Heavy Flamer
   - name: STR_HFLAMER
@@ -948,7 +951,7 @@ manufacture:
     time: 1000
     cost: 120000
     requiredItems:
-      STR_ALIEN_ALLOYS: 10
+      STR_UFO_CONSTRUCTION: 10
 
 #Heavy Flamer Fuel
   - name: STR_HFLAMER_CLIP
@@ -961,7 +964,6 @@ manufacture:
     requiredItems:
       STR_ELERIUM_115: 10
 
-
 #Storm Bolter
   - name: STR_HB
     requires:
@@ -970,7 +972,7 @@ manufacture:
     time: 1000
     cost: 72000
     requiredItems:
-      STR_ALIEN_ALLOYS: 10
+      STR_UFO_CONSTRUCTION: 10
 
 #Storm Bolter Standard Ammo
   - name: STR_HB_CLIP
@@ -981,7 +983,7 @@ manufacture:
     time: 100
     cost: 6200
     requiredItems:
-      STR_ALIEN_ALLOYS: 1
+      STR_UFO_CONSTRUCTION: 1
 
 #Storm Bolter EX Ammo
   - name: STR_HB_CLIP_EX
@@ -992,7 +994,7 @@ manufacture:
     time: 100
     cost: 6800
     requiredItems:
-      STR_ALIEN_ALLOYS: 1
+      STR_UFO_CONSTRUCTION: 1
     producedItems:
       STR_HB_CLIP_EX: 1
 
@@ -1005,7 +1007,7 @@ manufacture:
     time: 100
     cost: 7400
     requiredItems:
-      STR_ALIEN_ALLOYS: 1
+      STR_UFO_CONSTRUCTION: 1
     producedItems:
       STR_HB_CLIP_AP: 1
 
@@ -1017,7 +1019,7 @@ manufacture:
     time: 1000
     cost: 120000
     requiredItems:
-      STR_ALIEN_ALLOYS: 20
+      STR_UFO_CONSTRUCTION: 20
 
 #Assault Cannon Ammo
   - name: STR_ASSC_CLIP
@@ -1038,4 +1040,4 @@ manufacture:
     time: 1000
     cost: 120000
     requiredItems:
-      STR_ALIEN_ALLOYS: 20
+      STR_UFO_CONSTRUCTION: 20
