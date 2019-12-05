@@ -6,6 +6,12 @@ items:
   - delete: STR_RIFLE_CLIP_MC
   - delete: STR_AC_MC_AMMO
 
+#MC lasgun
+  - delete: STR_MCLASER_RIFLE
+
+#MC shotgun
+  - delete: STR_MCSHOTGUN
+
 #### NULL SLOT ITEMS ####
   - type: INV_NULL_4X3_BELT
     weight: 0

@@ -49,6 +49,12 @@ manufacture:
 #Master Crafted Heavy Plasma
   - delete: STR_HEAVY_PLASMA_MC
 
+#Master Crafted Lasgun
+  - delete: STR_MCLASER_RIFLE
+
+#Master Crafted Shotgun
+  - delete: STR_MCSHOTGUN
+
 ######## COMPONENTS ########
 #Adamantium is STR_UFO_CONSTRUCTION
 #Ceramite is STR_ALIEN_ALLOYS
@@ -528,7 +534,7 @@ manufacture:
     time: 900
     cost: 64000
     requiredItems:
-      STR_UFO_CONSTRUCTION: 2
+      STR_UFO_CONSTRUCTION: 4
 
 #Multimelta Ammo
   - name: STR_BLASTER_BOMB

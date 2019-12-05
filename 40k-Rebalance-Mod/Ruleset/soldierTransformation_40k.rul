@@ -62,7 +62,6 @@ soldierTransformation:
     allowsLiveSoldiers: false
     needsCorpseRecovered: true
     allowedSoldierTypes:
-      - STR_SOLDIER
       - STR_VETERAN_SOLDIER
     requiresBaseFunc: [TEC]
     transferTime: 24

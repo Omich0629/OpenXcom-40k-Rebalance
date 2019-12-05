@@ -535,7 +535,7 @@ armors:
       - 1.1 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     units:
       - STR_SOLDIER
@@ -604,7 +604,7 @@ armors:
       - 0.8 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     builtInWeapons:
       - INV_NULL_3X3
@@ -672,7 +672,7 @@ armors:
       - 1.1 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     units:
       - STR_SOLDIER
@@ -741,7 +741,7 @@ armors:
       - 1.1 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     units:
       - STR_SOLDIER
@@ -809,7 +809,7 @@ armors:
       - 1.1 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     builtInWeapons:
       - INV_NULL_3X3
@@ -889,7 +889,7 @@ armors:
       - 1.1 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 20
@@ -959,7 +959,7 @@ armors:
       - 1.1 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     builtInWeapons:
       - INV_NULL_3X3
@@ -1034,7 +1034,7 @@ armors:
       - 0.9 #MELEE
       - 0.9 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 0.9 #MELTA
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 20
@@ -1105,7 +1105,7 @@ armors:
       - 1.1 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     units:
       - STR_VETERAN_SOLDIER
@@ -1175,7 +1175,7 @@ armors:
       - 0.8 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     builtInWeapons:
       - INV_NULL_3X3
@@ -1243,7 +1243,7 @@ armors:
       - 1.1 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     units:
       - STR_VETERAN_SOLDIER
@@ -1315,7 +1315,7 @@ armors:
       - 1.1 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     units:
       - STR_VETERAN_SOLDIER
@@ -1387,7 +1387,7 @@ armors:
       - 1.1 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     builtInWeapons:
       - AUX_CROZIUS
@@ -1459,7 +1459,7 @@ armors:
       - 1.1 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     units:
       - STR_SOLDIER
@@ -1534,7 +1534,7 @@ armors:
       - 1.0 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     units:
       - STR_VETERAN_SOLDIER
@@ -1608,7 +1608,7 @@ armors:
       - 1.0 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     units:
       - STR_VETERAN_SOLDIER
@@ -1680,7 +1680,7 @@ armors:
       - 1.0 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     units:
       - STR_VETERAN_SOLDIER
@@ -1752,7 +1752,7 @@ armors:
       - 1.0 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     units:
       - STR_VETERAN_SOLDIER
@@ -1826,7 +1826,7 @@ armors:
       - 1.0 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     units:
       - STR_VETERAN_SOLDIER
@@ -1897,7 +1897,7 @@ armors:
       - 1.0 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     units:
       - STR_VETERAN_SOLDIER
@@ -1972,7 +1972,7 @@ armors:
       - 1.0 #MELEE
       - 1.0 #ACID
       - 0.0 #SMOKE
-      - 0.2 #IMPACT
+      - 0.0 #IMPACT
       - 1.0 #MELTA
     units:
       - STR_VETERAN_SOLDIER
