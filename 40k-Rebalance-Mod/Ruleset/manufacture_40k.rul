@@ -43,17 +43,13 @@ manufacture:
   - delete: STR_TANK_LASER_CANNON
   - delete: STR_NOVA_BOMB
 
-#Master Crafted Graviton Gun
+#Master Crafted stuff
   - delete: STR_GRAVGUN_MC
-
-#Master Crafted Heavy Plasma
   - delete: STR_HEAVY_PLASMA_MC
-
-#Master Crafted Lasgun
   - delete: STR_MCLASER_RIFLE
-
-#Master Crafted Shotgun
   - delete: STR_MCSHOTGUN
+  - delete: STR_MCRIFLE
+  - delete: STR_MCPISTOL
 
 ######## COMPONENTS ########
 #Adamantium is STR_UFO_CONSTRUCTION
@@ -338,12 +334,24 @@ manufacture:
     time: 220
     cost: 34000
 
+#Scoped Bolter
+  - name: STR_SM_BOLTER_SCOPED
+    category: STR_WEAPON
+    requires:
+      - STR_BOLTER_TECH
+      - STR_PROMOTION_VETERAN_MARINE
+    space: 4
+    time: 700
+    cost: 80000
+    requiredItems:
+      STR_UFO_CONSTRUCTION: 3
+
 #Master Crafted Boltpistol
-  - name: STR_MCPISTOL
+  - name: STR_MC_BOLTPISTOL
     category: STR_WEAPON
     requires:
       - STR_MASTER_CRAFTING
-      - STR_PLASMA_PISTOL_TERRAN
+      - STR_BOLTPISTOL_TECH
     space: 4
     time: 2000
     cost: 122000
@@ -352,14 +360,28 @@ manufacture:
       STR_ALIEN_HABITAT: 1
 
 #Master Crafted Bolter
-  - name: STR_MCRIFLE
+  - name: STR_MC_BOLTER
     category: STR_WEAPON
     requires:
       - STR_MASTER_CRAFTING
-      - STR_PLASMA_RIFLE_TERRAN
+      - STR_BOLTER_TECH
     space: 4
     time: 2000
     cost: 122000
+    requiredItems:
+      STR_UFO_CONSTRUCTION: 3
+      STR_ALIEN_HABITAT: 1
+
+#Master Crafted Bolter (Scoped)
+  - name: STR_MC_BOLTER_SCOPED
+    category: STR_WEAPON
+    requires:
+      - STR_MASTER_CRAFTING
+      - STR_BOLTER_TECH
+      - STR_PROMOTION_VETERAN_MARINE
+    space: 4
+    time: 2000
+    cost: 130000
     requiredItems:
       STR_UFO_CONSTRUCTION: 3
       STR_ALIEN_HABITAT: 1

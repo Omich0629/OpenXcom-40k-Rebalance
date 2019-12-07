@@ -70,3 +70,5 @@ extraSounds:
       778: Resources/Sound/Mind.wav
       864: Resources/Sound/LightningHit.wav
       865: Resources/Sound/Lascannon_Fire.wav
+      887: Resources/Sound/ambient_jungle.wav
+      891: Resources/Sound/ambient_arctic.wav

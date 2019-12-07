@@ -1,4 +1,5 @@
 terrains:
+#BASE STUFF
   - name: XBASE
     mapDataSets:
       - BLANKS
@@ -226,3 +227,394 @@ terrains:
       - name: LIFT_64
         width: 10
         length: 10
+#OTHER TERRAINS
+
+#POLAR
+#Recreate without weapon spawners
+  - delete: POLAR
+
+  - name: POLAR
+    ambience: 891 #Arctic
+    ambientVolume: 0.25  
+    mapDataSets:
+      - BLANKS
+      - POLAR
+      - 01BUNKERSNOW
+    script: POLAR
+    mapBlocks:
+      - name: POLAR00
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: POLAR01
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: POLAR02
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: POLAR03
+        width: 10
+        length: 10
+      - name: POLAR04
+        width: 10
+        length: 10
+      - name: POLAR05
+        width: 10
+        length: 10
+      - name: POLAR06
+        width: 10
+        length: 10
+      - name: POLAR07
+        width: 10
+        length: 10
+      - name: POLAR08
+        width: 10
+        length: 10
+      - name: POLAR09
+        width: 10
+        length: 10
+      - name: POLAR10
+        width: 10
+        length: 10
+      - name: POLAR11
+        width: 10
+        length: 10
+      - name: POLAR12
+        width: 20
+        length: 20
+      - name: POLAR13
+        width: 20
+        length: 20
+      - name: POLAR14
+        width: 20
+        length: 20
+
+#JUNGLE
+#Recreate without weapon spawners
+  - delete: JUNGLE
+
+  - name: JUNGLE
+    ambience: 887 #jungle
+    ambientVolume: 0.25
+    mapDataSets:
+      - BLANKS
+      - JUNGLE
+      - 01BUNKERFOREST
+    script: JUNGLE
+    mapBlocks:
+      - name: JUNGLE00
+        width: 10
+        length: 10
+        groups: 1
+      - name: JUNGLE01
+        width: 10
+        length: 10
+        groups: 1
+      - name: JUNGLE02
+        width: 10
+        length: 10
+        groups: 1
+      - name: JUNGLE03
+        width: 10
+        length: 10
+      - name: JUNGLE04
+        width: 10
+        length: 10
+      - name: JUNGLE05
+        width: 10
+        length: 10
+      - name: JUNGLE06
+        width: 10
+        length: 10
+      - name: JUNGLE07
+        width: 10
+        length: 10
+      - name: JUNGLE08
+        width: 10
+        length: 10
+      - name: JUNGLE09
+        width: 10
+        length: 10
+      - name: JUNGLE10
+        width: 10
+        length: 10
+      - name: JUNGLE11
+        width: 10
+        length: 10
+      - name: JUNGLE12
+        width: 10
+        length: 10
+
+#FOREST
+#Recreate without weapon spawners
+  - delete: FOREST
+
+  - name: FOREST
+    script: FOREST
+    mapDataSets:
+      - BLANKS
+      - FOREST
+      - 01BUNKERFOREST
+    mapBlocks:
+      - name: FOREST00
+        width: 10
+        length: 10
+        groups: 1
+      - name: FOREST01
+        width: 10
+        length: 10
+        groups: 1
+      - name: FOREST02
+        width: 10
+        length: 10
+      - name: FOREST03
+        width: 10
+        length: 10
+      - name: FOREST04
+        width: 10
+        length: 10
+      - name: FOREST05
+        width: 10
+        length: 10
+      - name: FOREST06
+        width: 10
+        length: 10
+      - name: FOREST07
+        width: 10
+        length: 10
+      - name: FOREST08
+        width: 10
+        length: 10
+      - name: FOREST09
+        width: 10
+        length: 10
+      - name: FOREST10
+        width: 20
+        length: 20
+      - name: FOREST11
+        width: 20
+        length: 20
+      - name: FOREST12
+        width: 20
+        length: 20
+
+#FOREST
+#Recreate without weapon spawners
+  - delete: DESERT
+
+  - name: DESERT
+    mapDataSets:
+      - BLANKS
+      - DESERT
+      - 01BUNKERSAND
+    script: DESERT 
+    mapBlocks:
+      - name: DESERT00
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: DESERT01
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: DESERT02
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: DESERT03
+        width: 10
+        length: 10
+      - name: DESERT04
+        width: 10
+        length: 10
+      - name: DESERT05
+        width: 10
+        length: 10
+      - name: DESERT06
+        width: 10
+        length: 10
+      - name: DESERT07
+        width: 10
+        length: 10
+      - name: DESERT08
+        width: 10
+        length: 10
+      - name: DESERT09
+        width: 20
+        length: 20
+      - name: DESERT10
+        width: 20
+        length: 20
+      - name: DESERT11
+        width: 20
+        length: 20
+      - name: DESERT12
+        width: 20
+        length: 20
+
+#REFINERY
+#Recreate without item spawners
+  - delete: REFINERY
+
+  - name: REFINERY
+    ambience: 889 #Pit
+    ambientVolume: 0.25
+    mapDataSets:
+      - BLANKS
+      - HANGAR1
+      - HANGAR2
+      - FUEL
+    civilianTypes:
+      - MALE_CIVILIAN
+      - FEMALE_CIVILIAN
+    script: REFINERYS
+    mapBlocks:
+      - name: FUELD00
+        width: 20
+        length: 20
+      - name: FUELD01
+        width: 20
+        length: 20
+      - name: FUELD02
+        width: 20
+        length: 20
+      - name: FUELD03
+        width: 10
+        length: 10
+      - name: FUELD04
+        width: 10
+        length: 10
+      - name: FUELD05
+        width: 10
+        length: 10
+      - name: FUELD06
+        width: 10
+        length: 10
+      - name: FUELD07
+        width: 10
+        length: 10
+      - name: FUELD08
+        width: 10
+        length: 10
+      - name: FUELD09
+        width: 10
+        length: 10
+        groups: 3
+      - name: FUELD10
+        width: 20
+        length: 20
+      - name: FUELD11
+        width: 20
+        length: 20
+      - name: FUELD12
+        width: 20
+        length: 20
+        groups: 4
+      - name: FUELD13
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: FUELD14
+        width: 10
+        length: 10
+      - name: FUELD15
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: FUELD16
+        width: 10
+        length: 10
+      - name: FUELD17
+        width: 10
+        length: 10
+      - name: FUELD18
+        width: 10
+        length: 10
+        groups: 2
+      - name: FUELD19 # dont use 
+        width: 30
+        length: 30
+        groups: 4
+
+#BDAIRPORT
+#Recreate without item spawners
+  - delete: BDAIRPORT
+
+  - name: BDAIRPORT
+    mapDataSets:
+      - BLANKS
+      - HANGAR1
+      - HANGAR2
+      - VOSS
+    civilianTypes:
+      - MALE_CIVILIAN
+      - FEMALE_CIVILIAN
+    script: BDAIRPORT
+    mapBlocks:
+      - name: HANGAR00
+        width: 20
+        length: 20
+      - name: HANGAR01
+        width: 20
+        length: 20
+      - name: HANGAR02
+        width: 20
+        length: 20
+      - name: HANGAR03
+        width: 10
+        length: 10
+      - name: HANGAR04
+        width: 10
+        length: 10
+      - name: HANGAR05
+        width: 10
+        length: 10
+      - name: HANGAR06
+        width: 10
+        length: 10
+      - name: HANGAR07
+        width: 10
+        length: 10
+      - name: HANGAR08
+        width: 10
+        length: 10
+      - name: HANGAR09
+        width: 10
+        length: 10
+      - name: HANGAR10
+        width: 10
+        length: 10
+        groups: 2
+      - name: HANGAR11
+        width: 10
+        length: 10
+        groups: 3
+      - name: HANGAR12
+        width: 10
+        length: 10
+        groups: 4
+      - name: HANGAR13
+        width: 10
+        length: 10
+      - name: HANGAR14
+        width: 10
+        length: 10
+      - name: HANGAR15
+        width: 10
+        length: 10
+      - name: HANGAR16
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: HANGAR17
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: HANGAR18
+        width: 10
+        length: 10
+      - name: HANGAR19
+        width: 30
+        length: 30

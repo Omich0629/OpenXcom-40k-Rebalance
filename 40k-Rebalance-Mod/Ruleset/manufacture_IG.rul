@@ -20,7 +20,7 @@ manufacture:
     time: 500
     cost: 25000
     requiredItems:
-      STR_ALIEN_ALLOYS: 4
+      STR_UFO_CONSTRUCTION: 4
 
 #Lascannon Ammo
   - name: STR_LASCANNON_CLIP_SMALL
@@ -41,7 +41,7 @@ manufacture:
     time: 500
     cost: 40000
     requiredItems:
-      STR_ALIEN_ALLOYS: 7
+      STR_UFO_CONSTRUCTION: 7
 
 #Autocannon Ammo
   - name: STR_AUTOCANNON_CLIP
@@ -108,7 +108,7 @@ manufacture:
     time: 200
     cost: 12000
     requiredItems:
-      STR_UFO_CONSTRUCTION: 10
+      STR_ALIEN_ALLOYS: 10
 
 #Carpace Armor (Medic)
   - name: STR_MEDIC_CARAPACE_ARMOR
@@ -119,7 +119,7 @@ manufacture:
     time: 250
     cost: 15000
     requiredItems:
-      STR_UFO_CONSTRUCTION: 10
+      STR_ALIEN_ALLOYS: 10
 
 #Ogryn Carapace Armor
   - name: STR_OGRYN_CARAPACE
@@ -130,7 +130,7 @@ manufacture:
     time: 300
     cost: 17500
     requiredItems:
-      STR_UFO_CONSTRUCTION: 20
+      STR_ALIEN_ALLOYS: 20
 
 #Bullgryn (shielded ogryn)
   - name: STR_BULLGRYN_ARMOR
@@ -141,8 +141,8 @@ manufacture:
     time: 400
     cost: 25000
     requiredItems:
-      STR_ALIEN_ALLOYS: 10
-      STR_UFO_CONSTRUCTION: 20
+      STR_UFO_CONSTRUCTION: 10
+      STR_ALIEN_ALLOYS: 20
 
 ### SENTINELS ###
 
@@ -156,7 +156,7 @@ manufacture:
     cost: 60000
     requiredItems:
       STR_ALIEN_ALLOYS: 54
-      STR_UFO_CONSTRUCTION: 20
+      STR_UFO_CONSTRUCTION: 24
       STR_ELERIUM_115: 40
 
 #Sentinel with Missile Launcher
@@ -168,8 +168,8 @@ manufacture:
     time: 600
     cost: 70000
     requiredItems:
-      STR_ALIEN_ALLOYS: 52
-      STR_UFO_CONSTRUCTION: 20
+      STR_ALIEN_ALLOYS: 54
+      STR_UFO_CONSTRUCTION: 22
       STR_ELERIUM_115: 40
 
 #Sentinel with Flamer
@@ -182,7 +182,7 @@ manufacture:
     cost: 85000
     requiredItems: 
       STR_ALIEN_ALLOYS: 54
-      STR_UFO_CONSTRUCTION: 20
+      STR_UFO_CONSTRUCTION: 22
       STR_ELERIUM_115: 40
 
 #Sentinel with Multimelta
@@ -194,8 +194,8 @@ manufacture:
     time: 900
     cost: 120000
     requiredItems:
-      STR_ALIEN_ALLOYS: 56
-      STR_UFO_CONSTRUCTION: 20
+      STR_ALIEN_ALLOYS: 54
+      STR_UFO_CONSTRUCTION: 24
       STR_ELERIUM_115: 40
 
 #Sentinel with Autocannon
@@ -207,8 +207,8 @@ manufacture:
     time: 600
     cost: 85000
     requiredItems:
-      STR_ALIEN_ALLOYS: 58
-      STR_UFO_CONSTRUCTION: 20
+      STR_ALIEN_ALLOYS: 54
+      STR_UFO_CONSTRUCTION: 27
       STR_ELERIUM_115: 40
 
 ### PERSONNEL REQUISITION ###
@@ -227,7 +227,7 @@ manufacture:
     spawnedPersonType: STR_COMMISSAR
     producedItems:
       STR_CHAINSWORD: 1
-      STR_PISTOL: 1
+      STR_IG_BOLTPISTOL: 1
       STR_PISTOL_CLIP: 2
 
 #Officer Requisition

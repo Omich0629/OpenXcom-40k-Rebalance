@@ -147,6 +147,15 @@ extraSprites:
       300: Resources/Items/SM/Dreadnought_Weapons/Dreadnought_Missile_Clip_Inv.png
       301: Resources/Items/SM/Dreadnought_Weapons/Dreadnougth_Cannon_Clip_Inv.png
       302: Resources/Items/Common/Fire_Extinguisher/Fire_Extinguisger_Inv.gif
+      303: Resources/Items/IG/Lascarabine/Lascarbine_Inv.png
+      304: Resources/Items/SM/Bolter_SM/Bolter_SM_Inv.gif
+      305: Resources/Items/SM/Bolter_SM_Scoped/Bolter_SM_Scoped_Inv.gif
+      306: Resources/Items/SM/Bolter_MC/Bolter_MC_Inv.gif
+      307: Resources/Items/SM/Bolter_MC_Scoped/Bolter_MC_Scoped_Inv.gif
+      308: Resources/Items/IG/Bolter_IG/Bolter_IG_Inv.gif
+      309: Resources/Items/SM/Boltpistol_SM/Boltpistol_SM_Inv.gif
+      310: Resources/Items/IG/Boltpistol_IG/Boltpistol_IG_Inv.gif
+      311: Resources/Items/SM/Boltpistol_MC/Boltpistol_MC_Inv.gif
 
 #FLOOR OBJECTS
   - type: FLOOROB.PCK
@@ -217,6 +226,14 @@ extraSprites:
       262: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Floor.gif
       263: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Floor.gif
       264: Resources/Items/Common/Fire_Extinguisher/Fire_Extinguisger_Floor.png
+      265: Resources/Items/SM/Bolter_SM/Bolter_SM_Floor.gif
+      266: Resources/Items/SM/Bolter_SM_Scoped/Bolter_SM_Scoped_Floor.gif
+      267: Resources/Items/SM/Bolter_MC/Bolter_MC_Floor.gif
+      268: Resources/Items/SM/Bolter_MC_Scoped/Bolter_MC_Scoped_Floor.gif
+      269: Resources/Items/IG/Bolter_IG/Bolter_IG_Floor.gif
+      270: Resources/Items/SM/Boltpistol_SM/Boltpistol_SM_Floor.gif
+      271: Resources/Items/IG/Boltpistol_IG/Boltpistol_IG_Floor.gif
+      272: Resources/Items/SM/Boltpistol_MC/Boltpistol_MC_Floor.gif
 
 #HAND OBJECTS (contains 8 images)
   - type: HANDOB.PCK
@@ -271,6 +288,14 @@ extraSprites:
       584: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Hand.png
       592: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Hand.png
       600: Resources/Items/Common/Fire_Extinguisher/Fire_Extinguisger_Hand.png
+      608: Resources/Items/SM/Bolter_SM/Bolter_SM_Hand.png
+      616: Resources/Items/SM/Bolter_SM_Scoped/Bolter_SM_Scoped_Hand.png
+      624: Resources/Items/SM/Bolter_MC/Bolter_MC_Hand.png
+      632: Resources/Items/SM/Bolter_MC_Scoped/Bolter_MC_Scoped_Hand.png
+      640: Resources/Items/IG/Bolter_IG/Bolter_IG_Hand.png
+      648: Resources/Items/SM/Boltpistol_SM/Boltpistol_SM_Hand.png
+      656: Resources/Items/IG/Boltpistol_IG/Boltpistol_IG_Hand.png
+      664: Resources/Items/SM/Boltpistol_MC/Boltpistol_MC_Hand.png
 
 #PROJECTILES ( The corresponding file id is 35*[bulletSprite] )
   - type: Projectiles                         

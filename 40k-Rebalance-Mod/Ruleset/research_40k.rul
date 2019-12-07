@@ -14,7 +14,7 @@ research:
 #delete some vehicles
   - delete: STR_CHAPTERARMYR
 
-#
+#I'll just leave it here for now.
   - name: STR_VETERAN
     cost: 50
     points: 0
@@ -31,6 +31,8 @@ research:
     points: 0
     listOrder: 100
     unlocks:
+      - STR_BOLTPISTOL_TECH
+      - STR_BOLTER_TECH
       - STR_MARINES_STRATEGY
       - STR_SPEEDR
       - STR_CHAPTER_ARMORS
@@ -141,6 +143,22 @@ research:
       - STR_CHAINSWORD_TECH
       - STR_POWERFIST_TECH
       - STR_LASCANNON_TECH
+
+#Boltpistol Requisition
+  - name: STR_BOLTPISTOL_TECH
+    cost: 0
+    points: 0
+    listOrder: 100
+    dependencies:
+      - STR_GENERALLOCK
+
+#Bolter Requisition
+  - name: STR_BOLTER_TECH
+    cost: 0
+    points: 0
+    listOrder: 100
+    dependencies:
+      - STR_GENERALLOCK
 
 #Heavy Bolter Requisition
 #Same as for Imperial Guard. Opens by 'unlocks' instructions.

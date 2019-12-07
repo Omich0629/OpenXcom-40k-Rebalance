@@ -72,6 +72,7 @@ research:
     dependencies:
       - STR_IMPERIAL_GUARD_OPERATIONS
     unlocks:
+      - STR_BOLTPISTOL_TECH
       - STR_HEAVY_BOLTER_TECH
       - STR_ROCKET_LAUNCHER_TECH
       - STR_CHAINSWORD_TECH
@@ -223,65 +224,6 @@ research:
 ### Component Manufacturing ###
 #Same as for Space Marines
 
-#Header Technology
-#  - name: STR_COMPONENT_MANUFACTURING
-#    cost: 50
-#    points: 10
-#    dependencies:
-#      - STR_GENERALLOCK
-
-#Adamantium component
-#  - name: STR_ALIEN_ALLOYS
-#    cost: 100
-#    points: 10
-#    needItem: false
-#    dependencies:
-#      - STR_COMPONENT_MANUFACTURING
-
-#Promethium
-#  - name: STR_ELERIUM_115
-#    cost: 100
-#    points: 10
-#    needItem: false
-#    dependencies:
-#      - STR_COMPONENT_MANUFACTURING
-
-#Cogitators
-#  - name: STR_UFO_NAVIGATION
-#    cost: 150
-#    points: 15
-#    needItem: false
-#    listOrder: 100
-#    dependencies:
-#      - STR_ALIEN_ALLOYS
-
-#Ceramite plates
-#  - name: STR_UFO_CONSTRUCTION
-#    cost: 150
-#    points: 15
-#    needItem: false
-#    listOrder: 100
-#    dependencies:
-#      - STR_ELERIUM_115
-
-#Power Source
-#  - name: STR_UFO_POWER_SOURCE
-#    cost: 150
-#    points: 15
-#    needItem: false
-#    dependencies:
-#      - STR_ALIEN_ALLOYS
-#      - STR_ELERIUM_115
-
-#Adamantium Forges
-#  - name: STR_STEELMILLR #facility
-#    cost: 200
-#    points: 20
-#    dependencies:
-#      - STR_ALIEN_ALLOYS
-#      - STR_ELERIUM_115
-#    listOrder: 100
-
 ########## T2 ##########
 #IMPERIAL GUARD MID-TIER REQUISITIONS
   - name: STR_IMPERIAL_GUARD_MIDTIER
@@ -422,6 +364,8 @@ research:
     points: 30
     dependencies:
       - STR_SPECIAL_MILITARY_PERSONNEL
+    unlocks:
+      - STR_BOLTER_TECH
     spawnedItem: NOPE
 
 ### ADEPTUS MECHANICUS and stuff ###

@@ -1,15 +1,11 @@
 items:
 
-#delete Master Crafted Ammo for bolt-weapons
+#delete Master Crafted Ammo for bolt-weapons, MC shotgun and MC lasgun
 
   - delete: STR_PISTOL_CLIP_MC
   - delete: STR_RIFLE_CLIP_MC
   - delete: STR_AC_MC_AMMO
-
-#MC lasgun
   - delete: STR_MCLASER_RIFLE
-
-#MC shotgun
   - delete: STR_MCSHOTGUN
 
 #### NULL SLOT ITEMS ####
@@ -24,6 +20,8 @@ items:
 
   - type: INV_NULL_SENTINEL_LH
     bigSprite: 220
+
+############################
 
 #### Grenades ####
 #Frag Grenade
@@ -84,6 +82,9 @@ items:
     invWidth: 1
     invHeight: 1
 
+##########################
+
+### Misc. Equipment ###
 
 #First Aid Kit
   - type: STR_FIRST_AID_KIT
@@ -145,7 +146,9 @@ items:
     isFireExtinguisher: true
     experienceTrainingMode: 32
 
-#SM Missile Launcher
+#################################
+
+### SM Missile Launcher and ammo ###
 
   - type: STR_ROCKET_LAUNCHER
     bigSprite: 268
@@ -174,7 +177,9 @@ items:
       ToMorale: 0.5
     blastRadius: 2
 
-#Heavy Bolter and ammo
+#################################
+
+### Heavy Bolter and ammo ###
   - type: STR_AUTO_CANNON
     bigSprite: 264
     floorSprite: 247
@@ -223,8 +228,9 @@ items:
       ToMorale: 0.5
     blastRadius: 1
 
+#################################
 
-#Sniper Rifle and ammo
+### Sniper Rifle and ammo ###
   - type: STR_HEAVY_CANNON
     requiresBuy:
       - STR_SNIPER_RIFLE_TECH
@@ -263,13 +269,14 @@ items:
       ToMorale: 0.5
     blastRadius: 1
 
+##########################
+
 #Assault Bike and ammo
   - type: STR_BIKE_ARMOR 
     requiresBuy:
       - STR_BIKE_TECH
 
 #delete bike bolter and ammo
-
   - delete: AUX_TANK_CANNON
   - delete: STR_HWP_CANNON_SHELLS
 
@@ -720,107 +727,286 @@ items:
     recover: false
     experienceTrainingMode: 26 #train psiSkill (was 28 - psiSkill & psiStr)
 
+#########################################
 ########### BOLTERS REBALANCE ###########
-###BOLT-PISTOLS###
-#Bolt-Pistol "Ceres"
-#Compatible with all magazines
 
-  - type: STR_PISTOL
-    compatibleAmmo:
-      - STR_PISTOL_CLIP
-      - STR_PISTOL_CLIP_EX
-      - STR_PISTOL_CLIP_AP
+##### BOLTGUNS #####
+  - delete: STR_RIFLE
+  - delete: STR_RIFLEB
+  - delete: STR_RIFLEC
+  - delete: STR_RIFLED
+  - delete: STR_MCRIFLE
 
-#Bolt-Pistol "Ultra"
-#Gives it auto-shot option to make difference between it and "Ceres".
-  - type: STR_PISTOLB
-    accuracyAuto: 62
-    tuAuto: 33
-    compatibleAmmo:
-      - STR_PISTOL_CLIP
-      - STR_PISTOL_CLIP_EX
-      - STR_PISTOL_CLIP_AP
-
-#Bolt-Pistol "Spectris"
-  - type: STR_PISTOLS
-    compatibleAmmo:
-      - STR_PISTOL_CLIP
-      - STR_PISTOL_CLIP_EX
-      - STR_PISTOL_CLIP_AP
-
-#Bolt-Pistol "Tigrus"
-  - type: STR_PISTOLH
-    compatibleAmmo:
-      - STR_PISTOL_CLIP
-      - STR_PISTOL_CLIP_EX
-      - STR_PISTOL_CLIP_AP
-
-#Master Crafted Bolt-Pistol
-  - type: STR_MCPISTOL
-    compatibleAmmo:
-      - STR_PISTOL_CLIP
-      - STR_PISTOL_CLIP_EX
-      - STR_PISTOL_CLIP_AP
-
-###BOLTERS###
-#Bolter pattern "Godwyn"
-#Compatible with all magazines
-  - type: STR_RIFLE
+### Standard Astartes Boltgun ###
+  - type: STR_SM_BOLTER
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+#Resources
+    bigSprite: 304
+    floorSprite: 265
+    handSprite: 608
+    bulletSprite: 6
+    fireSound: 707
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#Info
+    battleType: 1
+    requiresBuy:
+      - STR_BOLTER_TECH
+      - STR_SPACE_MARINES_OPERATIONS
     costBuy: 10000
     costSell: 5000
+    size: 0.3
+    weight: 20
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    listOrder: 10300
+#Shooting
     compatibleAmmo:
       - STR_RIFLE_CLIP
       - STR_RIFLE_CLIP_AP
       - STR_RIFLE_CLIP_EX
+    dropoff: 5
+    accuracySnap: 80
+    tuSnap: 25
+    snapRange: 15
+    accuracyAuto: 70
+    tuAuto: 40
+    autoRange: 8
+    autoShots: 3
+    twoHanded: true
+    oneHandedPenalty: 70
 
-#Pattern "Ultra" bolter 
-#Gives it +10% accuracy to make difference between it and "Godwyn".
-  - type: STR_RIFLEB
-    accuracySnap: 90
-    accuracyAuto: 76
+### Scoped Astartes Boltgun ###
+  - type: STR_SM_BOLTER_SCOPED
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+#RESOURCES
+    bigSprite: 305
+    floorSprite: 266
+    handSprite: 616
+    bulletSprite: 6
+    fireSound: 707
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#INFO
+    battleType: 1
+    costBuy: 0
+    costSell: 14000
+    size: 0.3
+    weight: 22
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    bulletSpeed: 30
+    listOrder: 10310
+#SHOOTING
     compatibleAmmo:
       - STR_RIFLE_CLIP
       - STR_RIFLE_CLIP_AP
       - STR_RIFLE_CLIP_EX
+    dropoff: 5
+    accuracyAimed: 100
+    tuAimed: 60
+    aimRange: 30
+    accuracySnap: 80
+    tuSnap: 25
+    snapRange: 15
+    accuracyAuto: 65
+    tuAuto: 40
+    autoRange: 8
+    autoShots: 3
+    twoHanded: true
+    oneHandedPenalty: 65
 
-#Pattern "Stalker" bolter 
-  - type: STR_RIFLEC
+#Master Crafted Boltgun
+  - type: STR_MC_BOLTER
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+#RESOURCES
+    bigSprite: 306
+    floorSprite: 267
+    handSprite: 624
+    bulletSprite: 6
+    fireSound: 707
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#INFO
+    battleType: 1
+    costBuy: 0
+    costSell: 20000
+    size: 0.3
+    weight: 23
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    attraction: 1
+    bulletSpeed: 30
+    listOrder: 10320
+#SHOOTING
     compatibleAmmo:
       - STR_RIFLE_CLIP
       - STR_RIFLE_CLIP_AP
       - STR_RIFLE_CLIP_EX
+    dropoff: 5
+    accuracySnap: 85
+    tuSnap: 25
+    snapRange: 18
+    accuracyAuto: 75
+    tuAuto: 40
+    autoRange: 12
+    autoShots: 3
+    twoHanded: true
+    oneHandedPenalty: 80
 
-#Pattern "Cawl" bolter 
-  - type: STR_RIFLED
+#Master Crafted Boltgun (Scoped)
+  - type: STR_MC_BOLTER_SCOPED
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] 
+#RESOURCES
+    bigSprite: 307
+    floorSprite: 268
+    handSprite: 632
+    bulletSprite: 6
+    fireSound: 707
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#INFO
+    battleType: 1
+    costBuy: 0
+    costSell: 24000
+    size: 0.3
+    weight: 25
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    attraction: 1
+    bulletSpeed: 30
+    listOrder: 10330
+#SHOOTING
     compatibleAmmo:
       - STR_RIFLE_CLIP
       - STR_RIFLE_CLIP_AP
       - STR_RIFLE_CLIP_EX
+    dropoff: 5
+    accuracyAimed: 100
+    tuAimed: 60
+    aimRange: 40
+    accuracySnap: 80
+    tuSnap: 25
+    snapRange: 18
+    accuracyAuto: 75
+    tuAuto: 40
+    autoRange: 12
+    autoShots: 3
 
-#Master Crafted bolter
-  - type: STR_MCRIFLE
+
+##### BOLTPISTOLS #####
+  - delete: STR_PISTOL
+  - delete: STR_PISTOLB
+  - delete: STR_PISTOLS
+  - delete: STR_PISTOLH
+  - delete: STR_MCPISTOL
+
+#Astartes Boltpistol
+  - type: STR_SM_BOLTPISTOL
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] 
+#RESOURCES
+    bigSprite: 309
+    floorSprite: 270
+    handSprite: 648
+    bulletSprite: 6
+    fireSound: 707
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#INFO
+    battleType: 1
+    requiresBuy:
+      - STR_BOLTPISTOL_TECH
+      - STR_SPACE_MARINES_OPERATIONS
+    costBuy: 8000
+    costSell: 4000
+    size: 0.3
+    weight: 12
+    invWidth: 2
+    invHeight: 2
+    armor: 30
+    attraction: 1
+    bulletSpeed: 30
+    listOrder: 10100
+#SHOOTING
     compatibleAmmo:
-      - STR_RIFLE_CLIP
-      - STR_RIFLE_CLIP_AP
-      - STR_RIFLE_CLIP_EX
+      - STR_PISTOL_CLIP
+      - STR_PISTOL_CLIP_EX
+      - STR_PISTOL_CLIP_AP
+    dropoff: 5
+    accuracySnap: 75
+    tuSnap: 20
+    snapRange: 13
+    accuracyAuto: 60
+    tuAuto: 35
+    autoRange: 6
+    autoShots: 3
+    twoHanded: false
+
+#Master Crafted Boltpistol
+  - type: STR_MC_BOLTPISTOL
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] 
+#RESOURCES
+    bigSprite: 311
+    floorSprite: 272
+    handSprite: 664
+    bulletSprite: 6
+    fireSound: 707
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#INFO
+    battleType: 1
+    costBuy: 0
+    costSell: 14000
+    size: 0.3
+    weight: 14
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    bulletSpeed: 30
+    listOrder: 10110
+#SHOOTING
+    compatibleAmmo:
+      - STR_PISTOL_CLIP
+      - STR_PISTOL_CLIP_EX
+      - STR_PISTOL_CLIP_AP
+    dropoff: 5
+    accuracyAimed: 85
+    tuAimed: 60
+    aimRange: 25
+    accuracySnap: 75
+    tuSnap: 20
+    snapRange: 15
+    twoHanded: false
 
 #################
 #Ammo for Bolters and Bolt-Pistols
-#Make them buyable and change their cost
 
   - type: STR_RIFLE_CLIP
+    requiresBuy:
+      - STR_BOLTER_TECH
     costBuy: 600
     costSell: 300
     bulletSprite: 6
     bulletSpeed: 30
 
   - type: STR_RIFLE_CLIP_EX
+    requiresBuy:
+      - STR_BOLTER_TECH
     costBuy: 800
     costSell: 400
     bulletSprite: 6
     bulletSpeed: 30
  
   - type: STR_RIFLE_CLIP_AP
+    requiresBuy:
+      - STR_BOLTER_TECH
     costBuy: 1200
     costSell: 600
     bulletSprite: 6
@@ -834,14 +1020,20 @@ items:
       ToStun: 0.2
 
   - type: STR_PISTOL_CLIP
+    requiresBuy:
+      - STR_BOLTPISTOL_TECH
     costBuy: 300
     costSell: 150
 
   - type: STR_PISTOL_CLIP_EX
+    requiresBuy:
+      - STR_BOLTPISTOL_TECH
     costBuy: 400
     costSell: 200
 
   - type: STR_PISTOL_CLIP_AP
+    requiresBuy:
+      - STR_BOLTPISTOL_TECH
     costBuy: 600
     costSell: 300
     damageAlter: #DA BOLTER AP+
@@ -850,10 +1042,6 @@ items:
       ToArmor: 0.2
       ToHealth: 0.9
       ToStun: 0.2
-
-  - type: STR_PLASMA_PISTOL_CLIP
-    bulletSprite: 11
-    bulletSpeed: 1
 
 ########### KRAK WEAPONS REBALANCE ###########
 #It's an anti-armor weapon, not just a version of frag weapon.
@@ -1370,114 +1558,6 @@ items:
     invHeight: 3
     fixedWeapon: true
     armor: 12
-
-###  Combi-Plasma  ###
-  - type: STR_COMBIPLASMA
-    categories: [STR_CAT_BOLTER, STR_CAT_PLASMA, STR_CAT_TERMINATOR]
-    size: 0.3
-    costSell: 5000
-    weight: 20
-    bigSprite: 224
-    floorSprite: 224
-    handSprite: 264
-    confSnap:
-      shots: 1
-      name: STR_BOLT_SNAP_SHOT
-      ammoSlot: 0
-      arcing: false
-    confAuto:
-      shots: 3
-      name: STR_BOLT_AUTO_SHOT
-      ammoSlot: 0
-      arcing: false
-    confAimed:
-      shots: 1
-      name: STR_PLASMA_SNAP_SHOT
-      ammoSlot: 1
-      arcing: false
-    compatibleAmmo:
-      - STR_PLASMA_PISTOL_CLIP
-      - STR_RIFLE_CLIP
-      - STR_RIFLE_CLIP_MC
-      - STR_RIFLE_CLIP_AP
-      - STR_RIFLE_CLIP_EX
-    ammo:
-      0:
-        compatibleAmmo: [STR_RIFLE_CLIP, STR_RIFLE_CLIP_MC, STR_RIFLE_CLIP_AP, STR_RIFLE_CLIP_EX]
-      1:
-        compatibleAmmo: [STR_PLASMA_PISTOL_CLIP]
-    accuracySnap: 80
-    accuracyAuto: 66
-    accuracyAimed: 70
-    tuSnap: 25
-    tuAuto: 40
-    tuAimed: 30
-    battleType: 1
-    twoHanded: true
-    invWidth: 2
-    invHeight: 3
-    recoveryPoints: 5
-    armor: 50
-    attraction: 1
-    listOrder: 10400
-    aimRange: 12
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-
-### Master Crafted Combi-Plasma  ###
-
-  - type: STR_MC_COMBIPLASMA
-    categories: [STR_CAT_BOLTER, STR_CAT_PLASMA, STR_CAT_TERMINATOR]
-    size: 0.3
-    costSell: 6000
-    weight: 20
-    bigSprite: 225
-    floorSprite: 225
-    handSprite: 272
-    confSnap:
-      shots: 1
-      name: STR_BOLT_SNAP_SHOT
-      ammoSlot: 0
-      arcing: false
-    confAuto:
-      shots: 3
-      name: STR_BOLT_AUTO_SHOT
-      ammoSlot: 0
-      arcing: false
-    confAimed:
-      shots: 1
-      name: STR_PLASMA_SNAP_SHOT
-      ammoSlot: 1
-      arcing: false
-    compatibleAmmo:
-      - STR_PLASMA_PISTOL_CLIP
-      - STR_RIFLE_CLIP
-      - STR_RIFLE_CLIP_MC
-      - STR_RIFLE_CLIP_AP
-      - STR_RIFLE_CLIP_EX
-    ammo:
-      0:
-        compatibleAmmo: [STR_RIFLE_CLIP, STR_RIFLE_CLIP_MC, STR_RIFLE_CLIP_AP, STR_RIFLE_CLIP_EX]
-      1:
-        compatibleAmmo: [STR_PLASMA_PISTOL_CLIP]
-    accuracySnap: 100
-    accuracyAuto: 86
-    accuracyAimed: 90
-    tuSnap: 25
-    tuAuto: 40
-    tuAimed: 30
-    battleType: 1
-    twoHanded: true
-    invWidth: 2
-    invHeight: 3
-    recoveryPoints: 5
-    armor: 50
-    attraction: 1
-    listOrder: 10400
-    aimRange: 12
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-
 ###
   - type: STR_LIBRARIAN_BUFF #          
     categories: [ STR_CAT_EQUIPMENT]
