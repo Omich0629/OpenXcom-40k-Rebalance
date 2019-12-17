@@ -13,9 +13,9 @@ items:
     floorSprite: 258
     handSprite: 552
 
-    #Melee bayonet
+#MELEE
     meleePower: 20
-    damageBonus:
+    meleeBonus:
       reactions: 0.4
       melee: 0.4
     accuracyMelee: 100
@@ -26,11 +26,14 @@ items:
     tuMelee: 15
     flatMelee:
       time: false
+
     invWidth: 2
     invHeight: 3
 
 #Lasgun Clip
   - type: STR_LASGUN_CLIP
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
     bigSprite: 292
     floorSprite: 259
     handSprite: 560
@@ -45,6 +48,8 @@ items:
 
 #Laspistol Clip
   - type: STR_LASPISTOL_CLIP
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
     bigSprite: 294
     floorSprite: 261
     handSprite: 576
@@ -59,14 +64,207 @@ items:
     invWidth: 2
     invHeight: 3
 
-#Long-Las and hotshot ammo
-  - type: STR_LONGLAS
-    requiresBuy:
-      - STR_LONG_LAS_TECH
+### HOTSHOT LASER WEAPONS ###
 
+#Small Hotshot Clip
   - type: STR_LASGUN_CLIP_HOTSHOT
-    requiresBuy:
-      - STR_LONG_LAS_TECH
+    requiresBuy: []
+    bigSprite: 312
+    floorSprite: 273
+    handSprite: 672
+    costBuy: 0
+    costSell: 2000
+    weight: 2
+    clipSize: 10
+    vaporColor: 2
+    vaporDensity: 5
+
+#Large Hotshot Clip
+  - type: STR_LASGUN_BACKPACK_HOTSHOT
+    categories: [STR_CAT_LASGUN]
+    bigSprite: 313
+    floorSprite: 274
+    handSprite: 680
+    hitSound: 19
+    hitAnimation: 36
+
+    size: 0.4
+    costBuy: 0
+    costSell: 10000
+    weight: 10
+    power: 75
+    damageType: 4
+    damageAlter:
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToHealth: 1.0
+      ToArmor: 0.0
+      ToStun: 0.0
+    clipSize: 50
+    battleType: 2
+    invWidth: 2
+    invHeight: 3
+    armor: 70
+    listOrder: 11060
+    vaporColor: 2
+    vaporDensity: 5
+
+#Hotshot Laspistol
+  - type: STR_HOTSHOT_LASPISTOL
+    categories: [STR_CAT_LASGUN]
+#RESOURCES
+    bigSprite: 314
+    floorSprite: 275
+    handSprite: 688
+    bulletSprite: 12
+    fireSound: 741
+#INFO
+    battleType: 1
+    twoHanded: false
+    costBuy: 0
+    costSell: 20000
+    size: 0.1
+    weight: 4
+    invWidth: 1
+    invHeight: 2
+    armor: 30
+    attraction: 1
+    bulletSpeed: 50
+    listOrder: 11060
+#SHOOTING
+    compatibleAmmo:
+      - STR_LASGUN_CLIP_HOTSHOT
+      - STR_LASGUN_BACKPACK_HOTSHOT
+    dropoff: 5
+    accuracySnap: 50
+    tuSnap: 25
+    snapRange: 16
+
+#Long-Las
+  - delete: STR_LONGLAS
+
+  - type: STR_LONGLAS
+    categories: [STR_CAT_LASGUN, STR_CAT_SNIPER] 
+#RESOURCES
+    bigSprite: 315
+    floorSprite: 276
+    handSprite: 696
+    bulletSprite: 12
+    fireSound: 741
+#INFO
+    twoHanded: true
+    battleType: 1
+    costBuy: 0
+    costSell: 20000
+    size: 0.2
+    weight: 8
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    bulletSpeed: 50
+    listOrder: 11060
+#SHOOTING
+    compatibleAmmo:
+      - STR_LASGUN_CLIP_HOTSHOT
+    dropoff: 5
+    accuracyAimed: 100
+    tuAimed: 65
+    aimRange: 40
+    accuracySnap: 80
+    tuSnap: 35
+    snapRange: 20
+
+#Hotshot Lasgun
+  - delete: STR_HELLGUN
+
+  - type: STR_HELLGUN
+    categories: [STR_CAT_LASGUN] 
+#RESOURCES
+    bigSprite: 316
+    floorSprite: 277
+    handSprite: 704
+    bulletSprite: 12
+    fireSound: 741
+#INFO
+    battleType: 1
+    costBuy: 0
+    costSell: 25000
+    size: 0.2
+    weight: 10
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 30
+    attraction: 1
+    bulletSpeed: 50
+    listOrder: 11060
+#SHOOTING
+    compatibleAmmo:
+      - STR_LASGUN_CLIP_HOTSHOT
+      - STR_LASGUN_BACKPACK_HOTSHOT
+    dropoff: 5
+    accuracySnap: 85
+    tuSnap: 25
+    snapRange: 16
+    accuracyAuto: 65
+    tuAuto: 35
+    autoRange: 8
+    autoShots: 3
+#MELEE
+    meleePower: 20
+    meleeBonus:
+      reactions: 0.4
+      melee: 0.4
+    accuracyMelee: 100
+    meleeMultiplier:
+      reactions: 0.2
+      melee: 0.2
+      flatHundred: 0.5
+    tuMelee: 15
+    flatMelee:
+      time: false
+
+#Hotshot Volleygun
+  - delete: STR_HOTSHOT_VOLLEY_GUN
+
+  - type: STR_HOTSHOT_VOLLEY_GUN
+    categories: [STR_CAT_LASGUN]
+#RESOURCES
+    bigSprite: 317
+    floorSprite: 278
+    handSprite: 712
+    bulletSprite: 12
+    fireSound: 741
+#INFO
+    battleType: 1
+    costBuy: 0
+    costSell: 35000
+    size: 0.4
+    weight: 15
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 30
+    attraction: 1
+    bulletSpeed: 50
+    listOrder: 11060
+#SHOOTING
+    compatibleAmmo:
+      - STR_LASGUN_BACKPACK_HOTSHOT
+    dropoff: 5
+
+    accuracySnap: 70
+    tuSnap: 25
+    confSnap:
+      shots: 2
+    snapRange: 16
+
+    accuracyAuto: 60
+    tuAuto: 35
+    confAuto:
+      shots: 4
+    autoRange: 8
 
 #######################
 ###SENTINEL WEAPONS ###
@@ -437,14 +635,27 @@ items:
   - type: STR_FRAG_GRENADE_DRUM
     requiresBuy:
       - STR_GRENADE_LAUNCHER_TECH
+    power: 80
+    blastRadius: 2
 
   - type: STR_KRAK_GRENADE_DRUM
     requiresBuy:
       - STR_GRENADE_LAUNCHER_TECH
+    power: 80
+    damageAlter:
+      ToArmorPre: 0.2
+      ArmorEffectiveness: 0.7
+      ToArmor: 0.2
 
   - type: STR_INCENDIARY_GRENADE_DRUM
     requiresBuy:
       - STR_GRENADE_LAUNCHER_TECH
+    power: 80
+    damageAlter:
+      RandomType: 2 #TFTD [50% - 150%]
+      ToHealth: 1.0
+      ToMorale: 0.5
+    blastRadius: 2
 
 #Sentinel with Lascannon
   - type: STR_SENTINEL_ARMOR                #6800
@@ -480,23 +691,6 @@ items:
     costSell: 66000
     transferTime: 48
     listOrder: 1910
-
-#Storage objects for hellgun and volley gun armors.
-  - type: STR_HELLGUN_ARMOR
-    size: 0.4
-    #listOrder: 20
-    #costBuy: 20000
-    costSell: 10000
-    transferTime: 10
-    listOrder: 7210
-
-  - type: STR_VOLLEYGUN_ARMOR
-    size: 0.4
-    #listOrder: 20
-    #costBuy: 20000
-    costSell: 10000
-    transferTime: 10
-    listOrder: 7220
 
 #Officers Sword
   - type: STR_OFFICERS_SWORD

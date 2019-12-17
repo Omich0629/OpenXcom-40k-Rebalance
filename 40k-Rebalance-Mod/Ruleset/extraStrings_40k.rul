@@ -315,7 +315,10 @@ extraStrings:
       STR_OMNISSIAN_AXE: "Omnissian Axe"
 
 
-#Hellgun and Volleygun stuff
+#Hotshot weapons
+      STR_LASGUN_BACKPACK_HOTSHOT: "Hotshot Backpack Battery"
+      STR_HOTSHOT_LASPISTOL: "Hotshot Laspistol"
+
       STR_HELLGUN_ARMOR: "Hellgun equipment"
       STR_VOLLEYGUN_ARMOR: "Volley Gun equipment"
 

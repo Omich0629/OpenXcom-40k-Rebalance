@@ -156,6 +156,12 @@ extraSprites:
       309: Resources/Items/SM/Boltpistol_SM/Boltpistol_SM_Inv.gif
       310: Resources/Items/IG/Boltpistol_IG/Boltpistol_IG_Inv.gif
       311: Resources/Items/SM/Boltpistol_MC/Boltpistol_MC_Inv.gif
+      312: Resources/Items/IG/Hotshot_Ammo/Hotshot_Clip_Small_Inv.png
+      313: Resources/Items/IG/Hotshot_Ammo/Hotshot_Clip_Large_Inv.gif
+      314: Resources/Items/IG/Hotshot_Laspistol/Hotshot_Laspistol_Inv.gif
+      315: Resources/Items/IG/Long_Las/Long_Las_Inv.gif
+      316: Resources/Items/IG/Hotshot_Lasgun/Hotshot_Lasgun_Inv.gif
+      317: Resources/Items/IG/Hotshot_Volleygun/Hotshot_Volleygun_Inv.gif
 
 #FLOOR OBJECTS
   - type: FLOOROB.PCK
@@ -234,6 +240,12 @@ extraSprites:
       270: Resources/Items/SM/Boltpistol_SM/Boltpistol_SM_Floor.gif
       271: Resources/Items/IG/Boltpistol_IG/Boltpistol_IG_Floor.gif
       272: Resources/Items/SM/Boltpistol_MC/Boltpistol_MC_Floor.gif
+      273: Resources/Items/IG/Hotshot_Ammo/Hotshot_Clip_Small_Floor.png
+      274: Resources/Items/IG/Hotshot_Ammo/Hotshot_Clip_Large_Floor.gif
+      275: Resources/Items/IG/Hotshot_Laspistol/Hotshot_Laspistol_Floor.gif
+      276: Resources/Items/IG/Long_Las/Long_Las_Floor.png
+      277: Resources/Items/IG/Hotshot_Lasgun/Hotshot_Lasgun_Floor.png
+      278: Resources/Items/IG/Hotshot_Volleygun/Hotshot_Volleygun_Floor.png
 
 #HAND OBJECTS (contains 8 images)
   - type: HANDOB.PCK
@@ -296,6 +308,12 @@ extraSprites:
       648: Resources/Items/SM/Boltpistol_SM/Boltpistol_SM_Hand.png
       656: Resources/Items/IG/Boltpistol_IG/Boltpistol_IG_Hand.png
       664: Resources/Items/SM/Boltpistol_MC/Boltpistol_MC_Hand.png
+      672: Resources/Items/IG/Hotshot_Ammo/Hotshot_Clip_Small_Hand.png
+      680: Resources/Items/IG/Hotshot_Ammo/Hotshot_Clip_Large_Hand.gif
+      688: Resources/Items/IG/Hotshot_Laspistol/Hotshot_Laspistol_Hand.png
+      696: Resources/Items/IG/Long_Las/Long_Las_Hand.png
+      704: Resources/Items/IG/Hotshot_Lasgun/Hotshot_Lasgun_Hand.png
+      712: Resources/Items/IG/Hotshot_Volleygun/Hotshot_Volleygun_Hand.png
 
 #PROJECTILES ( The corresponding file id is 35*[bulletSprite] )
   - type: Projectiles                         

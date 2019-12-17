@@ -15,7 +15,7 @@ items:
 
     #Melee bayonet
     meleePower: 20
-    damageBonus:
+    meleeBonus:
       reactions: 0.4
       melee: 0.4
     accuracyMelee: 100

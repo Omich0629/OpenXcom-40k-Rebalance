@@ -1062,13 +1062,6 @@ items:
       ToArmor: 0.2
     power: 100
 
-#krak magazine for IG grenade launcher
-  - type: STR_KRAK_GRENADE_DRUM
-    damageAlter:
-      ToArmorPre: 0.2
-      ArmorEffectiveness: 0.7
-      ToArmor: 0.2
-
 ########### MELTA WEAPONS REBALANCE ###########
 #Melta explosives
 #Now actually deals damage to armor

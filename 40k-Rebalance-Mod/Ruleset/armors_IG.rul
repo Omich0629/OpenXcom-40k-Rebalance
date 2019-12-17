@@ -513,42 +513,11 @@ armors:
     units:
       - STR_STORMTROOPER
 
-  - type: STR_STORMTROOPER_CARAPACE_ARMOR_HELLGUN
-    storeItem: STR_HELLGUN_ARMOR
-    frontArmor: 70
-    sideArmor: 70
-    rearArmor: 70
-    underArmor: 70
-    units:
-      - STR_GUARD_VETERAN
+  - delete: STR_STORMTROOPER_CARAPACE_ARMOR_HELLGUN
+  - delete: STR_SCION_CARAPACE_ARMOR_HELLGUN
+  - delete: STR_STORMTROOPER_CARAPACE_ARMOR_VOLLEYGUN
+  - delete: STR_SCION_CARAPACE_ARMOR_VOLLEYGUN
 
-  - type: STR_SCION_CARAPACE_ARMOR_HELLGUN
-    storeItem: STR_HELLGUN_ARMOR
-    frontArmor: 70
-    sideArmor: 70
-    rearArmor: 70
-    underArmor: 70
-    units:
-      - STR_STORMTROOPER
-
-
-  - type: STR_STORMTROOPER_CARAPACE_ARMOR_VOLLEYGUN
-    storeItem: STR_VOLLEYGUN_ARMOR
-    frontArmor: 70
-    sideArmor: 70
-    rearArmor: 70
-    underArmor: 70
-    units:
-      - STR_GUARD_VETERAN
-
-  - type: STR_SCION_CARAPACE_ARMOR_VOLLEYGUN
-    storeItem: STR_VOLLEYGUN_ARMOR
-    frontArmor: 70
-    sideArmor: 70
-    rearArmor: 70
-    underArmor: 70
-    units:
-      - STR_STORMTROOPER
 
   - type: STR_ENGINSEER_ARMOR_UC #DR4
     visibilityAtDay: 40
