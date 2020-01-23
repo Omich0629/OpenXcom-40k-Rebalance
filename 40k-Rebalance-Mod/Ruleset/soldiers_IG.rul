@@ -73,6 +73,79 @@ soldiers:
     rankBattleSprite: 300
     rankTinySprite: 100
 
+#Ministorum Priest
+  - type: STR_MINISTORUM_PRIEST
+    flagOffset: 42
+    costSalary: 30000
+    minStats:
+      tu: 45
+      stamina: 60
+      health: 30
+      bravery: 60
+      reactions: 20
+      firing: 45
+      throwing: 40
+      strength: 35
+      psiStrength: 0
+      psiSkill: 0
+      melee: 70
+    maxStats:
+      tu: 55
+      stamina: 75
+      health: 40
+      bravery: 80
+      reactions: 40
+      firing: 55
+      throwing: 50
+      strength: 45
+      psiStrength: 50
+      psiSkill: 6
+      melee: 80
+    statCaps:
+      tu: 65
+      stamina: 90
+      health: 45
+      bravery: 100
+      reactions: 55
+      firing: 80
+      throwing: 60
+      strength: 60
+      psiStrength: 50
+      psiSkill: 50
+      melee: 100
+    trainingStatCaps:
+      tu: 60
+      stamina: 70
+      health: 40
+      firing: 75
+      throwing: 60
+      strength: 35
+      psiStrength: 50
+      psiSkill: 50
+      melee: 80
+    armor: STR_MINISTORUM_PRIEST_ARMOR_UC
+    allowPiloting: false
+    allowPiloting: false
+    allowPromotion: false
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 0
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - GuardName/
+    deathMale: [41, 42, 43]
+    deathFemale: [44, 45, 46]
+    rankStrings:
+      - STR_MINISTORUM_PRIEST
+    rankSprite: 801
+    rankBattleSprite: 301
+    rankTinySprite: 101
+
+
+
+
 #Sisters of Battle
   - type: STR_ADEPTAS
     costBuy: []

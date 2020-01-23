@@ -48,7 +48,7 @@ extraSounds:
       730: Resources/Sound/DEATH_CHAOS_MARINE8.wav
       731: Resources/Sound/DEATH_CHAOS_MARINE9.wav
       732: Resources/Sound/DEATH_CHAOS_MARINE10.wav
-
+      739: Resources/Sound/Meltagun_fire.wav
       741: Resources/Sound/Lasgun_Fire.wav
 
 #Sororitas death

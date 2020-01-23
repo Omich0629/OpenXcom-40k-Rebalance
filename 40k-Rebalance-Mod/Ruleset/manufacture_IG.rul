@@ -120,6 +120,32 @@ manufacture:
 
 ######## T2 STUFF ########
 
+#Sentinel/Flamer 
+  - name: STR_GUARD_ARMORS_SENTINEL_HEAVY_FLAMER
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SENTINEL_FLAMER
+    space: 12
+    time: 800
+    cost: 80000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 54
+      STR_UFO_CONSTRUCTION: 24
+      STR_ELERIUM_115: 40
+
+#Sentinel/Multimelta
+  - name: STR_GUARD_ARMORS_SENTINEL_MULTIMELTA
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SENTINEL_MULTIMELTA
+    space: 12
+    time: 900
+    cost: 90000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 54
+      STR_UFO_CONSTRUCTION: 24
+      STR_ELERIUM_115: 40
+
 #Small Hotshot Clip
   - name: STR_LASGUN_CLIP_HOTSHOT
     requires:
@@ -240,31 +266,7 @@ manufacture:
 
 
 
-#Sentinel with Flamer
-  - name: STR_GUARD_ARMORS_SENTINEL_HEAVY_FLAMER
-    category: STR_PERSONAL_ARMOR
-    requires:
-      - STR_SENTINEL_FLAMER
-    space: 12
-    time: 600
-    cost: 85000
-    requiredItems: 
-      STR_ALIEN_ALLOYS: 54
-      STR_UFO_CONSTRUCTION: 22
-      STR_ELERIUM_115: 40
 
-#Sentinel with Multimelta
-  - name: STR_GUARD_ARMORS_SENTINEL_MULTIMELTA
-    category: STR_PERSONAL_ARMOR
-    requires:
-      - STR_SENTINEL_MULTIMELTA
-    space: 12
-    time: 900
-    cost: 120000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 54
-      STR_UFO_CONSTRUCTION: 24
-      STR_ELERIUM_115: 40
 
 #Sentinel with Autocannon
   - name: STR_GUARD_ARMORS_SENTINEL_AUTOCANNON
@@ -323,11 +325,26 @@ manufacture:
       - STR_TEC_BAYR
     space: 0
     time: 500
-    cost: 100000
+    cost: 120000
     requiresBaseFunc: [TEC]
     requiredItems:
       STR_ALIEN_HABITAT: 1
     spawnedPersonType: STR_ENGINSEER
+    producedItems:
+      STR_LASER_PISTOLG: 1
+      STR_LASPISTOL_CLIP: 2
+
+#Ministorum Priest Requisition
+  - name: STR_MINISTORUM_PRIEST_REQUISITION
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_MINISTORUM_PRIEST_REQUISITION
+    space: 0
+    time: 500
+    cost: 120000
+    requiredItems:
+      STR_ALIEN_HABITAT: 1
+    spawnedPersonType: STR_MINISTORUM_PRIEST
     producedItems:
       STR_LASER_PISTOLG: 1
       STR_LASPISTOL_CLIP: 2

@@ -12,9 +12,6 @@ extraStrings:
       STR_ALIEN_ALLOYS: "Ceramite Component"
       STR_UFO_CONSTRUCTION: "Adamantium Component"
 
-
-
-
 #Custom attacks for special purposes
       STR_CUSTOM_DOUBLE_SHOT: "Double Shot"
       STR_CUSTOM_SNAPSHOT: "Snap Shot"
@@ -314,6 +311,14 @@ extraStrings:
 
       STR_OMNISSIAN_AXE: "Omnissian Axe"
 
+#Ministorum Priest
+      STR_MINISTORUM_PRIEST: "Priest"
+      STR_MINISTORUM_PRIEST_REQUISITION: "Ministorum Priest Requisition"
+      STR_MINISTORUM_PRIEST_CORPSE: "Priest Corpse"
+      STR_MINISTORUM_PRIEST_ARMOR_UC: "Priest Robes"
+
+      STR_EVISCERATOR: "Eviscerator"
+      STR_RIGHTEOUS_FURY: "Righteous Fury"
 
 #Hotshot weapons
       STR_LASGUN_BACKPACK_HOTSHOT: "Hotshot Backpack Battery"

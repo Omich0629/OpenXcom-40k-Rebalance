@@ -36,6 +36,9 @@ crafts:
     requires:
       - STR_DROPPODS_REQ
 
+#Stormhawk (T2 Fighter)
+
+
 #STORMRAVEN CRAFT
 #Fixed map. Can fit 8 soldiers.
   - type: STR_FIRESTORM 

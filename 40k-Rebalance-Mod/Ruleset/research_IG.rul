@@ -9,6 +9,7 @@ research:
   - delete: STR_TAUROX_REQUISITION
   - delete: STR_TAUROS_REQUISITION
   - delete: STR_IMPERIAL_GUARD_MISSION_ELYSIAN_DROP_COMPLETE
+  - delete: STR_HEAVY_SENTINEL
 
 
 #IMPERIAL GUARD TECHTREE 2.0
@@ -271,7 +272,7 @@ research:
       - STR_CRAFTADD
       - STR_IMPERIAL_GUARD_MIDTIER
 
-#Valkyrie Drop (Or maybe Arvus Lighter)
+#Valkyrie Drop
   - name: STR_VALKYRIE_DROP_TECH
     cost: 50
     points: 10
@@ -344,7 +345,7 @@ research:
       - STR_IMPERIAL_GUARD_MIDTIER
 
 #Ministorum Priests
-  - name: STR_MINISTORUM_PRIESTS
+  - name: STR_MINISTORUM_PRIEST_REQUISITION
     cost: 560
     points: 20
     dependencies:

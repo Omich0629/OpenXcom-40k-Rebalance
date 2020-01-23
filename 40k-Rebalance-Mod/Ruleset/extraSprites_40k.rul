@@ -19,14 +19,15 @@ extraSprites:
 #ANIMATIONS
 
       100: Resources/Animations/SM_TU_Buff_Hit.gif #TU BUFF (10 frames)
-
       111: Resources/Animations/GravGun_Hit.gif #GRAV GUN (10 frames)
       121: Resources/Animations/SM_Morale_Buff_Hit.gif #MORALE BUFF (10 frames)
       131: Resources/Animations/Lightning_Hit.png #LIGHTNING STRIKE (10 frames)
       141: Resources/Animations/Shield_Buff_Hit.gif #Shield Buff (10 frames)
+      151: Resources/Animations/Meltagun_Hit.gif
 
 #RANKS
       300: Resources/Ranks/Enginseer_rankBattleSprite.png #Enginseer rank (1 frame)
+      301: Resources/Ranks/Ministorum_Priest_rankBattleSprite.png #Ministorum Priest rank (1 frame)
 
 
 #AOE EFFECTS (EXPLOSIONS)
@@ -62,6 +63,7 @@ extraSprites:
 
 
       150: Resources/Armor/IG/Enginseer/Enginseer_Corpse_Inv.gif
+      151: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Corpse_Inv.gif
 
 #ITEMS (201 - ?)
       220: Resources/Items/Common/Null_Objects/Null_Lefthand.png
@@ -162,6 +164,9 @@ extraSprites:
       315: Resources/Items/IG/Long_Las/Long_Las_Inv.gif
       316: Resources/Items/IG/Hotshot_Lasgun/Hotshot_Lasgun_Inv.gif
       317: Resources/Items/IG/Hotshot_Volleygun/Hotshot_Volleygun_Inv.gif
+      318: Resources/Items/IG/Sentinel_Weapons/Sentinel_Flamer_Inv.png
+      319: Resources/Items/IG/Sentinel_Weapons/Sentinel_Multimelta_Inv.png
+      320: Resources/Items/IG/Eviscerator/Eviscerator_Inv.png
 
 #FLOOR OBJECTS
   - type: FLOOROB.PCK
@@ -186,6 +191,7 @@ extraSprites:
       116: Resources/Armor/SM/ULTRAMARINES/Terminator_Captain/Term_Captain_Corpse_Floor.png
 
       150: Resources/Armor/IG/Enginseer/Enginseer_Corpse_Floor.gif
+      151: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Corpse_Floor.png
 
 #ITEMS (201 - ?)
       221: Resources/Items/Common/Chainsword/MC_ChainSword_FloorSprite.gif
@@ -246,6 +252,7 @@ extraSprites:
       276: Resources/Items/IG/Long_Las/Long_Las_Floor.png
       277: Resources/Items/IG/Hotshot_Lasgun/Hotshot_Lasgun_Floor.png
       278: Resources/Items/IG/Hotshot_Volleygun/Hotshot_Volleygun_Floor.png
+      279: Resources/Items/IG/Eviscerator/Eviscerator_Floor.png
 
 #HAND OBJECTS (contains 8 images)
   - type: HANDOB.PCK
@@ -314,6 +321,7 @@ extraSprites:
       696: Resources/Items/IG/Long_Las/Long_Las_Hand.png
       704: Resources/Items/IG/Hotshot_Lasgun/Hotshot_Lasgun_Hand.png
       712: Resources/Items/IG/Hotshot_Volleygun/Hotshot_Volleygun_Hand.png
+      720: Resources/Items/IG/Eviscerator/Eviscerator_Hand.png
 
 #PROJECTILES ( The corresponding file id is 35*[bulletSprite] )
   - type: Projectiles                         
@@ -325,6 +333,7 @@ extraSprites:
       385: Resources/Sprites/terranplasma_bullet.gif #11
       420: Resources/Sprites/LAS.gif   #12
       490: Resources/Sprites/GRAV.gif  #14
+      560: Resources/Sprites/16Melta.gif        #16
       595: Resources/Sprites/17heavyplasma.gif  #17
 
 #BASEBITS
@@ -333,6 +342,7 @@ extraSprites:
 #RANKS
 
       800: Resources/Ranks/Enginseer_rankSprite.png
+      801: Resources/Ranks/Ministorum_Priest_rankSprite.png
 #BASE BITS
       900: Resources/Basebits/basebits_hospital.png
       901: Resources/Basebits/basebits_HQ.png
@@ -366,6 +376,15 @@ extraSprites:
     subY: 7
     files:
       100: Resources/Ranks/Enginseer_rankTinySprite.png
+
+#Ministorum Priest tinyrank
+  - type: TinyRanks
+    width: 42
+    height: 28
+    subX: 7
+    subY: 7
+    files:
+      101: Resources/Ranks/Ministorum_Priest_rankTinySprite.png
 
 #Custom armor previews
   - type: CustomArmorPreviews
@@ -627,6 +646,15 @@ extraSprites:
     files:
       0: Resources/Armor/IG/Enginseer/Enginseer_Armor_Battlescape.png
 
+#Ministorum Priest sprites
+  - type: MINISTORUM_PRIEST.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Battlescape.png
+
 #IG Officer Carapace with vox-caster
   - type: CARAPACE_VOXCASTER.PCK
     width: 512
@@ -802,11 +830,33 @@ extraSprites:
 
 #### IG ####
 
+#Carapace Armor
+
+  - typeSingle: CARAPACE_ARMOR__4__Male
+    fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Inv_M.png
+
+  - typeSingle: CARAPACE_HELM__6__Male
+    fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Helm_Inv_M.png
+
+  - typeSingle: CARAPACE_ARMOR__4__Female
+    fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Inv_F.png
+
+  - typeSingle: CARAPACE_HELM__6__Female
+    fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Helm_Inv_F.png
+
 #Enginseer's inventory
   - type: ENGINSEER_INV.SPK
     singleImage: true
     files:
       0: Resources/Armor/IG/Enginseer/Enginseer_Armor_Inv.gif
+
+#Ministorum Priest inventory
+  - typeSingle: MINISTORUM_PRIEST__4__Male
+    fileSingle: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Inv_Male.png
+
+  - typeSingle: MINISTORUM_PRIEST__4__Female
+    fileSingle: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Inv_Female.png
+
 
 #Sentinel's Pilot inventory
 

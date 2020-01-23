@@ -1068,6 +1068,7 @@ items:
 #damage type: "Melta"
 
   - type: STR_MGRENADE
+    weight: 8
     power: 100
     damageType: 11 #MELTA
     damageAlter: #DA MELTA
@@ -1600,7 +1601,7 @@ items:
 
     tags:
       ITEM_ADDS_ENERGY_SHIELD_FROM_POWER: 100
-      ITEM_SETS_ENERGY_SHIELD_DECAY: 60
+      ITEM_SETS_ENERGY_SHIELD_DECAY: 50
 
 ### Spellbooks ###
 

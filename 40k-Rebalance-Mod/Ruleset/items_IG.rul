@@ -1,18 +1,22 @@
 items:
-#Space marines lasguns. Useless.
-  - delete: STR_LASER_RIFLE
-  - delete: STR_LASER_PISTOL
 
 ### LASER WEAPONS ###
 
-#Lasgun (Guard)
+#Lasguns for SM. Why? I dunno.
+  - delete: STR_LASER_RIFLE
+  - delete: STR_LASER_PISTOL
+
+## GUARD LASGUN ##
   - type: STR_LASER_RIFLEG
-    requiresBuy:
-      - STR_IMPERIAL_GUARD_OPERATIONS
+#RESOURCES
     bigSprite: 291
     floorSprite: 258
-    handSprite: 552
-
+    handSprite: 552  
+#GENERAL
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    invWidth: 2
+    invHeight: 3
 #MELEE
     meleePower: 20
     meleeBonus:
@@ -26,72 +30,92 @@ items:
     tuMelee: 15
     flatMelee:
       time: false
-
-    invWidth: 2
-    invHeight: 3
-
-#Lasgun Clip
+      
+## LASGUN CLIP ##
   - type: STR_LASGUN_CLIP
-    requiresBuy:
-      - STR_IMPERIAL_GUARD_OPERATIONS
+#RESOURCES
     bigSprite: 292
     floorSprite: 259
     handSprite: 560
-
-#Laspistol (Guard)
-  - type: STR_LASER_PISTOLG
+#GENERAL
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
+      
+## GUARD LASPISTOL ##
+  - type: STR_LASER_PISTOLG
+#RESOURCES
     bigSprite: 293
     floorSprite: 260
     handSprite: 568
-
-#Laspistol Clip
-  - type: STR_LASPISTOL_CLIP
+#GENERAL
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
+      
+## LASPISTOL CLIP ##
+  - type: STR_LASPISTOL_CLIP
+#RESOURCES
     bigSprite: 294
     floorSprite: 261
     handSprite: 576
-
-#Lascarabine (Guard)
-  - type: STR_LASCARBINE
+#GENERAL
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
+
+
+## GUARD LASCARABINE ##
+  - type: STR_LASCARBINE
+#RESOURCES
     bigSprite: 303
-    weight: 4
-    tuMelee: 0
+#GENERAL
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
     invWidth: 2
     invHeight: 3
+    weight: 4
+#MELEE
+    tuMelee: 0
+
+#######################
 
 ### HOTSHOT LASER WEAPONS ###
 
-#Small Hotshot Clip
+## SMALL HOTSHOT CLIP ##
   - type: STR_LASGUN_CLIP_HOTSHOT
-    requiresBuy: []
+#RESOURCES
     bigSprite: 312
     floorSprite: 273
     handSprite: 672
+#GENERAL
+    requiresBuy: []
     costBuy: 0
     costSell: 2000
     weight: 2
+#SHOOTING
     clipSize: 10
     vaporColor: 2
     vaporDensity: 5
 
-#Large Hotshot Clip
+## LARGE HOTSHOT CLIP ##
   - type: STR_LASGUN_BACKPACK_HOTSHOT
-    categories: [STR_CAT_LASGUN]
+#RESOURCES
     bigSprite: 313
     floorSprite: 274
     handSprite: 680
     hitSound: 19
     hitAnimation: 36
-
+#GENERAL
+    categories: [STR_CAT_LASGUN]
+    battleType: 2
     size: 0.4
     costBuy: 0
     costSell: 10000
     weight: 10
+    armor: 70
+    invWidth: 2
+    invHeight: 3
+    listOrder: 11060
+#SHOOTING
+    clipSize: 50
     power: 75
     damageType: 4
     damageAlter:
@@ -100,16 +124,10 @@ items:
       ToHealth: 1.0
       ToArmor: 0.0
       ToStun: 0.0
-    clipSize: 50
-    battleType: 2
-    invWidth: 2
-    invHeight: 3
-    armor: 70
-    listOrder: 11060
     vaporColor: 2
     vaporDensity: 5
 
-#Hotshot Laspistol
+## HOTSHOT LASPISTOL ##
   - type: STR_HOTSHOT_LASPISTOL
     categories: [STR_CAT_LASGUN]
 #RESOURCES
@@ -118,7 +136,7 @@ items:
     handSprite: 688
     bulletSprite: 12
     fireSound: 741
-#INFO
+#GENERAL
     battleType: 1
     twoHanded: false
     costBuy: 0
@@ -129,29 +147,29 @@ items:
     invHeight: 2
     armor: 30
     attraction: 1
-    bulletSpeed: 50
     listOrder: 11060
 #SHOOTING
     compatibleAmmo:
       - STR_LASGUN_CLIP_HOTSHOT
       - STR_LASGUN_BACKPACK_HOTSHOT
+    bulletSpeed: 50
     dropoff: 5
     accuracySnap: 50
     tuSnap: 25
     snapRange: 16
 
-#Long-Las
+## LONG-LAS ##
   - delete: STR_LONGLAS
 
   - type: STR_LONGLAS
-    categories: [STR_CAT_LASGUN, STR_CAT_SNIPER] 
 #RESOURCES
     bigSprite: 315
     floorSprite: 276
     handSprite: 696
     bulletSprite: 12
     fireSound: 741
-#INFO
+#GENERAL
+    categories: [STR_CAT_LASGUN, STR_CAT_SNIPER] 
     twoHanded: true
     battleType: 1
     costBuy: 0
@@ -162,11 +180,11 @@ items:
     invHeight: 3
     armor: 30
     attraction: 1
-    bulletSpeed: 50
     listOrder: 11060
 #SHOOTING
     compatibleAmmo:
       - STR_LASGUN_CLIP_HOTSHOT
+    bulletSpeed: 50
     dropoff: 5
     accuracyAimed: 100
     tuAimed: 65
@@ -175,18 +193,18 @@ items:
     tuSnap: 35
     snapRange: 20
 
-#Hotshot Lasgun
+## HOTSHOT LASGUN ##
   - delete: STR_HELLGUN
 
   - type: STR_HELLGUN
-    categories: [STR_CAT_LASGUN] 
 #RESOURCES
     bigSprite: 316
     floorSprite: 277
     handSprite: 704
     bulletSprite: 12
     fireSound: 741
-#INFO
+#GENERAL
+    categories: [STR_CAT_LASGUN] 
     battleType: 1
     costBuy: 0
     costSell: 25000
@@ -197,12 +215,12 @@ items:
     twoHanded: true
     armor: 30
     attraction: 1
-    bulletSpeed: 50
     listOrder: 11060
 #SHOOTING
     compatibleAmmo:
       - STR_LASGUN_CLIP_HOTSHOT
       - STR_LASGUN_BACKPACK_HOTSHOT
+    bulletSpeed: 50
     dropoff: 5
     accuracySnap: 85
     tuSnap: 25
@@ -225,18 +243,18 @@ items:
     flatMelee:
       time: false
 
-#Hotshot Volleygun
+## HOTSHOT VOLLEYGUN ##
   - delete: STR_HOTSHOT_VOLLEY_GUN
 
   - type: STR_HOTSHOT_VOLLEY_GUN
-    categories: [STR_CAT_LASGUN]
 #RESOURCES
     bigSprite: 317
     floorSprite: 278
     handSprite: 712
     bulletSprite: 12
     fireSound: 741
-#INFO
+#GENERAL
+    categories: [STR_CAT_LASGUN]
     battleType: 1
     costBuy: 0
     costSell: 35000
@@ -247,19 +265,17 @@ items:
     twoHanded: true
     armor: 30
     attraction: 1
-    bulletSpeed: 50
     listOrder: 11060
 #SHOOTING
     compatibleAmmo:
       - STR_LASGUN_BACKPACK_HOTSHOT
     dropoff: 5
-
+    bulletSpeed: 50
     accuracySnap: 70
     tuSnap: 25
     confSnap:
       shots: 2
     snapRange: 16
-
     accuracyAuto: 60
     tuAuto: 35
     confAuto:
@@ -267,22 +283,23 @@ items:
     autoRange: 8
 
 #######################
-###SENTINEL WEAPONS ###
 
-#Sentinel Melee Skill
+### SENTINEL WEAPONS ###
+
+## SENTINEL MELEE SKILL ##
   - type: AUX_SENTINEL_STOMP
+#GENERAL
     specialIconSprite: 206
 
-
-#Sentinel lascannon
+## SENTINEL LASCANNON ##
   - type: STR_SLASCAN
+#SHOOTING
     accuracySnap: 60
     accuracyAimed: 94
     accuracyMultiplier:
       firing: 1.0
       flatHundred: 0.4
     power: 120
-#Hotshot effect
     damageAlter:
       ToArmorPre: 0.3
       ArmorEffectiveness: 0.75
@@ -291,57 +308,30 @@ items:
       ToStun: 0.0
 
 
-#Sentinel Missile Launcher
-#4 krak missiles per launcher
-
-  - delete: STR_SENTINEL_FRAG_MISSILES
-  - delete: STR_SENTINEL_KRAKK_MISSILES
+## SENTINEL MISSILE LAUNCHER (LEFT) ##
   - delete: STR_SENTINEL_MISSILE_LAUNCHER
 
   - type: STR_SENTINEL_MISSILE_LAUNCHER_LEFT
+#RESOURCES
     bigSprite: 297
-
-    weight: 1
     floorSprite: 0
     handSprite: 0
     bulletSprite: 0
     fireSound: 52
-
-    compatibleAmmo:
-      - STR_SENTINEL_KRAKK_MISSILES
-
-    flatRate: false
-
-    accuracyAimed: 115
-    accuracySnap: 55
-    accuracyMultiplier:
-      firing: 1.0
-      flatHundred: 0.4
-    tuAimed: 75
-    tuSnap: 55
-
+#GENERAL
     battleType: 1
+    weight: 1
     fixedWeapon: true
     defaultInventorySlot: STR_LEFT_HAND
     invWidth: 2
     invHeight: 3
     recover: false
     listOrder: 2820
-
-  - type: STR_SENTINEL_MISSILE_LAUNCHER_RIGHT
-    bigSprite: 298
-
-    weight: 1
-    floorSprite: 0
-    handSprite: 0
-    bulletSprite: 0
-    fireSound: 52
-
+#SHOOTING
     compatibleAmmo:
       - STR_SENTINEL_KRAKK_MISSILES
 
     flatRate: false
-
     accuracyAimed: 115
     accuracySnap: 55
     accuracyMultiplier:
@@ -350,19 +340,51 @@ items:
     tuAimed: 75
     tuSnap: 55
 
+## SENTINEL MISSILE LAUNCHER (RIGHT) ##
+  - type: STR_SENTINEL_MISSILE_LAUNCHER_RIGHT
+#RESOURCES
+    bigSprite: 298
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 52
+#GENERAL
     battleType: 1
+    weight: 1
     fixedWeapon: true
     defaultInventorySlot: STR_RIGHT_HAND
     invWidth: 2
     invHeight: 3
     recover: false
     listOrder: 2820
+#SHOOTING
+    compatibleAmmo:
+      - STR_SENTINEL_KRAKK_MISSILES
+
+    flatRate: false
+    accuracyAimed: 115
+    accuracySnap: 55
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.4
+    tuAimed: 75
+    tuSnap: 55
+
+## SENTINEL MISSILES ##
+  - delete: STR_SENTINEL_FRAG_MISSILES
+  - delete: STR_SENTINEL_KRAKK_MISSILES
 
   - type: STR_SENTINEL_KRAKK_MISSILES
+#RESOURCES
     bigSprite: 299
     hitAnimation: 184
+#GENERAL
+    battleType: 2
     weight: 1
-
+    invWidth: 2
+    invHeight: 2
+#SHOOTING
+    clipSize: 4
     power: 100
     damageType: 3
     damageAlter:
@@ -370,149 +392,97 @@ items:
       ArmorEffectiveness: 0.7
       ToArmor: 0.2
     blastRadius: 1
-    clipSize: 4
 
-    invWidth: 2
-    invHeight: 2
-    battleType: 2
 
-#######################
+## SENTINEL HEAVY FLAMER ##
+  - delete: STR_SENTINEL_HEAVY_FLAMER
 
-#Photon Flash Grenade
-#BROKEN AS FUCK
-  - type: STR_PHOTON_GRENADE
-    requiresBuy:
-      - STR_IMPERIAL_GUARD_OPERATIONS
-
-#Missile launcher for Imperial Guard
-  - type: STR_IG_ROCKET_LAUNCHER
-    requiresBuy:
-      - STR_ROCKET_LAUNCHER_TECH
-      - STR_IMPERIAL_GUARD_OPERATIONS
-    categories: [STR_CAT_ROCKETL]
-    size: 0.4
-    dropoff: 5
-    costBuy: 14000
-    costSell: 3000
-    weight: 50
-    bigSprite: 226
-    floorSprite: 226
-    handSprite: 280
-    bulletSprite: 0
-    fireSound: 52
-    compatibleAmmo:
-      - STR_SMALL_ROCKET
-      - STR_LARGE_ROCKET
-      - STR_INCENDIARY_ROCKET
-
-    tuSnap: 55
-    accuracySnap: 45
-
-    tuAimed: 85
-    accuracyAimed: 95
-
+  - type: STR_SENTINEL_HEAVY_FLAMER
+#RESOURCES
+    bigSprite: 318
+    bulletSprite: 5
+    fireSound: 706
+#GENERAL
     battleType: 1
-    kneelBonus: 150
-    twoHanded: true
-    blockBothHands: true
+    weight: 0
+    fixedWeapon: true
     invWidth: 2
     invHeight: 3
-    armor: 60
-    listOrder: 12100
-    tags:
-      ITEM_HAS_BIPOD: 1
-
-
-###Green ammo containers for Guard Heavy Bolter
-#Armor Piercing
-  - type: STR_AC_AP_AMMO_GUARD #HEAVYBOLTER
-    categories: [STR_CAT_BOLTER]  
-    size: 0.1
-    requiresBuy:
-      - STR_HEAVY_BOLTER_TECH
-      - STR_IMPERIAL_GUARD_OPERATIONS
-    costBuy: 1200
-    costSell: 800
-    weight: 20
-    bigSprite: 228
-    floorSprite: 228
-    handSprite: 312
-    hitSound: 708
-    hitAnimation: 26
-    damageAlter: #DA BOLTER
-      ToArmorPre: 0.05
-      ArmorEffectiveness: 0.9
-      ToArmor: 0.1
-      ToHealth: 1.0
-      ToStun: 0.5
-    explosionSpeed: 5
-    power: 70
-    damageType: 1
-    clipSize: 80
-    battleType: 2
-    armor: 30
-    invWidth: 2
-    invHeight: 2
-    autoShots: 5
-    listOrder: 12020
-
-#Explosive
-  - type: STR_AC_HE_AMMO_GUARD #HEAVYBOLTER                 12030
-    categories: [STR_CAT_BOLTER]
-    size: 0.1
-    requiresBuy:
-      - STR_HEAVY_BOLTER_TECH
-      - STR_IMPERIAL_GUARD_OPERATIONS
-    costBuy: 1500
-    costSell: 1180
-    weight: 20
-    bigSprite: 229
-    floorSprite: 228
-    handSprite: 312
-    hitSound: 708
-    hitAnimation: 0
+    recover: false
+#SHOOTING
+    clipSize: -1
     power: 50
-    damageType: 3
-    clipSize: 80
-    battleType: 2
-    armor: 30
-    invWidth: 2
-    invHeight: 2
-    autoShots: 5
-    listOrder: 12040
-
-#Incendiary
-  - type: STR_AC_I_AMMO_GUARD #HEAVYBOLTER                  12040
-    categories: [STR_CAT_BOLTER]
-    size: 0.1
-    requiresBuy:
-      - STR_HEAVY_BOLTER_TECH
-      - STR_IMPERIAL_GUARD_OPERATIONS
-    costBuy: 1400
-    costSell: 1050
-    weight: 20
-    bigSprite: 230
-    floorSprite: 228
-    handSprite: 312
-    hitSound: 708
-    hitAnimation: 0
-    power: 40
     damageType: 2
     damageAlter:
       RandomType: 2 #TFTD [50% - 150%]
       ToHealth: 1.0
       ToMorale: 0.5
-    blastRadius: 1
-    clipSize: 80
-    battleType: 2
-    armor: 30
-    invWidth: 2
-    invHeight: 2
-    autoShots: 5
-    listOrder: 12040
+    blastRadius: 2
+    explosionSpeed: 2
+    bulletSpeed: 50
+    tuSnap: 0
+    accuracyAuto: 150
+    tuAuto: 40
+    accuracyAimed: 150
+    tuAimed: 25
+    confAimed:
+      name: STR_CUSTOM_SNAPSHOT
+    dropoff: 5
+    maxRange: 10
+    autoShots: 3
+    arcingShot: false
 
-#Guard Heavy bolter. Compatible to guard version on ammo cases.
+## SENTINEL MULTIMELTA ##
+  - delete: STR_SENTINEL_MULTIMELTA
+
+  - type: STR_SENTINEL_MULTIMELTA
+#RESOURCES
+    bigSprite: 319
+    bulletSprite: 16
+    bulletSpeed: 50
+    fireSound: 739
+    hitSound: 19
+    hitAnimation: 151
+#GENERAL
+    battleType: 1
+    weight: 0
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false	
+#SHOOTING
+    clipSize: -1
+    power: 100
+    damageType: 11
+    damageAlter: #DA MELTA
+      RandomType: 0
+      ToArmor: 0.4
+      ToArmorPre: 0.4
+      ToHealth: 1.0
+      ToTile: 2.0
+      ToWound: 0.05
+      RandomWound: false
+      TileDamageMethod: 2
+    accuracySnap: 80
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.4
+    tuSnap: 50
+    confSnap:
+      shots: 2
+    maxRange: 15
+    powerRangeReduction: 50
+    powerRangeThreshold: 15
+    vaporColor: 2
+    vaporDensity: 5
+
+#######################
+
+### BOLTERS ###
+
+## GUARD HEAVY BOLTER ##
   - type: STR_HEAVY_BOLTER_GUARD
+#GENERAL
     requiresBuy:
       - STR_HEAVY_BOLTER_TECH
       - STR_IMPERIAL_GUARD_OPERATIONS
@@ -520,20 +490,118 @@ items:
       - STR_AC_AP_AMMO_GUARD
       - STR_AC_HE_AMMO_GUARD
       - STR_AC_I_AMMO_GUARD
+#SHOOTING
+    accuracySnap: 60
+    accuracyAuto: 50
+    snapRange: 20
+    autoRange: 10 #was 20
+    autoShots: 3
 
-#Guard Boltpistol
+## GUARD HEAVY BOLTER AMMO (ARMOR PIERCING)
+  - type: STR_AC_AP_AMMO_GUARD
+#RESOURCES
+    bigSprite: 228
+    floorSprite: 228
+    handSprite: 312
+    hitSound: 708
+    hitAnimation: 26
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_BOLTER]
+    requiresBuy:
+      - STR_HEAVY_BOLTER_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 1200
+    costSell: 800
+    size: 0.1
+    weight: 20
+    armor: 30
+    invWidth: 2
+    invHeight: 2
+    listOrder: 12020
+#SHOOTING
+    clipSize: 80
+    power: 70
+    damageType: 1
+    damageAlter: #DA BOLTER
+      ToArmorPre: 0.05
+      ArmorEffectiveness: 0.9
+      ToArmor: 0.1
+      ToHealth: 1.0
+      ToStun: 0.5
+    explosionSpeed: 5
+
+## GUARD HEAVY BOLTER AMMO (HIGH EXPLOSIVE)
+  - type: STR_AC_HE_AMMO_GUARD
+#RESOURCES
+    bigSprite: 229
+    floorSprite: 228
+    handSprite: 312
+    hitSound: 708
+    hitAnimation: 0
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_BOLTER]
+    requiresBuy:
+      - STR_HEAVY_BOLTER_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 1500
+    costSell: 1180
+    size: 0.1
+    weight: 20
+    armor: 30
+    invWidth: 2
+    invHeight: 2
+    listOrder: 12040
+#SHOOTING
+    clipSize: 80
+    power: 50
+    damageType: 3
+
+## GUARD HEAVY BOLTER AMMO (INCENDIARY)
+  - type: STR_AC_I_AMMO_GUARD
+#RESOURCES
+    bigSprite: 230
+    floorSprite: 228
+    handSprite: 312
+    hitSound: 708
+    hitAnimation: 0
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_BOLTER]
+    requiresBuy:
+      - STR_HEAVY_BOLTER_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 1400
+    costSell: 1050
+    size: 0.1
+    weight: 20
+    armor: 30
+    invWidth: 2
+    invHeight: 2
+    listOrder: 12040
+#SHOOTING
+    clipSize: 80
+    power: 40
+    damageType: 2
+    damageAlter:
+      RandomType: 2 #TFTD [50% - 150%]
+      ToHealth: 1.0
+      ToMorale: 0.5
+    blastRadius: 1
+
+
+## GUARD BOLTPISTOL ##
   - type: STR_IG_BOLTPISTOL
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
 #RESOURCES
     bigSprite: 310
     floorSprite: 271
     handSprite: 656
     bulletSprite: 6
     fireSound: 707
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#INFO
+#GENERAL
     battleType: 1
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     requiresBuy:
       - STR_BOLTPISTOL_TECH
       - STR_IMPERIAL_GUARD_OPERATIONS
@@ -545,9 +613,12 @@ items:
     invHeight: 2
     armor: 30
     attraction: 1
-    bulletSpeed: 30
+    twoHanded: false
     listOrder: 10100
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
 #SHOOTING
+    bulletSpeed: 30
     compatibleAmmo:
       - STR_PISTOL_CLIP
       - STR_PISTOL_CLIP_EX
@@ -556,21 +627,18 @@ items:
     accuracySnap: 75
     tuSnap: 20
     snapRange: 12
-    twoHanded: false
 
-#Guard Boltgun
+## GUARD BOLTGUN ##
   - type: STR_IG_BOLTER
-    categories: [STR_CAT_BOLTER]
-#Resources
+#RESOURCES
     bigSprite: 308
     floorSprite: 269
     handSprite: 640
     bulletSprite: 6
     fireSound: 707
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#INFO
+#GENERAL
     battleType: 1
+    categories: [STR_CAT_BOLTER]
     requiresBuy:
       - STR_BOLTER_TECH
       - STR_IMPERIAL_GUARD_OPERATIONS
@@ -584,6 +652,8 @@ items:
     attraction: 1
     bulletSpeed: 30
     listOrder: 10300
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
 #SHOOTING
     compatibleAmmo:
       - STR_RIFLE_CLIP
@@ -596,112 +666,109 @@ items:
     twoHanded: true
     oneHandedPenalty: 50
 
+#######################
 
-### ARMOR STORE ITEMS ####
+### CHARACTER RELATED ITEMS ###
 
-#Carapace Armor.
-  - type: STR_GUARD_ARMORH
-    costBuy: 0
-    costSell: 10000
-    requiresBuy: []
-    size: 0.4
-    listOrder: 6700
-    transferTime: 10
-    weight: 10
+## MINISTORUM PRIEST MORALE BUFF ##
+  - type: STR_MINISTORUM_PRIEST_BUFF
+#RESOURCES
+    bigSprite: 223
+    floorSprite: 109
+    handSprite: 240
+    fireSound: [758, 759, 760, 761, 762, 763]
+    hitAnimation: 121 #Morale & Energy buff
+    specialIconSprite: 203
+#GENERAL
+    battleType: 1
+    categories: [ STR_CAT_EQUIPMENT]
+    weight: 20
+    size: 0.3
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    armor: 12
+    experienceTrainingMode: 19
+#SHOOTING
+    clipSize: -1
+    power: 10
+    damageBonus:
+      bravery: 0.5
+    damageType: 0
+    damageAlter:
+      RandomType: 3
+      RadiusEffectiveness: 0.0
+      ArmorEffectiveness: 0.0
+      ToStun: 0.1
+      ToMorale: -1.00
+      ToEnergy: -1.00
+      ToTime: 0.0
+      ToHealth: 0.0
+      ToWound: 0.0
+      ToArmor: 0.0
+      ToTile: 0.0
+    accuracyMultiplier:
+      firing: 0.0
+      bravery: 2.2
+    accuracyAimed: 100
+    costAimed:
+      time: 25
+      energy: 15
+    confAimed:
+      shots: 1              
+      name: STR_RIGHTEOUS_FURY
+    flatRate: false
+    arcingShot: false
+    maxRange: 16
 
-#Medic's flak armor
-  - type: STR_GUARD_ARMORS_MEDIC
-    costBuy: 0
-    costSell: 7500
-    requiresBuy: []
+## PRIEST EVISCERATOR ##
+  - type: STR_EVISCERATOR
+#RESOURCES
+    bigSprite: 320
+    floorSprite: 279
+    handSprite: 720
+    meleeSound: 110
+    meleeHitSound: 109
+    meleeAnimation: 44
+#GENERAL
+    battleType: 3
+    categories: [STR_CAT_MELEE]
     size: 0.2
-    transferTime: 10
-    listOrder: 6660
-
-#Medic's carapace armor
-  - type: STR_MEDIC_CARAPACE_ARMOR
-    costBuy: 0
-    costSell: 12500
-    requiresBuy: []
-    size: 0.2
-    transferTime: 10
-    listOrder: 6661
-
-#Grenade Launcher and Ammo
-  - type: STR_GRENADE_LAUNCHER
-    requiresBuy:
-      - STR_GRENADE_LAUNCHER_TECH
-
-  - type: STR_FRAG_GRENADE_DRUM
-    requiresBuy:
-      - STR_GRENADE_LAUNCHER_TECH
-    power: 80
-    blastRadius: 2
-
-  - type: STR_KRAK_GRENADE_DRUM
-    requiresBuy:
-      - STR_GRENADE_LAUNCHER_TECH
-    power: 80
+    weight: 25
+    invWidth: 2
+    invHeight: 3
+    armor: 20
+    twoHanded: true
+    oneHandedPenalty: 50
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+    experienceTrainingMode: 13
+#MELEE
+    clipSize: -1
+    power: 125
+    damageType: 7
+    damageBonus:
+      strength: 0.0
+      melee: 0.0
     damageAlter:
       ToArmorPre: 0.2
-      ArmorEffectiveness: 0.7
-      ToArmor: 0.2
-
-  - type: STR_INCENDIARY_GRENADE_DRUM
-    requiresBuy:
-      - STR_GRENADE_LAUNCHER_TECH
-    power: 80
-    damageAlter:
-      RandomType: 2 #TFTD [50% - 150%]
       ToHealth: 1.0
-      ToMorale: 0.5
-    blastRadius: 2
-
-#Sentinel with Lascannon
-  - type: STR_SENTINEL_ARMOR                #6800
-    requiresBuy: []
-    size: 2
-    costBuy: 0
-    costSell: 140000
-
-#Sentinel Missile and ammo
-  - type: STR_GUARD_ARMORS_SENTINEL_MISSILE
-    requiresBuy: []
-    size: 2
-    costBuy: 0
-    costSell: 184000
-    transferTime: 50
-
-  - type: STR_SENTINEL_FRAG_MISSILES
-    requiresBuy:
-      - STR_SENTINEL_MISSILE
-
-  - type: STR_SENTINEL_KRAKK_MISSILES
-    requiresBuy:
-      - STR_SENTINEL_MISSILE
+      ToWound: 0.05
+      ToEnergy: 0.0
+      RandomWound: false
+      RandomType: 2 #TFTD [50% - 150%]
+    accuracyMelee: 80
+    meleeMultiplier:
+      strength: 0.0
+      melee: 0.4
+      flatHundred: 0.4
+    tuMelee: 25
 
 
-
-
-#Craft Quad-Linked Lascannon
-  - type: STR_CRAFT_QUADLASER
-    requiresBuy:
-      - STR_LASER_CANNON
-    size: 3.0
-    costSell: 66000
-    transferTime: 48
-    listOrder: 1910
-
-#Officers Sword
-  - type: STR_OFFICERS_SWORD
-    categories: [STR_CAT_MELEE]
-    requiresBuy:
-      - STR_REGIMENT_OFFICERS
-    costBuy: 20000
-    costSell: 10000
-
-#Enginseer's corpse
+## ENGINSEER CORPSE ##
   - type: STR_ENGINSEER_CORPSE
+#GENERAL
     name: STR_CORPSE
     weight: 15
     bigSprite: 150
@@ -711,8 +778,19 @@ items:
     armor: 26
     recover: false
 
+## MINISTORUM PRIEST CORPSE ##
+  - type: STR_MINISTORUM_PRIEST_CORPSE
+#GENERAL
+    name: STR_CORPSE
+    weight: 15
+    bigSprite: 151
+    floorSprite: 151
+    invWidth: 2
+    invHeight: 3
+    armor: 26
+    recover: false
 
-#Vox-Caster
+## VOX-CASTER ##
   - type: STR_OFFICER_BASIC_VOX
     weight: 9
     bulletSprite: -1
@@ -731,7 +809,7 @@ items:
     recover: false
     fixedWeapon: true
 
-#Vox-Caster Inventory Sprite
+## VOX-CASTER INVENTORY NULL-ITEM ##
   - type: INV_NULL_VOX_CASTER
     weight: 9
     invWidth: 3
@@ -740,3 +818,165 @@ items:
     defaultInventorySlot: STR_BACK_PACK
     fixedWeapon: true
     recover: false
+
+#######################
+
+### ARMOR STORE ITEMS ####
+
+## CARAPACE ARMOR ##
+  - type: STR_GUARD_ARMORH
+#GENERAL
+    costBuy: 0
+    costSell: 10000
+    requiresBuy: []
+    size: 0.4
+    listOrder: 6700
+    transferTime: 10
+    weight: 10
+
+## MEDIC FLAK ARMOR ##
+  - type: STR_GUARD_ARMORS_MEDIC
+#GENERAL
+    costBuy: 0
+    costSell: 7500
+    requiresBuy: []
+    size: 0.2
+    transferTime: 10
+    listOrder: 6660
+
+## MEDIC CARAPACE ARMOR ##
+  - type: STR_MEDIC_CARAPACE_ARMOR
+#GENERAL
+    costBuy: 0
+    costSell: 12500
+    requiresBuy: []
+    size: 0.2
+    transferTime: 10
+    listOrder: 6661
+
+## SENTINEL/LASCANNON ##
+  - type: STR_SENTINEL_ARMOR
+#GENERAL
+    requiresBuy: []
+    size: 2
+    costBuy: 0
+    costSell: 140000
+
+## SENTINEL/MISSLE LAUNCHER ##
+  - type: STR_GUARD_ARMORS_SENTINEL_MISSILE
+#GENERAL
+    requiresBuy: []
+    size: 2
+    costBuy: 0
+    costSell: 184000
+    transferTime: 50
+
+#######################
+
+### CRAFT WEAPONS ###
+
+#CRAFT QUAD-LINKED LASCANNON
+  - type: STR_CRAFT_QUADLASER
+    requiresBuy:
+      - STR_LASER_CANNON
+    size: 3.0
+    costSell: 66000
+    transferTime: 48
+    listOrder: 1910
+
+#######################
+
+### MISC WEAPONS ###
+
+## MISSILE LAUNCHER (GUARD) ##
+  - type: STR_IG_ROCKET_LAUNCHER
+#RESOURCES
+    bigSprite: 226
+    floorSprite: 226
+    handSprite: 280
+    bulletSprite: 0
+    fireSound: 52
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_ROCKETL]
+    requiresBuy:
+      - STR_ROCKET_LAUNCHER_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 14000
+    costSell: 3000
+    weight: 50
+    size: 0.4
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 60
+    listOrder: 12100
+    tags:
+      ITEM_HAS_BIPOD: 1
+#SHOOTING
+    dropoff: 5
+    compatibleAmmo:
+      - STR_SMALL_ROCKET
+      - STR_LARGE_ROCKET
+      - STR_INCENDIARY_ROCKET
+    tuSnap: 55
+    accuracySnap: 45
+    tuAimed: 85
+    accuracyAimed: 95
+    kneelBonus: 150
+
+## GUARD GRENADE LAUNCHER ##
+  - type: STR_GRENADE_LAUNCHER
+#GENERAL
+    requiresBuy:
+      - STR_GRENADE_LAUNCHER_TECH
+
+## FRAG GRENADE DRUM ##
+  - type: STR_FRAG_GRENADE_DRUM
+#GENERAL
+    requiresBuy:
+      - STR_GRENADE_LAUNCHER_TECH
+#SHOOTING
+    power: 80
+    blastRadius: 2
+
+## KRAK GRENADE DRUM ##
+  - type: STR_KRAK_GRENADE_DRUM
+#GENERAL
+    requiresBuy:
+      - STR_GRENADE_LAUNCHER_TECH
+#SHOOTING
+    power: 80
+    damageAlter:
+      ToArmorPre: 0.2
+      ArmorEffectiveness: 0.7
+      ToArmor: 0.2
+
+## INCENDIARY GRENADE DRUM ##
+  - type: STR_INCENDIARY_GRENADE_DRUM
+#GENERAL
+    requiresBuy:
+      - STR_GRENADE_LAUNCHER_TECH
+#GENERAL
+    power: 80
+    damageAlter:
+      RandomType: 2 #TFTD [50% - 150%]
+      ToHealth: 1.0
+      ToMorale: 0.5
+    blastRadius: 2
+
+## PHOTON FLASH GRENADE ##
+#BROKEN AS FUCK
+  - type: STR_PHOTON_GRENADE
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+
+#Officers Sword
+#BROKEN AS FUCK
+  - type: STR_OFFICERS_SWORD
+    categories: [STR_CAT_MELEE]
+    requiresBuy:
+      - STR_REGIMENT_OFFICERS
+    costBuy: 20000
+    costSell: 10000

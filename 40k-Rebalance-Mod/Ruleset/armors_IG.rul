@@ -1,4 +1,6 @@
 armors:
+
+### T1 ###
 #####################################
 # Standard Flak Armor
   - delete: STR_GUARD_ARMORSM
@@ -194,8 +196,8 @@ armors:
   - type: STR_GUARD_ARMORH_UC
     layersDefaultPrefix: GUARD
     layersSpecificPrefix:
-      4: CARAPACE
-      6: CARAPACE
+      4: CARAPACE_ARMOR
+      6: CARAPACE_HELM
     layersDefinition:
       F0: ["", "F0", "F0_Hair_Tight", "", "Female", "", "Female", "", ""]
       F1: ["", "F1", "F1_Hair_Tight", "", "Female", "", "Female", "", ""]
@@ -271,9 +273,9 @@ armors:
   - type: STR_MEDIC_CARAPACE_ARMOR
     layersDefaultPrefix: GUARD
     layersSpecificPrefix:
-      4: CARAPACE
+      4: CARAPACE_ARMOR
       5: MEDIC
-      6: CARAPACE
+      6: CARAPACE_HELM
     layersDefinition:
       F0: ["", "F0", "F0_Hair_Tight", "", "Female", "Female", "Female", "", ""]
       F1: ["", "F1", "F1_Hair_Tight", "", "Female", "Female", "Female", "", ""]
@@ -297,7 +299,6 @@ armors:
       M9: ["", "M9", "", "", "Male", "Male", "Male", "", ""]
 
 #####################################
-
 #Sentinel / Lascannon
   - delete: STR_SENTINEL_ARMOR_UC
 
@@ -491,35 +492,201 @@ armors:
       M8: ["Prop", "M8", "M8_Hair_Tight", "", "Male", "", "", "", ""]
       M9: ["Prop", "M9", "", "", "Male", "", "", "", ""]
 
+### T2 ###
 #####################################
+#Sentinel / Flamer
 
-#Stormtroopers\scions related armor
-#+20 to all armor
-#Scion armor is for Scions only. Same for Stormtrooper armor
+  - delete: STR_GUARD_ARMORS_SENTINEL_HEAVY_FLAMER_UC
 
-  - type: STR_STORMTROOPER_CARAPACE_ARMOR
-    frontArmor: 70
-    sideArmor: 70
-    rearArmor: 70
-    underArmor: 70
+  - type: STR_GUARD_ARMORS_SENTINEL_HEAVY_FLAMER_UC
+    visibilityAtDay: 60
+    visibilityAtDark: 60
+    heatVision: 50
+    instantWoundRecovery: true
+    spriteSheet: SENTINEL_HEAVY_FLAMER.PCK
+    customArmorPreviewIndex: [169, 170, 171]
+    storeItem: STR_GUARD_ARMORS_SENTINEL_HEAVY_FLAMER
+    corpseGeo:  STR_BIKE_CORPSE
+    corpseBattle:
+      - 5_SENT1
+      - 5_SENT2
+      - 5_SENT3
+      - 5_SENT4
+    frontArmor: 120
+    sideArmor: 110
+    rearArmor: 100
+    underArmor: 130
+    size: 2
+    weight: -15
+    moveSound: 700
+    stats:
+       tu: 50
+       stamina: 0
+       firing: 0
+       health: 50
+       bravery: 0 #always multiples of 10
+       reactions: -40
+       throwing: 0
+       strength: 0
+       psiStrength: 0
+       psiSkill: 0
+       melee: 0
+    recovery:
+      energy:
+        flatHundred: 1.0
     units:
-      - STR_GUARD_VETERAN
+      - STR_GUARDSM
+    damageModifier: #VEHICLE ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 5
+    builtInWeapons:
+      - STR_SENTINEL_HEAVY_FLAMER
+      - INV_NULL_SENTINEL_LH
+      - INV_NULL_SENTINEL_BACK_HEAVY_FLAMER
+      - INV_NULL_SENTINEL_BELT
+      - INV_NULL_SENTINEL_LL
+      - INV_NULL_2X1_RL
+    specialWeapon: AUX_SENTINEL_STOMP
+    allowsKneeling: false
 
-  - type: STR_SCION_CARAPACE_ARMOR
-    frontArmor: 70
-    sideArmor: 70
-    rearArmor: 70
-    underArmor: 70
+  - type: STR_GUARD_ARMORS_SENTINEL_HEAVY_FLAMER_UC
+    layersDefaultPrefix: GUARD
+    layersSpecificPrefix:
+      0: SENTINEL_HEAVY_FLAMER
+      4: SENTINEL
+    layersDefinition:
+      F0: ["Prop", "F0", "F0_Hair_Tight", "", "Female", "", "", "", ""]
+      F1: ["Prop", "F1", "F1_Hair_Tight", "", "Female", "", "", "", ""]
+      F2: ["Prop", "F2", "F2_Hair_Tight", "", "Female", "", "", "", ""]
+      F3: ["Prop", "F3", "F3_Hair_Tight", "", "Female", "", "", "", ""]
+      F4: ["Prop", "F4", "F4_Hair_Tight", "", "Female", "", "", "", ""]
+      F5: ["Prop", "F5", "F5_Hair_Tight", "", "Female", "", "", "", ""]
+      F6: ["Prop", "F6", "F6_Hair_Tight", "", "Female", "", "", "", ""]
+      F7: ["Prop", "F7", "F7_Hair_Tight", "", "Female", "", "", "F7_Hair_Over", ""]
+      F8: ["Prop", "F8", "F8_Hair_Tight", "F8_Hair", "Female", "", "", "", ""]
+      F9: ["Prop", "F9", "F9_Hair_Tight", "F9_Hair", "Female", "", "", "", ""]
+      M0: ["Prop", "M0", "M0_Hair_Tight", "M0_Hair", "Male", "", "", "", ""]
+      M1: ["Prop", "M1", "M1_Hair_Tight", "M1_Hair", "Male", "", "", "", ""]
+      M2: ["Prop", "M2", "M2_Hair_Tight", "", "Male", "", "", "", ""]
+      M3: ["Prop", "M3", "M3_Hair_Tight", "M3_Hair", "Male", "", "", "", ""]
+      M4: ["Prop", "M4", "", "", "Male", "", "", "", ""]
+      M5: ["Prop", "M5", "M5_Hair_Tight", "", "Male", "", "", "", ""]
+      M6: ["Prop", "M6", "M6_Hair_Tight", "", "Male", "", "", "M6_Hair_Over", ""]
+      M7: ["Prop", "M7", "M7_Hair_Tight", "", "Male", "", "", "", ""]
+      M8: ["Prop", "M8", "M8_Hair_Tight", "", "Male", "", "", "", ""]
+      M9: ["Prop", "M9", "", "", "Male", "", "", "", ""]
+
+#####################################
+#Sentinel / Multimelta
+
+  - delete: STR_GUARD_ARMORS_SENTINEL_MULTIMELTA_UC
+
+  - type: STR_GUARD_ARMORS_SENTINEL_MULTIMELTA_UC
+    visibilityAtDay: 60
+    visibilityAtDark: 60
+    heatVision: 50
+    instantWoundRecovery: true
+    spriteSheet: SENTINEL_MULTIMELTA.PCK
+    customArmorPreviewIndex: [172, 173, 174]
+    storeItem: STR_GUARD_ARMORS_SENTINEL_MULTIMELTA
+    corpseGeo:  STR_BIKE_CORPSE
+    corpseBattle:
+      - 5_SENT1
+      - 5_SENT2
+      - 5_SENT3
+      - 5_SENT4
+    frontArmor: 120
+    sideArmor: 110
+    rearArmor: 100
+    underArmor: 130
+    size: 2
+    moveSound: 700
+    stats:
+       tu: 50
+       stamina: 0
+       firing: 0
+       health: 50
+       bravery: 0 #always multiples of 10
+       reactions: -40
+       throwing: 0
+       strength: 0
+       psiStrength: 0
+       psiSkill: 0
+       melee: 0
+    recovery:
+      energy:
+        flatHundred: 1.0
     units:
-      - STR_STORMTROOPER
+      - STR_GUARDSM
+    damageModifier: #VEHICLE ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 5
+    builtInWeapons:
+      - STR_SENTINEL_MULTIMELTA
+      - INV_NULL_SENTINEL_LH
+      - INV_NULL_SENTINEL_BACK_MULTIMELTA
+      - INV_NULL_SENTINEL_BELT
+      - INV_NULL_SENTINEL_LL
+      - INV_NULL_2X1_RL
+    specialWeapon: AUX_SENTINEL_STOMP
+    allowsKneeling: false
 
-  - delete: STR_STORMTROOPER_CARAPACE_ARMOR_HELLGUN
-  - delete: STR_SCION_CARAPACE_ARMOR_HELLGUN
-  - delete: STR_STORMTROOPER_CARAPACE_ARMOR_VOLLEYGUN
-  - delete: STR_SCION_CARAPACE_ARMOR_VOLLEYGUN
+  - type: STR_GUARD_ARMORS_SENTINEL_MULTIMELTA_UC
+    layersDefaultPrefix: GUARD
+    layersSpecificPrefix:
+      0: SENTINEL_MULTIMELTA
+      4: SENTINEL
+    layersDefinition:
+      F0: ["Prop", "F0", "F0_Hair_Tight", "", "Female", "", "", "", ""]
+      F1: ["Prop", "F1", "F1_Hair_Tight", "", "Female", "", "", "", ""]
+      F2: ["Prop", "F2", "F2_Hair_Tight", "", "Female", "", "", "", ""]
+      F3: ["Prop", "F3", "F3_Hair_Tight", "", "Female", "", "", "", ""]
+      F4: ["Prop", "F4", "F4_Hair_Tight", "", "Female", "", "", "", ""]
+      F5: ["Prop", "F5", "F5_Hair_Tight", "", "Female", "", "", "", ""]
+      F6: ["Prop", "F6", "F6_Hair_Tight", "", "Female", "", "", "", ""]
+      F7: ["Prop", "F7", "F7_Hair_Tight", "", "Female", "", "", "F7_Hair_Over", ""]
+      F8: ["Prop", "F8", "F8_Hair_Tight", "F8_Hair", "Female", "", "", "", ""]
+      F9: ["Prop", "F9", "F9_Hair_Tight", "F9_Hair", "Female", "", "", "", ""]
+      M0: ["Prop", "M0", "M0_Hair_Tight", "M0_Hair", "Male", "", "", "", ""]
+      M1: ["Prop", "M1", "M1_Hair_Tight", "M1_Hair", "Male", "", "", "", ""]
+      M2: ["Prop", "M2", "M2_Hair_Tight", "", "Male", "", "", "", ""]
+      M3: ["Prop", "M3", "M3_Hair_Tight", "M3_Hair", "Male", "", "", "", ""]
+      M4: ["Prop", "M4", "", "", "Male", "", "", "", ""]
+      M5: ["Prop", "M5", "M5_Hair_Tight", "", "Male", "", "", "", ""]
+      M6: ["Prop", "M6", "M6_Hair_Tight", "", "Male", "", "", "M6_Hair_Over", ""]
+      M7: ["Prop", "M7", "M7_Hair_Tight", "", "Male", "", "", "", ""]
+      M8: ["Prop", "M8", "M8_Hair_Tight", "", "Male", "", "", "", ""]
+      M9: ["Prop", "M9", "", "", "Male", "", "", "", ""]
 
 
-  - type: STR_ENGINSEER_ARMOR_UC #DR4
+#####################################
+#Enginseer Robes
+
+  - type: STR_ENGINSEER_ARMOR_UC
     visibilityAtDay: 40
     visibilityAtDark: 9
     spriteSheet: ENGINSEER.PCK
@@ -552,44 +719,109 @@ armors:
       - INV_NULL_2X1_LL
       - STR_OMNISSIAN_AXE
     specialWeapon: AUX_PROBE
-    invs:
-      - id: STR_RIGHT_HAND
-        costs:
-          STR_BEHIND_SHOLDER: 6
-      - id: STR_LEFT_HAND
-        costs:
-          STR_BEHIND_SHOLDER: 6
-      - id: STR_BACK_PACK
-        costs:
-          STR_BEHIND_SHOLDER: 16
-      - id: STR_BELT
-        costs:
-          STR_BEHIND_SHOLDER: 8
-      - id: STR_RIGHT_LEG
-        costs:
-          STR_BEHIND_SHOLDER: 10
-      - id: STR_LEFT_LEG
-        costs:
-          STR_BEHIND_SHOLDER: 10
-      - id: STR_GROUND
-        costs:
-          STR_BEHIND_SHOLDER: 18
-      - id: STR_BEHIND_SHOLDER
-        x: 145
-        y: 35
-        type: 1
-        costs:
-          STR_RIGHT_HAND: 6
-          STR_LEFT_HAND: 6
-          STR_BEHIND_SHOLDER: 0
-          STR_BACK_PACK: 16
-          STR_BELT: 8
-          STR_RIGHT_LEG: 6
-          STR_LEFT_LEG: 6
-          STR_GROUND: 6
-      - id: STR_BACKPACK
-        type: 1
     size: 1
+
+#####################################
+#Ministorum priest robes
+
+  - type: STR_MINISTORUM_PRIEST_ARMOR_UC
+    visibilityAtDay: 40
+    visibilityAtDark: 9
+    spriteSheet: MINISTORUM_PRIEST.PCK
+    customArmorPreviewIndex: 118 #Second spritesheet. range from 100 to 189 or so.
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96, 144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
+#    spriteInv: MINISTORUM_PRIEST_INV
+    corpseBattle:
+      - STR_MINISTORUM_PRIEST_CORPSE
+    frontArmor: 20
+    sideArmor: 18
+    rearArmor: 16
+    underArmor: 12
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.2 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    fearImmune: true
+    builtInWeapons:
+      - INV_NULL_3X3
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - STR_EVISCERATOR
+    specialWeapon: STR_MINISTORUM_PRIEST_BUFF
+    size: 1
+    tags:
+      ARMOR_ROSARIUS_SHIELD_HP_PER_TURN: 150
+      ARMOR_ROSARIUS_SHIELD_DECAY: 75
+
+#LAYERS
+  - type: STR_MINISTORUM_PRIEST_ARMOR_UC
+    layersDefaultPrefix: GUARD
+    layersSpecificPrefix:
+      4: MINISTORUM_PRIEST
+    layersDefinition:
+      F0: ["", "F0", "F0_Hair_Tight", "", "Female", "", "", "", ""]
+      F1: ["", "F1", "F1_Hair_Tight", "", "Female", "", "", "", ""]
+      F2: ["", "F2", "F2_Hair_Tight", "", "Female", "", "", "", ""]
+      F3: ["", "F3", "F3_Hair_Tight", "", "Female", "", "", "", ""]
+      F4: ["", "F4", "F4_Hair_Tight", "", "Female", "", "", "", ""]
+      F5: ["", "F5", "F5_Hair_Tight", "", "Female", "", "", "", ""]
+      F6: ["", "F6", "F6_Hair_Tight", "", "Female", "", "", "", ""]
+      F7: ["", "F7", "F7_Hair_Tight", "", "Female", "", "", "F7_Hair_Over", ""]
+      F8: ["", "F8", "F8_Hair_Tight", "", "Female", "", "", "", ""]
+      F9: ["", "F9", "F9_Hair_Tight", "", "Female", "", "", "", ""]
+      M0: ["", "M0", "", "", "Male", "", "", "", ""]
+      M1: ["", "M1", "", "", "Male", "", "", "", ""]
+      M2: ["", "M2", "", "", "Male", "", "", "", ""]
+      M3: ["", "M3", "", "", "Male", "", "", "", ""]
+      M4: ["", "M4", "", "", "Male", "", "", "", ""]
+      M5: ["", "M5", "", "", "Male", "", "", "", ""]
+      M6: ["", "M6", "M6_Hair_Tight", "", "Male", "", "", "M6_Hair_Over", ""]
+      M7: ["", "M7", "", "", "Male", "", "", "", ""]
+      M8: ["", "M8", "", "", "Male", "", "", "", ""]
+      M9: ["", "M9", "", "", "Male", "", "", "", ""]
+
+
+#####################################
+
+#Stormtroopers\scions related armor
+#+20 to all armor
+#Scion armor is for Scions only. Same for Stormtrooper armor
+
+  - type: STR_STORMTROOPER_CARAPACE_ARMOR
+    frontArmor: 70
+    sideArmor: 70
+    rearArmor: 70
+    underArmor: 70
+    units:
+      - STR_GUARD_VETERAN
+
+  - type: STR_SCION_CARAPACE_ARMOR
+    frontArmor: 70
+    sideArmor: 70
+    rearArmor: 70
+    underArmor: 70
+    units:
+      - STR_STORMTROOPER
+
+  - delete: STR_STORMTROOPER_CARAPACE_ARMOR_HELLGUN
+  - delete: STR_SCION_CARAPACE_ARMOR_HELLGUN
+  - delete: STR_STORMTROOPER_CARAPACE_ARMOR_VOLLEYGUN
+  - delete: STR_SCION_CARAPACE_ARMOR_VOLLEYGUN
+
 
 #Guard Officer Armors
 #Why this armor even exists?

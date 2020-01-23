@@ -1,14 +1,69 @@
 crafts:
+#Valkirie
+  - type: STR_VALKYRIE
+    fuelMax: 1800
+    damageMax: 400
+    speedMax: 600
+    accel: 2
+    weapons: 2
+    weaponTypes:        
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+
 #Chimera APC
   - type: STR_CHIMERA
-
     requires:
       - STR_CHIMERA_TECH
+
+#Lightning Interceptor
+  - type: STR_LIGHTNING_INTERCEPTOR
+    requires:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    fuelMax: 1000
+    damageMax: 200
+    speedMax: 2100
+    accel: 3
+
+    weapons: 2
+    weaponTypes:        
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+
+#Thunderbolt Fighter
+  - type: STR_THUNDERBOLT_INTERCEPTOR
+    requires:
+      - STR_THUNDERBOLT_INTERCEPTOR
+    fuelMax: 1000
+    damageMax: 400
+    speedMax: 2100
+    accel: 6
 
 #Valkyrie Drop Transport
   - type: STR_VALKYRIE_GRAV_DROP
     requires:
       - STR_VALKYRIE_DROP_TECH
+    costBuy: 700000
+    costRent: 360000
+
+    fuelMax: 1800
+    damageMax: 200
+    speedMax: 1200
+    accel: 2
+    weapons: 2
+    weaponTypes:        
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+
+
 
 #Taurox APC
   - type: STR_TAUROX
