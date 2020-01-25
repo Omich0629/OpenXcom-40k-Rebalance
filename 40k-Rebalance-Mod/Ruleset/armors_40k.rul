@@ -1,13 +1,14 @@
 armors:
-#####################################
-#Basic Scout Armor stats re-creation.
+
+### BASIC SCOUT ARMOR ###
   - delete: STR_SCOUT_UC
 
+#ARMOR
   - type: STR_SCOUT_UC
     customArmorPreviewIndex: 0 #position in SM_unit_preview (0-89)
     visibilityAtDay: 50
     visibilityAtDark: 50
-    spriteSheet: XCOM_0.PCK
+    spriteSheet: SCOUT_ARMOR.PCK
     storeItem: STR_NONE
     corpseGeo: STR_FALLEN_CORPSE
     corpseBattle:
@@ -52,37 +53,35 @@ armors:
     spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
     layersDefaultPrefix: 0
     layersSpecificPrefix:
-      1: SCOUT
-      3: GOGGLES
+      2: SCOUT_ARMOR
+      3: SCOUT_DETAILS
     layersDefinition:
-      M0: ["0", "ASCOUTM", "M0_FACE", "GOGGLES"]
-      M1: ["0", "ASCOUTM", "M1_FACE", "GOGGLES"]
-      M2: ["0", "ASCOUTMC", "M2_FACE", "GOGGLES"]
-      M3: ["0", "ASCOUTMB", "M3_FACE", "GOGGLES"]
-      M4: ["0", "ASCOUTM", "M4_FACE", "GOGGLES"]
-      M5: ["0", "ASCOUTM", "M5_FACE", "GOGGLES"]
-      F0: ["0", "ASCOUTF", "F0_FACE", "GOGGLES"]
-      F1: ["0", "ASCOUTF", "F1_FACE", "GOGGLES"]
-      F2: ["0", "ASCOUTFC", "F2_FACE", "GOGGLES"]
-      F3: ["0", "ASCOUTFB", "F3_FACE", "GOGGLES"]
-      F4: ["0", "ASCOUTF", "F4_FACE", "GOGGLES"]
-      F5: ["0", "ASCOUTF", "F5_FACE", "GOGGLES"]
+      M0: ["0", "SCOUT_FACE_MALE_0", "SCOUT_ARMOR_M", "SCOUT_DETAILS"]
+      M1: ["0", "SCOUT_FACE_MALE_1", "SCOUT_ARMOR_M", "SCOUT_DETAILS"]
+      M2: ["0", "SCOUT_FACE_MALE_2", "SCOUT_ARMOR_M", "SCOUT_DETAILS"]
+      M3: ["0", "SCOUT_FACE_MALE_3", "SCOUT_ARMOR_M", "SCOUT_DETAILS"]
+      M4: ["0", "SCOUT_FACE_MALE_4", "SCOUT_ARMOR_M", "SCOUT_DETAILS"]
+      M5: ["0", "SCOUT_FACE_MALE_5", "SCOUT_ARMOR_M", "SCOUT_DETAILS"]
+      F0: ["0", "SCOUT_FACE_FEMALE_0", "SCOUT_ARMOR_F", "SCOUT_DETAILS"]
+      F1: ["0", "SCOUT_FACE_FEMALE_1", "SCOUT_ARMOR_F", "SCOUT_DETAILS"]
+      F2: ["0", "SCOUT_FACE_FEMALE_2", "SCOUT_ARMOR_F", "SCOUT_DETAILS"]
+      F3: ["0", "SCOUT_FACE_FEMALE_3", "SCOUT_ARMOR_F", "SCOUT_DETAILS"]
+      F4: ["0", "SCOUT_FACE_FEMALE_4", "SCOUT_ARMOR_F", "SCOUT_DETAILS"]
+      F5: ["0", "SCOUT_FACE_FEMALE_5", "SCOUT_ARMOR_F", "SCOUT_DETAILS"]
 
-#####################################
-#Advanced Scout Armor and it's weird variants.
 
-#Advanced Scout Armor - normal one (BROWN).
-
+### ADVANCED SCOUT ARMOR ###
+#It's a standard one (BROWN).
   - delete: STR_SCOUTH_UC
 
+#ARMOR
   - type: STR_SCOUTH_UC 
     camouflageAtDay: -10 # you need to be 10 tiles closer than max vision range to see this unit in the light
     camouflageAtDark: -5 # you need to be 5 tiles closer than max vision range (at night!) to see this unit in the dark
     visibilityAtDay: 50
     visibilityAtDark: 50
     customArmorPreviewIndex: 14 #position in SM_unit_preview (0-89)
-    spriteSheet: XCOM_HS.PCK # BROWN
-    spriteInv: MAN_0
+    spriteSheet: ADV_SCOUT_ARMOR.PCK # BROWN
     storeItem: STR_SCOUTH
     corpseGeo: STR_FALLEN_CORPSE
     corpseBattle:
@@ -120,39 +119,111 @@ armors:
     loftempsSet: [ 3 ]
 
 #LAYERS
-  - type: STR_SCOUTH_UC #SCOUT HONOR BROWN
+  - type: STR_SCOUTH_UC
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
     spriteHairGroup: 9
     spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5  
-    layersDefaultPrefix: CAPE
+    layersDefaultPrefix: 0
     layersSpecificPrefix:
-      1: SCOUTH
-      3: GOGGLES
+      0: SCOUT_CLOAK_BROWN
+      2: ADV_SCOUT_ARMOR
+      3: ADV_SCOUT_DETAILS
     layersDefinition:
-      M0: ["CAPE", "AHSCOUTM", "M0_FACE", "GOGGLES"]
-      M1: ["CAPE", "AHSCOUTM", "M1_FACE", "GOGGLES"]
-      M2: ["CAPE", "AHSCOUTM", "M2_FACE", "GOGGLES"]
-      M3: ["CAPE", "AHSCOUTM", "M3_FACE", "GOGGLES"]
-      M4: ["CAPE", "AHSCOUTM", "M4_FACE", "GOGGLES"]
-      M5: ["CAPE", "AHSCOUTM", "M5_FACE", "GOGGLES"]
-      F0: ["CAPE", "AHSCOUTF", "F0_FACE", "GOGGLES"]
-      F1: ["CAPE", "AHSCOUTF", "F1_FACE", "GOGGLES"]
-      F2: ["CAPE", "AHSCOUTF", "F2_FACE", "GOGGLES"]
-      F3: ["CAPE", "AHSCOUTF", "F3_FACE", "GOGGLES"]
-      F4: ["CAPE", "AHSCOUTF", "F4_FACE", "GOGGLES"]
-      F5: ["CAPE", "AHSCOUTF", "F5_FACE", "GOGGLES"]
+      M0: ["SCOUT_CLOAK_BROWN", "SCOUT_FACE_MALE_0", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M1: ["SCOUT_CLOAK_BROWN", "SCOUT_FACE_MALE_1", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M2: ["SCOUT_CLOAK_BROWN", "SCOUT_FACE_MALE_2", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M3: ["SCOUT_CLOAK_BROWN", "SCOUT_FACE_MALE_3", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M4: ["SCOUT_CLOAK_BROWN", "SCOUT_FACE_MALE_4", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M5: ["SCOUT_CLOAK_BROWN", "SCOUT_FACE_MALE_5", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      F0: ["SCOUT_CLOAK_BROWN", "SCOUT_FACE_FEMALE_0", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F1: ["SCOUT_CLOAK_BROWN", "SCOUT_FACE_FEMALE_1", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F2: ["SCOUT_CLOAK_BROWN", "SCOUT_FACE_FEMALE_2", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F3: ["SCOUT_CLOAK_BROWN", "SCOUT_FACE_FEMALE_3", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F4: ["SCOUT_CLOAK_BROWN", "SCOUT_FACE_FEMALE_4", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F5: ["SCOUT_CLOAK_BROWN", "SCOUT_FACE_FEMALE_5", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
 
-#Advanced Scout Armor - wierd one (WHITE).
+### ADVANCED SCOUT ARMOR (GREEN) ###
+  - delete: STR_SCOUTHG_UC
+
+#ARMOR
+  - type: STR_SCOUTHG_UC
+    camouflageAtDay: -10 # you need to be 10 tiles closer than max vision range to see this unit in the light
+    camouflageAtDark: -5 # you need to be 5 tiles closer than max vision range (at night!) to see this unit in the dark   
+    visibilityAtDay: 50
+    visibilityAtDark: 50
+    spriteSheet: ADV_SCOUT_ARMOR_GREEN.PCK #GREEN
+    storeItem: STR_SCOUTHG
+    corpseGeo: STR_FALLEN_CORPSE
+    corpseBattle:
+      - STR_SCOUTH_CORPSE
+    stats:
+       tu: 10
+       stamina: 10
+       health: 0
+       bravery: 0 #always multiples of 10
+       reactions: 10
+       firing: 10
+       throwing: 10
+       strength: 0
+       psiStrength: 0
+       psiSkill: 0
+       melee: 0
+    frontArmor: 60
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 50
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2 #IMPACT
+    units:
+      - STR_SCOUT_SOLDIER
+    loftempsSet: [ 3 ]
+
+#LAYERS
+  - type: STR_SCOUTHG_UC
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5  
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: SCOUT_CLOAK_GREEN
+      2: ADV_SCOUT_ARMOR
+      3: ADV_SCOUT_DETAILS  
+    layersDefinition:
+      M0: ["SCOUT_CLOAK_GREEN", "SCOUT_FACE_MALE_0", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M1: ["SCOUT_CLOAK_GREEN", "SCOUT_FACE_MALE_1", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M2: ["SCOUT_CLOAK_GREEN", "SCOUT_FACE_MALE_2", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M3: ["SCOUT_CLOAK_GREEN", "SCOUT_FACE_MALE_3", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M4: ["SCOUT_CLOAK_GREEN", "SCOUT_FACE_MALE_4", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M5: ["SCOUT_CLOAK_GREEN", "SCOUT_FACE_MALE_5", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      F0: ["SCOUT_CLOAK_GREEN", "SCOUT_FACE_FEMALE_0", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F1: ["SCOUT_CLOAK_GREEN", "SCOUT_FACE_FEMALE_1", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F2: ["SCOUT_CLOAK_GREEN", "SCOUT_FACE_FEMALE_2", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F3: ["SCOUT_CLOAK_GREEN", "SCOUT_FACE_FEMALE_3", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F4: ["SCOUT_CLOAK_GREEN", "SCOUT_FACE_FEMALE_4", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F5: ["SCOUT_CLOAK_GREEN", "SCOUT_FACE_FEMALE_5", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+
+### ADVANCED SCOUT ARMOR (WHITE) ###
   - delete: STR_SCOUTHW_UC
 
+#ARMOR
   - type: STR_SCOUTHW_UC
     camouflageAtDay: -10 # you need to be 10 tiles closer than max vision range to see this unit in the light
     camouflageAtDark: -5 # you need to be 5 tiles closer than max vision range (at night!) to see this unit in the dark
     visibilityAtDay: 50
     visibilityAtDark: 50
-    spriteSheet: XCOM_HSW.PCK #WHITE
-    spriteInv: MAN_0
+    spriteSheet: ADV_SCOUT_ARMOR_WHITE.PCK #WHITE
     storeItem: STR_SCOUTHW
     corpseGeo: STR_FALLEN_CORPSE
     corpseBattle:
@@ -190,39 +261,40 @@ armors:
     loftempsSet: [ 3 ]
 
 #LAYERS
-  - type: STR_SCOUTHW_UC #SCOUT HONOR WHITE
+  - type: STR_SCOUTHW_UC #ADV SCOUT WHITE
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
     spriteHairGroup: 9
     spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
-    layersDefaultPrefix: CAPE
+    layersDefaultPrefix: 0
     layersSpecificPrefix:
-      1: SCOUTH
-      3: GOGGLES
+      0: SCOUT_CLOAK_WHITE
+      2: ADV_SCOUT_ARMOR
+      3: ADV_SCOUT_DETAILS 
     layersDefinition:
-      M0: ["CAPEW", "AHSCOUTM", "M0_FACE", "GOGGLES"]
-      M1: ["CAPEW", "AHSCOUTM", "M1_FACE", "GOGGLES"]
-      M2: ["CAPEW", "AHSCOUTM", "M2_FACE", "GOGGLES"]
-      M3: ["CAPEW", "AHSCOUTM", "M3_FACE", "GOGGLES"]
-      M4: ["CAPEW", "AHSCOUTM", "M4_FACE", "GOGGLES"]
-      M5: ["CAPEW", "AHSCOUTM", "M5_FACE", "GOGGLES"]
-      F0: ["CAPEW", "AHSCOUTF", "F0_FACE", "GOGGLES"]
-      F1: ["CAPEW", "AHSCOUTF", "F1_FACE", "GOGGLES"]
-      F2: ["CAPEW", "AHSCOUTF", "F2_FACE", "GOGGLES"]
-      F3: ["CAPEW", "AHSCOUTF", "F3_FACE", "GOGGLES"]
-      F4: ["CAPEW", "AHSCOUTF", "F4_FACE", "GOGGLES"]
-      F5: ["CAPEW", "AHSCOUTF", "F5_FACE", "GOGGLES"]
+      M0: ["SCOUT_CLOAK_WHITE", "SCOUT_FACE_MALE_0", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M1: ["SCOUT_CLOAK_WHITE", "SCOUT_FACE_MALE_1", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M2: ["SCOUT_CLOAK_WHITE", "SCOUT_FACE_MALE_2", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M3: ["SCOUT_CLOAK_WHITE", "SCOUT_FACE_MALE_3", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M4: ["SCOUT_CLOAK_WHITE", "SCOUT_FACE_MALE_4", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M5: ["SCOUT_CLOAK_WHITE", "SCOUT_FACE_MALE_5", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      F0: ["SCOUT_CLOAK_WHITE", "SCOUT_FACE_FEMALE_0", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F1: ["SCOUT_CLOAK_WHITE", "SCOUT_FACE_FEMALE_1", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F2: ["SCOUT_CLOAK_WHITE", "SCOUT_FACE_FEMALE_2", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F3: ["SCOUT_CLOAK_WHITE", "SCOUT_FACE_FEMALE_3", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F4: ["SCOUT_CLOAK_WHITE", "SCOUT_FACE_FEMALE_4", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F5: ["SCOUT_CLOAK_WHITE", "SCOUT_FACE_FEMALE_5", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
 
-#Advanced Scout Armor - wierd one (BLACK).
+### ADVANCED SCOUT ARMOR (BLACK) ###
   - delete: STR_SCOUTHB_UC
 
+#ARMOR
   - type: STR_SCOUTHB_UC
     camouflageAtDay: -10 # you need to be 10 tiles closer than max vision range to see this unit in the light
     camouflageAtDark: -5 # you need to be 5 tiles closer than max vision range (at night!) to see this unit in the dark
     visibilityAtDay: 50
     visibilityAtDark: 50
-    spriteSheet: XCOM_HSB.PCK #BLACK
-    spriteInv: MAN_0
+    spriteSheet: ADV_SCOUT_ARMOR_BLACK.PCK #BLACK
     storeItem: STR_SCOUTHB
     corpseGeo: STR_FALLEN_CORPSE
     corpseBattle:
@@ -264,25 +336,26 @@ armors:
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
     spriteHairGroup: 9
     spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5  
-    layersDefaultPrefix: CAPE
+    layersDefaultPrefix: 0
     layersSpecificPrefix:
-      1: SCOUTH
-      3: GOGGLES
+      0: SCOUT_CLOAK_BLACK
+      2: ADV_SCOUT_ARMOR
+      3: ADV_SCOUT_DETAILS
     layersDefinition:
-      M0: ["CAPEB", "AHSCOUTM", "M0_FACE", "GOGGLES"]
-      M1: ["CAPEB", "AHSCOUTM", "M1_FACE", "GOGGLES"]
-      M2: ["CAPEB", "AHSCOUTM", "M2_FACE", "GOGGLES"]
-      M3: ["CAPEB", "AHSCOUTM", "M3_FACE", "GOGGLES"]
-      M4: ["CAPEB", "AHSCOUTM", "M4_FACE", "GOGGLES"]
-      M5: ["CAPEB", "AHSCOUTM", "M5_FACE", "GOGGLES"]
-      F0: ["CAPEB", "AHSCOUTF", "F0_FACE", "GOGGLES"]
-      F1: ["CAPEB", "AHSCOUTF", "F1_FACE", "GOGGLES"]
-      F2: ["CAPEB", "AHSCOUTF", "F2_FACE", "GOGGLES"]
-      F3: ["CAPEB", "AHSCOUTF", "F3_FACE", "GOGGLES"]
-      F4: ["CAPEB", "AHSCOUTF", "F4_FACE", "GOGGLES"]
-      F5: ["CAPEB", "AHSCOUTF", "F5_FACE", "GOGGLES"]
+      M0: ["SCOUT_CLOAK_BLACK", "SCOUT_FACE_MALE_0", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M1: ["SCOUT_CLOAK_BLACK", "SCOUT_FACE_MALE_1", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M2: ["SCOUT_CLOAK_BLACK", "SCOUT_FACE_MALE_2", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M3: ["SCOUT_CLOAK_BLACK", "SCOUT_FACE_MALE_3", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M4: ["SCOUT_CLOAK_BLACK", "SCOUT_FACE_MALE_4", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M5: ["SCOUT_CLOAK_BLACK", "SCOUT_FACE_MALE_5", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      F0: ["SCOUT_CLOAK_BLACK", "SCOUT_FACE_FEMALE_0", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F1: ["SCOUT_CLOAK_BLACK", "SCOUT_FACE_FEMALE_1", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F2: ["SCOUT_CLOAK_BLACK", "SCOUT_FACE_FEMALE_2", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F3: ["SCOUT_CLOAK_BLACK", "SCOUT_FACE_FEMALE_3", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F4: ["SCOUT_CLOAK_BLACK", "SCOUT_FACE_FEMALE_4", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F5: ["SCOUT_CLOAK_BLACK", "SCOUT_FACE_FEMALE_5", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
 
-#Advanced Scout Armor - wierd one (RED).
+### ADVANCED SCOUT ARMOR (RED) ###
   - delete: STR_SCOUTHR_UC
 
   - type: STR_SCOUTHR_UC
@@ -290,8 +363,7 @@ armors:
     camouflageAtDark: -5 # you need to be 5 tiles closer than max vision range (at night!) to see this unit in the dark
     visibilityAtDay: 50
     visibilityAtDark: 50
-    spriteSheet: XCOM_HSR.PCK #red
-    spriteInv: MAN_0
+    spriteSheet: ADV_SCOUT_ARMOR_RED.PCK #red
     storeItem: STR_SCOUTHR
     corpseGeo: STR_FALLEN_CORPSE
     corpseBattle:
@@ -334,34 +406,35 @@ armors:
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
     spriteHairGroup: 9
     spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5  
-    layersDefaultPrefix: CAPE
+    layersDefaultPrefix: 0
     layersSpecificPrefix:
-      1: SCOUTH
-      3: GOGGLES
+      0: SCOUT_CLOAK_RED
+      2: ADV_SCOUT_ARMOR
+      3: ADV_SCOUT_DETAILS
     layersDefinition:
-      M0: ["CAPER", "AHSCOUTM", "M0_FACE", "GOGGLES"]
-      M1: ["CAPER", "AHSCOUTM", "M1_FACE", "GOGGLES"]
-      M2: ["CAPER", "AHSCOUTM", "M2_FACE", "GOGGLES"]
-      M3: ["CAPER", "AHSCOUTM", "M3_FACE", "GOGGLES"]
-      M4: ["CAPER", "AHSCOUTM", "M4_FACE", "GOGGLES"]
-      M5: ["CAPER", "AHSCOUTM", "M5_FACE", "GOGGLES"]
-      F0: ["CAPER", "AHSCOUTF", "F0_FACE", "GOGGLES"]
-      F1: ["CAPER", "AHSCOUTF", "F1_FACE", "GOGGLES"]
-      F2: ["CAPER", "AHSCOUTF", "F2_FACE", "GOGGLES"]
-      F3: ["CAPER", "AHSCOUTF", "F3_FACE", "GOGGLES"]
-      F4: ["CAPER", "AHSCOUTF", "F4_FACE", "GOGGLES"]
-      F5: ["CAPER", "AHSCOUTF", "F5_FACE", "GOGGLES"]
+      M0: ["SCOUT_CLOAK_RED", "SCOUT_FACE_MALE_0", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M1: ["SCOUT_CLOAK_RED", "SCOUT_FACE_MALE_1", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M2: ["SCOUT_CLOAK_RED", "SCOUT_FACE_MALE_2", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M3: ["SCOUT_CLOAK_RED", "SCOUT_FACE_MALE_3", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M4: ["SCOUT_CLOAK_RED", "SCOUT_FACE_MALE_4", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M5: ["SCOUT_CLOAK_RED", "SCOUT_FACE_MALE_5", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      F0: ["SCOUT_CLOAK_RED", "SCOUT_FACE_FEMALE_0", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F1: ["SCOUT_CLOAK_RED", "SCOUT_FACE_FEMALE_1", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F2: ["SCOUT_CLOAK_RED", "SCOUT_FACE_FEMALE_2", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F3: ["SCOUT_CLOAK_RED", "SCOUT_FACE_FEMALE_3", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F4: ["SCOUT_CLOAK_RED", "SCOUT_FACE_FEMALE_4", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F5: ["SCOUT_CLOAK_RED", "SCOUT_FACE_FEMALE_5", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
 
-#Advanced Scout Armor - wierd one (YELLOW).
+### ADVANCED SCOUT ARMOR (YELLOW) ###
   - delete: STR_SCOUTHY_UC
 
+#ARMOR
   - type: STR_SCOUTHY_UC
     camouflageAtDay: -10 # you need to be 10 tiles closer than max vision range to see this unit in the light
     camouflageAtDark: -5 # you need to be 5 tiles closer than max vision range (at night!) to see this unit in the dark
     visibilityAtDay: 50
     visibilityAtDark: 50
-    spriteSheet: XCOM_HSY.PCK #YELLOW
-    spriteInv: MAN_0
+    spriteSheet: ADV_SCOUT_ARMOR_YELLOW.PCK #YELLOW
     storeItem: STR_SCOUTHY
     corpseGeo: STR_FALLEN_CORPSE
     corpseBattle:
@@ -404,96 +477,30 @@ armors:
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
     spriteHairGroup: 9
     spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5  
-    layersDefaultPrefix: CAPE
+    layersDefaultPrefix: 0
     layersSpecificPrefix:
-      1: SCOUTH
-      3: GOGGLES
+      0: SCOUT_CLOAK_YELLOW
+      2: ADV_SCOUT_ARMOR
+      3: ADV_SCOUT_DETAILS
     layersDefinition:
-      M0: ["CAPEY", "AHSCOUTM", "M0_FACE", "GOGGLES"]
-      M1: ["CAPEY", "AHSCOUTM", "M1_FACE", "GOGGLES"]
-      M2: ["CAPEY", "AHSCOUTM", "M2_FACE", "GOGGLES"]
-      M3: ["CAPEY", "AHSCOUTM", "M3_FACE", "GOGGLES"]
-      M4: ["CAPEY", "AHSCOUTM", "M4_FACE", "GOGGLES"]
-      M5: ["CAPEY", "AHSCOUTM", "M5_FACE", "GOGGLES"]
-      F0: ["CAPEY", "AHSCOUTF", "F0_FACE", "GOGGLES"]
-      F1: ["CAPEY", "AHSCOUTF", "F1_FACE", "GOGGLES"]
-      F2: ["CAPEY", "AHSCOUTF", "F2_FACE", "GOGGLES"]
-      F3: ["CAPEY", "AHSCOUTF", "F3_FACE", "GOGGLES"]
-      F4: ["CAPEY", "AHSCOUTF", "F4_FACE", "GOGGLES"]
-      F5: ["CAPEY", "AHSCOUTF", "F5_FACE", "GOGGLES"]
+      M0: ["SCOUT_CLOAK_YELLOW", "SCOUT_FACE_MALE_0", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M1: ["SCOUT_CLOAK_YELLOW", "SCOUT_FACE_MALE_1", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M2: ["SCOUT_CLOAK_YELLOW", "SCOUT_FACE_MALE_2", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M3: ["SCOUT_CLOAK_YELLOW", "SCOUT_FACE_MALE_3", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M4: ["SCOUT_CLOAK_YELLOW", "SCOUT_FACE_MALE_4", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      M5: ["SCOUT_CLOAK_YELLOW", "SCOUT_FACE_MALE_5", "ADV_SCOUT_ARMOR_M", "ADV_SCOUT_DETAILS"]
+      F0: ["SCOUT_CLOAK_YELLOW", "SCOUT_FACE_FEMALE_0", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F1: ["SCOUT_CLOAK_YELLOW", "SCOUT_FACE_FEMALE_1", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F2: ["SCOUT_CLOAK_YELLOW", "SCOUT_FACE_FEMALE_2", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F3: ["SCOUT_CLOAK_YELLOW", "SCOUT_FACE_FEMALE_3", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F4: ["SCOUT_CLOAK_YELLOW", "SCOUT_FACE_FEMALE_4", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
+      F5: ["SCOUT_CLOAK_YELLOW", "SCOUT_FACE_FEMALE_5", "ADV_SCOUT_ARMOR_F", "ADV_SCOUT_DETAILS"]
 
-#Advanced Scout Armor - wierd one (GREEN).
-  - delete: STR_SCOUTHG_UC
 
-  - type: STR_SCOUTHG_UC
-    camouflageAtDay: -10 # you need to be 10 tiles closer than max vision range to see this unit in the light
-    camouflageAtDark: -5 # you need to be 5 tiles closer than max vision range (at night!) to see this unit in the dark   
-    visibilityAtDay: 50
-    visibilityAtDark: 50
-    spriteSheet: XCOM_HSG.PCK #GREEN
-    spriteInv: MAN_0
-    storeItem: STR_SCOUTHG
-    corpseGeo: STR_FALLEN_CORPSE
-    corpseBattle:
-      - STR_SCOUTH_CORPSE
-    stats:
-       tu: 10
-       stamina: 10
-       health: 0
-       bravery: 0 #always multiples of 10
-       reactions: 10
-       firing: 10
-       throwing: 10
-       strength: 0
-       psiStrength: 0
-       psiSkill: 0
-       melee: 0
-    frontArmor: 60
-    sideArmor: 50
-    rearArmor: 50
-    underArmor: 50
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.2 #IMPACT
-    units:
-      - STR_SCOUT_SOLDIER
-    loftempsSet: [ 3 ]
 
-#LAYERS
-  - type: STR_SCOUTHG_UC #SCOUT HONOR GREEN
-    spriteFaceGroup: 6
-    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
-    spriteHairGroup: 9
-    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5  
-    layersDefaultPrefix: CAPE
-    layersSpecificPrefix:
-      1: SCOUTH
-      3: GOGGLES	  
-    layersDefinition:
-      M0: ["CAPEG", "AHSCOUTM", "M0_FACE", "GOGGLES"]
-      M1: ["CAPEG", "AHSCOUTM", "M1_FACE", "GOGGLES"]
-      M2: ["CAPEG", "AHSCOUTM", "M2_FACE", "GOGGLES"]
-      M3: ["CAPEG", "AHSCOUTM", "M3_FACE", "GOGGLES"]
-      M4: ["CAPEG", "AHSCOUTM", "M4_FACE", "GOGGLES"]
-      M5: ["CAPEG", "AHSCOUTM", "M5_FACE", "GOGGLES"]
-      F0: ["CAPEG", "AHSCOUTF", "F0_FACE", "GOGGLES"]
-      F1: ["CAPEG", "AHSCOUTF", "F1_FACE", "GOGGLES"]
-      F2: ["CAPEG", "AHSCOUTF", "F2_FACE", "GOGGLES"]
-      F3: ["CAPEG", "AHSCOUTF", "F3_FACE", "GOGGLES"]
-      F4: ["CAPEG", "AHSCOUTF", "F4_FACE", "GOGGLES"]
-      F5: ["CAPEG", "AHSCOUTF", "F5_FACE", "GOGGLES"]
 
-#####################################
-#Power Armor Mk7. Default for Space Marines. Have no store item.
+### POWER ARMOR MK7 ###
+#Default for Space Marines. Have no store item.
 #Has some stats.
   - delete: STR_PERSONAL_ARMOR_UC
 
@@ -562,10 +569,11 @@ armors:
       F4: ["0", "MK7_ARMOR_F", "F4_FACE"]
       F5: ["0", "MK7_ARMOR_F", "F5_FACE"]
 
-#####################################
-#Assault Armor mk7. Power Armor with jump pack.
+### ASSAULT ARMOR MK7 ###
+#Power Armor with jump pack.
   - delete: STR_ASS_ARMOR_UC
 
+#ARMOR
   - type: STR_ASS_ARMOR_UC
     visibilityAtDay: 50
     visibilityAtDark: 50
@@ -631,10 +639,12 @@ armors:
       F4: ["0", "MK7_ASSAULT_F", "F4_FACE"]
       F5: ["0", "MK7_ASSAULT_F", "F5_FACE"]
 
-#####################################
-#Devastator Armor mk7. Power Armor with ammo container and aiming device.
+
+### DEVASTATOR ARMOR MK7 ## 
+#Power Armor with ammo container and aiming device.
   - delete: STR_DEV_ARMOR_UC
 
+#ARMOR
   - type: STR_DEV_ARMOR_UC
     visibilityAtDay: 50
     visibilityAtDark: 50
@@ -681,7 +691,6 @@ armors:
       - INV_NULL_1X3
 
 #LAYERS
-
   - type: STR_DEV_ARMOR_UC
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -700,10 +709,13 @@ armors:
       F4: ["0", "MK7_DEVASTATOR_F", "F4_FACE"]
       F5: ["0", "MK7_DEVASTATOR_F", "F5_FACE"]
 
-#####################################
-#Sergeant Armor mk7. Separate version of the Power Armor. Allows to cast TU-buff.
+
+### SERGEANT ARMOR MK7 ###
+#Separate version of the Power Armor.
+#Active skill: TU Buff
   - delete: STR_SARGENT_ARMOR_UC
 
+#ARMOR
   - type: STR_SARGENT_ARMOR_UC
     visibilityAtDay: 50
     visibilityAtDark: 50
@@ -713,7 +725,7 @@ armors:
       - STR_SARGENT_CORPSE
     storeItem: STR_SARGENT_ARMOR
     corpseGeo: STR_FALLEN_CORPSE
-    specialWeapon: STR_SERGEANT_BANNER
+    specialWeapon: STR_SERGEANT_BUFF
     stats:
        tu: 5
        stamina: 10
@@ -768,8 +780,10 @@ armors:
       F4: ["0", "MK7_SERGEANT_F", "F4_FACE"]
       F5: ["0", "MK7_SERGEANT_F", "F5_FACE"]
 
-#####################################
-#Apothecary Armor mk7. Separate version of the Power Armor.
+
+### APOTHECARY ARMOR MK7 ###
+#Separate version of the Power Armor.
+#Equiped with medical device
   - delete: STR_APOT_ARMOR_UC
 
   - type: STR_APOT_ARMOR_UC
@@ -838,8 +852,8 @@ armors:
       F4: ["0", "MK7_APOTHECARY_F", "F4_FACE"]
       F5: ["0", "MK7_APOTHECARY_F", "F5_FACE"]
 
-#####################################
-#Assault Bike. Well, that's a strange armor.
+### ASSAULT BIKE ###
+#Well, that's a strange armor.
 #Pilot definitely wears mk7 armor.
 
   - delete: BIKE_ARMOR_UC
@@ -899,7 +913,6 @@ armors:
       - INV_NULL_4X3_BELT
 
 #LAYERS
-
   - type: BIKE_ARMOR_UC #BIKE
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -918,9 +931,9 @@ armors:
       F4: ["0", "MK7_BIKE_F", "F4_FACE"]
       F5: ["0", "MK7_BIKE_F", "F5_FACE"]
 
-
-#####################################
-#Techmarine Armor mk7. Separate version of mk7 armor.
+### TECHMARINE ARMOR MK7 ###
+#Separate version of mk7 armor
+#Equiped with analyzer, servo-arm and power weapon.
   - delete: STR_TECH_ARMOR_UC
 
   - type: STR_TECH_ARMOR_UC
@@ -971,7 +984,6 @@ armors:
     loftempsSet: [ 3 ]
 
 #LAYERS
-
   - type: STR_TECH_ARMOR_UC #TECH
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -990,10 +1002,8 @@ armors:
       F4: ["0", "MK7_TECHMARINE_F", "F4_FACE"]
       F5: ["0", "MK7_TECHMARINE_F", "F5_FACE"]
 
-#####################################
-#Centurion Warsuit. Now in T2. 
+### CENTURION WARSUIT ###
 #Weapon: Missiles and twin-linked boler. 
-#Deal with it.
   - delete: CENT_ARMOR_UC
 
   - type: CENT_ARMOR_UC
@@ -1045,7 +1055,6 @@ armors:
       - INV_NULL_4X2
 
 #LAYER
-
   - type: CENT_ARMOR_UC #CENT
     layersDefaultPrefix: 1
     layersSpecificPrefix:
@@ -1064,8 +1073,9 @@ armors:
       F4: ["0", "CENTMF", "F4_FACE"]
       F5: ["0", "CENTMF", "F5_FACE"]
 
-#####################################
-#Honor Guard Armor. Default for Veteran Marines.Have no store item.
+### HONOR GUARD ARMOR ###
+#Default for Veteran Marines.
+#Have no store item.
   - delete: STR_HONOR_ARMOR_UC
 
   - type: STR_HONOR_ARMOR_UC
@@ -1132,12 +1142,12 @@ armors:
       F4: ["0", "MK7_HONOR_GUARD_F", "F4_FACE"]
       F5: ["0", "MK7_HONOR_GUARD_F", "F5_FACE"]
 
-#####################################
-#Vanguard armor. Technically it's a honor armor with jump pack.
+### VANGUARD ARMOR ###
+#Technically it's a honor armor with jump pack.
 #Stores as Mk7 assault equipment
   - delete: STR_ASS_ARMOR_HONOR_UC
 
-  - type: STR_ASS_ARMOR_HONOR_UC
+  - type: STR_ASS_ARMOR_HONOR_UC #nice ID, man
     visibilityAtDay: 50
     visibilityAtDark: 50
     spriteSheet: MK7_VANGUARD.PCK
@@ -1164,7 +1174,7 @@ armors:
     rearArmor: 80
     underArmor: 70
     movementType: 1
-    damageModifier: #ASS MARINE ARMOR
+    damageModifier:
       - 1.0 #none
       - 1.0 #AP
       - 0.2 #FLAMES
@@ -1202,15 +1212,14 @@ armors:
       F4: ["0", "MK7_VANGUARD_F", "F4_FACE"]
       F5: ["0", "MK7_VANGUARD_F", "F5_FACE"]
 
-#####################################
-#Veteran Devastator Armor. Mk7 armor with devastator equipment. Veteran variant.
-#It's a new armor, so no need to delete.
+### VETERAN DEVASTATOR ARMOR ###
+#Mk7 armor with devastator equipment. Veteran variant.
 
   - type: STR_DEV_VETERAN_ARMOR_UC
     visibilityAtDay: 50
     visibilityAtDark: 50
     spriteSheet: MK7_VETERAN_DEV.PCK
-    customArmorPreviewIndex: 45 #First spritesheet. Range from 0 to 89 or so.
+    customArmorPreviewIndex: 45 #position in SM_unit_preview (0-89)
     corpseBattle:
       - STR_MK7_CORPSE
     storeItem: STR_DEV_ARMOR
@@ -1252,7 +1261,6 @@ armors:
       - INV_NULL_1X3
 
 #LAYERS
-
   - type: STR_DEV_VETERAN_ARMOR_UC #DEVASTATOR
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -1272,9 +1280,10 @@ armors:
       F5: ["0", "MK7_VETERAN_DEVASTATOR_F", "F5_FACE"]
 
 
-#####################################
-#Sergeant Signum Armor.
-#Not a 'signum' anymore. Just a veteran version of sergeant armor.
+### VETERAN SERGEANT ARMOR ###
+#Not a 'signum' anymore. 
+#Just a veteran version of sergeant armor.
+#Active skill: TU Buff.
 
   - delete: STR_SIGNAL_ARMOR_UC
 
@@ -1287,7 +1296,7 @@ armors:
       - STR_SARGENT_CORPSE
     storeItem: STR_SARGENT_ARMOR
     corpseGeo: STR_FALLEN_CORPSE
-    specialWeapon: STR_SERGEANT_BANNER
+    specialWeapon: STR_SERGEANT_BUFF
     stats:
        tu: 5
        stamina: 10
@@ -1342,10 +1351,10 @@ armors:
       F4: ["0", "MK7_VETERAN_SERGEANT_F", "F4_FACE"]
       F5: ["0", "MK7_VETERAN_SERGEANT_F", "F5_FACE"]
 
-#####################################
-#Chaplain Armor.
-#Has morale buff to keep your brothers calm and cool.
 
+### MK7 CHAPLAIN ARMOR ###
+#Equiped with force field generator and power weapon.
+#Active skill: Morale & Energy buff.
   - delete: STR_CHAP_ARMOR_UC
 
   - type: STR_CHAP_ARMOR_UC
@@ -1359,7 +1368,7 @@ armors:
       - STR_CHAP_CORPSE
     storeItem: STR_CHAP_ARMOR
     corpseGeo: STR_FALLEN_CORPSE
-    specialWeapon: STR_CHAPLAIN_BANNER
+    specialWeapon: STR_CHAPLAIN_BUFF
     stats:
        tu: 5
        stamina: 10
@@ -1396,9 +1405,11 @@ armors:
       - STR_SOLDIER
       - STR_VETERAN_SOLDIER
     loftempsSet: [ 3 ]
+    tags:
+      ARMOR_ROSARIUS_SHIELD_HP_PER_TURN: 150
+      ARMOR_ROSARIUS_SHIELD_DECAY: 75
 
 #LAYERS
-
   - type: STR_CHAP_ARMOR_UC
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -1417,9 +1428,10 @@ armors:
       F4: ["0", "MK7_CHAPLAIN_F", "F4_FACE"]
       F5: ["0", "MK7_CHAPLAIN_F", "F5_FACE"]
 
-#####################################
-#Librarian Armor.
 
+### MK7 LIBRARIAN ARMOR ###
+#Equiped with psychoforce weapon.
+#Active skill: Shield Buff
   - delete: STR_LIB_ARMOR_UC
 
   - type: STR_LIB_ARMOR_UC 
@@ -1470,7 +1482,6 @@ armors:
       - LIBRARIAN_STAFF
 
 #LAYERS
-
   - type: STR_LIB_ARMOR_UC #LIBRA
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
@@ -1493,9 +1504,7 @@ armors:
       F4: ["0", "MK7_LIBRARIAN_F", "F4_FACE"]
       F5: ["0", "MK7_LIBRARIAN_F", "F5_FACE"]
 
-#####################################
-#Terminator Armor
-
+### TERMINATOR ARMOR ###
   - delete: STR_POWER_SUIT_UC
 
   - type: STR_POWER_SUIT_UC
@@ -1547,7 +1556,6 @@ armors:
       - INV_NULL_2X1_LL
 
 #LAYERS
-
   - type: STR_POWER_SUIT_UC
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -1566,12 +1574,11 @@ armors:
       F4: ["0", "TERM_ARMOR_MF", "F4_FACE"]
       F5: ["0", "TERM_ARMOR_MF", "F5_FACE"]
 
-#####################################
-#Assault Terminator Armor.
 
+### ASSAULT TERMINATOR ARMOR ###
   - delete: STR_FLYING_SUIT_UC
 
-  - type: STR_FLYING_SUIT_UC                #TERMINATOR ASSAULT
+  - type: STR_FLYING_SUIT_UC
     visibilityAtDay: 50
     visibilityAtDark: 50
     spriteSheet: TERM_ASSAULT.PCK
@@ -1597,7 +1604,7 @@ armors:
     rearArmor: 100
     underArmor: 90
     movementType: 0
-    damageModifier: #TERMINATOR ARMOR
+    damageModifier:
       - 1.0 #none
       - 1.0 #AP
       - 0.2 #FLAMES
@@ -1622,8 +1629,7 @@ armors:
       - INV_NULL_2X1_LL
 
 #LAYERS
-
-  - type: STR_FLYING_SUIT_UC  #TERMINATOR ASS
+  - type: STR_FLYING_SUIT_UC
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       1: TERM_ARMOR
@@ -1641,8 +1647,9 @@ armors:
       F4: ["0", "TERM_ARMOR_MF", "F4_FACE"]
       F5: ["0", "TERM_ARMOR_MF", "F5_FACE"]
 
-#####################################
-#Terminator Apothecary. Able to heal.
+
+### TERMINATOR APOTHECARY ARMOR ###
+#Equiped with medical device
 
   - type: STR_TERMINATOR_APOTHECARY_UC
     visibilityAtDay: 50
@@ -1694,7 +1701,6 @@ armors:
       - INV_NULL_2X1_LL
 
 #LAYERS
-
   - type: STR_TERMINATOR_APOTHECARY_UC
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -1713,8 +1719,9 @@ armors:
       F4: ["0", "TERM_APOTHECARY_MF", "F4_FACE"]
       F5: ["0", "TERM_APOTHECARY_MF", "F5_FACE"]
 
-#####################################
-#Terminator Chaplain. Have morale buff.
+### TERMINATOR CHAPLAIN ARMOR ###
+#Equiped with force field generator and power weapon.
+#Active skill: Morale & Energy Buff
 
   - type: STR_TERMINATOR_CHAPLAIN_UC
     visibilityAtDay: 50
@@ -1758,15 +1765,17 @@ armors:
       - STR_VETERAN_SOLDIER
     loftempsSet: [ 3 ]
     forcedTorso: 1
-    specialWeapon: STR_CHAPLAIN_BANNER
+    specialWeapon: STR_CHAPLAIN_BUFF
     builtInWeapons:
       - AUX_CROZIUS
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
+    tags:
+      ARMOR_ROSARIUS_SHIELD_HP_PER_TURN: 150
+      ARMOR_ROSARIUS_SHIELD_DECAY: 75
 
 #LAYERS
-
   - type: STR_TERMINATOR_CHAPLAIN_UC
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -1785,9 +1794,8 @@ armors:
       F4: ["0", "TERM_CHAPLAIN_MF", "F4_FACE"]
       F5: ["0", "TERM_CHAPLAIN_MF", "F5_FACE"]
 
-#####################################
-#Terminator Sergeant. Have TU buff.
-
+### TERMINATOR SERGEANT ARMOR ###
+#Active skill: TU Buff
   - delete: STR_TSARGENT_UC
 
   - type: STR_TSARGENT_UC
@@ -1832,14 +1840,13 @@ armors:
       - STR_VETERAN_SOLDIER
     loftempsSet: [ 3 ]
     forcedTorso: 1
-    specialWeapon: STR_SERGEANT_BANNER
+    specialWeapon: STR_SERGEANT_BUFF
     builtInWeapons:
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
 
 #LAYERS
-
   - type: STR_TSARGENT_UC  #TSARGENT
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -1858,8 +1865,9 @@ armors:
       F4: ["0", "TERM_SERGEANT_MF", "F4_FACE"]
       F5: ["0", "TERM_SERGEANT_MF", "F5_FACE"]
 
-#####################################
-#Terminator Librarian. Psyker.
+### TERMINATOR LIBRARIAN ARMOR ###
+#Equiped with psychoforce weapon.
+#Active skill: Shield Buff
 
   - type: STR_TERMINATOR_LIBRARIAN_UC
     visibilityAtDay: 50
@@ -1911,7 +1919,6 @@ armors:
       - INV_NULL_2X1_LL
 
 #LAYERS
-
   - type: STR_TERMINATOR_LIBRARIAN_UC
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -1930,9 +1937,8 @@ armors:
       F4: ["0", "TERM_LIBRARIAN_MF", "F4_FACE"]
       F5: ["0", "TERM_LIBRARIAN_MF", "F5_FACE"]
 
-#####################################
-#Terminator Captain Armor
 
+### TERMINATOR CAPTAIN ARMOR ###
   - delete: STR_CAPTAIN_UC
 
   - type: STR_CAPTAIN_UC
@@ -1944,7 +1950,7 @@ armors:
       - STR_CAPTAIN_CORPSE
     storeItem: STR_CAPTAIN_SUIT
     corpseGeo: STR_FALLEN_CORPSE
-    specialWeapon: STR_CAPTAIN_BANNER
+    specialWeapon: STR_CAPTAIN_BUFF
     stats:
        tu: -20
        stamina: -20
@@ -2001,9 +2007,8 @@ armors:
       F4: ["0", "TERM_CAPTAIN_MF", "F4_FACE"]
       F5: ["0", "TERM_CAPTAIN_MF", "F5_FACE"]
 
-#####################################
-#Dreadnought/Flamer
 
+### DREADNOUGHT/FLAMER ###
   - delete: DREAD_ARMOR_UC
 
   - type: DREAD_ARMOR_UC
@@ -2054,9 +2059,7 @@ armors:
       - INV_NULL_2X1_LL
       - INV_NULL_4X3_BELT
 
-#####################################
-#Dreadnought/Plasma Cannon
-
+### DREADNOUGHT/PLASMA CANNON ###
   - delete: DREAD_ARMOR2_UC
 
   - type: DREAD_ARMOR2_UC
@@ -2106,9 +2109,7 @@ armors:
       - INV_NULL_2X1_LL
       - INV_NULL_4X3_BELT
 
-#####################################
-#Dreadnought/Missile Launcher
-
+### DREADNOUGHT/MISSILE LAUNCHER ###
   - delete: DREAD_ARMOR3_UC
 
   - type: DREAD_ARMOR3_UC
@@ -2159,8 +2160,7 @@ armors:
       - INV_NULL_2X1_LL
       - INV_NULL_4X3_BELT
 
-#####################################
-#Dreadnought/Lascannon
+### DREADNOUGHT/LASCANNON ###
 
   - delete: DREAD_ARMOR4_UC
 
@@ -2212,8 +2212,7 @@ armors:
       - INV_NULL_2X1_LL
       - INV_NULL_4X3_BELT
 
-#####################################
-#Dreadnought/Assault Cannon
+### DREADNOUGHT/ASSAULT CANNON ###
 
   - delete: DREAD_ARMOR5_UC
 
@@ -2242,7 +2241,7 @@ armors:
     #deathSound: [859, 860]
     units:
       - STR_FALLEN
-    damageModifier: #DREADNOUGHT ARMOR
+    damageModifier:
       - 1.0 #none
       - 1.0 #AP
       - 0.2 #FLAMES
@@ -2266,12 +2265,8 @@ armors:
       - INV_NULL_2X1_LL
       - INV_NULL_4X3_BELT  
 
-#####################################
-#Unit armors
+### UNIT ARMORS ###
 
-#Stormraven Turret
+### Stormraven Turret ###
   - type: STORMRAVEN_ARMOR
     spriteSheet: STORMRAVEN_LASCANNON.PCK
-
-
-#####################################

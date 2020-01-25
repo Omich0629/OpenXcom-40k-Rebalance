@@ -8,6 +8,7 @@ manufacture:
   - delete: STR_GUARD_ARMORS_MOUNTED_AUTOCANNON
   - delete: STR_GUARD_ARMORS_MOUNTED_LASCANNON
   - delete: STR_HOTSHOT_VOLLEY_GUN
+  - delete: STR_STORMTROOPER_REQUISITION
 
 ######## T1 STUFF ########
 
@@ -149,7 +150,7 @@ manufacture:
 #Small Hotshot Clip
   - name: STR_LASGUN_CLIP_HOTSHOT
     requires:
-      - STR_HOTSHOT_LASPISTOL
+      - STR_LASGUN_CLIP_HOTSHOT
     space: 4
     time: 60
     cost: 1250
@@ -157,7 +158,7 @@ manufacture:
 #Large Hotshot Clip
   - name: STR_LASGUN_BACKPACK_HOTSHOT
     requires:
-      - STR_HOTSHOT_LASPISTOL
+      - STR_LASGUN_BACKPACK_HOTSHOT
     space: 4
     time: 100
     cost: 6250
@@ -177,10 +178,10 @@ manufacture:
     requires:
       - STR_LONG_LAS_TECH
     space: 4
-    time: 600
+    time: 300
     cost: 48000
     requiredItems:
-      STR_UFO_CONSTRUCTION: 2
+      STR_UFO_CONSTRUCTION: 1
 
 #Hotshot Lasgun
   - name: STR_HELLGUN
@@ -254,7 +255,7 @@ manufacture:
   - name: STR_BULLGRYN_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_BULLGRYN_ARMOR
+      - STR_BULLGRYN_EQUIPMENT
     space: 8
     time: 400
     cost: 25000
@@ -263,10 +264,6 @@ manufacture:
       STR_ALIEN_ALLOYS: 20
 
 ### SENTINELS ###
-
-
-
-
 
 #Sentinel with Autocannon
   - name: STR_GUARD_ARMORS_SENTINEL_AUTOCANNON
@@ -321,8 +318,7 @@ manufacture:
   - name: STR_ENGINSEER_REQUISITION
     category: STR_ADVANCEMENT
     requires:
-      - STR_IMPERIAL_GUARD_OPERATIONS
-      - STR_TEC_BAYR
+      - STR_ENGINSEER_REQUISITION
     space: 0
     time: 500
     cost: 120000
@@ -350,16 +346,16 @@ manufacture:
       STR_LASPISTOL_CLIP: 2
 
 #Stormtrooper Requisition
-  - name: STR_STORMTROOPER_REQUISITION
-    category: STR_ADVANCEMENT
-    requires:
-      - STR_STORMTROOPER_REQUISITION
-    space: 0
-    time: 500
-    cost: 100000
-    requiredItems:
-      STR_ALIEN_HABITAT: 1
-    spawnedPersonType: STR_STORMTROOPER
-    producedItems: 
-      STR_GRENADE: 3
-      STR_KNIF: 1
+#  - name: STR_STORMTROOPER_REQUISITION
+#    category: STR_ADVANCEMENT
+#    requires:
+#      - STR_STORMTROOPER_REQUISITION
+#    space: 0
+#    time: 500
+#    cost: 100000
+#    requiredItems:
+#      STR_ALIEN_HABITAT: 1
+#    spawnedPersonType: STR_STORMTROOPER
+#    producedItems: 
+#      STR_GRENADE: 3
+#      STR_KNIF: 1

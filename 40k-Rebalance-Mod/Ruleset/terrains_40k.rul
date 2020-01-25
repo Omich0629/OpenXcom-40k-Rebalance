@@ -229,11 +229,90 @@ terrains:
         length: 10
 #OTHER TERRAINS
 
+#TUNDRA
+#Add EnviroEffect for camo cloaks
+  - name: TUNDRADESERT
+    enviroEffects: STR_URBAN_ENVIRO
+
+  - name: TUNDRADESERTMOUNT
+    enviroEffects: STR_URBAN_ENVIRO
+
+  - name: TUNDRAFOREST
+    enviroEffects: STR_URBAN_ENVIRO
+
+  - name: TUNDRAMOUNT
+    enviroEffects: STR_URBAN_ENVIRO
+
+  - name: TUNDRAPOLAR
+    enviroEffects: STR_URBAN_ENVIRO
+
+#SAVANNA
+#Add EnviroEffect for camo cloaks
+  - name: SAVANNADESERT
+    enviroEffects: STR_FOREST_ENVIRO
+
+  - name: SAVANNADESERTMOUNT
+    enviroEffects: STR_FOREST_ENVIRO
+
+  - name: SAVANNAFOREST
+    enviroEffects: STR_FOREST_ENVIRO
+
+  - name: SAVANNAPOLAR
+    enviroEffects: STR_FOREST_ENVIRO
+
+#GRASSLAND
+#Add EnviroEffect for camo cloaks
+  - name: GRASSLANDDESERT
+    enviroEffects: STR_FOREST_ENVIRO
+
+  - name: GRASSLANDDESERTMOUNT
+    enviroEffects: STR_FOREST_ENVIRO
+
+  - name: GRASSLANDFOREST
+    enviroEffects: STR_FOREST_ENVIRO
+
+  - name: GRASSLANDPOLAR
+    enviroEffects: STR_FOREST_ENVIRO
+
+#TAIGA
+#Add EnviroEffect for camo cloaks
+  - name: TAIGADESERT
+    enviroEffects: STR_URBAN_ENVIRO
+
+  - name: TAIGAFOREST
+    enviroEffects: STR_URBAN_ENVIRO
+
+  - name: TAIGAPOLAR
+    enviroEffects: STR_URBAN_ENVIRO
+
+#STEPPE
+#Add EnviroEffect for camo cloaks
+  - name: STEPPEDESERT
+    enviroEffects: STR_DESERT_ENVIRO
+
+  - name: STEPPEFOREST
+    enviroEffects: STR_DESERT_ENVIRO
+
+  - name: STEPPEPOLAR
+    enviroEffects: STR_DESERT_ENVIRO
+
+#RUINS
+#Add EnviroEffect for camo cloaks
+  - name: ACULTA 
+    enviroEffects: STR_FOREST_ENVIRO
+
+  - name: ACULTASAND
+    enviroEffects: STR_DESERT_ENVIRO
+
+  - name: ACULTASNOW
+    enviroEffects: STR_SNOW_ENVIRO
+
 #POLAR
 #Recreate without weapon spawners
   - delete: POLAR
 
   - name: POLAR
+    enviroEffects: STR_SNOW_ENVIRO
     ambience: 891 #Arctic
     ambientVolume: 0.25  
     mapDataSets:
@@ -291,11 +370,18 @@ terrains:
         width: 20
         length: 20
 
+#POLAR DESERT
+#Add EnviroEffect for camo cloaks
+  - name: POLARDESERT
+    enviroEffects: STR_SNOW_ENVIRO
+
 #JUNGLE
 #Recreate without weapon spawners
+#Add EnviroEffect for camo cloaks
   - delete: JUNGLE
 
   - name: JUNGLE
+    enviroEffects: STR_FOREST_ENVIRO
     ambience: 887 #jungle
     ambientVolume: 0.25
     mapDataSets:
@@ -346,12 +432,32 @@ terrains:
       - name: JUNGLE12
         width: 10
         length: 10
+      - name: JUNGLE12
+        width: 10
+        length: 10
+      - name: JUNGLE12
+        width: 10
+        length: 10
+      - name: JUNGLE12
+        width: 10
+        length: 10
+      - name: JUNGLE12
+        width: 10
+        length: 10
+
+
+#JUNGLE SWAMP
+#Add EnviroEffect for camo cloaks
+  - name: JUNGLEPOLAR
+    enviroEffects: STR_FOREST_ENVIRO
 
 #FOREST
 #Recreate without weapon spawners
+#Add EnviroEffect for camo cloaks
   - delete: FOREST
 
   - name: FOREST
+    enviroEffects: STR_FOREST_ENVIRO
     script: FOREST
     mapDataSets:
       - BLANKS
@@ -400,11 +506,19 @@ terrains:
         width: 20
         length: 20
 
-#FOREST
+#Forest Marsh
+#Add EnviroEffect for camo cloaks
+  - name: FORESTPOLAR
+    enviroEffects: STR_FOREST_ENVIRO
+
+
+#DESERT
 #Recreate without weapon spawners
+#Add EnviroEffect for camo cloaks
   - delete: DESERT
 
   - name: DESERT
+    enviroEffects: STR_DESERT_ENVIRO
     mapDataSets:
       - BLANKS
       - DESERT
@@ -454,11 +568,19 @@ terrains:
         width: 20
         length: 20
 
+#Desert Mountain
+#Add EnviroEffect for camo cloaks
+  - name: DESERTMOUNT
+    enviroEffects: STR_DESERT_ENVIRO
+
+
+
 #REFINERY
 #Recreate without item spawners
   - delete: REFINERY
 
   - name: REFINERY
+    enviroEffects: STR_URBAN_ENVIRO
     ambience: 889 #Pit
     ambientVolume: 0.25
     mapDataSets:
@@ -543,6 +665,7 @@ terrains:
   - delete: BDAIRPORT
 
   - name: BDAIRPORT
+    enviroEffects: STR_URBAN_ENVIRO
     mapDataSets:
       - BLANKS
       - HANGAR1
@@ -618,3 +741,13 @@ terrains:
       - name: HANGAR19
         width: 30
         length: 30
+
+#INDUSTRIALURBAN
+#Recreate without item spawners
+  - name: INDUSTRIALURBAN
+    enviroEffects: STR_URBAN_ENVIRO
+
+#URBAN
+#Recreate without item spawners
+  - name: URBAN
+    enviroEffects: STR_URBAN_ENVIRO

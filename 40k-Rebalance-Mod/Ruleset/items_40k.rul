@@ -1,175 +1,147 @@
 items:
 
 #delete Master Crafted Ammo for bolt-weapons, MC shotgun and MC lasgun
-
   - delete: STR_PISTOL_CLIP_MC
   - delete: STR_RIFLE_CLIP_MC
   - delete: STR_AC_MC_AMMO
   - delete: STR_MCLASER_RIFLE
   - delete: STR_MCSHOTGUN
 
-#### NULL SLOT ITEMS ####
+### NULL SLOT ITEMS ###
+
+## NULL-ITEM FOR BELT SLOT ##
   - type: INV_NULL_4X3_BELT
-    weight: 0
+#RESOURCES
     bigSprite: 221
+#GENERAL
+    weight: 0
     invWidth: 4
     invHeight: 3
     fixedWeapon: true
     defaultInventorySlot: STR_BELT
     recover: false
 
+## NULL-ITEM FOR SENTINEL LEFT HAND SLOT ##
   - type: INV_NULL_SENTINEL_LH
+#RESOURCES
     bigSprite: 220
 
 ############################
 
-#### Grenades ####
-#Frag Grenade
+### HAND GRENADES ###
+
+## FRAG HAND GRENADE ##
   - type: STR_GRENADE
+#RESOURCES
     bigSprite: 278
     handSprite: 528
-
+#GENERAL
     costBuy: 500
     costSell: 250
     weight: 4
+    invWidth: 1
+    invHeight: 1
+#THROWING
     tuThrow: 25
     tuPrime: 25
     flatRate: false
-    invWidth: 1
-    invHeight: 1
 
-#Krak Grenade
+
+## KRAK HAND GRENADE ##
   - type: STR_KRAK_GRENADE
+#RESOURCES
     bigSprite: 279
     floorSprite: 256
     handSprite: 536
-
+#GENERAL
     costBuy: 100
     costSell: 500
     weight: 6
+    invWidth: 1
+    invHeight: 1
+#THROWING
+    damageAlter:
+      ToArmorPre: 0.2
+      ArmorEffectiveness: 0.7
+      ToArmor: 0.2
     tuThrow: 25
     tuPrime: 25
     flatRate: false
-    invWidth: 1
-    invHeight: 1
 
-#Smoke Grenade. 
-#No requirements.
+
+## SMOKE GRENADE ##
   - type: STR_SMOKE_GRENADE 
+#RESOURCES
     bigSprite: 280
-
+#GENERAL
     requiresBuy: []
     costBuy: 400
     costSell: 200
+    invWidth: 1
+    invHeight: 1
+#THROWING
     tuThrow: 25
     tuPrime: 25
     flatRate: false
-    invWidth: 1
-    invHeight: 1
 
-#Proximity Grenade
+## PROXIMITY GRENADE ##
   - type: STR_PROXIMITY_GRENADE
+#RESOURCES
     bigSprite: 281
     floorSprite: 257
     handSprite: 544
-
+#GENERAL
     costBuy: 800
     costSell: 400
     weight: 4
+    invWidth: 1
+    invHeight: 1
+#THROWING
     tuThrow: 25
     tuPrime: 25
     flatRate: false
-    invWidth: 1
-    invHeight: 1
 
 ##########################
 
-### Misc. Equipment ###
+### SM STANDARD HEAVY WEAPONS ###
 
-#First Aid Kit
-  - type: STR_FIRST_AID_KIT
-    size: 0.1
-    costSell: 5000
-    weight: 4
-    bigSprite: 238
-    floorSprite: 227
-    handSprite: 304
-    battleType: 6
-    invWidth: 1
-    invHeight: 2
-    painKiller: 1
-    heal: 3
-    stimulant: 1
-    woundRecovery: 1
-    healthRecovery: 3
-    stunRecovery: 4
-    energyRecovery: 10
-    tuUse: 10
-    flatRate: true
-    allowSelfHeal: true
-    isConsumable: true
-
-#Fire Extinguisher
-  - type: STR_FIRE_EXTINGUISHER
-    bigSprite: 302
-    floorSprite: 264
-    handSprite: 600
-
-    size: 0.2
-    costBuy: 800
-    costSell: 400
-    weight: 6
-    clipSize: 4
-
-    battleType: 1
-
-    bulletSprite: 1
-    fireSound: 771
-    explosionHitSound: 771
-    hitAnimation: 104
-    bulletSpeed: 80
-
-    power: 20
-    damageType: 9
-    damageAlter:
-      IgnoreSelfDestruct: true
-      RandomType: 3
-      ToStun: 0.5
-    blastRadius: 1
-
-    tuAimed: 25
-    accuracyAimed: 150
-    maxRange: 6
-
-    invWidth: 1
-    invHeight: 2
-    isFireExtinguisher: true
-    experienceTrainingMode: 32
-
-#################################
-
-### SM Missile Launcher and ammo ###
-
+## MISSILE LAUNCHER ##
   - type: STR_ROCKET_LAUNCHER
+#RESOURCES
     bigSprite: 268
     floorSprite: 249
     handSprite: 472
+#GENERAL
     requiresBuy:
       - STR_ROCKET_LAUNCHER_TECH
       - STR_SPACE_MARINES_OPERATIONS
 
-#Missiles
+## FRAG MISSILE ##
   - type: STR_SMALL_ROCKET
+#GENERAL
     requiresBuy:
       - STR_ROCKET_LAUNCHER_TECH
 
+
+## KRAK MISSILE ##
   - type: STR_LARGE_ROCKET
+#GENERAL
     requiresBuy:
       - STR_ROCKET_LAUNCHER_TECH
+#SHOOTING
+    power: 100
+    damageAlter:
+      ToArmorPre: 0.2
+      ArmorEffectiveness: 0.7
+      ToArmor: 0.2
 
+
+## INCENDIARY MISSILE ##
   - type: STR_INCENDIARY_ROCKET
+#GENERAL
     requiresBuy:
       - STR_ROCKET_LAUNCHER_TECH
+#SHOOTING
     power: 90
     damageAlter:
       RandomType: 2 #TFTD [50% - 150%]
@@ -177,16 +149,17 @@ items:
       ToMorale: 0.5
     blastRadius: 2
 
-#################################
-
-### Heavy Bolter and ammo ###
+## HEAVY BOLTER ##
   - type: STR_AUTO_CANNON
+#RESOURCES
     bigSprite: 264
     floorSprite: 247
     handSprite: 456
+#GENERAL
     requiresBuy:
       - STR_HEAVY_BOLTER_TECH
       - STR_SPACE_MARINES_OPERATIONS
+#SHOOTING
     compatibleAmmo:
       - STR_AC_AP_AMMO
       - STR_AC_HE_AMMO
@@ -194,33 +167,43 @@ items:
     accuracySnap: 60
     accuracyAuto: 50
     snapRange: 20
-    autoRange: 10 #was 20
+    autoRange: 10
     autoShots: 3
 
+## HEAVY BOLTER ARMOR PIERCING AMMO ##
   - type: STR_AC_AP_AMMO
+#RESOURCES
     bigSprite: 265
     floorSprite: 248
     handSprite: 464
+#GENERAL
     requiresBuy:
       - STR_HEAVY_BOLTER_TECH
       - STR_SPACE_MARINES_OPERATIONS
 
+## HEAVY BOLTER HIGH EXPLOSIVE AMMO ##
   - type: STR_AC_HE_AMMO
+#RESOURCES
     bigSprite: 266
     floorSprite: 248
     handSprite: 464
+#GENERAL
     requiresBuy:
       - STR_HEAVY_BOLTER_TECH
       - STR_SPACE_MARINES_OPERATIONS
     listOrder: 12040
 
+## HEAVY BOLTER INCENDIARY AMMO ##
   - type: STR_AC_I_AMMO
+#RESOURCES
     bigSprite: 267
     floorSprite: 248
     handSprite: 464
+#GENERAL
     requiresBuy:
       - STR_HEAVY_BOLTER_TECH
       - STR_SPACE_MARINES_OPERATIONS
+#SHOOTING
     power: 40
     damageAlter:
       RandomType: 2 #TFTD [50% - 150%]
@@ -228,39 +211,51 @@ items:
       ToMorale: 0.5
     blastRadius: 1
 
-#################################
-
-### Sniper Rifle and ammo ###
+## SNIPER RIFLE ##
   - type: STR_HEAVY_CANNON
-    requiresBuy:
-      - STR_SNIPER_RIFLE_TECH
+#RESOURCES
     bigSprite: 254
     floorSprite: 240
     handSprite: 400
-
-
-  - type: STR_HC_AP_AMMO
+#GENERAL
     requiresBuy:
       - STR_SNIPER_RIFLE_TECH
+
+
+## SNIPER RIFLE ARMOR PIERCING AMMO ##
+  - type: STR_HC_AP_AMMO
+#RESOURCES
     bigSprite: 255
     floorSprite: 241
     handSprite: 408
-    clipSize: 10
-
-  - type: STR_HC_HE_AMMO
+#GENERAL
     requiresBuy:
       - STR_SNIPER_RIFLE_TECH
+#SHOOTING
+    clipSize: 10
+
+## SNIPER RIFLE HIGH EXPLOSIVE AMMO ##
+  - type: STR_HC_HE_AMMO
+#RESOURCES
     bigSprite: 256
     floorSprite: 241
     handSprite: 408
-    clipSize: 10
-
-  - type: STR_HC_I_AMMO
+#GENERAL
     requiresBuy:
       - STR_SNIPER_RIFLE_TECH
+#SHOOTING
+    clipSize: 10
+
+## SNIPER RIFLE INCENDIARY AMMO ##
+  - type: STR_HC_I_AMMO
+#RESOURCES
     bigSprite: 257
     floorSprite: 241
     handSprite: 408
+#GENERAL
+    requiresBuy:
+      - STR_SNIPER_RIFLE_TECH
+#SHOOTING
     clipSize: 10
     power: 100
     damageAlter:
@@ -269,22 +264,23 @@ items:
       ToMorale: 0.5
     blastRadius: 1
 
-##########################
 
-#Assault Bike and ammo
-  - type: STR_BIKE_ARMOR 
-    requiresBuy:
-      - STR_BIKE_TECH
-
-#delete bike bolter and ammo
+## ASSAULT BIKE ##
   - delete: AUX_TANK_CANNON
   - delete: STR_HWP_CANNON_SHELLS
 
-########### MELEE WEAPONS REBALANCE #############
-#Combat Knife
+  - type: STR_BIKE_ARMOR
+#GENERAL
+    requiresBuy:
+      - STR_BIKE_TECH
+
+### MELEE WEAPONS ###
+
+## COMBAT KNIFE ##
 #Easy to hit. Low basic damage. 
 #Requires reactions and melee skill to properly use.
   - type: STR_KNIF
+#MELEE
     power: 20
     damageBonus:
       reactions: 0.4
@@ -295,16 +291,17 @@ items:
       melee: 0.2
       flatHundred: 0.5
 
-#Chainsword
+## CHAINSWORD ##
 #No bonus damage. Inflicts more wounds then usual (about 1-6)
   - type: STR_CHAINSWORD
-    requiresBuy:
-      - STR_CHAINSWORD_TECH
+#RESOURCES
     bigSprite: 222
     floorSprite: 222
     handSprite: 248
-
-    tuMelee: 20
+#GENERAL
+    requiresBuy:
+      - STR_CHAINSWORD_TECH
+#MELEE
     power: 85
     damageBonus:
       strength: 0.0
@@ -320,20 +317,20 @@ items:
       strength: 0.0
       melee: 0.4
       flatHundred: 0.4
+    tuMelee: 20
 
-#Master Crafted Chainsword
+## MASTER CRAFTED CHAINSWORD ##
 #No bonus damage. Inflicts more wounds then usual (about 1-8)
   - type: STR_CHAINSWORD_MC
+#RESOURCES
     bigSprite: 223
     floorSprite: 221
     handSprite: 240
-
-    tuMelee: 20
+#MELEE
     power: 105
     damageBonus:
       strength: 0.0
       melee: 0.0
-
     damageAlter:
       ToArmorPre: 0.2
       ToHealth: 1.0
@@ -345,17 +342,27 @@ items:
       strength: 0.0
       melee: 0.4
       flatHundred: 0.4
+    tuMelee: 20
 
-#Narthecium melee functional
+## NARTHECIUM CHAINSAW ##
 #Chain weapon. No bonus damage.
   - type: STR_NARTHECIUM_MELEE
+#RESOURCES
     specialIconSprite: 204
-    weight: 0
-    meleeSound: 110 # Powerswrod miss
+    meleeSound: 110 # Powersword miss
     meleeHitSound: 109 # chainhit
     meleeAnimation: 44
-    power: 75
+#GENERAL
+    battleType: 3
+    weight: 0
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    recover: false
+#MELEE
+    clipSize: -1
     damageType: 7
+    power: 75
     accuracyMelee: 100
     damageBonus:
       strength: 0.0
@@ -373,143 +380,136 @@ items:
       flatHundred: 0.4
     tuMelee: 15
     flatRate: false
-    battleType: 3
-    clipSize: -1
     experienceTrainingMode: 13
-    invWidth: 2
-    invHeight: 2
-    fixedWeapon: true
-    recover: false
 
-
-#Powerfist
-#Not buyable.
+## POWERFIST ##
 #Unwieldy and hard to use.
 #Ignores 10% of armor. 
 #Fully depends on strength and melee skill.
-  - type: STR_POWERFIST 
-    requiresBuy: []
-    costBuy: 0
-
+  - type: STR_POWERFIST
+#RESOURCES
     bigSprite: 259
     floorSprite: 243
     handSprite: 424
-
-    tuMelee: 25
-    flatRate: false
-
-    accuracyMelee: 100
-    meleeMultiplier:
-      strength: 0.4
-      melee: 0.4
-
+#GENERAL 
+    requiresBuy: []
+    costBuy: 0
+#MELEE
     power: 60
     damageBonus:
       strength: 0.2
       melee: 0.2
-
     damageAlter:
       ArmorEffectiveness: 0.9
       ToArmorPre: 0.3
-      ToHealth: 1.0 
-
-#Thunder Hammer
-#Unwieldy and hard to use.
-#Ignores 10% of armor. Deals toTime damage.
-#Fully depends on strength and melee skill.
-  - type: STR_HAMMER
-    weight: 80
-
-    tuMelee: 30
-    flatRate: false
-
+      ToHealth: 1.0
     accuracyMelee: 100
     meleeMultiplier:
       strength: 0.4
       melee: 0.4
+    tuMelee: 25
+    flatRate: false
 
+## THUNDER HAMMER ##
+#Unwieldy and hard to use.
+#Ignores 10% of armor. Deals toTime damage.
+#Fully depends on strength and melee skill.
+  - type: STR_HAMMER
+#GENERAL
+    weight: 80
+#MELEE
     power: 70
     damageType: 7
     damageBonus:
       strength: 0.2
       melee: 0.2
-
     damageAlter:
       ArmorEffectiveness: 0.9
       ToArmorPre: 0.3
       ToHealth: 1.0
       ToTime: 1.0
-
-#Crozius Arcanum
-#Technically it's a Power maul.
-#Ignores 10% of armor
-
-  - delete: AUX_CROZIUS
-
-  - type: AUX_CROZIUS
-    size: 0.2
-    costSell: 6500
-    weight: 10
-    bigSprite: 242
-    floorSprite: 232
-    handSprite: 336
-    meleeSound: 110 # Powerswrod miss
-    meleeHitSound: 111 # Powerswrod Hit
-    meleeAnimation: 48
-
-    tuMelee: 25
-    flatRate: false
-
-    battleType: 3
-    power: 50
-    damageType: 7
-    damageBonus:
-      strength: 0.2
-      melee: 0.2
-
-    skillApplied: true
     accuracyMelee: 100
     meleeMultiplier:
       strength: 0.4
       melee: 0.4
+    tuMelee: 30
+    flatRate: false
 
-    damageAlter:
-      ArmorEffectiveness: 0.9
-      ToArmorPre: 0.3
-      ToHealth: 1.0
-      ToTime: 1.0
+## CROZIUS ARCANUM ##
+#Technically it's a Power maul.
+#Ignores 10% of armor
+  - delete: AUX_CROZIUS
 
-    clipSize: -1
+  - type: AUX_CROZIUS
+#RESOURCES
+    bigSprite: 242
+    floorSprite: 232
+    handSprite: 336
+    meleeSound: 110 # Powersword miss
+    meleeHitSound: 111 # Powersword Hit
+    meleeAnimation: 48
+#GENERAL
+    battleType: 3
+    size: 0.2
+    costSell: 6500
+    weight: 10
     invWidth: 2
     invHeight: 3
     armor: 20
     fixedWeapon: true
     fixedWeaponShow: true
+#MELEE
+    clipSize: -1
+    power: 50
+    damageType: 7
+    damageBonus:
+      strength: 0.2
+      melee: 0.2
+    damageAlter:
+      ArmorEffectiveness: 0.9
+      ToArmorPre: 0.3
+      ToHealth: 1.0
+      ToTime: 1.0
+    skillApplied: true
+    accuracyMelee: 100
+    meleeMultiplier:
+      strength: 0.4
+      melee: 0.4
+    tuMelee: 25
+    flatRate: false
 
-#Lightning Claws
+## LIGHTNING CLAWS ##
 #Sharp version of the Power Fist.
 #Has less damage, but ignores 30% of armor.
 #Suitable for users with high strength (like terminators).
-
   - delete: STR_CLAWS
 
-  - type: STR_CLAWS #                              DA POWER
-    categories: [STR_CAT_MELEE, STR_CAT_ASSAULT]
-    size: 0.1
-    costSell: 10000
-    weight: 40
+  - type: STR_CLAWS
+#RESOURCES
     bigSprite: 253
     floorSprite: 235
     handSprite: 376
     meleeSound: 110 # Powersword miss
     meleeHitSound: 111 # Powersword hit
     meleeAnimation: 48
-
+#GENERAL
+    battleType: 3
+    categories: [STR_CAT_MELEE, STR_CAT_ASSAULT]
+    size: 0.1
+    costSell: 10000
+    weight: 40
+    twoHanded: false
+    fixedWeapon: false
+    invWidth: 2
+    invHeight: 3
+    armor: 20
+    listOrder: 12600
+#MELEE
+    clipSize: -1
     accuracyMelee: 100
     meleeMultiplier:
       strength: 0.4
       melee: 0.4
-
     power: 40
     damageType: 7
     damageBonus:
@@ -519,33 +519,21 @@ items:
       ArmorEffectiveness: 0.7
       ToArmorPre: 0.1
       ToHealth: 1.0
-
     tuMelee: 25
     flatRate: false
-
-    clipSize: -1
-    battleType: 3
-    twoHanded: false
-    fixedWeapon: false
-    invWidth: 2
-    invHeight: 3
-    armor: 20
-    listOrder: 12600
     experienceTrainingMode: 13
 
-#Power Sword
+## POWER SWORD ##
 #Ignores 30% of armor.
 #Medium weight. Requires melee skill and some strength.
-
   - type: STR_POWER_SWORD
+#RESOURCES
     bigSprite: 260
     floorSprite: 244
     handSprite: 432
-
-    tuMelee: 25
-    flatRate: false
-
+#GENERAL
     weight: 50
+#MELEE
     power: 80
     damageBonus:
       strength: 0.1
@@ -554,32 +542,42 @@ items:
       ArmorEffectiveness: 0.7
       ToArmorPre: 0.1
       ToHealth: 1.0
-
     accuracyMelee: 100
     meleeMultiplier:
       strength: 0.0
       melee: 0.4
       flatHundred: 0.4
+    tuMelee: 25
+    flatRate: false
 
-#Power Dagger
+
+## POWER DAGGER ##
 #Power version of combat knife.
 #Easy to hit. Low basic damage. 
 #Requires reactions and melee skill to properly use.
 #Ignores 10% of armor.
-
   - type: STR_POWER_DAGGER
-    categories: [STR_CAT_MELEE]
-    size: 0.2
-    costSell: 2500
+#RESOURCES
     bigSprite: 262
     floorSprite: 246
     handSprite: 448
-    meleeSound: 110 # Powerswrod miss
-    meleeHitSound: 111 # Powerswrod Hit
+    meleeSound: 110 # Powersword miss
+    meleeHitSound: 111 # Powersword Hit
     meleeAnimation: 48
-
+#GENERAL
+    battleType: 3
+    categories: [STR_CAT_MELEE]
+    costSell: 2500
     weight: 10
-
+    size: 0.2
+    twoHanded: false
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    attraction: 7
+    listOrder: 12900
+#MELEE
+    clipSize: -1
     power: 20
     damageType: 7
     damageBonus:
@@ -589,64 +587,31 @@ items:
       ArmorEffectiveness: 0.9
       ToArmorPre: 0.1
       ToHealth: 1.0
-
     accuracyMelee: 100
     meleeMultiplier:
       reactions: 0.2
       melee: 0.2
       flatHundred: 0.5
-
     tuMelee: 15
     flatRate: false
-
-    clipSize: -1
-    battleType: 3
-    twoHanded: false
-    invWidth: 1
-    invHeight: 3
-    armor: 20
-    attraction: 7
-    listOrder: 12900
     experienceTrainingMode: 13
 
-#Omnissian Axe for enginseers.
+## OMNISSIAN AXE ##
 #Power weapon. Similar to power sword.
-
   - type: STR_OMNISSIAN_AXE
-    categories: [STR_CAT_MELEE]
-    size: 0.2
-    costSell: 2500
+#RESOURCES
     bigSprite: 233
     floorSprite: 229
     handSprite: 296
-    meleeSound: 110 # Powerswrod miss
-    meleeHitSound: 111 # Powerswrod Hit
+    meleeSound: 110 # Powersword miss
+    meleeHitSound: 111 # Powersword Hit
     meleeAnimation: 48
-
-    weight: 50
-    damageType: 7
-    power: 80
-    damageBonus:
-      strength: 0.0
-      melee: 0.2
-
-    tuMelee: 25
-    flatRate: false
-
-    damageAlter:
-      ArmorEffectiveness: 0.7
-      ToArmorPre: 0.1
-      ToHealth: 1.0
-      RandomType: 2 #TFTD [50% - 150%]
-
-    accuracyMelee: 100
-    meleeMultiplier:
-      strength: 0.0
-      melee: 0.4
-      flatHundred: 0.4
-
-    clipSize: -1
+#GENERAL
     battleType: 3
+    categories: [STR_CAT_MELEE]
+    costSell: 2500
+    weight: 50
+    size: 0.2
     twoHanded: false
     invWidth: 2
     invHeight: 3
@@ -654,52 +619,54 @@ items:
     fixedWeapon: true
     fixedWeaponShow: true
     recover: false
+#MELEE
+    clipSize: -1
+    damageType: 7
+    power: 80
+    damageBonus:
+      strength: 0.0
+      melee: 0.2
+    damageAlter:
+      ArmorEffectiveness: 0.7
+      ToArmorPre: 0.1
+      ToHealth: 1.0
+      RandomType: 2 #TFTD [50% - 150%]
+    accuracyMelee: 100
+    meleeMultiplier:
+      strength: 0.0
+      melee: 0.4
+      flatHundred: 0.4
+    tuMelee: 25
+    flatRate: false
     experienceTrainingMode: 13
 
-###LIBRARIAN STAFF###
-
+## LIBRARIAN STAFF ##
+#Psychoforce weapon.
+#Has melee and ranged functional.
   - type: LIBRARIAN_STAFF
-    size: 0.2
-    costSell: 6500
-    weight: 20
+#RESOURCES
     bigSprite: 247
     floorSprite: 233
     handSprite: 360
-#projectile
     bulletSprite: 17
     hitAnimation: 131 #lightning strike
     hitSound: 864 #lightning hit
-    bulletSpeed: 30
-    dropoff: 5
-    battleType: 1
-    clipSize: -1
-    accuracyAimed: 100
-    costAimed:
-      time: 40
-      energy: 15
-      morale: 10
-    confAimed:
-      name: STR_SMITE_SPELL
-    accuracyMultiplier:
-      firing: 0.0
-      psiStrength: 0.5
-      psiSkill: 0.5
-    damageType: 5
-    power: 0 #no damage itself
-    damageBonus:
-      psiStrength: 1.0 # 100% damage bonus from innate psi strength
-      psiSkill: 0.2 # some more damage from psi skill
-    damageAlter:
-      ArmorEffectiveness: 0.7
-      ToArmor: 0.0
-      ToStun: 0.2
-      ToEnergy: 0.1
-    powerRangeThreshold: 5.0
-    powerRangeReduction: 8.0
-#melee
     meleeSound: 110 # Powersword miss
     meleeHitSound: 111 # Powersword Hit
     meleeAnimation: 48
+#GENERAL
+    battleType: 1
+    size: 0.2
+    costSell: 6500
+    weight: 20
+    invWidth: 2
+    invHeight: 3
+    armor: 20
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+#MELEE
+    clipSize: -1
     meleeType: 7
     meleePower: 20
     accuracyMelee: 100
@@ -719,37 +686,53 @@ items:
     tuMelee: 25
     flatMelee:
       time: false
-    invWidth: 2
-    invHeight: 3
-    armor: 20
-    fixedWeapon: true
-    fixedWeaponShow: true
-    recover: false
+#SHOOTING
+    bulletSpeed: 30
+    dropoff: 5
+    damageType: 5 #plasma
+    power: 0 #no damage itself
+    damageBonus:
+      psiStrength: 1.0 # 100% damage bonus from innate psi strength
+      psiSkill: 0.2 # some more damage from psi skill
+    damageAlter:
+      ArmorEffectiveness: 0.7
+      ToArmor: 0.0
+      ToStun: 0.2
+      ToEnergy: 0.1
+    powerRangeThreshold: 5.0
+    powerRangeReduction: 8.0
+    accuracyMultiplier:
+      firing: 0.0
+      psiStrength: 0.5
+      psiSkill: 0.5
+    accuracyAimed: 100
+    costAimed:
+      time: 40
+      energy: 15
+      morale: 10
+    confAimed:
+      name: STR_SMITE_SPELL
     experienceTrainingMode: 26 #train psiSkill (was 28 - psiSkill & psiStr)
 
-#########################################
-########### BOLTERS REBALANCE ###########
 
-##### BOLTGUNS #####
+### BOLTGUNS ###
   - delete: STR_RIFLE
   - delete: STR_RIFLEB
   - delete: STR_RIFLEC
   - delete: STR_RIFLED
   - delete: STR_MCRIFLE
 
-### Standard Astartes Boltgun ###
+## ASTARTES BOLTGUN ##
   - type: STR_SM_BOLTER
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
-#Resources
+#RESOURCES
     bigSprite: 304
     floorSprite: 265
     handSprite: 608
     bulletSprite: 6
     fireSound: 707
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#Info
+#GENERAL
     battleType: 1
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     requiresBuy:
       - STR_BOLTER_TECH
       - STR_SPACE_MARINES_OPERATIONS
@@ -762,12 +745,16 @@ items:
     armor: 30
     attraction: 1
     listOrder: 10300
-#Shooting
+    twoHanded: true
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#SHOOTING
     compatibleAmmo:
       - STR_RIFLE_CLIP
       - STR_RIFLE_CLIP_AP
       - STR_RIFLE_CLIP_EX
     dropoff: 5
+    bulletSpeed: 30
     accuracySnap: 80
     tuSnap: 25
     snapRange: 15
@@ -775,22 +762,19 @@ items:
     tuAuto: 40
     autoRange: 8
     autoShots: 3
-    twoHanded: true
     oneHandedPenalty: 70
 
-### Scoped Astartes Boltgun ###
+## SCOPED ASTARTES BOLTGUN ##
   - type: STR_SM_BOLTER_SCOPED
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
 #RESOURCES
     bigSprite: 305
     floorSprite: 266
     handSprite: 616
     bulletSprite: 6
     fireSound: 707
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#INFO
+#GENERAL
     battleType: 1
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     costBuy: 0
     costSell: 14000
     size: 0.3
@@ -799,14 +783,17 @@ items:
     invHeight: 3
     armor: 30
     attraction: 1
-    bulletSpeed: 30
+    twoHanded: true
     listOrder: 10310
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
 #SHOOTING
     compatibleAmmo:
       - STR_RIFLE_CLIP
       - STR_RIFLE_CLIP_AP
       - STR_RIFLE_CLIP_EX
     dropoff: 5
+    bulletSpeed: 30
     accuracyAimed: 100
     tuAimed: 60
     aimRange: 30
@@ -817,22 +804,19 @@ items:
     tuAuto: 40
     autoRange: 8
     autoShots: 3
-    twoHanded: true
     oneHandedPenalty: 65
 
-#Master Crafted Boltgun
+## MASTER CRAFTED BOLTGUN ##
   - type: STR_MC_BOLTER
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
 #RESOURCES
     bigSprite: 306
     floorSprite: 267
     handSprite: 624
     bulletSprite: 6
     fireSound: 707
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#INFO
+#GENERAL
     battleType: 1
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     costBuy: 0
     costSell: 20000
     size: 0.3
@@ -840,15 +824,18 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 50
+    twoHanded: true
     attraction: 1
-    bulletSpeed: 30
     listOrder: 10320
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
 #SHOOTING
     compatibleAmmo:
       - STR_RIFLE_CLIP
       - STR_RIFLE_CLIP_AP
       - STR_RIFLE_CLIP_EX
     dropoff: 5
+    bulletSpeed: 30
     accuracySnap: 85
     tuSnap: 25
     snapRange: 18
@@ -856,10 +843,9 @@ items:
     tuAuto: 40
     autoRange: 12
     autoShots: 3
-    twoHanded: true
     oneHandedPenalty: 80
 
-#Master Crafted Boltgun (Scoped)
+## MASTER CRAFTED BOLTGUN (SCOPED) ##
   - type: STR_MC_BOLTER_SCOPED
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] 
 #RESOURCES
@@ -868,9 +854,7 @@ items:
     handSprite: 632
     bulletSprite: 6
     fireSound: 707
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#INFO
+#GENERAL
     battleType: 1
     costBuy: 0
     costSell: 24000
@@ -880,14 +864,16 @@ items:
     invHeight: 3
     armor: 50
     attraction: 1
-    bulletSpeed: 30
     listOrder: 10330
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
 #SHOOTING
     compatibleAmmo:
       - STR_RIFLE_CLIP
       - STR_RIFLE_CLIP_AP
       - STR_RIFLE_CLIP_EX
     dropoff: 5
+    bulletSpeed: 30
     accuracyAimed: 100
     tuAimed: 60
     aimRange: 40
@@ -899,27 +885,66 @@ items:
     autoRange: 12
     autoShots: 3
 
+## STANDARD BOLTGUN AMMO ##
+  - type: STR_RIFLE_CLIP
+#GENERAL
+    requiresBuy:
+      - STR_BOLTER_TECH
+    costBuy: 600
+    costSell: 300
+#SHOOTING
+    bulletSprite: 6
+    bulletSpeed: 30
 
-##### BOLTPISTOLS #####
+## HIGH EXPLOSIVE BOLTGUN AMMO ##
+  - type: STR_RIFLE_CLIP_EX
+#GENERAL
+    requiresBuy:
+      - STR_BOLTER_TECH
+    costBuy: 800
+    costSell: 400
+#SHOOTING
+    bulletSprite: 6
+    bulletSpeed: 30
+ 
+## ARMOR PIERCING BOLTGUN AMMO ##
+  - type: STR_RIFLE_CLIP_AP
+#GENERAL
+    requiresBuy:
+      - STR_BOLTER_TECH
+    costBuy: 1200
+    costSell: 600
+#SHOOTING
+    bulletSprite: 6
+    bulletSpeed: 30
+    power: 60
+    damageAlter: #DA BOLTER AP+
+      ArmorEffectiveness: 0.8
+      ToArmorPre: 0.1
+      ToArmor: 0.2
+      ToHealth: 0.9
+      ToStun: 0.2
+
+
+### BOLTPISTOLS ###
   - delete: STR_PISTOL
   - delete: STR_PISTOLB
   - delete: STR_PISTOLS
   - delete: STR_PISTOLH
   - delete: STR_MCPISTOL
 
-#Astartes Boltpistol
+## ASTARTES BOLTPISTOL ##
   - type: STR_SM_BOLTPISTOL
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] 
+ 
 #RESOURCES
     bigSprite: 309
     floorSprite: 270
     handSprite: 648
     bulletSprite: 6
     fireSound: 707
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#INFO
+#GENERAL
     battleType: 1
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     requiresBuy:
       - STR_BOLTPISTOL_TECH
       - STR_SPACE_MARINES_OPERATIONS
@@ -931,14 +956,17 @@ items:
     invHeight: 2
     armor: 30
     attraction: 1
-    bulletSpeed: 30
+    twoHanded: false
     listOrder: 10100
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
 #SHOOTING
     compatibleAmmo:
       - STR_PISTOL_CLIP
       - STR_PISTOL_CLIP_EX
       - STR_PISTOL_CLIP_AP
     dropoff: 5
+    bulletSpeed: 30
     accuracySnap: 75
     tuSnap: 20
     snapRange: 13
@@ -946,21 +974,18 @@ items:
     tuAuto: 35
     autoRange: 6
     autoShots: 3
-    twoHanded: false
 
-#Master Crafted Boltpistol
-  - type: STR_MC_BOLTPISTOL
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] 
+## MASTER CRAFTED BOLTPISTOL ##
+  - type: STR_MC_BOLTPISTOL 
 #RESOURCES
     bigSprite: 311
     floorSprite: 272
     handSprite: 664
     bulletSprite: 6
     fireSound: 707
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#INFO
+#GENERAL
     battleType: 1
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     costBuy: 0
     costSell: 14000
     size: 0.3
@@ -969,109 +994,66 @@ items:
     invHeight: 3
     armor: 30
     attraction: 1
-    bulletSpeed: 30
+    twoHanded: false
     listOrder: 10110
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
 #SHOOTING
     compatibleAmmo:
       - STR_PISTOL_CLIP
       - STR_PISTOL_CLIP_EX
       - STR_PISTOL_CLIP_AP
     dropoff: 5
+    bulletSpeed: 30
     accuracyAimed: 85
     tuAimed: 60
     aimRange: 25
     accuracySnap: 75
     tuSnap: 20
     snapRange: 15
-    twoHanded: false
 
-#################
-#Ammo for Bolters and Bolt-Pistols
-
-  - type: STR_RIFLE_CLIP
-    requiresBuy:
-      - STR_BOLTER_TECH
-    costBuy: 600
-    costSell: 300
-    bulletSprite: 6
-    bulletSpeed: 30
-
-  - type: STR_RIFLE_CLIP_EX
-    requiresBuy:
-      - STR_BOLTER_TECH
-    costBuy: 800
-    costSell: 400
-    bulletSprite: 6
-    bulletSpeed: 30
- 
-  - type: STR_RIFLE_CLIP_AP
-    requiresBuy:
-      - STR_BOLTER_TECH
-    costBuy: 1200
-    costSell: 600
-    bulletSprite: 6
-    bulletSpeed: 30
-    power: 60
-    damageAlter: #DA BOLTER AP+
-      ArmorEffectiveness: 0.8
-      ToArmorPre: 0.1
-      ToArmor: 0.2
-      ToHealth: 0.9
-      ToStun: 0.2
-
+## STANDARD BOLTPISTOL AMMO ##
   - type: STR_PISTOL_CLIP
+#GENERAL
     requiresBuy:
       - STR_BOLTPISTOL_TECH
     costBuy: 300
     costSell: 150
 
+## HIGH EXPLOSIVE BOLTPISTOL AMMO ##
   - type: STR_PISTOL_CLIP_EX
+#GENERAL
     requiresBuy:
       - STR_BOLTPISTOL_TECH
     costBuy: 400
     costSell: 200
 
+## ARMOR PIERCING BOLTPISTOL AMMO ##
   - type: STR_PISTOL_CLIP_AP
+#GENERAL
     requiresBuy:
       - STR_BOLTPISTOL_TECH
     costBuy: 600
     costSell: 300
-    damageAlter: #DA BOLTER AP+
+#SHOOTING
+    damageAlter:
       ArmorEffectiveness: 0.8
       ToArmorPre: 0.1
       ToArmor: 0.2
       ToHealth: 0.9
       ToStun: 0.2
 
-########### KRAK WEAPONS REBALANCE ###########
-#It's an anti-armor weapon, not just a version of frag weapon.
 
-#krak grenade
-  - type: STR_KRAK_GRENADE
-    damageAlter:
-      ToArmorPre: 0.2
-      ArmorEffectiveness: 0.7
-      ToArmor: 0.2
+### MELTA WEAPONS ###
 
-#krak rocket
-#Some armor penetration and less power to balance it.
-  - type: STR_LARGE_ROCKET
-    damageAlter:
-      ToArmorPre: 0.2
-      ArmorEffectiveness: 0.7
-      ToArmor: 0.2
-    power: 100
-
-########### MELTA WEAPONS REBALANCE ###########
-#Melta explosives
-#Now actually deals damage to armor
-#damage type: "Melta"
-
+## MELTA GRENADE ##
   - type: STR_MGRENADE
+#GENERAL
     weight: 8
+#THROWING
     power: 100
     damageType: 11 #MELTA
-    damageAlter: #DA MELTA
+    damageAlter:
       ToArmor: 0.4
       ToArmorPre: 0.4
       ToHealth: 1.0
@@ -1080,18 +1062,24 @@ items:
       FixRadius: 2
     blastRadius: 0
 
-#Melta bomb
-
+## MELTA BOMB ##
   - delete: STR_HIGH_EXPLOSIVE
 
   - type: STR_HIGH_EXPLOSIVE
+#RESOURCES
+    bigSprite: 241
+    floorSprite: 231
+    handSprite: 328
+#GENERAL
+    battleType: 4
     categories: [ STR_CAT_GRENADES, STR_CAT_TACTICAL]
     size: 0.2
     costSell: 20000
     weight: 12
-    bigSprite: 241
-    floorSprite: 231
-    handSprite: 328
+    invWidth: 2
+    invHeight: 3
+    listOrder: 14000
+#SHOOTING
     power: 150
     damageType: 11 #MELTA
     damageAlter: 
@@ -1101,24 +1089,20 @@ items:
       ToTile: 2.0
       ToWound: 0.05
       FixRadius: 4
-    battleType: 4
-    invWidth: 2
-    invHeight: 3
-    listOrder: 14000
 
-#Meltaguns and ammo
-#Single beam. Range 10.
-
+## MELTA GUN ##
   - type: STR_HEAVY_LASER
+#GENERAL
     weight: 20
+#SHOOTING
     bulletSpeed: 50
     maxRange: 10
 
+## MELTAGUN AMMO ##
   - type: STR_MELTA_AMMO
-    shotgunBehavior: 0
-    shotgunPellets: 0
+#SHOOTING
     power: 100
-    damageAlter: #DA MELTA
+    damageAlter:
       RandomType: 0
       ToArmor: 0.4
       ToArmorPre: 0.4
@@ -1129,39 +1113,44 @@ items:
       TileDamageMethod: 2
     powerRangeReduction: 50
     powerRangeThreshold: 10
+    shotgunBehavior: 0
+    shotgunPellets: 0
     vaporColor: 2
     vaporDensity: 5
 
 
-#Multi-Melta and ammo
-#Now have same TU cost as normal melta, fires twice.
-
+## MULTI-MELTA ##
+#Now have same TU cost as normal melta, but fires twice.
   - type: STR_BLASTER_LAUNCHER_TERRAN
+#RESOURCES
     bigSprite: 231
     floorSprite: 236
     handSprite: 344
+#GENERAL
     weight: 40
+#SHOOTING
     bulletSpeed: 50
-
     accuracySnap: 80
     tuSnap: 50
-
     confSnap:
       shots: 2
     maxRange: 15
 
-#Multi-Melta ammo
+## MULTI-MELTA AMMO ##
 #Magazine's capacity has been changed to 20. Capacity of 2 is not fun at all.
-#Large and heavy, just like heavy plasma charge.
+#Large and heavy, just like heavy plasma ammo.
   - type: STR_BLASTER_BOMB
+#RESOURCES
     bigSprite: 232
     floorSprite: 237
     handSprite: 352
+#GENERAL
     weight: 20
     invWidth: 2
     invHeight: 3
-    shotgunBehavior: 0
-    shotgunPellets: 0
+
+#SHOOTING
+    clipSize: 20
     power: 100
     damageAlter: #DA MELTA
       RandomType: 0
@@ -1174,15 +1163,14 @@ items:
       TileDamageMethod: 2
     powerRangeReduction: 50
     powerRangeThreshold: 15
-    clipSize: 20
+    shotgunBehavior: 0
+    shotgunPellets: 0
     vaporColor: 2
     vaporDensity: 5
-################################################
 
-########## LASCANNON REBALANCE #############
-#Astartes Lascannon
-
+## ASTARTES LASCANNON  ##
   - type: STR_LASCAN
+#RESOURCES
     bigSprite: 258
     floorSprite: 242
     handSprite: 416
@@ -1190,11 +1178,10 @@ items:
     compatibleAmmo:
       - STR_LASCAN_CLIP
 
-
-#Ammo
+## ASTARTES LASCANNON AMMO ##
   - type: STR_LASCAN_CLIP
-    power: 120 #200
-#Hotshot effect
+#SHOOTING
+    power: 120
     damageAlter:
       ToArmorPre: 0.3
       ArmorEffectiveness: 0.75
@@ -1203,14 +1190,12 @@ items:
       ToStun: 0.0
 
 
-###########################################
-
-########### FLAMER WEAPONS REBALANCE ###########
-#Flamer
+### FLAMETHROWERS ###
+## FLAMER ##
 #Unable to reaction fire.
   - type: STR_FLAMETHROWER
+#SHOOTING
     tuSnap: 0
-
     tuAimed: 25
     tuAuto: 40
     autoShots: 3
@@ -1220,26 +1205,27 @@ items:
       name: STR_CUSTOM_SNAPSHOT
     maxRange: 6
 
-#Flamer Ammo
+## FLAMER AMMO ##
   - type: STR_FLAMETHROWER_CLIP
+#SHOOTING
+    clipSize: 30
     power: 40
     damageAlter:
       RandomType: 2 #TFTD [50% - 150%]
       ToHealth: 1.0
       ToMorale: 0.5
-    blastRadius: 1 #2
+    blastRadius: 1
     explosionSpeed: 2
-    clipSize: 30
 
-#Heavy Flamer
+## HEAVY FLAMER ##
 #Unable to reaction fire.
   - type: STR_HFLAMER
+#RESOURCES
     bigSprite: 246
     floorSprite: 239
     handSprite: 256
-
+#SHOOTING
     tuSnap: 0
-
     arcingShot: false
     tuAimed: 25
     tuAuto: 40
@@ -1248,22 +1234,31 @@ items:
     accuracyAimed: 150
     confAimed:
       name: STR_CUSTOM_SNAPSHOT
+    maxRange: 10
 
-    maxRange: 10 #20
-
-#Heavy Flamer Ammo
+## HEAVY FLAMER AMMO ##
   - delete: STR_HFLAMER_CLIP
 
   - type: STR_HFLAMER_CLIP
-    categories: [STR_CAT_FLAMER, STR_CAT_TERMINATOR] 
-    size: 0.3
-    costSell: 12000
-    weight: 15
+#RESOURCES
     bigSprite: 277
     floorSprite: 255
     handSprite: 520
     hitAnimation: 88 #Fire
     explosionHitSound: 771 #Flame_hit
+
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_FLAMER, STR_CAT_TERMINATOR] 
+    size: 0.3
+    costSell: 12000
+    weight: 15
+    invWidth: 2
+    invHeight: 1
+    armor: 40
+    listOrder: 13310
+#SHOOTING
+    clipSize: 30
     power: 50
     damageType: 2
     damageAlter:
@@ -1272,82 +1267,73 @@ items:
       ToMorale: 0.5
     blastRadius: 2
     explosionSpeed: 2
-    clipSize: 30
-    costThrow:
-      energy: 20
-    battleType: 2
-    invWidth: 2
-    invHeight: 1
-    armor: 40
-    listOrder: 13310
 
+### PLASMA WEAPONS ###
 
-################################################
-
-########### PLASMA WEAPONS REBALANCE ###########
-
-### Plasma pistol ###
+## PLASMA PISTOL ##
 #Maximum 2 shots per turn
 #Range 12
-
-#Plasma Pistol
   - type: STR_PLASMA_PISTOL_TERRAN
+#SHOOTING
     tuSnap: 35
 
-#Master Crafted Plasma Pistol
+## MASTER CRAFTED PLASMA PISTOL ##
+#Maximum 2 shots per turn
+#Range 12
   - type: STR_MCPLASMA_PISTOL
+#SHOOTING
     tuSnap: 35
 
-### Plasmagun ###
+## PLASMAGUN ##
 #Maximum 3 shots per turn
 #No autoshot
 #Range 18
-
-#Plasmagun
   - type: STR_MCPLASMA_RIFLE
+#SHOOTING
     tuSnap: 30
     snapRange: 18
     tuAuto: 0
 
-#Master Crafted Plasmagun
+## MASTER CRAFTED PLASMAGUN ##
+#Maximum 3 shots per turn
+#No autoshot
+#Range 18
   - type: STR_PLASMA_RIFLE_TERRAN
+#SHOOTING
     tuSnap: 30
     snapRange: 18
     tuAuto: 0
 
-### Heavy plasma (Plasma Cannon) ###
+## PLASMA CANNON ##
 #Maximum 2 snap shots or 1 aimed shot per turn
 #Range 24
-
   - type: STR_HEAVY_PLASMA_TERRAN
-#change sprites
+#RESOURCES
     bigSprite: 239
     floorSprite: 223
     handSprite: 384
-
+#SHOOTING
     tuSnap: 45
     accuracySnap: 75
     snapRange: 24
-
     tuAimed: 90
     aimRange: 24
     accuracyAimed: 110
 
-#Master Crafted Heavy Plasma
+## MASTER CRAFTED HEAVY PLASMA ##
+#delete?
   - type: STR_HEAVY_PLASMA_MC
-
+#SHOOTING
     tuSnap: 45
     accuracySnap: 75
     snapRange: 24
-
     tuAimed: 90
     aimRange: 24
     accuracyAimed: 110
 
-### Plasma Ammo ###
-#ignore 20% of armor
-
+## PLASMA PISTOL AMMO ##
   - type: STR_PLASMA_PISTOL_CLIP
+#SHOOTING
     power: 90
     damageAlter:
       RandomType: 0
@@ -1356,7 +1342,9 @@ items:
       ToHealth: 1.0
       ArmorEffectiveness: 0.8
 
+## PLASMAGUN AMMO ##
   - type: STR_PLASMA_RIFLE_CLIP
+#SHOOTING
     power: 90
     damageAlter:
       RandomType: 0
@@ -1365,11 +1353,12 @@ items:
       ToHealth: 1.0
       ArmorEffectiveness: 0.8
 
+## PLASMA CANNON AMMO ##
   - type: STR_HEAVY_PLASMA_CLIP
-#change sprites
+#RESOURCES
     floorSprite: 238
     handSprite: 392
-
+#SHOOTING
     power: 90
     damageAlter:
       RandomType: 0
@@ -1378,21 +1367,88 @@ items:
       ToHealth: 1.0
       ArmorEffectiveness: 0.8
 
-################################################
 
-##### Items for apothecary #####
-#Narthecium medical functional
+### UTILITY ITEMS ###
+
+## FIRST AID KIT ##
+  - type: STR_FIRST_AID_KIT
+#RESOURCES
+    bigSprite: 238
+    floorSprite: 227
+    handSprite: 304
+
+#GENERAL
+    battleType: 6
+    size: 0.1
+    costSell: 5000
+    weight: 4
+    invWidth: 1
+    invHeight: 2
+#USAGE
+    painKiller: 1
+    heal: 3
+    stimulant: 1
+    woundRecovery: 1
+    healthRecovery: 3
+    stunRecovery: 4
+    energyRecovery: 10
+    tuUse: 10
+    flatRate: true
+    allowSelfHeal: true
+    isConsumable: true
+
+## FIRE EXTINGUISHER ##
+  - type: STR_FIRE_EXTINGUISHER
+#RESOURCES
+    bigSprite: 302
+    floorSprite: 264
+    handSprite: 600
+    bulletSprite: 1
+    fireSound: 771
+    explosionHitSound: 771
+    hitAnimation: 104
+#GENERAL
+    battleType: 1
+    size: 0.2
+    costBuy: 800
+    costSell: 400
+    weight: 6
+    invWidth: 1
+    invHeight: 2
+#SHOOTING
+    isFireExtinguisher: true
+    bulletSpeed: 80
+    clipSize: 4
+    damageType: 9
+    power: 20
+    damageAlter:
+      IgnoreSelfDestruct: true
+      RandomType: 3
+      ToStun: 0.5
+    blastRadius: 1
+    tuAimed: 25
+    accuracyAimed: 150
+    maxRange: 6
+    experienceTrainingMode: 32
+
+## NARTHECIUM MEDI KIT ##
   - delete: AUX_MEDI_KIT
 
   - type: AUX_MEDI_KIT
+#RESOURCES
+    bigSprite: 243
+    floorSprite: 243
+#GENERAL
+    battleType: 6
     size: 0.1
     costSell: 50
     weight: 0
-    bigSprite: 243
-    floorSprite: 243
-    battleType: 6
     invWidth: 2
     invHeight: 3
+    recover: false
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_HAND
+#USAGE
     painKiller: 30
     heal: 30
     stimulant: 30
@@ -1404,28 +1460,31 @@ items:
     experienceTrainingMode: 19 #*** makes the apothecary medikit item train bravery ***
     allowSelfHeal: true
     flatRate: true
-    recover: false
-    fixedWeapon: true
-    defaultInventorySlot: STR_LEFT_HAND
 
-##### Buff-item for Sergeant Armors ######
-  - type: STR_SERGEANT_BANNER #          
-    categories: [ STR_CAT_EQUIPMENT]
+### BUFF ITEMS FOR SM ARMOR ###
+
+## SERGEANT TU BUFF ##
+  - type: STR_SERGEANT_BUFF
+#RESOURCES
     specialIconSprite: 202
-    size: 0.3
-    confAimed:
-      shots: 1              
-      name: STR_INSPIRE
-    weight: 20
-    bigSprite: 223
-    floorSprite: 109
-    handSprite: 240
     fireSound: [101, 102, 103, 104, 105, 106, 107, 108]
     hitAnimation: 100 #TU Buff
+#GENERAL
+    battleType: 1
+    categories: [ STR_CAT_EQUIPMENT]
+    size: 0.3
+    weight: 0
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    armor: 12
+    experienceTrainingMode: 19
+#SHOOTING
+    clipSize: -1
     power: 10
     damageBonus:
       bravery: 0.5
-    damageType: 0 #10
+    damageType: 0 #NONE
     damageAlter:
       RandomType: 3
       RadiusEffectiveness: 0.0
@@ -1444,31 +1503,32 @@ items:
     costAimed:
       time: 35
       energy: 30
-    clipSize: -1
+    confAimed:
+      shots: 1              
+      name: STR_INSPIRE
     flatRate: false
-    battleType: 1
     arcingShot: false
     maxRange: 16
-    experienceTrainingMode: 19
+
+
+## CHAPLAIN MORALE & ENERGY BUFF ##
+  - type: STR_CHAPLAIN_BUFF
+#RESOURCES
+    specialIconSprite: 203
+    fireSound: [758, 759, 760, 761, 762, 763]
+    hitAnimation: 121 #Morale & Energy buff
+#GENERAL
+    battleType: 1
+    categories: [ STR_CAT_EQUIPMENT]
+    size: 0.3
+    weight: 0
     invWidth: 1
     invHeight: 2
     fixedWeapon: true
     armor: 12
-
-##### Buff-item for Chaplain Armor ######
-  - type: STR_CHAPLAIN_BANNER #          
-    categories: [ STR_CAT_EQUIPMENT]
-    specialIconSprite: 203
-    size: 0.3
-    confAimed:
-      shots: 1              
-      name: STR_ZEAL_BUFF
-    weight: 20
-    bigSprite: 223
-    floorSprite: 109
-    handSprite: 240
-    fireSound: [758, 759, 760, 761, 762, 763]
-    hitAnimation: 121 #Morale & Energy buff
+    experienceTrainingMode: 19
+#SHOOTING
+    clipSize: -1
     power: 10
     damageBonus:
       bravery: 0.5
@@ -1492,37 +1552,37 @@ items:
     costAimed:
       time: 25
       energy: 15
-    clipSize: -1
-    flatRate: false
-    battleType: 1
-    arcingShot: false
-    maxRange: 16
-    experienceTrainingMode: 19
-    invWidth: 1
-    invHeight: 2
-    fixedWeapon: true
-    armor: 12
-
-
-##### Buff-item for captain armor #####
-  - type: STR_CAPTAIN_BANNER #          
-    categories: [ STR_CAT_EQUIPMENT]
-    specialIconSprite: 201
-    size: 0.3
     confAimed:
       shots: 1              
-      name: STR_FTE
-    weight: 20
-    bigSprite: 223
-    floorSprite: 109
-    handSprite: 240
+      name: STR_ZEAL_BUFF
+    flatRate: false
+    arcingShot: false
+    maxRange: 16
+
+## CAPTAIN AOE-BUFF ##
+  - type: STR_CAPTAIN_BUFF
+#RESOURCES
+    specialIconSprite: 201
     bulletSprite: 1
-    explosionHitSound: 100 #kBanner
+    explosionHitSound: 100
     hitAnimation: 96 #AOE TU & Morale  buff
+#GENERAL
+    battleType: 1
+    categories: [ STR_CAT_EQUIPMENT]
+    weight: 0
+    size: 0.3
+    invWidth: 2
+    invHeight: 3
+    fixedWeapon: true
+    armor: 12
+    experienceTrainingMode: 32
+#SHOOTING
+    clipSize: -1
     power: 10
+    bulletSpeed: 80
     damageBonus:
       bravery: 0.5
-    damageType: 0
+    damageType: 0 #NONE
     damageAlter:
       RandomType: 3
       FixRadius: 3
@@ -1541,33 +1601,39 @@ items:
     costAimed:
       time: 65
       energy: 30 
-    clipSize: -1
-    flatRate: false
-    battleType: 1
-    arcingShot: false
-    maxRange: 20
-    bulletSpeed: 80
-    experienceTrainingMode: 32
-    invWidth: 2
-    invHeight: 3
-    fixedWeapon: true
-    armor: 12
-###
-  - type: STR_LIBRARIAN_BUFF #          
-    categories: [ STR_CAT_EQUIPMENT]
-    specialIconSprite: 205
-    size: 0.3
     confAimed:
       shots: 1              
-      name: STR_FORCE_DOME
-    weight: 60
+      name: STR_FTE
+    flatRate: false
+    arcingShot: false
+    maxRange: 20
+
+
+## LIBRARIAN SHIELD BUFF ##
+  - type: STR_LIBRARIAN_BUFF
+#RESOURCES
+    specialIconSprite: 205
     fireSound: 778
     hitAnimation: 141 #Shield Buff
 
+#GENERAL
+    battleType: 1
+    categories: [ STR_CAT_EQUIPMENT]
+    weight: 0
+    size: 0.3
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    armor: 12
+    experienceTrainingMode: 26
+    tags:
+      ITEM_ADDS_ENERGY_SHIELD_FROM_POWER: 150
+      ITEM_SETS_ENERGY_SHIELD_DECAY: 50
+#SHOOTING
+    clipSize: -1
     damageBonus:
       psiStrength: 1.0
-
-    damageType: 0
+    damageType: 0 #NONE
     damageAlter:
       RandomType: 3
       ToArmor: 0.0
@@ -1576,64 +1642,60 @@ items:
       ToWound: 0.0
       ToTile: 0.0
       ArmorEffectiveness: 0.0
-
     accuracyAimed: 200
     accuracyMultiplier:
       firing: 0.0
       psiStrength: 0.5
       psiSkill: 0.5
-
     costAimed:
       time: 55
       energy: 20
       morale: 20
-
-    clipSize: -1
+    confAimed:
+      shots: 1              
+      name: STR_FORCE_DOME
     flatRate: true
-    battleType: 1
     arcingShot: false
     maxRange: 16
-    experienceTrainingMode: 26
-    invWidth: 1
-    invHeight: 2
-    fixedWeapon: true
-    armor: 12
 
-    tags:
-      ITEM_ADDS_ENERGY_SHIELD_FROM_POWER: 100
-      ITEM_SETS_ENERGY_SHIELD_DECAY: 50
 
-### Spellbooks ###
-
+### SPELLBOOKS ###
   - delete: STR_PATCHMORAL
   - delete: STR_PATCHSPEED
 
-# Tome of Vision. Size 2x1
+## TOME OF VISION (MIND PROBE) ##
   - type: STR_MIND_PROBE
-    requires:
-      - STR_MIND_PROBE
+#RESOURCES
     bigSprite: 248
     floorSprite: 234
+#GENERAL
+    requires:
+      - STR_MIND_PROBE
     invWidth: 1
     invHeight: 2
     psiRequired: true
 
-# Tome of the Fear (Panic)
-
+## TOME OF THE FEAR (PANIC) #
   - type: STR_TOME_OF_FEAR
+#RESOURCES
+    bigSprite: 252
+    floorSprite: 234
+    handSprite: 368
+    hitSound: 36
+#GENERAL
+    battleType: 9
     requires:
       - STR_TOME_OF_FEAR
     size: 0.1
     costSell: 80000
     weight: 5
-    bigSprite: 252
-    floorSprite: 234
-    handSprite: 368
-    hitSound: 36
-    battleType: 9
     invWidth: 1
     invHeight: 2
     twoHanded: false
+    fixedWeapon: false
+    recover: true
+    psiRequired: true
+#SHOOTING
     flatRate: false
     costPanic:
       time: 30
@@ -1642,27 +1704,31 @@ items:
     costMindControl:
       time: 0
     LOSRequired: true
-    fixedWeapon: false
-    recover: true
 
-# Tome of the Mind (Mind Control)
 
+## TOME OF THE MIND (MIND CONTROL) ##
   - delete: STR_PSI_AMP
 
   - type: STR_PSI_AMP
+#RESOURCES
+    bigSprite: 249
+    floorSprite: 234
+    handSprite: 368
+    hitSound: 36
+#GENERAL
+    battleType: 9
     requires:
       - STR_PSI_AMP
     size: 0.1
     costSell: 80000
     weight: 5
-    bigSprite: 249
-    floorSprite: 234
-    handSprite: 368
-    hitSound: 36
-    battleType: 9
     invWidth: 1
     invHeight: 2
     twoHanded: false
+    fixedWeapon: false
+    recover: true
+    psiRequired: true
+#SHOOTING
     flatRate: false
     costPanic:
       time: 0
@@ -1671,12 +1737,18 @@ items:
       energy: 25
       morale: 20
     LOSRequired: true
-    fixedWeapon: false
-    recover: true
 
-# Tome of Weakness
 
+## TOME OF WEAKNESS (STUN, TU DAMAGE, ENERGY DAMAGE) ##
   - type: STR_TOME_OF_WEAKNESS
+#RESOURCES
+    bigSprite: 251
+    floorSprite: 234
+    handSprite: 368
+    explosionHitSound: 778
+    hitAnimation: 96
+#GENERAL
+    battleType: 9
     requires:
       - STR_TOME_OF_WEAKNESS
     size: 0.1
@@ -1684,12 +1756,23 @@ items:
     weight: 5
     invWidth: 1
     invHeight: 2
-    battleType: 9
-    bigSprite: 251
-    floorSprite: 234
-    handSprite: 368
-    explosionHitSound: 778
-    hitAnimation: 96
+    fixedWeapon: false
+    recover: true
+    psiRequired: true
+#SHOOTING
+    clipSize: -1
+    damageType: 6
+    power: 0
+    damageBonus:
+      psiStrength: 1.0
+    blastRadius: 5
+    damageAlter:
+      RandomType: 2
+      ArmorEffectiveness: 0.25
+      ToTime: 1.0
+      ToEnergy: 0.6
+      ToStun: 0.2
+      ToTile: 0.0
     costUse:
       time: 20
       energy: 10
@@ -1704,30 +1787,18 @@ items:
     LOSRequired: true
     powerRangeThreshold: 10.0
     powerRangeReduction: 5.0
-    damageType: 6
-    power: 0
-    clipSize: -1
-    damageBonus:
-      psiStrength: 1.0
-    blastRadius: 5
-    damageAlter:
-      RandomType: 2
-      ArmorEffectiveness: 0.25
-      ToTime: 1.0
-      ToEnergy: 0.6
-      ToStun: 0.2
-      ToTile: 0.0
-    LOSRequired: true
-    fixedWeapon: false
-    recover: true
 
-# Tome of Smoke
+## TOME OF SMOKE (SMOKESCREEN) ##
   - type: STR_PATCHSMOKE
-    requires:
-      - STR_PATCHSMOKE
+#RESOURCES
     bigSprite: 250
     floorSprite: 234
+    handSprite: 368
+#GENERAL
+    requires:
+      - STR_PATCHSMOKE
     psiRequired: true
+#SHOOTING
     power: 0
     damageBonus:
       psiStrength: 1.0
@@ -1741,67 +1812,82 @@ items:
       stun: 10
       morale: 5
 
-#Assault Cannon
+### TERMINATOR RANGE WEAPONS ###
 
+## ASSAULT CANNON ##
   - type: STR_ASSC
+#RESOURCES
     bigSprite: 269
     floorSprite: 250
     handSprite: 480
 
 
-#Stormbolter (Combi-Bolter)
-
+## STORMBOLTER (COMBI-BOLTER) ##
   - delete: STR_HB
 
-  - type: STR_HB  
-    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
-    size: 0.6
-    dropoff: 5
-    costSell: 30000
-    weight: 60
+  - type: STR_HB
+#RESOURCES
     bigSprite: 270
     floorSprite: 251
     handSprite: 488
-
     bulletSprite: 6
     fireSound: 707
-
-    bulletSpeed: 30
-    compatibleAmmo:
-      - STR_HB_CLIP
-      - STR_HB_CLIP_EX
-      - STR_HB_CLIP_AP
-      - STR_HB_BELT
-    accuracySnap: 75
-    tuSnap: 25
-    confSnap:
-      shots: 2
+#GENERAL
     battleType: 1
-    twoHanded: true
-    oneHandedPenalty: 100
+    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
+    size: 0.6
+    costSell: 30000
+    weight: 60
     invWidth: 2
     invHeight: 3
     armor: 30
     attraction: 8
     listOrder: 13100
+    twoHanded: true #twohanded weapon
+    oneHandedPenalty: 100 #but without onehanded penalty
     tags:
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#SHOOTING
+    dropoff: 5
+    bulletSpeed: 30
+    compatibleAmmo:
+      - STR_HB_CLIP
+      - STR_HB_CLIP_EX
+      - STR_HB_CLIP_AP
+#      - STR_HB_BELT
+    accuracySnap: 75
+    tuSnap: 25
+    confSnap:
+      shots: 2
 
-#Stormbolter Standard Magazine
+
+## STORMBOLTER STANDARD MAGAZINE ##
   - delete: STR_HB_CLIP
 
   - type: STR_HB_CLIP
+#RESOURCES
+    bigSprite: 271
+    floorSprite: 252
+    handSprite: 496
+    hitSound: 708
+    hitAnimation: 26
+#GENERAL
+    battleType: 2
     categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
     size: 0.3
     costSell: 1000
     weight: 15
-    bigSprite: 271
-    floorSprite: 252
-    handSprite: 496
-
-    hitSound: 708
-    hitAnimation: 26
-
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    attraction: 8
+    listOrder: 13120
+    tags:
+      ITEM_AMMO_COLOR: 0
+#SHOOTING
+    clipSize: 40
+    damageType: 1
+    power: 60
     damageAlter:
       RandomType: 2
       ToArmorPre: 0.05
@@ -1810,29 +1896,31 @@ items:
       ToHealth: 1.0
       ToStun: 0.5
     explosionSpeed: 5
-    power: 60
-    damageType: 1
-    clipSize: 40
+
+## STORMBOLTER HIGH EXPLOSIVE MAGAZINE ##
+  - type: STR_HB_CLIP_EX
+#RESOURCES
+    bigSprite: 272
+    floorSprite: 252
+    handSprite: 496
+    hitSound: 708
+#GENERAL
     battleType: 2
+    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
+    size: 0.3
+    costSell: 1000
+    weight: 15
     armor: 30
     invWidth: 1
     invHeight: 2
     attraction: 8
     listOrder: 13120
     tags:
-      ITEM_AMMO_COLOR: 0
-
-#Stormbolter EX Magazine
-
-  - type: STR_HB_CLIP_EX
-    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
-    size: 0.3
-    costSell: 1000
-    weight: 15
-    bigSprite: 272
-    floorSprite: 252
-    handSprite: 496
-    hitSound: 708
+      ITEM_AMMO_COLOR: 2
+#SHOOTING
+    clipSize: 40
+    damageType: 3
+    power: 60
     damageAlter:
       RandomType: 2
       ToArmorPre: 0.05
@@ -1842,43 +1930,21 @@ items:
       ToStun: 0.5
     blastRadius: 1
     explosionSpeed: 5
-    power: 60
-    damageType: 3
-    clipSize: 40
-    battleType: 2
-    armor: 30
-    invWidth: 1
-    invHeight: 2
-    attraction: 8
-    listOrder: 13120
-    tags:
-      ITEM_AMMO_COLOR: 2
 
-#Stormbolter AP Magazine
-
+## STORMBOLTER ARMOR PIERCING MAGAZINE ##
   - type: STR_HB_CLIP_AP
+#RESOURCES
+    bigSprite: 273
+    floorSprite: 252
+    handSprite: 496
+    hitSound: 708
+    hitAnimation: 26
+#GENERAL
+    battleType: 2
     categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
     size: 0.3
     costSell: 1000
     weight: 15
-    bigSprite: 273
-    floorSprite: 252
-    handSprite: 496
-
-    hitSound: 708
-    hitAnimation: 26
-
-    damageAlter: #DA BOLTER AP+
-      ArmorEffectiveness: 0.8
-      ToArmorPre: 0.1
-      ToArmor: 0.2
-      ToHealth: 0.9
-      ToStun: 0.2
-    explosionSpeed: 5
-    power: 60
-    damageType: 1
-    clipSize: 40
-    battleType: 2
     armor: 30
     invWidth: 1
     invHeight: 2
@@ -1886,56 +1952,74 @@ items:
     listOrder: 13120
     tags:
       ITEM_AMMO_COLOR: 1
+#SHOOTING
+    clipSize: 40
+    damageType: 1
+    power: 60
+    damageAlter:
+      ArmorEffectiveness: 0.8
+      ToArmorPre: 0.1
+      ToArmor: 0.2
+      ToHealth: 0.9
+      ToStun: 0.2
+    explosionSpeed: 5
 
 # TEST Stormbolter Belt
+  # - type: STR_HB_BELT
+    # categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
+    # size: 0.3
+    # costSell: 1000
+    # weight: 30
+    # bigSprite: 276
+    # floorSprite: 254
+    # handSprite: 512
 
-  - type: STR_HB_BELT
-    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
-    size: 0.3
-    costSell: 1000
-    weight: 30
-    bigSprite: 276
-    floorSprite: 254
-    handSprite: 512
+    # hitSound: 708
+    # hitAnimation: 26
 
-    hitSound: 708
-    hitAnimation: 26
+    # damageAlter:
+      # RandomType: 2
+      # ToArmorPre: 0.05
+      # ArmorEffectiveness: 0.9
+      # ToArmor: 0.1
+      # ToHealth: 1.0
+      # ToStun: 0.5
+    # explosionSpeed: 5
+    # power: 60
+    # damageType: 1
+    # clipSize: 80
+    # battleType: 2
+    # armor: 30
+    # invWidth: 2
+    # invHeight: 3
+    # attraction: 8
+    # listOrder: 13120
 
-    damageAlter:
-      RandomType: 2
-      ToArmorPre: 0.05
-      ArmorEffectiveness: 0.9
-      ToArmor: 0.1
-      ToHealth: 1.0
-      ToStun: 0.5
-    explosionSpeed: 5
-    power: 60
-    damageType: 1
-    clipSize: 80
-    battleType: 2
-    armor: 30
-    invWidth: 2
-    invHeight: 3
-    attraction: 8
-    listOrder: 13120
 
-### Graviton Weapons
-#Stun Round for Grav gun
+
+### GRAVITON WEAPONS ###
+
+#STUN ROUND FOR GRAVGUN
   - type: STR_NONLETHAL_GRAVROUND  
+#RESOURCES
+    bigSprite: 240
+    floorSprite: 230
+    handSprite: 320
+    hitSound: 119
+    hitAnimation: 111
+#GENERAL
+    battleType: 2
     categories: [STR_CAT_GRAVGUN]
     requires:
       - STR_STUN_BOMB
     size: 0.1
     costSell: 300
     weight: 2
-    bigSprite: 240
-    floorSprite: 230
-    handSprite: 320
-    hitSound: 119
-    hitAnimation: 111
+    listOrder: 11820
+#SHOOTING
+    clipSize: 1
     power: 100
     damageType: 1
-    clipSize: 1
     damageAlter: #NON-LETHAL GRAV GUN
       RandomType: 2 #TFTD [50% - 150%]
       ArmorEffectiveness: 0.0
@@ -1945,69 +2029,68 @@ items:
       ToStun: 1.0
       RandomWound: false
       ToWound: 0.0
-    battleType: 2
-    listOrder: 11820
 
+## GRAVGUN ##
   - type: STR_SMALL_LAUNCHER_TERRAN
+#GENERAL
     compatibleAmmo:
       - STR_STUN_BOMB
       - STR_NONLETHAL_GRAVROUND
 
+## MC GRAVGUN (????) ##
   - type: STR_GRAVGUN_MC
+#GENERAL
     compatibleAmmo:
       - STR_STUN_BOMB
       - STR_NONLETHAL_GRAVROUND
 
 ### DREADNOUGHT WEAPONS ###
-#dreadnought fist with bolter
 
+## DREADNOUGHT FIST\BOLTER ##
   - delete: STR_DREAD_MELEE_WEAPON
 
   - type: STR_DREAD_MELEE_WEAPON
-    categories: [STR_CAT_AUXILIARY]  
-    weight: 3
+#RESOURCES
     bigSprite: 282
-
-    battleType: 1
-
-    flatRate: false
-
-#projectile
     bulletSprite: 6
     fireSound: 707
-    bulletSpeed: 50
-    explosionSpeed: 5
     hitSound: 708
     hitAnimation: 26
-
+    meleeSound: 710 # 710 powerfist miss
+    meleeHitSound: 772 # 772 powerfist hit
+    meleeAnimation: 28 # 28 bolt anitmation
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_AUXILIARY]  
+    weight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_HAND
+    invWidth: 2
+    invHeight: 3
+    recover: false
+#SHOOTING
     clipSize: -1
-
+    bulletSpeed: 50
     damageType: 1
     power: 60
-
     damageAlter: #DA BOLTER
       ToArmorPre: 0.05
       ArmorEffectiveness: 0.9
       ToArmor: 0.1
       ToHealth: 1.0
       ToStun: 0.5
-
     accuracyAimed: 75
     tuAimed: 20
     confAimed:
       shots: 2
       name: STR_CUSTOM_DOUBLE_SHOT
-
     accuracyAuto: 50
     tuAuto: 50
     confAuto:
       shots: 6
-
-#melee
-
-    meleeSound: 710 # 710 powerfist miss
-    meleeHitSound: 772 # 772 powerfist hit
-    meleeAnimation: 28 # 28 bolt anitmation
+    flatRate: false
+    explosionSpeed: 5
+#MELEE
     meleeType: 7
     meleePower: 100
     accuracyMelee: 100
@@ -2026,19 +2109,20 @@ items:
     flatMelee:
       time: false
 
-    fixedWeapon: true
-    defaultInventorySlot: STR_LEFT_HAND
-    invWidth: 2
-    invHeight: 3
-    recover: false
-
-
-#dreadnought fist with flamer
+## DREADNOUGHT FIST\FLAMER ##
   - type: AUX_DREAD_FLAMER
-    weight: 3
+#RESOURCES
     bigSprite: 283
+    meleeSound: 710 # 710 powerfist miss
+    meleeHitSound: 772 # 772 powerfist hit
+    meleeAnimation: 28 # 28 bolt anitmation
+#GENERAL
+    weight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_HAND
 
-#projectile
+#SHOOTING
+    clipSize: -1
     power: 50
     damageType: 2
     damageAlter:
@@ -2048,7 +2132,6 @@ items:
     blastRadius: 2
     maxRange: 10
     explosionSpeed: 2
-
     arcingShot: false
     tuAimed: 25
     tuAuto: 40
@@ -2057,12 +2140,7 @@ items:
     accuracyAimed: 150
     confAimed:
       name: STR_CUSTOM_SNAPSHOT
-
-#melee
-
-    meleeSound: 710 # 710 powerfist miss
-    meleeHitSound: 772 # 772 powerfist hit
-    meleeAnimation: 28 # 28 bolt anitmation
+#MELEE
     meleeType: 7
     meleePower: 100
     accuracyMelee: 100
@@ -2081,25 +2159,17 @@ items:
     flatMelee:
       time: false
 
-    fixedWeapon: true
-    defaultInventorySlot: STR_RIGHT_HAND
 
-
-#Dreadnought Plasma Cannon
+## DREADNOUGHT PLASMA CANNON ##
 #Maximum 2 snap shots or 1 aimed shot per turn
 #Range 24
   - type: AUX_HOVERTANK_PLASMA
+#RESOURCES
     bigSprite: 284
-    flatRate: false
-
-    tuSnap: 45
-    accuracySnap: 75
-    SnapRange: 24
-
-    tuAimed: 90
-    aimRange: 24
-    accuracyAimed: 110
-
+#GENERAL
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_HAND
+#SHOOTING
     power: 90
     damageAlter:
       RandomType: 0
@@ -2108,64 +2178,74 @@ items:
       ToHealth: 1.0
       ArmorEffectiveness: 0.8
       RadiusReduction: 10.0
+    tuSnap: 45
+    accuracySnap: 75
+    SnapRange: 24
+    tuAimed: 90
+    aimRange: 24
+    accuracyAimed: 110
+    flatRate: false
 
-    fixedWeapon: true
-    defaultInventorySlot: STR_RIGHT_HAND
 
-#Dreadnought Missile Launcher (8 krak missiles)
-
+## DREADNOUGHT MISSILE LAUNCHER ##
+#(8 krak missiles)
   - delete: AUX_HOVERTANK_LAUNCHER
   - delete: STR_HWP_FUSION_BOMB
 
   - type: STR_DREAD_MISSILE_LAUNCHER
+#RESOURCES
     bigSprite: 285
-
-    weight: 1
     floorSprite: 0
     handSprite: 0
     bulletSprite: 0
     fireSound: 52
-
-    compatibleAmmo:
-      - STR_DREAD_MISSILES
-
-    flatRate: false
-
-    accuracySnap: 55
-    accuracyAimed: 115
-    tuSnap: 55
-    tuAimed: 75
-
+#GENERAL
     battleType: 1
-    fixedWeapon: true
-    defaultInventorySlot: STR_RIGHT_HAND
+    weight: 1
     invWidth: 2
     invHeight: 3
     recover: false
     listOrder: 2820
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_HAND
+#SHOOTING
+    compatibleAmmo:
+      - STR_DREAD_MISSILES
+    accuracySnap: 55
+    accuracyAimed: 115
+    tuSnap: 55
+    tuAimed: 75
+    flatRate: false
 
+## MISSILES FOR DREADNOUGHT MISSILE LAUNCHER ##
   - type: STR_DREAD_MISSILES
+#RESOURCES
     bigSprite: 300
     hitAnimation: 184
+#GENERAL
+    battleType: 2
     weight: 1
-
+    invWidth: 2
+    invHeight: 2
+#SHOOTING
+    clipSize: 8
     power: 100
     damageType: 3
     damageAlter:
       ToArmorPre: 0.2
       ArmorEffectiveness: 0.7
       ToArmor: 0.2
-
     blastRadius: 1
-    clipSize: 8
-    invWidth: 2
-    invHeight: 2
-    battleType: 2
 
-#Dreadnought Lascannon
+
+## DREADNOUGHT LASCANNON ##
   - type: AUX_HOVERTANK_LASER
+#RESOURCES
     bigSprite: 286
-    flatRate: false
+#GENERAL
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_HAND
+#SHOOTING
     power: 120
     damageAlter:
       ToArmorPre: 0.3
@@ -2173,44 +2253,47 @@ items:
       ToHealth: 1.0
       ToArmor: 0.0
       ToStun: 0.0
-
     accuracySnap: 85
     tuSnap: 30
-
     accuracyAuto: 50
     tuAuto: 50
     confAuto:
       shots: 2
       name: STR_CUSTOM_DOUBLE_SHOT
+    flatRate: false
 
+
+## DREADNOUGHT ASSAULT CANNON ##
+  - type: AUX_DREAD_ASSC
+#RESOURCES
+    bigSprite: 287
+#GENERAL
     fixedWeapon: true
     defaultInventorySlot: STR_RIGHT_HAND
-
-#Dreadnought Assault Cannon
-  - type: AUX_DREAD_ASSC
-    bigSprite: 287
-
+#SHOOTING
     compatibleAmmo:
       - AUX_DREAD_ASSAULT_CANNON_AMMO
-
     accuracyAuto: 50
     tuAuto: 45
     autoRange: 30
     autoShots: 5
 
-    fixedWeapon: true
-    defaultInventorySlot: STR_RIGHT_HAND
-
+## DREADNOUGHT ASSAULT CANNON AMMO ##
   - type: AUX_DREAD_ASSAULT_CANNON_AMMO
+#RESOURCES
     bigSprite: 301
     hitSound: 13
     hitAnimation: 26
-
+#GENERAL
+    battleType: 2
     weight: 1
+    invWidth: 2
+    invHeight: 2
+#SHOOTING
     power: 100
     clipSize: 100
     damageType: 1
-    damageAlter: #DA BOLTER
+    damageAlter:
       ToArmorPre: 0.05
       ArmorEffectiveness: 0.9
       ToArmor: 0.1
@@ -2219,30 +2302,31 @@ items:
     bulletSpeed: 50
     explosionSpeed: 5
 
-    invWidth: 2
-    invHeight: 2
-    battleType: 2
 
-##################
-#Tarantula Rocket Sentry.
-#Spawner
+### TARANTULA SENTRY ###
+
+## TARANTULA SPAWNER ##
   - type: STR_ROCKET_TARANTULA_SPAWNER
+#GENERAL
+    battleType: 4
     spawnUnit: STR_TANK_ROCKET_LAUNCHER
     spawnUnitFaction: 0
     invWidth: 0
     invHeight: 0
-    battleType: 4
 
-#Homing Krak Missiles.
+## TARANTULA HOMING KRAK MISSILES ##
+
   - type: STR_HWP_ROCKETS
+#SHOOTING
+    power: 100
     damageAlter:
       ToArmorPre: 0.2
       ArmorEffectiveness: 0.7
       ToArmor: 0.2
-    power: 100
     blastRadius: 1
 
   - type: STR_T_SEC
+#SHOOTING
     damageAlter:
       ToArmorPre: 0.2
       ArmorEffectiveness: 0.7
@@ -2250,304 +2334,373 @@ items:
     power: 100
     blastRadius: 1 
 
-##################
-#Stormraven Turret Lascannons
+## TARANTULA TURRET ##
+  - type: STR_TANK_ROCKET_LAUNCHER
+    costBuy: 0
+    costSell: 0
 
+## TARANTULA ROCKETS ##
+  - type: STR_HWP_ROCKETS
+    costBuy: 0
+    costSell: 0
+
+
+### STORMRAVEN TURRET LASCANNONS ###
+
+## STORMRAVEN LEFT LASCANNON ##
   - type: STR_STORMRAVEN_LASCANNON_LEFT
-    size: 1.0
-    weight: 10
+#RESOURCES
     bigSprite: 244
     bulletSprite: 12
     bulletSpeed: 100
     fireSound: 865
-    compatibleAmmo:
-      - STR_LASCAN_CLIP
-    accuracyAimed: 60
-    tuAimed: 45
-    dropoff: 5
+#GENERAL
     battleType: 1
+    size: 1.0
+    weight: 10
     fixedWeapon: true
     defaultInventorySlot: STR_LEFT_HAND
     invWidth: 2
     invHeight: 3
     recover: false
-
-  - type: STR_STORMRAVEN_LASCANNON_RIGHT
-    size: 1.0
-    weight: 10
-    bigSprite: 245
-    bulletSprite: 12
-    bulletSpeed: 100
-    fireSound: 865
+#SHOOTING
     compatibleAmmo:
       - STR_LASCAN_CLIP
     accuracyAimed: 60
     tuAimed: 45
     dropoff: 5
+
+
+## STORMRAVEN RIGHT LASCANNON ##
+  - type: STR_STORMRAVEN_LASCANNON_RIGHT
+#RESOURCES
+    bigSprite: 245
+    bulletSprite: 12
+    bulletSpeed: 100
+    fireSound: 865
+#GENERAL
     battleType: 1
+    size: 1.0
+    weight: 10
     fixedWeapon: true
     defaultInventorySlot: STR_RIGHT_HAND
     invWidth: 2
     invHeight: 3
     recover: false
+#SHOOTING
+    compatibleAmmo:
+      - STR_LASCAN_CLIP
+    accuracyAimed: 60
+    tuAimed: 45
+    dropoff: 5
 
-#Twin-Linked Bolters (thunderhawk turrets, bike weapon, centurion weapon)
+
+
+#TWIN-LINKED BOLTERS 
+#(thunderhawk turrets, bike weapon, centurion weapon)
 #Has no reaction fire.
 
   - type: AUX_BOLTER
+#SHOOTING
     accuracySnap: 0
     tuSnap: 0
-
     accuracyAimed: 75
     tuAimed: 20
     confAimed:
       shots: 2
       name: STR_CUSTOM_DOUBLE_SHOT
-
     confAuto:
       shots: 6
 
 
-#Tarantula rocket turret and ammo
-#not buyable
-
-  - type: STR_TANK_ROCKET_LAUNCHER
-    costBuy: 0
-    costSell: 0
-
-  - type: STR_HWP_ROCKETS
-    costBuy: 0
-    costSell: 0
-
-#Support servitor. Delete.
-#We already have medics and techmarines/enginseers.
+## SUPPORT SERVITOR ##
+#We already have medics and techmarines/enginseers. Delete.
   - delete: STR_SERVITOR
 
-##################
+
 ### COMPONENTS ###
-##################
-#Promethium
+## PROMETHIUM ##
   - type: STR_ELERIUM_115
+#GENERAL
     requiresBuy:
       - STR_ELERIUM_115
     costBuy: 3000
     costSell: 2500
 
-#Adamantium 
+## ADAMANTIUM ## 
   - type: STR_ALIEN_ALLOYS
+#GENERAL
     costSell: 10000
 
-#Ceramite
+## CERAMITE ##
   - type: STR_UFO_CONSTRUCTION
+#GENERAL
     costSell: 2500
 
-#Cogitator
+## COGITATOR ##
   - type: STR_UFO_NAVIGATION
+#GENERAL
     costSell: 200000
 
-#Power Source
+## POWER SOURCE ##
   - type: STR_UFO_POWER_SOURCE
+#GENERAL
     costSell: 250000
 
 
-#####
 ### CORPSES ###
-#Dead SM in Mk7 Power Armor
+
+## CORPSE: SCOUT ARMOR ##
+  - type: STR_SCOUT_CORPSE
+    bigSprite: 113
+    floorSprite: 117
+
+## CORPSE: MK7 POWER ARMOR ##
   - type: STR_MK7_CORPSE
-    name: STR_CORPSE
-    weight: 40
+#RESOURCES
     bigSprite: 100
     floorSprite: 100
+#GENERAL
+    name: STR_CORPSE
+    weight: 40
     invWidth: 2
     invHeight: 3
     armor: 80
     recover: false
 
-#Dead SM in Mk7 Sergeant Armor
+## CORPSE: MK7 SERGEANT ARMOR ##
   - type: STR_SARGENT_CORPSE
-    name: STR_CORPSE
-    weight: 40
+#RESOURCES
     bigSprite: 101
     floorSprite: 101
+#GENERAL
+    name: STR_CORPSE
+    weight: 40
     invWidth: 2
     invHeight: 3
     armor: 80
     recover: false
     battleType: 11
 
-#Dead SM in Mk7 Apothecary Armor
+## CORPSE: MK7 APOTHECARY ARMOR ##
   - type: STR_APOT_CORPSE
-    name: STR_CORPSE
-    weight: 40
+#RESOURCES
     bigSprite: 102
     floorSprite: 102
+#GENERAL
+    name: STR_CORPSE
+    weight: 40
     invWidth: 2
     invHeight: 3
     armor: 80
     recover: false
 
-#Bike Corpse Parts
+## BIKE CORPSE PART 1 ##
   - type: BIKE_CORPSE1
+#RESOURCES
     floorSprite: 103
-    invWidth: 0
-    invHeight: 0
-    recover: false
-  - type: BIKE_CORPSE2
-    floorSprite: 104
-    invWidth: 0
-    invHeight: 0
-    recover: false
-  - type: BIKE_CORPSE3
-    floorSprite: 105
-    invWidth: 0
-    invHeight: 0
-    recover: false
-  - type: BIKE_CORPSE4
-    floorSprite: 106
+#GENERAL
     invWidth: 0
     invHeight: 0
     recover: false
 
-#Dead SM in Mk7 Techmarine Armor
+## BIKE CORPSE PART 2 ##
+  - type: BIKE_CORPSE2
+#RESOURCES
+    floorSprite: 104
+#GENERAL
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+## BIKE CORPSE PART 3 ##
+  - type: BIKE_CORPSE3
+#RESOURCES
+    floorSprite: 105
+#GENERAL
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+## BIKE CORPSE PART 4 ##
+  - type: BIKE_CORPSE4
+#RESOURCES
+    floorSprite: 106
+#GENERAL
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+## CORPSE: MK7 TECHMARINE ARMOR ##
   - type: STR_TECH_CORPSE
-    name: STR_CORPSE
-    weight: 40
+#RESOURCES
     bigSprite: 103
     floorSprite: 107
+#GENERAL
+    name: STR_CORPSE
+    weight: 40
     invWidth: 2
     invHeight: 3
     armor: 80
     recover: false
     battleType: 11
 
-#Dead SM in Mk7 Honor Guard Armor
+## CORPSE: MK7 HONOR GUARD ARMOR ##
   - type: STR_HONOR_CORPSE
-    name: STR_CORPSE
-    weight: 40
+#RESOURCES
     bigSprite: 104
     floorSprite: 108
+#GENERAL
+    name: STR_CORPSE
+    weight: 40
     invWidth: 2
     invHeight: 3
     armor: 80
     recover: false
 
-#Dead SM in Mk7 Chaplain Armor
+## CORPSE: MK7 CHAPLAIN ARMOR ##
   - type: STR_CHAP_CORPSE
-    name: STR_CORPSE
-    weight: 40
+#RESOURCES
     bigSprite: 105
     floorSprite: 109
-    invWidth: 2
-    invHeight: 3
-    armor: 80
-    recover: false
-    battleType: 11
-
-#Dead SM in Mk7 Librarian Armor
-  - type: STR_LIB_CORPSE
+#GENERAL
     name: STR_CORPSE
     weight: 40
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    recover: false
+    battleType: 11
+
+## CORPSE: MK7 LIBRARIAN ARMOR ##
+  - type: STR_LIB_CORPSE
+#RESOURCES
     bigSprite: 106
     floorSprite: 110
+#GENERAL
+    name: STR_CORPSE
+    weight: 40
     invWidth: 2
     invHeight: 3
     armor: 80
     recover: false
     battleType: 11
 
-#Dead SM in Terminator Armor
+## CORPSE: TERMINATOR ARMOR ##
   - type: STR_TERMINATOR_CORPSE
-    name: STR_CORPSE
-    weight: 50
+#RESOURCES
     bigSprite: 107
     floorSprite: 111
+#GENERAL
+    name: STR_CORPSE
+    weight: 50
     invWidth: 2
     invHeight: 3
     armor: 80
     recover: false
     battleType: 11
 
-#Dead SM in Terminator Apothecary Armor
+## CORPSE: TERMINATOR APOTHECARY ARMOR ##
   - type: STR_TERMINATOR_APOTHECARY_CORPSE
-    name: STR_CORPSE
-    weight: 50
+#RESOURCES
     bigSprite: 108
     floorSprite: 112
+#GENERAL
+    name: STR_CORPSE
+    weight: 50
     invWidth: 2
     invHeight: 3
     armor: 80
     recover: false
     battleType: 11
 
-#Dead SM in Terminator Chaplain Armor
+## CORPSE: TERMINATOR CHAPLAIN ARMOR ##
   - type: STR_TERMINATOR_CHAPLAIN_CORPSE
-    name: STR_CORPSE
-    weight: 50
+#RESOURCES
     bigSprite: 109
     floorSprite: 113
+#GENERAL
+    name: STR_CORPSE
+    weight: 50
     invWidth: 2
     invHeight: 3
     armor: 80
     recover: false
     battleType: 11
 
-#Dead SM in Terminator Sergeant Armor
+## CORPSE: TERMINATOR SERGEANT ARMOR ##
   - type: STR_TERMINATOR_SARGENT_CORPSE
-    name: STR_CORPSE
-    weight: 50
+#RESOURCES
     bigSprite: 110
     floorSprite: 114
+#GENERAL
+    name: STR_CORPSE
+    weight: 50
     invWidth: 2
     invHeight: 3
     armor: 80
     recover: false
     battleType: 11
 
-#Dead SM in Terminator Librarian Armor
+## CORPSE: TERMINATOR LIBRARIAN ARMOR ##
   - type: STR_TERMINATOR_LIBRARIAN_CORPSE
-    name: STR_CORPSE
-    weight: 50
+#RESOURCES
     bigSprite: 111
     floorSprite: 115
-    invWidth: 2
-    invHeight: 3
-    armor: 80
-    recover: false
-    battleType: 11
-
-#Dead SM in Terminator Captain Armor
-  - type: STR_CAPTAIN_CORPSE
+#GENERAL
     name: STR_CORPSE
     weight: 50
-    bigSprite: 112
-    floorSprite: 116
     invWidth: 2
     invHeight: 3
     armor: 80
     recover: false
     battleType: 11
 
-####
+## CORPSE: Terminator Captain Armor ##
+  - type: STR_CAPTAIN_CORPSE
+#RESOURCES
+    bigSprite: 112
+    floorSprite: 116
+#GENERAL
+    name: STR_CORPSE
+    weight: 50
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    recover: false
+    battleType: 11
+
+
 ### STORE ITEMS ###
+
+## APOTHECARY TERMINATOR ARMOR STORE ITEM ## 
   - type: STR_TERMINATOR_APOTHECARY
+#GENERAL
     size: 0.8
     costSell: 10000
     listOrder: 6300
 
+## CHAPLAIN TERMINATOR ARMOR STORE ITEM ## 
   - type: STR_TERMINATOR_CHAPLAIN
+#GENERAL
     size: 0.8
     costSell: 10000
     listOrder: 6300
 
+## LIBRARIAN TERMINATOR ARMOR STORE ITEM ## 
   - type: STR_TERMINATOR_LIBRARIAN
+#GENERAL
     size: 0.8
     costSell: 10000
     listOrder: 6300
 
-#####
-#Craft Plasma Cannon Ammo
+
+### CRAFT WEAPONS ###
+
+## CRAFT PLASMA CANNON AMMO ##
 
   - type: STR_PLASMA_BEAM_AMMO
+#GENERAL
     categories: [ STR_CRAFT_WEAPONS]
     size: 0.1
     costSell: 10000

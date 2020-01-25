@@ -4,6 +4,7 @@ research:
   - delete: STR_LASER_RIFLE
   - delete: STR_PHOTON_GRENADE_REQUISITION
   - delete: STR_IMPERIAL_GUARD_MISSIONS_TANITH
+  - delete: STR_STORMTROOPER_REQUISITION
 
 #Nope.
   - delete: STR_TAUROX_REQUISITION
@@ -240,9 +241,8 @@ research:
       - STR_CRAFTADD
       - STR_MELTA_WEAPONS
       - STR_HOTSHOT_TECH
-      - STR_SPECIAL_MILITARY_PERSONNEL
+      - STR_SPECIAL_PERSONNEL_AND_EQUIMPENT
       - STR_TEC_BAYR
-      - STR_ABHUMAN_PERSONNEL
 
     cutscene: c2
 
@@ -307,26 +307,47 @@ research:
     dependencies:
       - STR_GENERALLOCK
 
+#Hotshot clip
+  - name: STR_LASGUN_CLIP_HOTSHOT
+    cost: 0
+    points: 0
+    listOrder: 100
+    dependencies:
+      - STR_GENERALLOCK
+
+#Hotshot backpack battery
+  - name: STR_LASGUN_BACKPACK_HOTSHOT
+    cost: 0
+    points: 0
+    listOrder: 100
+    dependencies:
+      - STR_GENERALLOCK
+
+#Long-Las
+  - name: STR_LONG_LAS_TECH
+    cost: 300
+    points: 20
+    dependencies:
+      - STR_HOTSHOT_TECH
+    unlocks:
+      - STR_LASGUN_CLIP_HOTSHOT
+
 #Hot-Shot Laspistol
   - name: STR_HOTSHOT_LASPISTOL
     cost: 500
     points: 20
     dependencies:
       - STR_HOTSHOT_TECH
-
-#Long-Las
-  - name: STR_LONG_LAS_TECH
-    cost: 600
-    points: 20
-    dependencies:
-      - STR_HOTSHOT_LASPISTOL
+    unlocks:
+      - STR_LASGUN_CLIP_HOTSHOT
+      - STR_LASGUN_BACKPACK_HOTSHOT
 
 #Hot-Shot Lasgun
   - name: STR_HELLGUN
     cost: 700
     points: 25
     dependencies:
-      - STR_LONG_LAS_TECH
+      - STR_HOTSHOT_LASPISTOL
 
 #Hot-Shot Volley Gun
   - name: STR_HOTSHOT_VOLLEY_GUN
@@ -335,46 +356,73 @@ research:
     dependencies:
       - STR_HELLGUN
 
-### SPECIAL MILITARY PERSONNEL ###
+### SPECIAL MILITARY PERSONNEL AND EQUIPMENT ###
 #Header Technology
-  - name: STR_SPECIAL_MILITARY_PERSONNEL
+  - name: STR_SPECIAL_PERSONNEL_AND_EQUIMPENT
     cost: 50
     points: 10
     listOrder: 200
     dependencies:
       - STR_IMPERIAL_GUARD_MIDTIER
 
-#Ministorum Priests
-  - name: STR_MINISTORUM_PRIEST_REQUISITION
-    cost: 560
-    points: 20
+#Sniper Armor
+  - name: STR_SNIPER_ARMOR
+    cost: 300
+    points: 10
     dependencies:
-      - STR_SPECIAL_MILITARY_PERSONNEL
-
-#Snipers
-  - name: STR_GUARD_SNIPERS
-    cost: 560
-    points: 20
-    dependencies:
-      - STR_SPECIAL_MILITARY_PERSONNEL
+      - STR_SPECIAL_PERSONNEL_AND_EQUIMPENT
       - STR_LONG_LAS_TECH
 
-#Stormtroopers
-  - name: STR_STORMTROOPER_REQUISITION
+#Orgyn Requisition
+  - name: STR_OGRYN_REQUISITION
+    cost: 300
+    points: 10
+    dependencies:
+      - STR_SPECIAL_PERSONNEL_AND_EQUIMPENT
+
+#Ogryn Carapace
+  - name: STR_OGRYN_CARAPACE_TECH
+    cost: 400
+    points: 20
+    dependencies:
+      - STR_OGRYN_REQUISITION
+
+#Bullgryn Equipment
+  - name: STR_BULLGRYN_EQUIPMENT
+    cost: 500
+    points: 20
+    dependencies:
+      - STR_OGRYN_CARAPACE_TECH
+
+#Ministorum Priest Requisition
+  - name: STR_MINISTORUM_PRIEST_REQUISITION
+    cost: 500
+    points: 20
+    dependencies:
+      - STR_SPECIAL_PERSONNEL_AND_EQUIMPENT
+
+#Enginseer Requisition
+  - name: STR_ENGINSEER_REQUISITION
+    cost: 500
+    points: 20
+    dependencies:
+      - STR_SPECIAL_PERSONNEL_AND_EQUIMPENT
+      - STR_TEC_BAYR
+
+#Veteran Guards
+  - name: STR_GUARD_VETERANS
     cost: 700
     points: 30
     dependencies:
-      - STR_SPECIAL_MILITARY_PERSONNEL
+      - STR_SPECIAL_PERSONNEL_AND_EQUIMPENT
     unlocks:
       - STR_BOLTER_TECH
-    spawnedItem: NOPE
 
-### ADEPTUS MECHANICUS and stuff ###
+### ADEPTUS MECHANICUS and some tech stuff ###
 
 #Cult of The Machine
-#Renamed "Techmarine requisitions".
   - name: STR_TEC_BAYR 
-    cost: 200
+    cost: 600
     points: 15
     dependencies:
       - STR_GENERALLOCK
@@ -547,38 +595,6 @@ research:
 #    dependencies:
 #      - STR_FUSION_MISSILE
 
-### ABHUMAN PERSONNEL ###
-
-#Header technology
-#Unlocks on T2
-  - name: STR_ABHUMAN_PERSONNEL
-    cost: 50
-    points: 10
-    dependencies:
-      - STR_GENERALLOCK
-
-#Orgyn Requisition
-  - name: STR_OGRYN_REQUISITION
-    cost: 300
-    points: 10
-    dependencies:
-      - STR_ABHUMAN_PERSONNEL
-
-#Ogryn Carapace
-  - name: STR_OGRYN_CARAPACE_TECH
-    cost: 400
-    points: 20
-    dependencies:
-      - STR_OGRYN_REQUISITION
-
-#Bullgryn Equipment
-  - name: STR_BULLGRYN_ARMOR
-    cost: 500
-    points: 20
-    dependencies:
-      - STR_OGRYN_CARAPACE_TECH
-
-
 ###### T3 #####
   - name: STR_IMPERIAL_GUARD_HIGHTIER
     cost: 900
@@ -586,9 +602,9 @@ research:
     dependencies:
       - STR_FUSION_BALL_LAUNCHER
       - STR_PLASMA_CANNON
-      - STR_STORMTROOPER_REQUISITION
+      - STR_GUARD_VETERANS
       - STR_HOTSHOT_VOLLEY_GUN
-      - STR_BULLGRYN_ARMOR
+      - STR_TEC_BAYR
 
     unlocks:
       - STR_AUTOCANNON_TECHNOLOGY

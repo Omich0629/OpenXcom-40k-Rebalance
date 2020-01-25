@@ -308,7 +308,6 @@ extraStrings:
       STR_ENGINSEER_REQUISITION: "Enginseer Requisition"
       STR_ENGINSEER_CORPSE: "Enginseer Corpse"
       STR_ENGINSEER_ARMOR_UC: "Enginseer Robes"
-
       STR_OMNISSIAN_AXE: "Omnissian Axe"
 
 #Ministorum Priest
@@ -321,11 +320,21 @@ extraStrings:
       STR_RIGHTEOUS_FURY: "Righteous Fury"
 
 #Hotshot weapons
+      STR_HOTSHOT_TECH: "Hotshot Laser Weapons"
+      STR_LONG_LAS_TECH: "Sniper Variant Lasgun"
       STR_LASGUN_BACKPACK_HOTSHOT: "Hotshot Backpack Battery"
       STR_HOTSHOT_LASPISTOL: "Hotshot Laspistol"
 
       STR_HELLGUN_ARMOR: "Hellgun equipment"
       STR_VOLLEYGUN_ARMOR: "Volley Gun equipment"
+
+#Special Personnel And Equipment (Research)
+      STR_SPECIAL_PERSONNEL_AND_EQUIMPENT: "Special Personnel And Equipment"
+      STR_SNIPER_ARMOR: "Sniper Armor"
+      STR_BULLGRYN_EQUIPMENT: "Bullgryn Equipment"
+      STR_GUARD_VETERANS: "Guard Veterans"
+      STR_GUARD_BOLTGUNS: "Guard Boltguns"
+
 
 ##T3##
 #Craft

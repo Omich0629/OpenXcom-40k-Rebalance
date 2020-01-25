@@ -60,7 +60,7 @@ extraSprites:
       110: Resources/Armor/SM/ULTRAMARINES/Terminator_Sergeant/Term_Sergeant_Corpse_Inv.png
       111: Resources/Armor/SM/ULTRAMARINES/Terminator_Librarian/Term_Librarian_Corpse_Inv.png
       112: Resources/Armor/SM/ULTRAMARINES/Terminator_Captain/Term_Captain_Corpse_Inv.png
-
+      113: Resources/Armor/SM/ULTRAMARINES/Scout_Armor/Scout_Armor_Corpse_Inv.png
 
       150: Resources/Armor/IG/Enginseer/Enginseer_Corpse_Inv.gif
       151: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Corpse_Inv.gif
@@ -189,6 +189,7 @@ extraSprites:
       114: Resources/Armor/SM/ULTRAMARINES/Terminator_Sergeant/Term_Sergeant_Corpse_Floor.png
       115: Resources/Armor/SM/ULTRAMARINES/Terminator_Librarian/Term_Librarian_Corpse_Floor.png
       116: Resources/Armor/SM/ULTRAMARINES/Terminator_Captain/Term_Captain_Corpse_Floor.png
+      117: Resources/Armor/SM/ULTRAMARINES/Scout_Armor/Scout_Armor_Corpse_Floor.png
 
       150: Resources/Armor/IG/Enginseer/Enginseer_Corpse_Floor.gif
       151: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Corpse_Floor.png
@@ -396,9 +397,324 @@ extraSprites:
       0: Resources/UnitUI/SM_unit_preview.png   #   0 -89
       100: Resources/UnitUI/IG_unit_preview.png # 100- 189
 
-#ARMOR BATTLESCAPE SPRITES
+### FACE INVENTORY SPRITES ###
 
-#### SM ####
+## SM ##
+
+#SCOUT FACES 
+#MALE
+  - typeSingle: 0__1__SCOUT_FACE_MALE_0
+    fileSingle: Resources/Faces/Scouts/Scout_Face_Male_0.gif
+  - typeSingle: 0__1__SCOUT_FACE_MALE_1
+    fileSingle: Resources/Faces/Scouts/Scout_Face_Male_1.gif
+  - typeSingle: 0__1__SCOUT_FACE_MALE_2
+    fileSingle: Resources/Faces/Scouts/Scout_Face_Male_2.gif
+  - typeSingle: 0__1__SCOUT_FACE_MALE_3
+    fileSingle: Resources/Faces/Scouts/Scout_Face_Male_3.gif
+  - typeSingle: 0__1__SCOUT_FACE_MALE_4
+    fileSingle: Resources/Faces/Scouts/Scout_Face_Male_4.gif
+  - typeSingle: 0__1__SCOUT_FACE_MALE_5
+    fileSingle: Resources/Faces/Scouts/Scout_Face_Male_5.gif
+#FEMALE
+  - typeSingle: 0__1__SCOUT_FACE_FEMALE_0
+    fileSingle: Resources/Faces/Scouts/Scout_Face_Female_0.gif
+  - typeSingle: 0__1__SCOUT_FACE_FEMALE_1
+    fileSingle: Resources/Faces/Scouts/Scout_Face_Female_1.gif
+  - typeSingle: 0__1__SCOUT_FACE_FEMALE_2
+    fileSingle: Resources/Faces/Scouts/Scout_Face_Female_2.gif
+  - typeSingle: 0__1__SCOUT_FACE_FEMALE_3
+    fileSingle: Resources/Faces/Scouts/Scout_Face_Female_3.gif
+  - typeSingle: 0__1__SCOUT_FACE_FEMALE_4
+    fileSingle: Resources/Faces/Scouts/Scout_Face_Female_4.gif
+  - typeSingle: 0__1__SCOUT_FACE_FEMALE_5
+    fileSingle: Resources/Faces/Scouts/Scout_Face_Female_5.gif
+
+### ARMOR INVENTORY SPRITES ###
+
+## SM ##
+
+#Scout Armor Inventory sprites
+  - typeSingle: SCOUT_ARMOR__2__SCOUT_ARMOR_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Scout_Armor/Scout_Armor_Inv_Male.gif
+  - typeSingle: SCOUT_ARMOR__2__SCOUT_ARMOR_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Scout_Armor/Scout_Armor_Inv_Female.gif
+#Rebreather, Comnet Uplink
+  - typeSingle: SCOUT_DETAILS__3__SCOUT_DETAILS
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Scout_Armor/Scout_Armor_Inv_Details.gif
+
+
+#Advanced Scout Armor (Standard) Inventory sprites
+  - typeSingle: ADV_SCOUT_ARMOR__2__ADV_SCOUT_ARMOR_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor/Scout_Adv_Armor_Inv_Male.gif
+  - typeSingle: ADV_SCOUT_ARMOR__2__ADV_SCOUT_ARMOR_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor/Scout_Adv_Armor_Inv_Female.gif
+#Rebreather, Comnet Uplink, Goggles
+  - typeSingle: ADV_SCOUT_DETAILS__3__ADV_SCOUT_DETAILS
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor/Scout_Adv_Armor_Inv_Details.gif
+#Camo Cloaks
+  - typeSingle: SCOUT_CLOAK_BROWN__0__SCOUT_CLOAK_BROWN
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor/Scout_Adv_Armor_Inv_Cloak_Brown.gif
+  - typeSingle: SCOUT_CLOAK_GREEN__0__SCOUT_CLOAK_GREEN
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor_Green/Scout_Adv_Armor_Inv_Cloak_Green.gif
+  - typeSingle: SCOUT_CLOAK_WHITE__0__SCOUT_CLOAK_WHITE
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor_White/Scout_Adv_Armor_Inv_Cloak_White.gif
+  - typeSingle: SCOUT_CLOAK_BLACK__0__SCOUT_CLOAK_BLACK
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor_Black/Scout_Adv_Armor_Inv_Cloak_Black.gif
+  - typeSingle: SCOUT_CLOAK_RED__0__SCOUT_CLOAK_RED
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor_Red/Scout_Adv_Armor_Inv_Cloak_Red.gif
+  - typeSingle: SCOUT_CLOAK_YELLOW__0__SCOUT_CLOAK_YELLOW
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor_Yellow/Scout_Adv_Armor_Inv_Cloak_Yellow.gif
+
+
+
+#Mk7 Armor Inventory sprites
+  - typeSingle: MK7_ARMOR__1__MK7_ARMOR_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Armor/Mk7_Armor_Inv_Male.gif
+  - typeSingle: MK7_ARMOR__1__MK7_ARMOR_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Armor/Mk7_Armor_Inv_Female.gif
+
+#Mk7 Assault Equipment Inventory sprites
+  - typeSingle: MK7_ASSAULT__1__MK7_ASSAULT_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Assault/Mk7_Assault_Inv_Male.gif
+  - typeSingle: MK7_ASSAULT__1__MK7_ASSAULT_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Assault/Mk7_Assault_Inv_Female.gif
+
+#Mk7 Devastator Equipment Inventory sprites
+  - typeSingle: MK7_DEVASTATOR__1__MK7_DEVASTATOR_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Devastator/Mk7_Devastator_Inv_Male.gif
+  - typeSingle: MK7_DEVASTATOR__1__MK7_DEVASTATOR_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Devastator/Mk7_Devastator_Inv_Female.gif
+
+#Mk7 Sergeant Armor Inventory sprites
+  - typeSingle: MK7_SERGEANT__1__MK7_SERGEANT_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Sergeant/Mk7_Sergeant_Inv_Male.gif
+  - typeSingle: MK7_SERGEANT__1__MK7_SERGEANT_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Sergeant/Mk7_Sergeant_Inv_Female.gif
+
+#Mk7 Apothecary Armor Inventory sprites
+  - typeSingle: MK7_APOTHECARY__1__MK7_APOTHECARY_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Apothecary/Mk7_Apothecary_Inv_Male.gif
+  - typeSingle: MK7_APOTHECARY__1__MK7_APOTHECARY_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Apothecary/Mk7_Apothecary_Inv_Female.gif
+
+#Bike sprites
+  - typeSingle: MK7_BIKE__1__MK7_BIKE_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Bike/Mk7_Bike_Inv_Male.gif
+  - typeSingle: MK7_BIKE__1__MK7_BIKE_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Bike/Mk7_Bike_Inv_Female.gif
+
+#Mk7 Techmarine Armor Inventory sprites
+  - typeSingle: MK7_TECHMARINE__1__MK7_TECHMARINE_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Techmarine/Mk7_Techmarine_Inv_Male.gif
+  - typeSingle: MK7_TECHMARINE__1__MK7_TECHMARINE_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Techmarine/Mk7_Techmarine_Inv_Female.gif
+
+#Mk7 Honor Guard Armor Inventory sprites
+  - typeSingle: MK7_HONOR_GUARD__1__MK7_HONOR_GUARD_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Honor_Guard/Mk7_HonorGuard_Inv_Male.gif
+  - typeSingle: MK7_HONOR_GUARD__1__MK7_HONOR_GUARD_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Honor_Guard/Mk7_HonorGuard_Inv_Female.gif
+
+#Mk7 Vanguard Armor Inventory sprites
+  - typeSingle: MK7_VANGUARD__1__MK7_VANGUARD_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Vanguard/Mk7_Vanguard_Inv_Male.gif
+  - typeSingle: MK7_VANGUARD__1__MK7_VANGUARD_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Vanguard/Mk7_Vanguard_Inv_Female.gif
+
+#Mk7 Veteran Devastator Armor Inventory sprites
+  - typeSingle: MK7_VETERAN_DEVASTATOR__1__MK7_VETERAN_DEVASTATOR_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Veteran_Devastator/Mk7_VeteranDevastator_Inv_Male.gif
+  - typeSingle: MK7_VETERAN_DEVASTATOR__1__MK7_VETERAN_DEVASTATOR_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Veteran_Devastator/Mk7_VeteranDevastator_Inv_Female.gif
+
+#Mk7 Veteran Sergenat Armor Inventory sprites
+  - typeSingle: MK7_VETERAN_SERGEANT__1__MK7_VETERAN_SERGEANT_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Veteran_Sergeant/Mk7_VeteranSergeant_Inv_Male.gif
+  - typeSingle: MK7_VETERAN_SERGEANT__1__MK7_VETERAN_SERGEANT_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Veteran_Sergeant/Mk7_VeteranSergeant_Inv_Female.gif
+
+#Mk7 Chaplain Armor Inventory sprites
+  - typeSingle: MK7_CHAPLAIN__1__MK7_CHAPLAIN_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Chaplain/Mk7_Chaplain_Inv_Male.gif
+  - typeSingle: MK7_CHAPLAIN__1__MK7_CHAPLAIN_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Chaplain/Mk7_Chaplain_Inv_Female.gif
+
+#Mk7 Librarian Armor Inventory sprites
+  - typeSingle: MK7_LIBRARIAN__1__MK7_LIBRARIAN_M
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Librarian/Mk7_Librarian_Inv_Male.gif
+  - typeSingle: MK7_LIBRARIAN__1__MK7_LIBRARIAN_F
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Librarian/Mk7_Librarian_Inv_Female.gif
+
+#Terminator Armor Inventory sprites
+  - typeSingle: TERM_ARMOR__1__TERM_ARMOR_MF
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Armor/Term_Armor_Inv_MaleFemale.gif
+
+#Terminator Apothecary Inventory sprites
+  - typeSingle: TERM_APOTHECARY__1__TERM_APOTHECARY_MF
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Apothecary/Term_Apothecary_Inv_MaleFemale.gif
+
+#Terminator Chaplain Inventory sprites
+  - typeSingle: TERM_CHAPLAIN__1__TERM_CHAPLAIN_MF
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Chaplain/Term_Chaplain_Inv_MaleFemale.gif
+
+#Terminator Sergeant Inventory sprites
+  - typeSingle: TERM_SERGEANT__1__TERM_SERGEANT_MF
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Sergeant/Term_Sergeant_Inv_MaleFemale.gif
+
+#Terminator Librarian Inventory sprites
+  - typeSingle: TERM_LIBRARIAN__1__TERM_LIBRARIAN_MF
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Librarian/Term_Librarian_Inv_MaleFemale.gif
+
+#Terminator Captain Inventory sprites
+  - typeSingle: TERM_CAPTAIN__1__TERM_CAPTAIN_MF
+    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Captain/Term_Captain_Inv_MaleFemale.gif
+
+#Dreadnought/Flamer
+  - type: DREADNOUGHT_FLAMER.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Flamer/Dreadnought_Flamer_Inv.png
+
+#Dreadnought/Plasma Cannon
+  - type: DREADNOUGHT_PLASMA.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Plasma/Dreadnought_Plama_Inv.png
+
+#Dreadnought/Missile Launcher
+  - type: DREADNOUGHT_MISSILE.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Missile/Dreadnought_Missile_Inv.png
+
+#Dreadnought/Lascannon
+  - type: DREADNOUGHT_LASCANNON.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Lascannon/Dreadnought_Lascannon_Inv.png
+
+#Dreadnought/Assault Cannon
+  - type: DREADNOUGHT_ASSAULT_CANNON.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Assault_Cannon/Dreadnought_Assault_Cannon_Inv.png
+
+
+#### IG ####
+
+#Carapace Armor
+
+  - typeSingle: CARAPACE_ARMOR__4__Male
+    fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Inv_M.png
+
+  - typeSingle: CARAPACE_HELM__6__Male
+    fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Helm_Inv_M.png
+
+  - typeSingle: CARAPACE_ARMOR__4__Female
+    fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Inv_F.png
+
+  - typeSingle: CARAPACE_HELM__6__Female
+    fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Helm_Inv_F.png
+
+#Enginseer's inventory
+  - type: ENGINSEER_INV.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/IG/Enginseer/Enginseer_Armor_Inv.gif
+
+#Ministorum Priest inventory
+  - typeSingle: MINISTORUM_PRIEST__4__Male
+    fileSingle: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Inv_Male.png
+
+  - typeSingle: MINISTORUM_PRIEST__4__Female
+    fileSingle: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Inv_Female.png
+
+
+#Sentinel's Pilot inventory
+
+  - typeSingle: SENTINEL_PILOT__4__Male
+    fileSingle: Resources/Armor/IG/Sentinel_Pilot/Sentinel_Pilot_M_Inv.png
+
+  - typeSingle: SENTINEL_PILOT__4__Female
+    fileSingle: Resources/Armor/IG/Sentinel_Pilot/Sentinel_Pilot_F_Inv.png
+
+#Sentinel with Lascannon (inventory)
+
+  - typeSingle: SENTINEL_LASCANNON__0__Prop
+    fileSingle: Resources/Armor/IG/Sentinel_Lascannon/Sentinel_Lascannon_Inv.png
+
+#Sentinel with Missile Launcher (inventory)
+
+  - typeSingle: SENTINEL_MISSILE__0__Prop
+    fileSingle: Resources/Armor/IG/Sentinel_Missile/Sentinel_Missile_Inv.png
+
+
+### ARMOR BATTLESCAPE SPRITES ###
+
+## SM ##
+
+#Scout Armor sprites
+  - type: SCOUT_ARMOR.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Scout_Armor/Scout_Armor_Batttlescape.png
+
+#Advanced Scout Armor (Standard) sprites
+  - type: ADV_SCOUT_ARMOR.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor/Scout_Adv_Armor_Battlescape.png
+
+#Advanced Scout Armor (Green) sprites
+  - type: ADV_SCOUT_ARMOR_GREEN.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor_Green/Scout_Adv_Armor_Green_Battlescape.png
+
+#Advanced Scout Armor (White) sprites
+  - type: ADV_SCOUT_ARMOR_WHITE.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor_White/Scout_Adv_Armor_White_Battlescape.png
+
+#Advanced Scout Armor (Black) sprites
+  - type: ADV_SCOUT_ARMOR_BLACK.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor_Black/Scout_Adv_Armor_Black_Battlescape.png
+
+#Advanced Scout Armor (Red) sprites
+  - type: ADV_SCOUT_ARMOR_RED.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor_Red/Scout_Adv_Armor_Red_Battlescape.png
+
+#Advanced Scout Armor (Yellow) sprites
+  - type: ADV_SCOUT_ARMOR_YELLOW.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor_Yellow/Scout_Adv_Armor_Yellow_Battlescape.png
 
 #Mk7 Power Armor sprites
   - type: MK7_ARMOR.PCK
@@ -691,190 +1007,7 @@ extraSprites:
     files:
       0: Resources/Armor/IG/Sentinel_Missile/Sentinel_Missile_Battlescape.png
 
-#ARMOR INVENTORY SPRITES
 
-#### SM #####
-
-#Mk7 Armor Inventory sprites
-  - typeSingle: MK7_ARMOR__1__MK7_ARMOR_M
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Armor/Mk7_Armor_Inv_Male.gif
-  - typeSingle: MK7_ARMOR__1__MK7_ARMOR_F
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Armor/Mk7_Armor_Inv_Female.gif
-
-#Mk7 Assault Equipment Inventory sprites
-  - typeSingle: MK7_ASSAULT__1__MK7_ASSAULT_M
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Assault/Mk7_Assault_Inv_Male.gif
-  - typeSingle: MK7_ASSAULT__1__MK7_ASSAULT_F
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Assault/Mk7_Assault_Inv_Female.gif
-
-#Mk7 Devastator Equipment Inventory sprites
-  - typeSingle: MK7_DEVASTATOR__1__MK7_DEVASTATOR_M
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Devastator/Mk7_Devastator_Inv_Male.gif
-  - typeSingle: MK7_DEVASTATOR__1__MK7_DEVASTATOR_F
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Devastator/Mk7_Devastator_Inv_Female.gif
-
-#Mk7 Sergeant Armor Inventory sprites
-  - typeSingle: MK7_SERGEANT__1__MK7_SERGEANT_M
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Sergeant/Mk7_Sergeant_Inv_Male.gif
-  - typeSingle: MK7_SERGEANT__1__MK7_SERGEANT_F
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Sergeant/Mk7_Sergeant_Inv_Female.gif
-
-#Mk7 Apothecary Armor Inventory sprites
-  - typeSingle: MK7_APOTHECARY__1__MK7_APOTHECARY_M
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Apothecary/Mk7_Apothecary_Inv_Male.gif
-  - typeSingle: MK7_APOTHECARY__1__MK7_APOTHECARY_F
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Apothecary/Mk7_Apothecary_Inv_Female.gif
-
-#Bike sprites
-  - typeSingle: MK7_BIKE__1__MK7_BIKE_M
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Bike/Mk7_Bike_Inv_Male.gif
-  - typeSingle: MK7_BIKE__1__MK7_BIKE_F
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Bike/Mk7_Bike_Inv_Female.gif
-
-#Mk7 Techmarine Armor Inventory sprites
-  - typeSingle: MK7_TECHMARINE__1__MK7_TECHMARINE_M
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Techmarine/Mk7_Techmarine_Inv_Male.gif
-  - typeSingle: MK7_TECHMARINE__1__MK7_TECHMARINE_F
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Techmarine/Mk7_Techmarine_Inv_Female.gif
-
-#Mk7 Honor Guard Armor Inventory sprites
-  - typeSingle: MK7_HONOR_GUARD__1__MK7_HONOR_GUARD_M
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Honor_Guard/Mk7_HonorGuard_Inv_Male.gif
-  - typeSingle: MK7_HONOR_GUARD__1__MK7_HONOR_GUARD_F
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Honor_Guard/Mk7_HonorGuard_Inv_Female.gif
-
-#Mk7 Vanguard Armor Inventory sprites
-  - typeSingle: MK7_VANGUARD__1__MK7_VANGUARD_M
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Vanguard/Mk7_Vanguard_Inv_Male.gif
-  - typeSingle: MK7_VANGUARD__1__MK7_VANGUARD_F
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Vanguard/Mk7_Vanguard_Inv_Female.gif
-
-#Mk7 Veteran Devastator Armor Inventory sprites
-  - typeSingle: MK7_VETERAN_DEVASTATOR__1__MK7_VETERAN_DEVASTATOR_M
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Veteran_Devastator/Mk7_VeteranDevastator_Inv_Male.gif
-  - typeSingle: MK7_VETERAN_DEVASTATOR__1__MK7_VETERAN_DEVASTATOR_F
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Veteran_Devastator/Mk7_VeteranDevastator_Inv_Female.gif
-
-#Mk7 Veteran Sergenat Armor Inventory sprites
-  - typeSingle: MK7_VETERAN_SERGEANT__1__MK7_VETERAN_SERGEANT_M
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Veteran_Sergeant/Mk7_VeteranSergeant_Inv_Male.gif
-  - typeSingle: MK7_VETERAN_SERGEANT__1__MK7_VETERAN_SERGEANT_F
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Veteran_Sergeant/Mk7_VeteranSergeant_Inv_Female.gif
-
-#Mk7 Chaplain Armor Inventory sprites
-  - typeSingle: MK7_CHAPLAIN__1__MK7_CHAPLAIN_M
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Chaplain/Mk7_Chaplain_Inv_Male.gif
-  - typeSingle: MK7_CHAPLAIN__1__MK7_CHAPLAIN_F
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Chaplain/Mk7_Chaplain_Inv_Female.gif
-
-#Mk7 Librarian Armor Inventory sprites
-  - typeSingle: MK7_LIBRARIAN__1__MK7_LIBRARIAN_M
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Librarian/Mk7_Librarian_Inv_Male.gif
-  - typeSingle: MK7_LIBRARIAN__1__MK7_LIBRARIAN_F
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Mk7_Librarian/Mk7_Librarian_Inv_Female.gif
-
-#Terminator Armor Inventory sprites
-  - typeSingle: TERM_ARMOR__1__TERM_ARMOR_MF
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Armor/Term_Armor_Inv_MaleFemale.gif
-
-#Terminator Apothecary Inventory sprites
-  - typeSingle: TERM_APOTHECARY__1__TERM_APOTHECARY_MF
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Apothecary/Term_Apothecary_Inv_MaleFemale.gif
-
-#Terminator Chaplain Inventory sprites
-  - typeSingle: TERM_CHAPLAIN__1__TERM_CHAPLAIN_MF
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Chaplain/Term_Chaplain_Inv_MaleFemale.gif
-
-#Terminator Sergeant Inventory sprites
-  - typeSingle: TERM_SERGEANT__1__TERM_SERGEANT_MF
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Sergeant/Term_Sergeant_Inv_MaleFemale.gif
-
-#Terminator Librarian Inventory sprites
-  - typeSingle: TERM_LIBRARIAN__1__TERM_LIBRARIAN_MF
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Librarian/Term_Librarian_Inv_MaleFemale.gif
-
-#Terminator Captain Inventory sprites
-  - typeSingle: TERM_CAPTAIN__1__TERM_CAPTAIN_MF
-    fileSingle: Resources/Armor/SM/ULTRAMARINES/Terminator_Captain/Term_Captain_Inv_MaleFemale.gif
-
-#Dreadnought/Flamer
-  - type: DREADNOUGHT_FLAMER.SPK
-    singleImage: true
-    files:
-      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Flamer/Dreadnought_Flamer_Inv.png
-
-#Dreadnought/Plasma Cannon
-  - type: DREADNOUGHT_PLASMA.SPK
-    singleImage: true
-    files:
-      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Plasma/Dreadnought_Plama_Inv.png
-
-#Dreadnought/Missile Launcher
-  - type: DREADNOUGHT_MISSILE.SPK
-    singleImage: true
-    files:
-      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Missile/Dreadnought_Missile_Inv.png
-
-#Dreadnought/Lascannon
-  - type: DREADNOUGHT_LASCANNON.SPK
-    singleImage: true
-    files:
-      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Lascannon/Dreadnought_Lascannon_Inv.png
-
-#Dreadnought/Assault Cannon
-  - type: DREADNOUGHT_ASSAULT_CANNON.SPK
-    singleImage: true
-    files:
-      0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Assault_Cannon/Dreadnought_Assault_Cannon_Inv.png
-
-
-#### IG ####
-
-#Carapace Armor
-
-  - typeSingle: CARAPACE_ARMOR__4__Male
-    fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Inv_M.png
-
-  - typeSingle: CARAPACE_HELM__6__Male
-    fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Helm_Inv_M.png
-
-  - typeSingle: CARAPACE_ARMOR__4__Female
-    fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Inv_F.png
-
-  - typeSingle: CARAPACE_HELM__6__Female
-    fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Helm_Inv_F.png
-
-#Enginseer's inventory
-  - type: ENGINSEER_INV.SPK
-    singleImage: true
-    files:
-      0: Resources/Armor/IG/Enginseer/Enginseer_Armor_Inv.gif
-
-#Ministorum Priest inventory
-  - typeSingle: MINISTORUM_PRIEST__4__Male
-    fileSingle: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Inv_Male.png
-
-  - typeSingle: MINISTORUM_PRIEST__4__Female
-    fileSingle: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Inv_Female.png
-
-
-#Sentinel's Pilot inventory
-
-  - typeSingle: SENTINEL_PILOT__4__Male
-    fileSingle: Resources/Armor/IG/Sentinel_Pilot/Sentinel_Pilot_M_Inv.png
-
-  - typeSingle: SENTINEL_PILOT__4__Female
-    fileSingle: Resources/Armor/IG/Sentinel_Pilot/Sentinel_Pilot_F_Inv.png
-
-#Sentinel with Lascannon (inventory)
-
-  - typeSingle: SENTINEL_LASCANNON__0__Prop
-    fileSingle: Resources/Armor/IG/Sentinel_Lascannon/Sentinel_Lascannon_Inv.png
-
-#Sentinel with Missile Launcher (inventory)
-
-  - typeSingle: SENTINEL_MISSILE__0__Prop
-    fileSingle: Resources/Armor/IG/Sentinel_Missile/Sentinel_Missile_Inv.png
 
 
 
