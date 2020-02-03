@@ -15,9 +15,10 @@ soldiers:
       firing: 60
       throwing: 60
       strength: 30
+      melee: 60
       psiStrength: 0
       psiSkill: 0
-      melee: 60
+
     maxStats:
       tu: 65
       stamina: 65
@@ -27,9 +28,10 @@ soldiers:
       firing: 65
       throwing: 65
       strength: 35
+      melee: 65
       psiStrength: 100
       psiSkill: 16
-      melee: 65
+
     statCaps:
       tu: 100
       stamina: 120
@@ -39,9 +41,10 @@ soldiers:
       firing: 130
       throwing: 120
       strength: 100
-      psiStrength: 100
-      psiSkill: 80
       melee: 130
+      psiStrength: 100
+      psiSkill: 100
+
     trainingStatCaps:
       tu: 80
       stamina: 100
@@ -49,9 +52,10 @@ soldiers:
       firing: 100
       throwing: 80
       strength: 80
+      melee: 100
       psiStrength: 100
       psiSkill: 100
-      melee: 100	  
+
     dogfightExperience:
       bravery: 10
       reactions: 30
@@ -90,9 +94,9 @@ soldiers:
       firing: 70
       throwing: 70
       strength: 40
+      melee: 70
       psiStrength: 0
       psiSkill: 0
-      melee: 70
     maxStats:
       tu: 70
       stamina: 70
@@ -102,9 +106,9 @@ soldiers:
       firing: 70
       throwing: 70
       strength: 40
+      melee: 70
       psiStrength: 100
       psiSkill: 16
-      melee: 70
     statCaps:
       tu: 100
       stamina: 120
@@ -114,9 +118,9 @@ soldiers:
       firing: 130
       throwing: 120
       strength: 100
+      melee: 130
       psiStrength: 100
       psiSkill: 100
-      melee: 130
     trainingStatCaps:
       tu: 80
       stamina: 100
@@ -124,9 +128,9 @@ soldiers:
       firing: 100
       throwing: 80
       strength: 80
+      melee: 100
       psiStrength: 100
       psiSkill: 100
-      melee: 100
     dogfightExperience:
       bravery: 10
       reactions: 30
@@ -165,9 +169,9 @@ soldiers:
       firing: 90
       throwing: 70
       strength: 70
+      melee: 90
       psiStrength: 0
       psiSkill: 0
-      melee: 90
     maxStats:
       tu: 90
       stamina: 90
@@ -177,9 +181,9 @@ soldiers:
       firing: 90
       throwing: 70
       strength: 70
+      melee: 90
       psiStrength: 100
       psiSkill: 16
-      melee: 90
     statCaps:
       tu: 100
       stamina: 120
@@ -189,9 +193,9 @@ soldiers:
       firing: 130
       throwing: 120
       strength: 100
+      melee: 130
       psiStrength: 100
       psiSkill: 100
-      melee: 130
     trainingStatCaps:
       tu: 80
       stamina: 100

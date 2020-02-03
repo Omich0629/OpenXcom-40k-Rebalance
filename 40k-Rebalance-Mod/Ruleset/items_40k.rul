@@ -54,7 +54,7 @@ items:
     floorSprite: 256
     handSprite: 536
 #GENERAL
-    costBuy: 100
+    costBuy: 1000
     costSell: 500
     weight: 6
     invWidth: 1
@@ -97,6 +97,32 @@ items:
     invWidth: 1
     invHeight: 1
 #THROWING
+    tuThrow: 25
+    tuPrime: 25
+    flatRate: false
+
+## PHOTON FLASH GRENADE ##
+  - delete: STR_PHOTON_GRENADE
+
+  - type: STR_PHOTON_GRENADE
+#RESOURCES
+    bigSprite: 321
+    floorSprite: 280
+    handSprite: 728
+    hitAnimation: 104
+#GENERAL
+    battleType: 4
+    costBuy: 600
+    costSell: 300
+    size: 0.1
+    weight: 3
+    invWidth: 1
+    invHeight: 1
+#THROWING
+    power: 50
+    damageType: 6
+    damageAlter:
+      FixRadius: 2
     tuThrow: 25
     tuPrime: 25
     flatRate: false
@@ -271,10 +297,24 @@ items:
 
   - type: STR_BIKE_ARMOR
 #GENERAL
-    requiresBuy:
-      - STR_BIKE_TECH
+    size: 2
+    costBuy: 0
+    costSell: 55000
+    transferTime: 50
+    listOrder: 6600
 
 ### MELEE WEAPONS ###
+
+## SHOCK MAUL ##
+#Non-lethal melee weapon
+  - type: STR_STUN_ROD
+#MELEE
+    power: 50
+    meleeMultiplier:
+      melee: 0.4
+      flatHundred: 0.4
+    tuMelee: 25
+    flatRate: false
 
 ## COMBAT KNIFE ##
 #Easy to hit. Low basic damage. 
@@ -1460,6 +1500,11 @@ items:
     experienceTrainingMode: 19 #*** makes the apothecary medikit item train bravery ***
     allowSelfHeal: true
     flatRate: true
+
+#Techmarine/Enginseer Utiliry Skill
+  - type: AUX_PROBE
+    specialIconSprite: 208
+    tuUse: 10
 
 ### BUFF ITEMS FOR SM ARMOR ###
 

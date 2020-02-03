@@ -45,9 +45,12 @@ extraStrings:
       STR_DREADNOUGHT_RANK_4: "Dreadnought"
 
 #T1
+      STR_SPEEDR: "Chapter Vehicles"
 
       STR_CHAPTER_WEAPONS: "Chapter Weapons"
       STR_CHAPTER_ARMORS: "Chapter Armors"
+      STR_SCOUTH_RESEARCH: "Advanced Scout Armor"
+
 
       STR_PISTOL_CLIP: "Boltpistol Clip"
       STR_PISTOL_CLIP_EX: "Boltpistol Clip EX"
@@ -149,7 +152,16 @@ extraStrings:
       STR_VETERAN_ARMORS: "Veteran Armors"
       STR_ZEAL_BUFF: "Zeal" #Chaplain Armor Buff
 
+#Techmarine Armor Technology
+      STR_TECHMARINE_ARMOR: "Mk7 Techmarine Armor"
+
+      STR_HONOR_ARMOR_UC: "Mk7 Veteran Armor"
+      STR_ASS_ARMOR_HONOR_UC: "Mk7 Vanguard Armor"
       STR_DEV_VETERAN_ARMOR_UC: "Mk7 Veteran Devastator Armor"
+      STR_SIGNAL_ARMOR_UC: "Mk7 Veteran Sergeant Armor"
+
+
+
 
 #New type of soldier and ranks
       STR_PROMOTION_VETERAN_MARINE: "Promotion to Veteran Marine" #Research
@@ -307,7 +319,7 @@ extraStrings:
       STR_ENGINSEER: "Enginseer"
       STR_ENGINSEER_REQUISITION: "Enginseer Requisition"
       STR_ENGINSEER_CORPSE: "Enginseer Corpse"
-      STR_ENGINSEER_ARMOR_UC: "Enginseer Robes"
+      STR_ENGINSEER_ARMOR_UC: "Enginseer Power Armor"
       STR_OMNISSIAN_AXE: "Omnissian Axe"
 
 #Ministorum Priest

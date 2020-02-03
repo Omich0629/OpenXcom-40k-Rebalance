@@ -678,7 +678,7 @@ items:
     handSprite: 240
     fireSound: [758, 759, 760, 761, 762, 763]
     hitAnimation: 121 #Morale & Energy buff
-    specialIconSprite: 203
+    specialIconSprite: 207
 #GENERAL
     battleType: 1
     categories: [ STR_CAT_EQUIPMENT]
@@ -958,7 +958,7 @@ items:
 #GENERAL
     requiresBuy:
       - STR_GRENADE_LAUNCHER_TECH
-#GENERAL
+#SHOOTING
     power: 80
     damageAlter:
       RandomType: 2 #TFTD [50% - 150%]
@@ -966,11 +966,6 @@ items:
       ToMorale: 0.5
     blastRadius: 2
 
-## PHOTON FLASH GRENADE ##
-#BROKEN AS FUCK
-  - type: STR_PHOTON_GRENADE
-    requiresBuy:
-      - STR_IMPERIAL_GUARD_OPERATIONS
 
 #Officers Sword
 #BROKEN AS FUCK

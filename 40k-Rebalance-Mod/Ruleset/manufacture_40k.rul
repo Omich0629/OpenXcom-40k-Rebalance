@@ -213,6 +213,19 @@ manufacture:
       STR_UFO_CONSTRUCTION: 8
       STR_ALIEN_HABITAT: 1
 
+## ASSAULT BIKE ##
+  - name: STR_BIKE_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_BIKE_TECH
+    space: 12
+    time: 400
+    cost: 110000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+      STR_UFO_CONSTRUCTION: 10
+
+
 #Craft Lascannon
   - name: STR_LASER_CANNON
     category: STR_CRAFT_WEAPON
@@ -446,8 +459,7 @@ manufacture:
   - name: STR_TECH_ARMOR                 #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_TEC_BAYR
-      - STR_SPACE_MARINES_OPERATIONS
+      - STR_TECHMARINE_ARMOR
     space: 12
     time: 1000
     cost: 200000

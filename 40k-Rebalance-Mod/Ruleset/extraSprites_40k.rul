@@ -3,12 +3,13 @@ extraSprites:
   - type: SPICONS.DAT
     files:
       201: Resources/SPICONS/SPICON_LEADERSHIP.png
-      202: Resources/SPICONS/SPICON_INSPIRE.png
-      203: Resources/SPICONS/SPICON_ZEAL.png
+      202: Resources/SPICONS/SPICON_TU_BUFF.png
+      203: Resources/SPICONS/SPICON_MORALE_BUFF_SM.png
       204: Resources/SPICONS/SPICON_CHAIN_MELEE.png
-      205: Resources/SPICONS/SPICON_SHIELD.png
+      205: Resources/SPICONS/SPICON_SHIELD_BUFF.png
       206: Resources/SPICONS/SPICON_MECHANICAL_MELEE.png
-
+      207: Resources/SPICONS/SPICON_MORALE_BUFF_IG.png
+      208: Resources/SPICONS/SPICON_UTILITY.png
 
   - type: SMOKE.PCK
     width: 320
@@ -18,9 +19,9 @@ extraSprites:
     files:
 #ANIMATIONS
 
-      100: Resources/Animations/SM_TU_Buff_Hit.gif #TU BUFF (10 frames)
+      100: Resources/Animations/TU_Buff_Hit.gif #TU BUFF (10 frames)
       111: Resources/Animations/GravGun_Hit.gif #GRAV GUN (10 frames)
-      121: Resources/Animations/SM_Morale_Buff_Hit.gif #MORALE BUFF (10 frames)
+      121: Resources/Animations/TU_Buff_Hit.gif #MORALE BUFF (10 frames)
       131: Resources/Animations/Lightning_Hit.png #LIGHTNING STRIKE (10 frames)
       141: Resources/Animations/Shield_Buff_Hit.gif #Shield Buff (10 frames)
       151: Resources/Animations/Meltagun_Hit.gif
@@ -37,7 +38,6 @@ extraSprites:
     subX: 128
     subY: 64
     files:
-
       88: Resources/Sprites/XFIRE.png
       96: Resources/Sprites/XSOUND.png
       104: Resources/Sprites/XSmoke.png
@@ -167,6 +167,7 @@ extraSprites:
       318: Resources/Items/IG/Sentinel_Weapons/Sentinel_Flamer_Inv.png
       319: Resources/Items/IG/Sentinel_Weapons/Sentinel_Multimelta_Inv.png
       320: Resources/Items/IG/Eviscerator/Eviscerator_Inv.png
+      321: Resources/Items/Common/Photon_Grenade/Photon_Granade_Inv.gif
 
 #FLOOR OBJECTS
   - type: FLOOROB.PCK
@@ -254,6 +255,7 @@ extraSprites:
       277: Resources/Items/IG/Hotshot_Lasgun/Hotshot_Lasgun_Floor.png
       278: Resources/Items/IG/Hotshot_Volleygun/Hotshot_Volleygun_Floor.png
       279: Resources/Items/IG/Eviscerator/Eviscerator_Floor.png
+      280: Resources/Items/Common/Photon_Grenade/Photon_Granade_Floor.png
 
 #HAND OBJECTS (contains 8 images)
   - type: HANDOB.PCK
@@ -323,6 +325,7 @@ extraSprites:
       704: Resources/Items/IG/Hotshot_Lasgun/Hotshot_Lasgun_Hand.png
       712: Resources/Items/IG/Hotshot_Volleygun/Hotshot_Volleygun_Hand.png
       720: Resources/Items/IG/Eviscerator/Eviscerator_Hand.png
+      728: Resources/Items/Common/Photon_Grenade/Photon_Granade_Hand.png
 
 #PROJECTILES ( The corresponding file id is 35*[bulletSprite] )
   - type: Projectiles                         
@@ -401,33 +404,179 @@ extraSprites:
 
 ## SM ##
 
-#SCOUT FACES 
-#MALE
+#SCOUT FACES
+#MALE (LAYER 1)
   - typeSingle: 0__1__SCOUT_FACE_MALE_0
-    fileSingle: Resources/Faces/Scouts/Scout_Face_Male_0.gif
+    fileSingle: Resources/Faces/Scout/Scout_Face_Male_0.gif
   - typeSingle: 0__1__SCOUT_FACE_MALE_1
-    fileSingle: Resources/Faces/Scouts/Scout_Face_Male_1.gif
+    fileSingle: Resources/Faces/Scout/Scout_Face_Male_1.gif
   - typeSingle: 0__1__SCOUT_FACE_MALE_2
-    fileSingle: Resources/Faces/Scouts/Scout_Face_Male_2.gif
+    fileSingle: Resources/Faces/Scout/Scout_Face_Male_2.gif
   - typeSingle: 0__1__SCOUT_FACE_MALE_3
-    fileSingle: Resources/Faces/Scouts/Scout_Face_Male_3.gif
+    fileSingle: Resources/Faces/Scout/Scout_Face_Male_3.gif
   - typeSingle: 0__1__SCOUT_FACE_MALE_4
-    fileSingle: Resources/Faces/Scouts/Scout_Face_Male_4.gif
+    fileSingle: Resources/Faces/Scout/Scout_Face_Male_4.gif
   - typeSingle: 0__1__SCOUT_FACE_MALE_5
-    fileSingle: Resources/Faces/Scouts/Scout_Face_Male_5.gif
-#FEMALE
+    fileSingle: Resources/Faces/Scout/Scout_Face_Male_5.gif
+#FEMALE (LAYER 1)
   - typeSingle: 0__1__SCOUT_FACE_FEMALE_0
-    fileSingle: Resources/Faces/Scouts/Scout_Face_Female_0.gif
+    fileSingle: Resources/Faces/Scout/Scout_Face_Female_0.gif
   - typeSingle: 0__1__SCOUT_FACE_FEMALE_1
-    fileSingle: Resources/Faces/Scouts/Scout_Face_Female_1.gif
+    fileSingle: Resources/Faces/Scout/Scout_Face_Female_1.gif
   - typeSingle: 0__1__SCOUT_FACE_FEMALE_2
-    fileSingle: Resources/Faces/Scouts/Scout_Face_Female_2.gif
+    fileSingle: Resources/Faces/Scout/Scout_Face_Female_2.gif
   - typeSingle: 0__1__SCOUT_FACE_FEMALE_3
-    fileSingle: Resources/Faces/Scouts/Scout_Face_Female_3.gif
+    fileSingle: Resources/Faces/Scout/Scout_Face_Female_3.gif
   - typeSingle: 0__1__SCOUT_FACE_FEMALE_4
-    fileSingle: Resources/Faces/Scouts/Scout_Face_Female_4.gif
+    fileSingle: Resources/Faces/Scout/Scout_Face_Female_4.gif
   - typeSingle: 0__1__SCOUT_FACE_FEMALE_5
-    fileSingle: Resources/Faces/Scouts/Scout_Face_Female_5.gif
+    fileSingle: Resources/Faces/Scout/Scout_Face_Female_5.gif
+
+#SPACE MARINE FACES
+#MALE (LAYER 2)
+  - typeSingle: 0__2__SM_FACE_MALE_0
+    fileSingle: Resources/Faces/Space_Marine/SM_Face_Male_0.gif
+  - typeSingle: 0__2__SM_FACE_MALE_1
+    fileSingle: Resources/Faces/Space_Marine/SM_Face_Male_1.gif
+  - typeSingle: 0__2__SM_FACE_MALE_2
+    fileSingle: Resources/Faces/Space_Marine/SM_Face_Male_2.gif
+  - typeSingle: 0__2__SM_FACE_MALE_3
+    fileSingle: Resources/Faces/Space_Marine/SM_Face_Male_3.gif
+  - typeSingle: 0__2__SM_FACE_MALE_4
+    fileSingle: Resources/Faces/Space_Marine/SM_Face_Male_4.gif
+  - typeSingle: 0__2__SM_FACE_MALE_5
+    fileSingle: Resources/Faces/Space_Marine/SM_Face_Male_5.gif
+#FEMALE (LAYER 2)
+  - typeSingle: 0__2__SM_FACE_FEMALE_0
+    fileSingle: Resources/Faces/Space_Marine/SM_Face_Female_0.gif
+  - typeSingle: 0__2__SM_FACE_FEMALE_1
+    fileSingle: Resources/Faces/Space_Marine/SM_Face_Female_1.gif
+  - typeSingle: 0__2__SM_FACE_FEMALE_2
+    fileSingle: Resources/Faces/Space_Marine/SM_Face_Female_2.gif
+  - typeSingle: 0__2__SM_FACE_FEMALE_3
+    fileSingle: Resources/Faces/Space_Marine/SM_Face_Female_3.gif
+  - typeSingle: 0__2__SM_FACE_FEMALE_4
+    fileSingle: Resources/Faces/Space_Marine/SM_Face_Female_4.gif
+  - typeSingle: 0__2__SM_FACE_FEMALE_5
+    fileSingle: Resources/Faces/Space_Marine/SM_Face_Female_5.gif
+
+## IG ##
+
+#GUARD FACES
+#MALE FACES (LAYER 1)
+  - typeSingle: 0__1__GUARD_FACE_MALE_0
+    fileSingle: Resources/Faces/Guard/Guard_Face_Male_0.gif
+  - typeSingle: 0__1__GUARD_FACE_MALE_1
+    fileSingle: Resources/Faces/Guard/Guard_Face_Male_1.gif
+  - typeSingle: 0__1__GUARD_FACE_MALE_2
+    fileSingle: Resources/Faces/Guard/Guard_Face_Male_2.gif
+  - typeSingle: 0__1__GUARD_FACE_MALE_3
+    fileSingle: Resources/Faces/Guard/Guard_Face_Male_3.gif
+  - typeSingle: 0__1__GUARD_FACE_MALE_4
+    fileSingle: Resources/Faces/Guard/Guard_Face_Male_4.gif
+  - typeSingle: 0__1__GUARD_FACE_MALE_5
+    fileSingle: Resources/Faces/Guard/Guard_Face_Male_5.gif
+  - typeSingle: 0__1__GUARD_FACE_MALE_6
+    fileSingle: Resources/Faces/Guard/Guard_Face_Male_6.gif
+  - typeSingle: 0__1__GUARD_FACE_MALE_7
+    fileSingle: Resources/Faces/Guard/Guard_Face_Male_7.gif
+  - typeSingle: 0__1__GUARD_FACE_MALE_8
+    fileSingle: Resources/Faces/Guard/Guard_Face_Male_8.gif
+  - typeSingle: 0__1__GUARD_FACE_MALE_9
+    fileSingle: Resources/Faces/Guard/Guard_Face_Male_9.gif
+#MALE HAIR (LAYER 3)
+  - typeSingle: 0__3__GUARD_HAIR_MALE_0
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Male_0.gif
+  - typeSingle: 0__3__GUARD_HAIR_MALE_1
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Male_1.gif
+  - typeSingle: 0__3__GUARD_HAIR_MALE_2
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Male_2.gif
+  - typeSingle: 0__3__GUARD_HAIR_MALE_3
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Male_3.gif
+#Skip variant 4
+  - typeSingle: 0__3__GUARD_HAIR_MALE_5
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Male_5.gif
+  - typeSingle: 0__3__GUARD_HAIR_MALE_6
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Male_6.gif
+  - typeSingle: 0__3__GUARD_HAIR_MALE_7
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Male_7.gif
+  - typeSingle: 0__3__GUARD_HAIR_MALE_8
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Male_8.gif
+#Skip variant 9
+
+#FEMALE FACES (LAYER 1)
+  - typeSingle: 0__1__GUARD_FACE_FEMALE_0
+    fileSingle: Resources/Faces/Guard/Guard_Face_Female_0.gif
+  - typeSingle: 0__1__GUARD_FACE_FEMALE_1
+    fileSingle: Resources/Faces/Guard/Guard_Face_Female_1.gif
+  - typeSingle: 0__1__GUARD_FACE_FEMALE_2
+    fileSingle: Resources/Faces/Guard/Guard_Face_Female_2.gif
+  - typeSingle: 0__1__GUARD_FACE_FEMALE_3
+    fileSingle: Resources/Faces/Guard/Guard_Face_Female_3.gif
+  - typeSingle: 0__1__GUARD_FACE_FEMALE_4
+    fileSingle: Resources/Faces/Guard/Guard_Face_Female_4.gif
+  - typeSingle: 0__1__GUARD_FACE_FEMALE_5
+    fileSingle: Resources/Faces/Guard/Guard_Face_Female_5.gif
+  - typeSingle: 0__1__GUARD_FACE_FEMALE_6
+    fileSingle: Resources/Faces/Guard/Guard_Face_Female_6.gif
+  - typeSingle: 0__1__GUARD_FACE_FEMALE_7
+    fileSingle: Resources/Faces/Guard/Guard_Face_Female_7.gif
+  - typeSingle: 0__1__GUARD_FACE_FEMALE_8
+    fileSingle: Resources/Faces/Guard/Guard_Face_Female_8.gif
+  - typeSingle: 0__1__GUARD_FACE_FEMALE_9
+    fileSingle: Resources/Faces/Guard/Guard_Face_Female_9.gif
+#FEMALE HAIR (LAYER 3)
+  - typeSingle: 0__3__GUARD_HAIR_FEMALE_0
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Female_0.gif
+  - typeSingle: 0__3__GUARD_HAIR_FEMALE_1
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Female_1.gif
+  - typeSingle: 0__3__GUARD_HAIR_FEMALE_2
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Female_2.gif
+  - typeSingle: 0__3__GUARD_HAIR_FEMALE_3
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Female_3.gif
+  - typeSingle: 0__3__GUARD_HAIR_FEMALE_4
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Female_4.gif
+  - typeSingle: 0__3__GUARD_HAIR_FEMALE_5
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Female_5.gif
+  - typeSingle: 0__3__GUARD_HAIR_FEMALE_6
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Female_6.gif
+  - typeSingle: 0__3__GUARD_HAIR_FEMALE_7
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Female_7.gif
+  - typeSingle: 0__3__GUARD_HAIR_FEMALE_8
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Female_8.gif
+  - typeSingle: 0__3__GUARD_HAIR_FEMALE_9
+    fileSingle: Resources/Faces/Guard/Guard_Hair_Female_9.gif
+
+#ENGINSEER FACES
+#MALE FACES (LAYER 1)
+  - typeSingle: 0__1__ENGINSEER_FACE_MALE_0
+    fileSingle: Resources/Faces/Enginseer/Enginseer_Face_Male_0.gif
+  - typeSingle: 0__1__ENGINSEER_FACE_MALE_1
+    fileSingle: Resources/Faces/Enginseer/Enginseer_Face_Male_1.gif
+  - typeSingle: 0__1__ENGINSEER_FACE_MALE_2
+    fileSingle: Resources/Faces/Enginseer/Enginseer_Face_Male_2.gif
+  - typeSingle: 0__1__ENGINSEER_FACE_MALE_3
+    fileSingle: Resources/Faces/Enginseer/Enginseer_Face_Male_3.gif
+  - typeSingle: 0__1__ENGINSEER_FACE_MALE_4
+    fileSingle: Resources/Faces/Enginseer/Enginseer_Face_Male_4.gif
+  - typeSingle: 0__1__ENGINSEER_FACE_MALE_5
+    fileSingle: Resources/Faces/Enginseer/Enginseer_Face_Male_5.gif
+
+#FEMALE FACES (LAYER 1)
+  - typeSingle: 0__1__ENGINSEER_FACE_FEMALE_0
+    fileSingle: Resources/Faces/Enginseer/Enginseer_Face_Female_0.gif
+  - typeSingle: 0__1__ENGINSEER_FACE_FEMALE_1
+    fileSingle: Resources/Faces/Enginseer/Enginseer_Face_Female_1.gif
+  - typeSingle: 0__1__ENGINSEER_FACE_FEMALE_2
+    fileSingle: Resources/Faces/Enginseer/Enginseer_Face_Female_2.gif
+  - typeSingle: 0__1__ENGINSEER_FACE_FEMALE_3
+    fileSingle: Resources/Faces/Enginseer/Enginseer_Face_Female_3.gif
+  - typeSingle: 0__1__ENGINSEER_FACE_FEMALE_4
+    fileSingle: Resources/Faces/Enginseer/Enginseer_Face_Female_4.gif
+  - typeSingle: 0__1__ENGINSEER_FACE_FEMALE_5
+    fileSingle: Resources/Faces/Enginseer/Enginseer_Face_Female_5.gif
+
+
 
 ### ARMOR INVENTORY SPRITES ###
 
@@ -616,17 +765,27 @@ extraSprites:
   - typeSingle: CARAPACE_HELM__6__Female
     fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Helm_Inv_F.png
 
+
+#Enginseer Power Armor (LAYER 2)
+  - typeSingle: ENGINSEER_ARMOR__2__ENGINSEER_ARMOR_MF
+    fileSingle: Resources/Armor/IG/Enginseer/Enginseer_Armor_Inv.gif
+
+#Enginseer Mask (LAYER 3)
+  - typeSingle: ENGINSEER_MASK__3__ENGINSEER_MASK
+    fileSingle: Resources/Armor/IG/Enginseer/Enginseer_Armor_Inv_Mask.gif
+
+
 #Enginseer's inventory
-  - type: ENGINSEER_INV.SPK
-    singleImage: true
-    files:
-      0: Resources/Armor/IG/Enginseer/Enginseer_Armor_Inv.gif
+#  - type: ENGINSEER_INV.SPK
+#    singleImage: true
+#    files:
+#      0: Resources/Armor/IG/Enginseer/Enginseer_Armor_Inv.gif
 
 #Ministorum Priest inventory
-  - typeSingle: MINISTORUM_PRIEST__4__Male
+  - typeSingle: PRIEST_ROBES__2__PRIEST_ROBES_M
     fileSingle: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Inv_Male.png
 
-  - typeSingle: MINISTORUM_PRIEST__4__Female
+  - typeSingle: PRIEST_ROBES__2__PRIEST_ROBES_F
     fileSingle: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Inv_Female.png
 
 

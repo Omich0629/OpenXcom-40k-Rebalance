@@ -586,9 +586,8 @@ research:
 
 ### Techmarine and stuff ###
 #Cult of The Machine
-#Renamed "Techmarine requisitions".
   - name: STR_TEC_BAYR 
-    cost: 200
+    cost: 600
     points: 15
     dependencies:
       - STR_GENERALLOCK
@@ -679,6 +678,14 @@ research:
     points: 10
     dependencies:
       - STR_MT
+
+#Techmarine Armor
+  - name: STR_TECHMARINE_ARMOR
+    cost: 500
+    points: 20
+    dependencies:
+      - STR_VETERAN_ARMORS
+      - STR_TEC_BAYR
 
 #Chaplain Armor
   - name: STR_CHAP_ARMOR

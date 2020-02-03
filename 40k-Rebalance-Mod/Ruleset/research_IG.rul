@@ -421,11 +421,12 @@ research:
 ### ADEPTUS MECHANICUS and some tech stuff ###
 
 #Cult of The Machine
-  - name: STR_TEC_BAYR 
-    cost: 600
-    points: 15
-    dependencies:
-      - STR_GENERALLOCK
+#Same as for Space Marines
+#  - name: STR_TEC_BAYR 
+#    cost: 600
+#    points: 15
+#    dependencies:
+#      - STR_GENERALLOCK
 
 #Auspex (Motion Scanner)
 #Same as for Space Marines

@@ -556,18 +556,18 @@ armors:
     layersSpecificPrefix:
       1: MK7_ARMOR
     layersDefinition:
-      M0: ["0", "MK7_ARMOR_M", "M0_FACE"]
-      M1: ["0", "MK7_ARMOR_M", "M1_FACE"]
-      M2: ["0", "MK7_ARMOR_M", "M2_FACE"]
-      M3: ["0", "MK7_ARMOR_M", "M3_FACE"]
-      M4: ["0", "MK7_ARMOR_M", "M4_FACE"]
-      M5: ["0", "MK7_ARMOR_M", "M5_FACE"]
-      F0: ["0", "MK7_ARMOR_F", "F0_FACE"]
-      F1: ["0", "MK7_ARMOR_F", "F1_FACE"]
-      F2: ["0", "MK7_ARMOR_F", "F2_FACE"]
-      F3: ["0", "MK7_ARMOR_F", "F3_FACE"]
-      F4: ["0", "MK7_ARMOR_F", "F4_FACE"]
-      F5: ["0", "MK7_ARMOR_F", "F5_FACE"]
+      M0: ["0", "MK7_ARMOR_M", "SM_FACE_MALE_0"]
+      M1: ["0", "MK7_ARMOR_M", "SM_FACE_MALE_1"]
+      M2: ["0", "MK7_ARMOR_M", "SM_FACE_MALE_2"]
+      M3: ["0", "MK7_ARMOR_M", "SM_FACE_MALE_3"]
+      M4: ["0", "MK7_ARMOR_M", "SM_FACE_MALE_4"]
+      M5: ["0", "MK7_ARMOR_M", "SM_FACE_MALE_5"]
+      F0: ["0", "MK7_ARMOR_F", "SM_FACE_FEMALE_0"]
+      F1: ["0", "MK7_ARMOR_F", "SM_FACE_FEMALE_1"]
+      F2: ["0", "MK7_ARMOR_F", "SM_FACE_FEMALE_2"]
+      F3: ["0", "MK7_ARMOR_F", "SM_FACE_FEMALE_3"]
+      F4: ["0", "MK7_ARMOR_F", "SM_FACE_FEMALE_4"]
+      F5: ["0", "MK7_ARMOR_F", "SM_FACE_FEMALE_5"]
 
 ### ASSAULT ARMOR MK7 ###
 #Power Armor with jump pack.
@@ -626,18 +626,18 @@ armors:
     layersSpecificPrefix:
       1: MK7_ASSAULT
     layersDefinition:
-      M0: ["0", "MK7_ASSAULT_M", "M0_FACE"]
-      M1: ["0", "MK7_ASSAULT_M", "M1_FACE"]
-      M2: ["0", "MK7_ASSAULT_M", "M2_FACE"]
-      M3: ["0", "MK7_ASSAULT_M", "M3_FACE"]
-      M4: ["0", "MK7_ASSAULT_M", "M4_FACE"]
-      M5: ["0", "MK7_ASSAULT_M", "M5_FACE"]
-      F0: ["0", "MK7_ASSAULT_F", "F0_FACE"]
-      F1: ["0", "MK7_ASSAULT_F", "F1_FACE"]
-      F2: ["0", "MK7_ASSAULT_F", "F2_FACE"]
-      F3: ["0", "MK7_ASSAULT_F", "F3_FACE"]
-      F4: ["0", "MK7_ASSAULT_F", "F4_FACE"]
-      F5: ["0", "MK7_ASSAULT_F", "F5_FACE"]
+      M0: ["0", "MK7_ASSAULT_M", "SM_FACE_MALE_0"]
+      M1: ["0", "MK7_ASSAULT_M", "SM_FACE_MALE_1"]
+      M2: ["0", "MK7_ASSAULT_M", "SM_FACE_MALE_2"]
+      M3: ["0", "MK7_ASSAULT_M", "SM_FACE_MALE_3"]
+      M4: ["0", "MK7_ASSAULT_M", "SM_FACE_MALE_4"]
+      M5: ["0", "MK7_ASSAULT_M", "SM_FACE_MALE_5"]
+      F0: ["0", "MK7_ASSAULT_F", "SM_FACE_FEMALE_0"]
+      F1: ["0", "MK7_ASSAULT_F", "SM_FACE_FEMALE_1"]
+      F2: ["0", "MK7_ASSAULT_F", "SM_FACE_FEMALE_2"]
+      F3: ["0", "MK7_ASSAULT_F", "SM_FACE_FEMALE_3"]
+      F4: ["0", "MK7_ASSAULT_F", "SM_FACE_FEMALE_4"]
+      F5: ["0", "MK7_ASSAULT_F", "SM_FACE_FEMALE_5"]
 
 
 ### DEVASTATOR ARMOR MK7 ## 
@@ -696,18 +696,18 @@ armors:
     layersSpecificPrefix:
       1: MK7_DEVASTATOR
     layersDefinition:
-      M0: ["0", "MK7_DEVASTATOR_M", "M0_FACE"]
-      M1: ["0", "MK7_DEVASTATOR_M", "M1_FACE"]
-      M2: ["0", "MK7_DEVASTATOR_M", "M2_FACE"]
-      M3: ["0", "MK7_DEVASTATOR_M", "M3_FACE"]
-      M4: ["0", "MK7_DEVASTATOR_M", "M4_FACE"]
-      M5: ["0", "MK7_DEVASTATOR_M", "M5_FACE"]
-      F0: ["0", "MK7_DEVASTATOR_F", "F0_FACE"]
-      F1: ["0", "MK7_DEVASTATOR_F", "F1_FACE"]
-      F2: ["0", "MK7_DEVASTATOR_F", "F2_FACE"]
-      F3: ["0", "MK7_DEVASTATOR_F", "F3_FACE"]
-      F4: ["0", "MK7_DEVASTATOR_F", "F4_FACE"]
-      F5: ["0", "MK7_DEVASTATOR_F", "F5_FACE"]
+      M0: ["0", "MK7_DEVASTATOR_M", "SM_FACE_MALE_0"]
+      M1: ["0", "MK7_DEVASTATOR_M", "SM_FACE_MALE_1"]
+      M2: ["0", "MK7_DEVASTATOR_M", "SM_FACE_MALE_2"]
+      M3: ["0", "MK7_DEVASTATOR_M", "SM_FACE_MALE_3"]
+      M4: ["0", "MK7_DEVASTATOR_M", "SM_FACE_MALE_4"]
+      M5: ["0", "MK7_DEVASTATOR_M", "SM_FACE_MALE_5"]
+      F0: ["0", "MK7_DEVASTATOR_F", "SM_FACE_FEMALE_0"]
+      F1: ["0", "MK7_DEVASTATOR_F", "SM_FACE_FEMALE_1"]
+      F2: ["0", "MK7_DEVASTATOR_F", "SM_FACE_FEMALE_2"]
+      F3: ["0", "MK7_DEVASTATOR_F", "SM_FACE_FEMALE_3"]
+      F4: ["0", "MK7_DEVASTATOR_F", "SM_FACE_FEMALE_4"]
+      F5: ["0", "MK7_DEVASTATOR_F", "SM_FACE_FEMALE_5"]
 
 
 ### SERGEANT ARMOR MK7 ###
@@ -767,18 +767,18 @@ armors:
     layersSpecificPrefix:
       1: MK7_SERGEANT
     layersDefinition:
-      M0: ["0", "MK7_SERGEANT_M", "M0_FACE"]
-      M1: ["0", "MK7_SERGEANT_M", "M1_FACE"]
-      M2: ["0", "MK7_SERGEANT_M", "M2_FACE"]
-      M3: ["0", "MK7_SERGEANT_M", "M3_FACE"]
-      M4: ["0", "MK7_SERGEANT_M", "M4_FACE"]
-      M5: ["0", "MK7_SERGEANT_M", "M5_FACE"]
-      F0: ["0", "MK7_SERGEANT_F", "F0_FACE"]
-      F1: ["0", "MK7_SERGEANT_F", "F1_FACE"]
-      F2: ["0", "MK7_SERGEANT_F", "F2_FACE"]
-      F3: ["0", "MK7_SERGEANT_F", "F3_FACE"]
-      F4: ["0", "MK7_SERGEANT_F", "F4_FACE"]
-      F5: ["0", "MK7_SERGEANT_F", "F5_FACE"]
+      M0: ["0", "MK7_SERGEANT_M", "SM_FACE_MALE_0"]
+      M1: ["0", "MK7_SERGEANT_M", "SM_FACE_MALE_1"]
+      M2: ["0", "MK7_SERGEANT_M", "SM_FACE_MALE_2"]
+      M3: ["0", "MK7_SERGEANT_M", "SM_FACE_MALE_3"]
+      M4: ["0", "MK7_SERGEANT_M", "SM_FACE_MALE_4"]
+      M5: ["0", "MK7_SERGEANT_M", "SM_FACE_MALE_5"]
+      F0: ["0", "MK7_SERGEANT_F", "SM_FACE_FEMALE_0"]
+      F1: ["0", "MK7_SERGEANT_F", "SM_FACE_FEMALE_1"]
+      F2: ["0", "MK7_SERGEANT_F", "SM_FACE_FEMALE_2"]
+      F3: ["0", "MK7_SERGEANT_F", "SM_FACE_FEMALE_3"]
+      F4: ["0", "MK7_SERGEANT_F", "SM_FACE_FEMALE_4"]
+      F5: ["0", "MK7_SERGEANT_F", "SM_FACE_FEMALE_5"]
 
 
 ### APOTHECARY ARMOR MK7 ###
@@ -839,18 +839,18 @@ armors:
     layersSpecificPrefix:
       1: MK7_APOTHECARY
     layersDefinition:
-      M0: ["0", "MK7_APOTHECARY_M", "M0_FACE"]
-      M1: ["0", "MK7_APOTHECARY_M", "M1_FACE"]
-      M2: ["0", "MK7_APOTHECARY_M", "M2_FACE"]
-      M3: ["0", "MK7_APOTHECARY_M", "M3_FACE"]
-      M4: ["0", "MK7_APOTHECARY_M", "M4_FACE"]
-      M5: ["0", "MK7_APOTHECARY_M", "M5_FACE"]
-      F0: ["0", "MK7_APOTHECARY_F", "F0_FACE"]
-      F1: ["0", "MK7_APOTHECARY_F", "F1_FACE"]
-      F2: ["0", "MK7_APOTHECARY_F", "F2_FACE"]
-      F3: ["0", "MK7_APOTHECARY_F", "F3_FACE"]
-      F4: ["0", "MK7_APOTHECARY_F", "F4_FACE"]
-      F5: ["0", "MK7_APOTHECARY_F", "F5_FACE"]
+      M0: ["0", "MK7_APOTHECARY_M", "SM_FACE_MALE_0"]
+      M1: ["0", "MK7_APOTHECARY_M", "SM_FACE_MALE_1"]
+      M2: ["0", "MK7_APOTHECARY_M", "SM_FACE_MALE_2"]
+      M3: ["0", "MK7_APOTHECARY_M", "SM_FACE_MALE_3"]
+      M4: ["0", "MK7_APOTHECARY_M", "SM_FACE_MALE_4"]
+      M5: ["0", "MK7_APOTHECARY_M", "SM_FACE_MALE_5"]
+      F0: ["0", "MK7_APOTHECARY_F", "SM_FACE_FEMALE_0"]
+      F1: ["0", "MK7_APOTHECARY_F", "SM_FACE_FEMALE_1"]
+      F2: ["0", "MK7_APOTHECARY_F", "SM_FACE_FEMALE_2"]
+      F3: ["0", "MK7_APOTHECARY_F", "SM_FACE_FEMALE_3"]
+      F4: ["0", "MK7_APOTHECARY_F", "SM_FACE_FEMALE_4"]
+      F5: ["0", "MK7_APOTHECARY_F", "SM_FACE_FEMALE_5"]
 
 ### ASSAULT BIKE ###
 #Well, that's a strange armor.
@@ -918,18 +918,18 @@ armors:
     layersSpecificPrefix:
       1: MK7_BIKE
     layersDefinition:
-      M0: ["0", "MK7_BIKE_M", "M0_FACE"]
-      M1: ["0", "MK7_BIKE_M", "M1_FACE"]
-      M2: ["0", "MK7_BIKE_M", "M2_FACE"]
-      M3: ["0", "MK7_BIKE_M", "M3_FACE"]
-      M4: ["0", "MK7_BIKE_M", "M4_FACE"]
-      M5: ["0", "MK7_BIKE_M", "M5_FACE"]
-      F0: ["0", "MK7_BIKE_F", "F0_FACE"]
-      F1: ["0", "MK7_BIKE_F", "F1_FACE"]
-      F2: ["0", "MK7_BIKE_F", "F2_FACE"]
-      F3: ["0", "MK7_BIKE_F", "F3_FACE"]
-      F4: ["0", "MK7_BIKE_F", "F4_FACE"]
-      F5: ["0", "MK7_BIKE_F", "F5_FACE"]
+      M0: ["0", "MK7_BIKE_M", "SM_FACE_MALE_0"]
+      M1: ["0", "MK7_BIKE_M", "SM_FACE_MALE_1"]
+      M2: ["0", "MK7_BIKE_M", "SM_FACE_MALE_2"]
+      M3: ["0", "MK7_BIKE_M", "SM_FACE_MALE_3"]
+      M4: ["0", "MK7_BIKE_M", "SM_FACE_MALE_4"]
+      M5: ["0", "MK7_BIKE_M", "SM_FACE_MALE_5"]
+      F0: ["0", "MK7_BIKE_F", "SM_FACE_FEMALE_0"]
+      F1: ["0", "MK7_BIKE_F", "SM_FACE_FEMALE_1"]
+      F2: ["0", "MK7_BIKE_F", "SM_FACE_FEMALE_2"]
+      F3: ["0", "MK7_BIKE_F", "SM_FACE_FEMALE_3"]
+      F4: ["0", "MK7_BIKE_F", "SM_FACE_FEMALE_4"]
+      F5: ["0", "MK7_BIKE_F", "SM_FACE_FEMALE_5"]
 
 ### TECHMARINE ARMOR MK7 ###
 #Separate version of mk7 armor
@@ -989,18 +989,18 @@ armors:
     layersSpecificPrefix:
       1: MK7_TECHMARINE
     layersDefinition:
-      M0: ["0", "MK7_TECHMARINE_M", "M0_FACE"]
-      M1: ["0", "MK7_TECHMARINE_M", "M1_FACE"]
-      M2: ["0", "MK7_TECHMARINE_M", "M2_FACE"]
-      M3: ["0", "MK7_TECHMARINE_M", "M3_FACE"]
-      M4: ["0", "MK7_TECHMARINE_M", "M4_FACE"]
-      M5: ["0", "MK7_TECHMARINE_M", "M5_FACE"]
-      F0: ["0", "MK7_TECHMARINE_F", "F0_FACE"]
-      F1: ["0", "MK7_TECHMARINE_F", "F1_FACE"]
-      F2: ["0", "MK7_TECHMARINE_F", "F2_FACE"]
-      F3: ["0", "MK7_TECHMARINE_F", "F3_FACE"]
-      F4: ["0", "MK7_TECHMARINE_F", "F4_FACE"]
-      F5: ["0", "MK7_TECHMARINE_F", "F5_FACE"]
+      M0: ["0", "MK7_TECHMARINE_M", "SM_FACE_MALE_0"]
+      M1: ["0", "MK7_TECHMARINE_M", "SM_FACE_MALE_1"]
+      M2: ["0", "MK7_TECHMARINE_M", "SM_FACE_MALE_2"]
+      M3: ["0", "MK7_TECHMARINE_M", "SM_FACE_MALE_3"]
+      M4: ["0", "MK7_TECHMARINE_M", "SM_FACE_MALE_4"]
+      M5: ["0", "MK7_TECHMARINE_M", "SM_FACE_MALE_5"]
+      F0: ["0", "MK7_TECHMARINE_F", "SM_FACE_FEMALE_0"]
+      F1: ["0", "MK7_TECHMARINE_F", "SM_FACE_FEMALE_1"]
+      F2: ["0", "MK7_TECHMARINE_F", "SM_FACE_FEMALE_2"]
+      F3: ["0", "MK7_TECHMARINE_F", "SM_FACE_FEMALE_3"]
+      F4: ["0", "MK7_TECHMARINE_F", "SM_FACE_FEMALE_4"]
+      F5: ["0", "MK7_TECHMARINE_F", "SM_FACE_FEMALE_5"]
 
 ### CENTURION WARSUIT ###
 #Weapon: Missiles and twin-linked boler. 
@@ -1060,18 +1060,18 @@ armors:
     layersSpecificPrefix:
       1: CENT
     layersDefinition:
-      M0: ["0", "CENTMF", "M0_FACE"]
-      M1: ["0", "CENTMF", "M1_FACE"]
-      M2: ["0", "CENTMF", "M2_FACE"]
-      M3: ["0", "CENTMF", "M3_FACE"]
-      M4: ["0", "CENTMF", "M4_FACE"]
-      M5: ["0", "CENTMF", "M5_FACE"]
-      F0: ["0", "CENTMF", "F0_FACE"]
-      F1: ["0", "CENTMF", "F1_FACE"]
-      F2: ["0", "CENTMF", "F2_FACE"]
-      F3: ["0", "CENTMF", "F3_FACE"]
-      F4: ["0", "CENTMF", "F4_FACE"]
-      F5: ["0", "CENTMF", "F5_FACE"]
+      M0: ["0", "CENTMF", "SM_FACE_MALE_0"]
+      M1: ["0", "CENTMF", "SM_FACE_MALE_1"]
+      M2: ["0", "CENTMF", "SM_FACE_MALE_2"]
+      M3: ["0", "CENTMF", "SM_FACE_MALE_3"]
+      M4: ["0", "CENTMF", "SM_FACE_MALE_4"]
+      M5: ["0", "CENTMF", "SM_FACE_MALE_5"]
+      F0: ["0", "CENTMF", "SM_FACE_FEMALE_0"]
+      F1: ["0", "CENTMF", "SM_FACE_FEMALE_1"]
+      F2: ["0", "CENTMF", "SM_FACE_FEMALE_2"]
+      F3: ["0", "CENTMF", "SM_FACE_FEMALE_3"]
+      F4: ["0", "CENTMF", "SM_FACE_FEMALE_4"]
+      F5: ["0", "CENTMF", "SM_FACE_FEMALE_5"]
 
 ### HONOR GUARD ARMOR ###
 #Default for Veteran Marines.
@@ -1129,18 +1129,18 @@ armors:
     layersSpecificPrefix:
       1: MK7_HONOR_GUARD
     layersDefinition:
-      M0: ["0", "MK7_HONOR_GUARD_M", "M0_FACE"]
-      M1: ["0", "MK7_HONOR_GUARD_M", "M1_FACE"]
-      M2: ["0", "MK7_HONOR_GUARD_M", "M2_FACE"]
-      M3: ["0", "MK7_HONOR_GUARD_M", "M3_FACE"]
-      M4: ["0", "MK7_HONOR_GUARD_M", "M4_FACE"]
-      M5: ["0", "MK7_HONOR_GUARD_M", "M5_FACE"]
-      F0: ["0", "MK7_HONOR_GUARD_F", "F0_FACE"]
-      F1: ["0", "MK7_HONOR_GUARD_F", "F1_FACE"]
-      F2: ["0", "MK7_HONOR_GUARD_F", "F2_FACE"]
-      F3: ["0", "MK7_HONOR_GUARD_F", "F3_FACE"]
-      F4: ["0", "MK7_HONOR_GUARD_F", "F4_FACE"]
-      F5: ["0", "MK7_HONOR_GUARD_F", "F5_FACE"]
+      M0: ["0", "MK7_HONOR_GUARD_M", "SM_FACE_MALE_0"]
+      M1: ["0", "MK7_HONOR_GUARD_M", "SM_FACE_MALE_1"]
+      M2: ["0", "MK7_HONOR_GUARD_M", "SM_FACE_MALE_2"]
+      M3: ["0", "MK7_HONOR_GUARD_M", "SM_FACE_MALE_3"]
+      M4: ["0", "MK7_HONOR_GUARD_M", "SM_FACE_MALE_4"]
+      M5: ["0", "MK7_HONOR_GUARD_M", "SM_FACE_MALE_5"]
+      F0: ["0", "MK7_HONOR_GUARD_F", "SM_FACE_FEMALE_0"]
+      F1: ["0", "MK7_HONOR_GUARD_F", "SM_FACE_FEMALE_1"]
+      F2: ["0", "MK7_HONOR_GUARD_F", "SM_FACE_FEMALE_2"]
+      F3: ["0", "MK7_HONOR_GUARD_F", "SM_FACE_FEMALE_3"]
+      F4: ["0", "MK7_HONOR_GUARD_F", "SM_FACE_FEMALE_4"]
+      F5: ["0", "MK7_HONOR_GUARD_F", "SM_FACE_FEMALE_5"]
 
 ### VANGUARD ARMOR ###
 #Technically it's a honor armor with jump pack.
@@ -1199,18 +1199,18 @@ armors:
     layersSpecificPrefix:
       1: MK7_VANGUARD
     layersDefinition:
-      M0: ["0", "MK7_VANGUARD_M", "M0_FACE"]
-      M1: ["0", "MK7_VANGUARD_M", "M1_FACE"]
-      M2: ["0", "MK7_VANGUARD_M", "M2_FACE"]
-      M3: ["0", "MK7_VANGUARD_M", "M3_FACE"]
-      M4: ["0", "MK7_VANGUARD_M", "M4_FACE"]
-      M5: ["0", "MK7_VANGUARD_M", "M5_FACE"]
-      F0: ["0", "MK7_VANGUARD_F", "F0_FACE"]
-      F1: ["0", "MK7_VANGUARD_F", "F1_FACE"]
-      F2: ["0", "MK7_VANGUARD_F", "F2_FACE"]
-      F3: ["0", "MK7_VANGUARD_F", "F3_FACE"]
-      F4: ["0", "MK7_VANGUARD_F", "F4_FACE"]
-      F5: ["0", "MK7_VANGUARD_F", "F5_FACE"]
+      M0: ["0", "MK7_VANGUARD_M", "SM_FACE_MALE_0"]
+      M1: ["0", "MK7_VANGUARD_M", "SM_FACE_MALE_1"]
+      M2: ["0", "MK7_VANGUARD_M", "SM_FACE_MALE_2"]
+      M3: ["0", "MK7_VANGUARD_M", "SM_FACE_MALE_3"]
+      M4: ["0", "MK7_VANGUARD_M", "SM_FACE_MALE_4"]
+      M5: ["0", "MK7_VANGUARD_M", "SM_FACE_MALE_5"]
+      F0: ["0", "MK7_VANGUARD_F", "SM_FACE_FEMALE_0"]
+      F1: ["0", "MK7_VANGUARD_F", "SM_FACE_FEMALE_1"]
+      F2: ["0", "MK7_VANGUARD_F", "SM_FACE_FEMALE_2"]
+      F3: ["0", "MK7_VANGUARD_F", "SM_FACE_FEMALE_3"]
+      F4: ["0", "MK7_VANGUARD_F", "SM_FACE_FEMALE_4"]
+      F5: ["0", "MK7_VANGUARD_F", "SM_FACE_FEMALE_5"]
 
 ### VETERAN DEVASTATOR ARMOR ###
 #Mk7 armor with devastator equipment. Veteran variant.
@@ -1266,18 +1266,18 @@ armors:
     layersSpecificPrefix:
       1: MK7_VETERAN_DEVASTATOR
     layersDefinition:
-      M0: ["0", "MK7_VETERAN_DEVASTATOR_M", "M0_FACE"]
-      M1: ["0", "MK7_VETERAN_DEVASTATOR_M", "M1_FACE"]
-      M2: ["0", "MK7_VETERAN_DEVASTATOR_M", "M2_FACE"]
-      M3: ["0", "MK7_VETERAN_DEVASTATOR_M", "M3_FACE"]
-      M4: ["0", "MK7_VETERAN_DEVASTATOR_M", "M4_FACE"]
-      M5: ["0", "MK7_VETERAN_DEVASTATOR_M", "M5_FACE"]
-      F0: ["0", "MK7_VETERAN_DEVASTATOR_F", "F0_FACE"]
-      F1: ["0", "MK7_VETERAN_DEVASTATOR_F", "F1_FACE"]
-      F2: ["0", "MK7_VETERAN_DEVASTATOR_F", "F2_FACE"]
-      F3: ["0", "MK7_VETERAN_DEVASTATOR_F", "F3_FACE"]
-      F4: ["0", "MK7_VETERAN_DEVASTATOR_F", "F4_FACE"]
-      F5: ["0", "MK7_VETERAN_DEVASTATOR_F", "F5_FACE"]
+      M0: ["0", "MK7_VETERAN_DEVASTATOR_M", "SM_FACE_MALE_0"]
+      M1: ["0", "MK7_VETERAN_DEVASTATOR_M", "SM_FACE_MALE_1"]
+      M2: ["0", "MK7_VETERAN_DEVASTATOR_M", "SM_FACE_MALE_2"]
+      M3: ["0", "MK7_VETERAN_DEVASTATOR_M", "SM_FACE_MALE_3"]
+      M4: ["0", "MK7_VETERAN_DEVASTATOR_M", "SM_FACE_MALE_4"]
+      M5: ["0", "MK7_VETERAN_DEVASTATOR_M", "SM_FACE_MALE_5"]
+      F0: ["0", "MK7_VETERAN_DEVASTATOR_F", "SM_FACE_FEMALE_0"]
+      F1: ["0", "MK7_VETERAN_DEVASTATOR_F", "SM_FACE_FEMALE_1"]
+      F2: ["0", "MK7_VETERAN_DEVASTATOR_F", "SM_FACE_FEMALE_2"]
+      F3: ["0", "MK7_VETERAN_DEVASTATOR_F", "SM_FACE_FEMALE_3"]
+      F4: ["0", "MK7_VETERAN_DEVASTATOR_F", "SM_FACE_FEMALE_4"]
+      F5: ["0", "MK7_VETERAN_DEVASTATOR_F", "SM_FACE_FEMALE_5"]
 
 
 ### VETERAN SERGEANT ARMOR ###
@@ -1338,18 +1338,18 @@ armors:
     layersSpecificPrefix:
       1: MK7_VETERAN_SERGEANT
     layersDefinition:
-      M0: ["0", "MK7_VETERAN_SERGEANT_M", "M0_FACE"]
-      M1: ["0", "MK7_VETERAN_SERGEANT_M", "M1_FACE"]
-      M2: ["0", "MK7_VETERAN_SERGEANT_M", "M2_FACE"]
-      M3: ["0", "MK7_VETERAN_SERGEANT_M", "M3_FACE"]
-      M4: ["0", "MK7_VETERAN_SERGEANT_M", "M4_FACE"]
-      M5: ["0", "MK7_VETERAN_SERGEANT_M", "M5_FACE"]
-      F0: ["0", "MK7_VETERAN_SERGEANT_F", "F0_FACE"]
-      F1: ["0", "MK7_VETERAN_SERGEANT_F", "F1_FACE"]
-      F2: ["0", "MK7_VETERAN_SERGEANT_F", "F2_FACE"]
-      F3: ["0", "MK7_VETERAN_SERGEANT_F", "F3_FACE"]
-      F4: ["0", "MK7_VETERAN_SERGEANT_F", "F4_FACE"]
-      F5: ["0", "MK7_VETERAN_SERGEANT_F", "F5_FACE"]
+      M0: ["0", "MK7_VETERAN_SERGEANT_M", "SM_FACE_MALE_0"]
+      M1: ["0", "MK7_VETERAN_SERGEANT_M", "SM_FACE_MALE_1"]
+      M2: ["0", "MK7_VETERAN_SERGEANT_M", "SM_FACE_MALE_2"]
+      M3: ["0", "MK7_VETERAN_SERGEANT_M", "SM_FACE_MALE_3"]
+      M4: ["0", "MK7_VETERAN_SERGEANT_M", "SM_FACE_MALE_4"]
+      M5: ["0", "MK7_VETERAN_SERGEANT_M", "SM_FACE_MALE_5"]
+      F0: ["0", "MK7_VETERAN_SERGEANT_F", "SM_FACE_FEMALE_0"]
+      F1: ["0", "MK7_VETERAN_SERGEANT_F", "SM_FACE_FEMALE_1"]
+      F2: ["0", "MK7_VETERAN_SERGEANT_F", "SM_FACE_FEMALE_2"]
+      F3: ["0", "MK7_VETERAN_SERGEANT_F", "SM_FACE_FEMALE_3"]
+      F4: ["0", "MK7_VETERAN_SERGEANT_F", "SM_FACE_FEMALE_4"]
+      F5: ["0", "MK7_VETERAN_SERGEANT_F", "SM_FACE_FEMALE_5"]
 
 
 ### MK7 CHAPLAIN ARMOR ###
@@ -1364,6 +1364,7 @@ armors:
     spriteInv: MAN_27
     customArmorPreviewIndex: 13
     zombiImmune: true
+    fearImmune: true
     corpseBattle:
       - STR_CHAP_CORPSE
     storeItem: STR_CHAP_ARMOR
@@ -1415,18 +1416,18 @@ armors:
     layersSpecificPrefix:
       1: MK7_CHAPLAIN
     layersDefinition:
-      M0: ["0", "MK7_CHAPLAIN_M", "M0_FACE"]
-      M1: ["0", "MK7_CHAPLAIN_M", "M1_FACE"]
-      M2: ["0", "MK7_CHAPLAIN_M", "M2_FACE"]
-      M3: ["0", "MK7_CHAPLAIN_M", "M3_FACE"]
-      M4: ["0", "MK7_CHAPLAIN_M", "M4_FACE"]
-      M5: ["0", "MK7_CHAPLAIN_M", "M5_FACE"]
-      F0: ["0", "MK7_CHAPLAIN_F", "F0_FACE"]
-      F1: ["0", "MK7_CHAPLAIN_F", "F1_FACE"]
-      F2: ["0", "MK7_CHAPLAIN_F", "F2_FACE"]
-      F3: ["0", "MK7_CHAPLAIN_F", "F3_FACE"]
-      F4: ["0", "MK7_CHAPLAIN_F", "F4_FACE"]
-      F5: ["0", "MK7_CHAPLAIN_F", "F5_FACE"]
+      M0: ["0", "MK7_CHAPLAIN_M", "SM_FACE_MALE_0"]
+      M1: ["0", "MK7_CHAPLAIN_M", "SM_FACE_MALE_1"]
+      M2: ["0", "MK7_CHAPLAIN_M", "SM_FACE_MALE_2"]
+      M3: ["0", "MK7_CHAPLAIN_M", "SM_FACE_MALE_3"]
+      M4: ["0", "MK7_CHAPLAIN_M", "SM_FACE_MALE_4"]
+      M5: ["0", "MK7_CHAPLAIN_M", "SM_FACE_MALE_5"]
+      F0: ["0", "MK7_CHAPLAIN_F", "SM_FACE_FEMALE_0"]
+      F1: ["0", "MK7_CHAPLAIN_F", "SM_FACE_FEMALE_1"]
+      F2: ["0", "MK7_CHAPLAIN_F", "SM_FACE_FEMALE_2"]
+      F3: ["0", "MK7_CHAPLAIN_F", "SM_FACE_FEMALE_3"]
+      F4: ["0", "MK7_CHAPLAIN_F", "SM_FACE_FEMALE_4"]
+      F5: ["0", "MK7_CHAPLAIN_F", "SM_FACE_FEMALE_5"]
 
 
 ### MK7 LIBRARIAN ARMOR ###
@@ -1491,18 +1492,18 @@ armors:
     layersSpecificPrefix:
       1: MK7_LIBRARIAN
     layersDefinition:
-      M0: ["0", "MK7_LIBRARIAN_M", "M0_FACE"]
-      M1: ["0", "MK7_LIBRARIAN_M", "M1_FACE"]
-      M2: ["0", "MK7_LIBRARIAN_M", "M2_FACE"]
-      M3: ["0", "MK7_LIBRARIAN_M", "M3_FACE"]
-      M4: ["0", "MK7_LIBRARIAN_M", "M4_FACE"]
-      M5: ["0", "MK7_LIBRARIAN_M", "M5_FACE"]
-      F0: ["0", "MK7_LIBRARIAN_F", "F0_FACE"]
-      F1: ["0", "MK7_LIBRARIAN_F", "F1_FACE"]
-      F2: ["0", "MK7_LIBRARIAN_F", "F2_FACE"]
-      F3: ["0", "MK7_LIBRARIAN_F", "F3_FACE"]
-      F4: ["0", "MK7_LIBRARIAN_F", "F4_FACE"]
-      F5: ["0", "MK7_LIBRARIAN_F", "F5_FACE"]
+      M0: ["0", "MK7_LIBRARIAN_M", "SM_FACE_MALE_0"]
+      M1: ["0", "MK7_LIBRARIAN_M", "SM_FACE_MALE_1"]
+      M2: ["0", "MK7_LIBRARIAN_M", "SM_FACE_MALE_2"]
+      M3: ["0", "MK7_LIBRARIAN_M", "SM_FACE_MALE_3"]
+      M4: ["0", "MK7_LIBRARIAN_M", "SM_FACE_MALE_4"]
+      M5: ["0", "MK7_LIBRARIAN_M", "SM_FACE_MALE_5"]
+      F0: ["0", "MK7_LIBRARIAN_F", "SM_FACE_FEMALE_0"]
+      F1: ["0", "MK7_LIBRARIAN_F", "SM_FACE_FEMALE_1"]
+      F2: ["0", "MK7_LIBRARIAN_F", "SM_FACE_FEMALE_2"]
+      F3: ["0", "MK7_LIBRARIAN_F", "SM_FACE_FEMALE_3"]
+      F4: ["0", "MK7_LIBRARIAN_F", "SM_FACE_FEMALE_4"]
+      F5: ["0", "MK7_LIBRARIAN_F", "SM_FACE_FEMALE_5"]
 
 ### TERMINATOR ARMOR ###
   - delete: STR_POWER_SUIT_UC
@@ -1561,18 +1562,18 @@ armors:
     layersSpecificPrefix:
       1: TERM_ARMOR
     layersDefinition:
-      M0: ["0", "TERM_ARMOR_MF", "M0_FACE"]
-      M1: ["0", "TERM_ARMOR_MF", "M1_FACE"]
-      M2: ["0", "TERM_ARMOR_MF", "M2_FACE"]
-      M3: ["0", "TERM_ARMOR_MF", "M3_FACE"]
-      M4: ["0", "TERM_ARMOR_MF", "M4_FACE"]
-      M5: ["0", "TERM_ARMOR_MF", "M5_FACE"]
-      F0: ["0", "TERM_ARMOR_MF", "F0_FACE"]
-      F1: ["0", "TERM_ARMOR_MF", "F1_FACE"]
-      F2: ["0", "TERM_ARMOR_MF", "F2_FACE"]
-      F3: ["0", "TERM_ARMOR_MF", "F3_FACE"]
-      F4: ["0", "TERM_ARMOR_MF", "F4_FACE"]
-      F5: ["0", "TERM_ARMOR_MF", "F5_FACE"]
+      M0: ["0", "TERM_ARMOR_MF", "SM_FACE_MALE_0"]
+      M1: ["0", "TERM_ARMOR_MF", "SM_FACE_MALE_1"]
+      M2: ["0", "TERM_ARMOR_MF", "SM_FACE_MALE_2"]
+      M3: ["0", "TERM_ARMOR_MF", "SM_FACE_MALE_3"]
+      M4: ["0", "TERM_ARMOR_MF", "SM_FACE_MALE_4"]
+      M5: ["0", "TERM_ARMOR_MF", "SM_FACE_MALE_5"]
+      F0: ["0", "TERM_ARMOR_MF", "SM_FACE_FEMALE_0"]
+      F1: ["0", "TERM_ARMOR_MF", "SM_FACE_FEMALE_1"]
+      F2: ["0", "TERM_ARMOR_MF", "SM_FACE_FEMALE_2"]
+      F3: ["0", "TERM_ARMOR_MF", "SM_FACE_FEMALE_3"]
+      F4: ["0", "TERM_ARMOR_MF", "SM_FACE_FEMALE_4"]
+      F5: ["0", "TERM_ARMOR_MF", "SM_FACE_FEMALE_5"]
 
 
 ### ASSAULT TERMINATOR ARMOR ###
@@ -1634,18 +1635,18 @@ armors:
     layersSpecificPrefix:
       1: TERM_ARMOR
     layersDefinition:
-      M0: ["0", "TERM_ARMOR_MF", "M0_FACE"]
-      M1: ["0", "TERM_ARMOR_MF", "M1_FACE"]
-      M2: ["0", "TERM_ARMOR_MF", "M2_FACE"]
-      M3: ["0", "TERM_ARMOR_MF", "M3_FACE"]
-      M4: ["0", "TERM_ARMOR_MF", "M4_FACE"]
-      M5: ["0", "TERM_ARMOR_MF", "M5_FACE"]
-      F0: ["0", "TERM_ARMOR_MF", "F0_FACE"]
-      F1: ["0", "TERM_ARMOR_MF", "F1_FACE"]
-      F2: ["0", "TERM_ARMOR_MF", "F2_FACE"]
-      F3: ["0", "TERM_ARMOR_MF", "F3_FACE"]
-      F4: ["0", "TERM_ARMOR_MF", "F4_FACE"]
-      F5: ["0", "TERM_ARMOR_MF", "F5_FACE"]
+      M0: ["0", "TERM_ARMOR_MF", "SM_FACE_MALE_0"]
+      M1: ["0", "TERM_ARMOR_MF", "SM_FACE_MALE_1"]
+      M2: ["0", "TERM_ARMOR_MF", "SM_FACE_MALE_2"]
+      M3: ["0", "TERM_ARMOR_MF", "SM_FACE_MALE_3"]
+      M4: ["0", "TERM_ARMOR_MF", "SM_FACE_MALE_4"]
+      M5: ["0", "TERM_ARMOR_MF", "SM_FACE_MALE_5"]
+      F0: ["0", "TERM_ARMOR_MF", "SM_FACE_FEMALE_0"]
+      F1: ["0", "TERM_ARMOR_MF", "SM_FACE_FEMALE_1"]
+      F2: ["0", "TERM_ARMOR_MF", "SM_FACE_FEMALE_2"]
+      F3: ["0", "TERM_ARMOR_MF", "SM_FACE_FEMALE_3"]
+      F4: ["0", "TERM_ARMOR_MF", "SM_FACE_FEMALE_4"]
+      F5: ["0", "TERM_ARMOR_MF", "SM_FACE_FEMALE_5"]
 
 
 ### TERMINATOR APOTHECARY ARMOR ###
@@ -1706,18 +1707,18 @@ armors:
     layersSpecificPrefix:
       1: TERM_APOTHECARY
     layersDefinition:
-      M0: ["0", "TERM_APOTHECARY_MF", "M0_FACE"]
-      M1: ["0", "TERM_APOTHECARY_MF", "M1_FACE"]
-      M2: ["0", "TERM_APOTHECARY_MF", "M2_FACE"]
-      M3: ["0", "TERM_APOTHECARY_MF", "M3_FACE"]
-      M4: ["0", "TERM_APOTHECARY_MF", "M4_FACE"]
-      M5: ["0", "TERM_APOTHECARY_MF", "M5_FACE"]
-      F0: ["0", "TERM_APOTHECARY_MF", "F0_FACE"]
-      F1: ["0", "TERM_APOTHECARY_MF", "F1_FACE"]
-      F2: ["0", "TERM_APOTHECARY_MF", "F2_FACE"]
-      F3: ["0", "TERM_APOTHECARY_MF", "F3_FACE"]
-      F4: ["0", "TERM_APOTHECARY_MF", "F4_FACE"]
-      F5: ["0", "TERM_APOTHECARY_MF", "F5_FACE"]
+      M0: ["0", "TERM_APOTHECARY_MF", "SM_FACE_MALE_0"]
+      M1: ["0", "TERM_APOTHECARY_MF", "SM_FACE_MALE_1"]
+      M2: ["0", "TERM_APOTHECARY_MF", "SM_FACE_MALE_2"]
+      M3: ["0", "TERM_APOTHECARY_MF", "SM_FACE_MALE_3"]
+      M4: ["0", "TERM_APOTHECARY_MF", "SM_FACE_MALE_4"]
+      M5: ["0", "TERM_APOTHECARY_MF", "SM_FACE_MALE_5"]
+      F0: ["0", "TERM_APOTHECARY_MF", "SM_FACE_FEMALE_0"]
+      F1: ["0", "TERM_APOTHECARY_MF", "SM_FACE_FEMALE_1"]
+      F2: ["0", "TERM_APOTHECARY_MF", "SM_FACE_FEMALE_2"]
+      F3: ["0", "TERM_APOTHECARY_MF", "SM_FACE_FEMALE_3"]
+      F4: ["0", "TERM_APOTHECARY_MF", "SM_FACE_FEMALE_4"]
+      F5: ["0", "TERM_APOTHECARY_MF", "SM_FACE_FEMALE_5"]
 
 ### TERMINATOR CHAPLAIN ARMOR ###
 #Equiped with force field generator and power weapon.
@@ -1732,6 +1733,7 @@ armors:
       - STR_TERMINATOR_CHAPLAIN_CORPSE
     storeItem: STR_TERMINATOR_CHAPLAIN
     corpseGeo: STR_FALLEN_CORPSE
+    fearImmune: true
     stats:
        tu: -20
        stamina: -20
@@ -1781,18 +1783,18 @@ armors:
     layersSpecificPrefix:
       1: TERM_CHAPLAIN
     layersDefinition:
-      M0: ["0", "TERM_CHAPLAIN_MF", "M0_FACE"]
-      M1: ["0", "TERM_CHAPLAIN_MF", "M1_FACE"]
-      M2: ["0", "TERM_CHAPLAIN_MF", "M2_FACE"]
-      M3: ["0", "TERM_CHAPLAIN_MF", "M3_FACE"]
-      M4: ["0", "TERM_CHAPLAIN_MF", "M4_FACE"]
-      M5: ["0", "TERM_CHAPLAIN_MF", "M5_FACE"]
-      F0: ["0", "TERM_CHAPLAIN_MF", "F0_FACE"]
-      F1: ["0", "TERM_CHAPLAIN_MF", "F1_FACE"]
-      F2: ["0", "TERM_CHAPLAIN_MF", "F2_FACE"]
-      F3: ["0", "TERM_CHAPLAIN_MF", "F3_FACE"]
-      F4: ["0", "TERM_CHAPLAIN_MF", "F4_FACE"]
-      F5: ["0", "TERM_CHAPLAIN_MF", "F5_FACE"]
+      M0: ["0", "TERM_CHAPLAIN_MF", "SM_FACE_MALE_0"]
+      M1: ["0", "TERM_CHAPLAIN_MF", "SM_FACE_MALE_1"]
+      M2: ["0", "TERM_CHAPLAIN_MF", "SM_FACE_MALE_2"]
+      M3: ["0", "TERM_CHAPLAIN_MF", "SM_FACE_MALE_3"]
+      M4: ["0", "TERM_CHAPLAIN_MF", "SM_FACE_MALE_4"]
+      M5: ["0", "TERM_CHAPLAIN_MF", "SM_FACE_MALE_5"]
+      F0: ["0", "TERM_CHAPLAIN_MF", "SM_FACE_FEMALE_0"]
+      F1: ["0", "TERM_CHAPLAIN_MF", "SM_FACE_FEMALE_1"]
+      F2: ["0", "TERM_CHAPLAIN_MF", "SM_FACE_FEMALE_2"]
+      F3: ["0", "TERM_CHAPLAIN_MF", "SM_FACE_FEMALE_3"]
+      F4: ["0", "TERM_CHAPLAIN_MF", "SM_FACE_FEMALE_4"]
+      F5: ["0", "TERM_CHAPLAIN_MF", "SM_FACE_FEMALE_5"]
 
 ### TERMINATOR SERGEANT ARMOR ###
 #Active skill: TU Buff
@@ -1852,18 +1854,18 @@ armors:
     layersSpecificPrefix:
       1: TERM_SERGEANT
     layersDefinition:
-      M0: ["0", "TERM_SERGEANT_MF", "M0_FACE"]
-      M1: ["0", "TERM_SERGEANT_MF", "M1_FACE"]
-      M2: ["0", "TERM_SERGEANT_MF", "M2_FACE"]
-      M3: ["0", "TERM_SERGEANT_MF", "M3_FACE"]
-      M4: ["0", "TERM_SERGEANT_MF", "M4_FACE"]
-      M5: ["0", "TERM_SERGEANT_MF", "M5_FACE"]
-      F0: ["0", "TERM_SERGEANT_MF", "F0_FACE"]
-      F1: ["0", "TERM_SERGEANT_MF", "F1_FACE"]
-      F2: ["0", "TERM_SERGEANT_MF", "F2_FACE"]
-      F3: ["0", "TERM_SERGEANT_MF", "F3_FACE"]
-      F4: ["0", "TERM_SERGEANT_MF", "F4_FACE"]
-      F5: ["0", "TERM_SERGEANT_MF", "F5_FACE"]
+      M0: ["0", "TERM_SERGEANT_MF", "SM_FACE_MALE_0"]
+      M1: ["0", "TERM_SERGEANT_MF", "SM_FACE_MALE_1"]
+      M2: ["0", "TERM_SERGEANT_MF", "SM_FACE_MALE_2"]
+      M3: ["0", "TERM_SERGEANT_MF", "SM_FACE_MALE_3"]
+      M4: ["0", "TERM_SERGEANT_MF", "SM_FACE_MALE_4"]
+      M5: ["0", "TERM_SERGEANT_MF", "SM_FACE_MALE_5"]
+      F0: ["0", "TERM_SERGEANT_MF", "SM_FACE_FEMALE_0"]
+      F1: ["0", "TERM_SERGEANT_MF", "SM_FACE_FEMALE_1"]
+      F2: ["0", "TERM_SERGEANT_MF", "SM_FACE_FEMALE_2"]
+      F3: ["0", "TERM_SERGEANT_MF", "SM_FACE_FEMALE_3"]
+      F4: ["0", "TERM_SERGEANT_MF", "SM_FACE_FEMALE_4"]
+      F5: ["0", "TERM_SERGEANT_MF", "SM_FACE_FEMALE_5"]
 
 ### TERMINATOR LIBRARIAN ARMOR ###
 #Equiped with psychoforce weapon.
@@ -1924,18 +1926,18 @@ armors:
     layersSpecificPrefix:
       1: TERM_LIBRARIAN
     layersDefinition:
-      M0: ["0", "TERM_LIBRARIAN_MF", "M0_FACE"]
-      M1: ["0", "TERM_LIBRARIAN_MF", "M1_FACE"]
-      M2: ["0", "TERM_LIBRARIAN_MF", "M2_FACE"]
-      M3: ["0", "TERM_LIBRARIAN_MF", "M3_FACE"]
-      M4: ["0", "TERM_LIBRARIAN_MF", "M4_FACE"]
-      M5: ["0", "TERM_LIBRARIAN_MF", "M5_FACE"]
-      F0: ["0", "TERM_LIBRARIAN_MF", "F0_FACE"]
-      F1: ["0", "TERM_LIBRARIAN_MF", "F1_FACE"]
-      F2: ["0", "TERM_LIBRARIAN_MF", "F2_FACE"]
-      F3: ["0", "TERM_LIBRARIAN_MF", "F3_FACE"]
-      F4: ["0", "TERM_LIBRARIAN_MF", "F4_FACE"]
-      F5: ["0", "TERM_LIBRARIAN_MF", "F5_FACE"]
+      M0: ["0", "TERM_LIBRARIAN_MF", "SM_FACE_MALE_0"]
+      M1: ["0", "TERM_LIBRARIAN_MF", "SM_FACE_MALE_1"]
+      M2: ["0", "TERM_LIBRARIAN_MF", "SM_FACE_MALE_2"]
+      M3: ["0", "TERM_LIBRARIAN_MF", "SM_FACE_MALE_3"]
+      M4: ["0", "TERM_LIBRARIAN_MF", "SM_FACE_MALE_4"]
+      M5: ["0", "TERM_LIBRARIAN_MF", "SM_FACE_MALE_5"]
+      F0: ["0", "TERM_LIBRARIAN_MF", "SM_FACE_FEMALE_0"]
+      F1: ["0", "TERM_LIBRARIAN_MF", "SM_FACE_FEMALE_1"]
+      F2: ["0", "TERM_LIBRARIAN_MF", "SM_FACE_FEMALE_2"]
+      F3: ["0", "TERM_LIBRARIAN_MF", "SM_FACE_FEMALE_3"]
+      F4: ["0", "TERM_LIBRARIAN_MF", "SM_FACE_FEMALE_4"]
+      F5: ["0", "TERM_LIBRARIAN_MF", "SM_FACE_FEMALE_5"]
 
 
 ### TERMINATOR CAPTAIN ARMOR ###
@@ -1994,18 +1996,18 @@ armors:
     layersSpecificPrefix:
       1: TERM_CAPTAIN
     layersDefinition:
-      M0: ["0", "TERM_CAPTAIN_MF", "M0_FACE"]
-      M1: ["0", "TERM_CAPTAIN_MF", "M1_FACE"]
-      M2: ["0", "TERM_CAPTAIN_MF", "M2_FACE"]
-      M3: ["0", "TERM_CAPTAIN_MF", "M3_FACE"]
-      M4: ["0", "TERM_CAPTAIN_MF", "M4_FACE"]
-      M5: ["0", "TERM_CAPTAIN_MF", "M5_FACE"]
-      F0: ["0", "TERM_CAPTAIN_MF", "F0_FACE"]
-      F1: ["0", "TERM_CAPTAIN_MF", "F1_FACE"]
-      F2: ["0", "TERM_CAPTAIN_MF", "F2_FACE"]
-      F3: ["0", "TERM_CAPTAIN_MF", "F3_FACE"]
-      F4: ["0", "TERM_CAPTAIN_MF", "F4_FACE"]
-      F5: ["0", "TERM_CAPTAIN_MF", "F5_FACE"]
+      M0: ["0", "TERM_CAPTAIN_MF", "SM_FACE_MALE_0"]
+      M1: ["0", "TERM_CAPTAIN_MF", "SM_FACE_MALE_1"]
+      M2: ["0", "TERM_CAPTAIN_MF", "SM_FACE_MALE_2"]
+      M3: ["0", "TERM_CAPTAIN_MF", "SM_FACE_MALE_3"]
+      M4: ["0", "TERM_CAPTAIN_MF", "SM_FACE_MALE_4"]
+      M5: ["0", "TERM_CAPTAIN_MF", "SM_FACE_MALE_5"]
+      F0: ["0", "TERM_CAPTAIN_MF", "SM_FACE_FEMALE_0"]
+      F1: ["0", "TERM_CAPTAIN_MF", "SM_FACE_FEMALE_1"]
+      F2: ["0", "TERM_CAPTAIN_MF", "SM_FACE_FEMALE_2"]
+      F3: ["0", "TERM_CAPTAIN_MF", "SM_FACE_FEMALE_3"]
+      F4: ["0", "TERM_CAPTAIN_MF", "SM_FACE_FEMALE_4"]
+      F5: ["0", "TERM_CAPTAIN_MF", "SM_FACE_FEMALE_5"]
 
 
 ### DREADNOUGHT/FLAMER ###

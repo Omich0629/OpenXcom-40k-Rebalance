@@ -9,7 +9,6 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 9
     spriteSheet: GUARD.PCK
-    #spriteInv: MAN_31
     customArmorPreviewIndex: 100
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
@@ -684,14 +683,13 @@ armors:
 
 
 #####################################
-#Enginseer Robes
+#Enginseer Power Armor
 
   - type: STR_ENGINSEER_ARMOR_UC
     visibilityAtDay: 40
     visibilityAtDark: 9
     spriteSheet: ENGINSEER.PCK
     customArmorPreviewIndex: 117 #Second spritesheet. range from 100 to 189 or so.
-    spriteInv: ENGINSEER_INV
     corpseBattle:
       - STR_ENGINSEER_CORPSE
     frontArmor: 100
@@ -721,6 +719,31 @@ armors:
     specialWeapon: AUX_PROBE
     size: 1
 
+#LAYERS
+  - type: STR_ENGINSEER_ARMOR_UC
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      2: ENGINSEER_ARMOR
+      3: ENGINSEER_MASK
+    layersDefinition:
+      M0: ["0", "ENGINSEER_FACE_MALE_0", "ENGINSEER_ARMOR_MF", "ENGINSEER_MASK"]
+      M1: ["0", "ENGINSEER_FACE_MALE_1", "ENGINSEER_ARMOR_MF", "ENGINSEER_MASK"]
+      M2: ["0", "ENGINSEER_FACE_MALE_2", "ENGINSEER_ARMOR_MF", "ENGINSEER_MASK"]
+      M3: ["0", "ENGINSEER_FACE_MALE_3", "ENGINSEER_ARMOR_MF", "ENGINSEER_MASK"]
+      M4: ["0", "ENGINSEER_FACE_MALE_4", "ENGINSEER_ARMOR_MF", "ENGINSEER_MASK"]
+      M5: ["0", "ENGINSEER_FACE_MALE_5", "ENGINSEER_ARMOR_MF", "ENGINSEER_MASK"]
+      F0: ["0", "ENGINSEER_FACE_FEMALE_0", "ENGINSEER_ARMOR_MF", "ENGINSEER_MASK"]
+      F1: ["0", "ENGINSEER_FACE_FEMALE_1", "ENGINSEER_ARMOR_MF", "ENGINSEER_MASK"]
+      F2: ["0", "ENGINSEER_FACE_FEMALE_2", "ENGINSEER_ARMOR_MF", "ENGINSEER_MASK"]
+      F3: ["0", "ENGINSEER_FACE_FEMALE_3", "ENGINSEER_ARMOR_MF", "ENGINSEER_MASK"]
+      F4: ["0", "ENGINSEER_FACE_FEMALE_4", "ENGINSEER_ARMOR_MF", "ENGINSEER_MASK"]
+      F5: ["0", "ENGINSEER_FACE_FEMALE_5", "ENGINSEER_ARMOR_MF", "ENGINSEER_MASK"]
+
+
 #####################################
 #Ministorum priest robes
 
@@ -729,11 +752,6 @@ armors:
     visibilityAtDark: 9
     spriteSheet: MINISTORUM_PRIEST.PCK
     customArmorPreviewIndex: 118 #Second spritesheet. range from 100 to 189 or so.
-    spriteFaceGroup: 6
-    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
-    spriteHairGroup: 9
-    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96, 144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
-#    spriteInv: MINISTORUM_PRIEST_INV
     corpseBattle:
       - STR_MINISTORUM_PRIEST_CORPSE
     frontArmor: 20
@@ -769,30 +787,34 @@ armors:
 
 #LAYERS
   - type: STR_MINISTORUM_PRIEST_ARMOR_UC
-    layersDefaultPrefix: GUARD
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96, 144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
+    layersDefaultPrefix: 0
     layersSpecificPrefix:
-      4: MINISTORUM_PRIEST
+      2: PRIEST_ROBES
     layersDefinition:
-      F0: ["", "F0", "F0_Hair_Tight", "", "Female", "", "", "", ""]
-      F1: ["", "F1", "F1_Hair_Tight", "", "Female", "", "", "", ""]
-      F2: ["", "F2", "F2_Hair_Tight", "", "Female", "", "", "", ""]
-      F3: ["", "F3", "F3_Hair_Tight", "", "Female", "", "", "", ""]
-      F4: ["", "F4", "F4_Hair_Tight", "", "Female", "", "", "", ""]
-      F5: ["", "F5", "F5_Hair_Tight", "", "Female", "", "", "", ""]
-      F6: ["", "F6", "F6_Hair_Tight", "", "Female", "", "", "", ""]
-      F7: ["", "F7", "F7_Hair_Tight", "", "Female", "", "", "F7_Hair_Over", ""]
-      F8: ["", "F8", "F8_Hair_Tight", "", "Female", "", "", "", ""]
-      F9: ["", "F9", "F9_Hair_Tight", "", "Female", "", "", "", ""]
-      M0: ["", "M0", "", "", "Male", "", "", "", ""]
-      M1: ["", "M1", "", "", "Male", "", "", "", ""]
-      M2: ["", "M2", "", "", "Male", "", "", "", ""]
-      M3: ["", "M3", "", "", "Male", "", "", "", ""]
-      M4: ["", "M4", "", "", "Male", "", "", "", ""]
-      M5: ["", "M5", "", "", "Male", "", "", "", ""]
-      M6: ["", "M6", "M6_Hair_Tight", "", "Male", "", "", "M6_Hair_Over", ""]
-      M7: ["", "M7", "", "", "Male", "", "", "", ""]
-      M8: ["", "M8", "", "", "Male", "", "", "", ""]
-      M9: ["", "M9", "", "", "Male", "", "", "", ""]
+      M0: ["0", "GUARD_FACE_MALE_0", "PRIEST_ROBES_M"]
+      M1: ["0", "GUARD_FACE_MALE_1", "PRIEST_ROBES_M"]
+      M2: ["0", "GUARD_FACE_MALE_2", "PRIEST_ROBES_M"]
+      M3: ["0", "GUARD_FACE_MALE_3", "PRIEST_ROBES_M"]
+      M4: ["0", "GUARD_FACE_MALE_4", "PRIEST_ROBES_M"]
+      M5: ["0", "GUARD_FACE_MALE_5", "PRIEST_ROBES_M"]
+      M6: ["0", "GUARD_FACE_MALE_6", "PRIEST_ROBES_M", "GUARD_HAIR_MALE_6"]
+      M7: ["0", "GUARD_FACE_MALE_7", "PRIEST_ROBES_M"]
+      M8: ["0", "GUARD_FACE_MALE_8", "PRIEST_ROBES_M"]
+      M9: ["0", "GUARD_FACE_MALE_9", "PRIEST_ROBES_M"]
+      F0: ["0", "GUARD_FACE_FEMALE_0", "PRIEST_ROBES_F", "GUARD_HAIR_FEMALE_0"]
+      F1: ["0", "GUARD_FACE_FEMALE_1", "PRIEST_ROBES_F", "GUARD_HAIR_FEMALE_1"]
+      F2: ["0", "GUARD_FACE_FEMALE_2", "PRIEST_ROBES_F", "GUARD_HAIR_FEMALE_2"]
+      F3: ["0", "GUARD_FACE_FEMALE_3", "PRIEST_ROBES_F", "GUARD_HAIR_FEMALE_3"]
+      F4: ["0", "GUARD_FACE_FEMALE_4", "PRIEST_ROBES_F", "GUARD_HAIR_FEMALE_4"]
+      F5: ["0", "GUARD_FACE_FEMALE_5", "PRIEST_ROBES_F", "GUARD_HAIR_FEMALE_5"]
+      F6: ["0", "GUARD_FACE_FEMALE_6", "PRIEST_ROBES_F", "GUARD_HAIR_FEMALE_6"]
+      F7: ["0", "GUARD_FACE_FEMALE_7", "PRIEST_ROBES_F", "GUARD_HAIR_FEMALE_7"]
+      F8: ["0", "GUARD_FACE_FEMALE_8", "PRIEST_ROBES_F", "GUARD_HAIR_FEMALE_8"]
+      F9: ["0", "GUARD_FACE_FEMALE_9", "PRIEST_ROBES_F", "GUARD_HAIR_FEMALE_9"]
 
 
 #####################################
