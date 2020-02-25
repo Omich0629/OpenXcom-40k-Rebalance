@@ -18,19 +18,36 @@ extraStrings:
 
       STR_FIRE_EXTINGUISHER: "Fire Extinguisher"
 
+#Crafts Weapon Types
+      STR_CRAFT_SLOT_ASSAULT: "Assault Weapon"
+      STR_CRAFT_SLOT_ROCKET: "Craft Rockets"
+      STR_CRAFT_SLOT_GROUND: "Ground Turret"
+      STR_CRAFT_SLOT_UPGRADE: "Improvement"
+      STR_CRAFT_SLOT_THUNDERHAWK: "Thunderhawk Drosal"
+
 ###############################
 ### Space Marines Tech Tree ###
 ###############################
 
       STR_SPACE_MARINES_OPERATIONS: "Space Marines Operations"
 
+#SM Crafts
+      STR_CHAPTER_VEHICLES: "Chapter Vehicles"
+
+      STR_LANDSPEEDER: "LANDSPEEDER"
+      STR_DROPPODS: "DROP PODS"
+      STR_STORMTALON: "STORMTALON"
+      STR_STORMHAWK: "STORMHAWK"
+      STR_STORMRAVEN: "STORMRAVEN"
+      STR_STORMEAGLE: "STORMEAGLE"
+      STR_THUNDERHAWK: "THUNDERHAWK"
+
+
 #New type of soldier and ranks
       STR_SCOUT_SOLDIER: "Scout"
 
-      STR_SCOUT_RANK_0: "Scout"
+      STR_SCOUT_RANK_0: "Neophyte"
       STR_SCOUT_RANK_1: "Scout"
-      STR_SCOUT_RANK_2: "Scout"
-      STR_SCOUT_RANK_3: "Scout"
 
       STR_SM_RANK_0: "Battle Brother"
       STR_SM_RANK_1: "Battle Brother"
@@ -265,6 +282,11 @@ extraStrings:
 ################################
 ##T1##
 
+#IG Crafts
+      STR_VALKYRIE: "VALKYRIE"
+      STR_VALKYRIE_GRAV_DROP: "DROP VALKYRIE"
+
+
 #T1 Header Technologies
       STR_REGIMENTAL_VEHICLES: "Regimental Vehicles"
       STR_REGIMENTAL_WEAPONS: "Regimental Weapons"
@@ -342,10 +364,20 @@ extraStrings:
 
 #Special Personnel And Equipment (Research)
       STR_SPECIAL_PERSONNEL_AND_EQUIMPENT: "Special Personnel And Equipment"
-      STR_SNIPER_ARMOR: "Sniper Armor"
+      STR_SNIPER_ARMOR: "Sniper Flak Armor"
+      STR_SNIPER_ARMOR_UC: "Sniper Flak Armor"
       STR_BULLGRYN_EQUIPMENT: "Bullgryn Equipment"
+
+      STR_GRENADIER_GAUNTLET: "Grenadier Gauntlet"
+      STR_FRAG_CARTRIDGE: "Frag Cartridge"
+      STR_KRAK_CARTRIDGE: "Krak Cartridge"
+      STR_INCENDIARY_CARTRIDGE: "Incendiary Cartridge"
+
       STR_GUARD_VETERANS: "Guard Veterans"
       STR_GUARD_BOLTGUNS: "Guard Boltguns"
+      STR_VETERAN_CARAPACE_ARMOR_UC: "Veteran Carapace Armor"
+
+      STR_BULLGRYN_CORPSE: "Bullgryn Corpse"
 
 
 ##T3##

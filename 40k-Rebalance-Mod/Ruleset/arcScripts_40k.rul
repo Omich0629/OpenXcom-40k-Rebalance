@@ -1,0 +1,20 @@
+arcScripts:
+
+  - delete: marines
+  - delete: imperialGuard
+
+  - type: Space_Marines_Campaign
+    minDifficulty: 0
+    maxDifficulty: 3
+    sequentialArcs:
+      - STR_SPACE_MARINES_OPERATIONS
+    lastMonth: 0
+    maxArcs: 1
+
+  - type: Imperial_Guard_Campaign
+    minDifficulty: 4
+    maxDifficulty: 4
+    sequentialArcs:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    lastMonth: 0
+    maxArcs: 1

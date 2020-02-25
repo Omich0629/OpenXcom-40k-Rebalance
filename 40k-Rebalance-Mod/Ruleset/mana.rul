@@ -1,0 +1,6 @@
+ mana:
+   enabled: true
+   battleUI: true
+   trainingPrimary: false
+   trainingSecondary: false
+   replenishAfterMission: true

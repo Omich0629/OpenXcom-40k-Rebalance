@@ -1,61 +1,434 @@
 crafts:
-#T1#
-#Stormtalon (T1 fighter)
-  - type: STR_INTERCEPTOR
+  - delete: STR_SPEEDC
+  - delete: STR_DROP
+  - delete: STR_SKYRANGER
+  - delete: STR_INTERCEPTOR
+  - delete: STR_STORMHAWK
+  - delete: STR_STORMHAWKS
+  - delete: STR_FIRESTORM
+  - delete: STR_STORMEAGLE
+  - delete: STR_LIGHTNING
+
+  - delete: STR_THUNDERHAWNK
+  - delete: STR_AVENGER
+  - delete: STR_TTASS
+  - delete: STR_TTDEV
+  - delete: STR_TTSCT
+  - delete: STR_TTCHAOS
+
+  - delete: STR_CHAPTERARMY
+
+### T1 CRAFTS ###
+
+## Landspeeder ##
+  - type: STR_LANDSPEEDER
+#RESOURCES
+    sprite: 1001
+    marker: 101
+#GENERAL
+    listOrder: 110
     requires:
       - STR_SPACE_MARINES_OPERATIONS
-    weapons: 2
-    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
-      - 0               #slot 1 accepts weapons with type 0. This is default.
-      - 0               #slot 2 accepts weapons with type 0.
-    weaponStrings:
-      - STR_WEAPON_ONE
-      - STR_WEAPON_TWO
-
-
-#Landspeeder
-  - type: STR_SPEEDC
-    weapons: 2
-    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
-      - 0               #slot 1 accepts weapons with type 0. This is default.
-      - 0               #slot 2 accepts weapons with type 0.
-    weaponStrings:
-      - STR_WEAPON_ONE
-      - STR_WEAPON_TWO
+    costBuy: 600000
+    costRent: 300000
+    costSell: 300000
+    transferTime: 10
+    spacecraft: false
+    score: 300
+#DOGFIGHT
+    damageMax: 200
+    accel: 5
+    fuelMax: 800
+    speedMax: 2000
     maxAltitude: 1
+    repairRate: 10
+    refuelRate: 350
+    radarRange: 300
+    radarChance: 50
+    sightRange: 100
+#WEAPONS
+    weapons: 2
+    weaponTypes:
+      - 0
+      - 0
+    weaponStrings:
+      - STR_CRAFT_SLOT_ASSAULT
+      - STR_CRAFT_SLOT_ASSAULT
+#CREW
+    soldiers: 12
+    vehicles: 0
+    pilots: 3
+    allowLanding: true
+#BATTLESCAPE
+    battlescapeTerrainData:
+      name: LANDSPEEDER
+      mapDataSets:
+        - BLANKS
+        - LANDSPEEDER
+      mapBlocks:
+        - name: LANDSPEEDER
+          width: 10
+          length: 20
+    deployment:
+#first craft
+      - [2, 16, 1, 4]
+      - [3, 16, 1, 4]
+      - [2, 15, 1, 4]
+      - [3, 15, 1, 4]
+#second craft
+      - [6, 11, 1, 4]
+      - [7, 11, 1, 4]
+      - [6, 10, 1, 4]
+      - [7, 10, 1, 4]
+#third craft
+      - [2, 4, 1, 4]
+      - [3, 4, 1, 4]
+      - [2, 3, 1, 4]
+      - [3, 3, 1, 4]
 
-#Drop pods.
-#Delete a single one. It's useless.
-  - delete: STR_DROP
-#    costBuy: 160000
-#    costRent: 160000
-#    requires:
-#      - STR_DROPPODS_REQ
-
-  - type: STR_SKYRANGER
+## Drop Pods ##
+  - type: STR_DROPPODS
+#RESOURCES
+    sprite: 1002
+    marker: 102
+#GENERAL
     requires:
       - STR_DROPPODS_REQ
+    costBuy: 600000
+    costRent: 300000
+    costSell: 300000
+    transferTime: 10
+    score: 300
+    mapVisible: false
+    spacecraft: false
+    listOrder: 120
+#DOGFIGHT
+    damageMax: 200
+    accel: 50
+    fuelMax: 2000
+    speedMax: 20000
+    repairRate: 100
+    refuelRate: 1000
+    radarRange: 0
+    radarChance: 0
+    sightRange: 0
+#WEAPONS
+    weapons: 0
+#CREW
+    soldiers: 12
+    vehicles: 1
+    allowLanding: true
+#BATTLESCAPE
+    battlescapeTerrainData:
+      name: DROPPOD_GUARD
+      mapDataSets:
+        - BLANKS
+        - DROPPOD_GUARD
+      mapBlocks:
+        - name: DROPPOD_GUARD
+          width: 10
+          length: 20
+          items:
+            STR_DROPPOD_DEPLOY_CHARGE:
+              - [2, 2, 0]
+              - [5, 8, 0]
+              - [2, 15, 0]
+          fuseTimers:
+            STR_DROPPOD_DEPLOY_CHARGE: [1, 1]
+    deployment:
+      - [1, 15, 0, 0]
+      - [1, 14, 0, 0]
+      - [2, 15, 0, 0]
+      - [2, 14, 0, 0]
+      - [4, 8, 0, 0]
+      - [4, 7, 0, 0]
+      - [5, 8, 0, 0]
+      - [5, 7, 0, 0]
+      - [1, 1, 0, 0]
+      - [1, 2, 0, 0]
+      - [2, 1, 0, 0]
+      - [2, 2, 0, 0]
+
+## Stormtalon (T1 fighter) ##
+
+  - type: STR_STORMTALON
+#RESOURCES
+    sprite: 1003
+    marker: 103
+#GENERAL
+    requires:
+      - STR_SPACE_MARINES_OPERATIONS
+    costBuy: 600000
+    costRent: 300000
+    costSell: 300000
+    transferTime: 24
+    score: 200
+    spacecraft: false
+    listOrder: 130
+#DOGFIGHT
+    damageMax: 200
+    accel: 8
+    fuelMax: 1000
+    speedMax: 4700
+    repairRate: 10
+    refuelRate: 350
+    radarRange: 700
+    radarChance: 80
+    sightRange: 1000
+#WEAPONS
+    weapons: 2
+    weaponTypes:
+      - 0
+      - 1
+    weaponStrings:
+      - STR_CRAFT_SLOT_ASSAULT
+      - STR_CRAFT_SLOT_ROCKET
+#CREW
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+#BATTLESCAPE
+    battlescapeTerrainData:
+      name: STORMT
+      mapDataSets:
+        - BLANKS
+        - STORMT
+      mapBlocks:
+        - name: STORMT
+          width: 10
+          length: 20
+    deployment:
+      - [5, 10, 0, 4]
 
 #Stormhawk (T2 Fighter)
 
+  - type: STR_STORMHAWK
+#RESOURCES
+    sprite: 1004
+    marker: 104
+#GENERAL
+    requires:
+      - STR_STORMHAWKR
+    costBuy: 700000
+    costRent: 400000
+    costSell: 350000
+    transferTime: 24
+    score: 300
+    spacecraft: false
+    listOrder: 140
+#DOGFIGHT
+    damageMax: 350
+    accel: 10
+    fuelMax: 1100
+    speedMax: 5200
+    repairRate: 10
+    refuelRate: 350
+    radarRange: 700
+    radarChance: 80
+    sightRange: 1000
+#WEAPONS
+    weapons: 3
+    weaponTypes:
+      - 0
+      - 1
+      - 4
+    weaponStrings:
+      - STR_CRAFT_SLOT_ASSAULT
+      - STR_CRAFT_SLOT_ROCKET
+      - STR_CRAFT_SLOT_UPGRADE
+#CREW
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    allowLanding: false
+#BATTLESCAPE
+    battlescapeTerrainData:
+      name: STORMH
+      mapDataSets:
+        - BLANKS
+        - STORMT
+        - STORMH
+      mapBlocks:
+        - name: STORMH
+          width: 10
+          length: 20
+    deployment:
+      - [5, 10, 0, 4]
 
-#STORMRAVEN CRAFT
-#Fixed map. Can fit 8 soldiers.
-  - type: STR_FIRESTORM 
+## STORMRAVEN CRAFT ##
+  - type: STR_STORMRAVEN
+#RESOURCES
+    sprite: 1005
+    marker: 105
+#GENERAL
     requires:
       - STR_NEW_FIGHTER_CRAFT
+    costSell: 300000
+    transferTime: 24
+    score: 400
+    spacecraft: false
+    listOrder: 150
+#DOGFIGHT
+    damageMax: 800
+    accel: 7
+    fuelMax: 1800
+    speedMax: 4000
+    repairRate: 10
+    refuelRate: 350
+    radarRange: 700
+    radarChance: 80
+    sightRange: 1000
+#WEAPONS
+    weapons: 3
+    weaponTypes:
+      - 0
+      - 1
+      - 4
+    weaponStrings:
+      - STR_CRAFT_SLOT_ASSAULT
+      - STR_CRAFT_SLOT_ROCKET
+      - STR_CRAFT_SLOT_UPGRADE
+#CREW
     soldiers: 8
+    pilots: 2
+    vehicles: 0
+    allowLanding: true
+#BATTLESCAPE
+    battlescapeTerrainData:
+      name: STORMRAVEN
+      mapDataSets:
+        - BLANKS
+        - STORMRAVEN
+      mapBlocks:
+        - name: STORMRAVEN
+          width: 10
+          length: 20
+          items:
+            STR_STORMTURRET_SPAWNER:
+              - [4, 6, 2]
+          fuseTimers:
+            STR_STORMTURRET_SPAWNER: [0, 0]
+    deployment:
+      - [4, 9, 0, 0]
+      - [5, 9, 0, 0]
+      - [4, 8, 0, 0]
+      - [5, 8, 0, 0]
+      - [4, 7, 0, 0]
+      - [5, 7, 0, 0]
+      - [4, 6, 0, 0]
+      - [5, 6, 0, 0]
 
+## STORMEAGLE ##
+  - type: STR_STORMEAGLE
+#RESOURCES
+    sprite: 1006
+    marker: 106
+#GENERAL
+    listOrder: 160
+    requires:
+      - STR_STORMEAGLE_INTERCEPTOR
+    costSell: 1500000
+    transferTime: 24
+    score: 500
+    spacecraft: false
+#DOGFIGHT
+    damageMax: 950
+    accel: 6
+    fuelMax: 2100
+    speedMax: 3400
+    repairRate: 10
+    refuelRate: 350
+    radarRange: 700
+    radarChance: 80
+    sightRange: 1000
+#WEAPONS
+    weapons: 4
+    weaponTypes:
+      - 0
+      - 1
+      - 1
+      - 4
+    weaponStrings:
+      - STR_CRAFT_SLOT_ASSAULT
+      - STR_CRAFT_SLOT_ROCKET
+      - STR_CRAFT_SLOT_ROCKET
+      - STR_CRAFT_SLOT_UPGRADE
+#CREW
+    soldiers: 16
+    vehicles: 0
+    pilots: 2
+    allowLanding: true
+#BATTLESCAPE
+    battlescapeTerrainData:
+      name: STORMEAGLE
+      mapDataSets:
+        - BLANKS
+        - STORMEAGLE
+      mapBlocks:
+        - name: STORMEAGLE
+          width: 10
+          length: 20
+    deployment:
+      - [4, 11, 0, 0]
+      - [5, 11, 0, 0]
+      - [4, 10, 0, 0]
+      - [5, 10, 0, 0]
+      - [4, 9, 0, 0]
+      - [5, 9, 0, 0]
+      - [4, 8, 0, 0]
+      - [5, 8, 0, 0]
+      - [4, 7, 0, 0]
+      - [5, 7, 0, 0]
+      - [4, 6, 0, 0]
+      - [5, 6, 0, 0]
+      - [4, 5, 0, 0]
+      - [5, 5, 0, 0]
+      - [4, 4, 0, 0]
+      - [5, 4, 0, 0]
 
-  - delete: STR_THUNDERHAWNK
-#Thunderhawnk (NEW)
+## THUNDERHAWK ##
 
-  - type: STR_LIGHTNING
+  - type: STR_THUNDERHAWK
+#RESOURCES
+    sprite: 1007
+    marker: 107
+#GENERAL
+    listOrder: 170
     requires:
       - STR_NEW_FIGHTER_TRANSPORTER
+    costSell: 1500000
+    transferTime: 24
+    score: 600
+    spacecraft: true
+#DOGFIGHT
     damageMax: 1500
-    pilots: 2
+    accel: 4
+    fuelMax: 2700
+    speedMax: 2500
+    repairRate: 10
+    refuelRate: 350
+    radarRange: 700
+    radarChance: 80
+    sightRange: 1000
+#WEAPONS
+    weapons: 4
+    weaponTypes:
+      - 0
+      - 1
+      - 4
+      - 3
+    weaponStrings:
+      - STR_CRAFT_SLOT_ASSAULT
+      - STR_CRAFT_SLOT_ROCKET
+      - STR_CRAFT_SLOT_UPGRADE
+      - STR_CRAFT_SLOT_THUNDERHAWK
+#CREW
+    soldiers: 24
     vehicles: 2
+    pilots: 4
+    allowLanding: true
+#BATTLESCAPE
     battlescapeTerrainData:
       name: THUNDERHAWK
       mapDataSets:
@@ -73,8 +446,6 @@ crafts:
           fuseTimers:
             STR_LEFT_THUNDERHAWK_SPAWNER: [0, 0]
             STR_RIGHT_THUNDERHAWK_SPAWNER: [0, 0]
-    soldiers: 24
-
     deployment:
       - [4, 15, 1, 4]
       - [5, 15, 1, 4]
@@ -100,37 +471,3 @@ crafts:
       - [5, 4, 1, 4]
       - [4, 3, 1, 4]
       - [5, 3, 1, 4]
-
-#Thunderhawnk T
-  - delete: STR_AVENGER
-  - delete: STR_TTASS
-  - delete: STR_TTDEV
-  - delete: STR_TTSCT
-  - delete: STR_TTCHAOS
-
-#STORMEAGLE
-  - type: STR_STORMEAGLE
-    damageMax: 950
-    soldiers: 16
-    deployment:
-      - [4, 11, 0, 0]
-      - [5, 11, 0, 0]
-      - [4, 10, 0, 0]
-      - [5, 10, 0, 0]
-      - [4, 9, 0, 0]
-      - [5, 9, 0, 0]
-      - [4, 8, 0, 0]
-      - [5, 8, 0, 0]
-      - [4, 7, 0, 0]
-      - [5, 7, 0, 0]
-      - [4, 6, 0, 0]
-      - [5, 6, 0, 0]
-      - [4, 5, 0, 0]
-      - [5, 5, 0, 0]
-      - [4, 4, 0, 0]
-      - [5, 4, 0, 0]
-
-#"First Company"
-  - delete: STR_CHAPTERARMY
-
-

@@ -75,3 +75,17 @@ extraSounds:
       865: Resources/Sound/Lascannon_Fire.wav
       887: Resources/Sound/ambient_jungle.wav
       891: Resources/Sound/ambient_arctic.wav
+
+## NEW FILES ##
+      1000: Resources/Sound/Ripper_Gun/Ripper_Gun_Fire1.wav
+      1001: Resources/Sound/Ripper_Gun/Ripper_Gun_Fire2.wav
+      1002: Resources/Sound/Ripper_Gun/Ripper_Gun_Fire3.wav
+      1003: Resources/Sound/Ripper_Gun/Ripper_Gun_Melee1.wav
+      1004: Resources/Sound/Ripper_Gun/Ripper_Gun_Melee2.wav
+      1005: Resources/Sound/Ripper_Gun/Ripper_Gun_Melee3.wav
+
+      1006: Resources/Sound/Blunt_Weapon/Blunt_Weapon_Hit1.wav
+      1007: Resources/Sound/Blunt_Weapon/Blunt_Weapon_Hit2.wav
+      1008: Resources/Sound/Blunt_Weapon/Blunt_Weapon_Hit3.wav
+      1009: Resources/Sound/Blunt_Weapon/Blunt_Weapon_Hit4.wav
+      1010: Resources/Sound/Blunt_Weapon/Blunt_Weapon_Hit5.wav

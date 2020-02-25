@@ -42,8 +42,8 @@ items:
     invWidth: 1
     invHeight: 1
 #THROWING
-    tuThrow: 25
-    tuPrime: 25
+    tuThrow: 30
+    tuPrime: 30
     flatRate: false
 
 
@@ -64,8 +64,8 @@ items:
       ToArmorPre: 0.2
       ArmorEffectiveness: 0.7
       ToArmor: 0.2
-    tuThrow: 25
-    tuPrime: 25
+    tuThrow: 30
+    tuPrime: 30
     flatRate: false
 
 
@@ -80,8 +80,8 @@ items:
     invWidth: 1
     invHeight: 1
 #THROWING
-    tuThrow: 25
-    tuPrime: 25
+    tuThrow: 30
+    tuPrime: 30
     flatRate: false
 
 ## PROXIMITY GRENADE ##
@@ -97,8 +97,8 @@ items:
     invWidth: 1
     invHeight: 1
 #THROWING
-    tuThrow: 25
-    tuPrime: 25
+    tuThrow: 30
+    tuPrime: 30
     flatRate: false
 
 ## PHOTON FLASH GRENADE ##
@@ -123,8 +123,8 @@ items:
     damageType: 6
     damageAlter:
       FixRadius: 2
-    tuThrow: 25
-    tuPrime: 25
+    tuThrow: 30
+    tuPrime: 30
     flatRate: false
 
 ##########################
@@ -341,6 +341,7 @@ items:
 #GENERAL
     requiresBuy:
       - STR_CHAINSWORD_TECH
+    weight: 20
 #MELEE
     power: 85
     damageBonus:
@@ -1101,6 +1102,8 @@ items:
       ToWound: 0.05
       FixRadius: 2
     blastRadius: 0
+    tuThrow: 30
+    tuPrime: 30
 
 ## MELTA BOMB ##
   - delete: STR_HIGH_EXPLOSIVE
@@ -1119,7 +1122,7 @@ items:
     invWidth: 2
     invHeight: 3
     listOrder: 14000
-#SHOOTING
+#THROWING
     power: 150
     damageType: 11 #MELTA
     damageAlter: 
@@ -1129,6 +1132,8 @@ items:
       ToTile: 2.0
       ToWound: 0.05
       FixRadius: 4
+    tuThrow: 30
+    tuPrime: 30
 
 ## MELTA GUN ##
   - type: STR_HEAVY_LASER

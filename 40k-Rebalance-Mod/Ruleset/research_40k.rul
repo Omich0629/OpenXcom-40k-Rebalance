@@ -12,6 +12,7 @@ research:
   - delete: STR_TATICAL
 
 #delete some vehicles
+  - delete: STR_SPEEDR
   - delete: STR_CHAPTERARMYR
 
 #I'll just leave it here for now.
@@ -34,7 +35,7 @@ research:
       - STR_BOLTPISTOL_TECH
       - STR_BOLTER_TECH
       - STR_MARINES_STRATEGY
-      - STR_SPEEDR
+      - STR_CHAPTER_VEHICLES
       - STR_CHAPTER_ARMORS
       - STR_APOC_BAY
       - STR_CHAPTER_WEAPONS
@@ -227,8 +228,8 @@ research:
 
 ### T1 Craft technologies Block ###
 
-#Lanspeeder (T1 First Craft)
-  - name: STR_SPEEDR
+#Header Technology
+  - name: STR_CHAPTER_VEHICLES
     cost: 50
     points: 10
     listOrder: 700
@@ -242,7 +243,7 @@ research:
     points: 10
     listOrder: 700
     dependencies:
-      - STR_SPEEDR
+      - STR_CHAPTER_VEHICLES
       - STR_ASS_ARMOR
 
 #Drop Pods
@@ -251,7 +252,7 @@ research:
     points: 10
     listOrder: 700
     dependencies:
-      - STR_SPEEDR
+      - STR_CHAPTER_VEHICLES
 
 ### Manufactoring technologies###
 

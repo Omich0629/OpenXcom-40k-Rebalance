@@ -4,25 +4,28 @@ soldierTransformation:
 
   - name: STR_VETERAN_PROMOTION
     requires:
-      - STR_STORMTROOPER_REQUISITION
+      - STR_GUARD_VETERANS
+    requiredItems:
+      STR_GUARD_ARMORH: 1
+      STR_ALIEN_ALLOYS: 4
     producedSoldierType: STR_GUARD_VETERAN
-#    producedSoldierArmor: STR_STORMTROOPER_CARAPACE_ARMOR
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
     allowedSoldierTypes:
       - STR_GUARDSM
-    cost: 100000
+    transferTime: 8
+    cost: 50000
     requiredMinStats:
-      tu: 50
-      stamina: 55
-      health: 35
-      bravery: 50
-      reactions: 40
-      firing: 60
-      throwing: 50
+      tu: 65
+      stamina: 65
+      health: 40
+      firing: 65
+      throwing: 65
       strength: 30
-      melee: 55
+      melee: 50
+
+
 
   - delete: STR_PROMOTE_OFFICER
 

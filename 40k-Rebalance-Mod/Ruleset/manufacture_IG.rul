@@ -203,6 +203,15 @@ manufacture:
     requiredItems:
       STR_UFO_CONSTRUCTION: 4
 
+#Sniper Flak Armor Requisition
+  - name: STR_SNIPER_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SNIPER_ARMOR
+    space: 4
+    time: 250
+    cost: 15000
+
 
 ######## T3 STUFF ########
 

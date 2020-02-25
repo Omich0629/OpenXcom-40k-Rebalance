@@ -1,4 +1,99 @@
 extraSprites:
+## GEOSPACE MARKERS ##
+#SM CRAFTS (101 - 110)
+  - type: GlobeMarkers
+    width: 70
+    height: 7
+    subX: 7
+    subY: 7
+    files:
+      101: Resources/Geospace/Markers_SM.png
+
+#IG CRAFTS (111 - 120)
+  - type: GlobeMarkers
+    width: 70
+    height: 7
+    subX: 7
+    subY: 7
+    files:
+      111: Resources/Geospace/Markers_IG.png
+
+## SM CRAFT SPRITES ##
+#   the corresponding id for INTICON.PCK for the minimized craft icon is sprite+0
+#    the corresponding id for INTICON.PCK for the dogfight image is sprite+11
+#    the corresponding id for BASEBITS.PCK is sprite+33
+  - type: INTICON.PCK
+    files:
+#SM crafts minimized
+      1001: Resources/Crafts/SM/Landspeeder/Landspeeder_Minimised.png
+      1002: Resources/Crafts/SM/Drop_Pods/Drop_Pod_Minimised.png
+      1003: Resources/Crafts/SM/Stormtalon/Stormtalon_Minimised.png
+      1004: Resources/Crafts/SM/Stormhawk/Stormhawk_Minimised.png
+      1005: Resources/Crafts/SM/Stormraven/Stormraven_Minimised.png
+      1006: Resources/Crafts/SM/Stormeagle/Stormeagle_Minimised.png
+      1007: Resources/Crafts/SM/Thunderhawk/Thunderhawk_Minimised.png
+#SM crafts dogfight
+      1012: Resources/Crafts/SM/Landspeeder/Landspeeder_Dogfight.png #1001 + 11
+      1013: Resources/Crafts/SM/Drop_Pods/Drop_Pod_Dogfight.png
+      1014: Resources/Crafts/SM/Stormtalon/Stormtalon_Dogfight.png
+      1015: Resources/Crafts/SM/Stormhawk/Stormhawk_Dogfight.png
+      1016: Resources/Crafts/SM/Stormraven/Stormraven_Dogfight.png
+      1017: Resources/Crafts/SM/Stormeagle/Stormeagle_Dogfight.png
+      1018: Resources/Crafts/SM/Thunderhawk/Thunderhawk_Dogfight.png
+#IG crafts minimized
+      1101: Resources/Crafts/IG/Valkyrie/Valkyrie_Minimised.png
+      1102: Resources/Crafts/IG/Valkyrie_Drop/Valkyrie_Drop_Minimised.png
+      1103: Resources/Crafts/IG/Lightning/Lightning_Minimised.png
+      1104: Resources/Crafts/IG/Chimera/Chimera_Minimised.png
+      1105: Resources/Crafts/IG/Thunderbolt/Thunderbolt_Minimised.png
+      1106: Resources/Crafts/IG/Marauder/Marauder_Minimised.png
+      1107: Resources/Crafts/IG/Gorgon/Gorgon_Minimised.png
+#IG crafts dogfight
+      1112: Resources/Crafts/IG/Valkyrie/Valkyrie_Dogfight.png #1101 + 11
+      1113: Resources/Crafts/IG/Valkyrie_Drop/Valkyrie_Drop_Dogfight.png
+      1114: Resources/Crafts/IG/Lightning/Lightning_Dogfight.png
+      1115: Resources/Crafts/IG/Chimera/Chimera_Dogfight.png
+      1116: Resources/Crafts/IG/Thunderbolt/Thunderbolt_Dogfight.png
+      1117: Resources/Crafts/IG/Marauder/Marauder_Dogfight.png
+      1118: Resources/Crafts/IG/Gorgon/Gorgon_Dogfight.png
+
+
+## BASEBITS ##
+  - type: BASEBITS.PCK
+    files:
+#RANKS
+
+      800: Resources/Ranks/Enginseer_rankSprite.png
+      801: Resources/Ranks/Ministorum_Priest_rankSprite.png
+#BASE BITS
+      900: Resources/Basebits/basebits_hospital.png
+      901: Resources/Basebits/basebits_HQ.png
+      903: Resources/Basebits/basebits_Forge1.gif
+      904: Resources/Basebits/basebits_Forge2.gif
+      905: Resources/Basebits/basebits_Forge3.gif
+      906: Resources/Basebits/basebits_Forge4.gif
+      907: Resources/Basebits/basebits_Forge_shape1.gif
+      908: Resources/Basebits/basebits_Forge_shape2.gif
+      909: Resources/Basebits/basebits_Forge_shape3.gif
+      910: Resources/Basebits/basebits_Forge_shape4.gif
+#SM Crafts base sprites
+      1034: Resources/Crafts/SM/Landspeeder/Landspeeder_Base.png #1001 + 33
+      1035: Resources/Crafts/SM/Drop_Pods/Drop_Pod_Base.png
+      1036: Resources/Crafts/SM/Stormtalon/Stormtalon_Base.png
+      1037: Resources/Crafts/SM/Stormhawk/Stormhawk_Base.png
+      1038: Resources/Crafts/SM/Stormraven/Stormraven_Base.png
+      1039: Resources/Crafts/SM/Stormeagle/Stormeagle_Base.png
+      1040: Resources/Crafts/SM/Thunderhawk/Thunderhawk_Base.png
+#IG Crafts base sprites
+      1134: Resources/Crafts/IG/Valkyrie/Valkyrie_Base.png  #1101 + 33
+      1135: Resources/Crafts/IG/Valkyrie_Drop/Valkyrie_Drop_Base.png
+      1136: Resources/Crafts/IG/Lightning/Lightning_Base.png
+      1137: Resources/Crafts/IG/Chimera/Chimera_Base.png
+      1138: Resources/Crafts/IG/Thunderbolt/Thunderbolt_Base.png
+      1139: Resources/Crafts/IG/Marauder/Marauder_Base.png
+      1140: Resources/Crafts/IG/Gorgon/Gorgon_Base.png
+
+
 #SPECIAL ICONS
   - type: SPICONS.DAT
     files:
@@ -64,6 +159,8 @@ extraSprites:
 
       150: Resources/Armor/IG/Enginseer/Enginseer_Corpse_Inv.gif
       151: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Corpse_Inv.gif
+      152: Resources/Armor/IG/Ogryn_Carapace/Ogryn_Carapace_Corpse_Inv.png
+      153: Resources/Armor/IG/Bullgryn_Armor/Bullgryn_Armor_Corpse_Inv.png
 
 #ITEMS (201 - ?)
       220: Resources/Items/Common/Null_Objects/Null_Lefthand.png
@@ -168,6 +265,13 @@ extraSprites:
       319: Resources/Items/IG/Sentinel_Weapons/Sentinel_Multimelta_Inv.png
       320: Resources/Items/IG/Eviscerator/Eviscerator_Inv.png
       321: Resources/Items/Common/Photon_Grenade/Photon_Granade_Inv.gif
+      322: Resources/Items/IG/Ripper_Gun/Ripper_Gun_Inv.png
+      323: Resources/Items/IG/Slabshield/Slabshield_Inv.png
+      324: Resources/Items/IG/Grenadier_Gauntlet/Grenadier_Gauntlet_Inv.gif
+      325: Resources/Items/IG/Grenadier_Gauntlet_Ammo/Frag_Cartridge_Inv.gif
+      326: Resources/Items/IG/Grenadier_Gauntlet_Ammo/Krak_Cartridge_Inv.gif
+      327: Resources/Items/IG/Grenadier_Gauntlet_Ammo/Incendiary_Cartridge_Inv.gif
+      328: Resources/Items/IG/Brute_Shield/Brute_Shield_Inv.png
 
 #FLOOR OBJECTS
   - type: FLOOROB.PCK
@@ -194,6 +298,8 @@ extraSprites:
 
       150: Resources/Armor/IG/Enginseer/Enginseer_Corpse_Floor.gif
       151: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Corpse_Floor.png
+      152: Resources/Armor/IG/Ogryn_Carapace/Ogryn_Carapace_Corpse_Floor.png
+      153: Resources/Armor/IG/Bullgryn_Armor/Bullgryn_Armor_Corpse_Floor.png
 
 #ITEMS (201 - ?)
       221: Resources/Items/Common/Chainsword/MC_ChainSword_FloorSprite.gif
@@ -256,6 +362,11 @@ extraSprites:
       278: Resources/Items/IG/Hotshot_Volleygun/Hotshot_Volleygun_Floor.png
       279: Resources/Items/IG/Eviscerator/Eviscerator_Floor.png
       280: Resources/Items/Common/Photon_Grenade/Photon_Granade_Floor.png
+      281: Resources/Items/IG/Ripper_Gun/Ripper_Gun_Floor.png
+      282: Resources/Items/IG/Grenadier_Gauntlet/Grenadier_Gauntlet_Floor.gif
+      283: Resources/Items/IG/Grenadier_Gauntlet_Ammo/Frag_Cartridge_Floor.gif
+      284: Resources/Items/IG/Grenadier_Gauntlet_Ammo/Krak_Cartridge_Floor.gif
+      285: Resources/Items/IG/Grenadier_Gauntlet_Ammo/Incendiary_Cartridge_Floor.gif
 
 #HAND OBJECTS (contains 8 images)
   - type: HANDOB.PCK
@@ -326,6 +437,13 @@ extraSprites:
       712: Resources/Items/IG/Hotshot_Volleygun/Hotshot_Volleygun_Hand.png
       720: Resources/Items/IG/Eviscerator/Eviscerator_Hand.png
       728: Resources/Items/Common/Photon_Grenade/Photon_Granade_Hand.png
+      736: Resources/Items/IG/Ripper_Gun/Ripper_Gun_Hand.png
+      744: Resources/Items/IG/Slabshield/Slabshield_Hand.png
+      752: Resources/Items/IG/Grenadier_Gauntlet/Grenadier_Gauntlet_Hand.png
+      760: Resources/Items/IG/Grenadier_Gauntlet_Ammo/Frag_Cartridge_Hand.gif
+      768: Resources/Items/IG/Grenadier_Gauntlet_Ammo/Krak_Cartridge_Hand.gif
+      776: Resources/Items/IG/Grenadier_Gauntlet_Ammo/Incendiary_Cartridge_Hand.gif
+      784: Resources/Items/IG/Brute_Shield/Brute_Shield_Hand.png
 
 #PROJECTILES ( The corresponding file id is 35*[bulletSprite] )
   - type: Projectiles                         
@@ -340,24 +458,6 @@ extraSprites:
       560: Resources/Sprites/16Melta.gif        #16
       595: Resources/Sprites/17heavyplasma.gif  #17
 
-#BASEBITS
-  - type: BASEBITS.PCK
-    files:
-#RANKS
-
-      800: Resources/Ranks/Enginseer_rankSprite.png
-      801: Resources/Ranks/Ministorum_Priest_rankSprite.png
-#BASE BITS
-      900: Resources/Basebits/basebits_hospital.png
-      901: Resources/Basebits/basebits_HQ.png
-      903: Resources/Basebits/basebits_Forge1.gif
-      904: Resources/Basebits/basebits_Forge2.gif
-      905: Resources/Basebits/basebits_Forge3.gif
-      906: Resources/Basebits/basebits_Forge4.gif
-      907: Resources/Basebits/basebits_Forge_shape1.gif
-      908: Resources/Basebits/basebits_Forge_shape2.gif
-      909: Resources/Basebits/basebits_Forge_shape3.gif
-      910: Resources/Basebits/basebits_Forge_shape4.gif
 
 #HIT ANIMATIONS
   - type: HIT.PCK 
@@ -369,8 +469,6 @@ extraSprites:
       28: Resources/Sprites/MeleeShock.gif
       44: Resources/Sprites/Meleechain.gif
       48: Resources/Sprites/MeleeWhite.gif
-
-
 
 #Enginseer tinyrank
   - type: TinyRanks
@@ -496,8 +594,7 @@ extraSprites:
 #Skip variant 4
   - typeSingle: 0__3__GUARD_HAIR_MALE_5
     fileSingle: Resources/Faces/Guard/Guard_Hair_Male_5.gif
-  - typeSingle: 0__3__GUARD_HAIR_MALE_6
-    fileSingle: Resources/Faces/Guard/Guard_Hair_Male_6.gif
+#Skip variant 6
   - typeSingle: 0__3__GUARD_HAIR_MALE_7
     fileSingle: Resources/Faces/Guard/Guard_Hair_Male_7.gif
   - typeSingle: 0__3__GUARD_HAIR_MALE_8
@@ -576,11 +673,20 @@ extraSprites:
   - typeSingle: 0__1__ENGINSEER_FACE_FEMALE_5
     fileSingle: Resources/Faces/Enginseer/Enginseer_Face_Female_5.gif
 
-
+#OGRYN FACES
+#MALE FACES (LAYER 1)
+  - typeSingle: 0__1__OGRYN_FACE_MALE_0
+    fileSingle: Resources/Faces/Ogryn/Ogryn_Face_Male_0.png
+  - typeSingle: 0__1__OGRYN_FACE_MALE_1
+    fileSingle: Resources/Faces/Ogryn/Ogryn_Face_Male_1.png
+  - typeSingle: 0__1__OGRYN_FACE_MALE_2
+    fileSingle: Resources/Faces/Ogryn/Ogryn_Face_Male_2.png
+  - typeSingle: 0__1__OGRYN_FACE_MALE_3
+    fileSingle: Resources/Faces/Ogryn/Ogryn_Face_Male_3.png
 
 ### ARMOR INVENTORY SPRITES ###
 
-## SM ##
+## SM ARMOR INVENTORY SPRITES ##
 
 #Scout Armor Inventory sprites
   - typeSingle: SCOUT_ARMOR__2__SCOUT_ARMOR_M
@@ -600,7 +706,7 @@ extraSprites:
 #Rebreather, Comnet Uplink, Goggles
   - typeSingle: ADV_SCOUT_DETAILS__3__ADV_SCOUT_DETAILS
     fileSingle: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor/Scout_Adv_Armor_Inv_Details.gif
-#Camo Cloaks
+#Scout Camo Cloaks
   - typeSingle: SCOUT_CLOAK_BROWN__0__SCOUT_CLOAK_BROWN
     fileSingle: Resources/Armor/SM/ULTRAMARINES/Scout_Advanced_Armor/Scout_Adv_Armor_Inv_Cloak_Brown.gif
   - typeSingle: SCOUT_CLOAK_GREEN__0__SCOUT_CLOAK_GREEN
@@ -749,21 +855,54 @@ extraSprites:
       0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Assault_Cannon/Dreadnought_Assault_Cannon_Inv.png
 
 
-#### IG ####
+## IG ARMOR INVENTORY SPRITES ##
 
-#Carapace Armor
+#Flak Armor (LAYER 4)
+  - typeSingle: FLAK_ARMOR__4__FLAK_ARMOR_M
+    fileSingle: Resources/Armor/IG/Flak_Armor/Flak_Armor_Inv_Male.gif
 
-  - typeSingle: CARAPACE_ARMOR__4__Male
+  - typeSingle: FLAK_ARMOR__4__FLAK_ARMOR_F
+    fileSingle: Resources/Armor/IG/Flak_Armor/Flak_Armor_Inv_Female.gif
+
+#Medic Flak Armor (LAYER 4)
+  - typeSingle: FLAK_MEDIC__4__FLAK_MEDIC_M
+    fileSingle: Resources/Armor/IG/Flak_Armor_Medic/Flak_Armor_Medic_Inv_M.gif
+
+  - typeSingle: FLAK_MEDIC__4__FLAK_MEDIC_F
+    fileSingle: Resources/Armor/IG/Flak_Armor_Medic/Flak_Armor_Medic_Inv_F.gif
+
+
+#Carapace Armor (LAYER 4)
+
+  - typeSingle: CARAPACE_ARMOR__4__CARAPACE_ARMOR_M
     fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Inv_M.png
 
-  - typeSingle: CARAPACE_HELM__6__Male
-    fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Helm_Inv_M.png
-
-  - typeSingle: CARAPACE_ARMOR__4__Female
+  - typeSingle: CARAPACE_ARMOR__4__CARAPACE_ARMOR_F
     fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Inv_F.png
 
-  - typeSingle: CARAPACE_HELM__6__Female
+#Carapace Armor Helm (LAYER 5)
+
+  - typeSingle: CARAPACE_HELM__5__CARAPACE_HELM_M
+    fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Helm_Inv_M.png
+
+  - typeSingle: CARAPACE_HELM__5__CARAPACE_HELM_F
     fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Helm_Inv_F.png
+
+#Medic Carapace Armor (LAYER 4)
+
+  - typeSingle: CARAPACE_MEDIC__4__CARAPACE_MEDIC_M
+    fileSingle: Resources/Armor/IG/Carapace_Armor_Medic/Carapace_Armor_Medic_Inv_M.png
+
+  - typeSingle: CARAPACE_MEDIC__4__CARAPACE_MEDIC_F
+    fileSingle: Resources/Armor/IG/Carapace_Armor_Medic/Carapace_Armor_Medic_Inv_F.png
+
+#Commissar Greatcoat (LAYER 4)
+
+  - typeSingle: COMMISSAR_GREATCOAT__4__COMMISSAR_GREATCOAT_M
+    fileSingle: Resources/Armor/IG/Commissar_Greatcoat/Commissar_Greatcoat_M.png
+
+  - typeSingle: COMMISSAR_GREATCOAT__4__COMMISSAR_GREATCOAT_F
+    fileSingle: Resources/Armor/IG/Commissar_Greatcoat/Commissar_Greatcoat_F.png
 
 
 #Enginseer Power Armor (LAYER 2)
@@ -774,38 +913,84 @@ extraSprites:
   - typeSingle: ENGINSEER_MASK__3__ENGINSEER_MASK
     fileSingle: Resources/Armor/IG/Enginseer/Enginseer_Armor_Inv_Mask.gif
 
-
-#Enginseer's inventory
-#  - type: ENGINSEER_INV.SPK
-#    singleImage: true
-#    files:
-#      0: Resources/Armor/IG/Enginseer/Enginseer_Armor_Inv.gif
-
-#Ministorum Priest inventory
+#Ministorum Priest Robes (LAYER 2)
   - typeSingle: PRIEST_ROBES__2__PRIEST_ROBES_M
     fileSingle: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Inv_Male.png
 
   - typeSingle: PRIEST_ROBES__2__PRIEST_ROBES_F
     fileSingle: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Inv_Female.png
 
+#Sniper Flak Armor ((LAYER 4)
+  - typeSingle: SNIPER_ARMOR__4__SNIPER_ARMOR_M
+    fileSingle: Resources/Armor/IG/Sniper_Armor/Sniper_Armor_Inv_M.png
 
-#Sentinel's Pilot inventory
+  - typeSingle: SNIPER_ARMOR__4__SNIPER_ARMOR_F
+    fileSingle: Resources/Armor/IG/Sniper_Armor/Sniper_Armor_Inv_F.png
 
-  - typeSingle: SENTINEL_PILOT__4__Male
+#Comnet Uplink, Goggles
+  - typeSingle: SNIPER_DETAILS__5__SNIPER_DETAILS
+    fileSingle: Resources/Armor/IG/Sniper_Armor/Sniper_Armor_Inv_Details.png
+
+#Sniper Camo Cloaks
+  - typeSingle: SNIPER_CLOAK_BROWN__0__SNIPER_CLOAK_BROWN
+    fileSingle: Resources/Armor/IG/Sniper_Armor/Sniper_Armor_Inv_Cloak_Brown.png
+
+#Veteran Carapace Armor (LAYER 4)
+  - typeSingle: VETERAN_CARAPACE__4__VETERAN_CARAPACE_M
+    fileSingle: Resources/Armor/IG/Veteran_Carapace/Veteran_Carapace_Armor_Inv_M.png
+
+  - typeSingle: VETERAN_CARAPACE__4__VETERAN_CARAPACE_F
+    fileSingle: Resources/Armor/IG/Veteran_Carapace/Veteran_Carapace_Armor_Inv_F.png
+
+#Veteran Carapace Armor Helm (LAYER 5)
+  - typeSingle: VETERAN_HELM__5__VETERAN_HELM_M
+    fileSingle: Resources/Armor/IG/Veteran_Carapace/Veteran_Carapace_Helm_Inv_M.png
+
+  - typeSingle: VETERAN_HELM__5__VETERAN_HELM_F
+    fileSingle: Resources/Armor/IG/Veteran_Carapace/Veteran_Carapace_Helm_Inv_F.png
+
+#Sentinel Pilot inventory
+  - typeSingle: SENTINEL_PILOT__4__SENTINEL_PILOT_M
     fileSingle: Resources/Armor/IG/Sentinel_Pilot/Sentinel_Pilot_M_Inv.png
 
-  - typeSingle: SENTINEL_PILOT__4__Female
+  - typeSingle: SENTINEL_PILOT__4__SENTINEL_PILOT_F
     fileSingle: Resources/Armor/IG/Sentinel_Pilot/Sentinel_Pilot_F_Inv.png
 
 #Sentinel with Lascannon (inventory)
 
-  - typeSingle: SENTINEL_LASCANNON__0__Prop
+  - typeSingle: SENTINEL_LASCANNON__0__SENTINEL_LASCANNON
     fileSingle: Resources/Armor/IG/Sentinel_Lascannon/Sentinel_Lascannon_Inv.png
 
 #Sentinel with Missile Launcher (inventory)
 
-  - typeSingle: SENTINEL_MISSILE__0__Prop
+  - typeSingle: SENTINEL_MISSILE__0__SENTINEL_MISSILE
     fileSingle: Resources/Armor/IG/Sentinel_Missile/Sentinel_Missile_Inv.png
+
+#Sentinel with Mulimelta (inventory)
+
+  - typeSingle: SENTINEL_MULTIMELTA__0__SENTINEL_MULTIMELTA
+    fileSingle: Resources/Armor/IG/Sentinel_Multimelta/Sentinel_Multimelta_Inv.png
+
+#Sentinel with Heavy Flamer (inventory)
+
+  - typeSingle: SENTINEL_HEAVY_FLAMER__0__SENTINEL_HEAVY_FLAMER
+    fileSingle: Resources/Armor/IG/Sentinel_Heavy_Flamer/Sentinel_Heavy_Flamer_Inv.png
+
+#Ogryn Uniform (LAYER 2)
+  - typeSingle: OGRYN_UNIFORM__2__OGRYN_UNIFORM_M
+    fileSingle: Resources/Armor/IG/Ogryn_Uniform/Ogryn_Uniform_Inv.png
+
+#Ogryn Carapace (LAYER 3)
+  - typeSingle: OGRYN_CARAPACE__3__OGRYN_CARAPACE_M
+    fileSingle: Resources/Armor/IG/Ogryn_Carapace/Ogryn_Carapace_Inv.png
+
+#Bullgryn Armor (LAYER 2)
+  - typeSingle: BULLGRYN_ARMOR__2__BULLGRYN_ARMOR_M
+    fileSingle: Resources/Armor/IG/Bullgryn_Armor/Bullgryn_Armor_Inv.png
+
+#Bullgryn Mask (LAYER 3)
+  - typeSingle: BULLGRYN_MASK__3__BULLGRYN_MASK_M
+    fileSingle: Resources/Armor/IG/Bullgryn_Armor/Bullgryn_Mask_Inv.png
 
 
 ### ARMOR BATTLESCAPE SPRITES ###
@@ -1112,6 +1297,51 @@ extraSprites:
 
 #### IG #####
 
+#Flak Armor
+  - type: FLAK_ARMOR.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/Flak_Armor/Flak_Armor_Battlescape.gif
+
+#Medic Flak Armor
+  - type: MEDIC_FLAK_ARMOR.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/Flak_Armor_Medic/Flak_Armor_Medic_Battlescape.gif
+
+#Carapace Armor
+  - type: CARAPACE_ARMOR.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Battlescape.png
+
+#Medic Carapace Armor
+  - type: MEDIC_CARAPACE_ARMOR.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/Carapace_Armor_Medic/Carapace_Armor_Medic_Battlescape.png
+
+#Commissar Greatcoat
+  - type: COMMISSAR_GREATCOAT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/Commissar_Greatcoat/Commissar_Greatcoat_Battlescape.png
+
 #Enginseer sprites
   - type: ENGINSEER.PCK
     width: 512
@@ -1129,6 +1359,24 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Battlescape.png
+
+#Sniper Flak Armor
+  - type: SNIPER_ARMOR.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/Sniper_Armor/Sniper_Armor_Battlescape.png
+
+#Veteran Carapace Armor
+  - type: VETERAN_CARAPACE.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/Veteran_Carapace/Veteran_Carapace_Battlescape.png
 
 #IG Officer Carapace with vox-caster
   - type: CARAPACE_VOXCASTER.PCK
@@ -1166,8 +1414,59 @@ extraSprites:
     files:
       0: Resources/Armor/IG/Sentinel_Missile/Sentinel_Missile_Battlescape.png
 
+#Sentinel with Mulimelta
+  - type: SENTINEL_MULTIMELTA.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Armor/IG/Sentinel_Multimelta/Sentinel_Multimelta_Battlescape.png
 
+#Sentinel with Heavy Flamer
+  - type: SENTINEL_HEAVY_FLAMER.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Armor/IG/Sentinel_Heavy_Flamer/Sentinel_Heavy_Flamer_Battlescape.png
 
+#Ogryn Uniform
+  - type: OGRYN_UNIFORM.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/Ogryn_Uniform/Ogryn_Uniform_Battlescape.png
+
+#Ogryn Carapace Armor
+  - type: OGRYN_CARAPACE.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/Ogryn_Carapace/Ogryn_Carapace_Battlescape.png
+
+#Bullgryn Armor (Defensive)
+  - type: BULLGRYN_DEFENSIVE.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/Bullgryn_Armor/Bullgryn_Defensive_Battlescape.png
+
+#Bullgryn Armor (Offensive)
+  - type: BULLGRYN_OFFENSIVE.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/Bullgryn_Armor/Bullgryn_Offensive_Battlescape.png
 
 
 #### CODEX IMAGES #####
