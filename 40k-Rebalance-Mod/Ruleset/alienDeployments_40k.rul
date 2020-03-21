@@ -1,0 +1,1065 @@
+alienDeployments:
+### DELETE ALL DEPLOYMENTS ###
+
+#40k
+  - delete: STR_CULTIST_BASE_LEVEL_1
+  - delete: STR_CULTIST_BASE_LEVEL_2
+  - delete: STR_CULTIST_BASE_LEVEL_3
+  - delete: STR_CULTIST_BASE_START
+  - delete: STR_CULTIST_SACRIFICES_LEVEL_1
+  - delete: STR_CULTIST_SUMMONING_LEVEL_1
+  - delete: STR_ORKBASE1
+  - delete: STR_ORKBASE2
+  - delete: STR_ORKBASE3
+  - delete: STR_ORKBASE4
+  - delete: STR_ORKBASE5
+  - delete: STR_ORKBASE_START
+  - delete: STR_ORK_OUTPOST
+  - delete: STR_TRUKK_UFO
+  - delete: STR_WAGGON_UFO
+  - delete: STR_WAGGON_CONVOY_UFO
+  - delete: STR_ORK_WAAAGH
+  - delete: STR_ORK_MIG_UFO
+  - delete: STR_STORMRAVEN_UFO
+  - delete: STR_TRAITOR_CHIMERA
+  - delete: STR_TRAITOR_GUARD_BASE_LEVEL_1
+  - delete: STR_TRAITOR_GUARD_BASE_LEVEL_2
+  - delete: STR_TRAITOR_GUARD_BASE_LEVEL_3
+  - delete: STR_TRAITOR_GUARD_BASE_START
+  - delete: STR_TRAITOR_CHIMERA_MAINTENANCE
+  - delete: STR_TRAITOR_GUARD_FIRING_RANGE
+  - delete: STR_ELDAR_WEBWAY
+  - delete: STR_HANGAR
+  - delete: STR_TRAIN_MISSION
+  - delete: STR_CHOUT
+  - delete: STR_CAT
+  - delete: STR_PREDATOR_UFO
+  - delete: STR_HELLT
+  - delete: STR_CHAOS_VOSS
+  - delete: STR_SMALL_SCOUT2
+  - delete: STR_SMALL_SCOUT
+  - delete: STR_MEDIUM_SCOUT
+  - delete: STR_MEDIUM_SCOUT_CULTISTS_MARINES
+  - delete: STR_MEDIUM_SCOUT_TRAITOR_GUARD_MARINES
+  - delete: STR_LARGE_SCOUT
+  - delete: STR_LARGE_SCOUT_CULTISTS_MARINES
+  - delete: STR_LARGE_SCOUT_TRAITOR_GUARD_MARINES
+  - delete: STR_HARVESTER
+  - delete: STR_ABDUCTOR
+  - delete: STR_TERROR_SHIP
+  - delete: STR_TERROR_SHIP_CULTISTS_MARINES
+  - delete: STR_TERROR_SHIP_TRAITOR_GUARD_MARINES
+  - delete: STR_BATTLESHIP
+  - delete: STR_HELLS
+  - delete: STR_SUPPLY_SHIP
+  - delete: STR_TERROR_MISSION
+  - delete: STR_TERROR_MISSION_CULTISTS_MARINES
+  - delete: STR_TERROR_MISSION_TRAITOR_GUARD_MARINES
+  - delete: STR_ALIEN_WAR
+  - delete: STR_ALIEN_BASE_ASSAULT
+  - delete: STR_ALIEN_BASE_ASSAULT2
+  - delete: STR_BASE_DEFENSE
+  - delete: STR_CHAOS_FINAL_LANDING
+  - delete: STR_CHAOS_FINAL_ASSAULT
+  - delete: STR_MARS_CYDONIA_LANDING
+  - delete: STR_MARS_CYDONIA_LANDING_GUARD
+  - delete: STR_MARS_CYDONIA_ENTRANCE
+  - delete: STR_MARS_CYDONIA_ENTRANCE_GUARD
+  - delete: STR_MARS_THE_FINAL_ASSAULT
+  - delete: STR_ARTIFACT_SITE_P1
+  - delete: STR_ARTIFACT_SITE_P2
+  - delete: STR_CHAOSOUT
+  - delete: STR_SPACESHIP_M7
+  - delete: STR_SPACESHIP_M8
+  - delete: STR_SPACESHIP_M8_PART2
+  - delete: STR_SPACESHIP_M9
+  - delete: STR_SPACESHIP_M9_PART2
+  - delete: STR_TANKHUNT
+  - delete: STR_OUTPOST_DEFENSE
+  - delete: STR_OUTPOST_FINAL
+#IG
+  - delete: STR_GUARD_TRAINING
+  - delete: STR_BULLGRYN_RIOT
+  - delete: STR_GUARD_OUTPOST_DEFENSE
+  - delete: STR_GUARD_OUTPOST_DEFENSE_CULTIST
+  - delete: STR_GUARD_OUTPOST_DEFENSE_TRAITORGUARD
+  - delete: STR_VALKYRIE_CRASHED
+  - delete: STR_VALKYRIE_CRASHED_CULTIST
+  - delete: STR_VALKYRIE_CRASHED_TRAITORGUARD
+  - delete: STR_PDF_ASSAULT_SITE
+  - delete: STR_PDF_ASSAULT_CULTIST
+  - delete: STR_PDF_ASSAULT_TRAITORGUARD
+  - delete: STR_MARINE_ASSAULT_SITE
+  - delete: STR_TANITH_MISSION0
+  - delete: STR_TANITH_MISSION_CONVOYAMBUSH
+
+### DEFINE NEW DEPLOYMENTS ###
+
+## CHAOS CRAFTS ##
+
+#Hell Blade
+  - type: STR_CHAOS_HELL_BLADE
+    data:
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 40
+    length: 40
+    height: 9
+
+#Hell Talon
+  - type: STR_CHAOS_HELL_TALON
+    data:
+      - alienRank: 5
+        lowQty: 2
+        highQty: 2 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 40
+    length: 40
+    height: 9
+
+
+#Small Transport Ship
+  - type: STR_CHAOS_LIGHT_TRANSPORT
+    data:
+      - alienRank: 5
+        lowQty: 3 #2
+        highQty: 3 #4
+        dQty: 2
+        percentageOutsideUfo: 60
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 2 #1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 40
+    length: 40
+    height: 9
+#    missionBountyItem: STR_MEDIUM_SCOUT_DATA
+
+#Light Cruiser
+  - type: STR_CHAOS_LIGHT_CRUISER
+    data:
+      - alienRank: 5
+        lowQty: 2 #1
+        highQty: 2 #3
+        dQty: 5
+        percentageOutsideUfo: 65
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 25
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 2 #1
+        percentageOutsideUfo: 35
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 50
+    length: 50
+    height: 9
+#    missionBountyItem: STR_LARGE_SCOUT_DATA
+
+#Heavy Cruiser
+  - type: STR_CHAOS_HEAVY_CRUISER
+    data:
+      - alienRank: 5
+        lowQty: 7 #5
+        highQty: 7 #9
+        dQty: 4
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 2
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 30
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 50
+    length: 50
+    height: 9
+#    missionBountyItem: STR_HARVESTER_DATA
+
+#Heavy Transport Ship (STR_ABDUCTOR analogue)
+  - type: STR_CHAOS_HEAVY_TRANSPORT
+    data:
+      - alienRank: 5
+        lowQty: 4 #3
+        highQty: 4 #5
+        dQty: 4
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 3 #2
+        highQty: 3 #4
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 2
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 30
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 50
+    length: 50
+    height: 9
+#    missionBountyItem: STR_ABDUCTOR_DATA
+
+#Large Dropship (STR_TERROR_SHIP analogue)
+  - type: STR_CHAOS_HEAVY_DROPSHIP
+    data:
+      - alienRank: 5
+        lowQty: 5 #4
+        highQty: 5 #6
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 6
+        lowQty: 2 #1
+        highQty: 2 #3
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 2 #1
+        highQty: 2 #3
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 50
+    length: 50
+    height: 9
+#    missionBountyItem: STR_TERROR_SHIP_DATA
+
+#Battleship (STR_BATTLESHIP analogue)
+  - type: STR_CHAOS_BATTLESHIP
+    data:
+      - alienRank: 5
+        lowQty: 6 #4
+        highQty: 6 #8
+        dQty: 4
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 1
+        lowQty: 2 #1
+        highQty: 2 #3
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 6
+        lowQty: 1 # 0
+        highQty: 1 #2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []            
+      - alienRank: 7
+        lowQty: 1 #0
+        highQty: 1 #2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+
+    width: 50
+    length: 50
+    height: 9
+#    missionBountyItem: STR_BATTLESHIP_DATA
+
+#Supply Ship
+  - type: STR_CHAOS_SUPPLY_SHIP
+    briefing:
+      cutscene: SUPPLY
+      music: gmstory2
+    data:
+      - alienRank: 5
+        lowQty: 6 #5
+        highQty: 6 #7
+        dQty: 6
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 50
+    length: 50
+    height: 9
+#    missionBountyItem: STR_SUPPLY_SHIP_DATA
+
+#Ground missions
+  - type: STR_TERROR_MISSION
+    data:
+      - alienRank: 5
+        lowQty: 5 #4
+        highQty: 5 #6
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 6
+        lowQty: 2 #1
+        highQty: 2 #3
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 2 #1
+        highQty: 2 #3
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 60
+    length: 60
+    height: 6
+    civilians: 16
+    terrains:
+      - URBAN
+      - BDAIRPORT
+      - REFINERY
+      - INDUSTRIALURBANDIO
+    alert: STR_ALIENS_TERRORISE
+    alertBackground: BACK03.SCR
+    briefing:
+      palette: 2
+      desc: STR_TERROR_MISSION_BRIEFING
+      title: STR_TERROR_MISSION
+    markerName: STR_TERROR_SITE
+    duration: [4, 10]
+    despawnPenalty: 1000
+
+
+  - type: STR_ALIEN_BASE_ASSAULT
+    alienBase: true    # this is only to tell new battle mode what to do with this deployment  
+    markerIcon: 7
+    data:
+      - alienRank: 6
+        lowQty: 2 #1
+        highQty: 2 #3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 1 #0
+        highQty: 1 #2
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 5
+        lowQty: 6 #5
+        highQty: 6 #7
+        dQty: 4
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 1
+        lowQty: 3 #2
+        highQty: 3 #4
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 50
+    length: 50
+    height: 7
+    terrains:
+      - ALART
+    shade: 15
+    script: BASEASSAULT
+    nextStage: STR_ALIEN_BASE_ASSAULT2
+    briefing:
+      title: STR_ALIEN_BASE_ASSAULT
+      textOffset: -16
+      background: BACK01.SCR
+      showTarget: false
+    objectiveType: 3
+    genMission:
+      STR_ALIEN_SUPPLY: 80
+    genMissionFreq: 6
+    genMissionLimit: 4 
+    baseDetectionRange: 600            # base radar range, in nautical miles
+    baseDetectionChance: 50            # base radar chance (once every 10 minutes), in percent
+
+#ENEMY BASE ASSAULT (STAGE 2)
+  - type: STR_ALIEN_BASE_ASSAULT2
+    data:
+      - alienRank: 6
+        lowQty: 2 #1
+        highQty: 2 #3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 1 #0
+        highQty: 1 #2
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 5
+        lowQty: 6 #5
+        highQty: 6 #7
+        dQty: 4
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1 #1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 1
+        lowQty: 3 #2
+        highQty: 3 #4
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 50
+    length: 50
+    height: 2
+    terrains:
+      - UBASE
+    shade: 15
+    script: ALIENBASE
+    briefing:
+      title: STR_ALIEN_BASE_ASSAULT2
+      textOffset: -16
+      background: BACK01.SCR
+      showTarget: false
+    objectiveType: 3
+    objectiveComplete: [STR_ALIEN_BASE_CONTROL_DESTROYED, 500]
+    objectivePopup: STR_CONTROL_CENTER_DESTROYED
+    missionBountyItem: STR_CHAOS_BASE_DATA
+
+#BASE DEFENCE MISSION
+  - type: STR_BASE_DEFENSE
+    data:
+      - alienRank: 5
+        lowQty: 6 #4
+        highQty: 6 #8
+        dQty: 4
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1 #1
+        highQty: 1 #2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 1
+        lowQty: 2 #1
+        highQty: 2 #3
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 6
+        lowQty: 1 #0
+        highQty: 1 #2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 1 #0
+        highQty: 1 #2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 60
+    length: 60
+    height: 2
+    terrains:
+      - XBASE
+    shade: 5
+    briefing:
+      cutscene: BASE
+      palette: 0
+      background: BACK01.SCR
+      music: GMDEFEND
+
+#FINAL STUFF
+
+#  - type: STR_MARS_CYDONIA_LANDING
+#  - type: STR_MARS_THE_FINAL_ASSAULT

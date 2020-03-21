@@ -9,6 +9,8 @@ manufacture:
   - delete: STR_GUARD_ARMORS_MOUNTED_LASCANNON
   - delete: STR_HOTSHOT_VOLLEY_GUN
   - delete: STR_STORMTROOPER_REQUISITION
+  - delete: STR_TANITH_SCOUT_GEAR
+  - delete: STR_TANITH_MEDIC_GEAR
 
 ######## T1 STUFF ########
 
@@ -305,8 +307,8 @@ manufacture:
     spawnedPersonType: STR_GUARD_OFFICER
     producedItems:
       STR_OFFICERS_SWORD: 1
-      STR_LASER_PISTOLG: 1
-      STR_LASPISTOL_CLIP: 2
+      STR_LASPISTOL: 1
+      STR_POWER_PACK: 2
 
 #Psyker
   - name: STR_PSYKER_REQUISITION
@@ -320,8 +322,8 @@ manufacture:
       STR_ALIEN_HABITAT: 1
     spawnedPersonType: STR_PSYKER
     producedItems:
-      STR_LASER_PISTOLG: 1
-      STR_LASPISTOL_CLIP: 2
+      STR_LASPISTOL: 1
+      STR_POWER_PACK: 2
 
 #Enginseer Requisition
   - name: STR_ENGINSEER_REQUISITION
@@ -336,8 +338,8 @@ manufacture:
       STR_ALIEN_HABITAT: 1
     spawnedPersonType: STR_ENGINSEER
     producedItems:
-      STR_LASER_PISTOLG: 1
-      STR_LASPISTOL_CLIP: 2
+      STR_LASPISTOL: 1
+      STR_POWER_PACK: 2
 
 #Ministorum Priest Requisition
   - name: STR_MINISTORUM_PRIEST_REQUISITION
@@ -351,8 +353,8 @@ manufacture:
       STR_ALIEN_HABITAT: 1
     spawnedPersonType: STR_MINISTORUM_PRIEST
     producedItems:
-      STR_LASER_PISTOLG: 1
-      STR_LASPISTOL_CLIP: 2
+      STR_LASPISTOL: 1
+      STR_POWER_PACK: 2
 
 #Stormtrooper Requisition
 #  - name: STR_STORMTROOPER_REQUISITION

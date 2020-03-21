@@ -1,5 +1,11 @@
 soldiers:
 
+#Delete playable chaos space marines
+  - delete: STR_CHAOS_MARINE
+#Delete that weird "space marines"
+  - delete: STR_SOLDIER_JOAN
+
+
 #SCOUTS
   - type: STR_SCOUT_SOLDIER
     costBuy: 60000
@@ -143,7 +149,7 @@ soldiers:
       - STR_SM_RANK_2
       - STR_SM_RANK_3
       - STR_SM_RANK_4
-    armor: STR_PERSONAL_ARMOR_UC
+    armor: STR_MK7_ARMOR
     standHeight: 22
     kneelHeight: 14
     femaleFrequency: 0
@@ -222,7 +228,7 @@ soldiers:
       - STR_SM_VETERAN_RANK_2
       - STR_SM_VETERAN_RANK_3
       - STR_SM_VETERAN_RANK_4
-    armor: STR_HONOR_ARMOR_UC
+    armor: STR_MK7_VETERAN_ARMOR
     standHeight: 22
     kneelHeight: 14
     femaleFrequency: 0

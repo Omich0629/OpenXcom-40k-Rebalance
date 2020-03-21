@@ -6,14 +6,33 @@ research:
   - delete: STR_IMPERIAL_GUARD_MISSIONS_TANITH
   - delete: STR_STORMTROOPER_REQUISITION
 
-#Nope.
+  - delete: STR_IMPERIAL_GUARD_BASIC_TRAINING
+  - delete: STR_IMPERIAL_GUARD_MISSIONS
+  - delete: STR_IMPERIAL_GUARD_MISSION_TRAINING_COMPLETE
+
+  - delete: STR_IMPERIAL_GUARD_MISSIONS_BULLGRYN_RIOT
+  - delete: STR_IMPERIAL_GUARD_MISSION_BULLGRYN_RIOT_COMPLETE
+  - delete: STR_BULLGRYN_ARMOR
+
+  - delete: STR_IMPERIAL_GUARD_MISSION_ELYSIAN_DROP_COMPLETE
+
+  - delete: STR_IMPERIAL_GUARD_MISSIONS_TANITH
+  - delete: STR_IMPERIAL_GUARD_MISSIONS_TANITH0_COMPLETE
+  - delete: STR_IMPERIAL_GUARD_MISSIONS_TANITH_CONVOYAMBUSH
+  - delete: STR_IMPERIAL_GUARD_MISSIONS_TANITH1_COMPLETE
+  - delete: STR_TANITH_REQUISITIONS
+
+  - delete: STR_HEAVY_SENTINEL
+  - delete: STR_HEAVY_SENTINEL_UNLOCK
+
   - delete: STR_TAUROX_REQUISITION
   - delete: STR_TAUROS_REQUISITION
-  - delete: STR_IMPERIAL_GUARD_MISSION_ELYSIAN_DROP_COMPLETE
-  - delete: STR_HEAVY_SENTINEL
 
+  - delete: STR_MIDTIER_PREREQ
+  - delete: STR_HFLAMER_FUEL_MANUFACTURING
 
-#IMPERIAL GUARD TECHTREE 2.0
+#IMPERIAL GUARD TECHTREE
+
 ########## T1 ##########
 #First Technology
   - name: STR_IMPERIAL_GUARD_OPERATIONS
@@ -67,6 +86,7 @@ research:
 
 ### Regimental Weapons ###
 #Header Technology
+#Unlocks some basic weapons
   - name: STR_REGIMENTAL_WEAPONS
     cost: 50
     points: 10
@@ -81,55 +101,13 @@ research:
       - STR_GRENADE_LAUNCHER_TECH
       - STR_LASCANNON_TECH
 
-#Heavy Bolter Requisition
-#Same as for Space marines. Opens by 'unlocks' instructions.
-#  - name: STR_HEAVY_BOLTER_TECH
-#    cost: 0
-#    points: 0
-#    listOrder: 100
-#    dependencies:
-#      - STR_GENERALLOCK
-
-
-#Missile Launcher Requisition
-#Same as for Space marines. Opens by 'unlocks' instructions.
-#Unlocks same ammo, but different weapon
-#  - name: STR_ROCKET_LAUNCHER_TECH
-#    cost: 0
-#    points: 0
-#    listOrder: 100
-#    dependencies:
-#      - STR_GENERALLOCK
-
-
-#Chainsword Requisition
-#Same as for Space marines. Opens by 'unlocks' instructions.
-#  - name: STR_CHAINSWORD_TECH
-#    cost: 0
-#    points: 0
-#    listOrder: 100
-#    dependencies:
-#      - STR_GENERALLOCK
-
-#Grenade Launcher Requisition
-#For Imperial Guard only. Opens by 'unlocks' instructions.
+#Grenade Launcher technology
   - name: STR_GRENADE_LAUNCHER_TECH
     cost: 0
     points: 0
     listOrder: 100
     dependencies:
       - STR_GENERALLOCK
-
-#Lascannon
-#Same as for Space marines. Opens by 'unlocks' instructions.
-#  - name: STR_LASCANNON_TECH
-#    cost: 460
-#    points: 10
-#    listOrder: 100
-#    dependencies:
-#      - STR_GENERALLOCK
-
-
 
 #Craft Quad-Laser
   - name: STR_CRAFT_QUADLASER
@@ -138,24 +116,6 @@ research:
     dependencies:
       - STR_IMPERIAL_GUARD_OPERATIONS
       - STR_LASCANNON_TECH
-
-#Craft Lascannon
-#Same as for Space marines
-#  - name: STR_LASER_CANNON
-#    cost: 420
-#    points: 15
-#    listOrder: 100
-#    dependencies:
-#      - STR_LASCANNON_TECH
-
-
-#Lascannon Defence
-#Same as for Space marines
-#  - type: STR_LASER_DEFENSE
-#    listOrder: 100
-#    dependencies:
-#      - STR_LASER_CANNON
-
 
 ### MILITARY PERSONNEL ###
 #Header Technology
@@ -182,12 +142,11 @@ research:
       - STR_MILITARY_PERSONNEL
 
 #Basic Training
-  - name: STR_IMPERIAL_GUARD_BASIC_TRAINING
+  - name: STR_MILITARY_TRAINING
     cost: 80
     points: 10
     dependencies:
       - STR_MILITARY_PERSONNEL
-
 
 ### REGIMENTAL ARMORS ##
 #Header Technology
@@ -205,7 +164,7 @@ research:
     dependencies:
       - STR_REGIMENTAL_ARMOR
 
-#Medic's Flak Armor#
+#Flak Armor (Medic)
   - name: STR_FLAK_MEDIC_TECH
     cost: 80
     points: 10
@@ -213,7 +172,7 @@ research:
       - STR_REGIMENTAL_ARMOR
       - STR_MEDICINE_TECH
 
-#Medic's Carapace Armor
+#Carapace Armor (Medic)
   - name: STR_CARAPACE_MEDIC_TECH
     cost: 80
     points: 10
@@ -222,83 +181,72 @@ research:
       - STR_CARAPACE_ARMOR_TECH
 
 
-
 ### Component Manufacturing ###
 #Same as for Space Marines
 
 ########## T2 ##########
 #IMPERIAL GUARD MID-TIER REQUISITIONS
-  - name: STR_IMPERIAL_GUARD_MIDTIER
+  - delete: STR_IMPERIAL_GUARD_MIDTIER
+  - name: STR_TIER2_IMPERIAL_GUARD
     cost: 200
     points: 200
     dependencies:
-      - STR_IMPERIAL_GUARD_BASIC_TRAINING
+      - STR_MILITARY_TRAINING
       - STR_CARAPACE_ARMOR_TECH
-      - STR_LASER_CANNON
-      - STR_STEELMILLR
+      - STR_CRAFT_LASCANNON
+      - STR_ADAMANTIUM_FORGE
     unlocks:
-      - STR_MIDTIER_PREREQ #dunno if I need this anymore...
-      - STR_CRAFTADD
+      - STR_CRAFT_AUX_SYSTEMS
       - STR_MELTA_WEAPONS
       - STR_HOTSHOT_TECH
-      - STR_SPECIAL_PERSONNEL_AND_EQUIMPENT
-      - STR_TEC_BAYR
-
+      - STR_SPECIAL_PERSONNEL_AND_EQUIPMENT
+      - STR_CULT_OF_MACHINE
     cutscene: c2
 
-# MISSIONS #
-#It should be here for now.
-  - name: STR_IMPERIAL_GUARD_MISSIONS
-    cost: 80
-    points: 20
-    dependencies:
-      - STR_IMPERIAL_GUARD_MIDTIER
 
 ### T2 Crafts ###
-#Craft AUX Systems
-#Same as for Space Marines
-  - name: STR_CRAFTADD
-    cost: 200
-    points: 30
+#Header Technology
+  - name: STR_ADVANCED_REGIMENTAL_VEHICLES
+    cost: 100
+    points: 10
     dependencies:
-      - STR_GENERALLOCK
+      - STR_TIER2_IMPERIAL_GUARD
+    unlocks:
+      - STR_CRAFT_AUX_SYSTEMS
+      - STR_SKYSTRIKE_MISSILES
 
 #Thunderbolt craft
-  - name: STR_THUNDERBOLT_INTERCEPTOR
+  - name: STR_THUNDERBOLT_TECH
     cost: 150
     points: 10
     listOrder: 700
     dependencies:
-      - STR_CRAFTADD
-      - STR_IMPERIAL_GUARD_MIDTIER
+      - STR_ADVANCED_REGIMENTAL_VEHICLES
 
-#Valkyrie Drop
+#Drop Valkyrie
   - name: STR_VALKYRIE_DROP_TECH
     cost: 50
     points: 10
     listOrder: 200
     dependencies:
-      - STR_CRAFTADD
-      - STR_IMPERIAL_GUARD_MIDTIER
+      - STR_ADVANCED_REGIMENTAL_VEHICLES
 
 #SENTINEL/FLAMER
   - name: STR_SENTINEL_FLAMER
     cost: 500
     points: 10
     dependencies:
-      - STR_CRAFTADD
-      - STR_IMPERIAL_GUARD_MIDTIER
+      - STR_ADVANCED_REGIMENTAL_VEHICLES
 
 #SENTINEL/MULTIMELTA
   - name: STR_SENTINEL_MULTIMELTA
     cost: 600
     points: 10
     dependencies:
-      - STR_CRAFTADD
-      - STR_IMPERIAL_GUARD_MIDTIER
-      - STR_FUSION_MISSILE
+      - STR_ADVANCED_REGIMENTAL_VEHICLES
+      - STR_MULTIMELTA_TECH
 
-### Hot-Shot Weapons ###
+### HOT-SHOT WEAPONS ###
 #Header Technology
   - name: STR_HOTSHOT_TECH
     cost: 50
@@ -357,20 +305,21 @@ research:
       - STR_HELLGUN
 
 ### SPECIAL MILITARY PERSONNEL AND EQUIPMENT ###
+#TODO: Rename it, maybe?
 #Header Technology
-  - name: STR_SPECIAL_PERSONNEL_AND_EQUIMPENT
+  - name: STR_SPECIAL_PERSONNEL_AND_EQUIPMENT
     cost: 50
     points: 10
     listOrder: 200
     dependencies:
-      - STR_IMPERIAL_GUARD_MIDTIER
+      - STR_TIER2_IMPERIAL_GUARD
 
 #Sniper Armor
   - name: STR_SNIPER_ARMOR
     cost: 300
     points: 10
     dependencies:
-      - STR_SPECIAL_PERSONNEL_AND_EQUIMPENT
+      - STR_SPECIAL_PERSONNEL_AND_EQUIPMENT
       - STR_LONG_LAS_TECH
 
 #Orgyn Requisition
@@ -378,7 +327,7 @@ research:
     cost: 300
     points: 10
     dependencies:
-      - STR_SPECIAL_PERSONNEL_AND_EQUIMPENT
+      - STR_SPECIAL_PERSONNEL_AND_EQUIPMENT
 
 #Ogryn Carapace
   - name: STR_OGRYN_CARAPACE_TECH
@@ -399,220 +348,38 @@ research:
     cost: 500
     points: 20
     dependencies:
-      - STR_SPECIAL_PERSONNEL_AND_EQUIMPENT
+      - STR_SPECIAL_PERSONNEL_AND_EQUIPMENT
 
 #Enginseer Requisition
   - name: STR_ENGINSEER_REQUISITION
     cost: 500
     points: 20
     dependencies:
-      - STR_SPECIAL_PERSONNEL_AND_EQUIMPENT
-      - STR_TEC_BAYR
+      - STR_SPECIAL_PERSONNEL_AND_EQUIPMENT
+      - STR_CULT_OF_MACHINE
 
 #Veteran Guards
   - name: STR_GUARD_VETERANS
     cost: 700
     points: 30
     dependencies:
-      - STR_SPECIAL_PERSONNEL_AND_EQUIMPENT
+      - STR_SPECIAL_PERSONNEL_AND_EQUIPMENT
     unlocks:
       - STR_BOLTER_TECH
 
-### ADEPTUS MECHANICUS and some tech stuff ###
-
-#Cult of The Machine
-#Same as for Space Marines
-#  - name: STR_TEC_BAYR 
-#    cost: 600
-#    points: 15
-#    dependencies:
-#      - STR_GENERALLOCK
-
-#Auspex (Motion Scanner)
-#Same as for Space Marines
-#  - name: STR_MOTION_SCANNER
-#    listOrder: 900
-#    dependencies:
-#      - STR_TEC_BAYR
-
-#Defence corridor facility
-#Same as for Space Marines
-#  - name: STR_DEFENSE_CORRIDORR
-#    cost: 100
-#    points: 15
-#    listOrder: 900
-#    dependencies:
-#      - STR_TEC_BAYR
-
-#Cloaking Shroud
-#Same as for Space Marines
-#  - name: STR_MIND_SHIELD
-#    cost: 360
-#    points: 25
-#    dependencies:
-#      - STR_TEC_BAYR
-
-#Live Enemy Navigators
-#Same as for Space Marines
-
-#  - name: STR_FLOATER_NAVIGATOR
-#    unlocks:
-#      - STR_ALIEN_ORIGINS
-#    getOneFree:
-#      - STR_ENEMY_ENCRYPTION
-
-#  - name: STR_SNAKEMAN_NAVIGATOR
-#    unlocks:
-#      - STR_ALIEN_ORIGINS
-#    getOneFree:
-#      - STR_ENEMY_ENCRYPTION
-
-#  - name: STR_MUTON_NAVIGATOR
-#    unlocks:
-#      - STR_ALIEN_ORIGINS
-#    getOneFree:
-#      - STR_ENEMY_ENCRYPTION
-
-#  - name: STR_SECTOID_NAVIGATOR
-#    unlocks:
-#      - STR_ALIEN_ORIGINS
-#    getOneFree:
-#      - STR_ENEMY_ENCRYPTION
-
-#Navigator's interrogation result
-#Same as for Space Marines
-#  - name: STR_ENEMY_ENCRYPTION
-#    cost: 0
-#    points: 0
-#    dependencies:
-#      - STR_FLOATER_NAVIGATOR
-#      - STR_SNAKEMAN_NAVIGATOR
-#      - STR_MUTON_NAVIGATOR
-#      - STR_SECTOID_NAVIGATOR
-
-#Decoder
-#Same as for Space Marines
-#  - name: STR_HYPER_WAVE_DECODER
-#    cost: 670
-#    points: 25
-#    dependencies:
-#      - STR_TEC_BAYR
-#      - STR_ENEMY_ENCRYPTION
-
-### MELTA TECHNOLOGY ###
-
-#Header Technology for Melta Branch.
-#Unlocks on T2.
-#Same as for Space Marines
-#  - name: STR_MELTA_WEAPONS
-#    cost: 50
-#    points: 10
-#    dependencies:
-#      - STR_GENERALLOCK
-
-#We need any Melta weapon to start our own manufacturing.
-#  - name: STR_MELTA_TECHNOLOGY
-#    cost: 0
-#    points: 0
-#    dependencies:
-#      - STR_CHAOS_MELTAGUN
-#      - STR_BLASTER_LAUNCHER
-
-#Chaos Melta Weapons. Only one is required to start research of the branch.
-
-#Chaos Melta gun.
-#  - name: STR_CHAOS_MELTAGUN
-#    cost: 100
-#    points: 25
-#    dependencies:
-#      - STR_MELTA_WEAPONS
-#    getOneFree:
-#      - STR_MELTA_TECHNOLOGY
-#    needItem: true
-
-#Chaos Multi-Melta.
-#  - name: STR_BLASTER_LAUNCHER
-#    cost: 900
-#    points: 30
-#    dependencies:
-#      - STR_MELTA_WEAPONS
-#    getOneFree:
-#      - STR_MELTA_TECHNOLOGY
-#    needItem: true
-
-# Normal Melta Weapons
-
-#Normal Melta gun
-#Same as for Space Marines
-#  - name: STR_HEAVY_LASER
-#    cost: 460
-#    points: 10
-#    dependencies:
-#      - STR_MELTA_WEAPONS
-#      - STR_MELTA_TECHNOLOGY
-
-##Disposable melta devices
-#Melta Grenade
-#  - name: STR_MGRENADE
-#    cost: 100
-#    points: 25
-#    dependencies:
-#      - STR_HEAVY_LASER
-
-#Melta Bomb
-#  - name: STR_MELTABOMB
-#    cost: 100
-#    points: 25
-#    dependencies:
-#      - STR_MGRENADE 
-
-#Normal Multi-Melta Requisition
-#  - name: STR_FUSION_MISSILE
-#    cost: 900
-#    points: 30
-#    dependencies:
-#      - STR_HEAVY_LASER
-#    getOneFree:
-#      - STR_BLASTER_BOMB
-
-#Multi-Melta Ammo
-#  - name: STR_BLASTER_BOMB
-#    cost: 0
-#    points: 0
-#    dependencies:
-#      - STR_FUSION_MISSILE
-
-#Craft Multi-Melta
-#  - name: STR_FUSION_BALL_LAUNCHER
-#    cost: 800
-#    points: 30
-#    dependencies:
-#      - STR_FUSION_MISSILE
-
-#Multi-Melta Defence
-#  - name: STR_FUSION_DEFENSE
-#    cost: 800
-#    points: 30
-#    dependencies:
-#      - STR_FUSION_MISSILE
-
 ###### T3 #####
-  - name: STR_IMPERIAL_GUARD_HIGHTIER
+  - delete: STR_IMPERIAL_GUARD_HIGHTIER
+  - name: STR_TIER3_IMPERIAL_GUARD
     cost: 900
     points: 30
     dependencies:
-      - STR_FUSION_BALL_LAUNCHER
-      - STR_PLASMA_CANNON
+      - STR_CRAFT_MULTIMELTA
       - STR_GUARD_VETERANS
       - STR_HOTSHOT_VOLLEY_GUN
-      - STR_TEC_BAYR
-
+      - STR_CULT_OF_MACHINE
     unlocks:
       - STR_AUTOCANNON_TECHNOLOGY
-      - STR_ELITE_REGIMENTAL_VEHICLES
       - STR_PLASMA_WEAPONS
-      - STR_PSI_LAB
-      - STR_ELITE_MILITARY_PERSONNEL
       - STR_INVESTIGATION
 
 ### AUTOCANNON TECHNOLOGY ###
@@ -639,35 +406,35 @@ research:
       - STR_AUTOCANNON_GUARD
 
 
-### ADVANCED REGIMENTAL VEHICLES ###
+### SUPERIOR REGIMENTAL VEHICLES ###
 #Header technology
 #Unlocks on T3
-  - name: STR_ELITE_REGIMENTAL_VEHICLES
+  - name: STR_SUPERIOR_REGIMENTAL_VEHICLES
     cost: 50
     points: 10
     dependencies:
-      - STR_GENERALLOCK
+      - STR_TIER3_IMPERIAL_GUARD
 
 #Marauder requisition
   - name: STR_MARAUDER_REQUISITION
     cost: 900
     points: 30
     dependencies:
-      - STR_ELITE_REGIMENTAL_VEHICLES
+      - STR_SUPERIOR_REGIMENTAL_VEHICLES
 
 #Gorgon Requisition
   - name: STR_GORGON_TECH
     cost: 900
     points: 30
     dependencies:
-      - STR_ELITE_REGIMENTAL_VEHICLES
+      - STR_SUPERIOR_REGIMENTAL_VEHICLES
 
 #SENTINEL/AUTOCANNON
   - name: STR_SENTINEL_AUTOCANNON
     cost: 700
     points: 10
     dependencies:
-      - STR_ELITE_REGIMENTAL_VEHICLES
+      - STR_SUPERIOR_REGIMENTAL_VEHICLES
       - STR_AUTOCANNON_GUARD
 
 #SENTINEL/PLASMA CANNON
@@ -675,126 +442,14 @@ research:
     cost: 700
     points: 10
     dependencies:
-      - STR_ELITE_REGIMENTAL_VEHICLES
-      - STR_HEAVY_PLASMA_TERRAN
-
-### PLASMA TECHNOLOGY ###
-
-#Header Technology
-#Unlocks on T2.
-#  - name: STR_PLASMA_WEAPONS
-#    cost: 50
-#    points: 10
-#    dependencies:
-#      - STR_GENERALLOCK
-
-#We need any Plasma weapon to start manufacturing our own plasma weapons.
-#  - name: STR_PLASMA_TECHNOLOGY
-#    cost: 0
-#    points: 0
-#    dependencies:
-#      - STR_PLASMA_PISTOL
-#      - STR_PLASMA_RIFLE
-#      - STR_HEAVY_PLASMA
-
-#Chaos plasma weapons. You really need ony one to start research this branch.
-
-#Chaos Plasma Pistol.
-#  - name: STR_PLASMA_PISTOL
-#    cost: 600
-#    points: 20
-#    dependencies:
-#      - STR_PLASMA_WEAPONS
-#    getOneFree:
-#      - STR_PLASMA_TECHNOLOGY
-#    needItem: true
-
-#Chaos Plasma Gun.
-#  - name: STR_PLASMA_RIFLE
-#    cost: 700
-#    points: 25
-#    dependencies:
-#      - STR_PLASMA_WEAPONS
-#    getOneFree:
-#      - STR_PLASMA_TECHNOLOGY
-#    needItem: true
-
-#Chaos Heavy Plasma.
-#  - name: STR_HEAVY_PLASMA
-#    cost: 800
-#    points: 30
-#    dependencies:
-#      - STR_PLASMA_WEAPONS
-#    getOneFree:
-#      - STR_PLASMA_TECHNOLOGY
-#    needItem: true
-
-#Normal Plasma Weapons.
-
-#Normal Plasma Pistol. Ammo for Free.
-#  - name: STR_PLASMA_PISTOL_TERRAN
-#    cost: 600
-#    points: 20
-#    dependencies:
-#      - STR_PLASMA_WEAPONS
-#      - STR_PLASMA_TECHNOLOGY
-#    getOneFree:
-#      - STR_PLASMA_PISTOL_CLIP
-
-#  - name: STR_PLASMA_PISTOL_CLIP
-#    cost: 0
-#    points: 0
-#    dependencies:
-#      - STR_PLASMA_PISTOL_TERRAN
-
-
-#Normal Plasma Gun. Ammo for Free.
-#  - name: STR_PLASMA_RIFLE_TERRAN
-#    cost: 700
-#    points: 25
-#    dependencies:
-#      - STR_PLASMA_PISTOL_TERRAN
-
-#  - name: STR_PLASMA_RIFLE_CLIP
-#    cost: 0
-#    points: 0
-#    dependencies:
-#      - STR_PLASMA_RIFLE_TERRAN
-
-#Normal Heavy Plasma. Ammo for Free.
-
-#  - name: STR_HEAVY_PLASMA_TERRAN
-#    cost: 800
-#    points: 30
-#    dependencies:
-#      - STR_PLASMA_RIFLE_TERRAN
-
-#  - name: STR_HEAVY_PLASMA_CLIP
-#    cost: 0
-#    points: 0
-#    dependencies: 
-#      - STR_HEAVY_PLASMA_TERRAN
-
-#Craft Plasma
-#  - name: STR_PLASMA_CANNON
-#    cost: 660
-#    points: 25
-#    dependencies:
-#      - STR_HEAVY_PLASMA_TERRAN
-
-#Plasma Defence
-#  - name: STR_PLASMA_DEFENSE
-#    cost: 620
-#    points: 25
-#    dependencies:
-#      - STR_PLASMA_CANNON
-
+      - STR_SUPERIOR_REGIMENTAL_VEHICLES
+      - STR_PLASMA_CANNON
 
 ### PSI STUFF ###
 #Psi-Lab
   - name: STR_PSI_LAB
     dependencies:
-      - STR_IMPERIAL_GUARD_HIGHTIER
+      - STR_TIER3_IMPERIAL_GUARD
     unlocks:
       - STR_MIND_PROBE
       - STR_TOME_OF_FEAR
@@ -811,51 +466,6 @@ research:
       - STR_PSI_LAB
     spawnedItem: NOPE
 
-#Tome of The Vision
-#Mind control
-  - name: STR_MIND_PROBE
-    cost: 600
-    points: 25
-    dependencies:
-      - STR_ULTIMATE_CRAFT
-      - STR_IMPERIAL_GUARD_HIGHTIER
-    needItem: false
-
-#Tome of Fear
-  - name: STR_TOME_OF_FEAR
-    cost: 600
-    points: 25
-    dependencies:
-      - STR_ULTIMATE_CRAFT
-      - STR_IMPERIAL_GUARD_HIGHTIER
-    needItem: false
-
-#Tome of The Mind
-  - name: STR_PSI_AMP
-    cost: 600
-    points: 25
-    dependencies:
-      - STR_ULTIMATE_CRAFT
-      - STR_IMPERIAL_GUARD_HIGHTIER
-    needItem: false
-
-#Tome of Weakness
-  - name: STR_TOME_OF_WEAKNESS
-    cost: 600
-    points: 25
-    dependencies:
-      - STR_ULTIMATE_CRAFT
-      - STR_IMPERIAL_GUARD_HIGHTIER
-    needItem: false
-
-#Tome of Smoke
-  - name: STR_PATCHSMOKE
-    cost: 600
-    points: 25
-    dependencies:
-      - STR_ULTIMATE_CRAFT
-      - STR_IMPERIAL_GUARD_HIGHTIER
-    needItem: false
 
 ### ELITE MILITARY PERSONNEL ###
 #Header technology
@@ -864,7 +474,7 @@ research:
     cost: 50
     points: 10
     dependencies:
-      - STR_GENERALLOCK
+      - STR_TIER3_IMPERIAL_GUARD
 
 ### Regimental Officers ##
   - name: STR_TEMPESTUS_SCIONS
@@ -880,32 +490,3 @@ research:
     dependencies:
       - STR_ELITE_MILITARY_PERSONNEL
     spawnedItem: NOPE
-
-### INVESTIGATION ###
-#Same as for Space Marines
-#Header Technology
-#  - name: STR_INVESTIGATION
-#    cost: 0
-#    points: 0
-#    listOrder: 100
-#    dependencies:
-#      - STR_GENERALLOCK
-
-
-#Final Solution
-#  - name: STR_THE_MARTIAN_SOLUTION
-#    cost: 500
-#    points: 60
-#    dependencies:
-#      - STR_INVESTIGATION
-#      - STR_ALIEN_ORIGINS
-#      - STR_LEADER_PLUS
-
-#Ending The Warp
-#  - name: STR_CYDONIA_OR_BUST #cutcscene c3
-#    cost: 600
-#    cutscene: c3
-#    points: 60
-#    dependencies:
-#      - STR_COMMANDER_PLUS
-#    unlockFinalMission: false

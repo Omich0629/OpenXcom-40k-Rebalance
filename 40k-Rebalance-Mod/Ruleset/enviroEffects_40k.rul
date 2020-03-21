@@ -1,0 +1,19 @@
+enviroEffects:
+  - type: STR_FOREST_ENVIRO       #FOREST
+    armorTransformations:
+      STR_ADV_SCOUT_ARMOR: STR_ADV_SCOUT_ARMOR_GREEN
+  - type: STR_SNOW_ENVIRO         #SNOW
+    armorTransformations:
+      STR_ADV_SCOUT_ARMOR: STR_ADV_SCOUT_ARMOR_WHITE
+  - type: STR_URBAN_ENVIRO        #WAR
+    armorTransformations:
+      STR_ADV_SCOUT_ARMOR: STR_ADV_SCOUT_ARMOR_BLACK
+  - type: STR_DESERT_ENVIRO       #DESERT
+    armorTransformations:
+      STR_ADV_SCOUT_ARMOR: STR_ADV_SCOUT_ARMOR_YELLOW
+  - type: STR_COLONY_ENVIRO       #COLONY
+    armorTransformations:
+      STR_ADV_SCOUT_ARMOR: STR_ADV_SCOUT_ARMOR_RED
+
+
+  - delete: STR_HANGAR_ENVIRO

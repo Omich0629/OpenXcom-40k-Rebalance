@@ -8,10 +8,10 @@ startingBase:
       fuel: 1000
       damage: 0
       weapons:
-        - type: STR_CANNON_UC
+        - type: STR_SLOT0_BOLTCANNON
           ammo: 200
-        - type: STR_STINGRAY
-          ammo: 12
+        - type: STR_SLOT1_HUNTER_LAUNCHER
+          ammo: 14
       items:
         STR_ELECTRO_FLARE: 12
         STR_GRENADE: 12
@@ -27,31 +27,31 @@ startingBase:
       fuel: 1000
       damage: 0
       weapons:
-        - type: STR_CANNON_UC
+        - type: STR_SLOT0_BOLTCANNON
           ammo: 200
-        - type: STR_STINGRAY
-          ammo: 12
+        - type: STR_SLOT1_HUNTER_LAUNCHER
+          ammo: 14
       status: STR_READY
     - type: STR_STORMTALON
       id: 2
       fuel: 1000
       damage: 0
       weapons:
-        - type: STR_CANNON_UC
+        - type: STR_SLOT0_BOLTCANNON
           ammo: 200
-        - type: STR_STINGRAY
-          ammo: 12
+        - type: STR_SLOT1_HUNTER_LAUNCHER
+          ammo: 14
       status: STR_READY
   items:
     STR_ALIEN_HABITAT: 3   # for apot armor
-    STR_CANNON: 2
-    STR_CANNON_ROUNDS_X50: 12
+    STR_SLOT0_BOLTCANNON: 2
+    STR_BOLTCANNON_ROUNDS: 12
     STR_SM_BOLTPISTOL: 2
     STR_PISTOL_CLIP: 8
     STR_SHOTGUN: 2
     STR_SHOTGUN_SHELLS: 8
-    STR_STINGRAY_LAUNCHER: 1
-    STR_STINGRAY_MISSILES: 24
+    STR_SLOT1_HUNTER_LAUNCHER: 1
+    STR_HUNTER_MISSILES: 8
     STR_STUN_ROD: 2
   scientists: 25
   engineers: 10
@@ -67,10 +67,10 @@ startingBaseSuperhuman:
       fuel: 1800
       damage: 0
       weapons:
-        - type: STR_CANNON_UC
+        - type: STR_SLOT0_BOLTCANNON
           ammo: 200
-        - type: STR_STINGRAY
-          ammo: 12
+        - type: STR_SLOT1_HUNTER_LAUNCHER
+          ammo: 14
       items:
         STR_AUTOGUN: 3
         STR_AUTOGUN_CLIP: 9
@@ -78,8 +78,8 @@ startingBaseSuperhuman:
         STR_GRENADE: 10
         STR_KRAK_GRENADE: 10
         STR_KNIF: 10
-        STR_LASER_RIFLEG: 10
-        STR_LASGUN_CLIP: 20
+        STR_LASGUN: 10
+        STR_POWER_PACK: 20
         STR_SHOTGUN: 2
         STR_SHOTGUN_SHELLS: 8
       status: STR_READY
@@ -88,36 +88,35 @@ startingBaseSuperhuman:
       fuel: 1000
       damage: 0
       weapons:
-        - type: STR_CANNON_UC
+        - type: STR_SLOT0_BOLTCANNON
           ammo: 200
-        - type: STR_STINGRAY
-          ammo: 12
+        - type: STR_SLOT1_HUNTER_LAUNCHER
+          ammo: 14
       status: STR_READY
     - type: STR_LIGHTNING_INTERCEPTOR
       id: 2
       fuel: 1000
       damage: 0
       weapons:
-        - type: STR_CANNON_UC
+        - type: STR_SLOT0_BOLTCANNON
           ammo: 200
-        - type: STR_STINGRAY
-          ammo: 12
+        - type: STR_SLOT1_HUNTER_LAUNCHER
+          ammo: 14
       status: STR_READY
   items:
     STR_ALIEN_HABITAT: 3
     STR_AUTOGUN: 1
     STR_AUTOGUN_CLIP: 9
-    STR_CANNON: 2
-    STR_CANNON_ROUNDS_X50: 12
+    STR_SLOT0_BOLTCANNON: 2
+    STR_BOLTCANNON_ROUNDS: 12
     STR_KNIF: 2
-    STR_LASER_PISTOLG: 2
-    STR_LASPISTOL_CLIP: 6
-    STR_LASER_RIFLEG: 3
-    STR_LASGUN_CLIP: 16
+    STR_LASPISTOL: 2
+    STR_LASGUN: 3
+    STR_POWER_PACK: 20
     STR_SHOTGUN: 2
     STR_SHOTGUN_SHELLS: 8
-    STR_STINGRAY_LAUNCHER: 1
-    STR_STINGRAY_MISSILES: 24
+    STR_SLOT1_HUNTER_LAUNCHER: 1
+    STR_HUNTER_MISSILES: 8
     STR_STUN_ROD: 2
     STR_STUB_GUN: 2
     STR_STUB_GUN_AMMO: 8

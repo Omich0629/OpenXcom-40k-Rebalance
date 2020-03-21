@@ -4,7 +4,7 @@ soldierTransformation:
     requires:
       - STR_PROMOTION_MARINE
     requiredItems:
-      STR_TATICAL_ARMOR: 1
+      STR_MK7_ARMOR_SET: 1
     cost: 40000
     producedSoldierType: STR_SOLDIER
     allowsDeadSoldiers: false

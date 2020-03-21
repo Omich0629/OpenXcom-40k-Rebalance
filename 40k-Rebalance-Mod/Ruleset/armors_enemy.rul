@@ -1,4 +1,204 @@
 armors:
+### DELETE OLD ID's ###
+
+#Cultists
+  - delete: STR_SECTOID_ARMOR0
+  - delete: STR_CULTIST_ARMOR
+  - delete: STR_SECTOID_ARMORP
+
+#Traitor guards
+
+
+
+
+
+### DEFINE NEW ENEMY ARMORS ###
+
+## CULTISTS ##
+
+#Cultist Clothes (provides almost no protection)
+  - type: STR_CULTIST_CLOTHES1
+    spriteSheet: CULTIST_CLOTHES1.PCK
+    spriteInv: CULTIST_CLOTHES1
+    corpseBattle:
+      - STR_CORPSE_CULTIST_CLOTHES1
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+    loftempsSet: [ 3 ]
+
+  - type: STR_CULTIST_CLOTHES2
+    spriteSheet: CULTIST_CLOTHES2.PCK
+    spriteInv: CULTIST_CLOTHES2
+    corpseBattle:
+      - STR_CORPSE_CULTIST_CLOTHES2
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+    loftempsSet: [ 3 ]
+
+#Cultist Armor
+  - type: STR_CULTIST_ARMOR1
+    spriteSheet: CULTIST_ARMOR1.PCK
+    spriteInv: CULTIST_ARMOR1
+    corpseBattle:
+      - STR_CORPSE_CULTIST_ARMOR1
+    frontArmor: 18
+    sideArmor: 16
+    rearArmor: 18
+    underArmor: 12
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.2 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+
+#Cultist Armor
+  - type: STR_CULTIST_ARMOR2
+    spriteSheet: CULTIST_ARMOR2.PCK
+    spriteInv: CULTIST_ARMOR2
+    corpseBattle:
+      - STR_CORPSE_CULTIST_ARMOR2
+    frontArmor: 18
+    sideArmor: 16
+    rearArmor: 18
+    underArmor: 12
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.2 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+
+#Cultist Overcoat
+  - type: STR_CULTIST_OVERCOAT
+    spriteSheet: CULTIST_OVERCOAT.PCK
+    spriteInv: CULTIST_OVERCOAT
+    corpseBattle:
+      - STR_CORPSE_CULTIST_OVERCOAT
+    frontArmor: 30
+    sideArmor: 28
+    rearArmor: 26
+    underArmor: 22
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.2 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+
+#Cultist Robes
+  - type: STR_CULTIST_ROBES
+    spriteSheet: CULTIST_ROBES.PCK
+    spriteInv: CULTIST_ROBES
+    corpseBattle:
+      - STR_CORPSE_CULTIST_ROBES
+    frontArmor: 30
+    sideArmor: 28
+    rearArmor: 26
+    underArmor: 22
+    drawingRoutine: 1
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.2 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+
+## RENEGADES ##
+
+#Renegade Flak Armor
+  - type: STR_RENEGADE_FLAK_ARMOR1
+    spriteSheet: RENEGADE_FLAK_ARMOR1.PCK
+    spriteInv: RENEGADE_FLAK_ARMOR1
+    corpseBattle:
+      - STR_CORPSE_CULTIST_ARMOR2 #STR_CORPSE_RENEGADE_FLAK_ARMOR1
+    frontArmor: 20
+    sideArmor: 24
+    rearArmor: 22
+    underArmor: 20
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+
+
+
 ### CHAOS SM ARMORS (NOT TERMINATORS) ####
 
 #Chaos Space Marine (Chaos Traitor)
@@ -511,7 +711,7 @@ armors:
       - 1.0 #IMPACT
       - 1.2 #MELTA
 
-### CHAOS SORORITAS ARMORS ### 
+### CHAOS SORORITAS ARMORS (kill it with fire) ### 
 
 #Slaanesh sister?
   - type: STR_ADEPTAS_SLAANESH
@@ -714,67 +914,7 @@ armors:
       - 1.0 #IMPACT
       - 1.0 #MELTA
 
-### CULTIST ARMORS ### 
 
-#Cultist
-  - type: STR_SECTOID_ARMOR0
-    frontArmor: 4
-    sideArmor: 3
-    rearArmor: 2
-    underArmor: 2
-    damageModifier: #CULTIST ARMOR
-      - 1.0 #none
-      - 1.0 #AP
-      - 1.0 #FLAMES
-      - 1.0 #HE
-      - 1.0 #LASCANON
-      - 1.0 #PLASMA
-      - 1.0 #STUN
-      - 1.2 #MELEE
-      - 1.0 #ACID
-      - 0.0 #SMOKE
-      - 1.0 #IMPACT
-      - 1.0 #MELTA
-
-#Cultist (Variation)
-  - type: STR_CULTIST_ARMOR
-    frontArmor: 5
-    sideArmor: 4
-    rearArmor: 3
-    underArmor: 3
-    damageModifier: #CULTIST ARMOR
-      - 1.0 #none
-      - 1.0 #AP
-      - 1.0 #FLAMES
-      - 1.0 #HE
-      - 1.0 #LASCANON
-      - 1.0 #PLASMA
-      - 1.0 #STUN
-      - 1.2 #MELEE
-      - 1.0 #ACID
-      - 0.0 #SMOKE
-      - 1.0 #IMPACT
-      - 1.0 #MELTA
-
-#Cultist Priest
-  - type: STR_SECTOID_ARMORP
-    frontArmor: 20
-    sideArmor: 20
-    rearArmor: 20
-    underArmor: 20
-    damageModifier: #CULTIST ARMOR
-      - 1.0 #none
-      - 1.0 #AP
-      - 1.0 #FLAMES
-      - 1.0 #HE
-      - 1.0 #LASCANON
-      - 1.0 #PLASMA
-      - 1.0 #STUN
-      - 1.2 #MELEE
-      - 1.0 #ACID
-      - 0.0 #SMOKE
-      - 1.0 #IMPACT
-      - 1.0 #MELTA
 
 ### TRAITOR GUARDSMAN ARMORS ### 
 

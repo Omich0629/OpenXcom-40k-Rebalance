@@ -1,19 +1,148 @@
 items:
 #ENEMY WEAPONS
 
-#Chaos stubber
-#  - type: STR_STUB_GUN_CHAOS
-#    tags:
-#      ITEM_HAS_RANDOMIZED_SPRITES: 0
+#Chaos Stub pistol
+#Useless even for cultists
+  - delete: STR_STUB_GUN_CHAOS
+
+  - delete: STR_FIXED_SONIC_CANON 
+  - delete: STR_SONIC_CANON
 
 
-#### CHAOS LASER WEAPONS ###
-  - type: STR_LASER_RIFLEC
-    bigSprite: 295
-    floorSprite: 262
-    handSprite: 584
+## Cultist Improvised Mace ##
+  - type: STR_CULTIST_MACE 
+    categories: [STR_CAT_MELEE]
+#RESOURCES
+    bigSprite: 329
+    floorSprite: 286
+    handSprite: 792
+    meleeHitSound: [1006, 1007, 1008, 1009, 1010]
+    meleeAnimation: 0
+#GENERAL
+    battleType: 3
+    size: 0.2
+    costSell: 50
+    weight: 5
+    twoHanded: false
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    attraction: 7
+    listOrder: 12900
+    experienceTrainingMode: 13
+    recover: false
+#MELEE
+    clipSize: -1
+    damageType: 7
+    power: 20
+    tuMelee: 20
+    damageBonus:
+      melee: 0.2
+      strength: 0.2
+    accuracyMelee: 100
+    meleeMultiplier:
+      melee: 0.3
+      flatHundred: 0.5
 
-    #Melee bayonet
+## Cultist Improvised Sword ##
+  - type: STR_CULTIST_SWORD 
+    categories: [STR_CAT_MELEE]
+#RESOURCES
+    bigSprite: 330
+    floorSprite: 287
+    handSprite: 800
+    meleeHitSound: [1011, 1012, 1013, 1014, 1015]
+    meleeAnimation: 0
+#GENERAL
+    battleType: 3
+    size: 0.2
+    costSell: 50
+    weight: 5
+    twoHanded: false
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    attraction: 7
+    listOrder: 12900
+    experienceTrainingMode: 13
+    recover: false
+#MELEE
+    clipSize: -1
+    damageType: 7
+    power: 30
+    tuMelee: 20
+    damageBonus:
+      melee: 0.5
+    accuracyMelee: 100
+    meleeMultiplier:
+      melee: 0.3
+      flatHundred: 0.4
+
+## Cultist Panic Spell #
+  - type: STR_CULTIST_PANIC_SPELL
+#RESOURCES
+    bigSprite: 252
+    floorSprite: 234
+    handSprite: 368
+    hitSound: 36
+#GENERAL
+    battleType: 9
+    size: 0.1
+    weight: 0
+    invWidth: 1
+    invHeight: 2
+    twoHanded: false
+    fixedWeapon: true
+    recover: false
+    psiRequired: true
+#SHOOTING
+    flatRate: false
+    costPanic:
+      time: 30
+      energy: 25
+    costMindControl:
+      time: 0
+    LOSRequired: true
+
+
+### CHAOS LASER WEAPONS ###
+
+## Chaos Lasgun#
+  - delete: STR_LASER_RIFLEC
+  - type: STR_LASGUN_CHAOS
+#RESOURCES
+    bigSprite: 295 #FIX IT
+    floorSprite: 262 #FIX IT
+    handSprite: 584 #FIX IT
+    bulletSprite: 12
+    fireSound: 741 # FIX IT
+    meleeHitSound: 101 #FIX IT
+    meleeAnimation: 0
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_LASGUN]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 1000
+    invWidth: 2
+    invHeight: 3
+    size: 0.2
+    weight: 5
+    twoHanded: true
+    listOrder: 10920
+#SHOOTING
+    compatibleAmmo:
+      - STR_POWER_PACK
+    dropoff: 5
+    bulletSpeed: 50
+    tuSnap: 25
+    accuracySnap: 65
+    snapRange: 16
+    tuAuto: 34
+    accuracyAuto: 45
+    autoRange: 12
+#MELEE
+    meleeType: 7
     meleePower: 20
     meleeBonus:
       reactions: 0.4
@@ -26,13 +155,35 @@ items:
     tuMelee: 15
     flatMelee:
       time: false
-    invWidth: 2
-    invHeight: 3
 
-  - type: STR_LASER_PISTOLC
-    bigSprite: 296
-    floorSprite: 263
-    handSprite: 592
+## Chaos Laspistol ##
+  - delete: STR_LASER_PISTOLC
+  - type: STR_LASPISTOL_CHAOS
+#RESOURCES
+    bigSprite: 296 #FIX IT
+    floorSprite: 263 #FIX IT
+    handSprite: 592 #FIX IT
+    bulletSprite: 13 #FIX IT
+    fireSound: 740 #FIX IT
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_LASGUN]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 500
+    size: 0.1
+    weight: 3
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10810
+#SHOOTING
+    compatibleAmmo:
+      - STR_POWER_PACK
+    dropoff: 5
+    bulletSpeed: 50
+    accuracySnap: 50
+    tuSnap: 20
+    snapRange: 12
 
 
 ### CHAOS MISSILE LAUCNERS ###
@@ -56,7 +207,7 @@ items:
     size: 0.2
     dropoff: 5
     requires:
-      - STR_ALIENS_ONLY
+      - STR_CHAOS_ONLY
     costBuy: 0
     costSell: 1000
     weight: 15
@@ -108,73 +259,199 @@ items:
       - STR_RIFLE_CLIP_EX
 
 #### CHAOS MELTA WEAPONS ###
-
+#TODO: TEST IT!
 #Chaos Meltagun
+  - delete: STR_CHAOS_MELTAGUN
   - type: STR_CHAOS_MELTAGUN
+#RESOURCES
+    bigSprite: 332
+    floorSprite: 289
+    handSprite: 816
+    bulletSprite: 16 #MELTA PROJECTILE
+    fireSound: [1016, 1017] #MELTA WEAPON FIRE
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_MELTA, STR_CAT_TACTICAL]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 48000
     weight: 20
-    bulletSpeed: 50
+    size: 0.3
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    listOrder: 11110
+    recoveryPoints: 4
+#SHOOTING
+    compatibleAmmo:
+      - STR_MELTAGUN_CHARGE
+    bulletSpeed: 25
+    dropoff: 5
     maxRange: 10
+    accuracySnap: 80
+    tuSnap: 40
 
 #Chaos Multi-melta
-
-  - type: STR_BLASTER_LAUNCHER
+#TODO: TEST IT!
+  - delete: STR_BLASTER_LAUNCHER
+  - type: STR_CHAOS_MULTIMELTA
+#RESOURCES
+    bigSprite: 335
+    floorSprite: 292
+    handSprite: 840
+    bulletSprite: 16 #MELTA PROJECTILE
+    fireSound: [1016, 1017] #MELTA WEAPON FIRE
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_MELTA, STR_CAT_DEVASTATOR]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 54000
+    size: 0.3
     weight: 40
-    bulletSpeed: 50
+    recoveryPoints: 5
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    listOrder: 12300
+#SHOOTING
+    compatibleAmmo:
+      - STR_MULTIMELTA_CHARGE
+    dropoff: 5
+    bulletSpeed: 25
     tuSnap: 50
     accuracySnap: 80
     confSnap:
       shots: 2
     maxRange: 15
 
-#### CHAOS PLASMA WEAPONS ###
+
+### CHAOS PLASMA WEAPONS ###
 
 #Chaos Plasma Pistol
-  - type: STR_PLASMA_PISTOL
+#TODO: TEST IT
+  - delete: STR_PLASMA_PISTOL
+  - type: STR_CHAOS_PLASMA_PISTOL
+#RESOURCES
+    bigSprite: 339
+    floorSprite: 296
+    handSprite: 872
+    bulletSprite: 11 #PLASMA PROJECTILE
+    fireSound: [1018, 1019, 1020, 1021, 1022] #PLASMA WEAPON FIRE
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL, STR_CAT_CHAOS]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 12000
+    size: 0.1
+    weight: 10
+    invWidth: 1
+    invHeight: 2
+    recoveryPoints: 3
+    armor: 45
+    listOrder: 11210
+#SHOOTING
+    compatibleAmmo:
+      - STR_PLASMA_PISTOL_CHARGE
+    dropoff: 5
+    accuracySnap: 65
     tuSnap: 35
+    snapRange: 12
 
-#Chaos Plasmagun
-  - type: STR_PLASMA_RIFLE
+
+#Chaos Plasma Gun
+#TODO: TEST IT
+  - delete: STR_PLASMA_RIFLE
+  - type: STR_CHAOS_PLASMA_GUN
+#RESOURCES
+    bigSprite: 343
+    floorSprite: 300
+    handSprite: 904
+    bulletSprite: 11 #PLASMA PROJECTILE
+    fireSound: [1018, 1019, 1020, 1021, 1022] #PLASMA WEAPON FIRE
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL, STR_CAT_CHAOS]
+    requires:
+      - STR_CHAOS_ONLY
+    size: 0.2
+    costSell: 23300
+    weight: 30
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 4
+    armor: 50
+    listOrder: 11410
+#SHOOTING
+    compatibleAmmo:
+      - STR_PLASMA_GUN_CHARGE
+    dropoff: 5
+    accuracySnap: 86
     tuSnap: 30
     snapRange: 18
-    tuAuto: 0
 
 #Chaos Heavy Plasma (Plasma Cannon)
-  - type: STR_HEAVY_PLASMA
-
+  - delete: STR_HEAVY_PLASMA
+  - type: STR_CHAOS_PLASMA_CANNON
+#RESOURCES
+    bigSprite: 347
+    floorSprite: 304
+    handSprite: 936
+    bulletSprite: 11 #PLASMA PROJECTILE
+    fireSound: [1018, 1019, 1020, 1021, 1022] #PLASMA WEAPON FIRE
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_PLASMA, STR_CAT_DEVASTATOR, STR_CAT_CHAOS]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 45800
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    size: 0.3
+    weight: 40
+    recoveryPoints: 5
+    armor: 50
+    listOrder: 11610
+#SHOOTING
+    compatibleAmmo:
+      - STR_PLASMA_CANNON_CHARGE
+    dropoff: 5
     tuSnap: 45
     accuracySnap: 75
     snapRange: 24
-
     tuAimed: 90
     aimRange: 24
     accuracyAimed: 110
+
+
+
+
+
 
 #### CHAOS FLAMER WEAPONS ###
 
 #Chaos Flamer
   - type: STR_FLAMETHROWER_CHAOS
-    tuSnap: 0
-
-    tuAimed: 25
+    tuSnap: 25
+    tuAimed: 0
     tuAuto: 40
     autoShots: 3
     accuracyAuto: 150
-    accuracyAimed: 150
-    confAimed:
-      name: STR_CUSTOM_SNAPSHOT
+    accuracySnap: 150
     maxRange: 6
 
 #Warpflamer
   - type: STR_FLAMETHROWERTZ
-    tuSnap: 0
-
-    tuAimed: 25
+    tuSnap: 25
+    tuAimed: 0
     tuAuto: 40
     autoShots: 3
     accuracyAuto: 150
-    accuracyAimed: 150
-    confAimed:
-      name: STR_CUSTOM_SNAPSHOT
+    accuracySnap: 150
     maxRange: 6
 
 ### Chaos Stormbolter (Combi-Bolter)
@@ -580,3 +857,124 @@ items:
     damageType: 3
     clipSize: 4
     recover: false
+
+
+
+### ENEMY CORPSES ###
+
+## Cultists ##
+
+  - delete: STR_CULTIST_CORPSE
+
+#Unified cultist corpse for geospace
+  - type: STR_CORPSE_CULTIST
+    size: 0.4
+    costSell: 5000
+    weight: 20
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    listOrder: 19000
+
+#Cultist corpse (Clothes 1)
+  - type: STR_CORPSE_CULTIST_CLOTHES1
+    name: STR_CORPSE_CULTIST
+    size: 0.4
+    weight: 20
+    bigSprite: 1000
+    floorSprite: 1000
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    recoveryTransformations:
+      STR_CORPSE_CULTIST: [1]
+    battleType: 11
+    armor: 26
+    listOrder: 19000
+
+#Cultist corpse (Clothes 2)
+  - type: STR_CORPSE_CULTIST_CLOTHES2
+    name: STR_CORPSE_CULTIST
+    size: 0.4
+    weight: 20
+    bigSprite: 1001
+    floorSprite: 1001
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    recoveryTransformations:
+      STR_CORPSE_CULTIST: [1]
+    battleType: 11
+    armor: 26
+    listOrder: 19000
+
+#Cultist corpse (Armor 1)
+  - type: STR_CORPSE_CULTIST_ARMOR1
+    name: STR_CORPSE_CULTIST
+    size: 0.4
+    weight: 20
+    bigSprite: 1002
+    floorSprite: 1002
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    recoveryTransformations:
+      STR_CORPSE_CULTIST: [1]
+    battleType: 11
+    armor: 26
+    listOrder: 19000
+
+#Cultist corpse (Armor 2)
+  - type: STR_CORPSE_CULTIST_ARMOR2
+    name: STR_CORPSE_CULTIST
+    size: 0.4
+    weight: 20
+    bigSprite: 1003
+    floorSprite: 1003
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    recoveryTransformations:
+      STR_CORPSE_CULTIST: [1]
+    battleType: 11
+    armor: 26
+    listOrder: 19000
+
+#Cultist corpse (Overcoat)
+  - type: STR_CORPSE_CULTIST_OVERCOAT
+    name: STR_CORPSE_CULTIST
+    size: 0.4
+    weight: 20
+    bigSprite: 1004
+    floorSprite: 1004
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    recoveryTransformations:
+      STR_CORPSE_CULTIST: [1]
+    battleType: 11
+    armor: 26
+    listOrder: 19000
+
+#Cultist corpse (Robes)
+  - type: STR_CORPSE_CULTIST_ROBES
+    name: STR_CORPSE_CULTIST
+    size: 0.4
+    weight: 20
+    bigSprite: 1005
+    floorSprite: 1005
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    recoveryTransformations:
+      STR_CORPSE_CULTIST: [1]
+    battleType: 11
+    armor: 26
+    listOrder: 19000
+
+
+
+
+

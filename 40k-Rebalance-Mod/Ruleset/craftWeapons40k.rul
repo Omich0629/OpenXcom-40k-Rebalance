@@ -1,92 +1,253 @@
 craftWeapons:
-  - type: STR_STINGRAY               #R 40       A 6        D 60     Acc 65
-    damage: 80 #20 more dmg
-    range: 40
-    accuracy: 65
-    reloadCautious: 64
-    reloadStandard: 48
-    reloadAggressive: 32
-    ammoMax: 12 #4 more ammo
-  - type: STR_AVALANCHE              #R 50       A 3        D100     Acc 75
-    damage: 125 #25 more dmg
-    range: 50
-    accuracy: 75
-    reloadCautious: 96
-    reloadStandard: 72
-    reloadAggressive: 48
-    ammoMax: 6 #3 more ammo
-  - type: STR_CANNON_UC              #R 30       A 100      D10      Acc 40
-    damage: 12 # +2
+#delete 40k weapons
+  - delete: STR_STINGRAY
+  - delete: STR_AVALANCHE
+  - delete: STR_CANNON_UC
+  - delete: STR_FUSION_BALL_UC
+  - delete: STR_LASER_CANNON_UC 
+  - delete: STR_PLASMA_BEAM_UC
+  - delete: STR_THUNDER_CANNON_UC
+  - delete: STR_ASSCANNON_UC
+#delete addons
+  - delete: STR_THRUSTER_UC
+  - delete: STR_TARGETER_UC
+  - delete: STR_HULL_PLATING_UC
+  - delete: STR_FLARE_LAUNCH_UC
+  - delete: STR_SCANNER_UC
+  - delete: STR_RETICULE_UC
+
+#define new IDs
+
+### SLOT 0 ###
+
+## BOLTCANNON ##
+  - type: STR_SLOT0_BOLTCANNON #2000 600
+    weaponType: 0
+    sprite: 1200 # INTICON 1205, BASEBITS 1248
+    sound: 4
+    damage: 10
     range: 30
-    accuracy: 40
-    reloadCautious: 5 #+1
-    reloadStandard: 5 #+1
-    reloadAggressive: 5 #+1
-    ammoMax: 200 #x2
+    accuracy: 30
+    reloadCautious: 3
+    reloadStandard: 3
+    reloadAggressive: 3
+    ammoMax: 200
     rearmRate: 100
-  - type: STR_FUSION_BALL_UC         #R 10       A 2        D230     Acc 90
-    damage: 230
-    range: 10
-    accuracy: 90
-    reloadCautious: 64
-    reloadStandard: 48
-    reloadAggressive: 32
-    ammoMax: 15 #13 more ammo
-  - type: STR_LASER_CANNON_UC        #R 30      A 10        D70      Acc  45
+    launcher: STR_SLOT0_BOLTCANNON
+    clip: STR_BOLTCANNON_ROUNDS
+    projectileType: 2
+    projectileSpeed: 8
+
+## LASCANNON ##
+  - type: STR_SLOT0_LASER_CANNON #1500 1050
+    weaponType: 0
+    sprite: 1201 # INTICON 1206, BASEBITS 1249
+    sound: 8
     damage: 70
     range: 30
-    accuracy: 45
-    reloadCautious: 24
-    reloadStandard: 24
-    reloadAggressive: 24
-    ammoMax: 70 #+60, more ammo, 4900 total dmg
-  - type: STR_PLASMA_BEAM_UC         #R 40      A 5         D120     Acc 30
-    damage: 120
+    accuracy: 70
+    reloadCautious: 30
+    reloadStandard: 30
+    reloadAggressive: 30
+    ammoMax: 20
+    rearmRate: 50
+    launcher: STR_SLOT0_LASER_CANNON
+    projectileType: 4
+
+## PLASMA CANNON ##
+  - type: STR_SLOT0_PLASMA_CANNON #2100 840
+    weaponType: 0
+    sprite: 1202 # INTICON 1207, BASEBITS 1250
+    sound: 9
+    damage: 150
     range: 40
-    accuracy: 50 #more accuracy
-    reloadCautious: 24
-    reloadStandard: 24
-    reloadAggressive: 24
-    ammoMax: 35 #+30, More ammo, 4200 total dmg
-    clip: STR_PLASMA_BEAM_AMMO
-  - type: STR_THUNDER_CANNON_UC      #R 40      A 2         D300     Acc 30
-    damage: 300
-    range: 45 #+5
-    accuracy: 40 #+10
+    accuracy: 35
+    reloadCautious: 20
+    reloadStandard: 20
+    reloadAggressive: 20
+    ammoMax: 16
+    rearmRate: 50
+    launcher: STR_SLOT0_PLASMA_CANNON
+    clip: STR_PLASMA_CANNON_CHARGES
+    projectileType: 5
+
+## MULTI-MELTA ##
+  - type: STR_SLOT0_MULTIMELTA # 2000 1800
+    weaponType: 0
+    sprite: 1203 # INTICON 1208, BASEBITS 1251
+    sound: 7
+    damage: 200
+    range: 10
+    accuracy: 80
+    reloadCautious: 10
+    reloadStandard: 10
+    reloadAggressive: 10
+    ammoMax: 10
+    launcher: STR_SLOT0_MULTIMELTA
+    clip: STR_CRAFT_MULTIMELTA_CHARGES
+    projectileType: 3
+    projectileSpeed: 8
+
+## ASSAULT CANNON ##
+  - type: STR_SLOT0_ASSAULT_CANNON #2250 675
+    weaponType: 0
+    sprite: 1204 # INTICON 1209, BASEBITS 1252
+    sound: 4
+    damage: 15
+    range: 30
+    accuracy: 30
+    reloadCautious: 1
+    reloadStandard: 1
+    reloadAggressive: 1
+    ammoMax: 200
+    rearmRate: 100
+    launcher: STR_SLOT0_ASSAULT_CANNON
+    clip: STR_ASSAULT_CANNON_ROUNDS
+    projectileType: 2
+    projectileSpeed: 8
+
+
+
+### SLOT 1 ###
+
+## HUNTER-KILLER MISSILE LAUNCHER ##
+  - type: STR_SLOT1_HUNTER_LAUNCHER # 910 364
+    weaponType: 1
+    sprite: 1205 # INTICON 1210, BASEBITS 1253
+    sound: 5
+    damage: 65
+    range: 30
+    accuracy: 40
+    reloadCautious: 20
+    reloadStandard: 20
+    reloadAggressive: 20
+    ammoMax: 14
+    rearmRate: 7
+    launcher: STR_SLOT1_HUNTER_LAUNCHER
+    clip: STR_HUNTER_MISSILES
+    projectileType: 0
+    projectileSpeed: 8
+
+## SKYSTRIKE MISSILE LAUNCHER ##
+  - type: STR_SLOT1_SKYSTRIKE_LAUNCHER # 510 459
+    weaponType: 1
+    sprite: 1206 # INTICON 1211, BASEBITS 1254
+    sound: 5
+    damage: 80
+    range: 50
+    accuracy: 90
+    reloadCautious: 40
+    reloadStandard: 40
+    reloadAggressive: 40
+    ammoMax: 6
+    rearmRate: 3
+    launcher: STR_SLOT1_SKYSTRIKE_LAUNCHER
+    clip: STR_SKYSTRIKE_MISSILES
+    projectileType: 1
+    projectileSpeed: 8
+
+## PLASMA MISSILE LAUNCHER ##
+
+  - type: STR_SLOT1_PLASMA_MISSILE_LAUNCHER #640 480
+    weaponType: 1
+    sprite: 1207 # INTICON 1212, BASEBITS 1255
+    sound: 5
+    damage: 160
+    range: 50
+    accuracy: 75
+    reloadCautious: 50
+    reloadStandard: 50
+    reloadAggressive: 50
+    ammoMax: 4
+    rearmRate: 2
+    launcher: STR_SLOT1_PLASMA_MISSILE_LAUNCHER
+    clip: STR_PLASMA_MISSILES
+    projectileType: 1
+    projectileSpeed: 8
+
+### SLOT 3 ###
+
+## THUNDERHAWK WEAPON ##
+  - type: STR_SLOT3_THUNDERLASER_CANNON #2000 1200
+    weaponType: 3
+    sprite: 1208 # INTICON 1213, BASEBITS 1256
+    sound: 32
+    damage: 250
+    range: 40
+    accuracy: 60
     reloadCautious: 48
     reloadStandard: 48
     reloadAggressive: 48
-    ammoMax: 6 #+4 ammo
-  - type: STR_ASSCANNON_UC           #R 30      A 50        D20      Acc 40
-    damage: 30 #+10 
-    range: 40
-    accuracy: 40
-    reloadCautious: 3 #-1
-    reloadStandard: 3 #-1
-    reloadAggressive: 3 #-1
-    ammoMax: 100 #x2
-#Addons
-  - type: STR_THRUSTER_UC
+    ammoMax: 6
+    launcher: STR_SLOT3_THUNDERLASER_CANNON
+    projectileType: 2
+    projectileSpeed: 50
+
+### SLOT 4 ###
+
+## UPGRADED ENGINES ##
+  - type: STR_SLOT4_UPGRADED_ENGINES
+    weaponType: 4
+    sprite: 1209 # INTICON 1214, BASEBITS 1257
+    sound: 0
+    damage: 0
+    range: 0
+    accuracy: 0
+    reloadCautious: 0
+    reloadStandard: 0
+    reloadAggressive: 0
+    ammoMax: 0
+    rearmRate: 0
+    launcher: STR_SLOT4_UPGRADED_ENGINES
+    projectileType: 0
+    projectileSpeed: 0
     stats:
-      avoidBonus: 5 #+2? 3?
-      speedMax: 250
-  - type: STR_TARGETER_UC
+      avoidBonus: 5
+      speedMax: 200
+
+## UPGRADED COGITATOR ##
+  - type: STR_SLOT4_UPGRADED_COGITATOR
+    weaponType: 4
+    sprite: 1210 # INTICON 1215, BASEBITS 1258
+    sound: 0
+    damage: 0
+    range: 0
+    accuracy: 0
+    reloadCautious: 0
+    reloadStandard: 0
+    reloadAggressive: 0
+    ammoMax: 0
+    rearmRate: 0
+    launcher: STR_SLOT4_UPGRADED_COGITATOR
+    projectileType: 0
+    projectileSpeed: 0
     stats:
-      radarRange: 50
+      radarRange: 150
       hitBonus: 10
-  - type: STR_HULL_PLATING_UC
+
+## ENFORCED PLATING ##
+  - type: STR_SLOT4_ENFORCED_PLATING
+    weaponType: 4
+    sprite: 1211 # INTICON 1216, BASEBITS 1259
+    sound: 0
+    damage: 0
+    range: 0
+    accuracy: 0
+    reloadCautious: 0
+    reloadStandard: 0
+    reloadAggressive: 0
+    ammoMax: 0
+    rearmRate: 0
+    launcher: STR_SLOT4_ENFORCED_PLATING
+    projectileType: 0
+    projectileSpeed: 0
     stats:
-      damageMax: 200 # -50
-      armor: 4   #+2
-  - type: STR_FLARE_LAUNCH_UC
-    stats:
-      avoidBonus: 15  #+5
-  - type: STR_SCANNER_UC
-    stats:
-      radarRange: 1000
-  - type: STR_RETICULE_UC
-    stats:
-      powerBonus: 10
-items: #craft Related
-  - type: STR_FUSION_BALL
-    clipSize: 5
+      damageMax: 200
+      armor: 5
+
+
+
+
+
+
+

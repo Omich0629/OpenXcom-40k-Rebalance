@@ -31,9 +31,9 @@ facilities:
     listOrder: 800
 
 #Mechanicus Bay
-  - type: STR_MECH_BAY
+  - type: STR_MECHANICUS_BAY
     requires:
-      - STR_TEC_BAYR
+      - STR_CULT_OF_MACHINE
       - STR_IMPERIAL_GUARD_OPERATIONS
     spriteShape: 1
     spriteFacility: 35

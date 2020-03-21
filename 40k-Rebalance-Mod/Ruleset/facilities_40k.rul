@@ -1,38 +1,40 @@
 facilities:
-#Armory. Requires T3, not T2.
-  - type: STR_ARMORY
-    requires:
-      - STR_ULTIMATE_CRAFT
+### T1 FACILITIES ###
 
-#Apothecary Bay. Get healing bonus from techmarines.
+#Vanilla-style Access Lift
+  - type: STR_ACCESS_LIFT
+    mapName: LIFT_64
+
+#Small Radar
+  - type: STR_SMALL_RADAR_SYSTEM
+    radarChance: 25
+
+#Apothecary Bay
   - type: STR_APOC_BAY
     requires:
-      - STR_APOC_BAY
+      - STR_APOTHECARION
     sickBayAbsoluteBonus: 0.5
     sickBayRelativeBonus: 0.4
-
-#Techmarines Bay. No healing bonus.
-#Unlocks for space marines only
-  - type: STR_TEC_BAY
-    requires:
-      - STR_TEC_BAYR
-      - STR_SPACE_MARINES_OPERATIONS
-    sickBayAbsoluteBonus: 0.0
-    sickBayRelativeBonus: 0.0
 
 #Empty Hangar.
   - type: STR_HANGAR
     size: 2
     mapName: HANGAR_52
 
+#Training module
+  - type: STR_TRAINFACILITY
+    requires:
+      - STR_CHAPTER_TRAINING
+    trainingRooms: 40
+
 
 #Adamantium Forge 2x2
 
   - delete: STR_STEELMILL
 
-  - type: STR_STEELMILL
+  - type: STR_ADAMANTIUM_FORGE
     requires:
-      - STR_STEELMILLR
+      - STR_ADAMANTIUM_FORGE
     spriteFacility: 903
     spriteShape: 903
     size: 2
@@ -45,34 +47,53 @@ facilities:
     mapName: FORGE_56
     listOrder: 800
 
-#Commuunication center. Without enemy spawners.
 
-  - type: STR_COMUNICATIONS
-    mapName: COMU_60
+### T2 FACILITIES ###
 
-#LIFT
+#Large Radar
+  - type: STR_LARGE_RADAR_SYSTEM
+    radarChance: 50
+    requires:
+      - STR_ADVANCED_RADAR
 
-  - type: STR_ACCESS_LIFT
-    mapName: LIFT_64
+#Techmarines Bay. No healing bonus.
+#Unlocks for space marines only
+  - type: STR_TEC_BAY
+    requires:
+      - STR_CULT_OF_MACHINE
+      - STR_SPACE_MARINES_OPERATIONS
+    sickBayAbsoluteBonus: 0.0
+    sickBayRelativeBonus: 0.0
+
+#Multi-Melta Defenses
+  - type: STR_FUSION_BALL_DEFENSES
+    requires:
+      - STR_MULTIMELTA_DEFENSE
+
+#Plasma Cannon Defenses
+  - type: STR_PLASMA_DEFENSES
+    requires:
+      - STR_PLASMA_CANNON_DEFENSE
 
 
-#Training module
 
-  - type: STR_TRAINFACILITY
-    trainingRooms: 40
+### T3 FACILITIES ###
 
-#Chapter Armory
+#Armory. Requires T3, not T2.
   - type: STR_ARMORY
     requires:
       - STR_CHAPTER_ARMORY
+    storage: 50
+
+#Transmission Decoder
+  - type: STR_HYPER_WAVE_DECODER
+    radarChance: 100
 
 #Librarium
-
   - delete: STR_LIBRARY
-
   - type: STR_LIBRARY
     requires:
-      - STR_LIBRARY
+      - STR_LIBRARIUM
     spriteShape: 1
     spriteFacility: 34
     buildCost: 750000
@@ -86,7 +107,14 @@ facilities:
     listOrder: 803
 
 
-#CHAPEL?
+
+#Communication center. Without enemy spawners.
+#TODO: (Do something with it)
+  - type: STR_COMUNICATIONS
+    mapName: COMU_60
+
+#CHAPEL? PSYKANA FACILITY? SOMETHING ELSE? I dunno.
+#TODO: (Do something with it)
   - type: STR_PSIONIC_LABORATORY
     requires:
       - STR_PSI_LAB

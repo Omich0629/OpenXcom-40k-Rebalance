@@ -1,221 +1,479 @@
 ﻿ufos:
-  - type: STR_ORK_MIG_UFO #HK
+### Delete IDs ###
+  - delete: STR_ORK_MIG_UFO #HK
+  - delete: STR_WAGGON_UFO
+  - delete: STR_TRAITOR_CHIMERA
+  - delete: STR_STORMRAVEN_UFO
+  - delete: STR_CONST_UFO
+  - delete: STR_ARMY_UFO
+  - delete: STR_CHIMERA_UFO
+  - delete: STR_VOSS_UFO
+  - delete: STR_WAR_UFO
+  - delete: STR_PREDATOR_UFO
+  - delete: STR_CHAOS_VOSS #HK
+  - delete: STR_HELLT #hell talon HK
+  - delete: STR_SMALL_SCOUT2
+  - delete: STR_SMALL_SCOUT #hell Blade
+  - delete: STR_MEDIUM_SCOUT #transport
+  - delete: STR_LARGE_SCOUT #Hell Cruiser
+  - delete: STR_HARVESTER
+  - delete: STR_ABDUCTOR
+  - delete: STR_TERROR_SHIP
+  - delete: STR_BATTLESHIP
+  - delete: STR_SUPPLY_SHIP
+  - delete: STR_HELLS
+
+### Define Enemy crafts ###
+
+## CHAOS GENERIC CRAFTS ##
+
+#Hell Blade (STR_SMALL_SCOUT analogue)
+#Chaos T1 Interceptor
+  - type: STR_CHAOS_HELL_BLADE
+#RESOURCES
+    marker: 121
+    markerLand: 131
+    markerCrash: 141
+    modSprite: Hell_Blade_Dogfight
+#STATS
     size: STR_VERY_SMALL
-    damageMax: 140
-    speedMax: 1400
-    accel: 3
-    power: 7
-    range: 30
-    score: 50
-    reload: 5
-    breakOffTime: 600  
-  - type: STR_WAGGON_UFO
-    size: STR_VERY_SMALL
-    damageMax: 160
-    speedMax: 100
-    accel: 3
-    power: 35
-    range: 35
-    score: 50
-    reload: 15
-    breakOffTime: 600
-  - type: STR_TRAITOR_CHIMERA
-    speedMax: 75
-    size: STR_SMALL
-    armor: 5
-    damageMax: 480
-    accel: 3
-    power: 20
-    range: 30
-    reload: 8
-    score: 75
-    missionScore: 0
-  - type: STR_STORMRAVEN_UFO
-    size: STR_MEDIUM_UC
-    damageMax: 1000
-    speedMax: 4100
-    accel: 9
+    damageMax: 200
+    speedMax: 1500
     power: 40
-    range: 40
-    score: 250
-    reload: 30
-    breakOffTime: 1000
-  - type: STR_CONST_UFO
-    size: STR_VERY_SMALL
-    damageMax: 160
-    speedMax: 1
-    accel: 3
-    power: 25
+    reload: 40
     range: 30
     score: 50
-    reload: 12
     breakOffTime: 600
-  - type: STR_ARMY_UFO
+#HUNT MODE
+    hunterKillerPercentage: 50
+    huntMode: 2
+    huntSpeed: 90
+    radarRange: 300
+    radarChance: 20
+    sightRange: 300
+    missionScore: 0
+#TERRAIN
+    battlescapeTerrainData:
+      name: CH0A 
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH001
+          width: 10
+          length: 10
+
+
+#Hell Talon (STR_SMALL_SCOUT analogue)
+#Chaos T2 Interceptor
+  - type: STR_CHAOS_HELL_TALON
+#RESOURCES
+    marker: 121
+    markerLand: 131
+    markerCrash: 141
+    modSprite: Hell_Talon_Dogfight
+#STATS
     size: STR_VERY_SMALL
-    damageMax: 160
-    speedMax: 1
-    accel: 3
-    power: 25
-    range: 30
-    score: 50
-    reload: 12
-    breakOffTime: 600
-  - type: STR_CHIMERA_UFO
-    size: STR_VERY_SMALL
-    damageMax: 160
-    speedMax: 1
-    accel: 3
-    power: 20
-    range: 30
-    score: 50
-    reload: 8
-    breakOffTime: 600
-  - type: STR_VOSS_UFO
-    size: STR_VERY_SMALL
-    damageMax: 160
-    speedMax: 1
-    accel: 3
-    power: 25
-    range: 30
-    score: 50
-    reload: 12
-    breakOffTime: 600
-  - type: STR_WAR_UFO
-    size: STR_VERY_SMALL
-    damageMax: 160
-    speedMax: 1
-    accel: 3
-    power: 25
-    range: 30
-    score: 50
-    reload: 12
-    breakOffTime: 600
-  - type: STR_PREDATOR_UFO
-    size: STR_VERY_SMALL
-    damageMax: 160
-    speedMax: 1
-    accel: 3
-    power: 25
-    range: 30
-    score: 50
-    reload: 12
-    breakOffTime: 600
-  - type: STR_CHAOS_VOSS #HK
-    size: STR_VERY_SMALL
-    damageMax: 140
+    damageMax: 350
     speedMax: 1400
-    accel: 3
-    power: 25
+    power: 40
+    reload: 40
     range: 30
     score: 50
-    reload: 20
     breakOffTime: 600
-  - type: STR_HELLT #hell talon HK
-    size: STR_VERY_SMALL
-    damageMax: 160
-    speedMax: 1800
-    accel: 3
-    power: 25
-    range: 30
-    score: 50
-    reload: 20
-    breakOffTime: 600
-  - type: STR_SMALL_SCOUT2
-    size: STR_VERY_SMALL
-    damageMax: 160
-    speedMax: 1200
-    accel: 3
-    power: 25
-    range: 35
-    score: 50
-    reload: 20
-    breakOffTime: 600
-  - type: STR_SMALL_SCOUT #hell Blade
-    size: STR_VERY_SMALL
-    damageMax: 160
-    speedMax: 1200
-    accel: 3
-    power: 25
-    range: 30
-    score: 50
-    reload: 20
-    breakOffTime: 600
-  - type: STR_MEDIUM_SCOUT #transport
-    damageMax: 220
-    speedMax: 1600
-    accel: 5
-    power: 25
+#HUNT MODE
+    hunterKillerPercentage: 50
+    huntMode: 2
+    huntSpeed: 90
+    radarRange: 300
+    radarChance: 20
+    sightRange: 300
+    missionScore: 0
+#TERRAIN
+    battlescapeTerrainData:
+      name: CH00
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH00
+          width: 10
+          length: 10
+          items:
+            STR_ELERIUM_115:
+              - [5, 2, 0]
+
+#Light Transport Ship (STR_MEDIUM_SCOUT analogue)
+  - type: STR_CHAOS_LIGHT_TRANSPORT
+#RESOURCES
+    marker: 122
+    markerLand: 132
+    markerCrash: 142
+    modSprite: Light_Transport_Dogfight
+#STATS
+    size: STR_SMALL
+    damageMax: 600
+    speedMax: 1400 #3800
+    power: 45
+    reload: 40
     range: 35
     score: 75
-    reload: 20
     breakOffTime: 800
-  - type: STR_LARGE_SCOUT #Hell Cruiser
+#TERRAIN
+    battlescapeTerrainData:
+      name: CH02
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH02
+          width: 10
+          length: 10
+          items:
+            STR_ELERIUM_115:
+              - [2, 3, 0]
+        - name: CH01
+          width: 10
+          length: 10
+          items:
+            STR_ELERIUM_115:
+              - [2, 3, 0]
+        - name: CH0A
+          width: 10
+          length: 10
+          items:
+            STR_ELERIUM_115:
+              - [2, 3, 0]
+
+#Light Cruiser (STR_LARGE_SCOUT analogue)
+  - type: STR_CHAOS_LIGHT_CRUISER
+#RESOURCES
+    marker: 122
+    markerLand: 132
+    markerCrash: 142
+    modSprite: Light_Cruiser_Dogfight
+#STATS
     size: STR_SMALL
-    damageMax: 500
-    speedMax: 2000
-    accel: 5
-    power: 30
+    damageMax: 800
+    speedMax: 1400 #3500
+    power: 45
+    reload: 40
     range: 35
     score: 125
-    reload: 20
     breakOffTime: 800
-  - type: STR_HARVESTER
-    size: STR_MEDIUM_UC
-    damageMax: 1000
-    speedMax: 800
-    accel: 8
-    power: 30
-    range: 35
-    score: 250
-    reload: 25
-    breakOffTime: 1000
-  - type: STR_ABDUCTOR
+#TERRAIN
+    battlescapeTerrainData:
+      name: CH03
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH03
+          width: 20
+          length: 20
+          items:
+            STR_ELERIUM_115:
+              - [9, 3, 0]
+              - [10, 3, 0]
+        - name: CH03B
+          width: 20
+          length: 20
+          items:
+            STR_ELERIUM_115:
+              - [9, 3, 0]
+              - [10, 3, 0]
+
+#Heavy Cruiser (STR_HARVESTER analogue)
+  - type: STR_CHAOS_HEAVY_CRUISER
+#RESOURCES
+    marker: 123
+    markerLand: 133
+    markerCrash: 143
+    modSprite: Heavy_Cruiser_Dogfight
+#STATS
     size: STR_MEDIUM_UC
     damageMax: 1400
-    speedMax: 1300
-    accel: 8
-    power: 30
-    range: 35
+    speedMax: 1300 #3200
+    power: 50
+    reload: 32
+    range: 40
     score: 250
-    reload: 25
+    breakOffTime: 1000
+#TERRAIN
+    battlescapeTerrainData:
+      name: CH04
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH04B
+          width: 20
+          length: 20
+          items:
+            STR_ELERIUM_115:
+              - [6, 10, 0]
+              - [7, 10, 0]
+              - [8, 10, 0]
+        - name: CH04
+          width: 20
+          length: 20
+          items:
+            STR_ELERIUM_115:
+              - [5, 7, 0]
+              - [3, 10, 0]
+              - [5, 10, 0]	
+
+#Heavy Transport Ship (STR_ABDUCTOR analogue)
+  - type: STR_CHAOS_HEAVY_TRANSPORT
+#RESOURCES
+    marker: 123
+    markerLand: 133
+    markerCrash: 143
+    modSprite: Heavy_Transport_Dogfight
+#STATS
+    size: STR_MEDIUM_UC
+    damageMax: 1500
+    speedMax: 1300 #3000
+    power: 50
+    reload: 32
+    range: 40
+    score: 250
     breakOffTime: 1500
-  - type: STR_TERROR_SHIP
+#TERRAIN
+    battlescapeTerrainData:
+      name: CH05
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH05
+          width: 20
+          length: 20
+          items:
+            STR_ELERIUM_115:
+              - [8, 4, 1]
+              - [9, 4, 1]
+              - [10, 4, 1]
+              - [11, 4, 1]
+        - name: CH05B
+          width: 20
+          length: 20
+          items:
+            STR_ELERIUM_115:
+              - [8, 4, 1]
+              - [9, 4, 1]
+              - [10, 4, 1]
+              - [11, 4, 1]
+
+#Heavy Dropship (STR_TERROR_SHIP analogue)
+  - type: STR_CHAOS_HEAVY_DROPSHIP
+#RESOURCES
+    marker: 124
+    markerLand: 134
+    markerCrash: 144
+    modSprite: Heavy_Dropship_Dogfight
+#STATS
     size: STR_LARGE
-    damageMax: 3000
-    speedMax: 2800
-    accel: 6
-    power: 40
-    range: 40
+    damageMax: 2800
+    speedMax: 1200 #2400
+    power: 100
+    reload: 24
+    range: 50
     score: 500
-    reload: 30
     breakOffTime: 2000
-  - type: STR_BATTLESHIP
+#TERRAIN
+    battlescapeTerrainData:
+      name: CH06
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH06
+          width: 20
+          length: 30
+          items:
+            STR_ELERIUM_115:
+              - [8, 15, 0]
+              - [9, 15, 0]
+              - [11, 15, 0]
+              - [12, 15, 0]
+              - [3, 15, 1]
+              - [4, 15, 1]
+              - [5, 15, 1]
+              - [6, 15, 1]
+
+#Battleship (STR_BATTLESHIP analogue)
+  - type: STR_CHAOS_BATTLESHIP
+#RESOURCES
+    marker: 125
+    markerLand: 135
+    markerCrash: 145
+    modSprite: Battleship_Dogfight
+#STATS
     size: STR_VERY_LARGE
-    damageMax: 7000
-    speedMax: 1000
-    accel: 2
+    damageMax: 3000
+    speedMax: 1000 #2100
     power: 120
-    range: 40
+    reload: 24
+    range: 50
     score: 700
-    reload: 12
     breakOffTime: 4000
-  - type: STR_SUPPLY_SHIP
-    size: STR_LARGE
-    damageMax: 5400
-    speedMax: 1200
-    accel: 6
-    power: 120
+#TERRAIN
+    battlescapeTerrainData:
+      name: CH07
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH07
+          width: 30
+          length: 30
+          items:
+            STR_ELERIUM_115:
+              - [12, 3, 0]
+              - [13, 3, 0]
+              - [14, 3, 0]
+              - [15, 3, 0]
+              - [16, 3, 0]
+              - [17, 3, 0]
+              - [2, 12, 0]
+              - [3, 12, 0]
+              - [26, 12, 0]
+              - [27, 12, 0]
+
+#Supply Ship (STR_SUPPLY_SHIP analogue)
+  - type: STR_CHAOS_SUPPLY_SHIP
+#RESOURCES
+    marker: 125
+    markerLand: 135
+    markerCrash: 145
+    modSprite: Supply_Ship_Dogfight
+#STATS
+    size: STR_VERY_LARGE
+    damageMax: 2200
+    speedMax: 1100 #2000
+    power: 70
+    reload: 24
     range: 40
     score: 400
-    reload: 36
     breakOffTime: 3000
-  - type: STR_HELLS
-    size: STR_LARGE
-    damageMax: 6000
-    speedMax: 3000
-    accel: 6
-    power: 120
-    range: 40
-    score: 700
-    reload: 15
-    breakOffTime: 4000
+#TERRAIN
+    battlescapeTerrainData:
+      name: CH08
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH08
+          width: 20
+          length: 30
+          items:
+            STR_ELERIUM_115:
+              - [8, 3, 0]
+              - [9, 3, 0]
+              - [10, 3, 0]
+              - [11, 3, 0]
+        - name: CH08B
+          width: 20
+          length: 30
+          items:
+            STR_ELERIUM_115:
+              - [8, 3, 0]
+              - [9, 3, 0]
+              - [10, 3, 0]
+              - [11, 3, 0]
+        - name: CH08C
+          width: 20
+          length: 30
+          items:
+            STR_ELERIUM_115:
+              - [8, 3, 0]
+              - [9, 3, 0]
+              - [10, 3, 0]
+              - [11, 3, 0]
+
+
+
+
+
+
+
+#Some medium ship??
+
+
+## RENEGADE CRAFTS ##
+
+#STR_RENEGADE_LIGHTNING
+#Renegade Lightning Interceptor (STR_SMALL_SCOUT analogue)
+
+#STR_RENEGADE_CHIMERA
+#Renegade Chimera APC (unique ground vehicle)
+
+#STR_RENEGADE_VALKYRIE
+#Renegade Valkyrie (STR_MEDIUM_SCOUT analogue)
+
+## ORK CRAFTS ##
+
+#STR_ORK_FIGHTA
+#Ork interceptor (STR_SMALL_SCOUT analogue)
+
+#STR_ORK_WAGGON
+#Ork waggon (unique ground vehicle)
+
+#STR_ORK_TRUCK
+#Ork truck (unique ground vehicle)
+

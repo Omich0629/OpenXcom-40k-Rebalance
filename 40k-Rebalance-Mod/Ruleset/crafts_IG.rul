@@ -292,7 +292,7 @@ crafts:
     sprite: 1105
 #GENERAL
     requires:
-      - STR_THUNDERBOLT_INTERCEPTOR
+      - STR_THUNDERBOLT_TECH
     costBuy: 700000
     costRent: 350000
     costSell: 350000

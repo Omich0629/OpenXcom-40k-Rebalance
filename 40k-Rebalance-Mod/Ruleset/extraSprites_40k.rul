@@ -18,6 +18,34 @@ extraSprites:
     files:
       111: Resources/Geospace/Markers_IG.png
 
+#CHAOS CRAFTS FLIGHT (121 - 130)
+  - type: GlobeMarkers
+    width: 70
+    height: 7
+    subX: 7
+    subY: 7
+    files:
+      121: Resources/Geospace/Markers_Chaos_Flight.png
+
+#CHAOS CRAFTS LANDED (131 - 140)
+  - type: GlobeMarkers
+    width: 70
+    height: 7
+    subX: 7
+    subY: 7
+    files:
+      131: Resources/Geospace/Markers_Chaos_Landed.png
+
+#CHAOS CRAFTS CRASHED (141 - 150)
+  - type: GlobeMarkers
+    width: 70
+    height: 7
+    subX: 7
+    subY: 7
+    files:
+      141: Resources/Geospace/Markers_Chaos_Crashed.png
+
+
 ## SM CRAFT SPRITES ##
 #   the corresponding id for INTICON.PCK for the minimized craft icon is sprite+0
 #    the corresponding id for INTICON.PCK for the dogfight image is sprite+11
@@ -57,6 +85,103 @@ extraSprites:
       1117: Resources/Crafts/IG/Marauder/Marauder_Dogfight.png
       1118: Resources/Crafts/IG/Gorgon/Gorgon_Dogfight.png
 
+#Craft Weapons dogfight sprites (1200 - ???)
+#sprite index + 5
+      1205: Resources/CraftWeapons/Craft_Bolter/Craft_Bolter_Dogfight.png
+      1206: Resources/CraftWeapons/Craft_Lascannon/Craft_Lascannon_Dogfight.png
+      1207: Resources/CraftWeapons/Craft_Plasma_Cannon/Craft_Plasma_Cannon_Dogfight.png
+      1208: Resources/CraftWeapons/Craft_Multi_Melta/Craft_Multi_Melta_Dogfight.png
+      1209: Resources/CraftWeapons/Craft_Assault_Cannon/Craft_Assault_Cannon_Dogfight.png
+      1210: Resources/CraftWeapons/Hunter_Killer_Missiles/Hunter_Killer_Missiles_Dogfight.png
+      1211: Resources/CraftWeapons/Skystrike_Missiles/Skystrike_Missiles_Dogfight.png
+      1212: Resources/CraftWeapons/Plasma_Missiles/Plasma_Missiles_Dogfight.png
+      1213: Resources/CraftWeapons/Thunderhawk_Cannon/Thunderhawk_Cannon_Dogfight.png
+      1214: Resources/CraftWeapons/Upgraded_Engines/Upgraded_Engines_Dogfight.png
+      1215: Resources/CraftWeapons/Upgraded_Cogitator/Upgraded_Cogitator_Dogfight.png
+      1216: Resources/CraftWeapons/Enforced_Plating/Enforced_Plating_Dogfight.png
+
+
+## ENEMY DOGFIGHT SPRITES ##
+
+#Hell Talon
+  - type: Hell_Talon_Dogfight
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Crafts/Enemy/Hell_Talon_Dogfight.png
+
+#Hell Blade
+  - type: Hell_Blade_Dogfight
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Crafts/Enemy/Hell_Blade_Dogfight.png
+
+#Hell Blade
+  - type: Hell_Blade_Dogfight
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Crafts/Enemy/Hell_Blade_Dogfight.png
+
+#Light Transport 
+  - type: Light_Transport_Dogfight
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Crafts/Enemy/Light_Transport_Dogfight.png
+
+#Light Cruiser
+  - type: Light_Cruiser_Dogfight
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Crafts/Enemy/Light_Cruiser_Dogfight.png
+
+#Heavy Cruiser
+  - type: Heavy_Cruiser_Dogfight
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Crafts/Enemy/Heavy_Cruiser_Dogfight.png
+
+#Heavy Transport
+  - type: Heavy_Transport_Dogfight
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Crafts/Enemy/Heavy_Transport_Dogfight.png
+
+#Heavy Dropship
+  - type: Heavy_Dropship_Dogfight
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Crafts/Enemy/Heavy_Dropship_Dogfight.png
+
+#Battleship
+  - type: Battleship_Dogfight
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Crafts/Enemy/Battleship_Dogfight.png
+
+#Supply Ship
+  - type: Supply_Ship_Dogfight
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Crafts/Enemy/Supply_Ship_Dogfight.png
 
 ## BASEBITS ##
   - type: BASEBITS.PCK
@@ -93,6 +218,22 @@ extraSprites:
       1139: Resources/Crafts/IG/Marauder/Marauder_Base.png
       1140: Resources/Crafts/IG/Gorgon/Gorgon_Base.png
 
+#Craft Weapons base sprites (1200 - ???)
+#sprite index + 48
+      1248: Resources/CraftWeapons/Craft_Bolter/Craft_Bolter_Basebit.png
+      1249: Resources/CraftWeapons/Craft_Lascannon/Craft_Lascannon_Basebit.png
+      1250: Resources/CraftWeapons/Craft_Plasma_Cannon/Craft_Plasma_Cannon_Basebit.png
+      1251: Resources/CraftWeapons/Craft_Multi_Melta/Craft_Multi_Melta_Basebit.png
+      1252: Resources/CraftWeapons/Craft_Assault_Cannon/Craft_Assault_Cannon_Basebit.png
+      1253: Resources/CraftWeapons/Hunter_Killer_Missiles/Hunter_Killer_Missiles_Basebit.png
+      1254: Resources/CraftWeapons/Skystrike_Missiles/Skystrike_Missiles_Basebit.png
+      1255: Resources/CraftWeapons/Plasma_Missiles/Plasma_Missiles_Basebit.png
+      1256: Resources/CraftWeapons/Thunderhawk_Cannon/Thunderhawk_Cannon_Basebit.png
+      1257: Resources/CraftWeapons/Upgraded_Engines/Upgraded_Engines_Basebit.png
+      1258: Resources/CraftWeapons/Upgraded_Cogitator/Upgraded_Cogitator_Basebit.png
+      1259: Resources/CraftWeapons/Enforced_Plating/Enforced_Plating_Basebit.png
+
+
 
 #SPECIAL ICONS
   - type: SPICONS.DAT
@@ -113,13 +254,15 @@ extraSprites:
     subY: 40
     files:
 #ANIMATIONS
-
       100: Resources/Animations/TU_Buff_Hit.gif #TU BUFF (10 frames)
       111: Resources/Animations/GravGun_Hit.gif #GRAV GUN (10 frames)
       121: Resources/Animations/TU_Buff_Hit.gif #MORALE BUFF (10 frames)
       131: Resources/Animations/Lightning_Hit.png #LIGHTNING STRIKE (10 frames)
       141: Resources/Animations/Shield_Buff_Hit.gif #Shield Buff (10 frames)
       151: Resources/Animations/Meltagun_Hit.gif
+      161: Resources/Animations/Plasma_hit.gif
+      171: Resources/Animations/Heavy_Plasma_Hit.gif
+
 
 #RANKS
       300: Resources/Ranks/Enginseer_rankBattleSprite.png #Enginseer rank (1 frame)
@@ -133,15 +276,16 @@ extraSprites:
     subX: 128
     subY: 64
     files:
-      88: Resources/Sprites/XFIRE.png
-      96: Resources/Sprites/XSOUND.png
-      104: Resources/Sprites/XSmoke.png
-      184: Resources/Sprites/184EX.png
+      88: Resources/Sprites/AOE_Fire.png
+      96: Resources/Sprites/AOE_Sound.png
+      104: Resources/Sprites/AOE_Smoke.png
+      184: Resources/Sprites/AOE_Explosion.png
+      190: Resources/Sprites/AOE_Plasma.png
 
 #BIG SPRITES (INVENTORY SPRITES)
   - type: BIGOBS.PCK
     files:
-#ARMORS (100 - 200)
+#SM RELATED CORPSES
       100: Resources/Armor/SM/ULTRAMARINES/Mk7_Armor/Mk7_Armor_Corpse_Inv.png
       101: Resources/Armor/SM/ULTRAMARINES/Mk7_Sergeant/Mk7_Sergeant_Corpse_Inv.png
       102: Resources/Armor/SM/ULTRAMARINES/Mk7_Apothecary/Mk7_Apothecary_Corpse_Inv.png
@@ -157,10 +301,13 @@ extraSprites:
       112: Resources/Armor/SM/ULTRAMARINES/Terminator_Captain/Term_Captain_Corpse_Inv.png
       113: Resources/Armor/SM/ULTRAMARINES/Scout_Armor/Scout_Armor_Corpse_Inv.png
 
+#IG RELATED CORPSES
+
       150: Resources/Armor/IG/Enginseer/Enginseer_Corpse_Inv.gif
       151: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Corpse_Inv.gif
       152: Resources/Armor/IG/Ogryn_Carapace/Ogryn_Carapace_Corpse_Inv.png
       153: Resources/Armor/IG/Bullgryn_Armor/Bullgryn_Armor_Corpse_Inv.png
+      154: Resources/Armor/IG/Flak_Armor/Flak_Armor_Corpse_Inv.png
 
 #ITEMS (201 - ?)
       220: Resources/Items/Common/Null_Objects/Null_Lefthand.png
@@ -169,22 +316,22 @@ extraSprites:
       223: Resources/Items/Common/Chainsword/MC_ChainSword_BigSprite.gif
       224: Resources/Items/SM/Combi_Plasma/Combi_Plasma_Inv.gif
       225: Resources/Items/SM/Combi_Plasma/MC_Combi_Plasma_Inv.gif
-      226: Resources/Items/IG/IG_Missile_Launcher/IG_MLauncher_Inv.gif
-      227: Resources/Items/IG/IG_Missile_Launcher/IG_MLauncher_Inv_deployed.gif
-      228: Resources/Items/IG/IG_Heavy_Bolter/IG_HeavyBolter_AP_Case_Inv.gif
-      229: Resources/Items/IG/IG_Heavy_Bolter/IG_HeavyBolter_EX_Case_Inv.gif
-      230: Resources/Items/IG/IG_Heavy_Bolter/IG_HeavyBolter_I_Case_Inv.gif
-      231: Resources/Items/Common/Multimelta/Multimelta_Inv.gif
-      232: Resources/Items/Common/Multimelta/Multimelta_Charge_Inv.gif
+      226: Resources/Items/IG/Missile_Launcher_IG/IG_MLauncher_Inv.gif
+      227: Resources/Items/IG/Missile_Launcher_IG/IG_MLauncher_Inv_deployed.gif
+      228: Resources/Items/IG/Heavy_Bolter_IG/IG_HeavyBolter_AP_Case_Inv.gif
+      229: Resources/Items/IG/Heavy_Bolter_IG/IG_HeavyBolter_EX_Case_Inv.gif
+      230: Resources/Items/IG/Heavy_Bolter_IG/IG_HeavyBolter_I_Case_Inv.gif
+#      231:
+      232: Resources/Items/Common/Multimelta_Charge/Multimelta_Charge_Inv.png
       233: Resources/Items/Common/Omnissian_Axe/Omnissian_Axe_Inv.png
       234: Resources/Items/IG/Vox_Caster/IG_Vox_Caster_Inv.png
       235: Resources/Items/Enemy/Ork_Turrets/Ork_Cannon_Inv.gif
       236: Resources/Items/Enemy/Ork_Turrets/Ork_Turret_Inv.gif
       237: Resources/Items/Enemy/Chaos_Sentinel/C_Sentinel_Launcher_Inv.png
       238: Resources/Items/SM/First_Aid_Kit/FirstAidKit_Inv.GIF
-      239: Resources/Items/Common/Heavy_Plasma/Heavy_Plasma_Inv.gif
+#      239: FREE
       240: Resources/Items/Common/NonLethal_Grav_Round/NonLethal_Grav_Round_Inv.gif
-      241: Resources/Items/Common/Melta_Bomb/Melta_Bomb_Inv.gif
+#      241: 
       242: Resources/Items/SM/Crozius_Arcanum/Crozius_Arcanum_Inv.gif
       243: Resources/Items/SM/Narthecium/Narthecium_Inv.gif
       244: Resources/Items/SM/Stormraven_Turret_Lascannon/Stormraven_LeftTurret_Inv.png
@@ -234,10 +381,10 @@ extraSprites:
       288: Resources/Items/Enemy/Chaos_Dreadnought_Weapons/Chaos_Dreadnought_Fist_Inv.png
       289: Resources/Items/Enemy/Chaos_Dreadnought_Weapons/Chaos_Dreadnought_Missile_Inv.png
       290: Resources/Items/Enemy/Chaos_Dreadnought_Weapons/Chaos_Dreadnought_Plasma_Inv.png
-      291: Resources/Items/IG/Lasgun/Lasgun_Inv.gif
-      292: Resources/Items/IG/Lasgun/Lasgun_Clip_Inv.png
-      293: Resources/Items/IG/Laspistol/Laspistol_Inv.gif
-      294: Resources/Items/IG/Laspistol/Laspistol_Clip_Inv.png
+      291: Resources/Items/IG/Lasgun/Lasgun_Inv.png
+      292: Resources/Items/IG/Power_Pack/Power_Pack_Inv.png
+      293: Resources/Items/IG/Laspistol/Laspistol_Inv.png
+#      294: FREE
       295: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Inv.gif
       296: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Inv.gif
       297: Resources/Items/IG/Sentinel_Weapons/Sentinel_Missile_Left_Inv.png
@@ -272,11 +419,49 @@ extraSprites:
       326: Resources/Items/IG/Grenadier_Gauntlet_Ammo/Krak_Cartridge_Inv.gif
       327: Resources/Items/IG/Grenadier_Gauntlet_Ammo/Incendiary_Cartridge_Inv.gif
       328: Resources/Items/IG/Brute_Shield/Brute_Shield_Inv.png
+      329: Resources/Items/Enemy/Cultist_Mace/Cultists_Mace_Inv.png
+      330: Resources/Items/Enemy/Cultist_Sword/Cultist_Sword_Inv.png
+      331: Resources/Items/Common/Meltagun/Meltagun_Inv.png
+      332: Resources/Items/Enemy/Chaos_Meltagun/Chaos_Meltagun_Inv.png
+      333: Resources/Items/Common/Meltagun_Charge/Meltagun_Charge_Inv.png
+      334: Resources/Items/Common/Multimelta/Multimelta_Inv.png
+      335: Resources/Items/Enemy/Chaos_Multimelta/Chaos_Multimelta_Inv.png
+      336: Resources/Items/Common/Melta_Grenade/Melta_Grenade_Inv.png
+      337: Resources/Items/Common/Melta_Bomb/Melta_Bomb_Inv.png
+      338: Resources/Items/SM/Plasma_Pistol/Plasma_Pistol_Inv.png
+      339: Resources/Items/Enemy/Chaos_Plasma_Pistol/Chaos_Plasma_Pistol_Inv.png
+      340: Resources/Items/SM/Plasma_Pistol_MC/Plasma_Pistol_MC_Inv.png
+      341: Resources/Items/Common/Plasma_Pistol_Charge/Plasma_Pistol_Charge_Inv.png
+      342: Resources/Items/SM/Plasma_Gun/Plasma_Gun_Inv.png
+      343: Resources/Items/Enemy/Chaos_Plasma_Gun/Chaos_Plasma_Gun_Inv.png
+      344: Resources/Items/SM/Plasma_Gun_MC/Plasma_Gun_MC_Inv.png
+      345: Resources/Items/Common/Plasma_Gun_Charge/Plasma_Gun_Charge_Inv.png
+      346: Resources/Items/SM/Plasma_Cannon/Plasma_Cannon_Inv.png
+      347: Resources/Items/Enemy/Chaos_Plasma_Cannon/Chaos_Plasma_Cannon_Inv.png
+      348: Resources/Items/Common/Plasma_Cannon_Charge/Plasma_Cannon_Charge_Inv.png
+
+
+
+
+
+#ENEMY RELATED CORPSES
+
+#cultists
+      1000: Resources/Armor/Enemy/Cultists/Cultist_Clothes/Cultist_Clothes1_Corpse_Inv.png
+      1001: Resources/Armor/Enemy/Cultists/Cultist_Clothes/Cultist_Clothes2_Corpse_Inv.png
+      1002: Resources/Armor/Enemy/Cultists/Cultist_Armor/Cultist_Armor1_Corpse_Inv.png
+      1003: Resources/Armor/Enemy/Cultists/Cultist_Armor/Cultist_Armor2_Corpse_Inv.png
+      1004: Resources/Armor/Enemy/Cultists/Cultist_Overcoat/Cultist_Overcoat_Corpse_Inv.png
+      1005: Resources/Armor/Enemy/Cultists/Cultist_Robes/Cultist_Robes_Corpse_Inv.png
+
+#renegades
+      1010: Resources/Armor/Enemy/Renegades/Renegade_Flak_Armor/Renegade_Flak_Armor1_Corpse_Inv.png
+
 
 #FLOOR OBJECTS
   - type: FLOOROB.PCK
     files:
-#ARMORS (100 - 200)
+#SM CORPSES
       100: Resources/Armor/SM/ULTRAMARINES/Mk7_Armor/Mk7_Armor_Corpse_Floor.png
       101: Resources/Armor/SM/ULTRAMARINES/Mk7_Sergeant/Mk7_Sergeant_Corpse_Floor.png
       102: Resources/Armor/SM/ULTRAMARINES/Mk7_Apothecary/Mk7_Apothecary_Corpse_Floor.png
@@ -296,30 +481,33 @@ extraSprites:
       116: Resources/Armor/SM/ULTRAMARINES/Terminator_Captain/Term_Captain_Corpse_Floor.png
       117: Resources/Armor/SM/ULTRAMARINES/Scout_Armor/Scout_Armor_Corpse_Floor.png
 
+#IG CORPSES
+
       150: Resources/Armor/IG/Enginseer/Enginseer_Corpse_Floor.gif
       151: Resources/Armor/IG/Ministorum_Priest/Ministorum_Priest_Corpse_Floor.png
       152: Resources/Armor/IG/Ogryn_Carapace/Ogryn_Carapace_Corpse_Floor.png
       153: Resources/Armor/IG/Bullgryn_Armor/Bullgryn_Armor_Corpse_Floor.png
+      154: Resources/Armor/IG/Flak_Armor/Flak_Armor_Corpse_Floor.png
 
 #ITEMS (201 - ?)
       221: Resources/Items/Common/Chainsword/MC_ChainSword_FloorSprite.gif
       222: Resources/Items/Common/Chainsword/ChainSword_FloorSprite.gif
-      223: Resources/Items/Common/Heavy_Plasma/Heavy_Plasma_Floor.gif
+#      223: FREE
       224: Resources/Items/SM/Combi_Plasma/Combi_Plasma_Floor.gif
       225: Resources/Items/SM/Combi_Plasma/MC_Combi_Plasma_Floor.gif
-      226: Resources/Items/IG/IG_Missile_Launcher/IG_MLauncher_Floor.gif
+      226: Resources/Items/IG/Missile_Launcher_IG/IG_MLauncher_Floor.gif
       227: Resources/Items/SM/First_Aid_Kit/FirstAidKit_Floor.GIF
-      228: Resources/Items/IG/IG_Heavy_Bolter/IG_HeavyBolter_Case_Floor.gif
+      228: Resources/Items/IG/Heavy_Bolter_IG/IG_HeavyBolter_Case_Floor.gif
       229: Resources/Items/Common/Omnissian_Axe/Omnissian_Axe_Floor.png
       230: Resources/Items/Common/NonLethal_Grav_Round/NonLethal_Grav_Round_Floor.gif
-      231: Resources/Items/Common/Melta_Bomb/Melta_Bomb_Floor.GIF
+#      231: 
       232: Resources/Items/SM/Crozius_Arcanum/Crozius_Arcanum_Floor.gif
       233: Resources/Items/SM/Librarian_Staff/Librarian_Staf_Floor.gif
       234: Resources/Items/Common/Spellbooks/Spellbook_Floor.gif
       235: Resources/Items/SM/Lightning_Claws/Lightning_Claws_Floor.gif
-      236: Resources/Items/Common/Multimelta/Multimelta_Floor.gif
-      237: Resources/Items/Common/Multimelta/Multimelta_Charge_Floor.gif
-      238: Resources/Items/Common/Heavy_Plasma/Heavy_Plasma_Charge_Floor.gif
+#      236: 
+      237: Resources/Items/Common/Multimelta_Charge/Multimelta_Charge_Floor.png
+#      238: FREE
       239: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Floor.gif
       240: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_Floor.gif
       241: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_Clip_Floor.gif
@@ -339,10 +527,10 @@ extraSprites:
       255: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Ammo_Floor.gif
       256: Resources/Items/Common/Krak_Grenade/Krak_Granade_Floor.png
       257: Resources/Items/Common/Proximity_Grenade/Proximity_Grenade_Floor.gif
-      258: Resources/Items/IG/Lasgun/Lasgun_Floor.gif
-      259: Resources/Items/IG/Lasgun/Lasgun_Clip_Floor.png
-      260: Resources/Items/IG/Laspistol/Laspistol_Floor.gif
-      261: Resources/Items/IG/Laspistol/Laspistol_Clip_Floor.png
+      258: Resources/Items/IG/Lasgun/Lasgun_Floor.png
+      259: Resources/Items/IG/Power_Pack/Power_Pack_Floor.png
+      260: Resources/Items/IG/Laspistol/Laspistol_Floor.png
+#      261: 
       262: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Floor.gif
       263: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Floor.gif
       264: Resources/Items/Common/Fire_Extinguisher/Fire_Extinguisger_Floor.png
@@ -367,6 +555,39 @@ extraSprites:
       283: Resources/Items/IG/Grenadier_Gauntlet_Ammo/Frag_Cartridge_Floor.gif
       284: Resources/Items/IG/Grenadier_Gauntlet_Ammo/Krak_Cartridge_Floor.gif
       285: Resources/Items/IG/Grenadier_Gauntlet_Ammo/Incendiary_Cartridge_Floor.gif
+      286: Resources/Items/Enemy/Cultist_Mace/Cultists_Mace_Floor.png
+      287: Resources/Items/Enemy/Cultist_Sword/Cultist_Sword_Floor.png
+      288: Resources/Items/Common/Meltagun/Meltagun_Floor.png
+      289: Resources/Items/Enemy/Chaos_Meltagun/Chaos_Meltagun_Floor.png
+      290: Resources/Items/Common/Meltagun_Charge/Meltagun_Charge_Floor.png
+      291: Resources/Items/Common/Multimelta/Multimelta_Floor.png
+      292: Resources/Items/Enemy/Chaos_Multimelta/Chaos_Multimelta_Floor.png
+      293: Resources/Items/Common/Melta_Grenade/Melta_Grenade_Floor.png
+      294: Resources/Items/Common/Melta_Bomb/Melta_Bomb_Floor.png
+      295: Resources/Items/SM/Plasma_Pistol/Plasma_Pistol_Floor.png
+      296: Resources/Items/Enemy/Chaos_Plasma_Pistol/Chaos_Plasma_Pistol_Floor.png
+      297: Resources/Items/SM/Plasma_Pistol_MC/Plasma_Pistol_MC_Floor.png
+      298: Resources/Items/Common/Plasma_Pistol_Charge/Plasma_Pistol_Charge_Floor.png
+      299: Resources/Items/SM/Plasma_Gun/Plasma_Gun_Floor.png
+      300: Resources/Items/Enemy/Chaos_Plasma_Gun/Chaos_Plasma_Gun_Floor.png
+      301: Resources/Items/SM/Plasma_Gun_MC/Plasma_Gun_MC_Floor.png
+      302: Resources/Items/Common/Plasma_Gun_Charge/Plasma_Gun_Charge_Floor.png
+      303: Resources/Items/SM/Plasma_Cannon/Plasma_Cannon_Floor.png
+      304: Resources/Items/Enemy/Chaos_Plasma_Cannon/Chaos_Plasma_Cannon_Floor.png
+      305: Resources/Items/Common/Plasma_Cannon_Charge/Plasma_Cannon_Charge_Floor.png
+
+
+#ENEMY RELATED CORPSES
+#cultists
+      1000: Resources/Armor/Enemy/Cultists/Cultist_Clothes/Cultist_Clothes1_Corpse_Floor.png
+      1001: Resources/Armor/Enemy/Cultists/Cultist_Clothes/Cultist_Clothes2_Corpse_Floor.png
+      1002: Resources/Armor/Enemy/Cultists/Cultist_Armor/Cultist_Armor1_Corpse_Floor.png
+      1003: Resources/Armor/Enemy/Cultists/Cultist_Armor/Cultist_Armor2_Corpse_Floor.png
+      1004: Resources/Armor/Enemy/Cultists/Cultist_Overcoat/Cultist_Overcoat_Corpse_Floor.png
+      1005: Resources/Armor/Enemy/Cultists/Cultist_Robes/Cultist_Robes_Corpse_Floor.png
+#renegades
+      1010: Resources/Armor/Enemy/Renegades/Renegade_Flak_Armor/Renegade_Flak_Armor1_Corpse_Floor.png
+
 
 #HAND OBJECTS (contains 8 images)
   - type: HANDOB.PCK
@@ -380,21 +601,21 @@ extraSprites:
       256: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Hand.png
       264: Resources/Items/SM/Combi_Plasma/Combi_Plasma_Hand.png
       272: Resources/Items/SM/Combi_Plasma/MC_Combi_Plasma_Hand.png
-      280: Resources/Items/IG/IG_Missile_Launcher/IG_MLauncher_Hand.png
-      288: Resources/Items/IG/IG_Missile_Launcher/IG_MLauncher_Hand_deployed.png
+      280: Resources/Items/IG/Missile_Launcher_IG/IG_MLauncher_Hand.png
+      288: Resources/Items/IG/Missile_Launcher_IG/IG_MLauncher_Hand_deployed.png
       296: Resources/Items/Common/Omnissian_Axe/Omnissian_Axe_Hand.png
       304: Resources/Items/SM/First_Aid_Kit/FirstAidKit_Hand.png
-      312: Resources/Items/IG/IG_Heavy_Bolter/IG_HeavyBolter_Case_Hand.gif
+      312: Resources/Items/IG/Heavy_Bolter_IG/IG_HeavyBolter_Case_Hand.gif
       320: Resources/Items/Common/NonLethal_Grav_Round/NonLethal_Grav_Round_Hand.png
-      328: Resources/Items/Common/Melta_Bomb/Melta_Bomb_Hand.png
+#      328: 
       336: Resources/Items/SM/Crozius_Arcanum/Crozius_Arcanum_Hand.png
-      344: Resources/Items/Common/Multimelta/Multimelta_Hand.png
-      352: Resources/Items/Common/Multimelta/Multimelta_Charge_Hand.gif
+#      344: 
+      352: Resources/Items/Common/Multimelta_Charge/Multimelta_Charge_Hand.png
       360: Resources/Items/SM/Librarian_Staff/Librarian_Staff_Hand.png
       368: Resources/Items/Common/Spellbooks/Spellbook_Hand.gif
       376: Resources/Items/SM/Lightning_Claws/Lightning_Claws_Hand.png
-      384: Resources/Items/Common/Heavy_Plasma/Heavy_Plasma_Hand.png
-      392: Resources/Items/Common/Heavy_Plasma/Heavy_Plasma_Charge_Hand.gif
+#      384: 
+#      392: 
       400: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_Hand.png
       408: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_Clip_Hand.gif
       416: Resources/Items/SM/SM_Lascannon/Lascannon_Astartes_Hand.png
@@ -415,9 +636,9 @@ extraSprites:
       536: Resources/Items/Common/Krak_Grenade/Krak_Granade_Hand.png
       544: Resources/Items/Common/Proximity_Grenade/Proximity_Grenade_Hand.png
       552: Resources/Items/IG/Lasgun/Lasgun_Hand.png
-      560: Resources/Items/IG/Lasgun/Lasgun_Clip_Hand.png
+      560: Resources/Items/IG/Power_Pack/Power_Pack_Hand.png
       568: Resources/Items/IG/Laspistol/Laspistol_Hand.png
-      576: Resources/Items/IG/Laspistol/Laspistol_Clip_Hand.png
+#      576: 
       584: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Hand.png
       592: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Hand.png
       600: Resources/Items/Common/Fire_Extinguisher/Fire_Extinguisger_Hand.png
@@ -444,6 +665,30 @@ extraSprites:
       768: Resources/Items/IG/Grenadier_Gauntlet_Ammo/Krak_Cartridge_Hand.gif
       776: Resources/Items/IG/Grenadier_Gauntlet_Ammo/Incendiary_Cartridge_Hand.gif
       784: Resources/Items/IG/Brute_Shield/Brute_Shield_Hand.png
+      792: Resources/Items/Enemy/Cultist_Mace/Cultists_Mace_Hand.png
+      800: Resources/Items/Enemy/Cultist_Sword/Cultist_Sword_Hand.png
+      808: Resources/Items/Common/Meltagun/Meltagun_Hand.png
+      816: Resources/Items/Enemy/Chaos_Meltagun/Chaos_Meltagun_Hand.png
+      824: Resources/Items/Common/Meltagun_Charge/Meltagun_Charge_Hand.png
+      832: Resources/Items/Common/Multimelta/Multimelta_Hand.png
+      840: Resources/Items/Enemy/Chaos_Multimelta/Chaos_Multimelta_Hand.png
+      848: Resources/Items/Common/Melta_Grenade/Melta_Grenade_Hand.png
+      856: Resources/Items/Common/Melta_Bomb/Melta_Bomb_Hand.png
+      864: Resources/Items/SM/Plasma_Pistol/Plasma_Pistol_Hand.png
+      872: Resources/Items/Enemy/Chaos_Plasma_Pistol/Chaos_Plasma_Pistol_Hand.png
+      880: Resources/Items/SM/Plasma_Pistol_MC/Plasma_Pistol_MC_Hand.png
+      888: Resources/Items/Common/Plasma_Pistol_Charge/Plasma_Pistol_Charge_Hand.png
+      896: Resources/Items/SM/Plasma_Gun/Plasma_Gun_Hand.png
+      904: Resources/Items/Enemy/Chaos_Plasma_Gun/Chaos_Plasma_Gun_Hand.png
+      912: Resources/Items/SM/Plasma_Gun_MC/Plasma_Gun_MC_Hand.png
+      920: Resources/Items/Common/Plasma_Gun_Charge/Plasma_Gun_Charge_Hand.png
+      928: Resources/Items/SM/Plasma_Cannon/Plasma_Cannon_Hand.png
+      936: Resources/Items/Enemy/Chaos_Plasma_Cannon/Chaos_Plasma_Cannon_Hand.png
+      944: Resources/Items/Common/Plasma_Cannon_Charge/Plasma_Cannon_Charge_Hand.png
+
+
+
+
 
 #PROJECTILES ( The corresponding file id is 35*[bulletSprite] )
   - type: Projectiles                         
@@ -452,23 +697,22 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      385: Resources/Sprites/terranplasma_bullet.gif #11
-      420: Resources/Sprites/LAS.gif   #12
-      490: Resources/Sprites/GRAV.gif  #14
-      560: Resources/Sprites/16Melta.gif        #16
-      595: Resources/Sprites/17heavyplasma.gif  #17
+      385: Resources/Sprites/Projectile_Plasma.gif #11
+      420: Resources/Sprites/Projectile_Laser.gif   #12
+      490: Resources/Sprites/Projectile_Graviton.gif  #14
+      560: Resources/Sprites/Projectile_Melta.gif        #16
+      595: Resources/Sprites/Projectile_Heavy_Plasma.gif  #17
 
-
-#HIT ANIMATIONS
+#MELLE HIT ANIMATIONS
   - type: HIT.PCK 
     width: 128
     height: 40
     subX: 32
     subY: 40
     files:
-      28: Resources/Sprites/MeleeShock.gif
-      44: Resources/Sprites/Meleechain.gif
-      48: Resources/Sprites/MeleeWhite.gif
+      28: Resources/Sprites/Melee_Shock_Weapon.gif
+      44: Resources/Sprites/Melee_Chain_Weapon.gif
+      48: Resources/Sprites/Melee_Swing.gif
 
 #Enginseer tinyrank
   - type: TinyRanks
@@ -859,10 +1103,10 @@ extraSprites:
 
 #Flak Armor (LAYER 4)
   - typeSingle: FLAK_ARMOR__4__FLAK_ARMOR_M
-    fileSingle: Resources/Armor/IG/Flak_Armor/Flak_Armor_Inv_Male.gif
+    fileSingle: Resources/Armor/IG/Flak_Armor/Flak_Armor_Inv_Male.png
 
   - typeSingle: FLAK_ARMOR__4__FLAK_ARMOR_F
-    fileSingle: Resources/Armor/IG/Flak_Armor/Flak_Armor_Inv_Female.gif
+    fileSingle: Resources/Armor/IG/Flak_Armor/Flak_Armor_Inv_Female.png
 
 #Medic Flak Armor (LAYER 4)
   - typeSingle: FLAK_MEDIC__4__FLAK_MEDIC_M
@@ -992,10 +1236,58 @@ extraSprites:
   - typeSingle: BULLGRYN_MASK__3__BULLGRYN_MASK_M
     fileSingle: Resources/Armor/IG/Bullgryn_Armor/Bullgryn_Mask_Inv.png
 
+## ENEMY ARMOR INVENTORY SPRITES ##
+
+## CULTISTS ##
+#Cultist (Variant 1)
+  - type: CULTIST_CLOTHES1.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/Enemy/Cultists/Cultist_Clothes/Cultist_Clothes1_Inv.png
+
+#Cultist (Variant 2)
+  - type: CULTIST_CLOTHES2.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/Enemy/Cultists/Cultist_Clothes/Cultist_Clothes2_Inv.png
+
+
+#Cultist Armor (Variant 1)
+  - type: CULTIST_ARMOR1.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/Enemy/Cultists/Cultist_Armor/Cultist_Armor1_Inv.png
+
+#Cultist Armor (Variant 2)
+  - type: CULTIST_ARMOR2.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/Enemy/Cultists/Cultist_Armor/Cultist_Armor2_Inv.png
+
+#Cultist Overcoat
+  - type: CULTIST_OVERCOAT.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/Enemy/Cultists/Cultist_Overcoat/Cultist_Overcoat_Inv.png
+
+#Cultist Robes
+  - type: CULTIST_ROBES.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/Enemy/Cultists/Cultist_Robes/Cultist_Robes_Inv.png
+
+## RENEGADES ##
+
+#Renegade (Flak Armor variant 1)
+  - type: RENEGADE_FLAK_ARMOR1.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/Enemy/Renegades/Renegade_Flak_Armor/Renegade_Flak_Armor1_Inv.png
+
 
 ### ARMOR BATTLESCAPE SPRITES ###
 
-## SM ##
+## SM BATTLESCAPE SPRITES ##
 
 #Scout Armor sprites
   - type: SCOUT_ARMOR.PCK
@@ -1295,7 +1587,7 @@ extraSprites:
       0: Resources/Armor/SM/ULTRAMARINES/Dreadnought_Assault_Cannon/Dreadnought_Assault_Cannon_Battlescape.png
 
 
-#### IG #####
+## IG BATTLESCAPE SPRITES ##
 
 #Flak Armor
   - type: FLAK_ARMOR.PCK
@@ -1304,7 +1596,7 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      0: Resources/Armor/IG/Flak_Armor/Flak_Armor_Battlescape.gif
+      0: Resources/Armor/IG/Flak_Armor/Flak_Armor_Battlescape.png
 
 #Medic Flak Armor
   - type: MEDIC_FLAK_ARMOR.PCK
@@ -1468,8 +1760,80 @@ extraSprites:
     files:
       0: Resources/Armor/IG/Bullgryn_Armor/Bullgryn_Offensive_Battlescape.png
 
+## ENEMY BATTLESCAPE SPRITES ##
 
-#### CODEX IMAGES #####
+##Cultists
+
+#Cultist (Clothes Variant 1)
+  - type: CULTIST_CLOTHES1.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/Enemy/Cultists/Cultist_Clothes/Cultist_Clothes1_Battlescape.png
+
+#Cultist (Clothes Variant 2)
+  - type: CULTIST_CLOTHES2.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/Enemy/Cultists/Cultist_Clothes/Cultist_Clothes2_Battlescape.png
+
+#Cultist (Armor)
+  - type: CULTIST_ARMOR1.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/Enemy/Cultists/Cultist_Armor/Cultist_Armor1_Battlescape.png
+
+#Cultist (Armor)
+  - type: CULTIST_ARMOR2.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/Enemy/Cultists/Cultist_Armor/Cultist_Armor2_Battlescape.png
+
+#Cultist (Overcoat)
+  - type: CULTIST_OVERCOAT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/Enemy/Cultists/Cultist_Overcoat/Cultist_Overcoat_Battlescape.png
+
+
+#Cultist (Robes)
+  - type: CULTIST_ROBES.PCK
+    width: 256
+    height: 520
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/Enemy/Cultists/Cultist_Robes/Cultist_Robes_Battlescape.png
+
+## RENEGADES ##
+
+#Renegade (Flak Armor Variant 1)
+  - type: RENEGADE_FLAK_ARMOR1.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/Enemy/Renegades/Renegade_Flak_Armor/Renegade_Flak_Armor1_Battlescape.png
+
+
+
+
+### CODEX IMAGES ####
 #Codex background
   - type: BACK08.SCR
     singleImage: true

@@ -1,13 +1,17 @@
 manufacture:
-#
+#Delete strategy related IDs
   - delete: STR_TACTICAL_CARE_PACKAGE
   - delete: STR_ASSAULT_CARE_PACKAGE
   - delete: STR_DEVASTATOR_CARE_PACKAGE
   - delete: STR_SCOUT_CARE_PACKAGE
   - delete: STR_CRATED_LANDSPEEDER
 
+#Delete mission related IDs
+  - delete: STR_COMPLETEMAP
+  - delete: STR_COMPLETRELIC
+  - delete: STR_PROMOTE_JOAN
+
 #Delete Chaos Armor manufacturing
-#For now.
   - delete: STR_CHAOS_BEHEMOTH_ARMOR
   - delete: STR_CHAOS_SORC_ARMOR
   - delete: STR_CHAOS_MARINE_ARMOR
@@ -16,6 +20,11 @@ manufacture:
   - delete: STR_CHAOS_HAVOC_ARMOR
   - delete: STR_CHAOS_TERMINATOR_ARMOR
   - delete: STR_CHAOS_LORD_ARMOR
+
+#Delete Chaos weapons manufacture
+  - delete: STR_PLASMA_PISTOL
+  - delete: STR_PLASMA_RIFLE
+  - delete: STR_HEAVY_PLASMA
 
 #Honor Armors. No need to produce.
   - delete: STR_HONOR_ARMOR
@@ -42,6 +51,7 @@ manufacture:
   - delete: STR_TTCHAOS
   - delete: STR_CHAPTERARMY
   - delete: STR_LIGHTNING
+  - delete: STR_CHAOS_THUNDERHAWNK
 
 #Spellbooks
   - delete: STR_PATCHMORAL
@@ -62,12 +72,65 @@ manufacture:
   - delete: STR_MCRIFLE
   - delete: STR_MCPISTOL
 
-######## COMPONENTS ########
+#Delete "Trade Corpse" stuff
+  - delete: STR_PRIEST_TO_HONOR
+  - delete: STR_FLAMER_TO_HONOR     #DREAD TO HONOR CELATID
+  - delete: STR_CHRYSSALID_TO_HONOR     #CHRYSSALID TO HONOR
+  - delete: STR_CYBERDISC_TO_HONOR     #CYBERDISC TO HONOR  
+  - delete: STR_REAPER_TO_HONOR     #REAPER TO HONOR
+  - delete: STR_CSENTINEL_TO_HONOR     #SENTINEL TO HONOR
+  - delete: STR_BEHEMOTH_TO_HONOR     #BEHEMOTH TO HONOR  
+  - delete: STR_SILACOID_TO_HONOR     #DREAD TO HONOR CELATID
+  - delete: STR_CELATID_TO_HONOR     #DREAD TO HONOR CELATID
+  - delete: STR_DREAD_TO_HONOR     #DREAD TO HONOR
+  - delete: STR_CULT_TO_HONOR     # CULTISTS
+  - delete: STR_CULTIST_TO_HONOR     # CULTISTS
+  - delete: STR_GUARD_TO_HONOR     # TRAITOR GUARD
+  - delete: STR_TRAITORS_TO_HONOR     # UNDIVIDED
+  - delete: STR_SLAANESH_TO_HONOR     # SLAANESH
+  - delete: STR_NURGLE_TO_HONOR     # NURGLE
+  - delete: STR_TZEENTCH_TO_HONOR     # TZEENTCH
+  - delete: STR_BERSERKER_TO_HONOR     # KHORNE
+  - delete: STR_WARPTALON_TO_HONOR     # KHORNE
+  - delete: STR_RAPTOR_TO_HONOR     # RAPTOR
+  - delete: STR_TERMINATOR_TO_HONOR     # TERMINATORS
+  - delete: STR_SORC_TO_HONOR     # SORC
+  - delete: STR_LORD_TO_HONOR     # LORD
+  - delete: STR_CHOSEN_TO_HONOR     # LORD
+  - delete: STR_OBLITERATOR_TO_HONOR     # LORD
+  - delete: STR_NAVIGATOR_TO_HONOR     # NAVIGATOR
+  - delete: STR_SISTERN_TO_HONOR     # SISTER
+  - delete: STR_SISTERK_TO_HONOR     # SISTER
+  - delete: STR_SISTERT_TO_HONOR     # SISTER
+  - delete: STR_SISTERS_TO_HONOR     # SISTER
+  - delete: STR_HAVOC_TO_HONOR     # HAVOC
+  - delete: STR_HAVOCN_TO_HONOR     # HAVOC
+  - delete: STR_HAVOCS_TO_HONOR     # HAVOC
+  - delete: STR_HAVOCTZ_TO_HONOR     # HAVOC
+  - delete: STR_MUTONN_TO_HONOR     # NURGLE
+  - delete: STR_MUTONNC_TO_HONOR     # NURGLE CHAMPION
+  - delete: STR_TZEENTCHS_TO_HONOR     # Rubric Marine Sorcerrer
+
+#delete craft weapons IDs
+  - delete: STR_LASER_CANNON
+  - delete: STR_FUSION_BALL_LAUNCHER
+  - delete: STR_FUSION_BALL
+  - delete: STR_PLASMA_BEAM
+  - delete: STR_ASSCANNON
+  - delete: STR_THUNDER_CANNON 
+  - delete: STR_SCANNER
+  - delete: STR_FLARE_LAUNCH
+  - delete: STR_HULL_PLATING
+  - delete: STR_TARGETER
+  - delete: STR_THRUSTER
+  - delete: STR_RETICULE
+
+### COMPONENTS ###
 #Adamantium is STR_UFO_CONSTRUCTION
 #Ceramite is STR_ALIEN_ALLOYS
 #Deal with it.
 
-#Adamantium
+## Adamantium ##
   - name: STR_UFO_CONSTRUCTION
     category: STR_UFO_COMPONENT
     requires:
@@ -80,7 +143,7 @@ manufacture:
       STR_ELERIUM_115: 1
     requiresBaseFunc: [MILL]
 
-#Cogitator
+## Cogitator ##
   - name: STR_UFO_NAVIGATION
     category: STR_UFO_COMPONENT
     requires:
@@ -91,7 +154,7 @@ manufacture:
     requiredItems:
       STR_UFO_CONSTRUCTION: 3
 
-#Ceramite
+## Ceramite ##
   - name: STR_ALIEN_ALLOYS
     category: STR_UFO_COMPONENT
     requires:
@@ -105,7 +168,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 2
     requiresBaseFunc: []
 
-#Power Source
+## Power Source ##
   - name: STR_UFO_POWER_SOURCE
     category: STR_UFO_COMPONENT
     requires:
@@ -117,18 +180,116 @@ manufacture:
       STR_UFO_CONSTRUCTION: 5
       STR_ELERIUM_115: 16
 
-######## T1 STUFF ########
+## T1 ##
 
-#First Aid Kit
+# T1 Armor related manufacture #
+
+## Advanced Scout Armor ##
+  - delete: STR_SCOUTH
+
+  - name: STR_ADV_SCOUT_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ADV_SCOUT_ARMOR
+    space: 4
+    time: 200
+    cost: 15000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+
+
+## Mk7 Power Armor Set ##
+  - delete: STR_TATICAL_ARMOR
+
+  - name: STR_MK7_ARMOR_SET
+    requires:
+      - STR_MK7_ARMOR
+    space: 12
+    time: 800
+    cost: 132000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_UFO_CONSTRUCTION: 8
+
+## Mk7 Assault Equipment ##
+  - delete: STR_ASS_ARMOR
+  - name: STR_MK7_ASSAULT_EQUIPMENT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_MK7_ASSAULT_EQUIPMENT
+    space: 6
+    time: 400
+    cost: 20000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+
+## Mk7 Devastator Equipment ##
+  - delete: STR_DEV_ARMOR
+  - name: STR_MK7_DEVASTATOR_EQUIPMENT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_MK7_DEVASTATOR_EQUIPMENT
+    space: 6
+    time: 400
+    cost: 20000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+
+## Mk7 Sergeant Armor ##
+  - delete: STR_SARGENT_ARMOR
+  - name: STR_MK7_SERGEANT_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_MK7_SERGEANT_ARMOR
+    space: 12
+    time: 800
+    cost: 152000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_UFO_CONSTRUCTION: 8
+      STR_ALIEN_HABITAT: 1
+
+## Mk7 Apothecary armor ##
+  - delete: STR_APOT_ARMOR
+  - name: STR_MK7_APOTHECARY_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_MK7_APOTHECARY_ARMOR
+    space: 12
+    time: 800
+    cost: 152000
+    requiresBaseFunc: [MED]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_UFO_CONSTRUCTION: 8
+      STR_ALIEN_HABITAT: 1
+
+## Assault Bike ##
+  - delete: STR_BIKE_ARMOR
+  - name: STR_ASSAULT_BIKE
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ASSAULT_BIKE
+    space: 12
+    time: 400
+    cost: 110000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+      STR_UFO_CONSTRUCTION: 10
+
+
+
+## First Aid Kit ##
   - name: STR_FIRST_AID_KIT
     category: STR_EQUIPMENT
     requires:
-      - STR_APOC_BAY
+      - STR_APOTHECARION
     space: 2
     time: 50
     cost: 10000
 
-#Lascannon Mars Pattern
+
+#Astartes Lascannon
   - name: STR_LASCAN
     category: STR_WEAPON
     requires:
@@ -150,98 +311,12 @@ manufacture:
     time: 100
     cost: 5000
 
-#Advanced Scout Armor manufacturing. No Badges to produce, it's just not worth it.
-  - name: STR_SCOUTH
-    category: STR_PERSONAL_ARMOR
-    requires:
-      - STR_SCOUTH_RESEARCH
-    space: 4
-    time: 200
-    cost: 15000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 10
-
-#Mk7 Power Armor
-  - name: STR_TATICAL_ARMOR
-    requires:
-      - STR_MK7_ARMOR
-    space: 12
-    time: 800
-    cost: 132000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 50
-      STR_UFO_CONSTRUCTION: 8
-
-#Mk7 Assault Equipment
-  - name: STR_ASS_ARMOR
-    category: STR_PERSONAL_ARMOR
-    requires:
-      - STR_ASS_ARMOR
-    space: 6
-    time: 400
-    cost: 20000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 10
-
-#Mk7 Devastator Equipment
-
-  - name: STR_DEV_ARMOR
-    category: STR_PERSONAL_ARMOR
-    requires:
-      - STR_DEV_ARMOR
-    space: 6
-    time: 400
-    cost: 20000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 10
-
-#Mk7 Apothecary armor
-  - name: STR_APOT_ARMOR
-    category: STR_PERSONAL_ARMOR
-    requires:
-      - STR_MEDI_KIT
-    space: 12
-    time: 800
-    cost: 152000
-    requiresBaseFunc: [MED]
-    requiredItems:
-      STR_ALIEN_ALLOYS: 50
-      STR_UFO_CONSTRUCTION: 8
-      STR_ALIEN_HABITAT: 1
-
-#Sergeant Armor. Requires 1 Badge to manufacture.
-#Has TU-buff.
-
-  - name: STR_SARGENT_ARMOR
-    category: STR_PERSONAL_ARMOR
-    requires:
-      - STR_SARGENT_ARMOR
-    space: 12
-    time: 800
-    cost: 152000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 50
-      STR_UFO_CONSTRUCTION: 8
-      STR_ALIEN_HABITAT: 1
-
-## ASSAULT BIKE ##
-  - name: STR_BIKE_ARMOR
-    category: STR_PERSONAL_ARMOR
-    requires:
-      - STR_BIKE_TECH
-    space: 12
-    time: 400
-    cost: 110000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 20
-      STR_UFO_CONSTRUCTION: 10
-
 
 #Craft Lascannon
-  - name: STR_LASER_CANNON
+  - name: STR_SLOT0_LASER_CANNON
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_LASER_CANNON
+      - STR_CRAFT_LASCANNON
     space: 8
     time: 700
     cost: 180000
@@ -260,87 +335,55 @@ manufacture:
       STR_UFO_CONSTRUCTION: 10
 
 ######## T2 STUFF ########
-#Energy Scanner
-  - name: STR_SCANNER
+#Upgraded engines
+  - name: STR_SLOT4_UPGRADED_ENGINES
     requires:
-      - STR_CRAFTADD
-    category: STR_CRAFT_EQUIPMENT
-    space: 8
-    time: 700
-    cost: 50000
-    requiredItems:
-      STR_UFO_CONSTRUCTION: 5
-      STR_UFO_NAVIGATION: 1
-    listOrder: 1
-
-#Decoy Flare Launcher
-  - name: STR_FLARE_LAUNCH
-    requires:
-      - STR_CRAFTADD  
-    category: STR_CRAFT_EQUIPMENT
-    space: 8
-    time: 700
-    cost: 50000
-    requiredItems:
-      STR_ELERIUM_115: 20
-    listOrder: 1
-
-#Reinforced Armor
-  - name: STR_HULL_PLATING
-    requires:
-      - STR_CRAFTADD  
+      - STR_CRAFT_AUX_SYSTEMS  
     category: STR_CRAFT_EQUIPMENT
     space: 10
-    time: 700
-    cost: 50000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 100
-      STR_UFO_CONSTRUCTION: 20
-    listOrder: 1
-
-#Advanced Cygnus
-  - name: STR_TARGETER
-    requires:
-      - STR_CRAFTADD  
-    category: STR_CRAFT_EQUIPMENT
-    space: 8
-    time: 700
-    cost: 50000
-    requiredItems:
-      STR_UFO_CONSTRUCTION: 5
-      STR_UFO_NAVIGATION: 1
-    listOrder: 1
-
-#Advanced Turbofans
-  - name: STR_THRUSTER
-    requires:
-      - STR_CRAFTADD  
-    category: STR_CRAFT_EQUIPMENT
-    space: 10
-    time: 700
-    cost: 50000
+    time: 1500
+    cost: 10000
     requiredItems:
       STR_UFO_POWER_SOURCE: 1
+      STR_UFO_CONSTRUCTION: 5
+      STR_ALIEN_ALLOYS: 5
+      STR_ALIEN_HABITAT: 1
     listOrder: 1
 
-#Advanced Graticule
-  - name: STR_RETICULE
+#Upgraded Cogitator
+  - name: STR_SLOT4_UPGRADED_COGITATOR
     requires:
-      - STR_CRAFTADD  
+      - STR_CRAFT_AUX_SYSTEMS  
     category: STR_CRAFT_EQUIPMENT
-    space: 8
-    time: 700
+    space: 5
+    time: 2000
     cost: 50000
     requiredItems:
-      STR_UFO_CONSTRUCTION: 5
-      STR_UFO_NAVIGATION: 1 
+      STR_UFO_NAVIGATION: 2
+      STR_UFO_CONSTRUCTION: 2
+      STR_ALIEN_HABITAT: 1
     listOrder: 1
+
+#Enforced Plating
+  - name: STR_SLOT4_ENFORCED_PLATING
+    requires:
+      - STR_CRAFT_AUX_SYSTEMS  
+    category: STR_CRAFT_EQUIPMENT
+    space: 10
+    time: 3000
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 40
+      STR_UFO_CONSTRUCTION: 10
+      STR_ALIEN_HABITAT: 1
+    listOrder: 1
+
 
 #Stormraven Craft 
   - name: STR_STORMRAVEN
     category: STR_CRAFT
     requires:
-      - STR_NEW_FIGHTER_CRAFT
+      - STR_STORMRAVEN_TECH
     space: 30
     time: 14000
     cost: 544000
@@ -354,7 +397,7 @@ manufacture:
   - name: STR_MOTION_SCANNER
     category: STR_EQUIPMENT
     requires:
-      - STR_MOTION_SCANNER
+      - STR_AUSPEX
     space: 4
     time: 220
     cost: 34000
@@ -412,12 +455,12 @@ manufacture:
       STR_ALIEN_HABITAT: 1
 
 #Master Crafted Plasma Pistol
-  - name: STR_MCPLASMA_PISTOL
+  - delete: STR_MCPLASMA_PISTOL
+  - name: STR_MC_PLASMA_PISTOL
     category: STR_WEAPON
     requires:
       - STR_MASTER_CRAFTING
       - STR_PLASMA_PISTOL
-      - STR_PLASMA_PISTOL_CLIP
     space: 4
     time: 2000
     cost: 122000
@@ -425,13 +468,13 @@ manufacture:
       STR_UFO_CONSTRUCTION: 2
       STR_ALIEN_HABITAT: 1
 
-#Master Crafted Plasmagun
-  - name: STR_MCPLASMA_RIFLE
+#Master Crafted Plasma Gun
+  - delete: STR_MCPLASMA_RIFLE
+  - name: STR_MC_PLASMA_GUN
     category: STR_WEAPON
     requires:
       - STR_MASTER_CRAFTING
-      - STR_PLASMA_RIFLE
-      - STR_PLASMA_RIFLE_CLIP
+      - STR_PLASMA_GUN
     space: 4
     time: 2000
     cost: 122000
@@ -453,10 +496,11 @@ manufacture:
       STR_ALIEN_HABITAT: 1
 
 #Mk7 Chaplain Armor
-  - name: STR_CHAP_ARMOR
+  - delete: STR_CHAP_ARMOR
+  - name: STR_MK7_CHAPLAIN_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_CHAP_ARMOR
+      - STR_MK7_CHAPLAIN_ARMOR
     space: 12
     time: 1000
     cost: 200000
@@ -467,11 +511,12 @@ manufacture:
 
 #Mk7 Techmarine Armor. 
 #Requires 'Cult of The machine' and 'Space Marines Operations' to unlock
-#REquires Techmarine Bay to manufacture 
-  - name: STR_TECH_ARMOR                 #1 BADGE 1
+#Requires Techmarine Bay to manufacture 
+  - delete: STR_TECH_ARMOR
+  - name: STR_MK7_TECHMARINE_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_TECHMARINE_ARMOR
+      - STR_MK7_TECHMARINE_ARMOR
     space: 12
     time: 1000
     cost: 200000
@@ -482,10 +527,11 @@ manufacture:
       STR_ALIEN_HABITAT: 1
 
 #Centurion Warsuit.
-  - name: STR_CENT_ARMOR
+  - delete: STR_CENT_ARMOR
+  - name: STR_CENTURION_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_CENT_ARMORR
+      - STR_CENTURION_ARMOR
     space: 16
     time: 1200
     cost: 200000
@@ -549,11 +595,14 @@ manufacture:
     requiredItems:
       STR_UFO_CONSTRUCTION: 20
  
+## MELTA WEAPONS ##
+
 #Meltagun
-  - name: STR_HEAVY_LASER
+  - delete: STR_HEAVY_LASER
+  - name: STR_MELTAGUN
     category: STR_WEAPON
     requires:
-      - STR_HEAVY_LASER
+      - STR_MELTAGUN_TECH
     space: 4
     time: 700
     cost: 32000
@@ -561,10 +610,11 @@ manufacture:
       STR_UFO_CONSTRUCTION: 2
 
 #Meltagun Ammo
-  - name: STR_MELTA_AMMO
+  - delete: STR_MELTA_AMMO
+  - name: STR_MELTAGUN_CHARGE
     category: STR_AMMUNITION  
     requires:
-      - STR_HEAVY_LASER
+      - STR_MELTAGUN_TECH
     space: 2
     time: 70
     cost: 4000
@@ -572,10 +622,11 @@ manufacture:
       STR_ELERIUM_115: 4
 
 #Multimelta
-  - name: STR_BLASTER_LAUNCHER_TERRAN
+  - delete: STR_BLASTER_LAUNCHER_TERRAN
+  - name: STR_MULTIMELTA
     category: STR_WEAPON
     requires:
-      - STR_FUSION_MISSILE
+      - STR_MULTIMELTA_TECH
     space: 6
     time: 900
     cost: 64000
@@ -583,9 +634,10 @@ manufacture:
       STR_UFO_CONSTRUCTION: 4
 
 #Multimelta Ammo
-  - name: STR_BLASTER_BOMB
+  - delete: STR_BLASTER_BOMB
+  - name: STR_MULTIMELTA_CHARGE
     requires:
-      - STR_FUSION_MISSILE
+      - STR_MULTIMELTA_TECH
     space: 2
     time: 90
     cost: 8000
@@ -593,23 +645,24 @@ manufacture:
       STR_ELERIUM_115: 8
 
 #Melta Grenade
-  - name: STR_MGRENADE
+  - delete: STR_MGRENADE
+  - name: STR_MELTA_GRENADE
     category: STR_WEAPON
     requires:
-      - STR_MGRENADE
+      - STR_MELTA_GRENADE_TECH
     space: 2
     time: 200
     cost: 50000
     requiredItems:
       STR_ELERIUM_115: 5
     producedItems:
-      STR_MGRENADE: 5
+      STR_MELTA_GRENADE: 5
 
 #Melta Bomb
-  - name: STR_HIGH_EXPLOSIVE
+  - name: STR_MELTA_BOMB
     category: STR_WEAPON
     requires:
-      - STR_MELTABOMB
+      - STR_MELTA_BOMB_TECH
     space: 2
     time: 200
     cost: 50000
@@ -617,9 +670,9 @@ manufacture:
       STR_ELERIUM_115: 5
 
 #Craft Multi-Melta
-  - name: STR_FUSION_BALL_LAUNCHER
+  - name: STR_SLOT0_MULTIMELTA
     requires:
-      - STR_FUSION_BALL_LAUNCHER
+      - STR_CRAFT_MULTIMELTA
     space: 10
     time: 900
     cost: 250000
@@ -627,9 +680,9 @@ manufacture:
       STR_UFO_CONSTRUCTION: 20
 
 #Craft Multi-Melta Ammo
-  - name: STR_FUSION_BALL
+  - name: STR_CRAFT_MULTIMELTA_CHARGES
     requires:
-      - STR_FUSION_BALL_LAUNCHER
+      - STR_CRAFT_MULTIMELTA
     category: STR_CRAFT_AMMUNITION
     space: 6
     time: 200
@@ -638,9 +691,10 @@ manufacture:
       STR_ELERIUM_115: 10
 
 #Plasma Pistol
-  - name: STR_PLASMA_PISTOL_TERRAN
+  - delete: STR_PLASMA_PISTOL_TERRAN
+  - name: STR_PLASMA_PISTOL
     requires:
-      - STR_PLASMA_PISTOL_TERRAN
+      - STR_PLASMA_PISTOL
     space: 4
     time: 600
     cost: 56000
@@ -648,9 +702,10 @@ manufacture:
       STR_UFO_CONSTRUCTION: 1
 
 #Plasma Pistol Ammo
-  - name: STR_PLASMA_PISTOL_CLIP
+  - delete: STR_PLASMA_PISTOL_CLIP
+  - name: STR_PLASMA_PISTOL_CHARGE
     requires:
-      - STR_PLASMA_PISTOL_TERRAN
+      - STR_PLASMA_PISTOL
     space: 4
     time: 60
     cost: 2000
@@ -658,9 +713,10 @@ manufacture:
       STR_ELERIUM_115: 1
 
 #Plasmagun
-  - name: STR_PLASMA_RIFLE_TERRAN
+  - delete: STR_PLASMA_RIFLE_TERRAN
+  - name: STR_PLASMA_GUN
     requires:
-      - STR_PLASMA_RIFLE_TERRAN
+      - STR_PLASMA_GUN
     space: 4
     time: 800
     cost: 88000
@@ -668,9 +724,10 @@ manufacture:
       STR_UFO_CONSTRUCTION: 2
 
 #Plasmagun Ammo
-  - name: STR_PLASMA_RIFLE_CLIP
+  - delete: STR_PLASMA_RIFLE_CLIP
+  - name: STR_PLASMA_GUN_CHARGE
     requires:
-      - STR_PLASMA_RIFLE_TERRAN
+      - STR_PLASMA_GUN
     space: 4
     time: 80
     cost: 4000
@@ -678,9 +735,10 @@ manufacture:
       STR_ELERIUM_115: 2
 
 #Heavy Plasma
-  - name: STR_HEAVY_PLASMA_TERRAN
+  - delete: STR_HEAVY_PLASMA_TERRAN
+  - name: STR_PLASMA_CANNON
     requires:
-      - STR_HEAVY_PLASMA_TERRAN
+      - STR_PLASMA_CANNON
     space: 6
     time: 1000
     cost: 122000
@@ -688,9 +746,10 @@ manufacture:
       STR_UFO_CONSTRUCTION: 4
 
 #Heavy Plasma Ammo
-  - name: STR_HEAVY_PLASMA_CLIP
+  - delete: STR_HEAVY_PLASMA_CLIP
+  - name: STR_PLASMA_CANNON_CHARGE
     requires:
-      - STR_HEAVY_PLASMA_TERRAN
+      - STR_PLASMA_CANNON
     space: 4
     time: 100
     cost: 6000
@@ -698,10 +757,10 @@ manufacture:
       STR_ELERIUM_115: 4
 
 #Craft Plasma Cannon
-  - name: STR_PLASMA_BEAM
+  - name: STR_SLOT0_PLASMA_CANNON
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_PLASMA_CANNON
+      - STR_CRAFT_PLASMA_CANNON
     space: 10
     time: 1000
     cost: 225000
@@ -709,10 +768,10 @@ manufacture:
       STR_UFO_CONSTRUCTION: 20
 
 #Craft Plasma Cannon Ammo
-  - name: STR_PLASMA_BEAM_AMMO
+  - name: STR_PLASMA_CANNON_CHARGES
     category: STR_CRAFT_AMMUNITION
     requires:
-      - STR_PLASMA_CANNON
+      - STR_CRAFT_PLASMA_CANNON
     space: 6
     time: 100
     cost: 22000
@@ -750,12 +809,13 @@ manufacture:
     requiredItems:
       STR_ELERIUM_115: 2
 
-######## T3 STUFF ########
+### T3 IDs ###
+
 #Stormeagle
   - name: STR_STORMEAGLE
     category: STR_CRAFT
     requires:
-      - STR_STORMEAGLE_INTERCEPTOR
+      - STR_STORMEAGLE_TECH
     space: 34
     time: 18000
     cost: 624000
@@ -770,7 +830,7 @@ manufacture:
   - name: STR_THUNDERHAWK
     category: STR_CRAFT
     requires:
-      - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_THUNDERHAWK_TECH
     space: 36
     time: 34000
     cost: 748000
@@ -780,23 +840,48 @@ manufacture:
       STR_UFO_POWER_SOURCE: 2
       STR_UFO_NAVIGATION: 2
 
-#Thunderhawk Battle Cannon
-  - name: STR_THUNDER_CANNON
+#Thunderhawk Turbolaser
+  - name: STR_SLOT3_THUNDERLASER_CANNON
     requires:
-      - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_THUNDERHAWK_TECH
     category: STR_CRAFT_WEAPON
-    space: 10
+    space: 8
     time: 2000
-    cost: 300000
+    cost: 240000
     requiredItems:
-      STR_UFO_CONSTRUCTION: 30
+      STR_ALIEN_ALLOYS: 50
+      STR_UFO_CONSTRUCTION: 20
+      STR_UFO_NAVIGATION: 1
     listOrder: 1
 
+#Plasma Missiles
+  - name: STR_SLOT1_PLASMA_MISSILE_LAUNCHER
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_PLASMA_MISSILES
+    space: 4
+    time: 50
+    cost: 225000
+    requiredItems:
+      STR_UFO_CONSTRUCTION: 2
+
+  - name: STR_PLASMA_MISSILES
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_PLASMA_MISSILES
+    space: 2
+    time: 50
+    cost: 22000
+    requiredItems:
+      STR_UFO_CONSTRUCTION: 1
+      STR_ELERIUM_115: 20
+
 #Mk7 Librarian armor
-  - name: STR_LIB_ARMOR
+  - delete: STR_LIB_ARMOR
+  - name: STR_MK7_LIBRARIAN_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_LIBRARIAN_ARMOR
+      - STR_MK7_LIBRARIAN_ARMOR
     space: 12
     time: 1000
     cost: 230000
@@ -807,6 +892,7 @@ manufacture:
       STR_ALIEN_HABITAT: 2
 
 #Tome of Vision
+#TODO: RENAME IT
   - name: STR_MIND_PROBE
     category: STR_SPELLS
     requires:
@@ -825,6 +911,7 @@ manufacture:
     cost: 100000
 
 #Tome of Mind
+#TODO: RENAME IT
   - name: STR_PSI_AMP
     category: STR_SPELLS
     requires:
@@ -852,10 +939,11 @@ manufacture:
     cost: 100000
 
 #Terminator Armor
-  - name: STR_POWER_SUIT
+  - delete: STR_POWER_SUIT
+  - name: STR_TERMINATOR_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_POWER_SUIT
+      - STR_TERMINATOR_ARMOR
     space: 16
     time: 1200
     cost: 220000
@@ -866,10 +954,11 @@ manufacture:
       STR_ALIEN_HABITAT: 1
 
 #Terminator Assault Armor
-  - name: STR_FLYING_SUIT
+  - delete: STR_FLYING_SUIT
+  - name: STR_TERMINATOR_ASSAULT_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_FLYING_SUIT
+      - STR_TERMINATOR_ASSAULT_ARMOR
     space: 16
     time: 1200
     cost: 270000
@@ -880,10 +969,11 @@ manufacture:
       STR_ALIEN_HABITAT: 1
 
 #Terminator Sergeant Armor
-  - name: STR_TSARGENT
+  - delete: STR_TSARGENT
+  - name: STR_TERMINATOR_SERGEANT_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_TSARGENT
+      - STR_TERMINATOR_SERGEANT_ARMOR
     space: 16
     time: 1200
     cost: 270000
@@ -894,10 +984,10 @@ manufacture:
       STR_ALIEN_HABITAT: 2
 
 #Terminator Apothecary Armor
-  - name: STR_TERMINATOR_APOTHECARY
+  - name: STR_TERMINATOR_APOTHECARY_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_TERMINATOR_APOTHECARY
+      - STR_TERMINATOR_APOTHECARY_ARMOR
     space: 16
     time: 1200
     cost: 270000
@@ -908,10 +998,10 @@ manufacture:
       STR_ALIEN_HABITAT: 2
 
 #Terminator Chaplain Armor
-  - name: STR_TERMINATOR_CHAPLAIN
+  - name: STR_TERMINATOR_CHAPLAIN_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_TERMINATOR_CHAPLAIN
+      - STR_TERMINATOR_CHAPLAIN_ARMOR
     space: 16
     time: 1200
     cost: 320000
@@ -922,10 +1012,10 @@ manufacture:
       STR_ALIEN_HABITAT: 2
 
 #Terminator Librarian Armor
-  - name: STR_TERMINATOR_LIBRARIAN
+  - name: STR_TERMINATOR_LIBRARIAN_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_TERMINATOR_LIBRARIAN
+      - STR_TERMINATOR_LIBRARIAN_ARMOR
     space: 16
     time: 1200
     cost: 320000
@@ -936,10 +1026,11 @@ manufacture:
       STR_ALIEN_HABITAT: 3
 
 #Terminator Captain Armor
-  - name: STR_CAPTAIN_SUIT
+  - delete: STR_CAPTAIN_SUIT
+  - name: STR_TERMINATOR_CAPTAIN_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_CAPTAIN_SUIT
+      - STR_TERMINATOR_CAPTAIN_ARMOR
     space: 16
     time: 1200
     cost: 320000
@@ -1010,7 +1101,7 @@ manufacture:
   - name: STR_HFLAMER_CLIP
     category: STR_AMMUNITION
     requires:
-      - STR_HFLAMER_FUEL_MANUFACTURING
+      - STR_HFLAMERR
     space: 6
     time: 100
     cost: 10000
@@ -1085,12 +1176,36 @@ manufacture:
       STR_ELERIUM_115: 10
 
 #Craft Assault Cannon
-  - name: STR_ASSCANNON
+  - name: STR_SLOT0_ASSAULT_CANNON
     category: STR_CRAFT_WEAPON
     requires:
-      - STR_ASSC
+      - STR_CRAFT_ASSAULT_CANNON
     space: 10
     time: 1000
     cost: 120000
     requiredItems:
       STR_UFO_CONSTRUCTION: 20
+
+#Craft Assault Cannon Ammo
+  - name: STR_ASSAULT_CANNON_ROUNDS
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_CRAFT_ASSAULT_CANNON
+    space: 2
+    time: 100
+    cost: 24000
+    requiredItems:
+      STR_ELERIUM_115: 20
+
+
+
+#####################################
+
+### Enemy Corpses Exchange ###
+
+## Cultist Corpse ##
+
+
+
+
+

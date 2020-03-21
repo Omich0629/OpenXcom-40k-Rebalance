@@ -89,3 +89,32 @@ extraSounds:
       1008: Resources/Sound/Blunt_Weapon/Blunt_Weapon_Hit3.wav
       1009: Resources/Sound/Blunt_Weapon/Blunt_Weapon_Hit4.wav
       1010: Resources/Sound/Blunt_Weapon/Blunt_Weapon_Hit5.wav
+
+      1011: Resources/Sound/Sharp_Weapon/Sharp_Weapon_Hit1.wav
+      1012: Resources/Sound/Sharp_Weapon/Sharp_Weapon_Hit2.wav
+      1013: Resources/Sound/Sharp_Weapon/Sharp_Weapon_Hit3.wav
+      1014: Resources/Sound/Sharp_Weapon/Sharp_Weapon_Hit4.wav
+      1015: Resources/Sound/Sharp_Weapon/Sharp_Weapon_Hit5.wav
+
+      1016: Resources/Sound/Melta_Weapon/Melta_Weapon_Fire1.wav
+      1017: Resources/Sound/Melta_Weapon/Melta_Weapon_Fire2.wav
+
+      1018: Resources/Sound/Plasma_Weapon/Plasma_Weapon_Fire1.wav
+      1019: Resources/Sound/Plasma_Weapon/Plasma_Weapon_Fire2.wav
+      1020: Resources/Sound/Plasma_Weapon/Plasma_Weapon_Fire3.wav
+      1021: Resources/Sound/Plasma_Weapon/Plasma_Weapon_Fire4.wav
+      1022: Resources/Sound/Plasma_Weapon/Plasma_Weapon_Fire5.wav
+
+      1023: Resources/Sound/Energy_Weapon_Hit/Energy_Weapon_Hit1.wav
+      1024: Resources/Sound/Energy_Weapon_Hit/Energy_Weapon_Hit2.wav
+      1025: Resources/Sound/Energy_Weapon_Hit/Energy_Weapon_Hit3.wav
+      1026: Resources/Sound/Energy_Weapon_Hit/Energy_Weapon_Hit4.wav
+      1027: Resources/Sound/Energy_Weapon_Hit/Energy_Weapon_Hit5.wav
+
+      1028: Resources/Sound/Energy_Explosion/Energy_Explosion1.wav
+      1029: Resources/Sound/Energy_Explosion/Energy_Explosion2.wav
+      1030: Resources/Sound/Energy_Explosion/Energy_Explosion3.wav
+
+
+
+

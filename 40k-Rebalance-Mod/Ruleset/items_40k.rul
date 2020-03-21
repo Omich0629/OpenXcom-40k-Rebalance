@@ -6,6 +6,8 @@ items:
   - delete: STR_AC_MC_AMMO
   - delete: STR_MCLASER_RIFLE
   - delete: STR_MCSHOTGUN
+  - delete: STR_HEAVY_PLASMA_MCJ
+  - delete: STR_HEAVY_PLASMA_MC
 
 ### NULL SLOT ITEMS ###
 
@@ -1088,9 +1090,22 @@ items:
 ### MELTA WEAPONS ###
 
 ## MELTA GRENADE ##
-  - type: STR_MGRENADE
+#TODO: TEST IT
+  - delete: STR_MGRENADE
+  - type: STR_MELTA_GRENADE
+#RESOURCES
+    bigSprite: 336
+    floorSprite: 293
+    handSprite: 848
 #GENERAL
+    battleType: 4
+    categories: [ STR_CAT_GRENADES, STR_CAT_TACTICAL]
     weight: 8
+    size: 0.1
+    invWidth: 2
+    invHeight: 1
+    costSell: 15000
+    listOrder: 13900
 #THROWING
     power: 100
     damageType: 11 #MELTA
@@ -1105,14 +1120,15 @@ items:
     tuThrow: 30
     tuPrime: 30
 
-## MELTA BOMB ##
-  - delete: STR_HIGH_EXPLOSIVE
 
-  - type: STR_HIGH_EXPLOSIVE
+## MELTA BOMB ##
+#TODO: TEST IT
+  - delete: STR_HIGH_EXPLOSIVE
+  - type: STR_MELTA_BOMB
 #RESOURCES
-    bigSprite: 241
-    floorSprite: 231
-    handSprite: 328
+    bigSprite: 337
+    floorSprite: 294
+    handSprite: 856
 #GENERAL
     battleType: 4
     categories: [ STR_CAT_GRENADES, STR_CAT_TACTICAL]
@@ -1136,16 +1152,57 @@ items:
     tuPrime: 30
 
 ## MELTA GUN ##
-  - type: STR_HEAVY_LASER
+#TODO: TEST IT
+  - delete: STR_HEAVY_LASER
+  - type: STR_MELTAGUN
+#RESOURCES
+    bigSprite: 331
+    floorSprite: 288
+    handSprite: 808
+    bulletSprite: 16 #MELTA PROJECTILE
+    fireSound: [1016, 1017] #MELTA WEAPON FIRE
 #GENERAL
+    battleType: 1
+    categories: [STR_CAT_MELTA, STR_CAT_TACTICAL]
+    costSell: 48000
     weight: 20
+    size: 0.3
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    listOrder: 11100
 #SHOOTING
-    bulletSpeed: 50
+    compatibleAmmo:
+      - STR_MELTAGUN_CHARGE
+    bulletSpeed: 25
+    dropoff: 5
+    accuracySnap: 80
+    tuSnap: 40
     maxRange: 10
 
-## MELTAGUN AMMO ##
-  - type: STR_MELTA_AMMO
+## MELTAGUN CHARGE ##
+#TODO: TEST IT
+  - delete: STR_MELTA_AMMO
+  - type: STR_MELTAGUN_CHARGE
+#RESOURCES
+    bigSprite: 333
+    floorSprite: 290
+    handSprite: 824
+    hitAnimation: 151
+    hitSound: [1023, 1024, 1025, 1026, 1027] #ENERGY WEAPON HIT
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_MELTA, STR_CAT_TACTICAL]
+    size: 0.2
+    costSell: 13000
+    weight: 3
+    invWidth: 1
+    invHeight: 2
+    recoveryPoints: 1
+    listOrder: 11150
 #SHOOTING
+    clipSize: 10
+    damageType: 11 #MELTA
     power: 100
     damageAlter:
       RandomType: 0
@@ -1158,46 +1215,68 @@ items:
       TileDamageMethod: 2
     powerRangeReduction: 50
     powerRangeThreshold: 10
-    shotgunBehavior: 0
-    shotgunPellets: 0
     vaporColor: 2
     vaporDensity: 5
 
 
 ## MULTI-MELTA ##
-#Now have same TU cost as normal melta, but fires twice.
-  - type: STR_BLASTER_LAUNCHER_TERRAN
+#Same TU cost as normal melta, but fires twice.
+  - delete: STR_BLASTER_LAUNCHER_TERRAN
+  - type: STR_MULTIMELTA
 #RESOURCES
-    bigSprite: 231
-    floorSprite: 236
-    handSprite: 344
+    bigSprite: 334
+    floorSprite: 291
+    handSprite: 832
+    bulletSprite: 16 #MELTA PROJECTILE
+    fireSound: [1016, 1017] #MELTA WEAPON FIRE
 #GENERAL
+    battleType: 1
+    categories: [STR_CAT_MELTA, STR_CAT_DEVASTATOR]
+    size: 0.3
+    costSell: 54000
     weight: 40
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    listOrder: 12310
 #SHOOTING
-    bulletSpeed: 50
+    compatibleAmmo:
+      - STR_MULTIMELTA_CHARGE
+    bulletSpeed: 25
+    dropoff: 5
     accuracySnap: 80
     tuSnap: 50
     confSnap:
       shots: 2
     maxRange: 15
 
-## MULTI-MELTA AMMO ##
-#Magazine's capacity has been changed to 20. Capacity of 2 is not fun at all.
-#Large and heavy, just like heavy plasma ammo.
-  - type: STR_BLASTER_BOMB
+## MULTI-MELTA CHARGE ##
+#Large and heavy, just like plasma cannon charge.
+  - delete: STR_BLASTER_BOMB
+  - type: STR_MULTIMELTA_CHARGE
 #RESOURCES
     bigSprite: 232
     floorSprite: 237
     handSprite: 352
+    hitAnimation: 151
+    hitSound: [1023, 1024, 1025, 1026, 1027] #ENERGY WEAPON HIT
 #GENERAL
+    battleType: 2
+    categories: [STR_CAT_MELTA, STR_CAT_DEVASTATOR]
+    size: 0.2
+    costSell: 17028
     weight: 20
     invWidth: 2
     invHeight: 3
-
+    recoveryPoints: 1
+    listOrder: 12320
 #SHOOTING
     clipSize: 20
+    damageType: 11 #MELTA
     power: 100
-    damageAlter: #DA MELTA
+    damageAlter:
       RandomType: 0
       ToArmor: 0.4
       ToArmorPre: 0.4
@@ -1208,8 +1287,6 @@ items:
       TileDamageMethod: 2
     powerRangeReduction: 50
     powerRangeThreshold: 15
-    shotgunBehavior: 0
-    shotgunPellets: 0
     vaporColor: 2
     vaporDensity: 5
 
@@ -1240,14 +1317,12 @@ items:
 #Unable to reaction fire.
   - type: STR_FLAMETHROWER
 #SHOOTING
-    tuSnap: 0
-    tuAimed: 25
+    tuSnap: 25
     tuAuto: 40
+    tuAimed: 0
     autoShots: 3
     accuracyAuto: 150
-    accuracyAimed: 150
-    confAimed:
-      name: STR_CUSTOM_SNAPSHOT
+    accuracySnap: 150
     maxRange: 6
 
 ## FLAMER AMMO ##
@@ -1270,15 +1345,13 @@ items:
     floorSprite: 239
     handSprite: 256
 #SHOOTING
-    tuSnap: 0
     arcingShot: false
-    tuAimed: 25
+    tuSnap: 25
+    tuAimed: 0
     tuAuto: 40
     autoShots: 3
     accuracyAuto: 150
-    accuracyAimed: 150
-    confAimed:
-      name: STR_CUSTOM_SNAPSHOT
+    accuracySnap: 150
     maxRange: 10
 
 ## HEAVY FLAMER AMMO ##
@@ -1318,46 +1391,211 @@ items:
 ## PLASMA PISTOL ##
 #Maximum 2 shots per turn
 #Range 12
-  - type: STR_PLASMA_PISTOL_TERRAN
+  - delete: STR_PLASMA_PISTOL_TERRAN
+  - type: STR_PLASMA_PISTOL
+#RESOURCES
+    bigSprite: 338
+    floorSprite: 295
+    handSprite: 864
+    bulletSprite: 11 #PLASMA PROJECTILE
+    fireSound: [1018, 1019, 1020, 1021, 1022] #PLASMA WEAPON FIRE
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL]
+    size: 0.1
+    costSell: 40000
+    weight: 10
+    invWidth: 1
+    invHeight: 2
+    armor: 45
+    attraction: 1
+    listOrder: 11200
 #SHOOTING
+    compatibleAmmo:
+      - STR_PLASMA_PISTOL_CHARGE
+    dropoff: 5
+    accuracySnap: 65
     tuSnap: 35
+    snapRange: 12
 
 ## MASTER CRAFTED PLASMA PISTOL ##
 #Maximum 2 shots per turn
 #Range 12
-  - type: STR_MCPLASMA_PISTOL
+  - delete: STR_MCPLASMA_PISTOL
+  - type: STR_MC_PLASMA_PISTOL
+#RESOURCES
+    bigSprite: 340
+    floorSprite: 297
+    handSprite: 880
+    bulletSprite: 11 #PLASMA PROJECTILE
+    fireSound: [1018, 1019, 1020, 1021, 1022] #PLASMA WEAPON FIRE
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL]  
+    size: 0.2
+    costSell: 40000
+    weight: 10
+    invWidth: 1
+    invHeight: 2
+    armor: 45
+    attraction: 1
+    listOrder: 11300
 #SHOOTING
+    compatibleAmmo:
+      - STR_PLASMA_PISTOL_CHARGE
+    dropoff: 5
+    accuracySnap: 85
     tuSnap: 35
+    snapRange: 12
 
-## PLASMAGUN ##
+## PLASMA PISTOL CHARGE ##
+  - delete: STR_PLASMA_PISTOL_CLIP
+  - type: STR_PLASMA_PISTOL_CHARGE
+#RESOURCES
+    bigSprite: 341
+    floorSprite: 298
+    handSprite: 888
+    hitSound: [1023, 1024, 1025, 1026, 1027] #ENERGY WEAPON HIT
+    hitAnimation: 161 #PLASMA HIT ANIMATION
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL]
+    size: 0.1
+    costSell: 4000
+    weight: 3
+    recoveryPoints: 1
+    listOrder: 11310
+#SHOOTING
+    clipSize: 6
+    damageType: 5 #PLASMA
+    power: 90
+    damageAlter:
+      RandomType: 0
+      ToArmor: 0.2
+      ToArmorPre: 0.2
+      ToHealth: 1.0
+      ArmorEffectiveness: 0.75
+
+## PLASMA GUN ##
+
 #Maximum 3 shots per turn
 #No autoshot
 #Range 18
-  - type: STR_MCPLASMA_RIFLE
+  - delete: STR_PLASMA_RIFLE_TERRAN
+  - type: STR_PLASMA_GUN
+#RESOURCES
+    bigSprite: 342
+    floorSprite: 299
+    handSprite: 896
+    bulletSprite: 11 #PLASMA PROJECTILE
+    fireSound: [1018, 1019, 1020, 1021, 1022] #PLASMA WEAPON FIRE
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL]
+    size: 0.2
+    costSell: 80500
+    weight: 30
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    attraction: 1
+    listOrder: 11400
 #SHOOTING
+    compatibleAmmo:
+      - STR_PLASMA_GUN_CHARGE
+    dropoff: 5
+    accuracySnap: 94
     tuSnap: 30
     snapRange: 18
-    tuAuto: 0
 
 ## MASTER CRAFTED PLASMAGUN ##
 #Maximum 3 shots per turn
-#No autoshot
 #Range 18
-  - type: STR_PLASMA_RIFLE_TERRAN
+  - delete: STR_MCPLASMA_RIFLE
+  - type: STR_MC_PLASMA_GUN
+#RESOURCES
+    bigSprite: 344
+    floorSprite: 301
+    handSprite: 912
+    bulletSprite: 11 #PLASMA PROJECTILE
+    fireSound: [1018, 1019, 1020, 1021, 1022] #PLASMA WEAPON FIRE
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL]  
+    size: 0.2
+    costSell: 126500
+    weight: 30
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    attraction: 1
+    listOrder: 11500
 #SHOOTING
+    compatibleAmmo:
+      - STR_PLASMA_GUN_CHARGE
+    dropoff: 5
     tuSnap: 30
+    accuracySnap: 114
     snapRange: 18
-    tuAuto: 0
+
+## PLASMAGUN CHARGE ##
+  - delete: STR_PLASMA_RIFLE_CLIP
+  - type: STR_PLASMA_GUN_CHARGE
+#RESOURCES
+    bigSprite: 345
+    floorSprite: 302
+    handSprite: 920
+    hitSound: [1023, 1024, 1025, 1026, 1027] #ENER WEAPON HIT
+    hitAnimation: 161 #PLASMA HIT ANIMATION
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL]
+    size: 0.1
+    costSell: 5000
+    weight: 4
+    recoveryPoints: 1
+    listOrder: 11510
+#SHOOTING
+    clipSize: 12
+    damageType: 5
+    power: 90
+    damageAlter:
+      RandomType: 0
+      ToArmor: 0.2
+      ToArmorPre: 0.2
+      ToHealth: 1.0
+      ArmorEffectiveness: 0.75
 
 ## PLASMA CANNON ##
 #Maximum 2 snap shots or 1 aimed shot per turn
 #Range 24
-  - type: STR_HEAVY_PLASMA_TERRAN
+  - delete: STR_HEAVY_PLASMA_TERRAN
+  - type: STR_PLASMA_CANNON
 #RESOURCES
-    bigSprite: 239
-    floorSprite: 223
-    handSprite: 384
+    bigSprite: 346
+    floorSprite: 303
+    handSprite: 928
+    bulletSprite: 11 #PLASMA PROJECTILE
+    fireSound: [1018, 1019, 1020, 1021, 1022] #PLASMA WEAPON FIRE
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_PLASMA, STR_CAT_DEVASTATOR]
+    costSell: 100600
+    size: 0.3
+    weight: 40
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    attraction: 1
+    listOrder: 11600
 #SHOOTING
+    compatibleAmmo:
+      - STR_PLASMA_CANNON_CHARGE
+    dropoff: 5
     tuSnap: 45
     accuracySnap: 75
     snapRange: 24
@@ -1365,52 +1603,39 @@ items:
     aimRange: 24
     accuracyAimed: 110
 
-## MASTER CRAFTED HEAVY PLASMA ##
-#delete?
-  - type: STR_HEAVY_PLASMA_MC
-#SHOOTING
-    tuSnap: 45
-    accuracySnap: 75
-    snapRange: 24
-    tuAimed: 90
-    aimRange: 24
-    accuracyAimed: 110
-
-## PLASMA PISTOL AMMO ##
-  - type: STR_PLASMA_PISTOL_CLIP
-#SHOOTING
-    power: 90
-    damageAlter:
-      RandomType: 0
-      ToArmor: 0.1
-      ToArmorPre: 0.1
-      ToHealth: 1.0
-      ArmorEffectiveness: 0.8
-
-## PLASMAGUN AMMO ##
-  - type: STR_PLASMA_RIFLE_CLIP
-#SHOOTING
-    power: 90
-    damageAlter:
-      RandomType: 0
-      ToArmor: 0.1
-      ToArmorPre: 0.1
-      ToHealth: 1.0
-      ArmorEffectiveness: 0.8
-
-## PLASMA CANNON AMMO ##
-  - type: STR_HEAVY_PLASMA_CLIP
+## PLASMA CANNON CHARGE ##
+  - delete: STR_HEAVY_PLASMA_CLIP
+  - type: STR_PLASMA_CANNON_CHARGE
 #RESOURCES
-    floorSprite: 238
-    handSprite: 392
+    bigSprite: 348
+    floorSprite: 305
+    handSprite: 944
+    explosionHitSound: [1028, 1029, 1030] #ENERGY EXPLOSION
+    hitAnimation: 190 # AOE PLASMA
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_PLASMA, STR_CAT_DEVASTATOR]
+    costSell: 6000
+    size: 0.1
+    weight: 20
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    recoveryPoints: 1
+    listOrder: 11720
 #SHOOTING
+    clipSize: 24
+    damageType: 5
     power: 90
     damageAlter:
       RandomType: 0
-      ToArmor: 0.1
-      ToArmorPre: 0.1
+      ToArmor: 0.2
+      ToArmorPre: 0.2
       ToHealth: 1.0
-      ArmorEffectiveness: 0.8
+      ArmorEffectiveness: 0.75
+      FixRadius: 1
+      IgnoreDirection: false
+      RadiusReduction: 30.0
 
 
 ### UTILITY ITEMS ###
@@ -2723,37 +2948,340 @@ items:
 
 ### STORE ITEMS ###
 
-## APOTHECARY TERMINATOR ARMOR STORE ITEM ## 
-  - type: STR_TERMINATOR_APOTHECARY
-#GENERAL
+## SCOUT ADVANCED ARMOR STORE ITEMS ##
+  - delete: STR_SCOUTH
+  - delete: STR_SCOUTHG
+  - delete: STR_SCOUTHW
+  - delete: STR_SCOUTHB
+  - delete: STR_SCOUTHR
+  - delete: STR_SCOUTHY
+
+  - type: STR_ADV_SCOUT_ARMOR
+    size: 0.8
+    costSell: 10000
+    listOrder: 6099
+  - type: STR_ADV_SCOUT_ARMOR_GREEN
+    size: 0.8
+    costSell: 10000
+    listOrder: 6099
+  - type: STR_ADV_SCOUT_ARMOR_WHITE
+    size: 0.8
+    costSell: 10000
+    listOrder: 6099
+  - type: STR_ADV_SCOUT_ARMOR_BLACK
+    size: 0.8
+    costSell: 10000
+    listOrder: 6099
+  - type: STR_ADV_SCOUT_ARMOR_RED
+    size: 0.8
+    costSell: 10000
+    listOrder: 6099
+  - type: STR_ADV_SCOUT_ARMOR_YELLOW
+    size: 0.8
+    costSell: 10000
+    listOrder: 6099
+
+## MK7 ARMOR SET STORE ITEM ##
+  - delete: STR_TATICAL_ARMOR
+  - type: STR_MK7_ARMOR_SET
+    size: 0.8
+    listOrder: 5200
+
+## MK7 ASSAULT EQUIPMENT STORE ITEM ##
+  - delete: STR_ASS_ARMOR
+  - type: STR_MK7_ASSAULT_EQUIPMENT
+    size: 0.8
+    costSell: 10000
+    listOrder: 5300
+
+## MK7 DEVASTATOR EQUIPMENT STORE ITEM ##
+  - delete: STR_DEV_ARMOR
+  - type: STR_MK7_DEVASTATOR_EQUIPMENT
+    size: 0.8
+    costSell: 10000
+    listOrder: 5400
+
+## MK7 SERGEANT ARMOR STORE ITEM ##
+  - delete: STR_SARGENT_ARMOR
+  - type: STR_MK7_SERGEANT_ARMOR
+    size: 0.8
+    costSell: 10000
+    listOrder: 5500
+
+## MK7 APOTHECARY ARMOR STORE ITEM ##
+  - delete: STR_APOT_ARMOR
+  - type: STR_MK7_APOTHECARY_ARMOR
+    size: 0.8
+    costSell: 10000
+    listOrder: 5600
+
+## ASSAULT BIKE STORE ITEM ##
+  - delete: STR_BIKE_ARMOR
+  - type: STR_ASSAULT_BIKE
+    size: 2
+    costSell: 10000
+    transferTime: 24
+    listOrder: 6600
+
+## MK7 TECHMARINE ARMOR STORE ITEM ##
+  - delete: STR_TECH_ARMOR
+  - type: STR_MK7_TECHMARINE_ARMOR
+    size: 0.8
+    costSell: 10000
+    listOrder: 5800
+
+## MK7 CHAPLAIN ARMOR STORE ITEM ##
+  - delete: STR_CHAP_ARMOR
+  - type: STR_MK7_CHAPLAIN_ARMOR
+    size: 0.8
+    costSell: 10000
+    listOrder: 5900
+
+## CENTURION ARMOR STORE ITEM ##
+  - delete: STR_CENT_ARMOR
+  - type: STR_CENTURION_ARMOR
+    size: 2
+    costSell: 50000
+    listOrder: 6500
+
+## MK7 LIBRARIAN ARMOR STORE ITEM ##
+  - delete: STR_LIB_ARMOR
+  - type: STR_MK7_LIBRARIAN_ARMOR
+    size: 0.8
+    costSell: 10000
+    listOrder: 6000
+
+## TERMINATOR ARMOR STORE ITEM ##
+  - delete: STR_POWER_SUIT
+  - type: STR_TERMINATOR_ARMOR
+    size: 0.8
+    costSell: 10000
+    listOrder: 6100
+
+## TERMINATOR ASSAULT ARMOR STORE ITEM ##
+  - delete: STR_FLYING_SUIT
+  - type: STR_TERMINATOR_ASSAULT_ARMOR
+    size: 0.8
+    costSell: 10000
+    listOrder: 6200
+
+## TERMINATOR SERGEANT ARMOR STORE ITEM ##
+  - delete: STR_TSARGENT
+  - type: STR_TERMINATOR_SERGEANT_ARMOR
     size: 0.8
     costSell: 10000
     listOrder: 6300
 
-## CHAPLAIN TERMINATOR ARMOR STORE ITEM ## 
-  - type: STR_TERMINATOR_CHAPLAIN
-#GENERAL
+## TERMINATOR APOTHECARY ARMOR STORE ITEM ## 
+  - type: STR_TERMINATOR_APOTHECARY_ARMOR
     size: 0.8
     costSell: 10000
     listOrder: 6300
 
-## LIBRARIAN TERMINATOR ARMOR STORE ITEM ## 
-  - type: STR_TERMINATOR_LIBRARIAN
-#GENERAL
+## TERMINATOR CHAPLAIN ARMOR STORE ITEM ## 
+  - type: STR_TERMINATOR_CHAPLAIN_ARMOR
     size: 0.8
     costSell: 10000
     listOrder: 6300
+
+## TERMINATOR LIBRARIAN ARMOR STORE ITEM ## 
+  - type: STR_TERMINATOR_LIBRARIAN_ARMOR
+    size: 0.8
+    costSell: 10000
+    listOrder: 6300
+
+## TERMINATOR CAPTAIN ARMOR STORE ITEM ## 
+  - delete: STR_CAPTAIN_SUIT
+  - type: STR_TERMINATOR_CAPTAIN_ARMOR
+    size: 0.8
+    costSell: 10000
+    listOrder: 6400
 
 
 ### CRAFT WEAPONS ###
+#delete vanilla IDs
+  - delete: STR_STINGRAY_LAUNCHER
+  - delete: STR_STINGRAY_MISSILES
+  - delete: STR_AVALANCHE_LAUNCHER
+  - delete: STR_AVALANCHE_MISSILES
+  - delete: STR_CANNON
+  - delete: STR_CANNON_ROUNDS_X50
+  - delete: STR_FUSION_BALL_LAUNCHER8
+  - delete: STR_FUSION_BALL
+#delete 40k IDs
+  - delete: STR_THUNDER_CANNON
+  - delete: STR_ASSCANNON
+  - delete: STR_THRUSTER
+  - delete: STR_TARGETER
+  - delete: STR_HULL_PLATING
+  - delete: STR_FLARE_LAUNCH
+  - delete: STR_SCANNER
+  - delete: STR_RETICULE
 
-## CRAFT PLASMA CANNON AMMO ##
+#define new IDs
 
-  - type: STR_PLASMA_BEAM_AMMO
-#GENERAL
+## CRAFT BOLTCANNON AND AMMO ##
+  - type: STR_SLOT0_BOLTCANNON                      #S 1.5
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1.5
+    costBuy: 30000
+    costSell: 22500
+    transferTime: 36
+    listOrder: 1300
+
+  - type: STR_BOLTCANNON_ROUNDS           #S 0.1
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 0.1
+    costBuy: 1240
+    costSell: 1012
+    transferTime: 36
+    clipSize: 50
+    listOrder: 1350
+
+## CRAFT LASCANNON ##
+  - type: STR_SLOT0_LASER_CANNON                #S 2.0
+    categories: [ STR_CRAFT_WEAPONS] 
+    size: 2.0
+    costSell: 21000
+    transferTime: 36
+    listOrder: 1500
+
+## CRAFT PLASMA CANNON AND AMMO ##
+  - type: STR_SLOT0_PLASMA_CANNON                 #S 1.2
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1.2
+    costSell: 26300
+    transferTime: 36
+    listOrder: 1600
+
+  - type: STR_PLASMA_CANNON_CHARGES
     categories: [ STR_CRAFT_WEAPONS]
     size: 0.1
     costSell: 10000
-    transferTime: 48
-    clipSize: 35
+    transferTime: 36
+    clipSize: 16
     listOrder: 1600
+
+## CRAFT MULTI-MELTA AND AMMO ##
+  - type: STR_SLOT0_MULTIMELTA        #S 2
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 2.0
+    costSell: 28000
+    transferTime: 36
+    listOrder: 1400
+
+  - type: STR_CRAFT_MULTIMELTA_CHARGES                 #S 0.6
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 0.6
+    costSell: 20300
+    transferTime: 36
+    clipSize: 5
+    listOrder: 1450
+
+## CRAFT ASSAULT CANNON AND AMMO  ##
+  - type: STR_SLOT0_ASSAULT_CANNON               #S 1
+    categories: [ STR_CRAFT_WEAPONS]
+    requires:
+      - STR_ASSC
+    size: 1.0
+    costSell: 50000
+    transferTime: 36
+    listOrder: 1750
+
+  - type: STR_ASSAULT_CANNON_ROUNDS           #S 0.1
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 0.1
+    costSell: 3000
+    transferTime: 36
+    clipSize: 50
+    listOrder: 1350
+
+## HUNTER-KILLER MISSILE LAUNCHER AND AMMO ##
+  - type: STR_SLOT1_HUNTER_LAUNCHER           #S 2
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 0.8
+    costBuy: 16000
+    costSell: 12000
+    transferTime: 36
+    listOrder: 1100
+
+  - type: STR_HUNTER_MISSILES           #S 2
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 2
+    costBuy: 21000
+    costSell: 17000
+    transferTime: 36
+    clipSize: 7
+    listOrder: 1150
+
+## SKYSTRIKE MISSILE LAUNCHER AND AMMO ##
+  - type: STR_SLOT1_SKYSTRIKE_LAUNCHER          #S 1
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1
+    requiresBuy:
+      - STR_SKYSTRIKE_MISSILES
+    costBuy: 17000
+    costSell: 12750
+    transferTime: 36
+    listOrder: 1200
+
+  - type: STR_SKYSTRIKE_MISSILES          #S 1.5
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1.5
+    requiresBuy:
+      - STR_SKYSTRIKE_MISSILES
+    costBuy: 25000
+    costSell: 20000
+    transferTime: 36
+    clipSize: 3
+    listOrder: 1250
+
+## PLASMA MISSILE LAUNCHER AND AMMO ##
+  - type: STR_SLOT1_PLASMA_MISSILE_LAUNCHER          #S 1
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1
+    costSell: 12750
+    transferTime: 36
+    listOrder: 1200
+
+  - type: STR_PLASMA_MISSILES          #S 1
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1
+    costSell: 7200
+    transferTime: 36
+    clipSize: 1
+    listOrder: 1250
+
+## THUNDERHAWK WEAPON ##
+  - type: STR_SLOT3_THUNDERLASER_CANNON              #S 3
+    categories: [ STR_CRAFT_WEAPONS]
+    requires:
+      - STR_THUNDERHAWK_TECH
+    size: 3.0
+    costSell: 25000
+    transferTime: 36
+    listOrder: 1700
+
+## UPGRADED ENGINES ##
+  - type: STR_SLOT4_UPGRADED_ENGINES
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 4
+    costSell: 250000
+    transferTime: 36
+    listOrder: 1800
+
+## UPGRADED COGITATOR ##
+  - type: STR_SLOT4_UPGRADED_COGITATOR
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 0.5
+    costSell: 25000
+    transferTime: 36
+    listOrder: 1810
+
+## ENFORCED PLATING ##
+  - type: STR_SLOT4_ENFORCED_PLATING
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 4
+    costSell: 25000
+    transferTime: 36
+    listOrder: 1820

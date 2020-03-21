@@ -1,0 +1,146 @@
+alienRaces:
+### DELETE ALIEN RACES ###
+
+#Cultists
+  - delete: STR_SECTOID
+#Mixed races, I guess
+  - delete: STR_EARLY_CULTISTS_MARINES
+  - delete: STR_EARLY_TRAITOR_GUARD_MARINES
+  - delete: STR_MIXED
+#Grey knights
+  - delete: STR_GREYKNIGHT
+#Orks
+  - delete: STR_ORK
+#Eldar
+  - delete: STR_ELDAR
+#Slaanesh astartes and sororitas
+  - delete: STR_SLAANESH
+#Khorne berserkers and so on
+  - delete: STR_KHRONE
+#Nurgle plague astartes and sororitas
+  - delete: STR_NURGLE
+#Thousand sons (kinda) and sororitas 
+  - delete: STR_TZEENTCH
+#Traitor Guard
+  - delete: STR_SNAKEMAN
+#Chaos Space Marines and dreadnoughts, I guess
+  - delete: STR_ETHEREAL
+#Terminators
+  - delete: STR_MUTON
+#Raptors and that daemon things
+  - delete: STR_FLOATER
+#Warptalons and that daemon things
+  - delete: STR_WARPTALON
+#Genestealers and carnifexes
+  - delete: STR_GENE
+#Obliterators
+  - delete: STR_OBLITERATOR
+#Target holograms
+  - delete: STR_TARGETH
+#Raptors and havocs for some reason
+  - delete: STR_ASSAULTCHAOS
+#Warptalon and some khorne-related units.
+  - delete: STR_WARWARPTALON
+#Chaos marines and predator turrets
+  - delete: STR_WARCHAOSMARINES
+#Terminators and predator turrets
+  - delete: STR_WARCHAOST
+#Obliterators and predator turrets
+  - delete: STR_WARCHAOSO
+#Another Target holograms
+  - delete: STR_TARGET_GUARD
+#Cultists and hostile civilians
+  - delete: STR_CHAOS_RIOTS
+
+
+
+
+
+### DEFINE NEW RACES ###
+
+#EXAMPLE
+#  - id: STR_RACENAME
+#    members:
+#      - STR_RACENAME_COMMANDER  #index 0
+#      - STR_RACENAME_LEADER     #index 1
+#      - STR_RACENAME_ENGINEER   #index 2
+#      - STR_RACENAME_MEDIC      #index 3
+#      - STR_RACENAME_NAVIGATOR  #index 4
+#      - STR_RACENAME_SOLDIER    #index 5
+#      - STR_RACENAME_TERRORIST1 #index 6
+#      - STR_RACENAME_TERRORIST2 #index 7
+
+
+## Chaos Cultists ##
+  - id: STR_CULTISTS
+    membersRandom:
+      - [STR_CULTIST_PRIEST]                                        #index 0 (Cultist Priest)
+      - [STR_CULTIST_CHAMPION]                                      #index 1 (Cultist Champion)
+      - [STR_CULTIST_HEAVY_TROOPER1, STR_CULTIST_HEAVY_TROOPER2]    #index 2 (Cultist Heavy Trooper)
+      - [STR_CULTIST_HEAVY_TROOPER1, STR_CULTIST_HEAVY_TROOPER2]    #index 3 (Cultist Heavy Trooper)
+      - [STR_CULTIST_HEAVY_TROOPER1, STR_CULTIST_HEAVY_TROOPER2]    #index 4 (Cultist Heavy Trooper)
+      - [STR_CULTIST_LIGHT_TROOPER1, STR_CULTIST_LIGHT_TROOPER2]    #index 5 (Cultist Light Trooper)
+      - [STR_CULTIST_LIGHT_TROOPER1, STR_CULTIST_LIGHT_TROOPER2]    #index 6 (Cultist Light Trooper)
+      - [STR_CULTIST_HEAVY_TROOPER1, STR_CULTIST_HEAVY_TROOPER2]    #index 7 (Cultist Heavy Trooper)
+
+
+
+### Renegades ###
+
+#  - id: STR_RENEGADES
+#    membersRandom:
+#      - [STR_RENEGADE_OFFICER]           #index 0 (Renegade Officer)
+#      - [STR_RENEGADE_CHAMPION]          #index 1 (Renegade Champion)
+#      - [STR_RENEGADE_SENTINEL]          #index 2 (Renegade Sentinel)
+#      - [STR_RENEGADE_HEAVY_TROOPER]     #index 3 (Renegade Heavy Trooper)
+#      - [STR_RENEGADE_TECHNICIAN]        #index 4 (Renegade Technician)
+#      - [STR_RENEGADE_LIGHT_TROOPER]     #index 5 (Renegade Light Trooper)
+#      - [STR_RENEGADE_LIGHT_TROOPER]     #index 6 (Renegade Light Trooper)
+#      - [STR_RENEGADE_HEAVY_TROOPER]     #index 7 (Renegade Heavy Trooper)
+
+
+### Veteran Renegades ###
+
+#  - id: STR_VETERAN_RENEGADES
+#    members:
+#      - STR_RENEGADE_OFFICER           #index 0 (Renegade Officer)
+#      - STR_RENEGADE_CHAMPION          #index 1 (Renegade Champion)
+#      - STR_RENEGADE_SENTINEL          #index 2 (Renegade Sentinel)
+#      - STR_RENEGADE_HEAVY_TROOPER     #index 3 (Renegade Heavy Trooper)
+#      - STR_RENEGADE_TECHNICIAN        #index 4 (Renegade Technician)
+#      - STR_RENEGADE_VETERAN           #index 5 (Renegade Veteran)
+#      - STR_RACENAME_TERRORIST1        #index 6 (Renegade Veteran)
+#      - STR_RACENAME_TERRORIST2        #index 7 (Renegade Heavy Trooper)
+
+
+### Chaos Space Marines ###
+#EXAMPLE
+#  - id: STR_RACENAME
+#    members:
+#      - STR_RACENAME_COMMANDER  #index 0 (Chaos Lord)
+#      - STR_RACENAME_LEADER     #index 1 (Chaos Champion)
+#      - STR_RACENAME_ENGINEER   #index 2 (Chaos Dreadnought)
+#      - STR_RACENAME_MEDIC      #index 3 (Chaos Havok)
+#      - STR_RACENAME_NAVIGATOR  #index 4 (Chaos Havok)
+#      - STR_RACENAME_SOLDIER    #index 5 (Chaos Space Marine)
+#      - STR_RACENAME_TERRORIST1 #index 6 (Chaos Raptor)
+#      - STR_RACENAME_TERRORIST2 #index 7 (Chaos Space Marine)
+
+
+
+### Chaos Chosen ###
+#EXAMPLE
+#  - id: STR_RACENAME
+#    members:
+#      - STR_RACENAME_COMMANDER  #index 0 (Chaos Lord)
+#      - STR_RACENAME_LEADER     #index 1 (Chaos Terminator Champion)
+#      - STR_RACENAME_ENGINEER   #index 2 (Chaos Dreadnought)
+#      - STR_RACENAME_MEDIC      #index 3 (Chaos Havok, Terminator)
+#      - STR_RACENAME_NAVIGATOR  #index 4 (Chaos Havok, Terminator)
+#      - STR_RACENAME_SOLDIER    #index 5 (Chaos Space Marine, Terminator)
+#      - STR_RACENAME_TERRORIST1 #index 6 (Chaos Raptor, Warp Talon)
+#      - STR_RACENAME_TERRORIST2 #index 7 (Chaos Space Marine, Terminator)
+
+
+
+

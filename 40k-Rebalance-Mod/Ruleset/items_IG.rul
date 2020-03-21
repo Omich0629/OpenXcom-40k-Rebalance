@@ -1,23 +1,71 @@
 items:
-
-### LASER WEAPONS ###
-
-#Lasguns for SM. Why? I dunno.
+  - delete: STR_STUB_GUN
+  - delete: STR_STUB_GUN_AMMO
   - delete: STR_LASER_RIFLE
   - delete: STR_LASER_PISTOL
 
-## GUARD LASGUN ##
-  - type: STR_LASER_RIFLEG
+
+
+### STUB WEAPONS ###
+
+## Autopistol ##
+
+
+## Autogun ##
+
+
+## Heavy Stubber ##
+
+
+
+
+
+### LASER WEAPONS ###
+
+
+  - delete: STR_LASER_RIFLEG
+  - delete: STR_LASPISTOL_CLIP
+  - delete: STR_LASGUN_CLIP
+  - delete: STR_LASER_PISTOLG
+  - delete: STR_LASCARBINE
+
+
+## Lasgun ##
+  - type: STR_LASGUN
 #RESOURCES
     bigSprite: 291
     floorSprite: 258
-    handSprite: 552  
+    handSprite: 552
+    bulletSprite: 12
+    fireSound: 741 # FIX IT
+    meleeHitSound: 101 #FIX IT
+    meleeAnimation: 0
 #GENERAL
+    battleType: 1
+    categories: [STR_CAT_LASGUN]
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 3500
+    costSell: 1000
     invWidth: 2
     invHeight: 3
+    size: 0.2
+    weight: 5
+    twoHanded: true
+    listOrder: 10910
+#SHOOTING
+    compatibleAmmo:
+      - STR_POWER_PACK
+    dropoff: 5
+    bulletSpeed: 50
+    tuSnap: 25
+    accuracySnap: 65
+    snapRange: 16
+    tuAuto: 34
+    accuracyAuto: 45
+    autoRange: 12
 #MELEE
+    meleeType: 7
     meleePower: 20
     meleeBonus:
       reactions: 0.4
@@ -30,50 +78,109 @@ items:
     tuMelee: 15
     flatMelee:
       time: false
-      
-## LASGUN CLIP ##
-  - type: STR_LASGUN_CLIP
-#RESOURCES
-    bigSprite: 292
-    floorSprite: 259
-    handSprite: 560
-#GENERAL
-    requiresBuy:
-      - STR_IMPERIAL_GUARD_OPERATIONS
-      
-## GUARD LASPISTOL ##
-  - type: STR_LASER_PISTOLG
+
+## Laspistol ##
+  - type: STR_LASPISTOL
 #RESOURCES
     bigSprite: 293
     floorSprite: 260
     handSprite: 568
+    bulletSprite: 13 #FIX IT
+    fireSound: 740 #FIX IT
 #GENERAL
+    battleType: 1
+    categories: [STR_CAT_LASGUN]
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
-      
-## LASPISTOL CLIP ##
-  - type: STR_LASPISTOL_CLIP
-#RESOURCES
-    bigSprite: 294
-    floorSprite: 261
-    handSprite: 576
-#GENERAL
-    requiresBuy:
-      - STR_IMPERIAL_GUARD_OPERATIONS
-
+    costBuy: 1500
+    costSell: 500
+    size: 0.1
+    weight: 3
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10810
+#SHOOTING
+    compatibleAmmo:
+      - STR_POWER_PACK
+    dropoff: 5
+    bulletSpeed: 50
+    accuracySnap: 50
+    tuSnap: 20
+    snapRange: 12
 
 ## GUARD LASCARABINE ##
-  - type: STR_LASCARBINE
+  # - type: STR_LASCARBINE
+# #RESOURCES
+    # bigSprite: 303
+    # floorSprite: 1022 #FIX IT
+    # handSprite: 1176 #FIX IT
+    # bulletSprite: 12 #FIX IT
+    # fireSound: 741 #FIX IT
+# #GENERAL
+    # battleType: 1
+    # categories: [STR_CAT_LASGUN]
+    # requiresBuy:
+      # - STR_IMPERIAL_GUARD_OPERATIONS
+    # costBuy: 3200
+    # costSell: 1000
+    # size: 0.2
+    # invWidth: 2
+    # invHeight: 3
+    # weight: 4
+    # twoHanded: true
+    # listOrder: 10915
+# #SHOOTING
+    # compatibleAmmo:
+      # - STR_POWER_PACK
+    # dropoff: 5
+    # bulletSpeed: 50
+    # tuSnap: 25
+    # accuracySnap: 70
+    # snapRange: 14
+    # tuAuto: 34
+    # accuracyAuto: 50
+    # autoRange: 10
+
+## POWER PACK ( LASGUN AND LASPISTOL AMMO ) ##
+  - type: STR_POWER_PACK
 #RESOURCES
-    bigSprite: 303
+    bigSprite: 292
+    floorSprite: 259
+    handSprite: 560
+    hitSound: 19 #FIX IT
+    hitAnimation: 36 #FIX IT
 #GENERAL
+    battleType: 2
+    categories: [STR_CAT_LASGUN]
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
-    invWidth: 2
-    invHeight: 3
-    weight: 4
-#MELEE
-    tuMelee: 0
+    costBuy: 125
+    costSell: 75
+    size: 0.05
+    weight: 1
+    invWidth: 1
+    invHeight: 1
+    armor: 70
+    listOrder: 11010
+#SHOOTING
+    clipSize: 30
+    damageType: 4
+    power: 50
+    damageAlter:
+      ToArmorPre: 0.15
+      ToHealth: 1.0
+      ToArmor: 0.0
+      ToStun: 0.0
+
+
+
+      
+
+
+
+
+
+
 
 #######################
 
@@ -94,6 +201,13 @@ items:
     clipSize: 10
     vaporColor: 2
     vaporDensity: 5
+    damageAlter:
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.85
+      ToHealth: 1.0
+      ToArmor: 0.0
+      ToStun: 0.0
+
 
 ## LARGE HOTSHOT CLIP ##
   - type: STR_LASGUN_BACKPACK_HOTSHOT
@@ -120,7 +234,7 @@ items:
     damageType: 4
     damageAlter:
       ToArmorPre: 0.3
-      ArmorEffectiveness: 0.75
+      ArmorEffectiveness: 0.85
       ToHealth: 1.0
       ToArmor: 0.0
       ToStun: 0.0
@@ -1069,11 +1183,27 @@ items:
     tuMelee: 25
 
 
+### IG UNIT CORPSES ###
+
+## GUARD CORPSE (FLAK ARMOR) ##
+
+  - type: STR_FLAK_ARMOR_CORPSE
+    name: STR_GUARD_CORPSE
+    weight: 25
+    bigSprite: 154
+    floorSprite: 154
+    invWidth: 2
+    invHeight: 3
+    armor: 26
+    recover: false
+
+
+
 ## ENGINSEER CORPSE ##
   - type: STR_ENGINSEER_CORPSE
 #GENERAL
     name: STR_CORPSE
-    weight: 15
+    weight: 30
     bigSprite: 150
     floorSprite: 150
     invWidth: 2
@@ -1085,7 +1215,7 @@ items:
   - type: STR_MINISTORUM_PRIEST_CORPSE
 #GENERAL
     name: STR_CORPSE
-    weight: 15
+    weight: 25
     bigSprite: 151
     floorSprite: 151
     invWidth: 2
@@ -1214,7 +1344,7 @@ items:
 #CRAFT QUAD-LINKED LASCANNON
   - type: STR_CRAFT_QUADLASER
     requiresBuy:
-      - STR_LASER_CANNON
+      - STR_CRAFT_QUADLASER
     size: 3.0
     costSell: 66000
     transferTime: 48

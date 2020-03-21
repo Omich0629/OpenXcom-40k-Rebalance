@@ -1,6 +1,299 @@
 units:
-### FRIENDLY UNITS ###
+#delete alien IDs
+  - delete: STR_SECTOID_COMMANDER
+  - delete: STR_SECTOID_LEADER
+  - delete: STR_SECTOID_NAVIGATOR
+  - delete: STR_SECTOID_MEDIC
+  - delete: STR_SECTOID_ENGINEER
+  - delete: STR_SECTOID_SOLDIER
 
+### ENEMY UNITS ###
+
+## CULTISTS ##
+
+#Regular Light Trooper
+  - type: STR_CULTIST_LIGHT_TROOPER1
+    race: STR_CULTISTS
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 55
+      stamina: 60
+      health: 40
+      bravery: 60
+      reactions: 50
+      firing: 55
+      throwing: 50
+      strength: 25
+      psiStrength: 20
+      psiSkill: 0
+      melee: 50
+    armor: STR_CULTIST_CLOTHES1
+    standHeight: 21
+    kneelHeight: 16
+    value: 10
+#    deathSound: [733, 734, 735, 736] #CHECK IT
+    intelligence: 3
+    aggression: 2
+    builtInWeaponSets:
+#ITEM SET 0
+      - - STR_AUTOPISTOL_CHAOS
+        - STR_AUTOPISTOL_CLIP
+        - STR_AUTOPISTOL_CLIP
+        - STR_CULTIST_MACE
+#ITEM SET 1
+      - - STR_AUTOGUN_CHAOS
+        - STR_AUTOGUN_CLIP
+        - STR_AUTOGUN_CLIP
+#ITEM SET 2
+      - - STR_AUTOGUN_CHAOS
+        - STR_AUTOGUN_CLIP
+        - STR_AUTOGUN_CLIP
+        - STR_GRENADE
+
+#Regular Light Trooper (variation 2)
+  - type: STR_CULTIST_LIGHT_TROOPER2
+    race: STR_CULTISTS
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 55
+      stamina: 60
+      health: 40
+      bravery: 60
+      reactions: 50
+      firing: 55
+      throwing: 50
+      strength: 25
+      psiStrength: 20
+      psiSkill: 0
+      melee: 50
+    armor: STR_CULTIST_CLOTHES2
+    standHeight: 21
+    kneelHeight: 16
+    value: 10
+#    deathSound: [733, 734, 735, 736] #CHECK IT
+    intelligence: 3
+    aggression: 2
+    builtInWeaponSets:
+#ITEM SET 0
+      - - STR_AUTOPISTOL_CHAOS
+        - STR_AUTOPISTOL_CLIP
+        - STR_AUTOPISTOL_CLIP
+        - STR_CULTIST_MACE
+#ITEM SET 1
+      - - STR_AUTOGUN_CHAOS
+        - STR_AUTOGUN_CLIP
+        - STR_AUTOGUN_CLIP
+#ITEM SET 2
+      - - STR_AUTOGUN_CHAOS
+        - STR_AUTOGUN_CLIP
+        - STR_AUTOGUN_CLIP
+        - STR_GRENADE
+
+
+#Cultist Heavy Trooper (variation 1)
+  - type: STR_CULTIST_HEAVY_TROOPER1
+    race: STR_CULTISTS
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 55
+      stamina: 60
+      health: 40
+      bravery: 60
+      reactions: 50
+      firing: 55
+      throwing: 50
+      strength: 35
+      psiStrength: 20
+      psiSkill: 0
+      melee: 50
+    armor: STR_CULTIST_ARMOR1
+    standHeight: 21
+    kneelHeight: 16
+    value: 10
+#    deathSound: [733, 734, 735, 736] #CHECK IT
+    intelligence: 3
+    aggression: 2
+    builtInWeaponSets:
+#ITEM SET 0
+      - - STR_HEAVY_STUBBER_CHAOS
+        - STR_HEAVY_STUBBER_CLIP
+#ITEM SET 1
+      - - STR_HEAVY_STUBBER_CHAOS
+        - STR_HEAVY_STUBBER_CLIP
+#ITEM SET 2
+      - - STR_HEAVY_STUBBER_CHAOS
+        - STR_HEAVY_STUBBER_CLIP
+
+#Cultist Heavy Trooper (variation 2)
+  - type: STR_CULTIST_HEAVY_TROOPER2
+    race: STR_CULTISTS
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 55
+      stamina: 60
+      health: 40
+      bravery: 60
+      reactions: 50
+      firing: 55
+      throwing: 50
+      strength: 35
+      psiStrength: 20
+      psiSkill: 0
+      melee: 50
+    armor: STR_CULTIST_ARMOR2
+    standHeight: 21
+    kneelHeight: 16
+    value: 10
+#    deathSound: [733, 734, 735, 736] #CHECK IT
+    intelligence: 3
+    aggression: 2
+    builtInWeaponSets:
+#ITEM SET 0
+      - - STR_HEAVY_STUBBER_CHAOS
+        - STR_HEAVY_STUBBER_CLIP
+#ITEM SET 1
+      - - STR_HEAVY_STUBBER_CHAOS
+        - STR_HEAVY_STUBBER_CLIP
+#ITEM SET 2
+      - - STR_HEAVY_STUBBER_CHAOS
+        - STR_HEAVY_STUBBER_CLIP
+
+
+#Cultist Champion (rank: Leader)
+  - type: STR_CULTIST_CHAMPION
+    race: STR_CULTISTS
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 55
+      stamina: 60
+      health: 50
+      bravery: 70
+      reactions: 60
+      firing: 60
+      throwing: 50
+      strength: 30
+      psiStrength: 40
+      psiSkill: 0
+      melee: 60
+    armor: STR_CULTIST_OVERCOAT
+    standHeight: 21
+    kneelHeight: 16
+    value: 10
+#    deathSound: [733, 734, 735, 736] #CHECK IT
+    intelligence: 4
+    aggression: 2
+    builtInWeaponSets:
+#ITEM SET 0
+      - - STR_AUTOPISTOL_CHAOS
+        - STR_AUTOPISTOL_CLIP
+        - STR_AUTOPISTOL_CLIP
+        - STR_CULTIST_SWORD
+#ITEM SET 1
+      - - STR_AUTOPISTOL_CHAOS
+        - STR_AUTOPISTOL_CLIP
+        - STR_AUTOPISTOL_CLIP
+        - STR_CULTIST_SWORD
+#ITEM SET 2
+      - - STR_AUTOPISTOL_CHAOS
+        - STR_AUTOPISTOL_CLIP
+        - STR_AUTOPISTOL_CLIP
+        - STR_CULTIST_SWORD
+
+#Cultist Priest (rank: Commander)
+  - type: STR_CULTIST_PRIEST
+    race: STR_CULTISTS
+    rank: STR_LIVE_COMMANDER           #CHECK IT
+    stats:
+      tu: 55
+      stamina: 60
+      health: 40
+      bravery: 60
+      reactions: 50
+      firing: 55
+      throwing: 50
+      strength: 30
+      psiStrength: 50
+      psiSkill: 50
+      melee: 40
+    armor: STR_CULTIST_ROBES       #CHECK IT
+    standHeight: 21
+    kneelHeight: 16
+    value: 10
+#    deathSound: [733, 734, 735, 736] #CHECK IT
+    intelligence: 4
+    aggression: 1
+    psiWeapon: STR_CULTIST_PANIC_SPELL
+    builtInWeaponSets:
+#ITEM SET 0
+      - - STR_AUTOPISTOL_CHAOS
+        - STR_AUTOPISTOL_CLIP
+        - STR_AUTOPISTOL_CLIP
+#ITEM SET 1
+      - - STR_AUTOGUN_CHAOS
+        - STR_AUTOGUN_CLIP
+        - STR_AUTOGUN_CLIP
+#ITEM SET 2
+      - - STR_AUTOGUN_CHAOS
+        - STR_AUTOGUN_CLIP
+        - STR_AUTOGUN_CLIP
+        - STR_GRENADE
+
+
+
+## RENEGADES ##
+
+#Renegade Light Trooper (variation 1)
+  - type: STR_RENEGADE_LIGHT_TROOPER1
+    race: STR_RENEGADES
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 60
+      stamina: 65
+      health: 45
+      bravery: 60
+      reactions: 55
+      firing: 60
+      throwing: 55
+      strength: 30
+      psiStrength: 20
+      psiSkill: 0
+      melee: 55
+    armor: STR_RENEGADE_FLAK_ARMOR1
+    standHeight: 21
+    kneelHeight: 16
+    value: 10
+#    deathSound: [733, 734, 735, 736] #CHECK IT
+    intelligence: 3
+    aggression: 2
+    builtInWeaponSets:
+#ITEM SET 0
+      - - STR_LASGUN_CHAOS
+        - STR_POWER_PACK
+        - STR_POWER_PACK
+#ITEM SET 1
+      - - STR_LASGUN_CHAOS
+        - STR_POWER_PACK
+        - STR_POWER_PACK
+        - STR_GRENADE
+#ITEM SET 2
+      - - STR_LASGUN_CHAOS
+        - STR_POWER_PACK
+        - STR_POWER_PACK
+        - STR_KRAK_GRENADE
+
+
+
+
+
+
+
+
+
+
+
+
+
+### ALLIED UNITS ###
   - delete: STR_STORMTURRET
 
   - type: STR_STORMTURRET

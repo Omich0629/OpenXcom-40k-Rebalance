@@ -1,0 +1,83 @@
+missionScripts:
+### Remove all mission scripts ###
+#Vanilla mission scripts
+  - delete: gameStart
+  - delete: recurringTerror
+  - delete: recon
+  - delete: invasion
+  - delete: researchRetaliation
+  - delete: beginnerRetaliation
+  - delete: experiencedRetaliation
+  - delete: veteranRetaliation
+  - delete: geniusRetaliation
+  - delete: superhumanRetaliation
+#40k mission scripts
+  - delete: gameStartCultist
+  - delete: gameStartTraitorGuard
+  - delete: gameStartOrk
+  - delete: newTraditionalBasesEarly
+  - delete: newTraditionalBasesLater
+  - delete: newTraditionalBasesExtra
+  - delete: warpStorm
+  - delete: warpStormBuilding
+  - delete: warpStormRaging
+  - delete: timedRetaliation
+  - delete: SpaceHulk
+  - delete: Eldarsite
+  - delete: Mission1
+  - delete: Mission2
+  - delete: Mission3
+  - delete: Mission4
+  - delete: Mission5
+  - delete: Mission6
+  - delete: Mission7
+  - delete: Mission8
+  - delete: Mission9
+  - delete: War
+  - delete: Inquisition
+  - delete: finalMissionMarines
+  - delete: finalMissionGuard
+  - delete: finalMissionChaos
+#IG mission scripts
+  - delete: GuardTrainingMission
+  - delete: BullgrynRiotMissionFirst
+  - delete: TanithMission0
+  - delete: TanithMission1
+  - delete: BullgrynRiotMissionLater
+  - delete: RepeatingUFOSpawnedMissions
+  - delete: RepeatingFallthroughMissions
+  - delete: DummyCheckForOneOffMissions
+  - delete: SecondRepeatingUFOSpawnedMissions
+  - delete: SecondRepeatingFallthroughMissions
+
+
+### Define new mission scripts ###
+
+#Spawn Research Mission on game start
+  - type: gameStart
+    missionWeights:
+      0:
+        STR_RECONNAISSANCE_GENERIC: 100
+    lastMonth: 0
+    targetBaseOdds: 100
+    raceWeights:
+      0:
+        STR_CULTISTS: 100
+    startDelay: 120
+
+#Hardcoded stuff
+  - type: recon
+    firstMonth: 1
+
+  - type: invasion
+    firstMonth: 6
+
+#Spawn Terror Missions every month or so
+  - type: recurringTerror
+    missionWeights:
+      0:
+        STR_TERROR_GENERIC: 100
+    useTable: false
+    startDelay: 150
+
+#END OF FILE

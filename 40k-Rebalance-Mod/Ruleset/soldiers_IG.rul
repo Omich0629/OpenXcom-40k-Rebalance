@@ -54,6 +54,7 @@ soldiers:
       psiSkill: 20
 
     value: 1
+    armor: STR_FLAK_ARMOR
 
 ## VETERAN GUARDSMAN ##
   - type: STR_GUARD_VETERAN
