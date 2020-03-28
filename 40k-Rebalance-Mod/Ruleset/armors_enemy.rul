@@ -65,6 +65,31 @@ armors:
       - 1.0 #IMPACT
     loftempsSet: [ 3 ]
 
+  - type: STR_CULTIST_CLOTHES3
+    spriteSheet: CULTIST_CLOTHES3.PCK
+    spriteInv: CULTIST_CLOTHES3
+    corpseBattle:
+      - STR_CORPSE_CULTIST_CLOTHES3
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+    loftempsSet: [ 3 ]
+
+
 #Cultist Armor
   - type: STR_CULTIST_ARMOR1
     spriteSheet: CULTIST_ARMOR1.PCK

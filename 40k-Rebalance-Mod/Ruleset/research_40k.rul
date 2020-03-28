@@ -82,6 +82,7 @@ research:
     unlocks:
       - STR_BOLTPISTOL_TECH
       - STR_BOLTER_TECH
+      - STR_SHOTGUN_TECH
       - STR_MARINES_STRATEGY
       - STR_CHAPTER_VEHICLES
       - STR_CHAPTER_ARMORS
@@ -212,6 +213,7 @@ research:
       - STR_POWERFIST_TECH
       - STR_LASCANNON_TECH
 
+
 #Boltpistol Requisition
   - name: STR_BOLTPISTOL_TECH
     cost: 0
@@ -222,6 +224,14 @@ research:
 
 #Bolter Requisition
   - name: STR_BOLTER_TECH
+    cost: 0
+    points: 0
+    listOrder: 100
+    dependencies:
+      - STR_GENERALLOCK
+
+#Shotgun Requisition
+  - name: STR_SHOTGUN_TECH
     cost: 0
     points: 0
     listOrder: 100

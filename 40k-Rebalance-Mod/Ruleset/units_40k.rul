@@ -11,7 +11,7 @@ units:
 
 ## CULTISTS ##
 
-#Regular Light Trooper
+#Cultist Light Trooper (variation 1)
   - type: STR_CULTIST_LIGHT_TROOPER1
     race: STR_CULTISTS
     rank: STR_LIVE_SOLDIER
@@ -31,26 +31,26 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 10
-#    deathSound: [733, 734, 735, 736] #CHECK IT
+    deathSound: [41, 42, 43]
     intelligence: 3
     aggression: 2
     builtInWeaponSets:
 #ITEM SET 0
       - - STR_AUTOPISTOL_CHAOS
-        - STR_AUTOPISTOL_CLIP
-        - STR_AUTOPISTOL_CLIP
+        - STR_AUTOPISTOL_MAGAZINE
+        - STR_AUTOPISTOL_MAGAZINE
         - STR_CULTIST_MACE
 #ITEM SET 1
       - - STR_AUTOGUN_CHAOS
-        - STR_AUTOGUN_CLIP
-        - STR_AUTOGUN_CLIP
+        - STR_AUTOGUN_MAGAZINE
+        - STR_AUTOGUN_MAGAZINE
 #ITEM SET 2
       - - STR_AUTOGUN_CHAOS
-        - STR_AUTOGUN_CLIP
-        - STR_AUTOGUN_CLIP
+        - STR_AUTOGUN_MAGAZINE
+        - STR_AUTOGUN_MAGAZINE
         - STR_GRENADE
 
-#Regular Light Trooper (variation 2)
+#Cultist Light Trooper (variation 2)
   - type: STR_CULTIST_LIGHT_TROOPER2
     race: STR_CULTISTS
     rank: STR_LIVE_SOLDIER
@@ -70,23 +70,62 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 10
-#    deathSound: [733, 734, 735, 736] #CHECK IT
+    deathSound: [41, 42, 43]
     intelligence: 3
     aggression: 2
     builtInWeaponSets:
 #ITEM SET 0
       - - STR_AUTOPISTOL_CHAOS
-        - STR_AUTOPISTOL_CLIP
-        - STR_AUTOPISTOL_CLIP
+        - STR_AUTOPISTOL_MAGAZINE
+        - STR_AUTOPISTOL_MAGAZINE
         - STR_CULTIST_MACE
 #ITEM SET 1
       - - STR_AUTOGUN_CHAOS
-        - STR_AUTOGUN_CLIP
-        - STR_AUTOGUN_CLIP
+        - STR_AUTOGUN_MAGAZINE
+        - STR_AUTOGUN_MAGAZINE
 #ITEM SET 2
       - - STR_AUTOGUN_CHAOS
-        - STR_AUTOGUN_CLIP
-        - STR_AUTOGUN_CLIP
+        - STR_AUTOGUN_MAGAZINE
+        - STR_AUTOGUN_MAGAZINE
+        - STR_GRENADE
+
+#Cultist Light Trooper (variation 3)
+  - type: STR_CULTIST_LIGHT_TROOPER3
+    race: STR_CULTISTS
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 55
+      stamina: 60
+      health: 40
+      bravery: 60
+      reactions: 50
+      firing: 55
+      throwing: 50
+      strength: 25
+      psiStrength: 20
+      psiSkill: 0
+      melee: 50
+    armor: STR_CULTIST_CLOTHES3
+    standHeight: 21
+    kneelHeight: 16
+    value: 10
+    deathSound: [41, 42, 43]
+    intelligence: 3
+    aggression: 2
+    builtInWeaponSets:
+#ITEM SET 0
+      - - STR_AUTOPISTOL_CHAOS
+        - STR_AUTOPISTOL_MAGAZINE
+        - STR_AUTOPISTOL_MAGAZINE
+        - STR_CULTIST_MACE
+#ITEM SET 1
+      - - STR_AUTOGUN_CHAOS
+        - STR_AUTOGUN_MAGAZINE
+        - STR_AUTOGUN_MAGAZINE
+#ITEM SET 2
+      - - STR_AUTOGUN_CHAOS
+        - STR_AUTOGUN_MAGAZINE
+        - STR_AUTOGUN_MAGAZINE
         - STR_GRENADE
 
 
@@ -110,19 +149,19 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 10
-#    deathSound: [733, 734, 735, 736] #CHECK IT
+    deathSound: [41, 42, 43]
     intelligence: 3
     aggression: 2
     builtInWeaponSets:
 #ITEM SET 0
       - - STR_HEAVY_STUBBER_CHAOS
-        - STR_HEAVY_STUBBER_CLIP
+        - STR_HEAVY_STUBBER_AMMO_BELT
 #ITEM SET 1
       - - STR_HEAVY_STUBBER_CHAOS
-        - STR_HEAVY_STUBBER_CLIP
+        - STR_HEAVY_STUBBER_AMMO_BELT
 #ITEM SET 2
       - - STR_HEAVY_STUBBER_CHAOS
-        - STR_HEAVY_STUBBER_CLIP
+        - STR_HEAVY_STUBBER_AMMO_BELT
 
 #Cultist Heavy Trooper (variation 2)
   - type: STR_CULTIST_HEAVY_TROOPER2
@@ -144,19 +183,19 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 10
-#    deathSound: [733, 734, 735, 736] #CHECK IT
+    deathSound: [41, 42, 43]
     intelligence: 3
     aggression: 2
     builtInWeaponSets:
 #ITEM SET 0
       - - STR_HEAVY_STUBBER_CHAOS
-        - STR_HEAVY_STUBBER_CLIP
+        - STR_HEAVY_STUBBER_AMMO_BELT
 #ITEM SET 1
       - - STR_HEAVY_STUBBER_CHAOS
-        - STR_HEAVY_STUBBER_CLIP
+        - STR_HEAVY_STUBBER_AMMO_BELT
 #ITEM SET 2
       - - STR_HEAVY_STUBBER_CHAOS
-        - STR_HEAVY_STUBBER_CLIP
+        - STR_HEAVY_STUBBER_AMMO_BELT
 
 
 #Cultist Champion (rank: Leader)
@@ -179,24 +218,24 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 10
-#    deathSound: [733, 734, 735, 736] #CHECK IT
+    deathSound: [41, 42, 43]
     intelligence: 4
     aggression: 2
     builtInWeaponSets:
 #ITEM SET 0
-      - - STR_AUTOPISTOL_CHAOS
-        - STR_AUTOPISTOL_CLIP
-        - STR_AUTOPISTOL_CLIP
+      - - STR_SHOTGUN_CHAOS
+        - STR_SHOTGUN_SHELLS
+        - STR_SHOTGUN_SHELLS
         - STR_CULTIST_SWORD
 #ITEM SET 1
-      - - STR_AUTOPISTOL_CHAOS
-        - STR_AUTOPISTOL_CLIP
-        - STR_AUTOPISTOL_CLIP
+      - - STR_SHOTGUN_CHAOS
+        - STR_SHOTGUN_SHELLS
+        - STR_SHOTGUN_SHELLS
         - STR_CULTIST_SWORD
 #ITEM SET 2
-      - - STR_AUTOPISTOL_CHAOS
-        - STR_AUTOPISTOL_CLIP
-        - STR_AUTOPISTOL_CLIP
+      - - STR_SHOTGUN_CHAOS
+        - STR_SHOTGUN_SHELLS
+        - STR_SHOTGUN_SHELLS
         - STR_CULTIST_SWORD
 
 #Cultist Priest (rank: Commander)
@@ -219,23 +258,23 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 10
-#    deathSound: [733, 734, 735, 736] #CHECK IT
+    deathSound: [41, 42, 43]
     intelligence: 4
     aggression: 1
     psiWeapon: STR_CULTIST_PANIC_SPELL
     builtInWeaponSets:
 #ITEM SET 0
       - - STR_AUTOPISTOL_CHAOS
-        - STR_AUTOPISTOL_CLIP
-        - STR_AUTOPISTOL_CLIP
+        - STR_AUTOPISTOL_MAGAZINE
+        - STR_AUTOPISTOL_MAGAZINE
 #ITEM SET 1
       - - STR_AUTOGUN_CHAOS
-        - STR_AUTOGUN_CLIP
-        - STR_AUTOGUN_CLIP
+        - STR_AUTOGUN_MAGAZINE
+        - STR_AUTOGUN_MAGAZINE
 #ITEM SET 2
       - - STR_AUTOGUN_CHAOS
-        - STR_AUTOGUN_CLIP
-        - STR_AUTOGUN_CLIP
+        - STR_AUTOGUN_MAGAZINE
+        - STR_AUTOGUN_MAGAZINE
         - STR_GRENADE
 
 
@@ -262,7 +301,7 @@ units:
     standHeight: 21
     kneelHeight: 16
     value: 10
-#    deathSound: [733, 734, 735, 736] #CHECK IT
+    deathSound: [41, 42, 43]
     intelligence: 3
     aggression: 2
     builtInWeaponSets:

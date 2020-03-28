@@ -1,12 +1,176 @@
 items:
 #ENEMY WEAPONS
 
-#Chaos Stub pistol
-#Useless even for cultists
   - delete: STR_STUB_GUN_CHAOS
 
   - delete: STR_FIXED_SONIC_CANON 
   - delete: STR_SONIC_CANON
+
+### CHAOS STUB WEAPONS ###
+
+## Chaos Autopistol ##
+  - delete: STR_AUTOPISTOL_CHAOS
+
+  - type: STR_AUTOPISTOL_CHAOS
+#RESOURCES
+    bigSprite: 351
+    floorSprite: 308
+    handSprite: 968
+    bulletSprite: 1
+    fireSound: 4
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_AUTO]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 700
+    size: 0.1
+    weight: 5
+    invWidth: 1
+    invHeight: 2
+    armor: 30
+    attraction: 1
+    listOrder: 10600
+#SHOOTING
+    compatibleAmmo:
+      - STR_AUTOPISTOL_MAGAZINE
+    bulletSpeed: 25
+    dropoff: 5
+
+    confSnap:
+      shots: 2
+    accuracySnap: 50
+    tuSnap: 20
+    snapRange: 11
+
+    confAuto:
+      shots: 5
+    accuracyAuto: 35
+    tuAuto: 35
+    autoRange: 5
+
+## Chaos Autogun ##
+
+## Autogun ##
+  - delete: STR_AUTOGUN_CHAOS
+
+  - type: STR_AUTOGUN_CHAOS
+#RESOURCES
+    bigSprite: 354
+    floorSprite: 311
+    handSprite: 992
+    bulletSprite: 1
+    fireSound: 4
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_AUTO]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 2000
+    size: 0.2
+    weight: 9
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    twoHanded: true
+    oneHandedPenalty: 50
+    listOrder: 10602
+#SHOOTING
+    compatibleAmmo:
+      - STR_AUTOGUN_MAGAZINE
+    bulletSpeed: 25
+    dropoff: 5
+
+    accuracySnap: 75
+    tuSnap: 25
+    snapRange: 15
+
+    confAuto:
+      shots: 4
+    accuracyAuto: 45
+    tuAuto: 40
+    autoRange: 7
+
+## Chaos Heavy Stubber ##
+  - delete: STR_HEAVY_STUBBER_CHAOS
+
+  - type: STR_HEAVY_STUBBER_CHAOS
+#RESOURCES
+    bigSprite: 358
+    floorSprite: 314
+    handSprite: 1024
+    bulletSprite: 2
+    fireSound: 4
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_AUTO]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 5000
+    size: 0.4
+    weight: 20
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    attraction: 1
+    twoHanded: true
+    blockBothHands: true
+    listOrder: 10604
+#SHOOTING
+    compatibleAmmo:
+      - STR_HEAVY_STUBBER_AMMO_BELT
+    bulletSpeed: 25
+    dropoff: 5
+
+    accuracySnap: 65
+    confSnap:
+      shots: 3
+    tuSnap: 40
+    snapRange: 16
+
+    accuracyAuto: 50
+    confAuto:
+      shots: 9
+    tuAuto: 60
+    autoRange: 8
+
+## Chaos Shotgun ##
+  - delete: STR_SHOTGUN_CHAOS
+
+  - type: STR_SHOTGUN_CHAOS
+#RESOURCES
+    bigSprite: 363
+    floorSprite: 319
+    handSprite: 1064
+    bulletSprite: 2
+    fireSound: [1000, 1001, 1002] 
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_SHOTGUN]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 2750
+    size: 0.3
+    weight: 18
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    listOrder: 10400
+#SHOOTING
+    compatibleAmmo:
+      - STR_SHOTGUN_SHELLS
+      - STR_SHOTGUN_SLUGS
+    dropoff: 7
+    bulletSpeed: 30
+
+    accuracySnap: 75
+    tuSnap: 20
+    snapRange: 7
+
+
+
 
 
 ## Cultist Improvised Mace ##
@@ -20,6 +184,8 @@ items:
     meleeAnimation: 0
 #GENERAL
     battleType: 3
+    requires:
+      - STR_CHAOS_ONLY
     size: 0.2
     costSell: 50
     weight: 5
@@ -55,6 +221,8 @@ items:
     meleeAnimation: 0
 #GENERAL
     battleType: 3
+    requires:
+      - STR_CHAOS_ONLY
     size: 0.2
     costSell: 50
     weight: 5
@@ -115,8 +283,8 @@ items:
     floorSprite: 262 #FIX IT
     handSprite: 584 #FIX IT
     bulletSprite: 12
-    fireSound: 741 # FIX IT
-    meleeHitSound: 101 #FIX IT
+    fireSound: [1031, 1032, 1033, 1034, 1035]
+    meleeHitSound: [1011, 1012, 1013, 1014, 1015]
     meleeAnimation: 0
 #GENERAL
     battleType: 1
@@ -163,8 +331,8 @@ items:
     bigSprite: 296 #FIX IT
     floorSprite: 263 #FIX IT
     handSprite: 592 #FIX IT
-    bulletSprite: 13 #FIX IT
-    fireSound: 740 #FIX IT
+    bulletSprite: 12
+    fireSound: [1031, 1032, 1033, 1034, 1035]
 #GENERAL
     battleType: 1
     categories: [STR_CAT_LASGUN]
@@ -901,6 +1069,22 @@ items:
     weight: 20
     bigSprite: 1001
     floorSprite: 1001
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    recoveryTransformations:
+      STR_CORPSE_CULTIST: [1]
+    battleType: 11
+    armor: 26
+    listOrder: 19000
+
+#Cultist corpse (Clothes 3)
+  - type: STR_CORPSE_CULTIST_CLOTHES3
+    name: STR_CORPSE_CULTIST
+    size: 0.4
+    weight: 20
+    bigSprite: 1006
+    floorSprite: 1006
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5

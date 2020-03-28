@@ -77,9 +77,10 @@ extraSounds:
       891: Resources/Sound/ambient_arctic.wav
 
 ## NEW FILES ##
-      1000: Resources/Sound/Ripper_Gun/Ripper_Gun_Fire1.wav
-      1001: Resources/Sound/Ripper_Gun/Ripper_Gun_Fire2.wav
-      1002: Resources/Sound/Ripper_Gun/Ripper_Gun_Fire3.wav
+      1000: Resources/Sound/Shotgun/Shotgun_Fire1.wav
+      1001: Resources/Sound/Shotgun/Shotgun_Fire2.wav
+      1002: Resources/Sound/Shotgun/Shotgun_Fire3.wav
+
       1003: Resources/Sound/Ripper_Gun/Ripper_Gun_Melee1.wav
       1004: Resources/Sound/Ripper_Gun/Ripper_Gun_Melee2.wav
       1005: Resources/Sound/Ripper_Gun/Ripper_Gun_Melee3.wav
@@ -115,6 +116,10 @@ extraSounds:
       1029: Resources/Sound/Energy_Explosion/Energy_Explosion2.wav
       1030: Resources/Sound/Energy_Explosion/Energy_Explosion3.wav
 
-
+      1031: Resources/Sound/Laser_Weapon/Laser_Weapon_Fire1.wav
+      1032: Resources/Sound/Laser_Weapon/Laser_Weapon_Fire2.wav
+      1033: Resources/Sound/Laser_Weapon/Laser_Weapon_Fire3.wav
+      1034: Resources/Sound/Laser_Weapon/Laser_Weapon_Fire4.wav
+      1035: Resources/Sound/Laser_Weapon/Laser_Weapon_Fire5.wav
 
 

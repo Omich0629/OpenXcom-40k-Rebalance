@@ -15,10 +15,11 @@ extraStrings:
 
       STR_ADAMANTIUM_FORGE: "Adamantium Forge"
 
+      STR_FIRE_EXTINGUISHER: "Fire Extinguisher"
 ## Custom attacks for special purposes ##
       STR_CUSTOM_DOUBLE_SHOT: "Double Shot"
       STR_CUSTOM_SNAPSHOT: "Snap Shot"
-      STR_FIRE_EXTINGUISHER: "Extinguish"
+
 
 ## Crafts Weapon Types ##
       STR_CRAFT_SLOT_ASSAULT: "Assault Weapon"
@@ -182,6 +183,10 @@ extraStrings:
       STR_HC_HE_AMMO: "Sniper Rifle HE Ammo"
       STR_HC_I_AMMO: "Sniper Rifle I Ammo"
 
+#SM Shotgun IDs
+      STR_SHOTGUN_SM: "Astartes Assault Shotgun"
+      STR_SHOTGUN_SHELLS: "Shotgun Shells"
+      STR_SHOTGUN_SLUGS: "Shotgun Slugs"
 
 #Astartes T1 Crafts IDs
       STR_SPEEDR: "Chapter Vehicles"
@@ -384,11 +389,23 @@ extraStrings:
 ### Imperial Guard ID's ###
 
 #Guard weapons
-      STR_POWER_PACK: "Power Pack"
+
+      STR_AUTOPISTOL: "Autopistol"
+      STR_AUTOPISTOL_MAGAZINE: "Autopistol Magazine"
+
+      STR_AUTOGUN: "Autogun"
+      STR_AUTOGUN_MAGAZINE: "Autogun Magazine"
+
+      STR_HEAVY_STUBBER: "Heavy Stubber"
+      STR_HEAVY_STUBBER_AMMO_BELT: "Heavy Stubber Ammo Belt"
+
+      STR_SHOTGUN_IG: "Guard Shotgun"
+
 
       STR_LASGUN: "Lasgun"
       STR_LASPISTOL: "Laspistol"
       STR_LASCARBINE: "Lascarabine"
+      STR_POWER_PACK: "Power Pack"
 
 #Guard Armors
       STR_FLAK_ARMOR: "Flak Armor"
@@ -530,17 +547,18 @@ extraStrings:
 #Cultists
       STR_CULTIST_LIGHT_TROOPER1: "Cultist Light Trooper"
       STR_CULTIST_LIGHT_TROOPER2: "Cultist Light Trooper"
+      STR_CULTIST_LIGHT_TROOPER3: "Cultist Light Trooper"
       STR_CULTIST_HEAVY_TROOPER1: "Cultist Heavy Trooper"
       STR_CULTIST_HEAVY_TROOPER2: "Cultist Heavy Trooper"
       STR_CULTIST_CHAMPION: "Cultist Champion"
       STR_CULTIST_PRIEST: "Cultist Priest"
-      STR_CULTIST_TECHNICIAN: "Cultist Technician"
       STR_CULTIST_ASSAULT_TROOPER: "Cultist Assault Trooper"
 
 ## ENEMY ARMORS ##
 #Cultists
       STR_CULTIST_CLOTHES1: "Cultist Clothes"
       STR_CULTIST_CLOTHES2: "Cultist Clothes"
+      STR_CULTIST_CLOTHES3: "Cultist Clothes"
       STR_CULTIST_ARMOR1: "Cultist Armor"
       STR_CULTIST_ARMOR2: "Cultist Armor"
       STR_CULTIST_OVERCOAT: "Cultist Overcoat"
@@ -558,6 +576,12 @@ extraStrings:
       STR_CULTIST_MACE: "Improvised Mace"
       STR_CULTIST_SWORD: "Improvised Sword"
       STR_CULTIST_PANIC_SPELL: "Panic Spell"
+
+      STR_AUTOPISTOL_CHAOS: "Chaos Autopistol"
+      STR_AUTOGUN_CHAOS: "Chaos Autogun"
+      STR_HEAVY_STUBBER_CHAOS: "Chaos Heavy Stubber"
+
+      STR_SHOTGUN_CHAOS: "Chaos Shotgun"
 
 #Renegade Items
       STR_LASGUN_CHAOS: "Chaos Lasgun"

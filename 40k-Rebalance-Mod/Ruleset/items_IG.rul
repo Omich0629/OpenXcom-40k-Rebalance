@@ -9,14 +9,262 @@ items:
 ### STUB WEAPONS ###
 
 ## Autopistol ##
+  - delete: STR_AUTOPISTOL
 
+  - type: STR_AUTOPISTOL
+#RESOURCES
+    bigSprite: 349
+    floorSprite: 306
+    handSprite: 952
+    bulletSprite: 1
+    fireSound: 4
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_AUTO]
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 1500
+    costSell: 700
+    size: 0.1
+    weight: 5
+    invWidth: 1
+    invHeight: 2
+    armor: 30
+    attraction: 1
+    listOrder: 10600
+#SHOOTING
+    compatibleAmmo:
+      - STR_AUTOPISTOL_MAGAZINE
+    bulletSpeed: 25
+    dropoff: 5
+
+    confSnap:
+      shots: 2
+    accuracySnap: 50
+    tuSnap: 20
+    snapRange: 11
+
+    confAuto:
+      shots: 5
+    accuracyAuto: 35
+    tuAuto: 35
+    autoRange: 5
+
+## Autopistol Ammo ##
+  - delete: STR_AUTOPISTOL_CLIP
+
+  - type: STR_AUTOPISTOL_MAGAZINE
+#RESOURCES
+    bigSprite: 350
+    floorSprite: 307
+    handSprite: 960
+    hitSound: 22
+    hitAnimation: 26
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_AUTO]
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 200
+    costSell: 75
+    size: 0.1
+    weight: 3
+    invWidth: 1
+    invHeight: 1
+    armor: 30
+    listOrder: 10601
+#SHOOTING
+    clipSize: 20
+    damageType: 1
+    explosionSpeed: 5
+    power: 35
+    damageAlter:
+      ToArmor: 0.033
 
 ## Autogun ##
+  - delete: STR_AUTOGUN
 
+  - type: STR_AUTOGUN
+#RESOURCES
+    bigSprite: 352
+    floorSprite: 309
+    handSprite: 976
+    bulletSprite: 1
+    fireSound: 4
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_AUTO]
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 3500
+    costSell: 2000
+    size: 0.2
+    weight: 9
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    twoHanded: true
+    oneHandedPenalty: 50
+    listOrder: 10602
+#SHOOTING
+    compatibleAmmo:
+      - STR_AUTOGUN_MAGAZINE
+    bulletSpeed: 25
+    dropoff: 5
+
+    accuracySnap: 75
+    tuSnap: 25
+    snapRange: 15
+
+    confAuto:
+      shots: 4
+    accuracyAuto: 45
+    tuAuto: 40
+    autoRange: 7
+
+## Autogun Magazine ##
+  - delete: STR_AUTOGUN_CLIP
+
+  - type: STR_AUTOGUN_MAGAZINE
+#RESOURCES
+    bigSprite: 353
+    floorSprite: 310
+    handSprite: 984
+    hitSound: 22
+    hitAnimation: 26
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_AUTO]
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 300
+    costSell: 105
+    size: 0.1
+    weight: 3
+    armor: 30
+    listOrder: 10603
+#SHOOTING
+    clipSize: 30
+    explosionSpeed: 5
+    power: 45
+    damageType: 1
+    damageAlter:
+      ToArmor: 0.05
 
 ## Heavy Stubber ##
+  - delete: STR_HEAVY_STUBBER
 
+  - type: STR_HEAVY_STUBBER
+#RESOURCES
+    bigSprite: 355
+    floorSprite: 312
+    handSprite: 1000
+    bulletSprite: 2
+    fireSound: 4
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_AUTO]
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 9000
+    costSell: 5000
+    size: 0.4
+    weight: 20
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    attraction: 1
+    listOrder: 10604
+    twoHanded: true
+    blockBothHands: true
+    kneelBonus: 150
+    tags:
+      ITEM_HAS_BIPOD: 1
+#SHOOTING
+    compatibleAmmo:
+      - STR_HEAVY_STUBBER_AMMO_BELT
+    bulletSpeed: 25
+    dropoff: 5
 
+    accuracySnap: 55
+    confSnap:
+      shots: 3
+    tuSnap: 40
+    snapRange: 16
+
+    accuracyAuto: 40
+    confAuto:
+      shots: 9
+    tuAuto: 60
+    autoRange: 8
+
+## Heavy Stubber Ammo Belt ##
+  - delete: STR_HEAVY_STUBBER_CLIP
+
+  - type: STR_HEAVY_STUBBER_AMMO_BELT
+#RESOURCES
+    bigSprite: 357
+    floorSprite: 313
+    handSprite: 1016
+    hitSound: 22
+    hitAnimation: 26
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_AUTO]
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 600
+    costSell: 225
+    size: 0.1
+    weight: 7
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    listOrder: 10605
+#SHOOTING
+    clipSize: 90
+    explosionSpeed: 5
+    damageType: 1
+    power: 45
+    damageAlter:
+      ToArmor: 0.05
+
+## Guard Shotgun ##
+  - type: STR_SHOTGUN_IG 
+#RESOURCES
+    bigSprite: 362
+    floorSprite: 318
+    handSprite: 1056
+    bulletSprite: 2
+    fireSound: [1000, 1001, 1002]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_SHOTGUN]
+    requiresBuy:
+      - STR_SHOTGUN_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 8000
+    costSell: 4000
+    size: 0.3
+    weight: 18
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    twoHanded: true
+    oneHandedPenalty: 50
+    listOrder: 10400
+#SHOOTING
+    compatibleAmmo:
+      - STR_SHOTGUN_SHELLS
+      - STR_SHOTGUN_SLUGS
+    dropoff: 7
+    bulletSpeed: 30
+
+    accuracySnap: 75
+    tuSnap: 20
+    snapRange: 7
 
 
 
@@ -37,8 +285,8 @@ items:
     floorSprite: 258
     handSprite: 552
     bulletSprite: 12
-    fireSound: 741 # FIX IT
-    meleeHitSound: 101 #FIX IT
+    fireSound: [1031, 1032, 1033, 1034, 1035]
+    meleeHitSound: [1011, 1012, 1013, 1014, 1015]
     meleeAnimation: 0
 #GENERAL
     battleType: 1
@@ -85,8 +333,8 @@ items:
     bigSprite: 293
     floorSprite: 260
     handSprite: 568
-    bulletSprite: 13 #FIX IT
-    fireSound: 740 #FIX IT
+    bulletSprite: 12
+    fireSound: [1031, 1032, 1033, 1034, 1035]
 #GENERAL
     battleType: 1
     categories: [STR_CAT_LASGUN]
@@ -147,7 +395,7 @@ items:
     bigSprite: 292
     floorSprite: 259
     handSprite: 560
-    hitSound: 19 #FIX IT
+    hitSound: [1023, 1024, 1025, 1026, 1027] #ENERGY WEAPON HIT
     hitAnimation: 36 #FIX IT
 #GENERAL
     battleType: 2

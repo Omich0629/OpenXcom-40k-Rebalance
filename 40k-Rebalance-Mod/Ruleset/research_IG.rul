@@ -40,6 +40,7 @@ research:
     points: 0
     listOrder: 100
     unlocks:
+      - STR_SHOTGUN_TECH
       - STR_REGIMENTAL_VEHICLES
       - STR_REGIMENTAL_WEAPONS
       - STR_MILITARY_PERSONNEL

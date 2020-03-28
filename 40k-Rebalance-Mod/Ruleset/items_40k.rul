@@ -1,6 +1,5 @@
 items:
 
-#delete Master Crafted Ammo for bolt-weapons, MC shotgun and MC lasgun
   - delete: STR_PISTOL_CLIP_MC
   - delete: STR_RIFLE_CLIP_MC
   - delete: STR_AC_MC_AMMO
@@ -8,6 +7,8 @@ items:
   - delete: STR_MCSHOTGUN
   - delete: STR_HEAVY_PLASMA_MCJ
   - delete: STR_HEAVY_PLASMA_MC
+  - delete: AUX_TANK_CANNON
+  - delete: STR_HWP_CANNON_SHELLS
 
 ### NULL SLOT ITEMS ###
 
@@ -130,6 +131,107 @@ items:
     flatRate: false
 
 ##########################
+
+## ASTARTES SHOTGUN ##
+  - delete: STR_SHOTGUN
+
+  - type: STR_SHOTGUN_SM
+#RESOURCES
+    bigSprite: 359
+    floorSprite: 315
+    handSprite: 1032
+    bulletSprite: 2
+    fireSound: [1000, 1001, 1002] 
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_SHOTGUN, STR_CAT_SCOUT]
+    requiresBuy:
+      - STR_SHOTGUN_TECH
+      - STR_SPACE_MARINES_OPERATIONS
+    costBuy: 8000
+    costSell: 4000
+    size: 0.3
+    weight: 25
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    twoHanded: true
+    oneHandedPenalty: 65
+    listOrder: 10400
+#SHOOTING
+    compatibleAmmo:
+      - STR_SHOTGUN_SHELLS
+      - STR_SHOTGUN_SLUGS
+    bulletSpeed: 30
+    dropoff: 7
+
+    accuracySnap: 75
+    tuSnap: 20
+    snapRange: 7
+
+    accuracyAuto: 60
+    tuAuto: 40
+    confAuto:
+      shots: 3
+    autoRange: 5
+
+## SHOTGUN SHELLS ##
+  - delete: STR_SHOTGUN_SHELLS
+
+  - type: STR_SHOTGUN_SHELLS
+#RESOURCES
+    bigSprite: 360
+    floorSprite: 316
+    handSprite: 1040
+    hitSound: 22
+    hitAnimation: 26
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_AUTO]
+    requiresBuy:
+      - STR_SHOTGUN_TECH
+    costBuy: 500
+    costSell: 150
+    size: 0.1
+    weight: 2
+    listOrder: 10710
+#SHOOTING
+    clipSize: 8
+    damageType: 1
+    power: 20
+    damageAlter:
+      ToArmor: 0.03
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 6
+
+## SHOTGUN SLUGS ##
+  - type: STR_SHOTGUN_SLUGS
+#RESOURCES
+    bigSprite: 361
+    floorSprite: 317
+    handSprite: 1048
+    hitSound: 22
+    hitAnimation: 26
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_AUTO]
+    requiresBuy:
+      - STR_SHOTGUN_TECH
+    costBuy: 750
+    costSell: 300
+    size: 0.1
+    weight: 2
+    listOrder: 10710
+#SHOOTING
+    clipSize: 8
+    damageType: 1
+    power: 55
+    damageAlter:
+      ToArmor: 0.1
+
+
 
 ### SM STANDARD HEAVY WEAPONS ###
 
@@ -294,16 +396,8 @@ items:
 
 
 ## ASSAULT BIKE ##
-  - delete: AUX_TANK_CANNON
-  - delete: STR_HWP_CANNON_SHELLS
 
-  - type: STR_BIKE_ARMOR
-#GENERAL
-    size: 2
-    costBuy: 0
-    costSell: 55000
-    transferTime: 50
-    listOrder: 6600
+
 
 ### MELEE WEAPONS ###
 
@@ -1547,7 +1641,7 @@ items:
     bigSprite: 345
     floorSprite: 302
     handSprite: 920
-    hitSound: [1023, 1024, 1025, 1026, 1027] #ENER WEAPON HIT
+    hitSound: [1023, 1024, 1025, 1026, 1027] #ENERGY WEAPON HIT
     hitAnimation: 161 #PLASMA HIT ANIMATION
 #GENERAL
     battleType: 2

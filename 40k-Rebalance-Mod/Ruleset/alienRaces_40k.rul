@@ -79,24 +79,24 @@ alienRaces:
       - [STR_CULTIST_HEAVY_TROOPER1, STR_CULTIST_HEAVY_TROOPER2]    #index 2 (Cultist Heavy Trooper)
       - [STR_CULTIST_HEAVY_TROOPER1, STR_CULTIST_HEAVY_TROOPER2]    #index 3 (Cultist Heavy Trooper)
       - [STR_CULTIST_HEAVY_TROOPER1, STR_CULTIST_HEAVY_TROOPER2]    #index 4 (Cultist Heavy Trooper)
-      - [STR_CULTIST_LIGHT_TROOPER1, STR_CULTIST_LIGHT_TROOPER2]    #index 5 (Cultist Light Trooper)
-      - [STR_CULTIST_LIGHT_TROOPER1, STR_CULTIST_LIGHT_TROOPER2]    #index 6 (Cultist Light Trooper)
+      - [STR_CULTIST_LIGHT_TROOPER1, STR_CULTIST_LIGHT_TROOPER2, STR_CULTIST_LIGHT_TROOPER3]    #index 5 (Cultist Light Trooper)
+      - [STR_CULTIST_LIGHT_TROOPER1, STR_CULTIST_LIGHT_TROOPER2, STR_CULTIST_LIGHT_TROOPER3]    #index 6 (Cultist Light Trooper)
       - [STR_CULTIST_HEAVY_TROOPER1, STR_CULTIST_HEAVY_TROOPER2]    #index 7 (Cultist Heavy Trooper)
 
 
 
 ### Renegades ###
 
-#  - id: STR_RENEGADES
-#    membersRandom:
-#      - [STR_RENEGADE_OFFICER]           #index 0 (Renegade Officer)
-#      - [STR_RENEGADE_CHAMPION]          #index 1 (Renegade Champion)
-#      - [STR_RENEGADE_SENTINEL]          #index 2 (Renegade Sentinel)
-#      - [STR_RENEGADE_HEAVY_TROOPER]     #index 3 (Renegade Heavy Trooper)
-#      - [STR_RENEGADE_TECHNICIAN]        #index 4 (Renegade Technician)
-#      - [STR_RENEGADE_LIGHT_TROOPER]     #index 5 (Renegade Light Trooper)
-#      - [STR_RENEGADE_LIGHT_TROOPER]     #index 6 (Renegade Light Trooper)
-#      - [STR_RENEGADE_HEAVY_TROOPER]     #index 7 (Renegade Heavy Trooper)
+  - id: STR_RENEGADES
+    membersRandom:
+      - [STR_RENEGADE_LIGHT_TROOPER1]     #index 0 (Renegade Officer)
+      - [STR_RENEGADE_LIGHT_TROOPER1]     #index 1 (Renegade Champion)
+      - [STR_RENEGADE_LIGHT_TROOPER1]     #index 2 (Renegade Sentinel)
+      - [STR_RENEGADE_LIGHT_TROOPER1]     #index 3 (Renegade Heavy Trooper)
+      - [STR_RENEGADE_LIGHT_TROOPER1]     #index 4 (Renegade Technician)
+      - [STR_RENEGADE_LIGHT_TROOPER1]     #index 5 (Renegade Light Trooper)
+      - [STR_RENEGADE_LIGHT_TROOPER1]     #index 6 (Renegade Light Trooper)
+      - [STR_RENEGADE_LIGHT_TROOPER1]     #index 7 (Renegade Heavy Trooper)
 
 
 ### Veteran Renegades ###

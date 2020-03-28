@@ -385,8 +385,8 @@ extraSprites:
       292: Resources/Items/IG/Power_Pack/Power_Pack_Inv.png
       293: Resources/Items/IG/Laspistol/Laspistol_Inv.png
 #      294: FREE
-      295: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Inv.gif
-      296: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Inv.gif
+      295: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Inv.png
+      296: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Inv.png
       297: Resources/Items/IG/Sentinel_Weapons/Sentinel_Missile_Left_Inv.png
       298: Resources/Items/IG/Sentinel_Weapons/Sentinel_Missile_Right_Inv.png
       299: Resources/Items/IG/Sentinel_Weapons/Sentinel_Missile_Clip_Inv.png
@@ -439,9 +439,21 @@ extraSprites:
       346: Resources/Items/SM/Plasma_Cannon/Plasma_Cannon_Inv.png
       347: Resources/Items/Enemy/Chaos_Plasma_Cannon/Chaos_Plasma_Cannon_Inv.png
       348: Resources/Items/Common/Plasma_Cannon_Charge/Plasma_Cannon_Charge_Inv.png
-
-
-
+      349: Resources/Items/IG/Autopistol/Autopistol_Inv.png
+      350: Resources/Items/IG/Autopistol/Autopistol_Clip_Inv.png
+      351: Resources/Items/Enemy/Autopistol_Chaos/Autopistol_Chaos_Inv.png
+      352: Resources/Items/IG/Autogun/Autogun_Inv.png
+      353: Resources/Items/IG/Autogun/Autogun_Clip_Inv.png
+      354: Resources/Items/Enemy/Autogun_Chaos/Autogun_Chaos_Inv.png
+      355: Resources/Items/IG/Heavy_Stubber/Heavy_Stubber_Inv.png
+      356: Resources/Items/IG/Heavy_Stubber/Heavy_Stubber_Deployed_Inv.png
+      357: Resources/Items/IG/Heavy_Stubber/Heavy_Stubber_Belt_Inv.png
+      358: Resources/Items/Enemy/Heavy_Stubber_Chaos/Heavy_Stubber_Chaos_Inv.png
+      359: Resources/Items/SM/Shotgun_SM/Shotgun_SM_Inv.png
+      360: Resources/Items/SM/Shotgun_SM/Shotgun_Shells_Inv.png
+      361: Resources/Items/SM/Shotgun_SM/Shotgun_Slugs_Inv.png
+      362: Resources/Items/IG/Shotgun_IG/Shotgun_IG_Inv.png
+      363: Resources/Items/Enemy/Shotgun_Chaos/Shotgun_Chaos_Inv.png
 
 
 #ENEMY RELATED CORPSES
@@ -453,6 +465,7 @@ extraSprites:
       1003: Resources/Armor/Enemy/Cultists/Cultist_Armor/Cultist_Armor2_Corpse_Inv.png
       1004: Resources/Armor/Enemy/Cultists/Cultist_Overcoat/Cultist_Overcoat_Corpse_Inv.png
       1005: Resources/Armor/Enemy/Cultists/Cultist_Robes/Cultist_Robes_Corpse_Inv.png
+      1006: Resources/Armor/Enemy/Cultists/Cultist_Clothes/Cultist_Clothes3_Corpse_Inv.png
 
 #renegades
       1010: Resources/Armor/Enemy/Renegades/Renegade_Flak_Armor/Renegade_Flak_Armor1_Corpse_Inv.png
@@ -531,8 +544,8 @@ extraSprites:
       259: Resources/Items/IG/Power_Pack/Power_Pack_Floor.png
       260: Resources/Items/IG/Laspistol/Laspistol_Floor.png
 #      261: 
-      262: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Floor.gif
-      263: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Floor.gif
+      262: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Floor.png
+      263: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Floor.png
       264: Resources/Items/Common/Fire_Extinguisher/Fire_Extinguisger_Floor.png
       265: Resources/Items/SM/Bolter_SM/Bolter_SM_Floor.gif
       266: Resources/Items/SM/Bolter_SM_Scoped/Bolter_SM_Scoped_Floor.gif
@@ -575,6 +588,21 @@ extraSprites:
       303: Resources/Items/SM/Plasma_Cannon/Plasma_Cannon_Floor.png
       304: Resources/Items/Enemy/Chaos_Plasma_Cannon/Chaos_Plasma_Cannon_Floor.png
       305: Resources/Items/Common/Plasma_Cannon_Charge/Plasma_Cannon_Charge_Floor.png
+      306: Resources/Items/IG/Autopistol/Autopistol_Floor.png
+      307: Resources/Items/IG/Autopistol/Autopistol_Clip_Floor.png
+      308: Resources/Items/Enemy/Autopistol_Chaos/Autopistol_Chaos_Floor.png
+      309: Resources/Items/IG/Autogun/Autogun_Floor.png
+      310: Resources/Items/IG/Autogun/Autogun_Clip_Floor.png
+      311: Resources/Items/Enemy/Autogun_Chaos/Autogun_Chaos_Floor.png
+      312: Resources/Items/IG/Heavy_Stubber/Heavy_Stubber_Floor.png
+      313: Resources/Items/IG/Heavy_Stubber/Heavy_Stubber_Belt_Floor.png
+      314: Resources/Items/Enemy/Heavy_Stubber_Chaos/Heavy_Stubber_Chaos_Floor.png
+      315: Resources/Items/SM/Shotgun_SM/Shotgun_SM_Floor.png
+      316: Resources/Items/SM/Shotgun_SM/Shotgun_Shells_Floor.png
+      317: Resources/Items/SM/Shotgun_SM/Shotgun_Slugs_Floor.png
+      318: Resources/Items/IG/Shotgun_IG/Shotgun_IG_Floor.png
+      319: Resources/Items/Enemy/Shotgun_Chaos/Shotgun_Chaos_Floor.png
+
 
 
 #ENEMY RELATED CORPSES
@@ -585,6 +613,7 @@ extraSprites:
       1003: Resources/Armor/Enemy/Cultists/Cultist_Armor/Cultist_Armor2_Corpse_Floor.png
       1004: Resources/Armor/Enemy/Cultists/Cultist_Overcoat/Cultist_Overcoat_Corpse_Floor.png
       1005: Resources/Armor/Enemy/Cultists/Cultist_Robes/Cultist_Robes_Corpse_Floor.png
+      1006: Resources/Armor/Enemy/Cultists/Cultist_Clothes/Cultist_Clothes3_Corpse_Floor.png
 #renegades
       1010: Resources/Armor/Enemy/Renegades/Renegade_Flak_Armor/Renegade_Flak_Armor1_Corpse_Floor.png
 
@@ -685,9 +714,21 @@ extraSprites:
       928: Resources/Items/SM/Plasma_Cannon/Plasma_Cannon_Hand.png
       936: Resources/Items/Enemy/Chaos_Plasma_Cannon/Chaos_Plasma_Cannon_Hand.png
       944: Resources/Items/Common/Plasma_Cannon_Charge/Plasma_Cannon_Charge_Hand.png
-
-
-
+      952: Resources/Items/IG/Autopistol/Autopistol_Hand.png
+      960: Resources/Items/IG/Autopistol/Autopistol_Clip_Hand.png
+      968: Resources/Items/Enemy/Autopistol_Chaos/Autopistol_Chaos_Hand.png
+      976: Resources/Items/IG/Autogun/Autogun_Hand.png
+      984: Resources/Items/IG/Autogun/Autogun_Clip_Hand.png
+      992: Resources/Items/Enemy/Autogun_Chaos/Autogun_Chaos_Hand.png
+      1000: Resources/Items/IG/Heavy_Stubber/Heavy_Stubber_Hand.png
+      1008: Resources/Items/IG/Heavy_Stubber/Heavy_Stubber_Deployed_Hand.png
+      1016: Resources/Items/IG/Heavy_Stubber/Heavy_Stubber_Belt_Hand.png
+      1024: Resources/Items/Enemy/Heavy_Stubber_Chaos/Heavy_Stubber_Chaos_Hand.png
+      1032: Resources/Items/SM/Shotgun_SM/Shotgun_SM_Hand.png
+      1040: Resources/Items/SM/Shotgun_SM/Shotgun_Shells_Hand.png
+      1048: Resources/Items/SM/Shotgun_SM/Shotgun_Slugs_Hand.png
+      1056: Resources/Items/IG/Shotgun_IG/Shotgun_IG_Hand.png
+      1064: Resources/Items/Enemy/Shotgun_Chaos/Shotgun_Chaos_Hand.png
 
 
 #PROJECTILES ( The corresponding file id is 35*[bulletSprite] )
@@ -1251,6 +1292,12 @@ extraSprites:
     files:
       0: Resources/Armor/Enemy/Cultists/Cultist_Clothes/Cultist_Clothes2_Inv.png
 
+#Cultist (Variant 3)
+  - type: CULTIST_CLOTHES3.SPK
+    singleImage: true
+    files:
+      0: Resources/Armor/Enemy/Cultists/Cultist_Clothes/Cultist_Clothes3_Inv.png
+
 
 #Cultist Armor (Variant 1)
   - type: CULTIST_ARMOR1.SPK
@@ -1781,6 +1828,15 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armor/Enemy/Cultists/Cultist_Clothes/Cultist_Clothes2_Battlescape.png
+
+#Cultist (Clothes Variant 3)
+  - type: CULTIST_CLOTHES3.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/Enemy/Cultists/Cultist_Clothes/Cultist_Clothes3_Battlescape.png
 
 #Cultist (Armor)
   - type: CULTIST_ARMOR1.PCK
