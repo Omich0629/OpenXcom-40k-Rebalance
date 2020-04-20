@@ -22,10 +22,24 @@ ufopaedia:
 
   - delete: STR_HEAVY_CANNON
 
-  - id: STR_HEAVY_CANNON
+#Astartes Sniper Rifle
+
+  - id: STR_SNIPER_RIFLE_SM
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_HEAVY_CANNON_UFOPEDIA
     requires:
       - STR_SNIPER_RIFLE_TECH
     listOrder: 11900
+
+  - id: STR_SNIPER_RIFLE_AMMO_AP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+
+  - id: STR_SNIPER_RIFLE_AMMO_HE
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+
+  - id: STR_SNIPER_RIFLE_AMMO_I
+    type_id: 4
+    section: STR_NOT_AVAILABLE

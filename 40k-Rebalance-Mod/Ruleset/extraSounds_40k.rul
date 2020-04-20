@@ -122,4 +122,15 @@ extraSounds:
       1034: Resources/Sound/Laser_Weapon/Laser_Weapon_Fire4.wav
       1035: Resources/Sound/Laser_Weapon/Laser_Weapon_Fire5.wav
 
+      1036: Resources/Sound/Flamer_Weapon/Flamer_Weapon_Fire1.wav
+      1037: Resources/Sound/Flamer_Weapon/Flamer_Weapon_Fire2.wav
+      1038: Resources/Sound/Flamer_Weapon/Flamer_Weapon_Fire3.wav
+      1039: Resources/Sound/Flamer_Weapon/Flamer_Weapon_Fire4.wav
+      1040: Resources/Sound/Flamer_Weapon/Flamer_Weapon_Fire5.wav
+
+      1041: Resources/Sound/Sniper_Rifle/Sniper_Rifle_Fire1.wav
+
+      1042: Resources/Sound/Bolt_Weapon/Bolt_Weapon_Fire1.wav
+      1043: Resources/Sound/Bolt_Weapon/Bolt_Weapon_Fire2.wav
+      1044: Resources/Sound/Bolt_Weapon/Bolt_Weapon_Hit.wav
 

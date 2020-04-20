@@ -262,7 +262,7 @@ extraSprites:
       151: Resources/Animations/Meltagun_Hit.gif
       161: Resources/Animations/Plasma_hit.gif
       171: Resources/Animations/Heavy_Plasma_Hit.gif
-
+      181: Resources/Animations/Bolt_Hit.png
 
 #RANKS
       300: Resources/Ranks/Enginseer_rankBattleSprite.png #Enginseer rank (1 frame)
@@ -318,9 +318,9 @@ extraSprites:
       225: Resources/Items/SM/Combi_Plasma/MC_Combi_Plasma_Inv.gif
       226: Resources/Items/IG/Missile_Launcher_IG/IG_MLauncher_Inv.gif
       227: Resources/Items/IG/Missile_Launcher_IG/IG_MLauncher_Inv_deployed.gif
-      228: Resources/Items/IG/Heavy_Bolter_IG/IG_HeavyBolter_AP_Case_Inv.gif
-      229: Resources/Items/IG/Heavy_Bolter_IG/IG_HeavyBolter_EX_Case_Inv.gif
-      230: Resources/Items/IG/Heavy_Bolter_IG/IG_HeavyBolter_I_Case_Inv.gif
+      228: Resources/Items/IG/Heavy_Bolter_IG/Heavy_Bolter_IG_Inv.png
+      229: Resources/Items/IG/Heavy_Bolter_IG/Heavy_Bolter_IG_Deployed_Inv.png
+      230: Resources/Items/Enemy/Heavy_Bolter_Chaos/Heavy_Bolter_Chaos_Inv.png
 #      231:
       232: Resources/Items/Common/Multimelta_Charge/Multimelta_Charge_Inv.png
       233: Resources/Items/Common/Omnissian_Axe/Omnissian_Axe_Inv.png
@@ -348,25 +348,25 @@ extraSprites:
       255: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_AP_Clip_Inv.gif
       256: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_EX_Clip_Inv.gif
       257: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_I_Clip_Inv.gif
-      258: Resources/Items/SM/SM_Lascannon/Lascannon_Astartes_Inv.gif
+      258: Resources/Items/SM/Lascannon_SM/Lascannon_SM_Inv.png
       259: Resources/Items/SM/Power_Fist/Power_Fist_Inv.gif
       260: Resources/Items/SM/Power_Sword/Power_Sword_Inv.gif
       261: Resources/Items/Enemy/Chaos_Power_Sword/Chaos_Power_Sword_Inv.gif
       262: Resources/Items/SM/Power_Dagger/Power_Dagger_Inv.gif
       263: Resources/Items/Enemy/Chaos_Power_Dagger/Chaos_Power_Dagger_Inv.gif
-      264: Resources/Items/SM/SM_Heavy_Bolter/SM_HeavyBolter_Inv.gif
-      265: Resources/Items/SM/SM_Heavy_Bolter/SM_HeavyBolter_AP_Case_Inv.gif
-      266: Resources/Items/SM/SM_Heavy_Bolter/SM_HeavyBolter_EX_Case_Inv.gif
-      267: Resources/Items/SM/SM_Heavy_Bolter/SM_HeavyBolter_I_Case_Inv.gif
+      264: Resources/Items/SM/Heavy_Bolter_SM/Heavy_Bolter_SM_Inv.png
+      265: Resources/Items/SM/Heavy_Bolter_SM/Heavy_Bolter_Case_EX_Inv.png
+      266: Resources/Items/SM/Heavy_Bolter_SM/Heavy_Bolter_Case_AP_Inv.png
+      267: Resources/Items/SM/Heavy_Bolter_SM/Heavy_Bolter_Case_I_Inv.png
       268: Resources/Items/SM/SM_Missile_Launcher/SM_MLauncher_Inv.gif
       269: Resources/Items/SM/Assault_Cannon/Assault_Cannon_Inv.gif
-      270: Resources/Items/SM/Stormbolter/Stormbolter_Inv.gif
-      271: Resources/Items/SM/Stormbolter/Stormbolter_Clip_Inv.gif
-      272: Resources/Items/SM/Stormbolter/Stormbolter_Clip_EX_Inv.gif
-      273: Resources/Items/SM/Stormbolter/Stormbolter_Clip_AP_Inv.gif
+      270: Resources/Items/SM/Storm_Bolter_SM/Storm_Bolter_SM_Inv.png
+      271: Resources/Items/SM/Storm_Bolter_SM/Storm_Bolter_Magazine_EX_Inv.png
+      272: Resources/Items/SM/Storm_Bolter_SM/Storm_Bolter_Magazine_AP_Inv.png
+      273: Resources/Items/SM/Storm_Bolter_SM/Storm_Bolter_Magazine_I_Inv.png
       274: Resources/Items/Enemy/Chaos_Stormbolter/Chaos_Stormbolter_Inv.gif
-      275: Resources/Items/Enemy/Chaos_Boltpistol/Chaos_Boltpistol_Inv.gif
-      276: Resources/Items/SM/Stormbolter/Stormbolter_Belt_Inv.png
+      275: Resources/Items/Enemy/Boltpistol_Chaos/Boltpistol_Chaos_Inv.png
+#      276: 
       277: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Ammo_Inv.gif
       278: Resources/Items/Common/Frag_Grenade/Frag_Granade_Inv.gif
       279: Resources/Items/Common/Krak_Grenade/Krak_Granade_Inv.gif
@@ -381,9 +381,9 @@ extraSprites:
       288: Resources/Items/Enemy/Chaos_Dreadnought_Weapons/Chaos_Dreadnought_Fist_Inv.png
       289: Resources/Items/Enemy/Chaos_Dreadnought_Weapons/Chaos_Dreadnought_Missile_Inv.png
       290: Resources/Items/Enemy/Chaos_Dreadnought_Weapons/Chaos_Dreadnought_Plasma_Inv.png
-      291: Resources/Items/IG/Lasgun/Lasgun_Inv.png
-      292: Resources/Items/IG/Power_Pack/Power_Pack_Inv.png
-      293: Resources/Items/IG/Laspistol/Laspistol_Inv.png
+      291: Resources/Items/IG/Lasgun_IG/Lasgun_IG_Inv.png
+      292: Resources/Items/IG/Lasgun_IG/Lasgun_Power_Pack_Inv.png
+      293: Resources/Items/IG/Laspistol_IG/Laspistol_IG_Inv.png
 #      294: FREE
       295: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Inv.png
       296: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Inv.png
@@ -394,14 +394,14 @@ extraSprites:
       301: Resources/Items/SM/Dreadnought_Weapons/Dreadnougth_Cannon_Clip_Inv.png
       302: Resources/Items/Common/Fire_Extinguisher/Fire_Extinguisger_Inv.gif
       303: Resources/Items/IG/Lascarabine/Lascarbine_Inv.png
-      304: Resources/Items/SM/Bolter_SM/Bolter_SM_Inv.gif
-      305: Resources/Items/SM/Bolter_SM_Scoped/Bolter_SM_Scoped_Inv.gif
-      306: Resources/Items/SM/Bolter_MC/Bolter_MC_Inv.gif
-      307: Resources/Items/SM/Bolter_MC_Scoped/Bolter_MC_Scoped_Inv.gif
-      308: Resources/Items/IG/Bolter_IG/Bolter_IG_Inv.gif
-      309: Resources/Items/SM/Boltpistol_SM/Boltpistol_SM_Inv.gif
-      310: Resources/Items/IG/Boltpistol_IG/Boltpistol_IG_Inv.gif
-      311: Resources/Items/SM/Boltpistol_MC/Boltpistol_MC_Inv.gif
+      304: Resources/Items/SM/Bolter_SM/Bolter_SM_Inv.png
+      305: Resources/Items/SM/Bolter_SM_Scoped/Bolter_SM_Scoped_Inv.png
+      306: Resources/Items/SM/Bolter_MC/Bolter_MC_Inv.png
+      307: Resources/Items/SM/Bolter_MC_Scoped/Bolter_MC_Scoped_Inv.png
+      308: Resources/Items/IG/Bolter_IG/Bolter_IG_Inv.png
+      309: Resources/Items/SM/Boltpistol_SM/Boltpistol_SM_Inv.png
+      310: Resources/Items/IG/Boltpistol_IG/Boltpistol_IG_Inv.png
+      311: Resources/Items/SM/Boltpistol_MC/Boltpistol_MC_Inv.png
       312: Resources/Items/IG/Hotshot_Ammo/Hotshot_Clip_Small_Inv.png
       313: Resources/Items/IG/Hotshot_Ammo/Hotshot_Clip_Large_Inv.gif
       314: Resources/Items/IG/Hotshot_Laspistol/Hotshot_Laspistol_Inv.gif
@@ -439,21 +439,32 @@ extraSprites:
       346: Resources/Items/SM/Plasma_Cannon/Plasma_Cannon_Inv.png
       347: Resources/Items/Enemy/Chaos_Plasma_Cannon/Chaos_Plasma_Cannon_Inv.png
       348: Resources/Items/Common/Plasma_Cannon_Charge/Plasma_Cannon_Charge_Inv.png
-      349: Resources/Items/IG/Autopistol/Autopistol_Inv.png
-      350: Resources/Items/IG/Autopistol/Autopistol_Clip_Inv.png
+      349: Resources/Items/IG/Autopistol_IG/Autopistol_IG_Inv.png
+      350: Resources/Items/IG/Autopistol_IG/Autopistol_Clip_Inv.png
       351: Resources/Items/Enemy/Autopistol_Chaos/Autopistol_Chaos_Inv.png
-      352: Resources/Items/IG/Autogun/Autogun_Inv.png
-      353: Resources/Items/IG/Autogun/Autogun_Clip_Inv.png
+      352: Resources/Items/IG/Autogun_IG/Autogun_IG_Inv.png
+      353: Resources/Items/IG/Autogun_IG/Autogun_Clip_Inv.png
       354: Resources/Items/Enemy/Autogun_Chaos/Autogun_Chaos_Inv.png
-      355: Resources/Items/IG/Heavy_Stubber/Heavy_Stubber_Inv.png
-      356: Resources/Items/IG/Heavy_Stubber/Heavy_Stubber_Deployed_Inv.png
-      357: Resources/Items/IG/Heavy_Stubber/Heavy_Stubber_Belt_Inv.png
+      355: Resources/Items/IG/Heavy_Stubber_IG/Heavy_Stubber_IG_Inv.png
+      356: Resources/Items/IG/Heavy_Stubber_IG/Heavy_Stubber_IG_Deployed_Inv.png
+      357: Resources/Items/IG/Heavy_Stubber_IG/Heavy_Stubber_Belt_Inv.png
       358: Resources/Items/Enemy/Heavy_Stubber_Chaos/Heavy_Stubber_Chaos_Inv.png
       359: Resources/Items/SM/Shotgun_SM/Shotgun_SM_Inv.png
       360: Resources/Items/SM/Shotgun_SM/Shotgun_Shells_Inv.png
       361: Resources/Items/SM/Shotgun_SM/Shotgun_Slugs_Inv.png
       362: Resources/Items/IG/Shotgun_IG/Shotgun_IG_Inv.png
       363: Resources/Items/Enemy/Shotgun_Chaos/Shotgun_Chaos_Inv.png
+      364: Resources/Items/SM/Flamer_SM/Flamer_SM_Inv.png
+      365: Resources/Items/SM/Flamer_SM/Flamer_Fuel_Inv.png
+      366: Resources/Items/Enemy/Flamer_Chaos/Flamer_Chaos_Inv.png
+      367: Resources/Items/IG/Flamer_IG/Flamer_IG_Inv.png
+      368: Resources/Items/SM/Boltpistol_SM/Boltpistol_Magazine_EX_Inv.png
+      369: Resources/Items/SM/Boltpistol_SM/Boltpistol_Magazine_AP_Inv.png
+      370: Resources/Items/SM/Boltpistol_SM/Boltpistol_Magazine_I_Inv.png
+      371: Resources/Items/SM/Bolter_SM/Bolter_Magazine_EX_Inv.png
+      372: Resources/Items/SM/Bolter_SM/Bolter_Magazine_AP_Inv.png
+      373: Resources/Items/SM/Bolter_SM/Bolter_Magazine_I_Inv.png
+      374: Resources/Items/Enemy/Bolter_Chaos/Bolter_Chaos_Inv.png
 
 
 #ENEMY RELATED CORPSES
@@ -505,12 +516,12 @@ extraSprites:
 #ITEMS (201 - ?)
       221: Resources/Items/Common/Chainsword/MC_ChainSword_FloorSprite.gif
       222: Resources/Items/Common/Chainsword/ChainSword_FloorSprite.gif
-#      223: FREE
+      223: Resources/Items/IG/Heavy_Bolter_IG/Heavy_Bolter_IG_Floor.png
       224: Resources/Items/SM/Combi_Plasma/Combi_Plasma_Floor.gif
       225: Resources/Items/SM/Combi_Plasma/MC_Combi_Plasma_Floor.gif
       226: Resources/Items/IG/Missile_Launcher_IG/IG_MLauncher_Floor.gif
       227: Resources/Items/SM/First_Aid_Kit/FirstAidKit_Floor.GIF
-      228: Resources/Items/IG/Heavy_Bolter_IG/IG_HeavyBolter_Case_Floor.gif
+      228: Resources/Items/Enemy/Heavy_Bolter_Chaos/Heavy_Bolter_Chaos_Floor.png
       229: Resources/Items/Common/Omnissian_Axe/Omnissian_Axe_Floor.png
       230: Resources/Items/Common/NonLethal_Grav_Round/NonLethal_Grav_Round_Floor.gif
 #      231: 
@@ -524,37 +535,37 @@ extraSprites:
       239: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Floor.gif
       240: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_Floor.gif
       241: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_Clip_Floor.gif
-      242: Resources/Items/SM/SM_Lascannon/Lascannon_Astartes_Floor.gif
+      242: Resources/Items/SM/Lascannon_SM/Lascannon_SM_Floor.png
       243: Resources/Items/SM/Power_Fist/Power_Fist_Floor.gif
       244: Resources/Items/SM/Power_Sword/Power_Sword_Floor.gif
       245: Resources/Items/Enemy/Chaos_Power_Sword/Chaos_Power_Sword_Floor.gif
       246: Resources/Items/SM/Power_Dagger/Power_Dagger_Floor.gif
-      247: Resources/Items/SM/SM_Heavy_Bolter/SM_HeavyBolter_Floor.gif
-      248: Resources/Items/SM/SM_Heavy_Bolter/SM_HeavyBolter_Case_Floor.gif
+      247: Resources/Items/SM/Heavy_Bolter_SM/Heavy_Bolter_SM_Floor.png
+      248: Resources/Items/SM/Heavy_Bolter_SM/Heavy_Bolter_Case_Floor.png
       249: Resources/Items/SM/SM_Missile_Launcher/SM_MLauncher_Floor.gif
       250: Resources/Items/SM/Assault_Cannon/Assault_Cannon_Floor.gif
-      251: Resources/Items/SM/Stormbolter/Stormbolter_Floor.gif
-      252: Resources/Items/SM/Stormbolter/Stormbolter_Clip_Floor.gif
-      253: Resources/Items/Enemy/Chaos_Boltpistol/Chaos_Boltpistol_Floor.gif
-      254: Resources/Items/SM/Stormbolter/Stormbolter_Belt_Floor.gif
+      251: Resources/Items/SM/Storm_Bolter_SM/Storm_Bolter_SM_Floor.png
+      252: Resources/Items/SM/Storm_Bolter_SM/Storm_Bolter_Magazine_Floor.png
+      253: Resources/Items/Enemy/Boltpistol_Chaos/Boltpistol_Chaos_Floor.png
+#      254: 
       255: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Ammo_Floor.gif
       256: Resources/Items/Common/Krak_Grenade/Krak_Granade_Floor.png
       257: Resources/Items/Common/Proximity_Grenade/Proximity_Grenade_Floor.gif
-      258: Resources/Items/IG/Lasgun/Lasgun_Floor.png
-      259: Resources/Items/IG/Power_Pack/Power_Pack_Floor.png
-      260: Resources/Items/IG/Laspistol/Laspistol_Floor.png
+      258: Resources/Items/IG/Lasgun_IG/Lasgun_IG_Floor.png
+      259: Resources/Items/IG/Lasgun_IG/Lasgun_Power_Pack_Floor.png
+      260: Resources/Items/IG/Laspistol_IG/Laspistol_IG_Floor.png
 #      261: 
       262: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Floor.png
       263: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Floor.png
       264: Resources/Items/Common/Fire_Extinguisher/Fire_Extinguisger_Floor.png
-      265: Resources/Items/SM/Bolter_SM/Bolter_SM_Floor.gif
-      266: Resources/Items/SM/Bolter_SM_Scoped/Bolter_SM_Scoped_Floor.gif
-      267: Resources/Items/SM/Bolter_MC/Bolter_MC_Floor.gif
-      268: Resources/Items/SM/Bolter_MC_Scoped/Bolter_MC_Scoped_Floor.gif
-      269: Resources/Items/IG/Bolter_IG/Bolter_IG_Floor.gif
-      270: Resources/Items/SM/Boltpistol_SM/Boltpistol_SM_Floor.gif
-      271: Resources/Items/IG/Boltpistol_IG/Boltpistol_IG_Floor.gif
-      272: Resources/Items/SM/Boltpistol_MC/Boltpistol_MC_Floor.gif
+      265: Resources/Items/SM/Bolter_SM/Bolter_SM_Floor.png
+      266: Resources/Items/SM/Bolter_SM_Scoped/Bolter_SM_Scoped_Floor.png
+      267: Resources/Items/SM/Bolter_MC/Bolter_MC_Floor.png
+      268: Resources/Items/SM/Bolter_MC_Scoped/Bolter_MC_Scoped_Floor.png
+      269: Resources/Items/IG/Bolter_IG/Bolter_IG_Floor.png
+      270: Resources/Items/SM/Boltpistol_SM/Boltpistol_SM_Floor.png
+      271: Resources/Items/IG/Boltpistol_IG/Boltpistol_IG_Floor.png
+      272: Resources/Items/SM/Boltpistol_MC/Boltpistol_MC_Floor.png
       273: Resources/Items/IG/Hotshot_Ammo/Hotshot_Clip_Small_Floor.png
       274: Resources/Items/IG/Hotshot_Ammo/Hotshot_Clip_Large_Floor.gif
       275: Resources/Items/IG/Hotshot_Laspistol/Hotshot_Laspistol_Floor.gif
@@ -588,20 +599,27 @@ extraSprites:
       303: Resources/Items/SM/Plasma_Cannon/Plasma_Cannon_Floor.png
       304: Resources/Items/Enemy/Chaos_Plasma_Cannon/Chaos_Plasma_Cannon_Floor.png
       305: Resources/Items/Common/Plasma_Cannon_Charge/Plasma_Cannon_Charge_Floor.png
-      306: Resources/Items/IG/Autopistol/Autopistol_Floor.png
-      307: Resources/Items/IG/Autopistol/Autopistol_Clip_Floor.png
+      306: Resources/Items/IG/Autopistol_IG/Autopistol_IG_Floor.png
+      307: Resources/Items/IG/Autopistol_IG/Autopistol_Clip_Floor.png
       308: Resources/Items/Enemy/Autopistol_Chaos/Autopistol_Chaos_Floor.png
-      309: Resources/Items/IG/Autogun/Autogun_Floor.png
-      310: Resources/Items/IG/Autogun/Autogun_Clip_Floor.png
+      309: Resources/Items/IG/Autogun_IG/Autogun_IG_Floor.png
+      310: Resources/Items/IG/Autogun_IG/Autogun_Clip_Floor.png
       311: Resources/Items/Enemy/Autogun_Chaos/Autogun_Chaos_Floor.png
-      312: Resources/Items/IG/Heavy_Stubber/Heavy_Stubber_Floor.png
-      313: Resources/Items/IG/Heavy_Stubber/Heavy_Stubber_Belt_Floor.png
+      312: Resources/Items/IG/Heavy_Stubber_IG/Heavy_Stubber_IG_Floor.png
+      313: Resources/Items/IG/Heavy_Stubber_IG/Heavy_Stubber_Belt_Floor.png
       314: Resources/Items/Enemy/Heavy_Stubber_Chaos/Heavy_Stubber_Chaos_Floor.png
       315: Resources/Items/SM/Shotgun_SM/Shotgun_SM_Floor.png
       316: Resources/Items/SM/Shotgun_SM/Shotgun_Shells_Floor.png
       317: Resources/Items/SM/Shotgun_SM/Shotgun_Slugs_Floor.png
       318: Resources/Items/IG/Shotgun_IG/Shotgun_IG_Floor.png
       319: Resources/Items/Enemy/Shotgun_Chaos/Shotgun_Chaos_Floor.png
+      320: Resources/Items/SM/Flamer_SM/Flamer_SM_Floor.png
+      321: Resources/Items/SM/Flamer_SM/Flamer_Fuel_Floor.png
+      322: Resources/Items/Enemy/Flamer_Chaos/Flamer_Chaos_Floor.png
+      323: Resources/Items/IG/Flamer_IG/Flamer_IG_Floor.png
+      324: Resources/Items/SM/Boltpistol_SM/Boltpistol_Magazine_Floor.png
+      325: Resources/Items/SM/Bolter_SM/Bolter_Magazine_Floor.png
+      326: Resources/Items/Enemy/Bolter_Chaos/Bolter_Chaos_Floor.png
 
 
 
@@ -634,7 +652,7 @@ extraSprites:
       288: Resources/Items/IG/Missile_Launcher_IG/IG_MLauncher_Hand_deployed.png
       296: Resources/Items/Common/Omnissian_Axe/Omnissian_Axe_Hand.png
       304: Resources/Items/SM/First_Aid_Kit/FirstAidKit_Hand.png
-      312: Resources/Items/IG/Heavy_Bolter_IG/IG_HeavyBolter_Case_Hand.gif
+      312: Resources/Items/Enemy/Heavy_Bolter_Chaos/Heavy_Bolter_Chaos_Hand.png
       320: Resources/Items/Common/NonLethal_Grav_Round/NonLethal_Grav_Round_Hand.png
 #      328: 
       336: Resources/Items/SM/Crozius_Arcanum/Crozius_Arcanum_Hand.png
@@ -643,30 +661,30 @@ extraSprites:
       360: Resources/Items/SM/Librarian_Staff/Librarian_Staff_Hand.png
       368: Resources/Items/Common/Spellbooks/Spellbook_Hand.gif
       376: Resources/Items/SM/Lightning_Claws/Lightning_Claws_Hand.png
-#      384: 
-#      392: 
+      384: Resources/Items/IG/Heavy_Bolter_IG/Heavy_Bolter_IG_Hand.png
+      392: Resources/Items/IG/Heavy_Bolter_IG/Heavy_Bolter_IG_Deployed_Hand.png
       400: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_Hand.png
       408: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_Clip_Hand.gif
-      416: Resources/Items/SM/SM_Lascannon/Lascannon_Astartes_Hand.png
+      416: Resources/Items/SM/Lascannon_SM/Lascannon_SM_Hand.png
       424: Resources/Items/SM/Power_Fist/Power_Fist_Hand.png
       432: Resources/Items/SM/Power_Sword/Power_Sword_Hand.png
       440: Resources/Items/Enemy/Chaos_Power_Sword/Chaos_Power_Sword_Hand.png
       448: Resources/Items/SM/Power_Dagger/Power_Dagger_Hand.png
-      456: Resources/Items/SM/SM_Heavy_Bolter/SM_HeavyBolter_Hand.png
-      464: Resources/Items/SM/SM_Heavy_Bolter/SM_HeavyBolter_Case_Hand.png
+      456: Resources/Items/SM/Heavy_Bolter_SM/Heavy_Bolter_SM_Hand.png
+      464: Resources/Items/SM/Heavy_Bolter_SM/Heavy_Bolter_Case_Hand.png
       472: Resources/Items/SM/SM_Missile_Launcher/SM_MLauncher_Hand.png
       480: Resources/Items/SM/Assault_Cannon/Assault_Cannon_Hand.png
-      488: Resources/Items/SM/Stormbolter/Stormbolter_Hand.png
-      496: Resources/Items/SM/Stormbolter/Stormbolter_Clip_Hand.gif
-      504: Resources/Items/Enemy/Chaos_Boltpistol/Chaos_Boltpistol_Hand.png
-      512: Resources/Items/SM/Stormbolter/Stormbolter_Belt_Hand.gif
+      488: Resources/Items/SM/Storm_Bolter_SM/Storm_Bolter_SM_Hand.png
+      496: Resources/Items/SM/Storm_Bolter_SM/Storm_Bolter_Magazine_Hand.png
+      504: Resources/Items/Enemy/Boltpistol_Chaos/Boltpistol_Chaos_Hand.png
+#      512: 
       520: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Ammo_Hand.png
       528: Resources/Items/Common/Frag_Grenade/Frag_Granade_Hand.png
       536: Resources/Items/Common/Krak_Grenade/Krak_Granade_Hand.png
       544: Resources/Items/Common/Proximity_Grenade/Proximity_Grenade_Hand.png
-      552: Resources/Items/IG/Lasgun/Lasgun_Hand.png
-      560: Resources/Items/IG/Power_Pack/Power_Pack_Hand.png
-      568: Resources/Items/IG/Laspistol/Laspistol_Hand.png
+      552: Resources/Items/IG/Lasgun_IG/Lasgun_IG_Hand.png
+      560: Resources/Items/IG/Lasgun_IG/Lasgun_Power_Pack_Hand.png
+      568: Resources/Items/IG/Laspistol_IG/Laspistol_IG_Hand.png
 #      576: 
       584: Resources/Items/Enemy/Chaos_Lasgun/Chaos_Lasgun_Hand.png
       592: Resources/Items/Enemy/Chaos_Laspistol/Chaos_Laspistol_Hand.png
@@ -714,21 +732,28 @@ extraSprites:
       928: Resources/Items/SM/Plasma_Cannon/Plasma_Cannon_Hand.png
       936: Resources/Items/Enemy/Chaos_Plasma_Cannon/Chaos_Plasma_Cannon_Hand.png
       944: Resources/Items/Common/Plasma_Cannon_Charge/Plasma_Cannon_Charge_Hand.png
-      952: Resources/Items/IG/Autopistol/Autopistol_Hand.png
-      960: Resources/Items/IG/Autopistol/Autopistol_Clip_Hand.png
+      952: Resources/Items/IG/Autopistol_IG/Autopistol_IG_Hand.png
+      960: Resources/Items/IG/Autopistol_IG/Autopistol_Clip_Hand.png
       968: Resources/Items/Enemy/Autopistol_Chaos/Autopistol_Chaos_Hand.png
-      976: Resources/Items/IG/Autogun/Autogun_Hand.png
-      984: Resources/Items/IG/Autogun/Autogun_Clip_Hand.png
+      976: Resources/Items/IG/Autogun_IG/Autogun_IG_Hand.png
+      984: Resources/Items/IG/Autogun_IG/Autogun_Clip_Hand.png
       992: Resources/Items/Enemy/Autogun_Chaos/Autogun_Chaos_Hand.png
-      1000: Resources/Items/IG/Heavy_Stubber/Heavy_Stubber_Hand.png
-      1008: Resources/Items/IG/Heavy_Stubber/Heavy_Stubber_Deployed_Hand.png
-      1016: Resources/Items/IG/Heavy_Stubber/Heavy_Stubber_Belt_Hand.png
+      1000: Resources/Items/IG/Heavy_Stubber_IG/Heavy_Stubber_IG_Hand.png
+      1008: Resources/Items/IG/Heavy_Stubber_IG/Heavy_Stubber_IG_Deployed_Hand.png
+      1016: Resources/Items/IG/Heavy_Stubber_IG/Heavy_Stubber_Belt_Hand.png
       1024: Resources/Items/Enemy/Heavy_Stubber_Chaos/Heavy_Stubber_Chaos_Hand.png
       1032: Resources/Items/SM/Shotgun_SM/Shotgun_SM_Hand.png
       1040: Resources/Items/SM/Shotgun_SM/Shotgun_Shells_Hand.png
       1048: Resources/Items/SM/Shotgun_SM/Shotgun_Slugs_Hand.png
       1056: Resources/Items/IG/Shotgun_IG/Shotgun_IG_Hand.png
       1064: Resources/Items/Enemy/Shotgun_Chaos/Shotgun_Chaos_Hand.png
+      1072: Resources/Items/SM/Flamer_SM/Flamer_SM_Hand.png
+      1080: Resources/Items/SM/Flamer_SM/Flamer_Fuel_Hand.png
+      1088: Resources/Items/Enemy/Flamer_Chaos/Flamer_Chaos_Hand.png
+      1096: Resources/Items/IG/Flamer_IG/Flamer_IG_Hand.png
+      1104: Resources/Items/SM/Boltpistol_SM/Boltpistol_Magazine_Hand.png
+      1112: Resources/Items/SM/Bolter_SM/Bolter_Magazine_Hand.png
+      1120: Resources/Items/Enemy/Bolter_Chaos/Bolter_Chaos_Hand.png
 
 
 #PROJECTILES ( The corresponding file id is 35*[bulletSprite] )

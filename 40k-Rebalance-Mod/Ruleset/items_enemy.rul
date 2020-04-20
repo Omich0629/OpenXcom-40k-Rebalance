@@ -5,6 +5,7 @@ items:
 
   - delete: STR_FIXED_SONIC_CANON 
   - delete: STR_SONIC_CANON
+  - delete: STR_SNIPER_CHAOS
 
 ### CHAOS STUB WEAPONS ###
 
@@ -365,66 +366,158 @@ items:
 
 
 ### Chaos Bolters ###
+  - delete: STR_BOLTPISTOL_CHAOS
+  - delete: STR_BOLTERC
 
 #Chaos Bolt pistol
-
-  - delete: STR_BOLTPISTOL_CHAOS
-
   - type: STR_BOLTPISTOL_CHAOS
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
-    size: 0.2
-    dropoff: 5
-    requires:
-      - STR_CHAOS_ONLY
-    costBuy: 0
-    costSell: 1000
-    weight: 15
+#RESOURCES
     bigSprite: 275
     floorSprite: 253
     handSprite: 504
     bulletSprite: 6
-    fireSound: 707
-    compatibleAmmo:
-      - STR_PISTOL_CLIP
-      - STR_PISTOL_CLIP_EX
-      - STR_PISTOL_CLIP_AP
-    accuracySnap: 55
-    tuSnap: 21
+    fireSound: [1042, 1043]
+#GENERAL
     battleType: 1
-    twoHanded: false
+    categories: [STR_CAT_BOLTER]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 3500
+    size: 0.2
+    weight: 12
     invWidth: 2
     invHeight: 2
+    twoHanded: false
     armor: 30
-    bulletSpeed: 30
     attraction: 5
-    listOrder: 10140
+    listOrder: 10113
     tags:
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
-
-
-#Chaos Bolter
-  - type: STR_BOLTERC
+#SHOOTING
     compatibleAmmo:
-      - STR_RIFLE_CLIP
-      - STR_RIFLE_CLIP_AP
-      - STR_RIFLE_CLIP_EX
+      - STR_BOLTPISTOL_MAGAZINE_EX
+      - STR_BOLTPISTOL_MAGAZINE_AP
+      - STR_BOLTPISTOL_MAGAZINE_I
+
+    dropoff: 5
+    bulletSpeed: 30
+
+    accuracySnap: 75
+    tuSnap: 20
+    snapRange: 13
+
+    accuracyAuto: 60
+    tuAuto: 35
+    autoRange: 6
+    autoShots: 3
+
+
+## CHAOS BOLTER ##
+
+  - type: STR_BOLTER_CHAOS
+#RESOURCES
+    bigSprite: 374
+    floorSprite: 326
+    handSprite: 1120
+    bulletSprite: 6
+    fireSound: [1042, 1043]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_BOLTER]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 5000
+    size: 0.3
+    weight: 20
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    listOrder: 10305
+    twoHanded: true
+    oneHandedPenalty: 70
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#SHOOTING
+    compatibleAmmo:
+      - STR_BOLTER_MAGAZINE_EX
+      - STR_BOLTER_MAGAZINE_AP
+      - STR_BOLTER_MAGAZINE_I
+    dropoff: 5
+    bulletSpeed: 30
+    accuracySnap: 80
+    tuSnap: 25
+    snapRange: 15
+    accuracyAuto: 70
+    tuAuto: 40
+    autoRange: 8
+    autoShots: 3
+
+
+
+
+
 
 #Nurgle Bolter
   - type: STR_BOLTERN
     compatibleAmmo:
-      - STR_RIFLE_CLIP
-      - STR_RIFLE_CLIP_N
-      - STR_RIFLE_CLIP_R
-      - STR_RIFLE_CLIP_AP
-      - STR_RIFLE_CLIP_EX
+      - STR_BOLTER_MAGAZINE_EX
+      - STR_BOLTER_MAGAZINE_AP
+      - STR_BOLTER_MAGAZINE_I
 
 #"Rubric" Bolter (Tzeench)
   - type: STR_BOLTERR
     compatibleAmmo:
-      - STR_RIFLE_CLIP
-      - STR_RIFLE_CLIP_R
-      - STR_RIFLE_CLIP_AP
-      - STR_RIFLE_CLIP_EX
+      - STR_BOLTER_MAGAZINE_EX
+      - STR_BOLTER_MAGAZINE_AP
+      - STR_BOLTER_MAGAZINE_I
+
+## CHAOS HEAVY BOLTER ##
+  - type: STR_HEAVY_BOLTER_CHAOS
+#RESOURCES
+    bigSprite: 230
+    floorSprite: 228
+    handSprite: 312
+    bulletSprite: 6
+    fireSound: [1042, 1043]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_BOLTER]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 7000
+    size: 0.5
+    weight: 40
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    bulletSpeed: 30
+    twoHanded: true
+    blockBothHands: true
+    listOrder: 12000
+#SHOOTING
+    compatibleAmmo:
+      - STR_HEAVY_BOLTER_CASE_EX
+      - STR_HEAVY_BOLTER_CASE_AP
+      - STR_HEAVY_BOLTER_CASE_I
+    dropoff: 5
+
+    accuracySnap: 60
+    tuSnap: 30
+    snapRange: 20
+
+    accuracyAuto: 50
+    tuAuto: 40
+    autoRange: 12
+    autoShots: 3
+
+
+
+
+
+
+
 
 #### CHAOS MELTA WEAPONS ###
 #TODO: TEST IT!
@@ -603,9 +696,34 @@ items:
 #### CHAOS FLAMER WEAPONS ###
 
 #Chaos Flamer
-  - type: STR_FLAMETHROWER_CHAOS
+  - delete: STR_FLAMETHROWER_CHAOS
+
+  - type: STR_FLAMER_CHAOS
+#RESOURCES
+    bigSprite: 366
+    floorSprite: 322
+    handSprite: 1088
+    bulletSprite: 5
+    fireSound: [1036, 1037, 1038, 1039, 1040]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_FLAMER]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 6500
+    size: 0.2
+    weight: 10
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    arcingShot: false
+    experienceTrainingMode: 6
+    attraction: 7
+    listOrder: 10500
+#SHOOTING
+    compatibleAmmo:
+      - STR_FLAMER_FUEL
     tuSnap: 25
-    tuAimed: 0
     tuAuto: 40
     autoShots: 3
     accuracyAuto: 150
@@ -623,22 +741,24 @@ items:
     maxRange: 6
 
 ### Chaos Stormbolter (Combi-Bolter)
-  - type: STR_CHB
-    bigSprite: 274
+  - delete: STR_CHB
 
-    bulletSprite: 6
-    fireSound: 707
-    bulletSpeed: 30
-    compatibleAmmo:
-      - STR_HB_CLIP
-      - STR_HB_CLIP_EX
-      - STR_HB_CLIP_AP
-    accuracySnap: 75
-    tuSnap: 25
-    confSnap:
-      shots: 2
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+  # - type: STR_CHB
+    # bigSprite: 274
+
+    # bulletSprite: 6
+    # fireSound: 707
+    # bulletSpeed: 30
+    # compatibleAmmo:
+      # - STR_HB_CLIP
+      # - STR_HB_CLIP_EX
+      # - STR_HB_CLIP_AP
+    # accuracySnap: 75
+    # tuSnap: 25
+    # confSnap:
+      # shots: 2
+    # tags:
+      # ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
 #### CHAOS MELEE WEAPONS ###
 #Chain Axe
@@ -1098,7 +1218,7 @@ items:
   - type: STR_CORPSE_CULTIST_ARMOR1
     name: STR_CORPSE_CULTIST
     size: 0.4
-    weight: 20
+    weight: 30
     bigSprite: 1002
     floorSprite: 1002
     invWidth: 2
@@ -1114,7 +1234,7 @@ items:
   - type: STR_CORPSE_CULTIST_ARMOR2
     name: STR_CORPSE_CULTIST
     size: 0.4
-    weight: 20
+    weight: 30
     bigSprite: 1003
     floorSprite: 1003
     invWidth: 2

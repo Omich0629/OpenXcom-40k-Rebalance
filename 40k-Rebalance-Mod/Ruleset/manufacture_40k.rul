@@ -403,7 +403,7 @@ manufacture:
     cost: 34000
 
 #Scoped Bolter
-  - name: STR_SM_BOLTER_SCOPED
+  - name: STR_BOLTER_SM_SCOPED
     category: STR_WEAPON
     requires:
       - STR_BOLTER_TECH
@@ -415,7 +415,7 @@ manufacture:
       STR_UFO_CONSTRUCTION: 3
 
 #Master Crafted Boltpistol
-  - name: STR_MC_BOLTPISTOL
+  - name: STR_BOLTPISTOL_MC
     category: STR_WEAPON
     requires:
       - STR_MASTER_CRAFTING
@@ -428,7 +428,7 @@ manufacture:
       STR_ALIEN_HABITAT: 1
 
 #Master Crafted Bolter
-  - name: STR_MC_BOLTER
+  - name: STR_BOLTER_MC
     category: STR_WEAPON
     requires:
       - STR_MASTER_CRAFTING
@@ -441,7 +441,7 @@ manufacture:
       STR_ALIEN_HABITAT: 1
 
 #Master Crafted Bolter (Scoped)
-  - name: STR_MC_BOLTER_SCOPED
+  - name: STR_BOLTER_MC_SCOPED
     category: STR_WEAPON
     requires:
       - STR_MASTER_CRAFTING
@@ -1109,51 +1109,58 @@ manufacture:
       STR_ELERIUM_115: 10
 
 #Storm Bolter
-  - name: STR_HB
+  - delete: STR_HB
+  - delete: STR_CHB
+  - delete: STR_HB_CLIP
+  - delete: STR_HB_MC
+
+  - name: STR_STORM_BOLTER_SM
     requires:
-      - STR_HB
+      - STR_STORM_BOLTER_TECH
     space: 6
     time: 1000
     cost: 72000
     requiredItems:
       STR_UFO_CONSTRUCTION: 10
 
-#Storm Bolter Standard Ammo
-  - name: STR_HB_CLIP
+#Storm Bolter Magazine (EXPLOSIVE)
+  - name: STR_STORM_BOLTER_MAGAZINE_EX
     category: STR_AMMUNITION
     requires:
-      - STR_HB
+      - STR_STORM_BOLTER_TECH
     space: 4
     time: 100
     cost: 6200
     requiredItems:
-      STR_UFO_CONSTRUCTION: 1
+      STR_STORM_BOLTER_MAGAZINE_EX: 1
 
-#Storm Bolter EX Ammo
-  - name: STR_HB_CLIP_EX
+#Storm Bolter Magazine (ARMOR PIERCING)
+  - name: STR_STORM_BOLTER_MAGAZINE_AP
     category: STR_AMMUNITION
     requires:
-      - STR_HB
-    space: 4
-    time: 100
-    cost: 6800
-    requiredItems:
-      STR_UFO_CONSTRUCTION: 1
-    producedItems:
-      STR_HB_CLIP_EX: 1
-
-#Storm Bolter AP Ammo
-  - name: STR_HB_CLIP_AP
-    category: STR_AMMUNITION
-    requires:
-      - STR_HB
+      - STR_STORM_BOLTER_TECH
     space: 4
     time: 100
     cost: 7400
     requiredItems:
       STR_UFO_CONSTRUCTION: 1
     producedItems:
-      STR_HB_CLIP_AP: 1
+      STR_STORM_BOLTER_MAGAZINE_AP: 1
+
+#Storm Bolter Magazine (INCENDIARY)
+  - name: STR_STORM_BOLTER_MAGAZINE_I
+    category: STR_AMMUNITION
+    requires:
+      - STR_STORM_BOLTER_TECH
+    space: 4
+    time: 100
+    cost: 6800
+    requiredItems:
+      STR_UFO_CONSTRUCTION: 1
+    producedItems:
+      STR_STORM_BOLTER_MAGAZINE_I: 1
+
+
 
 #Assault Cannon
   - name: STR_ASSC

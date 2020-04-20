@@ -1,6 +1,146 @@
 extraStrings:
   - type: en-US
     strings:
+
+### ITEMS IDs ###
+
+## STUB WEAPONS ##
+
+#Autopistol
+      STR_AUTOPISTOL_MAGAZINE: "Autopistol Magazine"
+      STR_AUTOPISTOL: "Autopistol"
+      STR_AUTOPISTOL_CHAOS: "Chaos Autopistol"
+
+#Autogun
+      STR_AUTOGUN_MAGAZINE: "Autogun Magazine"
+      STR_AUTOGUN: "Autogun"
+      STR_AUTOGUN_CHAOS: "Chaos Autogun"
+
+#Heavy Stubber
+      STR_HEAVY_STUBBER_AMMO_BELT: "Heavy Stubber Ammo Belt"
+      STR_HEAVY_STUBBER: "Heavy Stubber"
+      STR_HEAVY_STUBBER_CHAOS: "Chaos Heavy Stubber"
+
+#Shotgun
+      STR_SHOTGUN_SHELLS: "Shotgun Shells"
+      STR_SHOTGUN_SLUGS: "Shotgun Slugs"
+      STR_SHOTGUN_SM: "Astartes Assault Shotgun"
+      STR_SHOTGUN_IG: "Guard Shotgun"
+      STR_SHOTGUN_CHAOS: "Chaos Shotgun"
+
+#Sniper Rifle
+      STR_SNIPER_RIFLE_AMMO_AP: "Sniper Rifle AP Ammo"
+      STR_SNIPER_RIFLE_AMMO_HE: "Sniper Rifle HE Ammo"
+      STR_SNIPER_RIFLE_AMMO_I: "Sniper Rifle I Ammo"
+      STR_SNIPER_RIFLE_SM: "Astartes Sniper Rifle"
+
+
+
+#Autocannon
+
+
+#Assault Cannon
+
+
+
+## FLAMER WEAPONS ##
+
+#Flamer
+      STR_FLAMER_FUEL: "Flamer Fuel"
+      STR_FLAMER_SM: "Astartes Flamer"
+      STR_FLAMER_IG: "Guard Flamer"
+      STR_FLAMER_CHAOS: "Chaos Flamer"
+      STR_WARPFLAMER: "Warpflamer"
+
+#Heavy Flamer
+
+
+## LASER WEAPONS ##
+
+#Lasgun
+      STR_POWER_PACK: "Lasgun Power Pack"
+      STR_LASGUN: "Lasgun"
+      STR_LASGUN_CHAOS: "Chaos Lasgun"
+
+#Laspistol
+      STR_LASPISTOL: "Laspistol"
+      STR_LASPISTOL_CHAOS: "Chaos Laspistol"
+
+
+
+#Long-Las
+
+
+#Hotshot Laspistol
+
+
+#Hotshot Lasgun
+
+
+#Hotshot Volley Gun
+
+
+#Lascannon
+
+
+
+## BOLT WEAPONS ##
+
+#Boltpistol
+      STR_BOLTPISTOL_MAGAZINE_EX: "Bolt Pistol Magazine"
+      STR_BOLTPISTOL_MAGAZINE_AP: "Bolt Pistol AP Magazine"
+      STR_BOLTPISTOL_MAGAZINE_I: "Bolt Pistol I Magazine"
+
+      STR_BOLTPISTOL_SM: "Astartes Bolt Pistol"
+      STR_BOLTPISTOL_MC: "Master Crafted Bolt Pistol"
+      STR_BOLTPISTOL_IG: "Guard Bolt Pistol"
+      STR_BOLTPISTOL_CHAOS: "Chaos Bolt Pistol"
+
+#Boltgun
+      STR_BOLTER_MAGAZINE_EX: "Bolter Magazine"
+      STR_BOLTER_MAGAZINE_AP: "Bolter AP Magazine"
+      STR_BOLTER_MAGAZINE_I: "Bolter I Magazine"
+
+      STR_BOLTER_SM: "Astartes Bolter"
+      STR_BOLTER_SM_SCOPED: "Astartes Bolter (Scoped)"
+      STR_BOLTER_MC: "Master Crafted Bolter"
+      STR_BOLTER_MC_SCOPED: "Master Crafted Bolter (Scoped)"
+      STR_BOLTER_IG: "Guard Bolter"
+      STR_BOLTER_CHAOS: "Chaos Bolter"
+
+#Heavy Bolter
+      STR_HEAVY_BOLTER_CASE_EX: "Heavy Bolter Case"
+      STR_HEAVY_BOLTER_CASE_AP: "Heavy Bolter AP Case"
+      STR_HEAVY_BOLTER_CASE_I: "Heavy Bolter I Case"
+
+      STR_HEAVY_BOLTER_SM: "Astartes Heavy Bolter"
+      STR_HEAVY_BOLTER_IG: "Guard Heavy Bolter"
+      STR_HEAVY_BOLTER_CHAOS: "Chaos Heavy Bolter"
+
+#Storm Bolter
+      STR_STORM_BOLTER_MAGAZINE_EX: "Storm Bolter Magazine"
+      STR_STORM_BOLTER_MAGAZINE_AP: "Storm Bolter AP Magazine"
+      STR_STORM_BOLTER_MAGAZINE_I: "Storm Bolter I Magazine"
+
+      STR_STORM_BOLTER_SM: "Astartes Storm Bolter"
+      STR_STORM_BOLTER_CHAOS: "Chaos Storm Bolter"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Global IDs ###
       STR_GENERALLOCK: "General Lock"
       STR_CHAOS_ONLY: "Chaos Only"
@@ -141,8 +281,9 @@ extraStrings:
       STR_CHAPTER_WEAPONS: "Chapter Weapons"
 
 #Weapon Requisitions
-      STR_BOLTPISTOL_TECH: "Boltpistol Requisition"
+      STR_BOLTPISTOL_TECH: "Bolt Pistol Requisition"
       STR_BOLTER_TECH: "Bolter Requisition"
+      STR_SHOTGUN_TECH: "Shotgun Requisition"
       STR_FLAMER_TECH: "Flamer Requisition"
       STR_ROCKET_LAUNCHER_TECH: "Missile Launcher Requisition"
       STR_HEAVY_BOLTER_TECH: "Heavy Bolter Requisition"
@@ -151,26 +292,9 @@ extraStrings:
       STR_SNIPER_RIFLE_TECH: "Sniper Rifle Requisition"
 
 #Astartes Bolt Weapons IDs
-      STR_SM_BOLTER: "Astartes Bolter"
-      STR_SM_BOLTER_SCOPED: "Astartes Bolter (Scoped)"
 
-      STR_MC_BOLTER: "Master Crafted Bolter"
-      STR_MC_BOLTER_SCOPED: "Master Crafted Bolter (Scoped)"
-
-      STR_SM_BOLTPISTOL: "Astartes Boltpistol"
-      STR_MC_BOLTPISTOL: "Master Crafted Boltpistol"
 
       AUX_BOLTER: "Twin-linked Bolter"
-
-#Bolt Weapons Ammo IDs
-      STR_PISTOL_CLIP: "Boltpistol Clip"
-      STR_PISTOL_CLIP_EX: "Boltpistol Clip EX "
-      STR_PISTOL_CLIP_AP: "Boltpistol Clip AP"
-
-      STR_RIFLE_CLIP: "Bolter Clip"
-      STR_RIFLE_CLIP_EX: "Bolter Clip EX"
-      STR_RIFLE_CLIP_AP: "Bolter Clip AP"
-
 
 #Lascannon related IDs
       STR_LASCANNON_TECH: "Lascannon"
@@ -178,15 +302,8 @@ extraStrings:
       STR_CRAFT_LASCANNON: "Craft Lascannon"
       STR_LASCANNON_DEFENSE: "Lascannon Defense"
 
-#Sniper Rifle IDs
-      STR_HC_AP_AMMO: "Sniper Rifle AP Ammo"
-      STR_HC_HE_AMMO: "Sniper Rifle HE Ammo"
-      STR_HC_I_AMMO: "Sniper Rifle I Ammo"
 
-#SM Shotgun IDs
-      STR_SHOTGUN_SM: "Astartes Assault Shotgun"
-      STR_SHOTGUN_SHELLS: "Shotgun Shells"
-      STR_SHOTGUN_SLUGS: "Shotgun Slugs"
+
 
 #Astartes T1 Crafts IDs
       STR_SPEEDR: "Chapter Vehicles"
@@ -367,13 +484,12 @@ extraStrings:
 
 # T3 Weapons #
       STR_CHAPTER_SPECIAL_WEAPONS: "Chapter Special Weapons"
+
+      STR_STORM_BOLTER_TECH: "Technology: Storm Bolter"
+
       STR_LIGHTNING_CLAWS: "Lightning Claws"
       STR_POWER_DAGGER: "Power Dagger"
 
-
-      STR_HB_CLIP_EX: "Storm Bolter Clip EX"
-      STR_HB_CLIP_AP: "Storm Bolter Clip AP"
-      STR_HB_BELT: "Storm Bolter Ammo Belt"
 
       STR_CRAFT_ASSAULT_CANNON: "Craft Assault Cannon"
 
@@ -390,22 +506,10 @@ extraStrings:
 
 #Guard weapons
 
-      STR_AUTOPISTOL: "Autopistol"
-      STR_AUTOPISTOL_MAGAZINE: "Autopistol Magazine"
-
-      STR_AUTOGUN: "Autogun"
-      STR_AUTOGUN_MAGAZINE: "Autogun Magazine"
-
-      STR_HEAVY_STUBBER: "Heavy Stubber"
-      STR_HEAVY_STUBBER_AMMO_BELT: "Heavy Stubber Ammo Belt"
-
-      STR_SHOTGUN_IG: "Guard Shotgun"
 
 
-      STR_LASGUN: "Lasgun"
-      STR_LASPISTOL: "Laspistol"
-      STR_LASCARBINE: "Lascarabine"
-      STR_POWER_PACK: "Power Pack"
+
+
 
 #Guard Armors
       STR_FLAK_ARMOR: "Flak Armor"
@@ -425,8 +529,7 @@ extraStrings:
       STR_REGIMENTAL_ARMOR: "Regimental Armors"
 
 #Regimental Weapons
-      STR_IG_BOLTPISTOL: "Guard Boltpistol"
-      STR_IG_BOLTER: "Guard Bolter"
+
 
       STR_GRENADE_LAUNCHER_TECH: "Grenade Launcher Requisition"
 
@@ -488,7 +591,7 @@ extraStrings:
 
 #Hotshot weapons
       STR_HOTSHOT_TECH: "Hotshot Laser Weapons"
-      STR_LONG_LAS_TECH: "Sniper Variant Lasgun"
+      STR_LONG_LAS_TECH: "Long-Las"
       STR_LASGUN_BACKPACK_HOTSHOT: "Hotshot Backpack Battery"
       STR_HOTSHOT_LASPISTOL: "Hotshot Laspistol"
 
@@ -577,15 +680,10 @@ extraStrings:
       STR_CULTIST_SWORD: "Improvised Sword"
       STR_CULTIST_PANIC_SPELL: "Panic Spell"
 
-      STR_AUTOPISTOL_CHAOS: "Chaos Autopistol"
-      STR_AUTOGUN_CHAOS: "Chaos Autogun"
-      STR_HEAVY_STUBBER_CHAOS: "Chaos Heavy Stubber"
 
-      STR_SHOTGUN_CHAOS: "Chaos Shotgun"
 
 #Renegade Items
-      STR_LASGUN_CHAOS: "Chaos Lasgun"
-      STR_LASPISTOL_CHAOS: "Chaos Laspistol"
+
 
 
 #Chaos Melta Weapons

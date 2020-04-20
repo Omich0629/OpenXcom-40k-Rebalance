@@ -118,8 +118,8 @@ manufacture:
     spawnedPersonType: STR_COMMISSAR
     producedItems:
       STR_CHAINSWORD: 1
-      STR_IG_BOLTPISTOL: 1
-      STR_PISTOL_CLIP: 2
+      STR_BOLTPISTOL_IG: 1
+      STR_BOLTPISTOL_MAGAZINE_EX: 2
 
 ######## T2 STUFF ########
 

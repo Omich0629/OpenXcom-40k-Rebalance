@@ -83,6 +83,7 @@ research:
       - STR_BOLTPISTOL_TECH
       - STR_BOLTER_TECH
       - STR_SHOTGUN_TECH
+      - STR_FLAMER_TECH
       - STR_MARINES_STRATEGY
       - STR_CHAPTER_VEHICLES
       - STR_CHAPTER_ARMORS
@@ -237,6 +238,15 @@ research:
     listOrder: 100
     dependencies:
       - STR_GENERALLOCK
+
+#Flamer Requisition
+  - name: STR_FLAMER_TECH
+    cost: 0
+    points: 0
+    listOrder: 100
+    dependencies:
+      - STR_GENERALLOCK
+
 
 #Heavy Bolter Requisition
 #Same as for Imperial Guard. Opens by 'unlocks' instructions.
@@ -1033,27 +1043,17 @@ research:
 
 
 ### Storm Bolter ###
-#Chaos Storm Bolter. Ammo for free.
-#TODO: RENAME IT!!!
-  - name: STR_CHB
-    cost: 430
-    points: 25
-    needItem: true
+  - delete: STR_HB
+  - delete: STR_CHB
+  - delete: STR_HB_CLIP
 
-  - name: STR_HB_CLIP
-    cost: 0
-    points: 0
-    dependencies: 
-      - STR_CHB
-
-#Normal Storm Bolter
-#TODO: RENAME IT!!!
-  - name: STR_HB
+#Storm Bolter
+  - name: STR_STORM_BOLTER_TECH
     cost: 860
     points: 20
     dependencies:
       - STR_CHAPTER_SPECIAL_WEAPONS
-      - STR_CHB
+
 
 ### Chaos Autocannon ###
 #Chaos version of Assault cannon (Reaper Autocannon). Ammo for free.

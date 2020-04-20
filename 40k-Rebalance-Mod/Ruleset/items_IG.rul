@@ -4,8 +4,6 @@ items:
   - delete: STR_LASER_RIFLE
   - delete: STR_LASER_PISTOL
 
-
-
 ### STUB WEAPONS ###
 
 ## Autopistol ##
@@ -100,7 +98,7 @@ items:
     costSell: 2000
     size: 0.2
     weight: 9
-    invWidth: 1
+    invWidth: 2
     invHeight: 3
     armor: 30
     attraction: 1
@@ -267,6 +265,44 @@ items:
     snapRange: 7
 
 
+## Guard Flamer ##
+  - type: STR_FLAMER_IG
+#RESOURCES
+    bigSprite: 367
+    floorSprite: 323
+    handSprite: 1096
+    bulletSprite: 5
+    fireSound: [1036, 1037, 1038, 1039, 1040]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_FLAMER]
+    requiresBuy:
+      - STR_FLAMER_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 8000
+    costSell: 6500
+    size: 0.2
+    weight: 10
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    arcingShot: false
+    experienceTrainingMode: 6
+    attraction: 7
+    listOrder: 10500
+#SHOOTING
+    compatibleAmmo:
+      - STR_FLAMER_FUEL
+    tuSnap: 25
+    tuAuto: 40
+    autoShots: 3
+    accuracyAuto: 150
+    accuracySnap: 150
+    maxRange: 6
+
+
+
+
 
 ### LASER WEAPONS ###
 
@@ -356,39 +392,6 @@ items:
     tuSnap: 20
     snapRange: 12
 
-## GUARD LASCARABINE ##
-  # - type: STR_LASCARBINE
-# #RESOURCES
-    # bigSprite: 303
-    # floorSprite: 1022 #FIX IT
-    # handSprite: 1176 #FIX IT
-    # bulletSprite: 12 #FIX IT
-    # fireSound: 741 #FIX IT
-# #GENERAL
-    # battleType: 1
-    # categories: [STR_CAT_LASGUN]
-    # requiresBuy:
-      # - STR_IMPERIAL_GUARD_OPERATIONS
-    # costBuy: 3200
-    # costSell: 1000
-    # size: 0.2
-    # invWidth: 2
-    # invHeight: 3
-    # weight: 4
-    # twoHanded: true
-    # listOrder: 10915
-# #SHOOTING
-    # compatibleAmmo:
-      # - STR_POWER_PACK
-    # dropoff: 5
-    # bulletSpeed: 50
-    # tuSnap: 25
-    # accuracySnap: 70
-    # snapRange: 14
-    # tuAuto: 34
-    # accuracyAuto: 50
-    # autoRange: 10
-
 ## POWER PACK ( LASGUN AND LASPISTOL AMMO ) ##
   - type: STR_POWER_PACK
 #RESOURCES
@@ -419,15 +422,6 @@ items:
       ToHealth: 1.0
       ToArmor: 0.0
       ToStun: 0.0
-
-
-
-      
-
-
-
-
-
 
 
 #######################
@@ -550,7 +544,7 @@ items:
     dropoff: 5
     accuracyAimed: 100
     tuAimed: 65
-    aimRange: 40
+    aimRange: 50
     accuracySnap: 80
     tuSnap: 35
     snapRange: 20
@@ -840,127 +834,67 @@ items:
 
 #######################
 
-### BOLTERS ###
+### BOLT WEAPONS ###
 
 ## GUARD HEAVY BOLTER ##
-  - type: STR_HEAVY_BOLTER_GUARD
-#GENERAL
-    requiresBuy:
-      - STR_HEAVY_BOLTER_TECH
-      - STR_IMPERIAL_GUARD_OPERATIONS
-    compatibleAmmo:
-      - STR_AC_AP_AMMO_GUARD
-      - STR_AC_HE_AMMO_GUARD
-      - STR_AC_I_AMMO_GUARD
-#SHOOTING
-    accuracySnap: 60
-    accuracyAuto: 50
-    snapRange: 20
-    autoRange: 10 #was 20
-    autoShots: 3
+  - delete: STR_HEAVY_BOLTER_GUARD
 
-## GUARD HEAVY BOLTER AMMO (ARMOR PIERCING)
-  - type: STR_AC_AP_AMMO_GUARD
+  - type: STR_HEAVY_BOLTER_IG
 #RESOURCES
     bigSprite: 228
-    floorSprite: 228
-    handSprite: 312
-    hitSound: 708
-    hitAnimation: 26
+    floorSprite: 223
+    handSprite: 384
+    bulletSprite: 6
+    fireSound: [1042, 1043]
 #GENERAL
-    battleType: 2
+    battleType: 1
     categories: [STR_CAT_BOLTER]
     requiresBuy:
       - STR_HEAVY_BOLTER_TECH
       - STR_IMPERIAL_GUARD_OPERATIONS
-    costBuy: 1200
-    costSell: 800
-    size: 0.1
-    weight: 20
-    armor: 30
+    costBuy: 13500
+    costSell: 10125
+    size: 0.5
+    weight: 40
     invWidth: 2
-    invHeight: 2
-    listOrder: 12020
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    bulletSpeed: 30
+    twoHanded: true
+    blockBothHands: true
+    listOrder: 12000
+    tags:
+      ITEM_HAS_BIPOD: 1
 #SHOOTING
-    clipSize: 80
-    power: 70
-    damageType: 1
-    damageAlter: #DA BOLTER
-      ToArmorPre: 0.05
-      ArmorEffectiveness: 0.9
-      ToArmor: 0.1
-      ToHealth: 1.0
-      ToStun: 0.5
-    explosionSpeed: 5
+    compatibleAmmo:
+      - STR_HEAVY_BOLTER_CASE_EX
+      - STR_HEAVY_BOLTER_CASE_AP
+      - STR_HEAVY_BOLTER_CASE_I
+    dropoff: 5
 
-## GUARD HEAVY BOLTER AMMO (HIGH EXPLOSIVE)
-  - type: STR_AC_HE_AMMO_GUARD
-#RESOURCES
-    bigSprite: 229
-    floorSprite: 228
-    handSprite: 312
-    hitSound: 708
-    hitAnimation: 0
-#GENERAL
-    battleType: 2
-    categories: [STR_CAT_BOLTER]
-    requiresBuy:
-      - STR_HEAVY_BOLTER_TECH
-      - STR_IMPERIAL_GUARD_OPERATIONS
-    costBuy: 1500
-    costSell: 1180
-    size: 0.1
-    weight: 20
-    armor: 30
-    invWidth: 2
-    invHeight: 2
-    listOrder: 12040
-#SHOOTING
-    clipSize: 80
-    power: 50
-    damageType: 3
+    kneelBonus: 200
 
-## GUARD HEAVY BOLTER AMMO (INCENDIARY)
-  - type: STR_AC_I_AMMO_GUARD
-#RESOURCES
-    bigSprite: 230
-    floorSprite: 228
-    handSprite: 312
-    hitSound: 708
-    hitAnimation: 0
-#GENERAL
-    battleType: 2
-    categories: [STR_CAT_BOLTER]
-    requiresBuy:
-      - STR_HEAVY_BOLTER_TECH
-      - STR_IMPERIAL_GUARD_OPERATIONS
-    costBuy: 1400
-    costSell: 1050
-    size: 0.1
-    weight: 20
-    armor: 30
-    invWidth: 2
-    invHeight: 2
-    listOrder: 12040
-#SHOOTING
-    clipSize: 80
-    power: 40
-    damageType: 2
-    damageAlter:
-      RandomType: 2 #TFTD [50% - 150%]
-      ToHealth: 1.0
-      ToMorale: 0.5
-    blastRadius: 1
+    accuracySnap: 35
+    tuSnap: 30
+    snapRange: 20
+
+    accuracyAuto: 29
+    tuAuto: 40
+    autoRange: 12
+    autoShots: 3
+
+
 
 
 ## GUARD BOLTPISTOL ##
-  - type: STR_IG_BOLTPISTOL
+  - type: STR_BOLTPISTOL_IG
 #RESOURCES
     bigSprite: 310
     floorSprite: 271
     handSprite: 656
     bulletSprite: 6
-    fireSound: 707
+    fireSound: [1042, 1043]
 #GENERAL
     battleType: 1
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
@@ -976,28 +910,28 @@ items:
     armor: 30
     attraction: 1
     twoHanded: false
-    listOrder: 10100
+    listOrder: 10112
     tags:
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 #SHOOTING
     bulletSpeed: 30
     compatibleAmmo:
-      - STR_PISTOL_CLIP
-      - STR_PISTOL_CLIP_EX
-      - STR_PISTOL_CLIP_AP
+      - STR_BOLTPISTOL_MAGAZINE_EX
+      - STR_BOLTPISTOL_MAGAZINE_AP
+      - STR_BOLTPISTOL_MAGAZINE_I
     dropoff: 5
     accuracySnap: 75
     tuSnap: 20
     snapRange: 12
 
 ## GUARD BOLTGUN ##
-  - type: STR_IG_BOLTER
+  - type: STR_BOLTER_IG
 #RESOURCES
     bigSprite: 308
     floorSprite: 269
     handSprite: 640
     bulletSprite: 6
-    fireSound: 707
+    fireSound: [1042, 1043]
 #GENERAL
     battleType: 1
     categories: [STR_CAT_BOLTER]
@@ -1013,14 +947,14 @@ items:
     armor: 30
     attraction: 1
     bulletSpeed: 30
-    listOrder: 10300
+    listOrder: 10304
     tags:
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 #SHOOTING
     compatibleAmmo:
-      - STR_RIFLE_CLIP
-      - STR_RIFLE_CLIP_AP
-      - STR_RIFLE_CLIP_EX
+      - STR_BOLTER_MAGAZINE_EX
+      - STR_BOLTER_MAGAZINE_AP
+      - STR_BOLTER_MAGAZINE_I
     dropoff: 5
     accuracySnap: 80
     tuSnap: 20

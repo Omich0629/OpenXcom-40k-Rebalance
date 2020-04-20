@@ -1,5 +1,4 @@
 items:
-
   - delete: STR_PISTOL_CLIP_MC
   - delete: STR_RIFLE_CLIP_MC
   - delete: STR_AC_MC_AMMO
@@ -9,6 +8,799 @@ items:
   - delete: STR_HEAVY_PLASMA_MC
   - delete: AUX_TANK_CANNON
   - delete: STR_HWP_CANNON_SHELLS
+  - delete: STR_PISTOL
+  - delete: STR_PISTOLB
+  - delete: STR_PISTOLS
+  - delete: STR_PISTOLH
+  - delete: STR_MCPISTOL
+  - delete: STR_PISTOL_CLIP
+  - delete: STR_PISTOL_CLIP_EX
+  - delete: STR_PISTOL_CLIP_AP
+
+### BOLTPISTOLS ###
+
+## ASTARTES BOLTPISTOL ##
+  - type: STR_BOLTPISTOL_SM
+ 
+#RESOURCES
+    bigSprite: 309
+    floorSprite: 270
+    handSprite: 648
+    bulletSprite: 6
+    fireSound: [1042, 1043]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    requiresBuy:
+      - STR_BOLTPISTOL_TECH
+      - STR_SPACE_MARINES_OPERATIONS
+    costBuy: 8000
+    costSell: 4000
+    size: 0.3
+    weight: 12
+    invWidth: 2
+    invHeight: 2
+    armor: 30
+    attraction: 1
+    twoHanded: false
+    listOrder: 10100
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#SHOOTING
+    compatibleAmmo:
+      - STR_BOLTPISTOL_MAGAZINE_EX
+      - STR_BOLTPISTOL_MAGAZINE_AP
+      - STR_BOLTPISTOL_MAGAZINE_I
+    dropoff: 5
+    bulletSpeed: 30
+    accuracySnap: 75
+    tuSnap: 20
+    snapRange: 13
+    accuracyAuto: 60
+    tuAuto: 35
+    autoRange: 6
+    autoShots: 3
+
+## MASTER CRAFTED BOLTPISTOL ##
+  - type: STR_BOLTPISTOL_MC 
+#RESOURCES
+    bigSprite: 311
+    floorSprite: 272
+    handSprite: 664
+    bulletSprite: 6
+    fireSound: [1042, 1043]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    costBuy: 0
+    costSell: 14000
+    size: 0.3
+    weight: 14
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    twoHanded: false
+    listOrder: 10111
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#SHOOTING
+    compatibleAmmo:
+      - STR_BOLTPISTOL_MAGAZINE_EX
+      - STR_BOLTPISTOL_MAGAZINE_AP
+      - STR_BOLTPISTOL_MAGAZINE_I
+    dropoff: 5
+    bulletSpeed: 30
+    accuracyAimed: 85
+    tuAimed: 60
+    aimRange: 25
+    accuracySnap: 75
+    tuSnap: 20
+    snapRange: 15
+
+## BOLTPISTOL MAGAZINE (EXPLOSIVE) ##
+  - type: STR_BOLTPISTOL_MAGAZINE_EX
+#RESOURCES
+    bigSprite: 368
+    floorSprite: 324
+    handSprite: 1104
+    hitSound: 1044 #bolt hit sound
+    hitAnimation: 181 #Bolt hit animation
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_BOLTER]
+    requiresBuy:
+      - STR_BOLTPISTOL_TECH
+    costBuy: 300
+    costSell: 150
+    size: 0.1
+    weight: 3
+    invWidth: 1
+    invHeight: 1
+    attraction: 8
+    armor: 30
+    listOrder: 10114
+    tags:
+      ITEM_AMMO_COLOR: 0
+#SHOOTING
+    clipSize: 10
+    power: 60
+    damageType: 3 #EXPLOSIVE
+    explosionSpeed: 5
+    damageAlter:
+      RandomType: 2
+      ToArmorPre: 0.05
+      ArmorEffectiveness: 0.9
+      ToArmor: 0.1
+      ToHealth: 1.0
+      ToStun: 0.5
+      FixRadius: 0
+
+## BOLTPISTOL MAGAZINE (ARMOR PIERCING) ##
+  - type: STR_BOLTPISTOL_MAGAZINE_AP
+#RESOURCES
+    bigSprite: 369
+    floorSprite: 324
+    handSprite: 1104
+    hitSound: 1044 #bolt hit sound
+    hitAnimation: 181 #Bolt hit animation
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_BOLTER]
+    requiresBuy:
+      - STR_BOLTPISTOL_TECH
+    costBuy: 600
+    costSell: 300
+    size: 0.1
+    weight: 3
+    armor: 30
+    invWidth: 1
+    invHeight: 1
+    attraction: 8
+    listOrder: 10115
+    tags:
+      ITEM_AMMO_COLOR: 1
+#SHOOTING
+    clipSize: 10
+    damageType: 1
+    power: 60
+    damageAlter:
+      ArmorEffectiveness: 0.8
+      ToArmorPre: 0.1
+      ToArmor: 0.2
+      ToHealth: 0.9
+      ToStun: 0.2
+    explosionSpeed: 5
+
+## BOLTPISTOL MAGAZINE (INCENDIARY) ##
+
+  - type: STR_BOLTPISTOL_MAGAZINE_I
+#RESOURCES
+    bigSprite: 370
+    floorSprite: 324
+    handSprite: 1104
+    hitSound: 1044 #bolt hit sound
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_BOLTER]
+    requiresBuy:
+      - STR_BOLTPISTOL_TECH
+    costBuy: 400
+    costSell: 200
+    size: 0.1
+    weight: 3
+    armor: 30
+    invWidth: 1
+    invHeight: 1
+    attraction: 8
+    listOrder: 10116
+    tags:
+      ITEM_AMMO_COLOR: 2
+#SHOOTING
+    clipSize: 10
+    power: 40
+    damageType: 2
+    damageAlter:
+      RandomType: 2 #TFTD [50% - 150%]
+      ToHealth: 1.0
+      ToMorale: 0.5
+    blastRadius: 1
+    explosionSpeed: 5
+
+### BOLTGUNS ###
+  - delete: STR_RIFLE
+  - delete: STR_RIFLEB
+  - delete: STR_RIFLEC
+  - delete: STR_RIFLED
+  - delete: STR_MCRIFLE
+
+## ASTARTES BOLTGUN ##
+  - type: STR_BOLTER_SM
+#RESOURCES
+    bigSprite: 304
+    floorSprite: 265
+    handSprite: 608
+    bulletSprite: 6
+    fireSound: [1042, 1043]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    requiresBuy:
+      - STR_BOLTER_TECH
+      - STR_SPACE_MARINES_OPERATIONS
+    costBuy: 10000
+    costSell: 5000
+    size: 0.3
+    weight: 20
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    listOrder: 10300
+    twoHanded: true
+    oneHandedPenalty: 70
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#SHOOTING
+    compatibleAmmo:
+      - STR_BOLTER_MAGAZINE_EX
+      - STR_BOLTER_MAGAZINE_AP
+      - STR_BOLTER_MAGAZINE_I
+    dropoff: 5
+    bulletSpeed: 30
+    accuracySnap: 80
+    tuSnap: 25
+    snapRange: 15
+    accuracyAuto: 70
+    tuAuto: 40
+    autoRange: 8
+    autoShots: 3
+
+
+## ASTARTES BOLTGUN (SCOPED) ##
+  - type: STR_BOLTER_SM_SCOPED
+#RESOURCES
+    bigSprite: 305
+    floorSprite: 266
+    handSprite: 616
+    bulletSprite: 6
+    fireSound: [1042, 1043]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    costBuy: 0
+    costSell: 14000
+    size: 0.3
+    weight: 22
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    twoHanded: true
+    oneHandedPenalty: 65
+    listOrder: 10301
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#SHOOTING
+    compatibleAmmo:
+      - STR_BOLTER_MAGAZINE_EX
+      - STR_BOLTER_MAGAZINE_AP
+      - STR_BOLTER_MAGAZINE_I
+    dropoff: 5
+    bulletSpeed: 30
+    accuracyAimed: 100
+    tuAimed: 60
+    aimRange: 30
+    accuracySnap: 80
+    tuSnap: 25
+    snapRange: 15
+    accuracyAuto: 65
+    tuAuto: 40
+    autoRange: 8
+    autoShots: 3
+
+
+## MASTER CRAFTED BOLTGUN ##
+  - type: STR_BOLTER_MC
+#RESOURCES
+    bigSprite: 306
+    floorSprite: 267
+    handSprite: 624
+    bulletSprite: 6
+    fireSound: [1042, 1043]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    costBuy: 0
+    costSell: 20000
+    size: 0.3
+    weight: 23
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    twoHanded: true
+    oneHandedPenalty: 80
+    attraction: 1
+    listOrder: 10302
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#SHOOTING
+    compatibleAmmo:
+      - STR_BOLTER_MAGAZINE_EX
+      - STR_BOLTER_MAGAZINE_AP
+      - STR_BOLTER_MAGAZINE_I
+    dropoff: 5
+    bulletSpeed: 30
+    accuracySnap: 85
+    tuSnap: 25
+    snapRange: 18
+    accuracyAuto: 75
+    tuAuto: 40
+    autoRange: 12
+    autoShots: 3
+
+
+## MASTER CRAFTED BOLTGUN (SCOPED) ##
+  - type: STR_BOLTER_MC_SCOPED
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] 
+#RESOURCES
+    bigSprite: 307
+    floorSprite: 268
+    handSprite: 632
+    bulletSprite: 6
+    fireSound: [1042, 1043]
+#GENERAL
+    battleType: 1
+    costBuy: 0
+    costSell: 24000
+    size: 0.3
+    weight: 25
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    twoHanded: true
+    oneHandedPenalty: 75
+    attraction: 1
+    listOrder: 10303
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#SHOOTING
+    compatibleAmmo:
+      - STR_BOLTER_MAGAZINE_EX
+      - STR_BOLTER_MAGAZINE_AP
+      - STR_BOLTER_MAGAZINE_I
+    dropoff: 5
+    bulletSpeed: 30
+    accuracyAimed: 100
+    tuAimed: 60
+    aimRange: 40
+    accuracySnap: 80
+    tuSnap: 25
+    snapRange: 18
+    accuracyAuto: 75
+    tuAuto: 40
+    autoRange: 12
+    autoShots: 3
+
+## BOLTGUN MAGAZINE (EXPLOSIVE) ##
+  - delete: STR_RIFLE_CLIP
+
+  - type: STR_BOLTER_MAGAZINE_EX
+#RESOURCES
+    bigSprite: 371
+    floorSprite: 325
+    handSprite: 1112
+    hitSound: 1044 #bolt hit sound
+    hitAnimation: 181 #Bolt hit animation
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_BOLTER]
+    requiresBuy:
+      - STR_BOLTER_TECH
+    costBuy: 600
+    costSell: 300
+    weight: 6
+    size: 0.1
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    attraction: 8
+    listOrder: 10310
+    tags:
+      ITEM_AMMO_COLOR: 0
+#SHOOTING
+    clipSize: 20
+    power: 60
+    damageType: 3 #EXPLOSIVE
+    explosionSpeed: 5
+    damageAlter:
+      RandomType: 2
+      ToArmorPre: 0.05
+      ArmorEffectiveness: 0.9
+      ToArmor: 0.1
+      ToHealth: 1.0
+      ToStun: 0.5
+      FixRadius: 0
+
+## BOLTGUN MAGAZINE (ARMOR PIERCING) ##
+  - delete: STR_RIFLE_CLIP_EX
+
+  - type: STR_BOLTER_MAGAZINE_AP
+#RESOURCES
+    bigSprite: 372
+    floorSprite: 325
+    handSprite: 1112
+    hitSound: 1044 #bolt hit sound
+    hitAnimation: 181 #Bolt hit animation
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_BOLTER]
+    requiresBuy:
+      - STR_BOLTER_TECH
+    costBuy: 1200
+    costSell: 600
+    weight: 6
+    size: 0.1
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    attraction: 8
+    listOrder: 10311
+    tags:
+      ITEM_AMMO_COLOR: 1
+#SHOOTING
+    clipSize: 20
+    power: 60
+    damageType: 1
+    explosionSpeed: 5
+    damageAlter:
+      ArmorEffectiveness: 0.8
+      ToArmorPre: 0.1
+      ToArmor: 0.2
+      ToHealth: 0.9
+      ToStun: 0.2
+
+## BOLTGUN MAGAZINE (INCENDIARY) ##
+  - delete: STR_RIFLE_CLIP_AP
+
+  - type: STR_BOLTER_MAGAZINE_I
+#RESOURCES
+    bigSprite: 373
+    floorSprite: 325
+    handSprite: 1112
+    hitSound: 1044 #bolt hit sound
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_BOLTER]
+    requiresBuy:
+      - STR_BOLTER_TECH
+    costBuy: 800
+    costSell: 400
+    weight: 6
+    size: 0.1
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    attraction: 8
+    listOrder: 10312
+    tags:
+      ITEM_AMMO_COLOR: 2
+#SHOOTING
+    clipSize: 20
+    power: 40
+    damageType: 2
+    explosionSpeed: 5
+    damageAlter:
+      RandomType: 2 #TFTD [50% - 150%]
+      ToHealth: 1.0
+      ToMorale: 0.5
+    blastRadius: 1
+
+
+## ASTARTES HEAVY BOLTER ##
+  - delete: STR_AUTO_CANNON
+  - delete: STR_AC_AP_AMMO
+  - delete: STR_AC_HE_AMMO
+  - delete: STR_AC_I_AMMO
+
+  - type: STR_HEAVY_BOLTER_SM
+#RESOURCES
+    bigSprite: 264
+    floorSprite: 247
+    handSprite: 456
+    bulletSprite: 6
+    fireSound: [1042, 1043]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_BOLTER]
+    requiresBuy:
+      - STR_HEAVY_BOLTER_TECH
+      - STR_SPACE_MARINES_OPERATIONS
+    costBuy: 13500
+    costSell: 10125
+    size: 0.5
+    weight: 40
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    bulletSpeed: 30
+    twoHanded: true
+    blockBothHands: true
+    listOrder: 12000
+#SHOOTING
+    compatibleAmmo:
+      - STR_HEAVY_BOLTER_CASE_EX
+      - STR_HEAVY_BOLTER_CASE_AP
+      - STR_HEAVY_BOLTER_CASE_I
+    dropoff: 5
+
+    accuracySnap: 60
+    tuSnap: 30
+    snapRange: 20
+
+    accuracyAuto: 50
+    tuAuto: 40
+    autoRange: 12
+    autoShots: 3
+
+
+## HEAVY BOLTER AMMO CASE (EXPLOSIVE) ##
+  - type: STR_HEAVY_BOLTER_CASE_EX
+#RESOURCES
+    bigSprite: 265
+    floorSprite: 248
+    handSprite: 464
+    hitSound: 1044 #bolt hit sound
+    hitAnimation: 181 #Bolt hit animation
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_BOLTER]
+    requiresBuy:
+      - STR_HEAVY_BOLTER_TECH
+    costBuy: 1200
+    costSell: 800
+    size: 0.2
+    weight: 20
+    armor: 30
+    invWidth: 2
+    invHeight: 2
+    listOrder: 12020
+#SHOOTING
+    clipSize: 80
+    damageType: 3 #EXPLOSIVE
+    power: 70
+    explosionSpeed: 5
+    damageAlter:
+      RandomType: 2
+      ToArmorPre: 0.05
+      ArmorEffectiveness: 0.9
+      ToArmor: 0.1
+      ToHealth: 1.0
+      ToStun: 0.5
+      FixRadius: 0
+
+
+## HEAVY BOLTER AMMO CASE (ARMOR PIERCING) ##
+  - type: STR_HEAVY_BOLTER_CASE_AP
+#RESOURCES
+    bigSprite: 266
+    floorSprite: 248
+    handSprite: 464
+    hitSound: 1044 #bolt hit sound
+    hitAnimation: 181 #Bolt hit animation
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_BOLTER]
+    requiresBuy:
+      - STR_HEAVY_BOLTER_TECH
+    costBuy: 1400
+    costSell: 1000
+    size: 0.2
+    weight: 20
+    armor: 30
+    invWidth: 2
+    invHeight: 2
+    listOrder: 12040
+#SHOOTING
+    clipSize: 80
+    damageType: 1
+    power: 70
+    explosionSpeed: 5
+    damageAlter:
+      ArmorEffectiveness: 0.8
+      ToArmorPre: 0.1
+      ToArmor: 0.2
+      ToHealth: 0.9
+      ToStun: 0.2
+
+
+## HEAVY BOLTER AMMO CASE (INCENDIARY) ##
+  - type: STR_HEAVY_BOLTER_CASE_I
+#RESOURCES
+    bigSprite: 267
+    floorSprite: 248
+    handSprite: 464
+    hitSound: 1044 #bolt hit sound
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_BOLTER]
+    requiresBuy:
+      - STR_HEAVY_BOLTER_TECH
+    costBuy: 1400
+    costSell: 1000
+    size: 0.2
+    weight: 20
+    armor: 30
+    invWidth: 2
+    invHeight: 2
+    listOrder: 12040
+#SHOOTING
+    clipSize: 80
+    damageType: 2
+    power: 50
+    explosionSpeed: 5
+    damageAlter:
+      RandomType: 2 #TFTD [50% - 150%]
+      ToHealth: 1.0
+      ToMorale: 0.5
+    blastRadius: 1
+
+
+## ASTARTES STORM BOLTER ##
+  - delete: STR_HB
+  - delete: STR_HB_CLIP
+
+  - type: STR_STORM_BOLTER_SM
+#RESOURCES
+    bigSprite: 270
+    floorSprite: 251
+    handSprite: 488
+    bulletSprite: 6
+    fireSound: [1042, 1043]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
+    size: 0.6
+    costSell: 30000
+    weight: 60
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    listOrder: 13100
+    twoHanded: false
+#    oneHandedPenalty: 100
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#SHOOTING
+    compatibleAmmo:
+      - STR_STORM_BOLTER_MAGAZINE_EX
+      - STR_STORM_BOLTER_MAGAZINE_AP
+      - STR_STORM_BOLTER_MAGAZINE_I
+    dropoff: 5
+    bulletSpeed: 30
+    compatibleAmmo:
+    accuracySnap: 80
+    confSnap:
+      shots: 2
+    tuSnap: 25
+    snapRange: 15
+    accuracyMultiplier:
+      firing: 0.65
+      strength: 0.2
+
+
+## STORMBOLTER MAGAZINE (EXPLOSIVE) ##
+  - type: STR_STORM_BOLTER_MAGAZINE_EX
+#RESOURCES
+    bigSprite: 271
+    floorSprite: 252
+    handSprite: 496
+    hitSound: 1044 #bolt hit sound
+    hitAnimation: 181 #Bolt hit animation
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
+    size: 0.3
+    costSell: 1000
+    weight: 12
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    attraction: 8
+    listOrder: 13120
+    tags:
+      ITEM_AMMO_COLOR: 0
+#SHOOTING
+    clipSize: 40
+    power: 60
+    damageType: 3 #EXPLOSIVE
+    explosionSpeed: 5
+    damageAlter:
+      RandomType: 2
+      ToArmorPre: 0.05
+      ArmorEffectiveness: 0.9
+      ToArmor: 0.1
+      ToHealth: 1.0
+      ToStun: 0.5
+      FixRadius: 0
+    explosionSpeed: 5
+
+
+## STORMBOLTER MAGAZINE (ARMOR PIERCING) ##
+  - type: STR_STORM_BOLTER_MAGAZINE_AP
+#RESOURCES
+    bigSprite: 272
+    floorSprite: 252
+    handSprite: 496
+    hitSound: 1044 #bolt hit sound
+    hitAnimation: 181 #Bolt hit animation
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
+    size: 0.3
+    costSell: 1000
+    weight: 15
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    attraction: 8
+    listOrder: 13120
+    tags:
+      ITEM_AMMO_COLOR: 1
+#SHOOTING
+    clipSize: 40
+    power: 60
+    damageType: 1
+    explosionSpeed: 5
+    damageAlter:
+      ArmorEffectiveness: 0.8
+      ToArmorPre: 0.1
+      ToArmor: 0.2
+      ToHealth: 0.9
+      ToStun: 0.2
+
+## STORMBOLTER MAGAZINE (INCENDIARY) ##
+  - type: STR_STORM_BOLTER_MAGAZINE_I
+#RESOURCES
+    bigSprite: 273
+    floorSprite: 252
+    handSprite: 496
+    hitSound: 1044 #bolt hit sound
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
+    size: 0.3
+    costSell: 1000
+    weight: 15
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    attraction: 8
+    listOrder: 13120
+    tags:
+      ITEM_AMMO_COLOR: 2
+#SHOOTING
+    clipSize: 40
+    power: 40
+    damageType: 2
+    damageAlter:
+      RandomType: 2 #TFTD [50% - 150%]
+      ToHealth: 1.0
+      ToMorale: 0.5
+      FixRadius: 1
+    explosionSpeed: 5
+
+
+
+
+
+
+
+
+
+
 
 ### NULL SLOT ITEMS ###
 
@@ -279,120 +1071,138 @@ items:
       ToMorale: 0.5
     blastRadius: 2
 
-## HEAVY BOLTER ##
-  - type: STR_AUTO_CANNON
-#RESOURCES
-    bigSprite: 264
-    floorSprite: 247
-    handSprite: 456
-#GENERAL
-    requiresBuy:
-      - STR_HEAVY_BOLTER_TECH
-      - STR_SPACE_MARINES_OPERATIONS
-#SHOOTING
-    compatibleAmmo:
-      - STR_AC_AP_AMMO
-      - STR_AC_HE_AMMO
-      - STR_AC_I_AMMO
-    accuracySnap: 60
-    accuracyAuto: 50
-    snapRange: 20
-    autoRange: 10
-    autoShots: 3
 
-## HEAVY BOLTER ARMOR PIERCING AMMO ##
-  - type: STR_AC_AP_AMMO
-#RESOURCES
-    bigSprite: 265
-    floorSprite: 248
-    handSprite: 464
-#GENERAL
-    requiresBuy:
-      - STR_HEAVY_BOLTER_TECH
-      - STR_SPACE_MARINES_OPERATIONS
 
-## HEAVY BOLTER HIGH EXPLOSIVE AMMO ##
-  - type: STR_AC_HE_AMMO
-#RESOURCES
-    bigSprite: 266
-    floorSprite: 248
-    handSprite: 464
-#GENERAL
-    requiresBuy:
-      - STR_HEAVY_BOLTER_TECH
-      - STR_SPACE_MARINES_OPERATIONS
-    listOrder: 12040
+## ASTARTES SNIPER RIFLE ##
+  - delete: STR_HEAVY_CANNON
+  - delete: STR_HC_AP_AMMO
+  - delete: STR_HC_HE_AMMO
+  - delete: STR_HC_I_AMMO
 
-## HEAVY BOLTER INCENDIARY AMMO ##
-  - type: STR_AC_I_AMMO
-#RESOURCES
-    bigSprite: 267
-    floorSprite: 248
-    handSprite: 464
-#GENERAL
-    requiresBuy:
-      - STR_HEAVY_BOLTER_TECH
-      - STR_SPACE_MARINES_OPERATIONS
-#SHOOTING
-    power: 40
-    damageAlter:
-      RandomType: 2 #TFTD [50% - 150%]
-      ToHealth: 1.0
-      ToMorale: 0.5
-    blastRadius: 1
-
-## SNIPER RIFLE ##
-  - type: STR_HEAVY_CANNON
+  - type: STR_SNIPER_RIFLE_SM
 #RESOURCES
     bigSprite: 254
     floorSprite: 240
     handSprite: 400
+    bulletSprite: 6
+    fireSound: 1041
 #GENERAL
+    battleType: 1
+    categories: [STR_CAT_SNIPER, STR_CAT_SCOUT]
     requiresBuy:
       - STR_SNIPER_RIFLE_TECH
+    costBuy: 18400
+    costSell: 9000
+    size: 0.3
+    weight: 30
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    blockBothHands: true
+    listOrder: 11900
+#SHOOTING
+    compatibleAmmo:
+      - STR_SNIPER_RIFLE_AMMO_AP
+      - STR_SNIPER_RIFLE_AMMO_HE
+      - STR_SNIPER_RIFLE_AMMO_I
+    bulletSpeed: 40
+    dropoff: 5
+
+    accuracySnap: 80
+    tuSnap: 45
+    snapRange: 18
+
+    accuracyAimed: 130
+    tuAimed: 85
+    aimRange: 60
 
 
-## SNIPER RIFLE ARMOR PIERCING AMMO ##
-  - type: STR_HC_AP_AMMO
+## SNIPER RIFLE AMMO (ARMOR PIERCING) ##
+
+  - type: STR_SNIPER_RIFLE_AMMO_AP
 #RESOURCES
     bigSprite: 255
     floorSprite: 241
     handSprite: 408
+    hitSound: 22
+    hitAnimation: 26
 #GENERAL
+    battleType: 2
+    categories: [STR_CAT_SNIPER, STR_CAT_SCOUT]
     requiresBuy:
       - STR_SNIPER_RIFLE_TECH
+    costBuy: 300
+    costSell: 225
+    weight: 3
+    invWidth: 1
+    invHeight: 1
+    size: 0.1
+    listOrder: 11910
 #SHOOTING
     clipSize: 10
+    damageType: 1
+    power: 100
 
-## SNIPER RIFLE HIGH EXPLOSIVE AMMO ##
-  - type: STR_HC_HE_AMMO
+## SNIPER RIFLE AMMO (HIGH EXPLOSIVE) ##
+
+  - type: STR_SNIPER_RIFLE_AMMO_HE
 #RESOURCES
     bigSprite: 256
     floorSprite: 241
     handSprite: 408
+    hitSound: 22
+    hitAnimation: 0
 #GENERAL
+    battleType: 2
+    categories: [STR_CAT_SNIPER, STR_CAT_SCOUT] 
     requiresBuy:
       - STR_SNIPER_RIFLE_TECH
+    costBuy: 500
+    costSell: 275
+    invWidth: 1
+    invHeight: 1
+    size: 0.1
+    weight: 3
+    listOrder: 11920
 #SHOOTING
     clipSize: 10
+    damageType: 3
+    power: 90
+    blastRadius: 1
 
-## SNIPER RIFLE INCENDIARY AMMO ##
-  - type: STR_HC_I_AMMO
+## SNIPER RIFLE AMMO (INCENDIARY) ##
+
+  - type: STR_SNIPER_RIFLE_AMMO_I
 #RESOURCES
     bigSprite: 257
     floorSprite: 241
     handSprite: 408
+    hitSound: 22
+    hitAnimation: 0
 #GENERAL
+    battleType: 2
+    categories: [STR_CAT_SNIPER, STR_CAT_SCOUT]
     requiresBuy:
       - STR_SNIPER_RIFLE_TECH
+    costBuy: 400
+    costSell: 300
+    size: 0.1
+    weight: 3
+    invWidth: 1
+    invHeight: 1
+    listOrder: 11930
 #SHOOTING
     clipSize: 10
+    damageType: 2
     power: 100
     damageAlter:
       RandomType: 2 #TFTD [50% - 150%]
       ToHealth: 1.0
       ToMorale: 0.5
     blastRadius: 1
+
+
 
 
 ## ASSAULT BIKE ##
@@ -852,333 +1662,22 @@ items:
     experienceTrainingMode: 26 #train psiSkill (was 28 - psiSkill & psiStr)
 
 
-### BOLTGUNS ###
-  - delete: STR_RIFLE
-  - delete: STR_RIFLEB
-  - delete: STR_RIFLEC
-  - delete: STR_RIFLED
-  - delete: STR_MCRIFLE
-
-## ASTARTES BOLTGUN ##
-  - type: STR_SM_BOLTER
-#RESOURCES
-    bigSprite: 304
-    floorSprite: 265
-    handSprite: 608
-    bulletSprite: 6
-    fireSound: 707
-#GENERAL
-    battleType: 1
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
-    requiresBuy:
-      - STR_BOLTER_TECH
-      - STR_SPACE_MARINES_OPERATIONS
-    costBuy: 10000
-    costSell: 5000
-    size: 0.3
-    weight: 20
-    invWidth: 2
-    invHeight: 3
-    armor: 30
-    attraction: 1
-    listOrder: 10300
-    twoHanded: true
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#SHOOTING
-    compatibleAmmo:
-      - STR_RIFLE_CLIP
-      - STR_RIFLE_CLIP_AP
-      - STR_RIFLE_CLIP_EX
-    dropoff: 5
-    bulletSpeed: 30
-    accuracySnap: 80
-    tuSnap: 25
-    snapRange: 15
-    accuracyAuto: 70
-    tuAuto: 40
-    autoRange: 8
-    autoShots: 3
-    oneHandedPenalty: 70
-
-## SCOPED ASTARTES BOLTGUN ##
-  - type: STR_SM_BOLTER_SCOPED
-#RESOURCES
-    bigSprite: 305
-    floorSprite: 266
-    handSprite: 616
-    bulletSprite: 6
-    fireSound: 707
-#GENERAL
-    battleType: 1
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
-    costBuy: 0
-    costSell: 14000
-    size: 0.3
-    weight: 22
-    invWidth: 2
-    invHeight: 3
-    armor: 30
-    attraction: 1
-    twoHanded: true
-    listOrder: 10310
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#SHOOTING
-    compatibleAmmo:
-      - STR_RIFLE_CLIP
-      - STR_RIFLE_CLIP_AP
-      - STR_RIFLE_CLIP_EX
-    dropoff: 5
-    bulletSpeed: 30
-    accuracyAimed: 100
-    tuAimed: 60
-    aimRange: 30
-    accuracySnap: 80
-    tuSnap: 25
-    snapRange: 15
-    accuracyAuto: 65
-    tuAuto: 40
-    autoRange: 8
-    autoShots: 3
-    oneHandedPenalty: 65
-
-## MASTER CRAFTED BOLTGUN ##
-  - type: STR_MC_BOLTER
-#RESOURCES
-    bigSprite: 306
-    floorSprite: 267
-    handSprite: 624
-    bulletSprite: 6
-    fireSound: 707
-#GENERAL
-    battleType: 1
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
-    costBuy: 0
-    costSell: 20000
-    size: 0.3
-    weight: 23
-    invWidth: 2
-    invHeight: 3
-    armor: 50
-    twoHanded: true
-    attraction: 1
-    listOrder: 10320
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#SHOOTING
-    compatibleAmmo:
-      - STR_RIFLE_CLIP
-      - STR_RIFLE_CLIP_AP
-      - STR_RIFLE_CLIP_EX
-    dropoff: 5
-    bulletSpeed: 30
-    accuracySnap: 85
-    tuSnap: 25
-    snapRange: 18
-    accuracyAuto: 75
-    tuAuto: 40
-    autoRange: 12
-    autoShots: 3
-    oneHandedPenalty: 80
-
-## MASTER CRAFTED BOLTGUN (SCOPED) ##
-  - type: STR_MC_BOLTER_SCOPED
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] 
-#RESOURCES
-    bigSprite: 307
-    floorSprite: 268
-    handSprite: 632
-    bulletSprite: 6
-    fireSound: 707
-#GENERAL
-    battleType: 1
-    costBuy: 0
-    costSell: 24000
-    size: 0.3
-    weight: 25
-    invWidth: 2
-    invHeight: 3
-    armor: 50
-    attraction: 1
-    listOrder: 10330
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#SHOOTING
-    compatibleAmmo:
-      - STR_RIFLE_CLIP
-      - STR_RIFLE_CLIP_AP
-      - STR_RIFLE_CLIP_EX
-    dropoff: 5
-    bulletSpeed: 30
-    accuracyAimed: 100
-    tuAimed: 60
-    aimRange: 40
-    accuracySnap: 80
-    tuSnap: 25
-    snapRange: 18
-    accuracyAuto: 75
-    tuAuto: 40
-    autoRange: 12
-    autoShots: 3
-
-## STANDARD BOLTGUN AMMO ##
-  - type: STR_RIFLE_CLIP
-#GENERAL
-    requiresBuy:
-      - STR_BOLTER_TECH
-    costBuy: 600
-    costSell: 300
-#SHOOTING
-    bulletSprite: 6
-    bulletSpeed: 30
-
-## HIGH EXPLOSIVE BOLTGUN AMMO ##
-  - type: STR_RIFLE_CLIP_EX
-#GENERAL
-    requiresBuy:
-      - STR_BOLTER_TECH
-    costBuy: 800
-    costSell: 400
-#SHOOTING
-    bulletSprite: 6
-    bulletSpeed: 30
- 
-## ARMOR PIERCING BOLTGUN AMMO ##
-  - type: STR_RIFLE_CLIP_AP
-#GENERAL
-    requiresBuy:
-      - STR_BOLTER_TECH
-    costBuy: 1200
-    costSell: 600
-#SHOOTING
-    bulletSprite: 6
-    bulletSpeed: 30
-    power: 60
-    damageAlter: #DA BOLTER AP+
-      ArmorEffectiveness: 0.8
-      ToArmorPre: 0.1
-      ToArmor: 0.2
-      ToHealth: 0.9
-      ToStun: 0.2
 
 
-### BOLTPISTOLS ###
-  - delete: STR_PISTOL
-  - delete: STR_PISTOLB
-  - delete: STR_PISTOLS
-  - delete: STR_PISTOLH
-  - delete: STR_MCPISTOL
 
-## ASTARTES BOLTPISTOL ##
-  - type: STR_SM_BOLTPISTOL
- 
-#RESOURCES
-    bigSprite: 309
-    floorSprite: 270
-    handSprite: 648
-    bulletSprite: 6
-    fireSound: 707
-#GENERAL
-    battleType: 1
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
-    requiresBuy:
-      - STR_BOLTPISTOL_TECH
-      - STR_SPACE_MARINES_OPERATIONS
-    costBuy: 8000
-    costSell: 4000
-    size: 0.3
-    weight: 12
-    invWidth: 2
-    invHeight: 2
-    armor: 30
-    attraction: 1
-    twoHanded: false
-    listOrder: 10100
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#SHOOTING
-    compatibleAmmo:
-      - STR_PISTOL_CLIP
-      - STR_PISTOL_CLIP_EX
-      - STR_PISTOL_CLIP_AP
-    dropoff: 5
-    bulletSpeed: 30
-    accuracySnap: 75
-    tuSnap: 20
-    snapRange: 13
-    accuracyAuto: 60
-    tuAuto: 35
-    autoRange: 6
-    autoShots: 3
 
-## MASTER CRAFTED BOLTPISTOL ##
-  - type: STR_MC_BOLTPISTOL 
-#RESOURCES
-    bigSprite: 311
-    floorSprite: 272
-    handSprite: 664
-    bulletSprite: 6
-    fireSound: 707
-#GENERAL
-    battleType: 1
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
-    costBuy: 0
-    costSell: 14000
-    size: 0.3
-    weight: 14
-    invWidth: 2
-    invHeight: 3
-    armor: 30
-    attraction: 1
-    twoHanded: false
-    listOrder: 10110
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#SHOOTING
-    compatibleAmmo:
-      - STR_PISTOL_CLIP
-      - STR_PISTOL_CLIP_EX
-      - STR_PISTOL_CLIP_AP
-    dropoff: 5
-    bulletSpeed: 30
-    accuracyAimed: 85
-    tuAimed: 60
-    aimRange: 25
-    accuracySnap: 75
-    tuSnap: 20
-    snapRange: 15
 
-## STANDARD BOLTPISTOL AMMO ##
-  - type: STR_PISTOL_CLIP
-#GENERAL
-    requiresBuy:
-      - STR_BOLTPISTOL_TECH
-    costBuy: 300
-    costSell: 150
 
-## HIGH EXPLOSIVE BOLTPISTOL AMMO ##
-  - type: STR_PISTOL_CLIP_EX
-#GENERAL
-    requiresBuy:
-      - STR_BOLTPISTOL_TECH
-    costBuy: 400
-    costSell: 200
 
-## ARMOR PIERCING BOLTPISTOL AMMO ##
-  - type: STR_PISTOL_CLIP_AP
-#GENERAL
-    requiresBuy:
-      - STR_BOLTPISTOL_TECH
-    costBuy: 600
-    costSell: 300
-#SHOOTING
-    damageAlter:
-      ArmorEffectiveness: 0.8
-      ToArmorPre: 0.1
-      ToArmor: 0.2
-      ToHealth: 0.9
-      ToStun: 0.2
+
+
+
+
+
+
+
+
+
 
 
 ### MELTA WEAPONS ###
@@ -1407,29 +1906,84 @@ items:
 
 
 ### FLAMETHROWERS ###
-## FLAMER ##
-#Unable to reaction fire.
-  - type: STR_FLAMETHROWER
+
+## ASTARTES FLAMER ##
+  - delete: STR_FLAMETHROWER
+
+  - type: STR_FLAMER_SM
+#RESOURCES
+    bigSprite: 364
+    floorSprite: 320
+    handSprite: 1072
+    bulletSprite: 5
+    fireSound: [1036, 1037, 1038, 1039, 1040]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_FLAMER]
+    requiresBuy:
+      - STR_FLAMER_TECH
+      - STR_SPACE_MARINES_OPERATIONS
+    costBuy: 8000
+    costSell: 6500
+    size: 0.2
+    weight: 10
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    arcingShot: false
+    experienceTrainingMode: 6
+    attraction: 7
+    listOrder: 10500
 #SHOOTING
+    compatibleAmmo:
+      - STR_FLAMER_FUEL
     tuSnap: 25
     tuAuto: 40
-    tuAimed: 0
     autoShots: 3
     accuracyAuto: 150
     accuracySnap: 150
     maxRange: 6
 
-## FLAMER AMMO ##
-  - type: STR_FLAMETHROWER_CLIP
+## FLAMER FUEL ##
+  - delete: STR_FLAMETHROWER_CLIP
+
+  - type: STR_FLAMER_FUEL
+#RESOURCES
+    bigSprite: 365
+    floorSprite: 321
+    handSprite: 1080
+    hitSound: 12
+    hitAnimation: 88 #FLAME
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_FLAMER]
+    requiresBuy:
+      - STR_FLAMER_TECH
+    costBuy: 500
+    costSell: 400
+    invWidth: 1
+    invHeight: 2
+    size: 0.2
+    weight: 5
+    armor: 15
+    attraction: 7
+    listOrder: 10520
 #SHOOTING
     clipSize: 30
+    damageType: 2
     power: 40
+    bulletSpeed: 50
+    explosionSpeed: 2
+
     damageAlter:
       RandomType: 2 #TFTD [50% - 150%]
       ToHealth: 1.0
       ToMorale: 0.5
+      IgnoreSelfDestruct: false
     blastRadius: 1
-    explosionSpeed: 2
+
+
+
 
 ## HEAVY FLAMER ##
 #Unable to reaction fire.
@@ -2190,179 +2744,6 @@ items:
     floorSprite: 250
     handSprite: 480
 
-
-## STORMBOLTER (COMBI-BOLTER) ##
-  - delete: STR_HB
-
-  - type: STR_HB
-#RESOURCES
-    bigSprite: 270
-    floorSprite: 251
-    handSprite: 488
-    bulletSprite: 6
-    fireSound: 707
-#GENERAL
-    battleType: 1
-    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
-    size: 0.6
-    costSell: 30000
-    weight: 60
-    invWidth: 2
-    invHeight: 3
-    armor: 30
-    attraction: 8
-    listOrder: 13100
-    twoHanded: true #twohanded weapon
-    oneHandedPenalty: 100 #but without onehanded penalty
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#SHOOTING
-    dropoff: 5
-    bulletSpeed: 30
-    compatibleAmmo:
-      - STR_HB_CLIP
-      - STR_HB_CLIP_EX
-      - STR_HB_CLIP_AP
-#      - STR_HB_BELT
-    accuracySnap: 75
-    tuSnap: 25
-    confSnap:
-      shots: 2
-
-
-## STORMBOLTER STANDARD MAGAZINE ##
-  - delete: STR_HB_CLIP
-
-  - type: STR_HB_CLIP
-#RESOURCES
-    bigSprite: 271
-    floorSprite: 252
-    handSprite: 496
-    hitSound: 708
-    hitAnimation: 26
-#GENERAL
-    battleType: 2
-    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
-    size: 0.3
-    costSell: 1000
-    weight: 15
-    armor: 30
-    invWidth: 1
-    invHeight: 2
-    attraction: 8
-    listOrder: 13120
-    tags:
-      ITEM_AMMO_COLOR: 0
-#SHOOTING
-    clipSize: 40
-    damageType: 1
-    power: 60
-    damageAlter:
-      RandomType: 2
-      ToArmorPre: 0.05
-      ArmorEffectiveness: 0.9
-      ToArmor: 0.1
-      ToHealth: 1.0
-      ToStun: 0.5
-    explosionSpeed: 5
-
-## STORMBOLTER HIGH EXPLOSIVE MAGAZINE ##
-  - type: STR_HB_CLIP_EX
-#RESOURCES
-    bigSprite: 272
-    floorSprite: 252
-    handSprite: 496
-    hitSound: 708
-#GENERAL
-    battleType: 2
-    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
-    size: 0.3
-    costSell: 1000
-    weight: 15
-    armor: 30
-    invWidth: 1
-    invHeight: 2
-    attraction: 8
-    listOrder: 13120
-    tags:
-      ITEM_AMMO_COLOR: 2
-#SHOOTING
-    clipSize: 40
-    damageType: 3
-    power: 60
-    damageAlter:
-      RandomType: 2
-      ToArmorPre: 0.05
-      ArmorEffectiveness: 0.9
-      ToArmor: 0.1
-      ToHealth: 1.0
-      ToStun: 0.5
-    blastRadius: 1
-    explosionSpeed: 5
-
-## STORMBOLTER ARMOR PIERCING MAGAZINE ##
-  - type: STR_HB_CLIP_AP
-#RESOURCES
-    bigSprite: 273
-    floorSprite: 252
-    handSprite: 496
-    hitSound: 708
-    hitAnimation: 26
-#GENERAL
-    battleType: 2
-    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
-    size: 0.3
-    costSell: 1000
-    weight: 15
-    armor: 30
-    invWidth: 1
-    invHeight: 2
-    attraction: 8
-    listOrder: 13120
-    tags:
-      ITEM_AMMO_COLOR: 1
-#SHOOTING
-    clipSize: 40
-    damageType: 1
-    power: 60
-    damageAlter:
-      ArmorEffectiveness: 0.8
-      ToArmorPre: 0.1
-      ToArmor: 0.2
-      ToHealth: 0.9
-      ToStun: 0.2
-    explosionSpeed: 5
-
-# TEST Stormbolter Belt
-  # - type: STR_HB_BELT
-    # categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
-    # size: 0.3
-    # costSell: 1000
-    # weight: 30
-    # bigSprite: 276
-    # floorSprite: 254
-    # handSprite: 512
-
-    # hitSound: 708
-    # hitAnimation: 26
-
-    # damageAlter:
-      # RandomType: 2
-      # ToArmorPre: 0.05
-      # ArmorEffectiveness: 0.9
-      # ToArmor: 0.1
-      # ToHealth: 1.0
-      # ToStun: 0.5
-    # explosionSpeed: 5
-    # power: 60
-    # damageType: 1
-    # clipSize: 80
-    # battleType: 2
-    # armor: 30
-    # invWidth: 2
-    # invHeight: 3
-    # attraction: 8
-    # listOrder: 13120
 
 
 
