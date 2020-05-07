@@ -7,9 +7,9 @@ items:
   - delete: STR_SONIC_CANON
   - delete: STR_SNIPER_CHAOS
 
-### CHAOS STUB WEAPONS ###
+### ENEMY STUB WEAPONS ###
 
-## Chaos Autopistol ##
+## CHAOS AUTOPISTOL ##
   - delete: STR_AUTOPISTOL_CHAOS
 
   - type: STR_AUTOPISTOL_CHAOS
@@ -50,9 +50,11 @@ items:
     tuAuto: 35
     autoRange: 5
 
-## Chaos Autogun ##
+    accuracyAimed: 70
+    tuAimed: 30
+    aimRange: 15
 
-## Autogun ##
+## CHAOS AUTOGUN ##
   - delete: STR_AUTOGUN_CHAOS
 
   - type: STR_AUTOGUN_CHAOS
@@ -70,7 +72,7 @@ items:
     costSell: 2000
     size: 0.2
     weight: 9
-    invWidth: 1
+    invWidth: 2
     invHeight: 3
     armor: 30
     attraction: 1
@@ -83,17 +85,21 @@ items:
     bulletSpeed: 25
     dropoff: 5
 
-    accuracySnap: 75
+    accuracySnap: 60
     tuSnap: 25
     snapRange: 15
 
     confAuto:
       shots: 4
-    accuracyAuto: 45
+    accuracyAuto: 35
     tuAuto: 40
     autoRange: 7
 
-## Chaos Heavy Stubber ##
+    accuracyAimed: 100
+    tuAimed: 80
+    aimRange: 20
+
+## CHAOS HEAVY STUBBER ##
   - delete: STR_HEAVY_STUBBER_CHAOS
 
   - type: STR_HEAVY_STUBBER_CHAOS
@@ -124,19 +130,27 @@ items:
     bulletSpeed: 25
     dropoff: 5
 
-    accuracySnap: 65
+#AI requires shapshot to work properly. 
+    accuracySnap: 55
     confSnap:
       shots: 3
     tuSnap: 40
     snapRange: 16
 
-    accuracyAuto: 50
+    accuracyAuto: 40
     confAuto:
       shots: 9
     tuAuto: 60
     autoRange: 8
 
-## Chaos Shotgun ##
+    accuracyAimed: 55
+    confAimed:
+      shots: 3
+    tuAimed: 40
+    aimRange: 16
+
+
+## CHAOS SHOTGUN ##
   - delete: STR_SHOTGUN_CHAOS
 
   - type: STR_SHOTGUN_CHAOS
@@ -153,7 +167,7 @@ items:
       - STR_CHAOS_ONLY
     costSell: 2750
     size: 0.3
-    weight: 18
+    weight: 16
     invWidth: 2
     invHeight: 3
     armor: 30
@@ -166,123 +180,27 @@ items:
     dropoff: 7
     bulletSpeed: 30
 
-    accuracySnap: 75
+    accuracySnap: 60
     tuSnap: 20
     snapRange: 7
 
+    accuracyAimed: 90
+    tuAimed: 40
+    aimRange: 12
 
 
 
-
-## Cultist Improvised Mace ##
-  - type: STR_CULTIST_MACE 
-    categories: [STR_CAT_MELEE]
-#RESOURCES
-    bigSprite: 329
-    floorSprite: 286
-    handSprite: 792
-    meleeHitSound: [1006, 1007, 1008, 1009, 1010]
-    meleeAnimation: 0
-#GENERAL
-    battleType: 3
-    requires:
-      - STR_CHAOS_ONLY
-    size: 0.2
-    costSell: 50
-    weight: 5
-    twoHanded: false
-    invWidth: 1
-    invHeight: 3
-    armor: 20
-    attraction: 7
-    listOrder: 12900
-    experienceTrainingMode: 13
-    recover: false
-#MELEE
-    clipSize: -1
-    damageType: 7
-    power: 20
-    tuMelee: 20
-    damageBonus:
-      melee: 0.2
-      strength: 0.2
-    accuracyMelee: 100
-    meleeMultiplier:
-      melee: 0.3
-      flatHundred: 0.5
-
-## Cultist Improvised Sword ##
-  - type: STR_CULTIST_SWORD 
-    categories: [STR_CAT_MELEE]
-#RESOURCES
-    bigSprite: 330
-    floorSprite: 287
-    handSprite: 800
-    meleeHitSound: [1011, 1012, 1013, 1014, 1015]
-    meleeAnimation: 0
-#GENERAL
-    battleType: 3
-    requires:
-      - STR_CHAOS_ONLY
-    size: 0.2
-    costSell: 50
-    weight: 5
-    twoHanded: false
-    invWidth: 1
-    invHeight: 3
-    armor: 20
-    attraction: 7
-    listOrder: 12900
-    experienceTrainingMode: 13
-    recover: false
-#MELEE
-    clipSize: -1
-    damageType: 7
-    power: 30
-    tuMelee: 20
-    damageBonus:
-      melee: 0.5
-    accuracyMelee: 100
-    meleeMultiplier:
-      melee: 0.3
-      flatHundred: 0.4
-
-## Cultist Panic Spell #
-  - type: STR_CULTIST_PANIC_SPELL
-#RESOURCES
-    bigSprite: 252
-    floorSprite: 234
-    handSprite: 368
-    hitSound: 36
-#GENERAL
-    battleType: 9
-    size: 0.1
-    weight: 0
-    invWidth: 1
-    invHeight: 2
-    twoHanded: false
-    fixedWeapon: true
-    recover: false
-    psiRequired: true
-#SHOOTING
-    flatRate: false
-    costPanic:
-      time: 30
-      energy: 25
-    costMindControl:
-      time: 0
-    LOSRequired: true
+### ENEMY LASER WEAPONS ###
 
 
-### CHAOS LASER WEAPONS ###
-
-## Chaos Lasgun#
+## Renegade Lasgun#
   - delete: STR_LASER_RIFLEC
-  - type: STR_LASGUN_CHAOS
+
+  - type: STR_LASGUN_RENEGADE
 #RESOURCES
-    bigSprite: 295 #FIX IT
-    floorSprite: 262 #FIX IT
-    handSprite: 584 #FIX IT
+    bigSprite: 295
+    floorSprite: 262
+    handSprite: 584
     bulletSprite: 12
     fireSound: [1031, 1032, 1033, 1034, 1035]
     meleeHitSound: [1011, 1012, 1013, 1014, 1015]
@@ -301,15 +219,21 @@ items:
     listOrder: 10920
 #SHOOTING
     compatibleAmmo:
-      - STR_POWER_PACK
+      - STR_LASGUN_POWER_PACK
     dropoff: 5
     bulletSpeed: 50
+
     tuSnap: 25
     accuracySnap: 65
     snapRange: 16
+
     tuAuto: 34
     accuracyAuto: 45
     autoRange: 12
+
+    tuAimed: 50
+    accuracyAimed: 100
+    aimRange: 20
 #MELEE
     meleeType: 7
     meleePower: 20
@@ -325,13 +249,14 @@ items:
     flatMelee:
       time: false
 
-## Chaos Laspistol ##
+## Renegade Laspistol ##
   - delete: STR_LASER_PISTOLC
-  - type: STR_LASPISTOL_CHAOS
+
+  - type: STR_LASPISTOL_RENEGADE
 #RESOURCES
-    bigSprite: 296 #FIX IT
-    floorSprite: 263 #FIX IT
-    handSprite: 592 #FIX IT
+    bigSprite: 296
+    floorSprite: 263
+    handSprite: 592
     bulletSprite: 12
     fireSound: [1031, 1032, 1033, 1034, 1035]
 #GENERAL
@@ -347,16 +272,144 @@ items:
     listOrder: 10810
 #SHOOTING
     compatibleAmmo:
-      - STR_POWER_PACK
+      - STR_LASGUN_POWER_PACK
     dropoff: 5
     bulletSpeed: 50
     accuracySnap: 50
     tuSnap: 20
     snapRange: 12
 
+## RENEGADE LASCANNON ##
 
-### CHAOS MISSILE LAUCNERS ###
- 
+  - type: STR_LASCANNON_RENEGADE
+#RESOURCES
+    bigSprite: 385
+    floorSprite: 336
+    handSprite: 1184
+    bulletSprite: 12
+    fireSound: 742
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_LASGUN]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 50000
+    weight: 45
+    size: 0.4
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    twoHanded: true
+    blockBothHands: true
+    listOrder: 12250
+#SHOOTING
+    compatibleAmmo:
+      - STR_LASCANNON_POWER_PACK
+    bulletSpeed: 50
+    dropoff: 5
+
+#AI requires shapshot to work properly. 
+    accuracySnap: 80
+    tuSnap: 70
+    snapRange: 40
+
+    accuracyAimed: 80
+    tuAimed: 70
+    aimRange: 40
+
+
+### ENEMY LAUNCHER WEAPONS ###
+
+## GRENADE LAUNCHER (RENEGADE) ##
+
+  - delete: STR_GRENADE_LAUNCHER_CHAOS
+
+  - type: STR_GRENADE_LAUNCHER_RENEGADE
+#RESOURCES
+    bigSprite: 379
+    floorSprite: 331
+    handSprite: 1136
+    bulletSprite: 0
+    fireSound: 4
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_ROCKETL]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 2000
+    weight: 15
+    size: 0.4
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    listOrder: 11855
+#SHOOTING
+    compatibleAmmo:
+      - STR_FRAG_GRENADE_PACK
+      - STR_KRAK_GRENADE_PACK
+      - STR_INCENDIARY_GRENADE_PACK
+    dropoff: 5
+    arcingShot: true
+
+    tuSnap: 45
+    accuracySnap: 60
+    snapRange: 12
+
+    tuAuto: 80
+    accuracyAuto: 40
+    autoRange: 9
+    confAuto:
+      shots: 2
+
+    tuAimed: 60
+    accuracyAimed: 80
+    aimRange: 20
+
+## MISSILE LAUNCHER (RENEGADE) ##
+
+  - type: STR_MISSILE_LAUNCHER_RENEGADE
+#RESOURCES
+    bigSprite: 389
+    floorSprite: 340
+    handSprite: 1200
+    bulletSprite: 0
+    fireSound: 52
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_ROCKETL]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 3000
+    weight: 50
+    size: 0.4
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 60
+    listOrder: 12100
+#SHOOTING
+    dropoff: 5
+    compatibleAmmo:
+      - STR_FRAG_MISSILE
+      - STR_KRAK_MISSILE
+      - STR_INCENDIARY_MISSILE
+    dropoff: 5
+
+#AI requires shapshot to work properly. 
+    accuracySnap: 80
+    tuSnap: 75
+    snapRange: 40
+
+    accuracyAimed: 80
+    tuAimed: 75
+    aimRange: 40
+
+
+
+
 #Chaos Missile Laucher
   - type: STR_CHAOS_ROCKET_LAUNCHER
 
@@ -365,9 +418,95 @@ items:
   - type: AUX_NURGLE_ROCKET_LAUNCHER
 
 
-### Chaos Bolters ###
+### ENEMY BOLT WEAPONS ###
   - delete: STR_BOLTPISTOL_CHAOS
   - delete: STR_BOLTERC
+
+  - type: STR_BOLTPISTOL_RENEGADE
+#RESOURCES
+    bigSprite: 380
+    floorSprite: 332
+    handSprite: 1144
+    bulletSprite: 6
+    fireSound: [1042, 1043]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 3500
+    size: 0.1
+    weight: 10
+    invWidth: 2
+    invHeight: 2
+    armor: 30
+    attraction: 1
+    twoHanded: false
+    listOrder: 10112
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#SHOOTING
+    bulletSpeed: 30
+    compatibleAmmo:
+      - STR_BOLTPISTOL_MAGAZINE_EX
+      - STR_BOLTPISTOL_MAGAZINE_AP
+      - STR_BOLTPISTOL_MAGAZINE_I
+    dropoff: 5
+
+    accuracyAimed: 80
+    tuAimed: 40
+    aimRange: 11
+
+    accuracySnap: 60
+    tuSnap: 20
+    snapRange: 6
+
+## RENEGADE HEAVY BOLTER ##
+  - type: STR_HEAVY_BOLTER_RENEGADE
+#RESOURCES
+    bigSprite: 381
+    floorSprite: 333
+    handSprite: 1152
+    bulletSprite: 6
+    fireSound: [1042, 1043]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_BOLTER]
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 10125
+    size: 0.5
+    weight: 35
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    attraction: 1
+    bulletSpeed: 30
+    twoHanded: true
+    blockBothHands: true
+    listOrder: 12000
+#SHOOTING
+    compatibleAmmo:
+      - STR_HEAVY_BOLTER_CASE_EX
+      - STR_HEAVY_BOLTER_CASE_AP
+      - STR_HEAVY_BOLTER_CASE_I
+    dropoff: 5
+
+#AI requires shapshot to work properly. 
+    accuracySnap: 40
+    tuSnap: 50
+    snapRange: 30
+
+    accuracyAimed: 40
+    tuAimed: 50
+    aimRange: 30
+
+    accuracyAuto: 29
+    tuAuto: 40
+    autoRange: 14
+    autoShots: 3
+
+
 
 #Chaos Bolt pistol
   - type: STR_BOLTPISTOL_CHAOS
@@ -760,7 +899,128 @@ items:
     # tags:
       # ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
-#### CHAOS MELEE WEAPONS ###
+### ENEMY MELEE WEAPONS ###
+
+## IMPROVISED MACE (CULTIST) ##
+  - type: STR_CULTIST_MACE 
+    categories: [STR_CAT_MELEE]
+#RESOURCES
+    bigSprite: 329
+    floorSprite: 286
+    handSprite: 792
+    meleeHitSound: [1006, 1007, 1008, 1009, 1010]
+    meleeAnimation: 0
+#GENERAL
+    battleType: 3
+    requires:
+      - STR_CHAOS_ONLY
+    size: 0.2
+    costSell: 50
+    weight: 5
+    twoHanded: false
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    attraction: 7
+    listOrder: 12900
+    experienceTrainingMode: 13
+    recover: false
+#MELEE
+    clipSize: -1
+    damageType: 7
+    power: 20
+    tuMelee: 20
+    damageBonus:
+      melee: 0.2
+      strength: 0.2
+    accuracyMelee: 100
+    meleeMultiplier:
+      melee: 0.3
+      flatHundred: 0.5
+
+## IMPROVISED SWORD (CULTIST) ##
+  - type: STR_CULTIST_SWORD 
+    categories: [STR_CAT_MELEE]
+#RESOURCES
+    bigSprite: 330
+    floorSprite: 287
+    handSprite: 800
+    meleeHitSound: [1011, 1012, 1013, 1014, 1015]
+    meleeAnimation: 0
+#GENERAL
+    battleType: 3
+    requires:
+      - STR_CHAOS_ONLY
+    size: 0.2
+    costSell: 50
+    weight: 5
+    twoHanded: false
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    attraction: 7
+    listOrder: 12900
+    experienceTrainingMode: 13
+    recover: false
+#MELEE
+    clipSize: -1
+    damageType: 7
+    power: 30
+    tuMelee: 20
+    damageBonus:
+      melee: 0.5
+    accuracyMelee: 100
+    meleeMultiplier:
+      melee: 0.3
+      flatHundred: 0.4
+
+## CHAINSWORD (RENEGADE) ##
+#No bonus damage. Inflicts more wounds then usual (about 1-6)
+  - type: STR_CHAINSWORD_RENEGADE
+    categories: [STR_CLOSE_COMBAT, STR_MELEE]
+#RESOURCES
+    bigSprite: 227
+    floorSprite: 231
+    handSprite: 288
+    meleeSound: 110
+    meleeHitSound: 109
+    meleeAnimation: 44
+#GENERAL
+    battleType: 3
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 2500
+    twoHanded: false
+    weight: 20
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    experienceTrainingMode: 13
+    listOrder: 12400
+#MELEE
+    clipSize: -1
+    damageType: 7
+    power: 85
+    damageBonus:
+      strength: 0.0
+      melee: 0.0
+    damageAlter:
+      ToArmorPre: 0.2
+      ToHealth: 1.0
+      ToWound: 0.05
+      ToEnergy: 0.0
+      RandomWound: false
+    accuracyMelee: 100
+    meleeMultiplier:
+      strength: 0.0
+      melee: 0.4
+      flatHundred: 0.4
+    tuMelee: 20
+
+
+
+
+
 #Chain Axe
   - type: STR_AXE
     weight: 30
@@ -1146,6 +1406,34 @@ items:
     clipSize: 4
     recover: false
 
+
+### ENEMY PSI SPELLS ###
+
+## Cultist Panic Spell #
+  - type: STR_CULTIST_PANIC_SPELL
+#RESOURCES
+    bigSprite: 252
+    floorSprite: 234
+    handSprite: 368
+    hitSound: 36
+#GENERAL
+    battleType: 9
+    size: 0.1
+    weight: 0
+    invWidth: 1
+    invHeight: 2
+    twoHanded: false
+    fixedWeapon: true
+    recover: false
+    psiRequired: true
+#SHOOTING
+    flatRate: false
+    costPanic:
+      time: 30
+      energy: 25
+    costMindControl:
+      time: 0
+    LOSRequired: true
 
 
 ### ENEMY CORPSES ###

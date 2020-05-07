@@ -366,6 +366,7 @@ armors:
     visibilityAtDay: 60
     visibilityAtDark: 60
     heatVision: 50
+    standHeight: 50
     instantWoundRecovery: true
     spriteSheet: SENTINEL_LASCANNON.PCK
     customArmorPreviewIndex: [160, 161, 162]

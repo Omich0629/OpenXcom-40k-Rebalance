@@ -8,22 +8,26 @@ extraStrings:
 
 #Autopistol
       STR_AUTOPISTOL_MAGAZINE: "Autopistol Magazine"
+
       STR_AUTOPISTOL: "Autopistol"
       STR_AUTOPISTOL_CHAOS: "Chaos Autopistol"
 
 #Autogun
       STR_AUTOGUN_MAGAZINE: "Autogun Magazine"
+
       STR_AUTOGUN: "Autogun"
       STR_AUTOGUN_CHAOS: "Chaos Autogun"
 
 #Heavy Stubber
       STR_HEAVY_STUBBER_AMMO_BELT: "Heavy Stubber Ammo Belt"
+
       STR_HEAVY_STUBBER: "Heavy Stubber"
       STR_HEAVY_STUBBER_CHAOS: "Chaos Heavy Stubber"
 
 #Shotgun
       STR_SHOTGUN_SHELLS: "Shotgun Shells"
       STR_SHOTGUN_SLUGS: "Shotgun Slugs"
+
       STR_SHOTGUN_SM: "Astartes Assault Shotgun"
       STR_SHOTGUN_IG: "Guard Shotgun"
       STR_SHOTGUN_CHAOS: "Chaos Shotgun"
@@ -32,6 +36,7 @@ extraStrings:
       STR_SNIPER_RIFLE_AMMO_AP: "Sniper Rifle AP Ammo"
       STR_SNIPER_RIFLE_AMMO_HE: "Sniper Rifle HE Ammo"
       STR_SNIPER_RIFLE_AMMO_I: "Sniper Rifle I Ammo"
+
       STR_SNIPER_RIFLE_SM: "Astartes Sniper Rifle"
 
 
@@ -49,6 +54,7 @@ extraStrings:
       STR_FLAMER_FUEL: "Flamer Fuel"
       STR_FLAMER_SM: "Astartes Flamer"
       STR_FLAMER_IG: "Guard Flamer"
+      STR_FLAMER_RENEGADE: "Renegade Flamer"
       STR_FLAMER_CHAOS: "Chaos Flamer"
       STR_WARPFLAMER: "Warpflamer"
 
@@ -58,13 +64,13 @@ extraStrings:
 ## LASER WEAPONS ##
 
 #Lasgun
-      STR_POWER_PACK: "Lasgun Power Pack"
-      STR_LASGUN: "Lasgun"
-      STR_LASGUN_CHAOS: "Chaos Lasgun"
+      STR_LASGUN_POWER_PACK: "Lasgun Power Pack"
+      STR_LASGUN_IG: "Lasgun"
+      STR_LASGUN_RENEGADE: "Renegade Lasgun"
 
 #Laspistol
-      STR_LASPISTOL: "Laspistol"
-      STR_LASPISTOL_CHAOS: "Chaos Laspistol"
+      STR_LASPISTOL_IG: "Laspistol"
+      STR_LASPISTOL_RENEGADE: "Renegade Laspistol"
 
 
 
@@ -81,6 +87,10 @@ extraStrings:
 
 
 #Lascannon
+      STR_LASCANNON_POWER_PACK: "Lascannon Power Pack"
+
+      STR_LASCANNON_IG: "Lascannon"
+      STR_LASCANNON_RENEGADE: "Renegade Lascannon"
 
 
 
@@ -94,6 +104,7 @@ extraStrings:
       STR_BOLTPISTOL_SM: "Astartes Bolt Pistol"
       STR_BOLTPISTOL_MC: "Master Crafted Bolt Pistol"
       STR_BOLTPISTOL_IG: "Guard Bolt Pistol"
+      STR_BOLTPISTOL_RENEGADE: "Renegade Guard Bolt"
       STR_BOLTPISTOL_CHAOS: "Chaos Bolt Pistol"
 
 #Boltgun
@@ -115,6 +126,7 @@ extraStrings:
 
       STR_HEAVY_BOLTER_SM: "Astartes Heavy Bolter"
       STR_HEAVY_BOLTER_IG: "Guard Heavy Bolter"
+      STR_HEAVY_BOLTER_RENEGADE: "Renegade Heavy Bolter"
       STR_HEAVY_BOLTER_CHAOS: "Chaos Heavy Bolter"
 
 #Storm Bolter
@@ -126,18 +138,39 @@ extraStrings:
       STR_STORM_BOLTER_CHAOS: "Chaos Storm Bolter"
 
 
+## LAUNCHER WEAPONS ##
+
+#Grenade Launcher
+      STR_FRAG_GRENADE_PACK: "Frag Grenade Pack"
+      STR_KRAK_GRENADE_PACK: "Krak Grenade Pack"
+      STR_INCENDIARY_GRENADE_PACK: "Incendiary Grenade Pack"
+
+      STR_GRENADE_LAUNCHER_IG: "Grenade Launcher (Guard)"
+      STR_GRENADE_LAUNCHER_RENEGADE: "Grenade Launcher (Renegade)"
+
+#Missile Launcher
+      STR_FRAG_MISSILE: "Frag Missile"
+      STR_KRAK_MISSILE: "Krak Missile"
+      STR_INCENDIARY_MISSILE: "Incendiary Missile"
+
+      STR_MISSILE_LAUNCHER_IG: "Missile Launcher (Guard)"
+      STR_MISSILE_LAUNCHER_RENEGADE: "Missile Launcher (Renegade)"
+      STR_MISSILE_LAUNCHER_SM: "Missile Launcher (Astartes)"
 
 
 
+## MELEE WEAPONS ##
 
+#Improvised Mace
+      STR_CULTIST_MACE: "Improvised Mace"
 
+#Improvised Sword
+      STR_CULTIST_SWORD: "Improvised Sword"
 
-
-
-
-
-
-
+#Chainsword
+      STR_CHAINSWORD_IG: "Chainsword (Guard)"
+      STR_CHAINSWORD_OFFICERS: "Chainsword (Officer's)"
+      STR_CHAINSWORD_RENEGADE: "Chainsword (Renegade)"
 
 
 
@@ -675,9 +708,7 @@ extraStrings:
 
 ## ENEMY ITEMS ##
 
-#Cultists Items
-      STR_CULTIST_MACE: "Improvised Mace"
-      STR_CULTIST_SWORD: "Improvised Sword"
+
       STR_CULTIST_PANIC_SPELL: "Panic Spell"
 
 

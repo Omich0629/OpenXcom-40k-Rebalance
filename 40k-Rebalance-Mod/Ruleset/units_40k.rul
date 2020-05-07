@@ -28,8 +28,8 @@ units:
       psiSkill: 0
       melee: 50
     armor: STR_CULTIST_CLOTHES1
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 10
     deathSound: [41, 42, 43]
     intelligence: 3
@@ -67,8 +67,8 @@ units:
       psiSkill: 0
       melee: 50
     armor: STR_CULTIST_CLOTHES2
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 10
     deathSound: [41, 42, 43]
     intelligence: 3
@@ -106,8 +106,8 @@ units:
       psiSkill: 0
       melee: 50
     armor: STR_CULTIST_CLOTHES3
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 10
     deathSound: [41, 42, 43]
     intelligence: 3
@@ -130,6 +130,7 @@ units:
 
 
 #Cultist Heavy Trooper (variation 1)
+#Equipped with heavy weapon, so reactions is zero.
   - type: STR_CULTIST_HEAVY_TROOPER1
     race: STR_CULTISTS
     rank: STR_LIVE_NAVIGATOR
@@ -138,7 +139,7 @@ units:
       stamina: 60
       health: 40
       bravery: 60
-      reactions: 50
+      reactions: 0
       firing: 55
       throwing: 50
       strength: 35
@@ -146,8 +147,8 @@ units:
       psiSkill: 0
       melee: 50
     armor: STR_CULTIST_ARMOR1
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 10
     deathSound: [41, 42, 43]
     intelligence: 3
@@ -164,6 +165,7 @@ units:
         - STR_HEAVY_STUBBER_AMMO_BELT
 
 #Cultist Heavy Trooper (variation 2)
+#Equipped with heavy weapon, so reactions is zero.
   - type: STR_CULTIST_HEAVY_TROOPER2
     race: STR_CULTISTS
     rank: STR_LIVE_NAVIGATOR
@@ -172,7 +174,7 @@ units:
       stamina: 60
       health: 40
       bravery: 60
-      reactions: 50
+      reactions: 0
       firing: 55
       throwing: 50
       strength: 35
@@ -180,8 +182,8 @@ units:
       psiSkill: 0
       melee: 50
     armor: STR_CULTIST_ARMOR2
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 10
     deathSound: [41, 42, 43]
     intelligence: 3
@@ -215,8 +217,8 @@ units:
       psiSkill: 0
       melee: 60
     armor: STR_CULTIST_OVERCOAT
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 10
     deathSound: [41, 42, 43]
     intelligence: 4
@@ -255,8 +257,8 @@ units:
       psiSkill: 50
       melee: 40
     armor: STR_CULTIST_ROBES       #CHECK IT
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 10
     deathSound: [41, 42, 43]
     intelligence: 4
@@ -298,26 +300,26 @@ units:
       psiSkill: 0
       melee: 55
     armor: STR_RENEGADE_FLAK_ARMOR1
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 10
     deathSound: [41, 42, 43]
     intelligence: 3
     aggression: 2
     builtInWeaponSets:
 #ITEM SET 0
-      - - STR_LASGUN_CHAOS
-        - STR_POWER_PACK
-        - STR_POWER_PACK
+      - - STR_LASGUN_RENEGADE
+        - STR_LASGUN_POWER_PACK
+        - STR_LASGUN_POWER_PACK
 #ITEM SET 1
-      - - STR_LASGUN_CHAOS
-        - STR_POWER_PACK
-        - STR_POWER_PACK
+      - - STR_LASGUN_RENEGADE
+        - STR_LASGUN_POWER_PACK
+        - STR_LASGUN_POWER_PACK
         - STR_GRENADE
 #ITEM SET 2
-      - - STR_LASGUN_CHAOS
-        - STR_POWER_PACK
-        - STR_POWER_PACK
+      - - STR_LASGUN_RENEGADE
+        - STR_LASGUN_POWER_PACK
+        - STR_LASGUN_POWER_PACK
         - STR_KRAK_GRENADE
 
 

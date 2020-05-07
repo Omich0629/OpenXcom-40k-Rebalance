@@ -4,9 +4,18 @@ items:
   - delete: STR_LASER_RIFLE
   - delete: STR_LASER_PISTOL
 
-### STUB WEAPONS ###
+  - delete: STR_LASGUN_ACCATRAN
+  - delete: STR_LASGUN_LUCIUS
+  - delete: STR_LASGUN_VOSS
+  - delete: STR_LASGUN_VOSTROYA
+  - delete: STR_LASGUN_TANITH
+  - delete: STR_LONGLAS_TANITH
 
-## Autopistol ##
+
+
+### IG STUB WEAPONS ###
+
+## AUTOPISTOL ##
   - delete: STR_AUTOPISTOL
 
   - type: STR_AUTOPISTOL
@@ -14,7 +23,7 @@ items:
     bigSprite: 349
     floorSprite: 306
     handSprite: 952
-    bulletSprite: 1
+    bulletSprite: 6
     fireSound: 4
 #GENERAL
     battleType: 1
@@ -48,7 +57,12 @@ items:
     tuAuto: 35
     autoRange: 5
 
-## Autopistol Ammo ##
+    accuracyAimed: 70
+    tuAimed: 30
+    aimRange: 15
+
+
+## AUTOPISTOL MAGAZINE ##
   - delete: STR_AUTOPISTOL_CLIP
 
   - type: STR_AUTOPISTOL_MAGAZINE
@@ -79,7 +93,7 @@ items:
     damageAlter:
       ToArmor: 0.033
 
-## Autogun ##
+## AUTOGUN ##
   - delete: STR_AUTOGUN
 
   - type: STR_AUTOGUN
@@ -87,7 +101,7 @@ items:
     bigSprite: 352
     floorSprite: 309
     handSprite: 976
-    bulletSprite: 1
+    bulletSprite: 6
     fireSound: 4
 #GENERAL
     battleType: 1
@@ -111,17 +125,21 @@ items:
     bulletSpeed: 25
     dropoff: 5
 
-    accuracySnap: 75
+    accuracySnap: 60
     tuSnap: 25
     snapRange: 15
 
     confAuto:
       shots: 4
-    accuracyAuto: 45
+    accuracyAuto: 35
     tuAuto: 40
     autoRange: 7
 
-## Autogun Magazine ##
+    accuracyAimed: 100
+    tuAimed: 80
+    aimRange: 20
+
+## AUTOGUN MAGAZINE ##
   - delete: STR_AUTOGUN_CLIP
 
   - type: STR_AUTOGUN_MAGAZINE
@@ -150,7 +168,7 @@ items:
     damageAlter:
       ToArmor: 0.05
 
-## Heavy Stubber ##
+## HEAVY STUBBER ##
   - delete: STR_HEAVY_STUBBER
 
   - type: STR_HEAVY_STUBBER
@@ -158,7 +176,7 @@ items:
     bigSprite: 355
     floorSprite: 312
     handSprite: 1000
-    bulletSprite: 2
+    bulletSprite: 6
     fireSound: 4
 #GENERAL
     battleType: 1
@@ -185,19 +203,19 @@ items:
     bulletSpeed: 25
     dropoff: 5
 
-    accuracySnap: 55
-    confSnap:
-      shots: 3
-    tuSnap: 40
-    snapRange: 16
-
     accuracyAuto: 40
     confAuto:
       shots: 9
     tuAuto: 60
     autoRange: 8
 
-## Heavy Stubber Ammo Belt ##
+    accuracyAimed: 55
+    confAimed:
+      shots: 3
+    tuAimed: 40
+    aimRange: 16
+
+## HEAVY STUBBER AMMO BELT ##
   - delete: STR_HEAVY_STUBBER_CLIP
 
   - type: STR_HEAVY_STUBBER_AMMO_BELT
@@ -228,7 +246,7 @@ items:
     damageAlter:
       ToArmor: 0.05
 
-## Guard Shotgun ##
+## SHOTGUN (GUARD)  ##
   - type: STR_SHOTGUN_IG 
 #RESOURCES
     bigSprite: 362
@@ -260,12 +278,70 @@ items:
     dropoff: 7
     bulletSpeed: 30
 
-    accuracySnap: 75
+    accuracySnap: 60
     tuSnap: 20
     snapRange: 7
 
+    accuracyAimed: 90
+    tuAimed: 40
+    aimRange: 12
 
-## Guard Flamer ##
+## RIPPER SHOTGUN ##
+  - delete: STR_RIPPER_GUN
+
+  - type: STR_RIPPER_GUN
+#RESOURCES
+    bigSprite: 322
+    floorSprite: 281
+    handSprite: 736
+    bulletSprite: 2
+    fireSound: [1000, 1001, 1002]
+    meleeHitSound: [1003, 1004, 1005]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_SHOTGUN]
+    requiresBuy:
+      - STR_OGRYN_REQUISITION
+    costBuy: 18000
+    costSell: 7500
+    size: 0.6
+    weight: 40
+    invWidth: 2
+    invHeight: 3
+    armor: 60
+    listOrder: 10780
+#SHOOTING
+    compatibleAmmo:
+      - STR_RIPPER_GUN_CLIP
+    dropoff: 5
+    accuracySnap: 60
+    tuSnap: 25
+    accuracyAuto: 45
+    tuAuto: 30
+    accuracyMultiplier:
+      firing: 0.0
+      strength: 1.0
+    twoHanded: true
+    oneHandedPenalty: 75
+    autoRange: 10
+    snapRange: 12
+#MELEE
+    meleeType: 7
+    meleePower: 30
+    meleeBonus:
+      strength: 0.6
+    accuracyMelee: 100
+    meleeMultiplier:
+      strength: 1.0
+    tuMelee: 15
+    flatMelee:
+      time: false
+
+
+
+### IG FLAMER WEAPONS ###
+
+## FLAMER (GUARD) ##
   - type: STR_FLAMER_IG
 #RESOURCES
     bigSprite: 367
@@ -300,12 +376,12 @@ items:
     accuracySnap: 150
     maxRange: 6
 
+## HEAVY FLAMER (GUARD) ##
 
 
 
 
-### LASER WEAPONS ###
-
+### IG LASER WEAPONS ###
 
   - delete: STR_LASER_RIFLEG
   - delete: STR_LASPISTOL_CLIP
@@ -314,8 +390,8 @@ items:
   - delete: STR_LASCARBINE
 
 
-## Lasgun ##
-  - type: STR_LASGUN
+## LASGUN (GUARD) ##
+  - type: STR_LASGUN_IG
 #RESOURCES
     bigSprite: 291
     floorSprite: 258
@@ -339,15 +415,22 @@ items:
     listOrder: 10910
 #SHOOTING
     compatibleAmmo:
-      - STR_POWER_PACK
+      - STR_LASGUN_POWER_PACK
     dropoff: 5
     bulletSpeed: 50
+
     tuSnap: 25
     accuracySnap: 65
     snapRange: 16
+
     tuAuto: 34
     accuracyAuto: 45
     autoRange: 12
+
+    tuAimed: 50
+    accuracyAimed: 100
+    aimRange: 20
+
 #MELEE
     meleeType: 7
     meleePower: 20
@@ -363,8 +446,8 @@ items:
     flatMelee:
       time: false
 
-## Laspistol ##
-  - type: STR_LASPISTOL
+## LASPISTOL (GUARD) ##
+  - type: STR_LASPISTOL_IG
 #RESOURCES
     bigSprite: 293
     floorSprite: 260
@@ -385,21 +468,27 @@ items:
     listOrder: 10810
 #SHOOTING
     compatibleAmmo:
-      - STR_POWER_PACK
+      - STR_LASGUN_POWER_PACK
     dropoff: 5
     bulletSpeed: 50
+
     accuracySnap: 50
     tuSnap: 20
     snapRange: 12
 
-## POWER PACK ( LASGUN AND LASPISTOL AMMO ) ##
-  - type: STR_POWER_PACK
+    accuracyAimed: 70
+    tuAimed: 30
+    aimRange: 16
+
+
+## LASGUN POWER PACK ( LASGUN AND LASPISTOL AMMO ) ##
+  - type: STR_LASGUN_POWER_PACK
 #RESOURCES
     bigSprite: 292
     floorSprite: 259
-    handSprite: 560
+    handSprite: 200 #Empty Hand
     hitSound: [1023, 1024, 1025, 1026, 1027] #ENERGY WEAPON HIT
-    hitAnimation: 36 #FIX IT
+    hitAnimation: 36
 #GENERAL
     battleType: 2
     categories: [STR_CAT_LASGUN]
@@ -423,8 +512,72 @@ items:
       ToArmor: 0.0
       ToStun: 0.0
 
+## LASCANNON (GUARD) ##
+  - delete: STR_LASCANNON_HANDHELD
 
-#######################
+  - type: STR_LASCANNON_IG
+#RESOURCES
+    bigSprite: 382
+    floorSprite: 334
+    handSprite: 1160
+    bulletSprite: 12
+    fireSound: 742
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_LASGUN]
+    costSell: 61000
+    weight: 50
+    size: 0.4
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    twoHanded: true
+    blockBothHands: true
+    listOrder: 12250
+    tags:
+      ITEM_HAS_BIPOD: 1
+#SHOOTING
+    compatibleAmmo:
+      - STR_LASCANNON_POWER_PACK
+    kneelBonus: 200
+    bulletSpeed: 50
+    dropoff: 5
+
+    accuracyAimed: 40
+    tuAimed: 70
+    aimRange: 40
+
+## LASCANNON POWER PACK (GUARD LASCANNON AMMO) ##
+  - delete: STR_LASCANNON_CLIP_SMALL
+
+  - type: STR_LASCANNON_POWER_PACK
+    categories: [STR_AMMO, STR_LASER]  
+#RESOURCES
+    bigSprite: 384
+    floorSprite: 335
+    handSprite: 1176
+    hitSound: 19
+    hitAnimation: 36
+#GENERAL
+    battleType: 2
+    costSell: 625
+    size: 0.1
+    weight: 3
+    invWidth: 2
+    invHeight: 1
+    armor: 70
+    listOrder: 12260
+#SHOOTING
+    clipSize: 1
+    damageType: 4
+    power: 135
+    damageAlter:
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToHealth: 1.0
+      ToArmor: 0.0
+      ToStun: 0.0
+
 
 ### HOTSHOT LASER WEAPONS ###
 
@@ -638,7 +791,301 @@ items:
       shots: 4
     autoRange: 8
 
-#######################
+######################
+
+### IG LAUNCHER WEAPONS ###
+
+## GUARD GRENADE LAUNCHER ##
+  - delete: STR_GRENADE_LAUNCHER
+
+  - type: STR_GRENADE_LAUNCHER_IG
+#RESOURCES
+    bigSprite: 375
+    floorSprite: 327
+    handSprite: 1128
+    bulletSprite: 0
+    fireSound: 4
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_ROCKETL]
+    requiresBuy:
+      - STR_GRENADE_LAUNCHER_TECH
+    costBuy: 10000
+    costSell: 2000
+    weight: 15
+    size: 0.4
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    listOrder: 11850
+#SHOOTING
+    compatibleAmmo:
+      - STR_FRAG_GRENADE_PACK
+      - STR_KRAK_GRENADE_PACK
+      - STR_INCENDIARY_GRENADE_PACK
+    dropoff: 5
+    arcingShot: true
+
+    tuSnap: 45
+    accuracySnap: 60
+    snapRange: 12
+
+    tuAuto: 80
+    accuracyAuto: 40
+    autoRange: 9
+    confAuto:
+      shots: 2
+
+    tuAimed: 60
+    accuracyAimed: 80
+    aimRange: 20
+
+
+## FRAG GRENADE PACK ##
+  - delete: STR_FRAG_GRENADE_DRUM
+
+  - type: STR_FRAG_GRENADE_PACK
+#RESOURCES
+    bigSprite: 376
+    floorSprite: 328
+    handSprite: 200 #Empty Hand
+    hitAnimation: 184 #Explosion
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_ROCKETL]
+    requiresBuy:
+      - STR_GRENADE_LAUNCHER_TECH
+    costBuy: 800
+    costSell: 600
+    weight: 5
+    size: 0.1
+    invWidth: 2
+    invHeight: 1
+    armor: 30
+    listOrder: 11860
+#SHOOTING
+    clipSize: 6
+    damageType: 3
+    power: 70
+    damageAlter:
+      FixRadius: 2
+
+
+## KRAK GRENADE PACK ##
+  - delete: STR_KRAK_GRENADE_DRUM
+
+  - type: STR_KRAK_GRENADE_PACK
+#RESOURCES
+    bigSprite: 377
+    floorSprite: 329
+    handSprite: 200 #Empty Hand
+    hitAnimation: 184 #Explosion
+#GENERAL
+    battleType: 2
+    categories: [STR_CAT_ROCKETL]
+    requiresBuy:
+      - STR_GRENADE_LAUNCHER_TECH
+    costBuy: 800
+    costSell: 600
+    size: 0.1
+    weight: 5
+    invWidth: 2
+    invHeight: 1
+    listOrder: 11870
+#SHOOTING
+    clipSize: 6
+    damageType: 3
+    power: 70
+    damageAlter:
+      ToArmorPre: 0.2
+      ArmorEffectiveness: 0.7
+      ToArmor: 0.2
+      FixRadius: 1
+
+## INCENDIARY GRENADE PACK ##
+  - delete: STR_INCENDIARY_GRENADE_DRUM
+
+  - type: STR_INCENDIARY_GRENADE_PACK
+#RESOURCES
+    bigSprite: 378
+    floorSprite: 330
+    handSprite: 200 #Empty Hand
+    hitAnimation: 88 #Explosion
+#GENERAL
+    battleType: 2
+    requiresBuy:
+      - STR_GRENADE_LAUNCHER_TECH
+    categories: [STR_CAT_ROCKETL]
+    costBuy: 800
+    costSell: 600
+    size: 0.1
+    weight: 5
+    invWidth: 2
+    invHeight: 1
+    armor: 30
+    listOrder: 11880
+#SHOOTING
+    clipSize: 6
+    damageType: 2
+    power: 70
+    damageAlter:
+      RandomType: 2 #TFTD [50% - 150%]
+      ToHealth: 1.0
+      ToMorale: 0.5
+      FixRadius: 2
+
+
+## GUARD MISSILE LAUNCHER ##
+
+  - type: STR_MISSILE_LAUNCHER_IG
+#RESOURCES
+    bigSprite: 226
+    floorSprite: 226
+    handSprite: 280
+    bulletSprite: 0
+    fireSound: 52
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_ROCKETL]
+    requiresBuy:
+      - STR_ROCKET_LAUNCHER_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 14000
+    costSell: 3000
+    weight: 50
+    size: 0.4
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 60
+    listOrder: 12100
+#SHOOTING
+    dropoff: 5
+    compatibleAmmo:
+      - STR_FRAG_MISSILE
+      - STR_KRAK_MISSILE
+      - STR_INCENDIARY_MISSILE
+    dropoff: 5
+
+    accuracyAimed: 80
+    tuAimed: 75
+    aimRange: 40
+
+
+
+
+## BULLGRYN GRENADIER GAUNTLET ##
+
+
+
+
+### IG MELEE WEAPONS ###
+
+## CHAINSWORD (GUARD) ##
+#No bonus damage. Inflicts more wounds then usual (about 1-6)
+  - type: STR_CHAINSWORD_IG
+    categories: [STR_CLOSE_COMBAT, STR_MELEE]
+#RESOURCES
+    bigSprite: 224
+    floorSprite: 224
+    handSprite: 264
+    meleeSound: 110
+    meleeHitSound: 109
+    meleeAnimation: 44
+#GENERAL
+    battleType: 3
+    requiresBuy:
+      - STR_CHAINSWORD_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 5000
+    costSell: 2500
+    twoHanded: false
+    weight: 20
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    experienceTrainingMode: 13
+    listOrder: 12400
+#MELEE
+    clipSize: -1
+    damageType: 7
+    power: 85
+    damageBonus:
+      strength: 0.0
+      melee: 0.0
+    damageAlter:
+      ToArmorPre: 0.2
+      ToHealth: 1.0
+      ToWound: 0.05
+      ToEnergy: 0.0
+      RandomWound: false
+    accuracyMelee: 100
+    meleeMultiplier:
+      strength: 0.0
+      melee: 0.4
+      flatHundred: 0.4
+    tuMelee: 20
+
+## CHAINSWORD (OFFICER'S) ##
+#No bonus damage. Inflicts more wounds then usual (about 1-6)
+  - type: STR_CHAINSWORD_OFFICERS
+    categories: [STR_CLOSE_COMBAT, STR_MELEE]
+#RESOURCES
+    bigSprite: 225
+    floorSprite: 225
+    handSprite: 272
+    meleeSound: 110
+    meleeHitSound: 109
+    meleeAnimation: 44
+#GENERAL
+    battleType: 3
+    requiresBuy:
+      - STR_CHAINSWORD_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 5000
+    costSell: 2500
+    twoHanded: false
+    weight: 20
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    experienceTrainingMode: 13
+    listOrder: 12400
+#MELEE
+    clipSize: -1
+    damageType: 7
+    power: 85
+    damageBonus:
+      strength: 0.0
+      melee: 0.0
+    damageAlter:
+      ToArmorPre: 0.2
+      ToHealth: 1.0
+      ToWound: 0.05
+      ToEnergy: 0.0
+      RandomWound: false
+    accuracyMelee: 100
+    meleeMultiplier:
+      strength: 0.0
+      melee: 0.4
+      flatHundred: 0.4
+    tuMelee: 20
+
+
+
+
+## Officers Power Sword
+#BROKEN AS FUCK
+  - type: STR_OFFICERS_SWORD
+    categories: [STR_CAT_MELEE]
+    requiresBuy:
+      - STR_REGIMENT_OFFICERS
+    costBuy: 20000
+    costSell: 10000
+
 
 ### SENTINEL WEAPONS ###
 
@@ -834,60 +1281,9 @@ items:
 
 #######################
 
-### BOLT WEAPONS ###
+### IG BOLT WEAPONS ###
 
-## GUARD HEAVY BOLTER ##
-  - delete: STR_HEAVY_BOLTER_GUARD
-
-  - type: STR_HEAVY_BOLTER_IG
-#RESOURCES
-    bigSprite: 228
-    floorSprite: 223
-    handSprite: 384
-    bulletSprite: 6
-    fireSound: [1042, 1043]
-#GENERAL
-    battleType: 1
-    categories: [STR_CAT_BOLTER]
-    requiresBuy:
-      - STR_HEAVY_BOLTER_TECH
-      - STR_IMPERIAL_GUARD_OPERATIONS
-    costBuy: 13500
-    costSell: 10125
-    size: 0.5
-    weight: 40
-    invWidth: 2
-    invHeight: 3
-    armor: 30
-    attraction: 1
-    bulletSpeed: 30
-    twoHanded: true
-    blockBothHands: true
-    listOrder: 12000
-    tags:
-      ITEM_HAS_BIPOD: 1
-#SHOOTING
-    compatibleAmmo:
-      - STR_HEAVY_BOLTER_CASE_EX
-      - STR_HEAVY_BOLTER_CASE_AP
-      - STR_HEAVY_BOLTER_CASE_I
-    dropoff: 5
-
-    kneelBonus: 200
-
-    accuracySnap: 35
-    tuSnap: 30
-    snapRange: 20
-
-    accuracyAuto: 29
-    tuAuto: 40
-    autoRange: 12
-    autoShots: 3
-
-
-
-
-## GUARD BOLTPISTOL ##
+## BOLTPISTOL (GUARD) ##
   - type: STR_BOLTPISTOL_IG
 #RESOURCES
     bigSprite: 310
@@ -920,11 +1316,66 @@ items:
       - STR_BOLTPISTOL_MAGAZINE_AP
       - STR_BOLTPISTOL_MAGAZINE_I
     dropoff: 5
-    accuracySnap: 75
-    tuSnap: 20
-    snapRange: 12
 
-## GUARD BOLTGUN ##
+    accuracyAimed: 80
+    tuAimed: 40
+    aimRange: 11
+
+    accuracySnap: 60
+    tuSnap: 20
+    snapRange: 6
+
+
+
+## HEAVY BOLTER (GUARD) ##
+  - delete: STR_HEAVY_BOLTER_GUARD
+
+  - type: STR_HEAVY_BOLTER_IG
+#RESOURCES
+    bigSprite: 228
+    floorSprite: 223
+    handSprite: 384
+    bulletSprite: 6
+    fireSound: [1042, 1043]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_BOLTER]
+    requiresBuy:
+      - STR_HEAVY_BOLTER_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 13500
+    costSell: 10125
+    size: 0.5
+    weight: 40
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    attraction: 1
+    bulletSpeed: 30
+    twoHanded: true
+    blockBothHands: true
+    listOrder: 12000
+    tags:
+      ITEM_HAS_BIPOD: 1
+#SHOOTING
+    compatibleAmmo:
+      - STR_HEAVY_BOLTER_CASE_EX
+      - STR_HEAVY_BOLTER_CASE_AP
+      - STR_HEAVY_BOLTER_CASE_I
+    dropoff: 5
+
+    kneelBonus: 200
+
+    accuracyAimed: 40
+    tuAimed: 50
+    aimRange: 30
+
+    accuracyAuto: 29
+    tuAuto: 40
+    autoRange: 14
+    autoShots: 3
+
+## BOLTGUN (GUARD) ##
   - type: STR_BOLTER_IG
 #RESOURCES
     bigSprite: 308
@@ -964,58 +1415,7 @@ items:
 
 #######################
 
-### OGRYN EQUIPMENT ###
 
-## RIPPER GUN ##
-  - delete: STR_RIPPER_GUN
-
-  - type: STR_RIPPER_GUN
-#RESOURCES
-    bigSprite: 322
-    floorSprite: 281
-    handSprite: 736
-    bulletSprite: 2
-    fireSound: [1000, 1001, 1002]
-    meleeHitSound: [1003, 1004, 1005]
-#GENERAL
-    battleType: 1
-    categories: [STR_CAT_SHOTGUN]
-    requiresBuy:
-      - STR_OGRYN_REQUISITION
-    costBuy: 18000
-    costSell: 7500
-    size: 0.6
-    weight: 40
-    invWidth: 2
-    invHeight: 3
-    armor: 60
-    listOrder: 10780
-#SHOOTING
-    compatibleAmmo:
-      - STR_RIPPER_GUN_CLIP
-    dropoff: 5
-    accuracySnap: 60
-    tuSnap: 25
-    accuracyAuto: 45
-    tuAuto: 30
-    accuracyMultiplier:
-      firing: 0.0
-      strength: 1.0
-    twoHanded: true
-    oneHandedPenalty: 75
-    autoRange: 10
-    snapRange: 12
-#MELEE
-    meleeType: 7
-    meleePower: 30
-    meleeBonus:
-      strength: 0.6
-    accuracyMelee: 100
-    meleeMultiplier:
-      strength: 1.0
-    tuMelee: 15
-    flatMelee:
-      time: false
 
 ## SLABSHIELD ##
   - delete: STR_SLAB_SHIELD
@@ -1379,8 +1779,6 @@ items:
     armor: 26
     recover: false
 
-
-
 ## ENGINSEER CORPSE ##
   - type: STR_ENGINSEER_CORPSE
 #GENERAL
@@ -1531,95 +1929,3 @@ items:
     costSell: 66000
     transferTime: 48
     listOrder: 1910
-
-#######################
-
-### MISC WEAPONS ###
-
-## MISSILE LAUNCHER (GUARD) ##
-  - type: STR_IG_ROCKET_LAUNCHER
-#RESOURCES
-    bigSprite: 226
-    floorSprite: 226
-    handSprite: 280
-    bulletSprite: 0
-    fireSound: 52
-#GENERAL
-    battleType: 1
-    categories: [STR_CAT_ROCKETL]
-    requiresBuy:
-      - STR_ROCKET_LAUNCHER_TECH
-      - STR_IMPERIAL_GUARD_OPERATIONS
-    costBuy: 14000
-    costSell: 3000
-    weight: 50
-    size: 0.4
-    twoHanded: true
-    blockBothHands: true
-    invWidth: 2
-    invHeight: 3
-    armor: 60
-    listOrder: 12100
-    tags:
-      ITEM_HAS_BIPOD: 1
-#SHOOTING
-    dropoff: 5
-    compatibleAmmo:
-      - STR_SMALL_ROCKET
-      - STR_LARGE_ROCKET
-      - STR_INCENDIARY_ROCKET
-    tuSnap: 55
-    accuracySnap: 45
-    tuAimed: 85
-    accuracyAimed: 95
-    kneelBonus: 150
-
-## GUARD GRENADE LAUNCHER ##
-  - type: STR_GRENADE_LAUNCHER
-#GENERAL
-    requiresBuy:
-      - STR_GRENADE_LAUNCHER_TECH
-
-## FRAG GRENADE DRUM ##
-  - type: STR_FRAG_GRENADE_DRUM
-#GENERAL
-    requiresBuy:
-      - STR_GRENADE_LAUNCHER_TECH
-#SHOOTING
-    power: 70
-    blastRadius: 2
-
-## KRAK GRENADE DRUM ##
-  - type: STR_KRAK_GRENADE_DRUM
-#GENERAL
-    requiresBuy:
-      - STR_GRENADE_LAUNCHER_TECH
-#SHOOTING
-    power: 70
-    damageAlter:
-      ToArmorPre: 0.2
-      ArmorEffectiveness: 0.7
-      ToArmor: 0.2
-
-## INCENDIARY GRENADE DRUM ##
-  - type: STR_INCENDIARY_GRENADE_DRUM
-#GENERAL
-    requiresBuy:
-      - STR_GRENADE_LAUNCHER_TECH
-#SHOOTING
-    power: 70
-    damageAlter:
-      RandomType: 2 #TFTD [50% - 150%]
-      ToHealth: 1.0
-      ToMorale: 0.5
-    blastRadius: 2
-
-
-#Officers Sword
-#BROKEN AS FUCK
-  - type: STR_OFFICERS_SWORD
-    categories: [STR_CAT_MELEE]
-    requiresBuy:
-      - STR_REGIMENT_OFFICERS
-    costBuy: 20000
-    costSell: 10000

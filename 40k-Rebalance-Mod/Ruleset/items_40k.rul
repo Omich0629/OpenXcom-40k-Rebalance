@@ -17,7 +17,7 @@ items:
   - delete: STR_PISTOL_CLIP_EX
   - delete: STR_PISTOL_CLIP_AP
 
-### BOLTPISTOLS ###
+### SM BOLT WEAPONS ###
 
 ## ASTARTES BOLTPISTOL ##
   - type: STR_BOLTPISTOL_SM
@@ -207,7 +207,7 @@ items:
     blastRadius: 1
     explosionSpeed: 5
 
-### BOLTGUNS ###
+
   - delete: STR_RIFLE
   - delete: STR_RIFLEB
   - delete: STR_RIFLEC
@@ -497,7 +497,7 @@ items:
     blastRadius: 1
 
 
-## ASTARTES HEAVY BOLTER ##
+## HEAVY BOLTER (ASTARTES PATTERN) ##
   - delete: STR_AUTO_CANNON
   - delete: STR_AC_AP_AMMO
   - delete: STR_AC_HE_AMMO
@@ -647,7 +647,7 @@ items:
     blastRadius: 1
 
 
-## ASTARTES STORM BOLTER ##
+## STORM BOLTER ##
   - delete: STR_HB
   - delete: STR_HB_CLIP
 
@@ -1025,52 +1025,139 @@ items:
 
 
 
-### SM STANDARD HEAVY WEAPONS ###
+### SM LAUNCHER WEAPONS ###
 
-## MISSILE LAUNCHER ##
-  - type: STR_ROCKET_LAUNCHER
-#RESOURCES
-    bigSprite: 268
-    floorSprite: 249
-    handSprite: 472
-#GENERAL
-    requiresBuy:
-      - STR_ROCKET_LAUNCHER_TECH
-      - STR_SPACE_MARINES_OPERATIONS
 
 ## FRAG MISSILE ##
-  - type: STR_SMALL_ROCKET
+  - type: STR_FRAG_MISSILE
+#RESOURCES
+    bigSprite: 386
+    floorSprite: 337
+    handSprite: 1192
+    hitSound: 0
+    hitAnimation: 184 #AOE Explosion
 #GENERAL
+    battleType: 2
+    categories: [STR_AMMO, STR_LAUNCHER]
     requiresBuy:
       - STR_ROCKET_LAUNCHER_TECH
-
+    costBuy: 6000
+    costSell: 4800
+    size: 0.2
+    weight: 6
+    invWidth: 1
+    invHeight: 2
+    listOrder: 12130
+#SHOOTING
+    clipSize: 1
+    power: 100
+    damageType: 3
+    damageAlter:
+      FixRadius: 10
 
 ## KRAK MISSILE ##
-  - type: STR_LARGE_ROCKET
+  - type: STR_KRAK_MISSILE
+#RESOURCES
+    bigSprite: 387
+    floorSprite: 338
+    handSprite: 1192
+    hitAnimation: 184 #AOE Explosion
 #GENERAL
+    battleType: 2
+    categories: [STR_AMMO, STR_LAUNCHER]
     requiresBuy:
       - STR_ROCKET_LAUNCHER_TECH
+    costBuy: 9000
+    costSell: 7200
+    size: 0.2
+    weight: 6
+    invWidth: 1
+    invHeight: 2
+    listOrder: 12140
 #SHOOTING
+    clipSize: 1
+    damageType: 3
     power: 100
     damageAlter:
       ToArmorPre: 0.2
       ArmorEffectiveness: 0.7
       ToArmor: 0.2
-
+      FixRadius: 1
 
 ## INCENDIARY MISSILE ##
-  - type: STR_INCENDIARY_ROCKET
+
+  - type: STR_INCENDIARY_MISSILE
+#RESOURCES
+    bigSprite: 388
+    floorSprite: 339
+    handSprite: 1192
+    hitSound: 0
+    hitAnimation: 0
 #GENERAL
+    battleType: 2
+    categories: [STR_AMMO, STR_LAUNCHER]
     requiresBuy:
       - STR_ROCKET_LAUNCHER_TECH
+    costBuy: 7200
+    costSell: 5760
+    size: 0.2
+    weight: 6
+    invWidth: 1
+    invHeight: 2
+    listOrder: 12150
 #SHOOTING
+    clipSize: 1
+    damageType: 2
     power: 90
     damageAlter:
       RandomType: 2 #TFTD [50% - 150%]
       ToHealth: 1.0
       ToMorale: 0.5
-    blastRadius: 2
+      FixRadius: 2
 
+
+
+## MISSILE LAUNCHER (ASTARTES) ##
+  - delete: STR_ROCKET_LAUNCHER
+  - delete: STR_SMALL_ROCKET
+  - delete: STR_LARGE_ROCKET
+  - delete: STR_INCENDIARY_ROCKET
+
+  - type: STR_MISSILE_LAUNCHER_SM
+#RESOURCES
+    bigSprite: 268
+    floorSprite: 249
+    handSprite: 472
+    bulletSprite: 0
+    fireSound: 52
+#GENERAL
+    battleType: 1
+    categories: [STR_HEAVY, STR_LAUNCHER, STR_SPACE_MARINE]
+    requiresBuy:
+      - STR_ROCKET_LAUNCHER_TECH
+      - STR_SPACE_MARINES_OPERATIONS
+    costBuy: 14000
+    costSell: 7000
+    size: 0.5
+    weight: 40
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    attraction: 1
+    twoHanded: true
+    blockBothHands: true
+    bulletSpeed: 30
+    listOrder: 12100
+#SHOOTING
+    compatibleAmmo:
+      - STR_FRAG_MISSILE
+      - STR_KRAK_MISSILE
+      - STR_INCENDIARY_MISSILE
+    dropoff: 5
+
+    accuracyAimed: 80
+    tuAimed: 75
+    aimRange: 40
 
 
 ## ASTARTES SNIPER RIFLE ##
