@@ -17,25 +17,23 @@ armors:
     sideArmor: 18
     rearArmor: 16
     underArmor: 12
-    stats:
-       tu: 10
-       stamina: 10
     drawingRoutine: 0
-    damageModifier: #GUARD ARMOR
-      - 1.0 #none
+    damageModifier:
+      - 1.0 #SUPPORT
       - 1.0 #AP
-      - 1.2 #FLAMES
-      - 1.0 #HE
-      - 0.8 #LASCANON
+      - 1.0 #FLAMES
+      - 1.0 #EXPLOSIVE
+      - 1.0 #LASER
       - 1.0 #PLASMA
       - 1.0 #STUN
-      - 1.1 #MELEE
-      - 1.0 #ACID
-      - 0.0 #SMOKE
+      - 1.0 #MELEE
+      - 1.0 #POWER
+      - 1.0 #SMOKE
       - 1.0 #IMPACT
       - 1.0 #MELTA
+      - 1.0 #GRAVITON
     units:
-      - STR_GUARDSM  
+      - STR_GUARDSMAN  
     loftempsSet: [ 3 ]
 
   - type: STR_FLAK_ARMOR
@@ -73,44 +71,41 @@ armors:
 
   - delete: STR_GUARD_ARMORS_MEDIC_UC
 
-  - type: STR_GUARD_ARMORS_MEDIC_UC
+  - type: STR_FLAK_ARMOR_MEDIC
     visibilityAtDay: 40
     visibilityAtDark: 9
-    spriteSheet: MEDIC_FLAK_ARMOR.PCK
+    spriteSheet: FLAK_ARMOR_MEDIC.PCK
     customArmorPreviewIndex: 102
     corpseBattle:
-      - STR_GUARD
-    storeItem: STR_GUARD_ARMORS_MEDIC
+      - STR_FLAK_ARMOR_MEDIC_CORPSE
+    storeItem: STR_FLAK_ARMOR_MEDIC
     frontArmor: 20
     sideArmor: 18
     rearArmor: 16
     underArmor: 12
-    stats:
-       tu: 10
-       stamina: 10
-    weight: 5
     drawingRoutine: 0
-    damageModifier: #GUARD ARMOR
-      - 1.0 #none
+    damageModifier:
+      - 1.0 #SUPPORT
       - 1.0 #AP
-      - 1.2 #FLAMES
-      - 1.0 #HE
-      - 0.8 #LASCANON
+      - 1.0 #FLAMES
+      - 1.0 #EXPLOSIVE
+      - 1.0 #LASER
       - 1.0 #PLASMA
       - 1.0 #STUN
-      - 1.1 #MELEE
-      - 1.0 #ACID
-      - 0.0 #SMOKE
+      - 1.0 #MELEE
+      - 1.0 #POWER
+      - 1.0 #SMOKE
       - 1.0 #IMPACT
       - 1.0 #MELTA
+      - 1.0 #GRAVITON
     units:
-      - STR_GUARDSM
+      - STR_GUARDSMAN
     loftempsSet: [ 3 ]
     specialWeapon: STR_GUARD_MEDI_KIT
     builtInWeapons:
-      - INV_NULL_MEDI_KIT
+      - STR_NULL_ITEM_MEDKIT
 
-  - type: STR_GUARD_ARMORS_MEDIC_UC
+  - type: STR_FLAK_ARMOR_MEDIC
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -140,18 +135,96 @@ armors:
       F8: ["0", "GUARD_FACE_FEMALE_8", "", "", "FLAK_MEDIC_F"]
       F9: ["0", "GUARD_FACE_FEMALE_9", "", "", "FLAK_MEDIC_F"]
 
+## FLAK ARMOR (SERGEANT) ##
+#20 stun damage to soldier every turn.
+#Recover (soldier's rank * 10) stun damage every turn.
+#You need rank 2 (sergeant) to use this armor without taking any stun damage.
+
+  - type: STR_FLAK_ARMOR_SERGEANT
+    visibilityAtDay: 40
+    visibilityAtDark: 9
+    spriteSheet: FLAK_ARMOR_SERGEANT.PCK
+    customArmorPreviewIndex: 104
+    corpseBattle:
+      - STR_FLAK_ARMOR_CORPSE
+    storeItem: STR_NONE
+    frontArmor: 20
+    sideArmor: 18
+    rearArmor: 16
+    underArmor: 12
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0 #0 NONE
+      - 1.0 #1 AP
+      - 1.0 #2 FLAMES
+      - 1.0 #3 EXPLOSIVE
+      - 1.0 #4 LASER
+      - 1.0 #5 PLASMA
+      - 1.0 #6 STUN
+      - 1.0 #7 MELEE
+      - 1.0 #8 POWER
+      - 1.0 #9 SMOKE
+      - 1.0 #10 IMPACT
+      - 1.0 #11 MELTA
+      - 1.0 #12 GRAVITON
+    stats:
+      mana: 100
+    units:
+      - STR_GUARDSMAN  
+    loftempsSet: [ 3 ]
+    recovery:
+      stun:
+        flatHundred: -0.2 # adds 20 stun damage every turn
+        rank: 10.0 # recover (soldier's rank * 10) stun damage every turn.
+      mana:
+        flatHundred: 0.5
+    builtInWeapons:
+      - STR_NULL_ITEM_BACK_PACK
+    specialWeapon: STR_SERGEANT_BUFF_IG
+
+  - type: STR_FLAK_ARMOR_SERGEANT
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96, 144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      4: FLAK_SERGEANT
+    layersDefinition:
+      M0: ["0", "GUARD_FACE_MALE_0", "", "", "FLAK_SERGEANT_M"]
+      M1: ["0", "GUARD_FACE_MALE_1", "", "", "FLAK_SERGEANT_M"]
+      M2: ["0", "GUARD_FACE_MALE_2", "", "", "FLAK_SERGEANT_M"]
+      M3: ["0", "GUARD_FACE_MALE_3", "", "", "FLAK_SERGEANT_M"]
+      M4: ["0", "GUARD_FACE_MALE_4", "", "", "FLAK_SERGEANT_M"]
+      M5: ["0", "GUARD_FACE_MALE_5", "", "", "FLAK_SERGEANT_M"]
+      M6: ["0", "GUARD_FACE_MALE_6", "", "", "FLAK_SERGEANT_M"]
+      M7: ["0", "GUARD_FACE_MALE_7", "", "", "FLAK_SERGEANT_M"]
+      M8: ["0", "GUARD_FACE_MALE_8", "", "", "FLAK_SERGEANT_M"]
+      M9: ["0", "GUARD_FACE_MALE_9", "", "", "FLAK_SERGEANT_M"]
+      F0: ["0", "GUARD_FACE_FEMALE_0", "", "", "FLAK_SERGEANT_F"]
+      F1: ["0", "GUARD_FACE_FEMALE_1", "", "", "FLAK_SERGEANT_F"]
+      F2: ["0", "GUARD_FACE_FEMALE_2", "", "", "FLAK_SERGEANT_F"]
+      F3: ["0", "GUARD_FACE_FEMALE_3", "", "", "FLAK_SERGEANT_F"]
+      F4: ["0", "GUARD_FACE_FEMALE_4", "", "", "FLAK_SERGEANT_F"]
+      F5: ["0", "GUARD_FACE_FEMALE_5", "", "", "FLAK_SERGEANT_F"]
+      F6: ["0", "GUARD_FACE_FEMALE_6", "", "", "FLAK_SERGEANT_F"]
+      F7: ["0", "GUARD_FACE_FEMALE_7", "", "", "FLAK_SERGEANT_F"]
+      F8: ["0", "GUARD_FACE_FEMALE_8", "", "", "FLAK_SERGEANT_F"]
+      F9: ["0", "GUARD_FACE_FEMALE_9", "", "", "FLAK_SERGEANT_F"]
+
+
 ## CARAPACE ARMOR ##
 
   - delete: STR_GUARD_ARMORH_UC
 
-  - type: STR_GUARD_ARMORH_UC
+  - type: STR_CARAPACE_ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 20
     spriteSheet: CARAPACE_ARMOR.PCK
     customArmorPreviewIndex: 101 
     corpseBattle:
-      - STR_GUARDH_CORPSE
-    storeItem: STR_GUARD_ARMORH
+      - STR_CARAPACE_ARMOR_CORPSE
+    storeItem: STR_CARAPACE_ARMOR
     frontArmor: 50
     sideArmor: 50
     rearArmor: 50
@@ -160,24 +233,25 @@ armors:
        tu: -10
        stamina: -10
     drawingRoutine: 0
-    damageModifier: #GUARD ARMOR
-      - 1.0 #none
+    damageModifier:
+      - 1.0 #SUPPORT
       - 1.0 #AP
-      - 1.2 #FLAMES
-      - 1.0 #HE
-      - 0.8 #LASCANON
+      - 1.0 #FLAMES
+      - 1.0 #EXPLOSIVE
+      - 1.0 #LASER
       - 1.0 #PLASMA
       - 1.0 #STUN
-      - 1.1 #MELEE
-      - 1.0 #ACID
+      - 1.0 #MELEE
+      - 1.0 #POWER
       - 0.0 #SMOKE
       - 1.0 #IMPACT
       - 1.0 #MELTA
+      - 1.0 #GRAVITON
     units:
-      - STR_GUARDSM  
+      - STR_GUARDSMAN  
     loftempsSet: [ 3 ]
 
-  - type: STR_GUARD_ARMORH_UC
+  - type: STR_CARAPACE_ARMOR
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -185,73 +259,70 @@ armors:
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       4: CARAPACE_ARMOR
-      5: CARAPACE_HELM
     layersDefinition:
-      M0: ["0", "GUARD_FACE_MALE_0", "", "GUARD_HAIR_MALE_0", "CARAPACE_ARMOR_M", "CARAPACE_HELM_M"]
-      M1: ["0", "GUARD_FACE_MALE_1", "", "GUARD_HAIR_MALE_1", "CARAPACE_ARMOR_M", "CARAPACE_HELM_M"]
-      M2: ["0", "GUARD_FACE_MALE_2", "", "GUARD_HAIR_MALE_2", "CARAPACE_ARMOR_M", "CARAPACE_HELM_M"]
-      M3: ["0", "GUARD_FACE_MALE_3", "", "GUARD_HAIR_MALE_3", "CARAPACE_ARMOR_M", "CARAPACE_HELM_M"]
-      M4: ["0", "GUARD_FACE_MALE_4", "", "", "CARAPACE_ARMOR_M", "CARAPACE_HELM_M"]
-      M5: ["0", "GUARD_FACE_MALE_5", "", "GUARD_HAIR_MALE_5", "CARAPACE_ARMOR_M", "CARAPACE_HELM_M"]
-      M6: ["0", "GUARD_FACE_MALE_6", "", "", "CARAPACE_ARMOR_M", "CARAPACE_HELM_M"]
-      M7: ["0", "GUARD_FACE_MALE_7", "", "GUARD_HAIR_MALE_7", "CARAPACE_ARMOR_M", "CARAPACE_HELM_M"]
-      M8: ["0", "GUARD_FACE_MALE_8", "", "GUARD_HAIR_MALE_8", "CARAPACE_ARMOR_M", "CARAPACE_HELM_M"]
-      M9: ["0", "GUARD_FACE_MALE_9", "", "", "CARAPACE_ARMOR_M", "CARAPACE_HELM_M"]
-      F0: ["0", "GUARD_FACE_FEMALE_0", "", "GUARD_HAIR_FEMALE_0", "CARAPACE_ARMOR_F", "CARAPACE_HELM_F"]
-      F1: ["0", "GUARD_FACE_FEMALE_1", "", "GUARD_HAIR_FEMALE_1", "CARAPACE_ARMOR_F", "CARAPACE_HELM_F"]
-      F2: ["0", "GUARD_FACE_FEMALE_2", "", "GUARD_HAIR_FEMALE_2", "CARAPACE_ARMOR_F", "CARAPACE_HELM_F"]
-      F3: ["0", "GUARD_FACE_FEMALE_3", "", "GUARD_HAIR_FEMALE_3", "CARAPACE_ARMOR_F", "CARAPACE_HELM_F"]
-      F4: ["0", "GUARD_FACE_FEMALE_4", "", "GUARD_HAIR_FEMALE_4", "CARAPACE_ARMOR_F", "CARAPACE_HELM_F"]
-      F5: ["0", "GUARD_FACE_FEMALE_5", "", "GUARD_HAIR_FEMALE_5", "CARAPACE_ARMOR_F", "CARAPACE_HELM_F"]
-      F6: ["0", "GUARD_FACE_FEMALE_6", "", "GUARD_HAIR_FEMALE_6", "CARAPACE_ARMOR_F", "CARAPACE_HELM_F"]
-      F7: ["0", "GUARD_FACE_FEMALE_7", "", "GUARD_HAIR_FEMALE_7", "CARAPACE_ARMOR_F", "CARAPACE_HELM_F"]
-      F8: ["0", "GUARD_FACE_FEMALE_8", "", "GUARD_HAIR_FEMALE_8", "CARAPACE_ARMOR_F", "CARAPACE_HELM_F"]
-      F9: ["0", "GUARD_FACE_FEMALE_9", "", "GUARD_HAIR_FEMALE_9", "CARAPACE_ARMOR_F", "CARAPACE_HELM_F"]
+      M0: ["0", "GUARD_FACE_MALE_0", "", "GUARD_HAIR_MALE_0", "CARAPACE_ARMOR_M"]
+      M1: ["0", "GUARD_FACE_MALE_1", "", "GUARD_HAIR_MALE_1", "CARAPACE_ARMOR_M"]
+      M2: ["0", "GUARD_FACE_MALE_2", "", "GUARD_HAIR_MALE_2", "CARAPACE_ARMOR_M"]
+      M3: ["0", "GUARD_FACE_MALE_3", "", "GUARD_HAIR_MALE_3", "CARAPACE_ARMOR_M"]
+      M4: ["0", "GUARD_FACE_MALE_4", "", "", "CARAPACE_ARMOR_M"]
+      M5: ["0", "GUARD_FACE_MALE_5", "", "GUARD_HAIR_MALE_5", "CARAPACE_ARMOR_M"]
+      M6: ["0", "GUARD_FACE_MALE_6", "", "", "CARAPACE_ARMOR_M"]
+      M7: ["0", "GUARD_FACE_MALE_7", "", "GUARD_HAIR_MALE_7", "CARAPACE_ARMOR_M"]
+      M8: ["0", "GUARD_FACE_MALE_8", "", "GUARD_HAIR_MALE_8", "CARAPACE_ARMOR_M"]
+      M9: ["0", "GUARD_FACE_MALE_9", "", "", "CARAPACE_ARMOR_M"]
+      F0: ["0", "GUARD_FACE_FEMALE_0", "", "GUARD_HAIR_FEMALE_0", "CARAPACE_ARMOR_F"]
+      F1: ["0", "GUARD_FACE_FEMALE_1", "", "GUARD_HAIR_FEMALE_1", "CARAPACE_ARMOR_F"]
+      F2: ["0", "GUARD_FACE_FEMALE_2", "", "GUARD_HAIR_FEMALE_2", "CARAPACE_ARMOR_F"]
+      F3: ["0", "GUARD_FACE_FEMALE_3", "", "GUARD_HAIR_FEMALE_3", "CARAPACE_ARMOR_F"]
+      F4: ["0", "GUARD_FACE_FEMALE_4", "", "GUARD_HAIR_FEMALE_4", "CARAPACE_ARMOR_F"]
+      F5: ["0", "GUARD_FACE_FEMALE_5", "", "GUARD_HAIR_FEMALE_5", "CARAPACE_ARMOR_F"]
+      F6: ["0", "GUARD_FACE_FEMALE_6", "", "GUARD_HAIR_FEMALE_6", "CARAPACE_ARMOR_F"]
+      F7: ["0", "GUARD_FACE_FEMALE_7", "", "GUARD_HAIR_FEMALE_7", "CARAPACE_ARMOR_F"]
+      F8: ["0", "GUARD_FACE_FEMALE_8", "", "GUARD_HAIR_FEMALE_8", "CARAPACE_ARMOR_F"]
+      F9: ["0", "GUARD_FACE_FEMALE_9", "", "GUARD_HAIR_FEMALE_9", "CARAPACE_ARMOR_F"]
 
 ## MEDIC CARAPACE ARMOR ##
 
   - delete: STR_MEDIC_CARAPACE_ARMOR
 
-  - type: STR_MEDIC_CARAPACE_ARMOR
+  - type: STR_CARAPACE_ARMOR_MEDIC
     visibilityAtDay: 40
     visibilityAtDark: 20
     spriteSheet: MEDIC_CARAPACE_ARMOR.PCK
     customArmorPreviewIndex: 103
     corpseBattle:
-      - STR_GUARDH_CORPSE
-    storeItem: STR_MEDIC_CARAPACE_ARMOR
+      - STR_CARAPACE_ARMOR_MEDIC_CORPSE
+    storeItem: STR_CARAPACE_ARMOR_MEDIC
     frontArmor: 50
     sideArmor: 50
     rearArmor: 50
     underArmor: 50
-    weight: 5
     stats:
        tu: -10
        stamina: -10
-       bravery: 10 #always multiples of 10
-       strength: 0
     drawingRoutine: 0
-    damageModifier: #GUARD ARMOR
-      - 1.0 #none
+    damageModifier:
+      - 1.0 #SUPPORT
       - 1.0 #AP
-      - 1.2 #FLAMES
-      - 1.0 #HE
-      - 0.8 #LASCANON
+      - 1.0 #FLAMES
+      - 1.0 #EXPLOSIVE
+      - 1.0 #LASER
       - 1.0 #PLASMA
       - 1.0 #STUN
-      - 1.1 #MELEE
-      - 1.0 #ACID
+      - 1.0 #MELEE
+      - 1.0 #POWER
       - 0.0 #SMOKE
       - 1.0 #IMPACT
       - 1.0 #MELTA
+      - 1.0 #GRAVITON
     units:
-      - STR_GUARDSM
+      - STR_GUARDSMAN
     loftempsSet: [ 3 ]
     specialWeapon: STR_GUARD_MEDI_KIT
     builtInWeapons:
-      - INV_NULL_MEDI_KIT
+      - STR_NULL_ITEM_MEDKIT
 
-  - type: STR_MEDIC_CARAPACE_ARMOR
+  - type: STR_CARAPACE_ARMOR_MEDIC
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -260,28 +331,27 @@ armors:
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       4: CARAPACE_MEDIC
-      5: CARAPACE_HELM
     layersDefinition:
-      M0: ["0", "GUARD_FACE_MALE_0", "", "GUARD_HAIR_MALE_0", "CARAPACE_MEDIC_M", "CARAPACE_HELM_M"]
-      M1: ["0", "GUARD_FACE_MALE_1", "", "GUARD_HAIR_MALE_1", "CARAPACE_MEDIC_M", "CARAPACE_HELM_M"]
-      M2: ["0", "GUARD_FACE_MALE_2", "", "GUARD_HAIR_MALE_2", "CARAPACE_MEDIC_M", "CARAPACE_HELM_M"]
-      M3: ["0", "GUARD_FACE_MALE_3", "", "GUARD_HAIR_MALE_3", "CARAPACE_MEDIC_M", "CARAPACE_HELM_M"]
-      M4: ["0", "GUARD_FACE_MALE_4", "", "", "CARAPACE_MEDIC_M", "CARAPACE_HELM_M"]
-      M5: ["0", "GUARD_FACE_MALE_5", "", "GUARD_HAIR_MALE_5", "CARAPACE_MEDIC_M", "CARAPACE_HELM_M"]
-      M6: ["0", "GUARD_FACE_MALE_6", "", "", "CARAPACE_MEDIC_M", "CARAPACE_HELM_M"]
-      M7: ["0", "GUARD_FACE_MALE_7", "", "GUARD_HAIR_MALE_7", "CARAPACE_MEDIC_M", "CARAPACE_HELM_M"]
-      M8: ["0", "GUARD_FACE_MALE_8", "", "GUARD_HAIR_MALE_8", "CARAPACE_MEDIC_M", "CARAPACE_HELM_M"]
-      M9: ["0", "GUARD_FACE_MALE_9", "", "", "CARAPACE_MEDIC_M", "CARAPACE_HELM_M"]
-      F0: ["0", "GUARD_FACE_FEMALE_0", "", "GUARD_HAIR_FEMALE_0", "CARAPACE_MEDIC_F", "CARAPACE_HELM_F"]
-      F1: ["0", "GUARD_FACE_FEMALE_1", "", "GUARD_HAIR_FEMALE_1", "CARAPACE_MEDIC_F", "CARAPACE_HELM_F"]
-      F2: ["0", "GUARD_FACE_FEMALE_2", "", "GUARD_HAIR_FEMALE_2", "CARAPACE_MEDIC_F", "CARAPACE_HELM_F"]
-      F3: ["0", "GUARD_FACE_FEMALE_3", "", "GUARD_HAIR_FEMALE_3", "CARAPACE_MEDIC_F", "CARAPACE_HELM_F"]
-      F4: ["0", "GUARD_FACE_FEMALE_4", "", "GUARD_HAIR_FEMALE_4", "CARAPACE_MEDIC_F", "CARAPACE_HELM_F"]
-      F5: ["0", "GUARD_FACE_FEMALE_5", "", "GUARD_HAIR_FEMALE_5", "CARAPACE_MEDIC_F", "CARAPACE_HELM_F"]
-      F6: ["0", "GUARD_FACE_FEMALE_6", "", "GUARD_HAIR_FEMALE_6", "CARAPACE_MEDIC_F", "CARAPACE_HELM_F"]
-      F7: ["0", "GUARD_FACE_FEMALE_7", "", "GUARD_HAIR_FEMALE_7", "CARAPACE_MEDIC_F", "CARAPACE_HELM_F"]
-      F8: ["0", "GUARD_FACE_FEMALE_8", "", "GUARD_HAIR_FEMALE_8", "CARAPACE_MEDIC_F", "CARAPACE_HELM_F"]
-      F9: ["0", "GUARD_FACE_FEMALE_9", "", "GUARD_HAIR_FEMALE_9", "CARAPACE_MEDIC_F", "CARAPACE_HELM_F"]
+      M0: ["0", "GUARD_FACE_MALE_0", "", "GUARD_HAIR_MALE_0", "CARAPACE_MEDIC_M"]
+      M1: ["0", "GUARD_FACE_MALE_1", "", "GUARD_HAIR_MALE_1", "CARAPACE_MEDIC_M"]
+      M2: ["0", "GUARD_FACE_MALE_2", "", "GUARD_HAIR_MALE_2", "CARAPACE_MEDIC_M"]
+      M3: ["0", "GUARD_FACE_MALE_3", "", "GUARD_HAIR_MALE_3", "CARAPACE_MEDIC_M"]
+      M4: ["0", "GUARD_FACE_MALE_4", "", "", "CARAPACE_MEDIC_M"]
+      M5: ["0", "GUARD_FACE_MALE_5", "", "GUARD_HAIR_MALE_5", "CARAPACE_MEDIC_M"]
+      M6: ["0", "GUARD_FACE_MALE_6", "", "", "CARAPACE_MEDIC_M"]
+      M7: ["0", "GUARD_FACE_MALE_7", "", "GUARD_HAIR_MALE_7", "CARAPACE_MEDIC_M"]
+      M8: ["0", "GUARD_FACE_MALE_8", "", "GUARD_HAIR_MALE_8", "CARAPACE_MEDIC_M"]
+      M9: ["0", "GUARD_FACE_MALE_9", "", "", "CARAPACE_MEDIC_M"]
+      F0: ["0", "GUARD_FACE_FEMALE_0", "", "GUARD_HAIR_FEMALE_0", "CARAPACE_MEDIC_F"]
+      F1: ["0", "GUARD_FACE_FEMALE_1", "", "GUARD_HAIR_FEMALE_1", "CARAPACE_MEDIC_F"]
+      F2: ["0", "GUARD_FACE_FEMALE_2", "", "GUARD_HAIR_FEMALE_2", "CARAPACE_MEDIC_F"]
+      F3: ["0", "GUARD_FACE_FEMALE_3", "", "GUARD_HAIR_FEMALE_3", "CARAPACE_MEDIC_F"]
+      F4: ["0", "GUARD_FACE_FEMALE_4", "", "GUARD_HAIR_FEMALE_4", "CARAPACE_MEDIC_F"]
+      F5: ["0", "GUARD_FACE_FEMALE_5", "", "GUARD_HAIR_FEMALE_5", "CARAPACE_MEDIC_F"]
+      F6: ["0", "GUARD_FACE_FEMALE_6", "", "GUARD_HAIR_FEMALE_6", "CARAPACE_MEDIC_F"]
+      F7: ["0", "GUARD_FACE_FEMALE_7", "", "GUARD_HAIR_FEMALE_7", "CARAPACE_MEDIC_F"]
+      F8: ["0", "GUARD_FACE_FEMALE_8", "", "GUARD_HAIR_FEMALE_8", "CARAPACE_MEDIC_F"]
+      F9: ["0", "GUARD_FACE_FEMALE_9", "", "GUARD_HAIR_FEMALE_9", "CARAPACE_MEDIC_F"]
 
 ## COMMISSAR GREATCOAT ##
 
@@ -302,24 +372,23 @@ armors:
     underArmor: 12
     drawingRoutine: 0
     damageModifier:
-      - 1.0 #none
+      - 1.0 #SUPPORT
       - 1.0 #AP
-      - 1.2 #FLAMES
-      - 1.0 #HE
-      - 0.8 #LASCANON
+      - 1.0 #FLAMES
+      - 1.0 #EXPLOSIVE
+      - 1.0 #LASER
       - 1.0 #PLASMA
       - 1.0 #STUN
-      - 1.1 #MELEE
-      - 1.0 #ACID
-      - 0.0 #SMOKE
+      - 1.0 #MELEE
+      - 1.0 #POWER
+      - 1.0 #SMOKE
       - 1.0 #IMPACT
       - 1.0 #MELTA
+      - 1.0 #GRAVITON
     units:
       - STR_COMMISSAR	  
     loftempsSet: [ 3 ]
     stats:
-      tu: 10
-      stamina: 10
       mana: 100
     recovery:
       mana:
@@ -399,7 +468,7 @@ armors:
       energy:
         flatHundred: 1.0
     units:
-      - STR_GUARDSM
+      - STR_GUARDSMAN
     damageModifier: #VEHICLE ARMOR LARGE
       - 1.0 #none
       - 1.0 #AP
@@ -497,7 +566,7 @@ armors:
       energy:
         flatHundred: 1.0
     units:
-      - STR_GUARDSM	
+      - STR_GUARDSMAN	
     damageModifier: #VEHICLE ARMOR LARGE
       - 1.0 #none
       - 1.0 #AP
@@ -597,7 +666,7 @@ armors:
       energy:
         flatHundred: 1.0
     units:
-      - STR_GUARDSM
+      - STR_GUARDSMAN
     damageModifier: #VEHICLE ARMOR LARGE
       - 1.0 #none
       - 1.0 #AP
@@ -692,7 +761,7 @@ armors:
       energy:
         flatHundred: 1.0
     units:
-      - STR_GUARDSM
+      - STR_GUARDSMAN
     damageModifier: #VEHICLE ARMOR LARGE
       - 1.0 #none
       - 1.0 #AP
@@ -919,7 +988,7 @@ armors:
       - 1.0 #IMPACT
       - 1.0 #MELTA
     units:
-      - STR_GUARDSM
+      - STR_GUARDSMAN
       - STR_GUARD_VETERAN
     loftempsSet: [ 3 ]
 

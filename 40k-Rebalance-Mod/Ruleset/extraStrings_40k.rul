@@ -2,6 +2,49 @@ extraStrings:
   - type: en-US
     strings:
 
+### DAMAGE TYPES ###
+      STR_DAMAGE_NONE: "NONE"
+      STR_DAMAGE_ARMOR_PIERCING: "ARMOR PIERCING"
+      STR_DAMAGE_INCENDIARY: "INCENDIARY"
+      STR_DAMAGE_HIGH_EXPLOSIVE: "HIGH EXPLOSIVE"
+      STR_DAMAGE_LASER_BEAM: "LASER"
+      STR_DAMAGE_PLASMA_BEAM: "PLASMA"
+      STR_DAMAGE_STUN: "STUN"
+      STR_DAMAGE_MELEE: "MELEE"
+      STR_DAMAGE_ACID: "POWER FIELD"
+      STR_DAMAGE_SMOKE: "SMOKE"
+      STR_DAMAGE_10: "IMPACT SHOCK"
+      STR_DAMAGE_11: "MELTA"
+      STR_DAMAGE_12: "GRAVITON"
+      STR_DAMAGE_13: "SUPPORT"
+
+### INVENTORY SLOTS  ###
+      STR_RIGHT_HAND: " "
+      STR_LEFT_HAND: " "
+      STR_BEHIND_SHOLDER: " "
+      STR_BACK_PACK: " "
+      STR_BELT: " "
+      STR_RIGHT_LEG: " "
+      STR_LEFT_LEG: " "
+      STR_GROUND: " "
+
+### NULL ITEMS ###
+      STR_NULL_ITEM_MEDKIT: "Medkit"
+
+### SOLDIERS TYPES ###
+      STR_GUARDSMAN: "Guardsman"
+
+### SOLDIERS RANKS ###
+
+#Guardsman
+      STR_GUARDSMAN_RANK_0: "Recruit"
+      STR_GUARDSMAN_RANK_1: "Guardsman"
+      STR_GUARDSMAN_RANK_2: "Sergeant"
+
+
+
+
+
 ### ITEMS IDs ###
 
 ## STUB WEAPONS ##
@@ -37,7 +80,7 @@ extraStrings:
       STR_SNIPER_RIFLE_AMMO_HE: "Sniper Rifle HE Ammo"
       STR_SNIPER_RIFLE_AMMO_I: "Sniper Rifle I Ammo"
 
-      STR_SNIPER_RIFLE_SM: "Astartes Sniper Rifle"
+      STR_SNIPER_RIFLE_SM: "Sniper Rifle (Astartes)"
 
 
 
@@ -52,6 +95,7 @@ extraStrings:
 
 #Flamer
       STR_FLAMER_FUEL: "Flamer Fuel"
+
       STR_FLAMER_SM: "Astartes Flamer"
       STR_FLAMER_IG: "Guard Flamer"
       STR_FLAMER_RENEGADE: "Renegade Flamer"
@@ -546,6 +590,12 @@ extraStrings:
 
 #Guard Armors
       STR_FLAK_ARMOR: "Flak Armor"
+      STR_FLAK_ARMOR_MEDIC: "Flak Armor (Medic)"
+      STR_FLAK_ARMOR_SERGEANT: "Flak Armor (Sergeant)"
+
+      STR_CARAPACE_ARMOR: "Carapace Armor"
+      STR_CARAPACE_ARMOR_MEDIC: "Carapace Armor (Medic)"
+      STR_CARAPACE_ARMOR_SERGEANT: "Carapace Armor (Sergeant)"
 
 
 ## IG T1 ##

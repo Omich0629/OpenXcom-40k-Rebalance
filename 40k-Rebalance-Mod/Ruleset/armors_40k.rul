@@ -913,7 +913,6 @@ armors:
     builtInWeapons:
       - AUX_BOLTER #AUX_TANK_CANNON
       - AUX_RAM
-      - INV_NULL_4X3_BELT
 
 #LAYERS
   - type: STR_ASSAULT_BIKE
@@ -2056,7 +2055,6 @@ armors:
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
-      - INV_NULL_4X3_BELT
 
 ### DREADNOUGHT/PLASMA CANNON ###
   - delete: DREAD_ARMOR2_UC
@@ -2106,7 +2104,6 @@ armors:
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
-      - INV_NULL_4X3_BELT
 
 ### DREADNOUGHT/MISSILE LAUNCHER ###
   - delete: DREAD_ARMOR3_UC
@@ -2157,7 +2154,6 @@ armors:
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
-      - INV_NULL_4X3_BELT
 
 ### DREADNOUGHT/LASCANNON ###
 
@@ -2209,7 +2205,6 @@ armors:
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
-      - INV_NULL_4X3_BELT
 
 ### DREADNOUGHT/ASSAULT CANNON ###
 
@@ -2262,7 +2257,6 @@ armors:
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
-      - INV_NULL_4X3_BELT  
 
 ### UNIT ARMORS ###
 

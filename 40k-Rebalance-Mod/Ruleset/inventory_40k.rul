@@ -1,0 +1,117 @@
+invs:
+  - delete: STR_RIGHT_SHOULDER
+  - delete: STR_LEFT_SHOULDER
+  - id: STR_RIGHT_HAND
+    x: 5
+    y: 33
+    type: 1
+    costs:
+      STR_RIGHT_HAND: 0
+      STR_LEFT_HAND: 4
+      STR_BEHIND_SHOLDER: 6
+      STR_BACK_PACK: 12
+      STR_POUCH: 6
+      STR_BELT: 6
+      STR_RIGHT_LEG: 4
+      STR_LEFT_LEG: 4
+      STR_GROUND: 4
+  - id: STR_LEFT_HAND
+    x: 120
+    y: 33
+    type: 1
+    costs:
+      STR_RIGHT_HAND: 4
+      STR_LEFT_HAND: 0
+      STR_BEHIND_SHOLDER: 6
+      STR_BACK_PACK: 12
+      STR_POUCH: 6
+      STR_BELT: 6
+      STR_RIGHT_LEG: 4
+      STR_LEFT_LEG: 4
+      STR_GROUND: 4
+  - id: STR_BACK_PACK
+    x: 160
+    y: 45
+    slots:
+      - [0, 0]
+      - [0, 1]
+      - [1, 0]
+      - [1, 1]
+      - [2, 0]
+      - [2, 1]
+    costs:
+      STR_RIGHT_HAND: 12
+      STR_LEFT_HAND: 12
+      STR_BEHIND_SHOLDER: 16
+      STR_BACK_PACK: 4
+      STR_POUCH: 18
+      STR_BELT: 18
+      STR_RIGHT_LEG: 16
+      STR_LEFT_LEG: 16
+      STR_GROUND: 16
+  - id: STR_BELT
+    x: 160
+    y: 90
+    slots:
+      - [0, 0]
+      - [0, 1]
+      - [1, 0]
+      - [2, 0]
+      - [3, 0]
+      - [3, 1]
+      - [3, 2]
+    costs:
+      STR_RIGHT_HAND: 6
+      STR_LEFT_HAND: 6
+      STR_BEHIND_SHOLDER: 8
+      STR_BACK_PACK: 18
+      STR_POUCH: 0
+      STR_BELT: 4
+      STR_RIGHT_LEG: 10
+      STR_LEFT_LEG: 10
+      STR_GROUND: 10
+  - id: STR_RIGHT_LEG
+    x: 5
+    y: 107
+    slots:
+      - [0, 0]
+      - [1, 0]
+      - [1, 1]
+    costs:
+      STR_RIGHT_HAND: 4
+      STR_LEFT_HAND: 4
+      STR_BEHIND_SHOLDER: 10
+      STR_BACK_PACK: 18
+      STR_POUCH: 8
+      STR_BELT: 8
+      STR_RIGHT_LEG: 0
+      STR_LEFT_LEG: 8
+      STR_GROUND: 8
+  - id: STR_LEFT_LEG
+    x: 120
+    y: 107
+    slots:
+      - [0, 1]
+      - [0, 0]
+      - [1, 0]
+    costs:
+      STR_RIGHT_HAND: 4
+      STR_LEFT_HAND: 4
+      STR_BEHIND_SHOLDER: 10
+      STR_BACK_PACK: 18
+      STR_POUCH: 8
+      STR_BELT: 8
+      STR_RIGHT_LEG: 0
+      STR_LEFT_LEG: 8
+      STR_GROUND: 8
+  - id: STR_GROUND
+    costs:
+      STR_RIGHT_HAND: 12
+      STR_LEFT_HAND: 12
+      STR_BEHIND_SHOLDER: 18
+      STR_BACK_PACK: 24
+      STR_POUCH: 16
+      STR_BELT: 14
+      STR_RIGHT_LEG: 16
+      STR_LEFT_LEG: 16
+      STR_GROUND: 8

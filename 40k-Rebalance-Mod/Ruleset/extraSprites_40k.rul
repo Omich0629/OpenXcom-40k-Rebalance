@@ -215,10 +215,10 @@ extraSprites:
 ## BASEBITS ##
   - type: BASEBITS.PCK
     files:
-#RANKS
-
+#RANK SPRITES
       800: Resources/Ranks/Enginseer_rankSprite.png
       801: Resources/Ranks/Ministorum_Priest_rankSprite.png
+      802: Resources/Ranks/Guardsman_rankSprite.png #3 frames
 #BASE BITS
       900: Resources/Basebits/basebits_hospital.png
       901: Resources/Basebits/basebits_HQ.png
@@ -296,7 +296,7 @@ extraSprites:
 #RANKS
       300: Resources/Ranks/Enginseer_rankBattleSprite.png #Enginseer rank (1 frame)
       301: Resources/Ranks/Ministorum_Priest_rankBattleSprite.png #Ministorum Priest rank (1 frame)
-
+      302: Resources/Ranks/Guardsman_rankBattleSprite.png #Guardsman ranks (3 frames)
 
 #AOE EFFECTS (EXPLOSIONS)
   - type: X1.PCK                         
@@ -337,10 +337,13 @@ extraSprites:
       152: Resources/Armor/IG/Ogryn_Carapace/Ogryn_Carapace_Corpse_Inv.png
       153: Resources/Armor/IG/Bullgryn_Armor/Bullgryn_Armor_Corpse_Inv.png
       154: Resources/Armor/IG/Flak_Armor/Flak_Armor_Corpse_Inv.png
+      155: Resources/Armor/IG/Flak_Armor_Medic/Flak_Armor_Medic_Corpse_Inv.png
+      156: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Corpse_Inv.png
+      157: Resources/Armor/IG/Carapace_Armor_Medic/Carapace_Armor_Medic_Corpse_Inv.png
 
 #ITEMS (201 - ?)
       220: Resources/Items/Common/Null_Objects/Null_Lefthand.png
-      221: Resources/Items/Common/Null_Objects/Null_Void_4x3.png
+      221: Resources/Items/Shared/Null_Items/Null_Item_Backpack.png
       222: Resources/Items/Common/Chainsword/ChainSword_BigSprite.gif
       223: Resources/Items/Common/Chainsword/MC_ChainSword_BigSprite.gif
       224: Resources/Items/IG/Chainsword_IG/Chainsword_IG_Inv.png
@@ -350,7 +353,7 @@ extraSprites:
       228: Resources/Items/IG/Heavy_Bolter_IG/Heavy_Bolter_IG_Inv.png
       229: Resources/Items/IG/Heavy_Bolter_IG/Heavy_Bolter_IG_Deployed_Inv.png
       230: Resources/Items/Enemy/Heavy_Bolter_Chaos/Heavy_Bolter_Chaos_Inv.png
-#      231:
+      231: Resources/Items/IG/Null_Items_IG/Null_Item_Medkit_Inv.png
       232: Resources/Items/Common/Multimelta_Charge/Multimelta_Charge_Inv.png
       233: Resources/Items/Common/Omnissian_Axe/Omnissian_Axe_Inv.png
       234: Resources/Items/IG/Vox_Caster/IG_Vox_Caster_Inv.png
@@ -557,6 +560,7 @@ extraSprites:
       152: Resources/Armor/IG/Ogryn_Carapace/Ogryn_Carapace_Corpse_Floor.png
       153: Resources/Armor/IG/Bullgryn_Armor/Bullgryn_Armor_Corpse_Floor.png
       154: Resources/Armor/IG/Flak_Armor/Flak_Armor_Corpse_Floor.png
+      155: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Corpse_Floor.png
 
 #ITEMS (201 - ?)
       221: Resources/Items/Common/Chainsword/MC_ChainSword_FloorSprite.gif
@@ -852,8 +856,8 @@ extraSprites:
 
 #Enginseer tinyrank
   - type: TinyRanks
-    width: 42
-    height: 28
+    width: 7
+    height: 7
     subX: 7
     subY: 7
     files:
@@ -861,12 +865,22 @@ extraSprites:
 
 #Ministorum Priest tinyrank
   - type: TinyRanks
-    width: 42
-    height: 28
+    width: 7
+    height: 7
     subX: 7
     subY: 7
     files:
       101: Resources/Ranks/Ministorum_Priest_rankTinySprite.png
+
+#Guardsman tinyranks
+  - type: TinyRanks
+    width: 21
+    height: 7
+    subX: 7
+    subY: 7
+    files:
+      102: Resources/Ranks/Guardsman_rankTinySprite.png
+
 
 #Custom armor previews
   - type: CustomArmorPreviews
@@ -1239,17 +1253,24 @@ extraSprites:
 
 #Flak Armor (LAYER 4)
   - typeSingle: FLAK_ARMOR__4__FLAK_ARMOR_M
-    fileSingle: Resources/Armor/IG/Flak_Armor/Flak_Armor_Inv_Male.png
+    fileSingle: Resources/Armor/IG/Flak_Armor/Flak_Armor_Inv_M.png
 
   - typeSingle: FLAK_ARMOR__4__FLAK_ARMOR_F
-    fileSingle: Resources/Armor/IG/Flak_Armor/Flak_Armor_Inv_Female.png
+    fileSingle: Resources/Armor/IG/Flak_Armor/Flak_Armor_Inv_F.png
 
-#Medic Flak Armor (LAYER 4)
+#Flak Armor (Medic) (LAYER 4)
   - typeSingle: FLAK_MEDIC__4__FLAK_MEDIC_M
-    fileSingle: Resources/Armor/IG/Flak_Armor_Medic/Flak_Armor_Medic_Inv_M.gif
+    fileSingle: Resources/Armor/IG/Flak_Armor_Medic/Flak_Armor_Medic_Inv_M.png
 
   - typeSingle: FLAK_MEDIC__4__FLAK_MEDIC_F
-    fileSingle: Resources/Armor/IG/Flak_Armor_Medic/Flak_Armor_Medic_Inv_F.gif
+    fileSingle: Resources/Armor/IG/Flak_Armor_Medic/Flak_Armor_Medic_Inv_F.png
+
+#Flak Armor (Sergeant) (LAYER 4)
+  - typeSingle: FLAK_SERGEANT__4__FLAK_SERGEANT_M
+    fileSingle: Resources/Armor/IG/Flak_Armor_Sergeant/Flak_Armor_Sergeant_Inv_M.png
+
+  - typeSingle: FLAK_SERGEANT__4__FLAK_SERGEANT_F
+    fileSingle: Resources/Armor/IG/Flak_Armor_Sergeant/Flak_Armor_Sergeant_Inv_F.png
 
 
 #Carapace Armor (LAYER 4)
@@ -1260,13 +1281,6 @@ extraSprites:
   - typeSingle: CARAPACE_ARMOR__4__CARAPACE_ARMOR_F
     fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Inv_F.png
 
-#Carapace Armor Helm (LAYER 5)
-
-  - typeSingle: CARAPACE_HELM__5__CARAPACE_HELM_M
-    fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Helm_Inv_M.png
-
-  - typeSingle: CARAPACE_HELM__5__CARAPACE_HELM_F
-    fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Helm_Inv_F.png
 
 #Medic Carapace Armor (LAYER 4)
 
@@ -1741,13 +1755,22 @@ extraSprites:
       0: Resources/Armor/IG/Flak_Armor/Flak_Armor_Battlescape.png
 
 #Medic Flak Armor
-  - type: MEDIC_FLAK_ARMOR.PCK
+  - type: FLAK_ARMOR_MEDIC.PCK
     width: 512
     height: 720
     subX: 32
     subY: 40
     files:
-      0: Resources/Armor/IG/Flak_Armor_Medic/Flak_Armor_Medic_Battlescape.gif
+      0: Resources/Armor/IG/Flak_Armor_Medic/Flak_Armor_Medic_Battlescape.png
+
+#Flak Armor
+  - type: FLAK_ARMOR_SERGEANT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/Flak_Armor_Sergeant/Flak_Armor_Sergeant_Battlescape.png
 
 #Carapace Armor
   - type: CARAPACE_ARMOR.PCK

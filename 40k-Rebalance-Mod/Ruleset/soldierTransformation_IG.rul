@@ -13,7 +13,7 @@ soldierTransformation:
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
     allowedSoldierTypes:
-      - STR_GUARDSM
+      - STR_GUARDSMAN
     transferTime: 8
     cost: 50000
     requiredMinStats:
@@ -37,7 +37,7 @@ soldierTransformation:
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
     allowedSoldierTypes:
-      - STR_GUARDSM
+      - STR_GUARDSMAN
     #requiredRank: 3
     requiresBaseFunc: [HQ]
     requiredMinStats:

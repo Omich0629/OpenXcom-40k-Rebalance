@@ -38,8 +38,8 @@ manufacture:
     time: 20
     cost: 1250
 
-#Flak (Medic)
-  - name: STR_GUARD_ARMORS_MEDIC
+#Flak Armor (Medic)
+  - name: STR_FLAK_ARMOR_MEDIC
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_FLAK_MEDIC_TECH
@@ -48,7 +48,7 @@ manufacture:
     cost: 7000
 
 #Carapace Armor
-  - name: STR_GUARD_ARMORH
+  - name: STR_CARAPACE_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_CARAPACE_ARMOR_TECH
@@ -59,7 +59,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 10
 
 #Carpace Armor (Medic)
-  - name: STR_MEDIC_CARAPACE_ARMOR
+  - name: STR_CARAPACE_ARMOR_MEDIC
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_CARAPACE_MEDIC_TECH

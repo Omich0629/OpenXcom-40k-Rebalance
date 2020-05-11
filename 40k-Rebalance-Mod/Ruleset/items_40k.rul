@@ -802,19 +802,18 @@ items:
 
 
 
-### NULL SLOT ITEMS ###
+### NULL-ITEMS ###
 
 ## NULL-ITEM FOR BELT SLOT ##
-  - type: INV_NULL_4X3_BELT
-#RESOURCES
-    bigSprite: 221
-#GENERAL
+  - type: STR_NULL_ITEM_BACK_PACK
     weight: 0
-    invWidth: 4
+    invWidth: 3
     invHeight: 3
+    bigSprite: 221
+    defaultInventorySlot: STR_BACK_PACK
     fixedWeapon: true
-    defaultInventorySlot: STR_BELT
     recover: false
+
 
 ## NULL-ITEM FOR SENTINEL LEFT HAND SLOT ##
   - type: INV_NULL_SENTINEL_LH

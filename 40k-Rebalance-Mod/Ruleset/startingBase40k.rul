@@ -60,7 +60,7 @@ startingBase:
 ## Imperial Guard Starting Base ##
 startingBaseSuperhuman:
   randomSoldiers:
-    STR_GUARDSM: 12
+    STR_GUARDSMAN: 12
   crafts:
     - type: STR_VALKYRIE
       id: 1
