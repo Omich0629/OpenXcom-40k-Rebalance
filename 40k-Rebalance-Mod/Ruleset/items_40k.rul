@@ -17,9 +17,28 @@ items:
   - delete: STR_PISTOL_CLIP_EX
   - delete: STR_PISTOL_CLIP_AP
 
+### NULL-ITEMS ###
+
+## NULL-ITEM FOR BACK PACK ##
+  - type: STR_NULL_ITEM_BACK_PACK
+    weight: 0
+    invWidth: 3
+    invHeight: 2
+    bigSprite: 221
+    defaultInventorySlot: STR_BACK_PACK
+    fixedWeapon: true
+    recover: false
+
+
+## NULL-ITEM FOR SENTINEL LEFT HAND SLOT ##
+  - type: INV_NULL_SENTINEL_LH
+#RESOURCES
+    bigSprite: 220
+
+
 ### SM BOLT WEAPONS ###
 
-## ASTARTES BOLTPISTOL ##
+## BOLTPISTOL (ASTARTES) ##
   - type: STR_BOLTPISTOL_SM
  
 #RESOURCES
@@ -30,7 +49,7 @@ items:
     fireSound: [1042, 1043]
 #GENERAL
     battleType: 1
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    categories: [STR_CATEGORY_PISTOL, STR_CATEGORY_BOLT, STR_CATEGORY_MARINE]
     requiresBuy:
       - STR_BOLTPISTOL_TECH
       - STR_SPACE_MARINES_OPERATIONS
@@ -40,7 +59,7 @@ items:
     weight: 12
     invWidth: 2
     invHeight: 2
-    armor: 30
+    armor: 60
     attraction: 1
     twoHanded: false
     listOrder: 10100
@@ -53,13 +72,15 @@ items:
       - STR_BOLTPISTOL_MAGAZINE_I
     dropoff: 5
     bulletSpeed: 30
-    accuracySnap: 75
+
+    accuracyAimed: 85
+    tuAimed: 40
+    aimRange: 11
+
+    accuracySnap: 65
     tuSnap: 20
-    snapRange: 13
-    accuracyAuto: 60
-    tuAuto: 35
-    autoRange: 6
-    autoShots: 3
+    snapRange: 6
+
 
 ## MASTER CRAFTED BOLTPISTOL ##
   - type: STR_BOLTPISTOL_MC 
@@ -71,14 +92,14 @@ items:
     fireSound: [1042, 1043]
 #GENERAL
     battleType: 1
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    categories: [STR_CATEGORY_PISTOL, STR_CATEGORY_BOLT, STR_CATEGORY_MARINE_VETERAN]
     costBuy: 0
     costSell: 14000
     size: 0.3
     weight: 14
     invWidth: 2
     invHeight: 3
-    armor: 30
+    armor: 90
     attraction: 1
     twoHanded: false
     listOrder: 10111
@@ -91,12 +112,19 @@ items:
       - STR_BOLTPISTOL_MAGAZINE_I
     dropoff: 5
     bulletSpeed: 30
-    accuracyAimed: 85
-    tuAimed: 60
+
+    accuracyAimed: 100
+    tuAimed: 40
     aimRange: 25
+
     accuracySnap: 75
     tuSnap: 20
-    snapRange: 15
+    snapRange: 7
+
+    accuracyAuto: 55
+    tuAuto: 35
+    autoRange: 3
+    autoShots: 3
 
 ## BOLTPISTOL MAGAZINE (EXPLOSIVE) ##
   - type: STR_BOLTPISTOL_MAGAZINE_EX
@@ -108,7 +136,7 @@ items:
     hitAnimation: 181 #Bolt hit animation
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_BOLT]
     requiresBuy:
       - STR_BOLTPISTOL_TECH
     costBuy: 300
@@ -133,7 +161,6 @@ items:
       ArmorEffectiveness: 0.9
       ToArmor: 0.1
       ToHealth: 1.0
-      ToStun: 0.5
       FixRadius: 0
 
 ## BOLTPISTOL MAGAZINE (ARMOR PIERCING) ##
@@ -146,7 +173,7 @@ items:
     hitAnimation: 181 #Bolt hit animation
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_BOLT]
     requiresBuy:
       - STR_BOLTPISTOL_TECH
     costBuy: 600
@@ -169,7 +196,6 @@ items:
       ToArmorPre: 0.1
       ToArmor: 0.2
       ToHealth: 0.9
-      ToStun: 0.2
     explosionSpeed: 5
 
 ## BOLTPISTOL MAGAZINE (INCENDIARY) ##
@@ -182,7 +208,7 @@ items:
     hitSound: 1044 #bolt hit sound
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_BOLT]
     requiresBuy:
       - STR_BOLTPISTOL_TECH
     costBuy: 400
@@ -224,7 +250,7 @@ items:
     fireSound: [1042, 1043]
 #GENERAL
     battleType: 1
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    categories: [STR_CATEGORY_ASSAULT, STR_CATEGORY_BOLT, STR_CATEGORY_MARINE]
     requiresBuy:
       - STR_BOLTER_TECH
       - STR_SPACE_MARINES_OPERATIONS
@@ -234,7 +260,7 @@ items:
     weight: 20
     invWidth: 2
     invHeight: 3
-    armor: 30
+    armor: 60
     attraction: 1
     listOrder: 10300
     twoHanded: true
@@ -248,12 +274,18 @@ items:
       - STR_BOLTER_MAGAZINE_I
     dropoff: 5
     bulletSpeed: 30
-    accuracySnap: 80
+
+    accuracyAimed: 80
+    tuAimed: 50
+    aimRange: 20
+
+    accuracySnap: 60
     tuSnap: 25
-    snapRange: 15
-    accuracyAuto: 70
+    snapRange: 12
+
+    accuracyAuto: 55
     tuAuto: 40
-    autoRange: 8
+    autoRange: 9
     autoShots: 3
 
 
@@ -267,14 +299,14 @@ items:
     fireSound: [1042, 1043]
 #GENERAL
     battleType: 1
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    categories: [STR_CATEGORY_ASSAULT, STR_CATEGORY_BOLT, STR_CATEGORY_MARINE]
     costBuy: 0
     costSell: 14000
     size: 0.3
     weight: 22
     invWidth: 2
     invHeight: 3
-    armor: 30
+    armor: 60
     attraction: 1
     twoHanded: true
     oneHandedPenalty: 65
@@ -288,15 +320,18 @@ items:
       - STR_BOLTER_MAGAZINE_I
     dropoff: 5
     bulletSpeed: 30
+
     accuracyAimed: 100
-    tuAimed: 60
-    aimRange: 30
-    accuracySnap: 80
+    tuAimed: 70
+    aimRange: 40
+
+    accuracySnap: 60
     tuSnap: 25
-    snapRange: 15
-    accuracyAuto: 65
+    snapRange: 12
+
+    accuracyAuto: 55
     tuAuto: 40
-    autoRange: 8
+    autoRange: 9
     autoShots: 3
 
 
@@ -310,14 +345,14 @@ items:
     fireSound: [1042, 1043]
 #GENERAL
     battleType: 1
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    categories: [STR_CATEGORY_ASSAULT, STR_CATEGORY_BOLT, STR_CATEGORY_MARINE_VETERAN]
     costBuy: 0
     costSell: 20000
     size: 0.3
     weight: 23
     invWidth: 2
     invHeight: 3
-    armor: 50
+    armor: 90
     twoHanded: true
     oneHandedPenalty: 80
     attraction: 1
@@ -331,18 +366,23 @@ items:
       - STR_BOLTER_MAGAZINE_I
     dropoff: 5
     bulletSpeed: 30
-    accuracySnap: 85
+
+    accuracyAimed: 80
+    tuAimed: 50
+    aimRange: 25
+
+    accuracySnap: 60
     tuSnap: 25
-    snapRange: 18
-    accuracyAuto: 75
+    snapRange: 15
+
+    accuracyAuto: 55
     tuAuto: 40
-    autoRange: 12
+    autoRange: 11
     autoShots: 3
 
 
 ## MASTER CRAFTED BOLTGUN (SCOPED) ##
-  - type: STR_BOLTER_MC_SCOPED
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] 
+  - type: STR_BOLTER_MC_SCOPED 
 #RESOURCES
     bigSprite: 307
     floorSprite: 268
@@ -351,13 +391,14 @@ items:
     fireSound: [1042, 1043]
 #GENERAL
     battleType: 1
+    categories: [STR_CATEGORY_ASSAULT, STR_CATEGORY_BOLT, STR_CATEGORY_MARINE_VETERAN]
     costBuy: 0
     costSell: 24000
     size: 0.3
     weight: 25
     invWidth: 2
     invHeight: 3
-    armor: 50
+    armor: 90
     twoHanded: true
     oneHandedPenalty: 75
     attraction: 1
@@ -371,15 +412,18 @@ items:
       - STR_BOLTER_MAGAZINE_I
     dropoff: 5
     bulletSpeed: 30
+
     accuracyAimed: 100
-    tuAimed: 60
-    aimRange: 40
-    accuracySnap: 80
+    tuAimed: 70
+    aimRange: 50
+
+    accuracySnap: 60
     tuSnap: 25
-    snapRange: 18
-    accuracyAuto: 75
+    snapRange: 15
+
+    accuracyAuto: 55
     tuAuto: 40
-    autoRange: 12
+    autoRange: 11
     autoShots: 3
 
 ## BOLTGUN MAGAZINE (EXPLOSIVE) ##
@@ -394,7 +438,7 @@ items:
     hitAnimation: 181 #Bolt hit animation
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_BOLT]
     requiresBuy:
       - STR_BOLTER_TECH
     costBuy: 600
@@ -419,7 +463,6 @@ items:
       ArmorEffectiveness: 0.9
       ToArmor: 0.1
       ToHealth: 1.0
-      ToStun: 0.5
       FixRadius: 0
 
 ## BOLTGUN MAGAZINE (ARMOR PIERCING) ##
@@ -434,7 +477,7 @@ items:
     hitAnimation: 181 #Bolt hit animation
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_BOLT]
     requiresBuy:
       - STR_BOLTER_TECH
     costBuy: 1200
@@ -458,7 +501,6 @@ items:
       ToArmorPre: 0.1
       ToArmor: 0.2
       ToHealth: 0.9
-      ToStun: 0.2
 
 ## BOLTGUN MAGAZINE (INCENDIARY) ##
   - delete: STR_RIFLE_CLIP_AP
@@ -471,7 +513,7 @@ items:
     hitSound: 1044 #bolt hit sound
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_BOLT]
     requiresBuy:
       - STR_BOLTER_TECH
     costBuy: 800
@@ -512,7 +554,7 @@ items:
     fireSound: [1042, 1043]
 #GENERAL
     battleType: 1
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CATEGORY_HEAVY, STR_CATEGORY_BOLT, STR_CATEGORY_MARINE]
     requiresBuy:
       - STR_HEAVY_BOLTER_TECH
       - STR_SPACE_MARINES_OPERATIONS
@@ -522,7 +564,7 @@ items:
     weight: 40
     invWidth: 2
     invHeight: 3
-    armor: 30
+    armor: 90
     attraction: 1
     bulletSpeed: 30
     twoHanded: true
@@ -535,13 +577,13 @@ items:
       - STR_HEAVY_BOLTER_CASE_I
     dropoff: 5
 
-    accuracySnap: 60
-    tuSnap: 30
-    snapRange: 20
+    accuracyAimed: 80
+    tuAimed: 50
+    aimRange: 30
 
-    accuracyAuto: 50
+    accuracyAuto: 55
     tuAuto: 40
-    autoRange: 12
+    autoRange: 14
     autoShots: 3
 
 
@@ -555,7 +597,7 @@ items:
     hitAnimation: 181 #Bolt hit animation
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_BOLT]
     requiresBuy:
       - STR_HEAVY_BOLTER_TECH
     costBuy: 1200
@@ -577,7 +619,6 @@ items:
       ArmorEffectiveness: 0.9
       ToArmor: 0.1
       ToHealth: 1.0
-      ToStun: 0.5
       FixRadius: 0
 
 
@@ -591,7 +632,7 @@ items:
     hitAnimation: 181 #Bolt hit animation
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_BOLT]
     requiresBuy:
       - STR_HEAVY_BOLTER_TECH
     costBuy: 1400
@@ -612,7 +653,6 @@ items:
       ToArmorPre: 0.1
       ToArmor: 0.2
       ToHealth: 0.9
-      ToStun: 0.2
 
 
 ## HEAVY BOLTER AMMO CASE (INCENDIARY) ##
@@ -624,7 +664,7 @@ items:
     hitSound: 1044 #bolt hit sound
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_BOLT]
     requiresBuy:
       - STR_HEAVY_BOLTER_TECH
     costBuy: 1400
@@ -647,7 +687,7 @@ items:
     blastRadius: 1
 
 
-## STORM BOLTER ##
+## STORM BOLTER (ASTARTES) ##
   - delete: STR_HB
   - delete: STR_HB_CLIP
 
@@ -660,13 +700,13 @@ items:
     fireSound: [1042, 1043]
 #GENERAL
     battleType: 1
-    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
+    categories: [STR_CATEGORY_ASSAULT, STR_CATEGORY_BOLT, STR_CATEGORY_TERMINATOR]
     size: 0.6
     costSell: 30000
     weight: 60
     invWidth: 2
     invHeight: 3
-    armor: 30
+    armor: 90
     attraction: 1
     listOrder: 13100
     twoHanded: false
@@ -678,18 +718,30 @@ items:
       - STR_STORM_BOLTER_MAGAZINE_EX
       - STR_STORM_BOLTER_MAGAZINE_AP
       - STR_STORM_BOLTER_MAGAZINE_I
-    dropoff: 5
     bulletSpeed: 30
     compatibleAmmo:
-    accuracySnap: 80
-    confSnap:
-      shots: 2
-    tuSnap: 25
-    snapRange: 15
     accuracyMultiplier:
       firing: 0.65
       strength: 0.2
+    dropoff: 5
 
+    accuracyAimed: 80
+    confAimed:
+      shots: 2
+    tuAimed: 50
+    aimRange: 20
+
+    accuracySnap: 60
+    confSnap:
+      shots: 2
+    tuSnap: 25
+    snapRange: 12
+
+    accuracyAuto: 55
+    confAuto:
+      shots: 6
+    tuAuto: 40
+    autoRange: 9
 
 ## STORMBOLTER MAGAZINE (EXPLOSIVE) ##
   - type: STR_STORM_BOLTER_MAGAZINE_EX
@@ -701,7 +753,7 @@ items:
     hitAnimation: 181 #Bolt hit animation
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_BOLT]
     size: 0.3
     costSell: 1000
     weight: 12
@@ -723,7 +775,6 @@ items:
       ArmorEffectiveness: 0.9
       ToArmor: 0.1
       ToHealth: 1.0
-      ToStun: 0.5
       FixRadius: 0
     explosionSpeed: 5
 
@@ -738,7 +789,7 @@ items:
     hitAnimation: 181 #Bolt hit animation
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_BOLT]
     size: 0.3
     costSell: 1000
     weight: 15
@@ -759,7 +810,6 @@ items:
       ToArmorPre: 0.1
       ToArmor: 0.2
       ToHealth: 0.9
-      ToStun: 0.2
 
 ## STORMBOLTER MAGAZINE (INCENDIARY) ##
   - type: STR_STORM_BOLTER_MAGAZINE_I
@@ -770,7 +820,7 @@ items:
     hitSound: 1044 #bolt hit sound
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_TERMINATOR, STR_CAT_BOLTER]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_BOLT]
     size: 0.3
     costSell: 1000
     weight: 15
@@ -793,135 +843,112 @@ items:
     explosionSpeed: 5
 
 
-
-
-
-
-
-
-
-
-
-### NULL-ITEMS ###
-
-## NULL-ITEM FOR BELT SLOT ##
-  - type: STR_NULL_ITEM_BACK_PACK
-    weight: 0
-    invWidth: 3
-    invHeight: 3
-    bigSprite: 221
-    defaultInventorySlot: STR_BACK_PACK
-    fixedWeapon: true
-    recover: false
-
-
-## NULL-ITEM FOR SENTINEL LEFT HAND SLOT ##
-  - type: INV_NULL_SENTINEL_LH
-#RESOURCES
-    bigSprite: 220
-
 ############################
 
-### HAND GRENADES ###
+### SM HAND GRENADES ###
+  - delete: STR_GRENADE
+  - delete: STR_KRAK_GRENADE
+  - delete: STR_SMOKE_GRENADE 
+  - delete: STR_PROXIMITY_GRENADE
 
-## FRAG HAND GRENADE ##
-  - type: STR_GRENADE
+## Frag Hand Grenade (Astartes) ##
+
+
+  - type: STR_FRAG_HAND_GRENADE_SM
 #RESOURCES
     bigSprite: 278
     handSprite: 528
+    floorSprite: 341
+    hitAnimation: 184 #AOE Explosion
+    explosionHitSound: [1045, 1046, 1047, 1048, 1049] #Grenade explosion
 #GENERAL
-    costBuy: 500
-    costSell: 250
-    weight: 4
+    battleType: 4
+    requiresBuy:
+      - STR_HAND_GRENADES_RESEARCH
+      - STR_SPACE_MARINES_OPERATIONS
+    costBuy: 550
+    costSell: 275
+    size: 0.1
+    weight: 5
     invWidth: 1
     invHeight: 1
+    listOrder: 13600
 #THROWING
+    power: 70
+    damageType: 3
+    damageAlter:
+      FixRadius: 5
     tuThrow: 30
     tuPrime: 30
     flatRate: false
 
+## Krak Hand Grenade (Astartes) ##
 
-## KRAK HAND GRENADE ##
-  - type: STR_KRAK_GRENADE
+
+  - type: STR_KRAK_HAND_GRENADE_SM
 #RESOURCES
     bigSprite: 279
     floorSprite: 256
     handSprite: 536
-#GENERAL
-    costBuy: 1000
-    costSell: 500
-    weight: 6
-    invWidth: 1
-    invHeight: 1
-#THROWING
-    damageAlter:
-      ToArmorPre: 0.2
-      ArmorEffectiveness: 0.7
-      ToArmor: 0.2
-    tuThrow: 30
-    tuPrime: 30
-    flatRate: false
-
-
-## SMOKE GRENADE ##
-  - type: STR_SMOKE_GRENADE 
-#RESOURCES
-    bigSprite: 280
-#GENERAL
-    requiresBuy: []
-    costBuy: 400
-    costSell: 200
-    invWidth: 1
-    invHeight: 1
-#THROWING
-    tuThrow: 30
-    tuPrime: 30
-    flatRate: false
-
-## PROXIMITY GRENADE ##
-  - type: STR_PROXIMITY_GRENADE
-#RESOURCES
-    bigSprite: 281
-    floorSprite: 257
-    handSprite: 544
-#GENERAL
-    costBuy: 800
-    costSell: 400
-    weight: 4
-    invWidth: 1
-    invHeight: 1
-#THROWING
-    tuThrow: 30
-    tuPrime: 30
-    flatRate: false
-
-## PHOTON FLASH GRENADE ##
-  - delete: STR_PHOTON_GRENADE
-
-  - type: STR_PHOTON_GRENADE
-#RESOURCES
-    bigSprite: 321
-    floorSprite: 280
-    handSprite: 728
-    hitAnimation: 104
+    hitAnimation: 184 #AOE Explosion
+    explosionHitSound: [1045, 1046, 1047, 1048, 1049] #Grenade explosion
 #GENERAL
     battleType: 4
-    costBuy: 600
-    costSell: 300
+    requiresBuy:
+      - STR_HAND_GRENADES_RESEARCH
+      - STR_SPACE_MARINES_OPERATIONS
+    costBuy: 1100
+    costSell: 550
     size: 0.1
-    weight: 3
+    weight: 5
     invWidth: 1
     invHeight: 1
+    listOrder: 13650
 #THROWING
-    power: 50
-    damageType: 6
+    power: 100
+    damageType: 3
     damageAlter:
-      FixRadius: 2
+      ToArmorPre: 0.2 #20% damage to target's armor
+      ArmorEffectiveness: 0.7 #Ignores 30% of target's armor
+      FixRadius: 1
+      RadiusReduction: 50 #Less effective outside of epicenter
     tuThrow: 30
     tuPrime: 30
     flatRate: false
 
+## Smoke Hand Grenade (Astartes) ##
+
+  - type: STR_SMOKE_HAND_GRENADE_SM
+#RESOURCES
+    bigSprite: 280
+    floorSprite: 257
+    handSprite: 544
+    explosionHitSound: 792 #792 Smoke
+    hitAnimation: 104 #XSmoke
+#GENERAL
+    battleType: 4
+    requiresBuy:
+      - STR_HAND_GRENADES_RESEARCH
+      - STR_SPACE_MARINES_OPERATIONS
+    costBuy: 450
+    costSell: 225
+    weight: 5
+    invWidth: 1
+    invHeight: 1
+    listOrder: 13700
+#THROWING
+    power: 60
+    damageType: 9 #smoke
+    damageAlter:
+      FixRadius: 5
+    tuThrow: 30
+    tuPrime: 30
+    flatRate: false
+
+
 ##########################
+
+### SM STUB WEAPONS ###
 
 ## ASTARTES SHOTGUN ##
   - delete: STR_SHOTGUN
@@ -935,7 +962,7 @@ items:
     fireSound: [1000, 1001, 1002] 
 #GENERAL
     battleType: 1
-    categories: [STR_CAT_SHOTGUN, STR_CAT_SCOUT]
+    categories: [STR_CATEGORY_ASSAULT, STR_CATEGORY_STUB, STR_CATEGORY_SCOUT]
     requiresBuy:
       - STR_SHOTGUN_TECH
       - STR_SPACE_MARINES_OPERATIONS
@@ -945,7 +972,7 @@ items:
     weight: 25
     invWidth: 2
     invHeight: 3
-    armor: 30
+    armor: 50
     attraction: 1
     twoHanded: true
     oneHandedPenalty: 65
@@ -957,15 +984,19 @@ items:
     bulletSpeed: 30
     dropoff: 7
 
+    accuracyAimed: 90
+    tuAimed: 40
+    aimRange: 12
+
     accuracySnap: 75
     tuSnap: 20
-    snapRange: 7
+    snapRange: 9
 
     accuracyAuto: 60
     tuAuto: 40
     confAuto:
       shots: 3
-    autoRange: 5
+    autoRange: 6
 
 ## SHOTGUN SHELLS ##
   - delete: STR_SHOTGUN_SHELLS
@@ -979,7 +1010,7 @@ items:
     hitAnimation: 26
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_STUB]
     requiresBuy:
       - STR_SHOTGUN_TECH
     costBuy: 500
@@ -1007,7 +1038,7 @@ items:
     hitAnimation: 26
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_STUB]
     requiresBuy:
       - STR_SHOTGUN_TECH
     costBuy: 750
@@ -1022,10 +1053,121 @@ items:
     damageAlter:
       ToArmor: 0.1
 
+## SNIPER RIFLE (ASTARTES) ##
+  - delete: STR_HEAVY_CANNON
+  - delete: STR_HC_AP_AMMO
+  - delete: STR_HC_HE_AMMO
+  - delete: STR_HC_I_AMMO
 
+  - type: STR_SNIPER_RIFLE_SM
+#RESOURCES
+    bigSprite: 254
+    floorSprite: 240
+    handSprite: 400
+    bulletSprite: 6
+    fireSound: 1041
+#GENERAL
+    battleType: 1
+    categories: [STR_CATEGORY_HEAVY, STR_CATEGORY_STUB, STR_CATEGORY_SCOUT]
+    requiresBuy:
+      - STR_SNIPER_RIFLE_TECH
+    costBuy: 18400
+    costSell: 9000
+    size: 0.3
+    weight: 28
+    invWidth: 2
+    invHeight: 3
+    armor: 60
+    attraction: 1
+    twoHanded: true
+    blockBothHands: true
+    listOrder: 11900
+#SHOOTING
+    compatibleAmmo:
+      - STR_SNIPER_RIFLE_MAGAZINE
+    bulletSpeed: 40
+    dropoff: 5
+
+    accuracyAimed: 120
+    tuAimed: 60
+    aimRange: 60
+
+
+## SNIPER RIFLE AMMO (ARMOR PIERCING) ##
+
+  - type: STR_SNIPER_RIFLE_MAGAZINE
+#RESOURCES
+    bigSprite: 255
+    floorSprite: 241
+    handSprite: 408
+    hitSound: 22
+    hitAnimation: 26
+#GENERAL
+    battleType: 2
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_STUB]
+    requiresBuy:
+      - STR_SNIPER_RIFLE_TECH
+    costBuy: 300
+    costSell: 225
+    weight: 2
+    invWidth: 1
+    invHeight: 1
+    size: 0.1
+    listOrder: 11910
+#SHOOTING
+    clipSize: 10
+    damageType: 1
+    power: 60
+    damageAlter:
+      RandomType: 2
+      ToArmorPre: 0.05
+      ArmorEffectiveness: 0.9
+      ToArmor: 0.1
+      ToHealth: 1.0
 
 ### SM LAUNCHER WEAPONS ###
 
+## MISSILE LAUNCHER (ASTARTES) ##
+  - delete: STR_ROCKET_LAUNCHER
+  - delete: STR_SMALL_ROCKET
+  - delete: STR_LARGE_ROCKET
+  - delete: STR_INCENDIARY_ROCKET
+
+  - type: STR_MISSILE_LAUNCHER_SM
+#RESOURCES
+    bigSprite: 268
+    floorSprite: 249
+    handSprite: 472
+    bulletSprite: 0
+    fireSound: 52
+#GENERAL
+    battleType: 1
+    categories: [STR_CATEGORY_HEAVY, STR_CATEGORY_LAUNCHER, STR_CATEGORY_MARINE]
+    requiresBuy:
+      - STR_ROCKET_LAUNCHER_TECH
+      - STR_SPACE_MARINES_OPERATIONS
+    costBuy: 14000
+    costSell: 7000
+    size: 0.5
+    weight: 40
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    attraction: 1
+    twoHanded: true
+    blockBothHands: true
+    bulletSpeed: 30
+    listOrder: 12100
+#SHOOTING
+    compatibleAmmo:
+      - STR_FRAG_MISSILE
+      - STR_KRAK_MISSILE
+      - STR_INCENDIARY_MISSILE
+    dropoff: 5
+
+    accuracyAimed: 80
+    tuAimed: 75
+    aimRange: 40
 
 ## FRAG MISSILE ##
   - type: STR_FRAG_MISSILE
@@ -1037,7 +1179,7 @@ items:
     hitAnimation: 184 #AOE Explosion
 #GENERAL
     battleType: 2
-    categories: [STR_AMMO, STR_LAUNCHER]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_LAUNCHER]
     requiresBuy:
       - STR_ROCKET_LAUNCHER_TECH
     costBuy: 6000
@@ -1063,7 +1205,7 @@ items:
     hitAnimation: 184 #AOE Explosion
 #GENERAL
     battleType: 2
-    categories: [STR_AMMO, STR_LAUNCHER]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_LAUNCHER]
     requiresBuy:
       - STR_ROCKET_LAUNCHER_TECH
     costBuy: 9000
@@ -1094,7 +1236,7 @@ items:
     hitAnimation: 0
 #GENERAL
     battleType: 2
-    categories: [STR_AMMO, STR_LAUNCHER]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_LAUNCHER]
     requiresBuy:
       - STR_ROCKET_LAUNCHER_TECH
     costBuy: 7200
@@ -1115,187 +1257,7 @@ items:
       FixRadius: 2
 
 
-
-## MISSILE LAUNCHER (ASTARTES) ##
-  - delete: STR_ROCKET_LAUNCHER
-  - delete: STR_SMALL_ROCKET
-  - delete: STR_LARGE_ROCKET
-  - delete: STR_INCENDIARY_ROCKET
-
-  - type: STR_MISSILE_LAUNCHER_SM
-#RESOURCES
-    bigSprite: 268
-    floorSprite: 249
-    handSprite: 472
-    bulletSprite: 0
-    fireSound: 52
-#GENERAL
-    battleType: 1
-    categories: [STR_HEAVY, STR_LAUNCHER, STR_SPACE_MARINE]
-    requiresBuy:
-      - STR_ROCKET_LAUNCHER_TECH
-      - STR_SPACE_MARINES_OPERATIONS
-    costBuy: 14000
-    costSell: 7000
-    size: 0.5
-    weight: 40
-    invWidth: 2
-    invHeight: 3
-    armor: 80
-    attraction: 1
-    twoHanded: true
-    blockBothHands: true
-    bulletSpeed: 30
-    listOrder: 12100
-#SHOOTING
-    compatibleAmmo:
-      - STR_FRAG_MISSILE
-      - STR_KRAK_MISSILE
-      - STR_INCENDIARY_MISSILE
-    dropoff: 5
-
-    accuracyAimed: 80
-    tuAimed: 75
-    aimRange: 40
-
-
-## ASTARTES SNIPER RIFLE ##
-  - delete: STR_HEAVY_CANNON
-  - delete: STR_HC_AP_AMMO
-  - delete: STR_HC_HE_AMMO
-  - delete: STR_HC_I_AMMO
-
-  - type: STR_SNIPER_RIFLE_SM
-#RESOURCES
-    bigSprite: 254
-    floorSprite: 240
-    handSprite: 400
-    bulletSprite: 6
-    fireSound: 1041
-#GENERAL
-    battleType: 1
-    categories: [STR_CAT_SNIPER, STR_CAT_SCOUT]
-    requiresBuy:
-      - STR_SNIPER_RIFLE_TECH
-    costBuy: 18400
-    costSell: 9000
-    size: 0.3
-    weight: 30
-    invWidth: 2
-    invHeight: 3
-    armor: 30
-    attraction: 1
-    blockBothHands: true
-    listOrder: 11900
-#SHOOTING
-    compatibleAmmo:
-      - STR_SNIPER_RIFLE_AMMO_AP
-      - STR_SNIPER_RIFLE_AMMO_HE
-      - STR_SNIPER_RIFLE_AMMO_I
-    bulletSpeed: 40
-    dropoff: 5
-
-    accuracySnap: 80
-    tuSnap: 45
-    snapRange: 18
-
-    accuracyAimed: 130
-    tuAimed: 85
-    aimRange: 60
-
-
-## SNIPER RIFLE AMMO (ARMOR PIERCING) ##
-
-  - type: STR_SNIPER_RIFLE_AMMO_AP
-#RESOURCES
-    bigSprite: 255
-    floorSprite: 241
-    handSprite: 408
-    hitSound: 22
-    hitAnimation: 26
-#GENERAL
-    battleType: 2
-    categories: [STR_CAT_SNIPER, STR_CAT_SCOUT]
-    requiresBuy:
-      - STR_SNIPER_RIFLE_TECH
-    costBuy: 300
-    costSell: 225
-    weight: 3
-    invWidth: 1
-    invHeight: 1
-    size: 0.1
-    listOrder: 11910
-#SHOOTING
-    clipSize: 10
-    damageType: 1
-    power: 100
-
-## SNIPER RIFLE AMMO (HIGH EXPLOSIVE) ##
-
-  - type: STR_SNIPER_RIFLE_AMMO_HE
-#RESOURCES
-    bigSprite: 256
-    floorSprite: 241
-    handSprite: 408
-    hitSound: 22
-    hitAnimation: 0
-#GENERAL
-    battleType: 2
-    categories: [STR_CAT_SNIPER, STR_CAT_SCOUT] 
-    requiresBuy:
-      - STR_SNIPER_RIFLE_TECH
-    costBuy: 500
-    costSell: 275
-    invWidth: 1
-    invHeight: 1
-    size: 0.1
-    weight: 3
-    listOrder: 11920
-#SHOOTING
-    clipSize: 10
-    damageType: 3
-    power: 90
-    blastRadius: 1
-
-## SNIPER RIFLE AMMO (INCENDIARY) ##
-
-  - type: STR_SNIPER_RIFLE_AMMO_I
-#RESOURCES
-    bigSprite: 257
-    floorSprite: 241
-    handSprite: 408
-    hitSound: 22
-    hitAnimation: 0
-#GENERAL
-    battleType: 2
-    categories: [STR_CAT_SNIPER, STR_CAT_SCOUT]
-    requiresBuy:
-      - STR_SNIPER_RIFLE_TECH
-    costBuy: 400
-    costSell: 300
-    size: 0.1
-    weight: 3
-    invWidth: 1
-    invHeight: 1
-    listOrder: 11930
-#SHOOTING
-    clipSize: 10
-    damageType: 2
-    power: 100
-    damageAlter:
-      RandomType: 2 #TFTD [50% - 150%]
-      ToHealth: 1.0
-      ToMorale: 0.5
-    blastRadius: 1
-
-
-
-
-## ASSAULT BIKE ##
-
-
-
-### MELEE WEAPONS ###
+### SM MELEE WEAPONS ###
 
 ## SHOCK MAUL ##
 #Non-lethal melee weapon
@@ -1473,7 +1435,7 @@ items:
 #Ignores 10% of armor
   - delete: AUX_CROZIUS
 
-  - type: AUX_CROZIUS
+  - type: STR_CROZIUS_ARCANUM
 #RESOURCES
     bigSprite: 242
     floorSprite: 232
@@ -1769,7 +1731,6 @@ items:
 ### MELTA WEAPONS ###
 
 ## MELTA GRENADE ##
-#TODO: TEST IT
   - delete: STR_MGRENADE
   - type: STR_MELTA_GRENADE
 #RESOURCES
@@ -1969,6 +1930,8 @@ items:
     vaporColor: 2
     vaporDensity: 5
 
+### SM LASER WEAPONS ###
+
 ## ASTARTES LASCANNON  ##
   - type: STR_LASCAN
 #RESOURCES
@@ -1991,7 +1954,7 @@ items:
       ToStun: 0.0
 
 
-### FLAMETHROWERS ###
+### SM FLAMETHROWERS ###
 
 ## ASTARTES FLAMER ##
   - delete: STR_FLAMETHROWER
@@ -2461,11 +2424,10 @@ items:
     stunRecovery: 4
     energyRecovery: 10
     tuUse: 10
-    experienceTrainingMode: 19 #*** makes the apothecary medikit item train bravery ***
     allowSelfHeal: true
     flatRate: true
 
-#Techmarine/Enginseer Utiliry Skill
+#Techmarine/Enginseer Utility Skill
   - type: AUX_PROBE
     specialIconSprite: 208
     tuUse: 10
@@ -2524,7 +2486,7 @@ items:
   - type: STR_CHAPLAIN_BUFF
 #RESOURCES
     specialIconSprite: 203
-    fireSound: [758, 759, 760, 761, 762, 763]
+    fireSound: 758
     hitAnimation: 121 #Morale & Energy buff
 #GENERAL
     battleType: 1
@@ -3286,6 +3248,13 @@ items:
 
 ### CORPSES ###
 
+## SPACE MARINE CORPSE ##
+#Geospace only item
+#Probably need this to create the dreadnought
+  - type: STR_SPACE_MARINE_CORPSE
+    costBuy: 0
+    costSell: 10000
+
 ## CORPSE: SCOUT ARMOR ##
   - type: STR_SCOUT_CORPSE
     bigSprite: 113
@@ -3658,6 +3627,33 @@ items:
     costSell: 10000
     listOrder: 6400
 
+## STORE ITEM: DREADNOUGHT LASCANNON EQUIPMENT ##
+  - delete: STR_DREAD4_ARMOR
+  - type: STR_DREADNOUGHT_LASCANNON_ARMOR
+    size: 2
+    costSell: 50000
+    listOrder: 6620
+
+## STORE ITEM: DREADNOUGHT MISSILE LAUNCHER EQUIPMENT ##
+  - delete: STR_DREAD3_ARMOR
+  - type: STR_DREADNOUGHT_MISSILE_LAUNCHER_ARMOR
+    size: 2
+    costSell: 50000
+    listOrder: 6630
+
+## STORE ITEM: DREADNOUGHT PLASMA CANNON EQUIPMENT ##
+  - delete: STR_DREAD2_ARMOR
+  - type: STR_DREADNOUGHT_PLASMA_CANNON_ARMOR
+    size: 2
+    costSell: 50000
+    listOrder: 6640
+
+## STORE ITEM: DREADNOUGHT ASSAULT CANNON EQUIPMENT ##
+  - delete: STR_DREAD5_ARMOR
+  - type: STR_DREADNOUGHT_ASSAULT_CANNON_ARMOR
+    size: 2
+    costSell: 50000
+    listOrder: 6650
 
 ### CRAFT WEAPONS ###
 #delete vanilla IDs

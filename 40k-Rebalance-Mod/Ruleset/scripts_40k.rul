@@ -1,3 +1,8 @@
+items:
+  - type: STR_SERGEANT_BUFF_IG
+    tags:
+      RESTORE_MORALE_ON_HIT: 30
+
 extended:
   tags:
     BattleUnit:
@@ -16,7 +21,11 @@ extended:
 #*** Tags for energy shield on armor ***
       ARMOR_ROSARIUS_SHIELD_HP_PER_TURN: int
       ARMOR_ROSARIUS_SHIELD_DECAY: int
-  
+
+#*** Tags for morale restoring buff ***
+    RuleItem:
+      RESTORE_MORALE_ON_HIT: int  
+
   scripts:
     createUnit:
 #*** Sets the frequency and offset for periodic unit recolors for buffs and debuffs ***
@@ -131,6 +140,31 @@ extended:
             unit.setTag Tag.UNIT_RECOLOR_COLOR COLOR_X1_YELLOW;
 
           end;
+
+          return power part side;
+
+
+      - offset: 4
+        code: |
+          var ptr RuleItem itemRuleset; #pointer for item ruleset
+          var int moraleBuffValue; #variable for item's tag value
+          var int unitMorale; #variable for unit morale
+
+          damaging_item.getRuleItem itemRuleset; #Get ruleset from item
+
+          itemRuleset.getTag moraleBuffValue Tag.RESTORE_MORALE_ON_HIT; #Get value from tag
+
+          unit.getMorale unitMorale;     
+
+          unit.reduceByResistance moraleBuffValue 13;
+
+          add unitMorale moraleBuffValue; #Add morale buff to unit's morale.
+
+          if gt unitMorale 100; #Deal with possible morale value overflow
+            set unitMorale 100;
+          end;
+
+          unit.setMorale unitMorale; #Set new morale value to unit  
 
           return power part side;
 

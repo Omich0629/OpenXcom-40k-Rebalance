@@ -7,7 +7,7 @@ soldiers:
 
 
 #SCOUTS
-  - type: STR_SCOUT_SOLDIER
+  - type: STR_SCOUT
     costBuy: 60000
     costSalary: 30000
     requires:
@@ -70,23 +70,23 @@ soldiers:
     rankStrings:
       - STR_SCOUT_RANK_0
       - STR_SCOUT_RANK_1
-    armor: STR_SCOUT_UC
+    armor: STR_SCOUT_ARMOR
     standHeight: 22
     kneelHeight: 14
-    femaleFrequency: 0
+    femaleFrequency: 0 #No girls allowed.
     avatarOffsetX: 67
     avatarOffsetY: 42
     soldierNames:
       - delete
       - MarineName/
-    deathMale: [713, 714, 715, 716, 717, 718, 719, 720, 721, 722]
-    deathFemale: [744, 745, 746, 747, 748, 749, 750, 751, 752]
+    deathMale: [41, 42, 43] #Male death sounds for both genders
+    deathFemale: [41, 42, 43] #Just in case. SM are not suppossed to be females.
 
 
 #SPACE MARINES
   - delete: STR_SOLDIER
 
-  - type: STR_SOLDIER
+  - type: STR_SPACE_MARINE
     costSalary: 30000
     minStats:
       tu: 70
@@ -152,20 +152,20 @@ soldiers:
     armor: STR_MK7_ARMOR
     standHeight: 22
     kneelHeight: 14
-    femaleFrequency: 0
+    femaleFrequency: 0 #No girls allowed.
     avatarOffsetX: 67
     avatarOffsetY: 42
     soldierNames:
       - delete
       - MarineName/
-    deathMale: [713, 714, 715, 716, 717, 718, 719, 720, 721, 722]
-    deathFemale: [744, 745, 746, 747, 748, 749, 750, 751, 752]
+    deathMale: [41, 42, 43] #Male death sounds for both genders
+    deathFemale: [41, 42, 43] #Just in case. SM are not suppossed to be females.
 
 
 
 # VETERAN SPACE MARINE
 
-  - type: STR_VETERAN_SOLDIER
+  - type: STR_VETERAN_MARINE
     costSalary: 30000
     minStats:
       tu: 90
@@ -231,22 +231,83 @@ soldiers:
     armor: STR_MK7_VETERAN_ARMOR
     standHeight: 22
     kneelHeight: 14
-    femaleFrequency: 0
+    femaleFrequency: 0 #No girls allowed.
     avatarOffsetX: 67
     avatarOffsetY: 42
     soldierNames:
       - delete
       - MarineName/
-    deathMale: [713, 714, 715, 716, 717, 718, 719, 720, 721, 722]
-    deathFemale: [744, 745, 746, 747, 748, 749, 750, 751, 752]
+    deathMale: [41, 42, 43] #Male death sounds for both genders
+    deathFemale: [41, 42, 43] #Just in case. SM are not suppossed to be females.
 
 #DREADNOUGHT
-  - type: STR_FALLEN
+  - delete: STR_FALLEN
+
+  - type: STR_DREADNOUGHT
     costSalary: 50000 #maintenance
+    minStats:
+      tu: 90
+      stamina: 90
+      health: 70
+      bravery: 50
+      reactions: 50
+      firing: 90
+      throwing: 70
+      strength: 70
+      melee: 90
+      psiStrength: 0
+      psiSkill: 0
+
+    maxStats:
+      tu: 90
+      stamina: 90
+      health: 70
+      bravery: 70
+      reactions: 70
+      firing: 90
+      throwing: 70
+      strength: 70
+      melee: 90
+      psiStrength: 100
+      psiSkill: 16
+
+    statCaps:
+      tu: 100
+      stamina: 120
+      health: 90
+      bravery: 100
+      reactions: 100
+      firing: 120
+      throwing: 120
+      strength: 100
+      melee: 120
+      psiStrength: 100
+      psiSkill: 100
+
+    trainingStatCaps:
+      tu: 80
+      stamina: 100
+      health: 80
+      firing: 100
+      throwing: 100
+      strength: 100
+      melee: 100
+      psiStrength: 100
+      psiSkill: 100
+    armor: STR_DREADNOUGHT_BASIC_ARMOR
+    allowPiloting: false
+    allowPromotion: false
     rankStrings:
       - STR_DREADNOUGHT_RANK_0
-      - STR_DREADNOUGHT_RANK_1
-      - STR_DREADNOUGHT_RANK_2
-      - STR_DREADNOUGHT_RANK_3
-      - STR_DREADNOUGHT_RANK_4
+    standHeight: 22
+    kneelHeight: 14
     femaleFrequency: 0
+    avatarOffsetX: 68
+    avatarOffsetY: 54
+    soldierNames:
+      - delete
+      - MarineName/
+    deathMale: [41, 42, 43] #Male death sounds for both genders
+    deathFemale: [41, 42, 43] #Just in case. SM are not suppossed to be females.
+
+

@@ -93,7 +93,7 @@ crafts:
     marker: 102
 #GENERAL
     requires:
-      - STR_DROPPODS_TECH
+      - STR_DROPPODS
     costBuy: 600000
     costRent: 300000
     costSell: 300000

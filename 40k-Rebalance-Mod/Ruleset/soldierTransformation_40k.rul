@@ -6,13 +6,13 @@ soldierTransformation:
     requiredItems:
       STR_MK7_ARMOR_SET: 1
     cost: 40000
-    producedSoldierType: STR_SOLDIER
+    producedSoldierType: STR_SPACE_MARINE
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
     keepSoldierArmor: true
     allowedSoldierTypes:
-      - STR_SCOUT_SOLDIER
+      - STR_SCOUT
     requiresBaseFunc: [MED]
     requiredMinStats:
       tu: 70
@@ -29,13 +29,13 @@ soldierTransformation:
     requiredItems:
       STR_ALIEN_HABITAT: 1
     cost: 100000
-    producedSoldierType: STR_VETERAN_SOLDIER
+    producedSoldierType: STR_VETERAN_MARINE
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
     keepSoldierArmor: true
     allowedSoldierTypes:
-      - STR_SOLDIER
+      - STR_SPACE_MARINE
     requiredMinStats:
       tu: 90
       stamina: 90
@@ -45,8 +45,9 @@ soldierTransformation:
       strength: 70
       melee: 90
 
+  - delete: STR_RESURRECT_MARINE
 
-  - name: STR_RESURRECT_MARINE
+  - name: STR_CREATE_DREADNOUGHT
     requires:
       - STR_DREADNOUGHT_TECH
     cost: 850000
@@ -56,13 +57,13 @@ soldierTransformation:
       STR_UFO_POWER_SOURCE: 1
       STR_ALIEN_REPRODUCTION: 1
       STR_ALIEN_HABITAT: 1
-    producedSoldierType: STR_FALLEN
-    producedSoldierArmor: DREAD_ARMOR_UC
+    producedSoldierType: STR_DREADNOUGHT
+    producedSoldierArmor: STR_DREADNOUGHT_BASIC_ARMOR
     allowsDeadSoldiers: true
     allowsLiveSoldiers: false
     needsCorpseRecovered: true
     allowedSoldierTypes:
-      - STR_VETERAN_SOLDIER
+      - STR_VETERAN_MARINE
     requiresBaseFunc: [TEC]
     transferTime: 24
     recoveryTime: 0

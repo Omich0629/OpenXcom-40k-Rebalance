@@ -1,6 +1,6 @@
 armors:
 
-### T1 ###
+### IG T1 ARMORS ###
 
 ## FLAK ARMOR ##
   - delete: STR_GUARD_ARMORSM
@@ -67,7 +67,7 @@ armors:
       F9: ["0", "GUARD_FACE_FEMALE_9", "", "", "FLAK_ARMOR_F"]
 
 
-## MEDIC FLAK ARMOR ##
+## FLAK ARMOR (MEDIC) ##
 
   - delete: STR_GUARD_ARMORS_MEDIC_UC
 
@@ -234,19 +234,20 @@ armors:
        stamina: -10
     drawingRoutine: 0
     damageModifier:
-      - 1.0 #SUPPORT
-      - 1.0 #AP
-      - 1.0 #FLAMES
-      - 1.0 #EXPLOSIVE
-      - 1.0 #LASER
-      - 1.0 #PLASMA
-      - 1.0 #STUN
-      - 1.0 #MELEE
-      - 1.0 #POWER
-      - 0.0 #SMOKE
-      - 1.0 #IMPACT
-      - 1.0 #MELTA
-      - 1.0 #GRAVITON
+      - 1.0 #0 NONE
+      - 1.0 #1 AP
+      - 1.0 #2 FLAMES
+      - 1.0 #3 EXPLOSIVE
+      - 1.0 #4 LASER
+      - 1.0 #5 PLASMA
+      - 1.0 #6 STUN
+      - 1.0 #7 MELEE
+      - 1.0 #8 POWER
+      - 0.0 #9 SMOKE
+      - 1.0 #10 IMPACT
+      - 1.0 #11 MELTA
+      - 1.0 #12 GRAVITON
+      - 1.0 #13 SUPPORT
     units:
       - STR_GUARDSMAN  
     loftempsSet: [ 3 ]
@@ -281,14 +282,14 @@ armors:
       F8: ["0", "GUARD_FACE_FEMALE_8", "", "GUARD_HAIR_FEMALE_8", "CARAPACE_ARMOR_F"]
       F9: ["0", "GUARD_FACE_FEMALE_9", "", "GUARD_HAIR_FEMALE_9", "CARAPACE_ARMOR_F"]
 
-## MEDIC CARAPACE ARMOR ##
+## CARAPACE ARMOR (MEDIC) ##
 
   - delete: STR_MEDIC_CARAPACE_ARMOR
 
   - type: STR_CARAPACE_ARMOR_MEDIC
     visibilityAtDay: 40
     visibilityAtDark: 20
-    spriteSheet: MEDIC_CARAPACE_ARMOR.PCK
+    spriteSheet: CARAPACE_ARMOR_MEDIC.PCK
     customArmorPreviewIndex: 103
     corpseBattle:
       - STR_CARAPACE_ARMOR_MEDIC_CORPSE
@@ -352,6 +353,83 @@ armors:
       F7: ["0", "GUARD_FACE_FEMALE_7", "", "GUARD_HAIR_FEMALE_7", "CARAPACE_MEDIC_F"]
       F8: ["0", "GUARD_FACE_FEMALE_8", "", "GUARD_HAIR_FEMALE_8", "CARAPACE_MEDIC_F"]
       F9: ["0", "GUARD_FACE_FEMALE_9", "", "GUARD_HAIR_FEMALE_9", "CARAPACE_MEDIC_F"]
+
+## CARAPACE ARMOR (SERGEANT) ##
+
+  - type: STR_CARAPACE_ARMOR_SERGEANT
+    visibilityAtDay: 40
+    visibilityAtDark: 20
+    spriteSheet: CARAPACE_ARMOR_SERGEANT.PCK
+    customArmorPreviewIndex: 105
+    corpseBattle:
+      - STR_CARAPACE_ARMOR_SERGEANT_CORPSE
+    storeItem: STR_CARAPACE_ARMOR_SERGEANT
+    frontArmor: 50
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 50
+    stats:
+       tu: -10
+       stamina: -10
+       mana: 100
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0 #SUPPORT
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #EXPLOSIVE
+      - 1.0 #LASER
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #POWER
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+      - 1.0 #GRAVITON
+    units:
+      - STR_GUARDSMAN
+    loftempsSet: [ 3 ]
+    recovery:
+      stun:
+        flatHundred: -0.2 # adds 20 stun damage every turn
+        rank: 10.0 # recover (soldier's rank * 10) stun damage every turn.
+      mana:
+        flatHundred: 0.5
+    builtInWeapons:
+      - STR_NULL_ITEM_BACK_PACK
+    specialWeapon: STR_SERGEANT_BUFF_IG
+
+  - type: STR_CARAPACE_ARMOR_SERGEANT
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96, 144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9 
+
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      4: CARAPACE_SERGEANT
+    layersDefinition:
+      M0: ["0", "GUARD_FACE_MALE_0", "", "GUARD_HAIR_MALE_0", "CARAPACE_SERGEANT_M"]
+      M1: ["0", "GUARD_FACE_MALE_1", "", "GUARD_HAIR_MALE_1", "CARAPACE_SERGEANT_M"]
+      M2: ["0", "GUARD_FACE_MALE_2", "", "GUARD_HAIR_MALE_2", "CARAPACE_SERGEANT_M"]
+      M3: ["0", "GUARD_FACE_MALE_3", "", "GUARD_HAIR_MALE_3", "CARAPACE_SERGEANT_M"]
+      M4: ["0", "GUARD_FACE_MALE_4", "", "", "CARAPACE_SERGEANT_M"]
+      M5: ["0", "GUARD_FACE_MALE_5", "", "GUARD_HAIR_MALE_5", "CARAPACE_SERGEANT_M"]
+      M6: ["0", "GUARD_FACE_MALE_6", "", "", "CARAPACE_SERGEANT_M"]
+      M7: ["0", "GUARD_FACE_MALE_7", "", "GUARD_HAIR_MALE_7", "CARAPACE_SERGEANT_M"]
+      M8: ["0", "GUARD_FACE_MALE_8", "", "GUARD_HAIR_MALE_8", "CARAPACE_SERGEANT_M"]
+      M9: ["0", "GUARD_FACE_MALE_9", "", "", "CARAPACE_SERGEANT_M"]
+      F0: ["0", "GUARD_FACE_FEMALE_0", "", "GUARD_HAIR_FEMALE_0", "CARAPACE_SERGEANT_F"]
+      F1: ["0", "GUARD_FACE_FEMALE_1", "", "GUARD_HAIR_FEMALE_1", "CARAPACE_SERGEANT_F"]
+      F2: ["0", "GUARD_FACE_FEMALE_2", "", "GUARD_HAIR_FEMALE_2", "CARAPACE_SERGEANT_F"]
+      F3: ["0", "GUARD_FACE_FEMALE_3", "", "GUARD_HAIR_FEMALE_3", "CARAPACE_SERGEANT_F"]
+      F4: ["0", "GUARD_FACE_FEMALE_4", "", "GUARD_HAIR_FEMALE_4", "CARAPACE_SERGEANT_F"]
+      F5: ["0", "GUARD_FACE_FEMALE_5", "", "GUARD_HAIR_FEMALE_5", "CARAPACE_SERGEANT_F"]
+      F6: ["0", "GUARD_FACE_FEMALE_6", "", "GUARD_HAIR_FEMALE_6", "CARAPACE_SERGEANT_F"]
+      F7: ["0", "GUARD_FACE_FEMALE_7", "", "GUARD_HAIR_FEMALE_7", "CARAPACE_SERGEANT_F"]
+      F8: ["0", "GUARD_FACE_FEMALE_8", "", "GUARD_HAIR_FEMALE_8", "CARAPACE_SERGEANT_F"]
+      F9: ["0", "GUARD_FACE_FEMALE_9", "", "GUARD_HAIR_FEMALE_9", "CARAPACE_SERGEANT_F"]
 
 ## COMMISSAR GREATCOAT ##
 
@@ -428,19 +506,23 @@ armors:
 
 
 #####################################
-#Sentinel / Lascannon
+
+#Operator uniform
+
+
+
+
+#Sentinel (Lascannon)
   - delete: STR_SENTINEL_ARMOR_UC
 
-  - type: STR_SENTINEL_ARMOR_UC
+  - type: STR_SENTINEL_LASCANNON_ARMOR
+    allowInv: false
     visibilityAtDay: 60
     visibilityAtDark: 60
-    heatVision: 50
-    standHeight: 50
     instantWoundRecovery: true
     spriteSheet: SENTINEL_LASCANNON.PCK
     customArmorPreviewIndex: [160, 161, 162]
     storeItem: STR_SENTINEL_ARMOR
-    corpseGeo:  STR_BIKE_CORPSE
     corpseBattle:
       - 5_SENT1
       - 5_SENT2
@@ -486,15 +568,10 @@ armors:
     drawingRoutine: 5
     builtInWeapons:
       - STR_SLASCAN
-      - INV_NULL_SENTINEL_LH
-      - INV_NULL_SENTINEL_BACK_LASER
-      - INV_NULL_SENTINEL_BELT
-      - INV_NULL_SENTINEL_LL
-      - INV_NULL_2X1_RL
     specialWeapon: AUX_SENTINEL_STOMP
     allowsKneeling: false
 
-  - type: STR_SENTINEL_ARMOR_UC
+  - type: STR_SENTINEL_LASCANNON_ARMOR
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: SENTINEL_LASCANNON
@@ -529,10 +606,9 @@ armors:
 
   - delete: STR_GUARD_ARMORS_SENTINEL_MISSILE_UC
 
-  - type: STR_GUARD_ARMORS_SENTINEL_MISSILE_UC
+  - type: STR_SENTINEL_MISSILE_LAUNCHER_ARMOR
     visibilityAtDay: 60
     visibilityAtDark: 60
-    heatVision: 50
     instantWoundRecovery: true
     spriteSheet: SENTINEL_MISSILE.PCK
     customArmorPreviewIndex: [163, 164, 165]
@@ -595,7 +671,7 @@ armors:
     specialWeapon: AUX_SENTINEL_STOMP
     allowsKneeling: false
 
-  - type: STR_GUARD_ARMORS_SENTINEL_MISSILE_UC
+  - type: STR_SENTINEL_MISSILE_LAUNCHER_ARMOR
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: SENTINEL_MISSILE
@@ -632,7 +708,6 @@ armors:
   - type: STR_GUARD_ARMORS_SENTINEL_HEAVY_FLAMER_UC
     visibilityAtDay: 60
     visibilityAtDark: 60
-    heatVision: 50
     instantWoundRecovery: true
     spriteSheet: SENTINEL_HEAVY_FLAMER.PCK
     customArmorPreviewIndex: [169, 170, 171]
@@ -728,7 +803,6 @@ armors:
   - type: STR_GUARD_ARMORS_SENTINEL_MULTIMELTA_UC
     visibilityAtDay: 60
     visibilityAtDark: 60
-    heatVision: 50
     instantWoundRecovery: true
     spriteSheet: SENTINEL_MULTIMELTA.PCK
     customArmorPreviewIndex: [172, 173, 174]
@@ -844,6 +918,7 @@ armors:
       - 0.0 #SMOKE
       - 0.2 #IMPACT
       - 1.0 #MELTA
+      - 1.0 #GRAVITON
     loftempsSet: [ 3 ]
     builtInWeapons:
       - INV_NULL_3X3
@@ -1206,7 +1281,7 @@ armors:
 #BULLGRYN ARMOR (DEFENSIVE VARIANT)
   - delete: STR_BULLGRYN_SLAB
 
-  - type: STR_BULLGRYN_SLAB
+  - type: STR_BULLGRYN_DEFENSIVE_EQUIPMENT
     visibilityAtDay: 40
     visibilityAtDark: 9
     spriteSheet: BULLGRYN_DEFENSIVE.PCK
@@ -1247,7 +1322,7 @@ armors:
       morale:
         flatOne: 10.0
 
-  - type: STR_BULLGRYN_SLAB
+  - type: STR_BULLGRYN_DEFENSIVE_EQUIPMENT
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       2: BULLGRYN_ARMOR
@@ -1265,7 +1340,7 @@ armors:
 #BULLGRYN ARMOR (OFFENSIVE VARIANT)
 
   - delete: STR_BULLGRYN_BUCKLER
-  - type: STR_BULLGRYN_BUCKLER
+  - type: STR_BULLGRYN_OFFENSIVE_EQUIPMENT
     visibilityAtDay: 40
     visibilityAtDark: 9
     spriteSheet: BULLGRYN_OFFENSIVE.PCK
@@ -1301,12 +1376,12 @@ armors:
       - STR_OGRYN
     loftempsSet: [ 5 ]
     builtInWeapons:
-      - STR_BUCKLER
+      - STR_BRUTE_SHIELD
     recovery:
       morale:
         flatOne: 10.0
 
-  - type: STR_BULLGRYN_BUCKLER
+  - type: STR_BULLGRYN_OFFENSIVE_EQUIPMENT
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       2: BULLGRYN_ARMOR

@@ -42,6 +42,7 @@ research:
     unlocks:
       - STR_SHOTGUN_TECH
       - STR_FLAMER_TECH
+      - STR_HAND_GRENADES_RESEARCH
       - STR_REGIMENTAL_VEHICLES
       - STR_REGIMENTAL_WEAPONS
       - STR_MILITARY_PERSONNEL
@@ -49,7 +50,15 @@ research:
       - STR_COMPONENT_MANUFACTURING
 
     disables:
-      - STR_SPACE_MARINES_OPERATIONS #SM main technology
+      - STR_SPACE_MARINES_OPERATIONS
+
+#Human-Sized Hand Grenades
+  - name: STR_HAND_GRENADES_RESEARCH
+    cost: 0
+    points: 0
+    listOrder: 100
+    dependencies:
+      - STR_GENERALLOCK
 
 
 ### Regimental Vehicles ###
@@ -62,7 +71,7 @@ research:
       - STR_IMPERIAL_GUARD_OPERATIONS
 
 #CHIMERA APC
-  - name: STR_CHIMERA_TECH
+  - name: STR_CHIMERA
     cost: 50
     points: 10
     listOrder: 200
@@ -70,7 +79,7 @@ research:
       - STR_REGIMENTAL_VEHICLES
 
 #SENTINEL/MISSILE LAUNCHER
-  - name: STR_SENTINEL_MISSILE
+  - name: STR_SENTINEL_MISSILE_LAUNCHER_ARMOR
     cost: 50
     points: 10
     listOrder: 200
@@ -78,7 +87,7 @@ research:
       - STR_REGIMENTAL_VEHICLES
 
 #SENTINEL/LASCANNON
-  - name: STR_SENTINEL_LASCANNON
+  - name: STR_SENTINEL_LASCANNON_ARMOR
     cost: 50
     points: 10
     listOrder: 200
@@ -110,6 +119,8 @@ research:
     listOrder: 100
     dependencies:
       - STR_GENERALLOCK
+
+
 
 #Craft Quad-Laser
   - name: STR_CRAFT_QUADLASER

@@ -70,10 +70,10 @@ manufacture:
       STR_ALIEN_ALLOYS: 10
 
 #Sentinel with Lascannon
-  - name: STR_SENTINEL_ARMOR
+  - name: STR_SENTINEL_LASCANNON_ARMOR
     category: STR_PERSONAL_ARMOR  
     requires:
-      - STR_SENTINEL_LASCANNON
+      - STR_SENTINEL_LASCANNON_ARMOR
     space: 12
     time: 600
     cost: 60000
@@ -83,10 +83,10 @@ manufacture:
       STR_ELERIUM_115: 40
 
 #Sentinel with Missile Launcher
-  - name: STR_GUARD_ARMORS_SENTINEL_MISSILE
+  - name: STR_SENTINEL_MISSILE_LAUNCHER_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_SENTINEL_MISSILE
+      - STR_SENTINEL_MISSILE_LAUNCHER_ARMOR
     space: 12
     time: 600
     cost: 70000

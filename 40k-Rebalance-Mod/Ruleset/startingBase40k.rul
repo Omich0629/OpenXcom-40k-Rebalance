@@ -1,7 +1,7 @@
-## Space Marines Starting Base ##
+## SPACE MARINES STARTING BASE ##
 startingBase:
   randomSoldiers:
-    STR_SCOUT_SOLDIER: 12
+    STR_SCOUT: 12
   crafts:
     - type: STR_LANDSPEEDER
       id: 1
@@ -17,9 +17,9 @@ startingBase:
         STR_GRENADE: 12
         STR_KNIF: 12
         STR_KRAK_GRENADE: 12
-        STR_SM_BOLTER: 12
-        STR_RIFLE_CLIP: 24
-        STR_SHOTGUN: 2
+        STR_BOLTER_SM: 12
+        STR_BOLTER_MAGAZINE_EX: 24
+        STR_SHOTGUN_SM: 2
         STR_SHOTGUN_SHELLS: 8
       status: STR_READY
     - type: STR_STORMTALON
@@ -43,12 +43,12 @@ startingBase:
           ammo: 14
       status: STR_READY
   items:
-    STR_ALIEN_HABITAT: 3   # for apot armor
+    STR_ALIEN_HABITAT: 3
     STR_SLOT0_BOLTCANNON: 2
     STR_BOLTCANNON_ROUNDS: 12
-    STR_SM_BOLTPISTOL: 2
-    STR_PISTOL_CLIP: 8
-    STR_SHOTGUN: 2
+    STR_BOLTPISTOL_SM: 2
+    STR_BOLTPISTOL_MAGAZINE_EX: 8
+    STR_SHOTGUN_SM: 2
     STR_SHOTGUN_SHELLS: 8
     STR_SLOT1_HUNTER_LAUNCHER: 1
     STR_HUNTER_MISSILES: 8
@@ -73,14 +73,14 @@ startingBaseSuperhuman:
           ammo: 14
       items:
         STR_AUTOGUN: 3
-        STR_AUTOGUN_CLIP: 9
+        STR_AUTOGUN_MAGAZINE: 9
         STR_ELECTRO_FLARE: 10
-        STR_GRENADE: 10
-        STR_KRAK_GRENADE: 10
+        STR_FRAG_HAND_GRENADE_IG: 10
+        STR_KRAK_HAND_GRENADE_IG: 10
         STR_KNIF: 10
-        STR_LASGUN: 10
-        STR_POWER_PACK: 20
-        STR_SHOTGUN: 2
+        STR_LASGUN_IG: 10
+        STR_LASGUN_POWER_PACK: 20
+        STR_SHOTGUN_IG: 2
         STR_SHOTGUN_SHELLS: 8
       status: STR_READY
     - type: STR_LIGHTNING_INTERCEPTOR
@@ -106,19 +106,17 @@ startingBaseSuperhuman:
   items:
     STR_ALIEN_HABITAT: 3
     STR_AUTOGUN: 1
-    STR_AUTOGUN_CLIP: 9
+    STR_AUTOGUN_MAGAZINE: 9
     STR_SLOT0_BOLTCANNON: 2
     STR_BOLTCANNON_ROUNDS: 12
     STR_KNIF: 2
-    STR_LASPISTOL: 2
-    STR_LASGUN: 3
-    STR_POWER_PACK: 20
-    STR_SHOTGUN: 2
+    STR_LASPISTOL_IG: 2
+    STR_LASGUN_IG: 3
+    STR_LASGUN_POWER_PACK: 20
+    STR_SHOTGUN_IG: 2
     STR_SHOTGUN_SHELLS: 8
     STR_SLOT1_HUNTER_LAUNCHER: 1
     STR_HUNTER_MISSILES: 8
     STR_STUN_ROD: 2
-    STR_STUB_GUN: 2
-    STR_STUB_GUN_AMMO: 8
   scientists: 25
   engineers: 10

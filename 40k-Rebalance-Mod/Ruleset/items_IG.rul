@@ -27,7 +27,7 @@ items:
     fireSound: 4
 #GENERAL
     battleType: 1
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CATEGORY_PISTOL, STR_CATEGORY_STUB, STR_CATEGORY_GUARD]
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
     costBuy: 1500
@@ -74,7 +74,7 @@ items:
     hitAnimation: 26
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_STUB]
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
     costBuy: 200
@@ -91,7 +91,7 @@ items:
     explosionSpeed: 5
     power: 35
     damageAlter:
-      ToArmor: 0.033
+      ToArmorPre: 0.033
 
 ## AUTOGUN ##
   - delete: STR_AUTOGUN
@@ -105,7 +105,7 @@ items:
     fireSound: 4
 #GENERAL
     battleType: 1
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CATEGORY_ASSAULT, STR_CATEGORY_STUB, STR_CATEGORY_GUARD]
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
     costBuy: 3500
@@ -151,7 +151,7 @@ items:
     hitAnimation: 26
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_STUB]
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
     costBuy: 300
@@ -166,7 +166,7 @@ items:
     power: 45
     damageType: 1
     damageAlter:
-      ToArmor: 0.05
+      ToArmorPre: 0.05
 
 ## HEAVY STUBBER ##
   - delete: STR_HEAVY_STUBBER
@@ -180,7 +180,7 @@ items:
     fireSound: 4
 #GENERAL
     battleType: 1
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CATEGORY_HEAVY, STR_CATEGORY_STUB, STR_CATEGORY_GUARD]
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
     costBuy: 9000
@@ -227,7 +227,7 @@ items:
     hitAnimation: 26
 #GENERAL
     battleType: 2
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CATEGORY_AMMO, STR_CATEGORY_STUB]
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
     costBuy: 600
@@ -244,7 +244,7 @@ items:
     damageType: 1
     power: 45
     damageAlter:
-      ToArmor: 0.05
+      ToArmorPre: 0.05
 
 ## SHOTGUN (GUARD)  ##
   - type: STR_SHOTGUN_IG 
@@ -256,7 +256,7 @@ items:
     fireSound: [1000, 1001, 1002]
 #GENERAL
     battleType: 1
-    categories: [STR_CAT_SHOTGUN]
+    categories: [STR_CATEGORY_ASSAULT, STR_CATEGORY_STUB, STR_CATEGORY_GUARD]
     requiresBuy:
       - STR_SHOTGUN_TECH
       - STR_IMPERIAL_GUARD_OPERATIONS
@@ -337,6 +337,141 @@ items:
     flatMelee:
       time: false
 
+## AUTOCANNON (GUARD) ##
+
+
+
+### IG BOLT WEAPONS ###
+
+## BOLTPISTOL (GUARD) ##
+  - type: STR_BOLTPISTOL_IG
+#RESOURCES
+    bigSprite: 310
+    floorSprite: 271
+    handSprite: 656
+    bulletSprite: 6
+    fireSound: [1042, 1043]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    requiresBuy:
+      - STR_BOLTPISTOL_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 7000
+    costSell: 3500
+    size: 0.1
+    weight: 10
+    invWidth: 2
+    invHeight: 2
+    armor: 30
+    attraction: 1
+    twoHanded: false
+    listOrder: 10112
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#SHOOTING
+    bulletSpeed: 30
+    compatibleAmmo:
+      - STR_BOLTPISTOL_MAGAZINE_EX
+      - STR_BOLTPISTOL_MAGAZINE_AP
+      - STR_BOLTPISTOL_MAGAZINE_I
+    dropoff: 5
+
+    accuracyAimed: 80
+    tuAimed: 40
+    aimRange: 11
+
+    accuracySnap: 60
+    tuSnap: 20
+    snapRange: 6
+
+
+
+## HEAVY BOLTER (GUARD) ##
+  - delete: STR_HEAVY_BOLTER_GUARD
+
+  - type: STR_HEAVY_BOLTER_IG
+#RESOURCES
+    bigSprite: 228
+    floorSprite: 223
+    handSprite: 384
+    bulletSprite: 6
+    fireSound: [1042, 1043]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_BOLTER]
+    requiresBuy:
+      - STR_HEAVY_BOLTER_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 13500
+    costSell: 10125
+    size: 0.5
+    weight: 40
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    attraction: 1
+    bulletSpeed: 30
+    twoHanded: true
+    blockBothHands: true
+    listOrder: 12000
+    tags:
+      ITEM_HAS_BIPOD: 1
+#SHOOTING
+    compatibleAmmo:
+      - STR_HEAVY_BOLTER_CASE_EX
+      - STR_HEAVY_BOLTER_CASE_AP
+      - STR_HEAVY_BOLTER_CASE_I
+    dropoff: 5
+
+    kneelBonus: 200
+
+    accuracyAimed: 40
+    tuAimed: 50
+    aimRange: 30
+
+    accuracyAuto: 29
+    tuAuto: 40
+    autoRange: 14
+    autoShots: 3
+
+## BOLTGUN (GUARD) ##
+  - type: STR_BOLTER_IG
+#RESOURCES
+    bigSprite: 308
+    floorSprite: 269
+    handSprite: 640
+    bulletSprite: 6
+    fireSound: [1042, 1043]
+#GENERAL
+    battleType: 1
+    categories: [STR_CAT_BOLTER]
+    requiresBuy:
+      - STR_BOLTER_TECH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 10000
+    costSell: 5000
+    size: 0.3
+    weight: 15
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 1
+    bulletSpeed: 30
+    listOrder: 10304
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+#SHOOTING
+    compatibleAmmo:
+      - STR_BOLTER_MAGAZINE_EX
+      - STR_BOLTER_MAGAZINE_AP
+      - STR_BOLTER_MAGAZINE_I
+    dropoff: 5
+    accuracySnap: 80
+    tuSnap: 20
+    snapRange: 14
+    twoHanded: true
+    oneHandedPenalty: 50
 
 
 ### IG FLAMER WEAPONS ###
@@ -378,7 +513,43 @@ items:
 
 ## HEAVY FLAMER (GUARD) ##
 
+## SENTINEL HEAVY FLAMER ##
+  - delete: STR_SENTINEL_HEAVY_FLAMER
 
+  - type: STR_SENTINEL_HEAVY_FLAMER
+#RESOURCES
+    bigSprite: 318
+    bulletSprite: 5
+    fireSound: 706
+#GENERAL
+    battleType: 1
+    weight: 0
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+#SHOOTING
+    clipSize: -1
+    power: 50
+    damageType: 2
+    damageAlter:
+      RandomType: 2 #TFTD [50% - 150%]
+      ToHealth: 1.0
+      ToMorale: 0.5
+    blastRadius: 2
+    explosionSpeed: 2
+    bulletSpeed: 50
+    tuSnap: 0
+    accuracyAuto: 150
+    tuAuto: 40
+    accuracyAimed: 150
+    tuAimed: 25
+    confAimed:
+      name: STR_CUSTOM_SNAPSHOT
+    dropoff: 5
+    maxRange: 10
+    autoShots: 3
+    arcingShot: false
 
 
 ### IG LASER WEAPONS ###
@@ -578,10 +749,25 @@ items:
       ToArmor: 0.0
       ToStun: 0.0
 
+## SENTINEL LASCANNON ##
+  - type: STR_SLASCAN
+#SHOOTING
+    accuracySnap: 60
+    accuracyAimed: 94
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.4
+    power: 120
+    damageAlter:
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToHealth: 1.0
+      ToArmor: 0.0
+      ToStun: 0.0
 
 ### HOTSHOT LASER WEAPONS ###
 
-## SMALL HOTSHOT CLIP ##
+## HOTSHOT POWER PACK ##
   - type: STR_LASGUN_CLIP_HOTSHOT
 #RESOURCES
     bigSprite: 312
@@ -604,7 +790,7 @@ items:
       ToStun: 0.0
 
 
-## LARGE HOTSHOT CLIP ##
+## HEAVY HOTSHOT POWER PACK ##
   - type: STR_LASGUN_BACKPACK_HOTSHOT
 #RESOURCES
     bigSprite: 313
@@ -636,7 +822,7 @@ items:
     vaporColor: 2
     vaporDensity: 5
 
-## HOTSHOT LASPISTOL ##
+## HELLPISTOL ##
   - type: STR_HOTSHOT_LASPISTOL
     categories: [STR_CAT_LASGUN]
 #RESOURCES
@@ -702,7 +888,7 @@ items:
     tuSnap: 35
     snapRange: 20
 
-## HOTSHOT LASGUN ##
+## HELLGUN ##
   - delete: STR_HELLGUN
 
   - type: STR_HELLGUN
@@ -974,12 +1160,220 @@ items:
     tuAimed: 75
     aimRange: 40
 
+## GRENADIER GAUNTLET ##
+  - type: STR_GRENADIER_GAUNTLET
+#RESOURCES
+    bigSprite: 324
+    floorSprite: 282
+    handSprite: 752
+    bulletSprite: 0
+    fireSound: 4
+    meleeHitSound: [1006, 1007, 1008, 1009, 1010]
+#GENERAL
+    battleType: 1
+    size: 0.3
+    weight: 20
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 0
+    listOrder: 11060
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+    defaultInventorySlot: STR_RIGHT_HAND
+#SHOOTING
+    arcingShot: true
+    dropoff: 5
+
+    tuSnap: 45
+    accuracySnap: 60
+    snapRange: 16
+
+    compatibleAmmo:
+      - STR_FRAG_CARTRIDGE
+      - STR_KRAK_CARTRIDGE
+      - STR_INCENDIARY_CARTRIDGE
+#MELEE
+    meleeType: 7
+    meleePower: 30
+    meleeBonus:
+      strength: 0.6
+    accuracyMelee: 100
+    meleeMultiplier:
+      strength: 1.0
+    tuMelee: 20
+    flatMelee:
+      time: false
 
 
+## GRENADIER GAUNTLET FRAG CARTRIDGE ##
+  - type: STR_FRAG_CARTRIDGE
+    categories: [STR_CAT_ROCKETL]
+#RESOURCES
+    bigSprite: 325
+    floorSprite: 283
+    handSprite: 760
+#GENERAL
+    battleType: 2
+    costBuy: 400
+    costSell: 200
+    size: 0.1
+    weight: 3
+    invWidth: 1
+    invHeight: 1
+    armor: 30
+    requiresBuy:
+      - STR_BULLGRYN_EQUIPMENT
+    listOrder: 11860
+#POWER
+    clipSize: 1
+    damageType: 3
+    power: 80
+    blastRadius: 2
 
-## BULLGRYN GRENADIER GAUNTLET ##
 
+## GRENADIER GAUNTLET KRAK CARTRIDGE ##
+  - type: STR_KRAK_CARTRIDGE
+    categories: [STR_CAT_ROCKETL]
+#RESOURCES
+    bigSprite: 326
+    floorSprite: 284
+    handSprite: 768
+#GENERAL
+    battleType: 2
+    costBuy: 400
+    costSell: 200
+    size: 0.1
+    weight: 3
+    invWidth: 1
+    invHeight: 1
+    armor: 30
+    requiresBuy:
+      - STR_BULLGRYN_EQUIPMENT
+    listOrder: 11870
+#POWER
+    clipSize: 1
+    damageType: 3
+    power: 80
+    blastRadius: 1
+    damageAlter:
+      ToArmorPre: 0.2
+      ArmorEffectiveness: 0.7
+      ToArmor: 0.2
 
+## GRENADIER GAUNTLET INCENDIARY CARTRIDGE ##
+  - type: STR_INCENDIARY_CARTRIDGE
+    categories: [STR_CAT_ROCKETL]
+#RESOURCES
+    bigSprite: 327
+    floorSprite: 285
+    handSprite: 776
+#GENERAL
+    battleType: 2
+    costBuy: 400
+    costSell: 200
+    size: 0.1
+    weight: 3
+    invWidth: 1
+    invHeight: 1
+    armor: 30
+    requiresBuy:
+      - STR_BULLGRYN_EQUIPMENT
+    listOrder: 11870
+#POWER
+    clipSize: 1
+    power: 80
+    damageType: 2
+    blastRadius: 2
+    damageAlter:
+      RandomType: 2 #TFTD [50% - 150%]
+      ToHealth: 1.0
+      ToMorale: 0.5
+    damageType: 3
+
+## SENTINEL MISSILE LAUNCHER (LEFT) ##
+  - delete: STR_SENTINEL_MISSILE_LAUNCHER
+
+  - type: STR_SENTINEL_MISSILE_LAUNCHER_LEFT
+#RESOURCES
+    bigSprite: 297
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 52
+#GENERAL
+    battleType: 1
+    weight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_HAND
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    listOrder: 2820
+#SHOOTING
+    compatibleAmmo:
+      - STR_SENTINEL_KRAK_MISSILES
+    flatRate: false
+    accuracyAimed: 115
+    accuracySnap: 55
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.4
+    tuAimed: 75
+    tuSnap: 55
+
+## SENTINEL MISSILE LAUNCHER (RIGHT) ##
+  - type: STR_SENTINEL_MISSILE_LAUNCHER_RIGHT
+#RESOURCES
+    bigSprite: 298
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 52
+#GENERAL
+    battleType: 1
+    weight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_HAND
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    listOrder: 2820
+#SHOOTING
+    compatibleAmmo:
+      - STR_SENTINEL_KRAK_MISSILES
+    flatRate: false
+    accuracyAimed: 115
+    accuracySnap: 55
+    accuracyMultiplier:
+      firing: 1.0
+      flatHundred: 0.4
+    tuAimed: 75
+    tuSnap: 55
+
+## SENTINEL MISSILES ##
+  - delete: STR_SENTINEL_FRAG_MISSILES
+  - delete: STR_SENTINEL_KRAKK_MISSILES
+
+  - type: STR_SENTINEL_KRAK_MISSILES
+#RESOURCES
+    bigSprite: 299
+    hitAnimation: 184
+#GENERAL
+    battleType: 2
+    weight: 1
+    invWidth: 2
+    invHeight: 2
+#SHOOTING
+    clipSize: 4
+    power: 100
+    damageType: 3
+    damageAlter:
+      ToArmorPre: 0.2
+      ArmorEffectiveness: 0.7
+      ToArmor: 0.2
+    blastRadius: 1
 
 
 ### IG MELEE WEAPONS ###
@@ -1118,6 +1512,69 @@ items:
       flatHundred: 0.4
     tuMelee: 25
 
+## BRUTE SHIELD (BUCKLER) ##
+  - delete: STR_BUCKLER
+
+  - type: STR_BRUTE_SHIELD
+#RESOURCES
+    bigSprite: 328
+    handSprite: 784
+    meleeHitSound: [1006, 1007, 1008, 1009, 1010]
+    meleeAnimation: 0
+#GENERAL
+    battleType: 3
+    weight: 15
+    invWidth: 2
+    invHeight: 3
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+    defaultInventorySlot: STR_LEFT_HAND
+#MELEE
+    clipSize: -1
+    power: 40
+    damageType: 6
+    damageBonus:
+      strength: 0.3
+      melee: 0.3
+    accuracyMelee: 100
+    meleeMultiplier:
+      strength: 0.5
+      melee: 0.5
+    tuMelee: 20
+    flatMelee:
+      time: false
+
+## SLABSHIELD ##
+  - delete: STR_SLAB_SHIELD
+
+  - type: STR_SLAB_SHIELD
+#RESOURCES
+    bigSprite: 323
+    handSprite: 744
+    meleeHitSound: [1006, 1007, 1008, 1009, 1010]
+    meleeAnimation: 0
+#GENERAL
+    battleType: 3
+    weight: 30
+    invWidth: 2
+    invHeight: 3
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+    defaultInventorySlot: STR_LEFT_HAND
+#MELEE
+    clipSize: -1
+    power: 40
+    damageType: 6
+    damageBonus:
+      strength: 0.6
+    accuracyMelee: 100
+    meleeMultiplier:
+      strength: 1.0
+    tuMelee: 25
+    flatMelee:
+      time: false
 
 
 ## Officers Power Sword
@@ -1129,154 +1586,137 @@ items:
     costBuy: 20000
     costSell: 10000
 
-
-### SENTINEL WEAPONS ###
-
-## SENTINEL MELEE SKILL ##
+## SENTINEL MELEE ATTACK ##
   - type: AUX_SENTINEL_STOMP
 #GENERAL
     specialIconSprite: 206
 
-## SENTINEL LASCANNON ##
-  - type: STR_SLASCAN
-#SHOOTING
-    accuracySnap: 60
-    accuracyAimed: 94
-    accuracyMultiplier:
-      firing: 1.0
-      flatHundred: 0.4
-    power: 120
+#######################
+
+### IG HAND GRENADES ###
+
+## Frag Hand Grenade (Human-Sized) ##
+  - type: STR_FRAG_HAND_GRENADE_IG
+#RESOURCES
+    bigSprite: 239
+    handSprite: 328
+    floorSprite: 236
+    hitAnimation: 184 #AOE Explosion
+    explosionHitSound: [1045, 1046, 1047, 1048, 1049] #Grenade explosion
+#GENERAL
+    battleType: 4
+    requiresBuy:
+      - STR_HAND_GRENADES_RESEARCH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 500
+    costSell: 250
+    size: 0.1
+    weight: 4
+    invWidth: 1
+    invHeight: 1
+    listOrder: 13600
+#THROWING
+    power: 70
+    damageType: 3
     damageAlter:
-      ToArmorPre: 0.3
-      ArmorEffectiveness: 0.75
-      ToHealth: 1.0
-      ToArmor: 0.0
-      ToStun: 0.0
-
-
-## SENTINEL MISSILE LAUNCHER (LEFT) ##
-  - delete: STR_SENTINEL_MISSILE_LAUNCHER
-
-  - type: STR_SENTINEL_MISSILE_LAUNCHER_LEFT
-#RESOURCES
-    bigSprite: 297
-    floorSprite: 0
-    handSprite: 0
-    bulletSprite: 0
-    fireSound: 52
-#GENERAL
-    battleType: 1
-    weight: 1
-    fixedWeapon: true
-    defaultInventorySlot: STR_LEFT_HAND
-    invWidth: 2
-    invHeight: 3
-    recover: false
-    listOrder: 2820
-#SHOOTING
-    compatibleAmmo:
-      - STR_SENTINEL_KRAKK_MISSILES
-
+      FixRadius: 5
+    tuThrow: 30
+    tuPrime: 30
     flatRate: false
-    accuracyAimed: 115
-    accuracySnap: 55
-    accuracyMultiplier:
-      firing: 1.0
-      flatHundred: 0.4
-    tuAimed: 75
-    tuSnap: 55
 
-## SENTINEL MISSILE LAUNCHER (RIGHT) ##
-  - type: STR_SENTINEL_MISSILE_LAUNCHER_RIGHT
+## Krak Hand Grenade (Human-Sized) ##
+  - type: STR_KRAK_HAND_GRENADE_IG
 #RESOURCES
-    bigSprite: 298
-    floorSprite: 0
-    handSprite: 0
-    bulletSprite: 0
-    fireSound: 52
+    bigSprite: 241
+    floorSprite: 238
+    handSprite: 344
+    hitAnimation: 184 #AOE Explosion
+    explosionHitSound: [1045, 1046, 1047, 1048, 1049] #Grenade explosion
 #GENERAL
-    battleType: 1
-    weight: 1
-    fixedWeapon: true
-    defaultInventorySlot: STR_RIGHT_HAND
-    invWidth: 2
-    invHeight: 3
-    recover: false
-    listOrder: 2820
-#SHOOTING
-    compatibleAmmo:
-      - STR_SENTINEL_KRAKK_MISSILES
-
-    flatRate: false
-    accuracyAimed: 115
-    accuracySnap: 55
-    accuracyMultiplier:
-      firing: 1.0
-      flatHundred: 0.4
-    tuAimed: 75
-    tuSnap: 55
-
-## SENTINEL MISSILES ##
-  - delete: STR_SENTINEL_FRAG_MISSILES
-  - delete: STR_SENTINEL_KRAKK_MISSILES
-
-  - type: STR_SENTINEL_KRAKK_MISSILES
-#RESOURCES
-    bigSprite: 299
-    hitAnimation: 184
-#GENERAL
-    battleType: 2
-    weight: 1
-    invWidth: 2
-    invHeight: 2
-#SHOOTING
-    clipSize: 4
+    battleType: 4
+    requiresBuy:
+      - STR_HAND_GRENADES_RESEARCH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 1000
+    costSell: 500
+    size: 0.1
+    weight: 4
+    invWidth: 1
+    invHeight: 1
+    listOrder: 13650
+#THROWING
     power: 100
     damageType: 3
     damageAlter:
-      ToArmorPre: 0.2
-      ArmorEffectiveness: 0.7
-      ToArmor: 0.2
-    blastRadius: 1
+      ToArmorPre: 0.2 #20% damage to target's armor
+      ArmorEffectiveness: 0.7 #Ignores 30% of target's armor
+      FixRadius: 1
+      RadiusReduction: 50 #Less effective outside of epicenter
+    tuThrow: 30
+    tuPrime: 30
+    flatRate: false
 
-
-## SENTINEL HEAVY FLAMER ##
-  - delete: STR_SENTINEL_HEAVY_FLAMER
-
-  - type: STR_SENTINEL_HEAVY_FLAMER
+## Smoke Hand Grenade (Human-Sized) ##
+  - type: STR_SMOKE_HAND_GRENADE_IG 
 #RESOURCES
-    bigSprite: 318
-    bulletSprite: 5
-    fireSound: 706
+    bigSprite: 281
+    floorSprite: 342
+    handSprite: 576
+    explosionHitSound: 792 #792 Smoke
+    hitAnimation: 104 #XSmoke
 #GENERAL
-    battleType: 1
-    weight: 0
-    fixedWeapon: true
-    invWidth: 2
-    invHeight: 3
-    recover: false
-#SHOOTING
-    clipSize: -1
-    power: 50
-    damageType: 2
+    battleType: 4
+    requiresBuy:
+      - STR_HAND_GRENADES_RESEARCH
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costBuy: 400
+    costSell: 200
+    weight: 4
+    invWidth: 1
+    invHeight: 1
+    listOrder: 13700
+#THROWING
+    power: 60
+    damageType: 9 #smoke
     damageAlter:
-      RandomType: 2 #TFTD [50% - 150%]
-      ToHealth: 1.0
-      ToMorale: 0.5
-    blastRadius: 2
-    explosionSpeed: 2
-    bulletSpeed: 50
-    tuSnap: 0
-    accuracyAuto: 150
-    tuAuto: 40
-    accuracyAimed: 150
-    tuAimed: 25
-    confAimed:
-      name: STR_CUSTOM_SNAPSHOT
-    dropoff: 5
-    maxRange: 10
-    autoShots: 3
-    arcingShot: false
+      FixRadius: 5
+    tuThrow: 30
+    tuPrime: 30
+    flatRate: false
+
+## Photon Flash Grenade (Human-Sized) ##
+  - delete: STR_PHOTON_GRENADE
+
+  - type: STR_PHOTON_HAND_GRENADE_IG
+#RESOURCES
+    bigSprite: 321
+    floorSprite: 280
+    handSprite: 728
+    hitAnimation: 104
+#GENERAL
+    battleType: 4
+    costBuy: 600
+    costSell: 300
+    size: 0.1
+    weight: 4
+    invWidth: 1
+    invHeight: 1
+#THROWING
+    power: 50
+    damageType: 6 #STUN
+    damageAlter:
+      FixRadius: 2
+    tuThrow: 30
+    tuPrime: 30
+    flatRate: false
+
+#######################
+
+### IG MELTA WEAPONS  ###
+
+## MELTAGUN (GUARD) ##
+
+
 
 ## SENTINEL MULTIMELTA ##
   - delete: STR_SENTINEL_MULTIMELTA
@@ -1324,340 +1764,25 @@ items:
 
 #######################
 
-### IG BOLT WEAPONS ###
 
-## BOLTPISTOL (GUARD) ##
-  - type: STR_BOLTPISTOL_IG
-#RESOURCES
-    bigSprite: 310
-    floorSprite: 271
-    handSprite: 656
-    bulletSprite: 6
-    fireSound: [1042, 1043]
-#GENERAL
-    battleType: 1
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
-    requiresBuy:
-      - STR_BOLTPISTOL_TECH
-      - STR_IMPERIAL_GUARD_OPERATIONS
-    costBuy: 7000
-    costSell: 3500
-    size: 0.1
-    weight: 10
-    invWidth: 2
-    invHeight: 2
-    armor: 30
-    attraction: 1
-    twoHanded: false
-    listOrder: 10112
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#SHOOTING
-    bulletSpeed: 30
-    compatibleAmmo:
-      - STR_BOLTPISTOL_MAGAZINE_EX
-      - STR_BOLTPISTOL_MAGAZINE_AP
-      - STR_BOLTPISTOL_MAGAZINE_I
-    dropoff: 5
+### IG PLASMA WEAPONS ##
 
-    accuracyAimed: 80
-    tuAimed: 40
-    aimRange: 11
+## PLASMA PISTOL (GUARD) ##
 
-    accuracySnap: 60
-    tuSnap: 20
-    snapRange: 6
+## PLASMAGUN (GUARD) ##
+
+## PLASMA CANNON (SENTINEL)
+
+
+#######################
 
 
 
-## HEAVY BOLTER (GUARD) ##
-  - delete: STR_HEAVY_BOLTER_GUARD
-
-  - type: STR_HEAVY_BOLTER_IG
-#RESOURCES
-    bigSprite: 228
-    floorSprite: 223
-    handSprite: 384
-    bulletSprite: 6
-    fireSound: [1042, 1043]
-#GENERAL
-    battleType: 1
-    categories: [STR_CAT_BOLTER]
-    requiresBuy:
-      - STR_HEAVY_BOLTER_TECH
-      - STR_IMPERIAL_GUARD_OPERATIONS
-    costBuy: 13500
-    costSell: 10125
-    size: 0.5
-    weight: 40
-    invWidth: 2
-    invHeight: 3
-    armor: 80
-    attraction: 1
-    bulletSpeed: 30
-    twoHanded: true
-    blockBothHands: true
-    listOrder: 12000
-    tags:
-      ITEM_HAS_BIPOD: 1
-#SHOOTING
-    compatibleAmmo:
-      - STR_HEAVY_BOLTER_CASE_EX
-      - STR_HEAVY_BOLTER_CASE_AP
-      - STR_HEAVY_BOLTER_CASE_I
-    dropoff: 5
-
-    kneelBonus: 200
-
-    accuracyAimed: 40
-    tuAimed: 50
-    aimRange: 30
-
-    accuracyAuto: 29
-    tuAuto: 40
-    autoRange: 14
-    autoShots: 3
-
-## BOLTGUN (GUARD) ##
-  - type: STR_BOLTER_IG
-#RESOURCES
-    bigSprite: 308
-    floorSprite: 269
-    handSprite: 640
-    bulletSprite: 6
-    fireSound: [1042, 1043]
-#GENERAL
-    battleType: 1
-    categories: [STR_CAT_BOLTER]
-    requiresBuy:
-      - STR_BOLTER_TECH
-      - STR_IMPERIAL_GUARD_OPERATIONS
-    costBuy: 10000
-    costSell: 5000
-    size: 0.3
-    weight: 15
-    invWidth: 2
-    invHeight: 3
-    armor: 30
-    attraction: 1
-    bulletSpeed: 30
-    listOrder: 10304
-    tags:
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
-#SHOOTING
-    compatibleAmmo:
-      - STR_BOLTER_MAGAZINE_EX
-      - STR_BOLTER_MAGAZINE_AP
-      - STR_BOLTER_MAGAZINE_I
-    dropoff: 5
-    accuracySnap: 80
-    tuSnap: 20
-    snapRange: 14
-    twoHanded: true
-    oneHandedPenalty: 50
 
 #######################
 
 
 
-## SLABSHIELD ##
-  - delete: STR_SLAB_SHIELD
-
-  - type: STR_SLAB_SHIELD
-#RESOURCES
-    bigSprite: 323
-    handSprite: 744
-    meleeHitSound: [1006, 1007, 1008, 1009, 1010]
-    meleeAnimation: 0
-#GENERAL
-    battleType: 3
-    weight: 30
-    invWidth: 2
-    invHeight: 3
-    fixedWeapon: true
-    fixedWeaponShow: true
-    recover: false
-    defaultInventorySlot: STR_LEFT_HAND
-#MELEE
-    clipSize: -1
-    power: 40
-    damageType: 6
-    damageBonus:
-      strength: 0.6
-    accuracyMelee: 100
-    meleeMultiplier:
-      strength: 1.0
-    tuMelee: 25
-    flatMelee:
-      time: false
-
-## GRENADIER GAUNTLET ##
-
-  - type: STR_GRENADIER_GAUNTLET
-#RESOURCES
-    bigSprite: 324
-    floorSprite: 282
-    handSprite: 752
-    bulletSprite: 0
-    fireSound: 4
-    meleeHitSound: [1006, 1007, 1008, 1009, 1010]
-#GENERAL
-    battleType: 1
-    size: 0.3
-    weight: 20
-    invWidth: 2
-    invHeight: 3
-    armor: 30
-    attraction: 0
-    listOrder: 11060
-    fixedWeapon: true
-    fixedWeaponShow: true
-    recover: false
-    defaultInventorySlot: STR_RIGHT_HAND
-#SHOOTING
-    arcingShot: true
-    dropoff: 5
-    accuracySnap: 65
-    tuSnap: 40
-    snapRange: 18
-    compatibleAmmo:
-      - STR_FRAG_CARTRIDGE
-      - STR_KRAK_CARTRIDGE
-      - STR_INCENDIARY_CARTRIDGE
-#MELEE
-    meleeType: 7
-    meleePower: 30
-    meleeBonus:
-      strength: 0.6
-    accuracyMelee: 100
-    meleeMultiplier:
-      strength: 1.0
-    tuMelee: 20
-    flatMelee:
-      time: false
-
-
-## GRENADIER GAUNTLET FRAG CARTRIDGE ##
-  - type: STR_FRAG_CARTRIDGE
-    categories: [STR_CAT_ROCKETL]
-#RESOURCES
-    bigSprite: 325
-    floorSprite: 283
-    handSprite: 760
-#GENERAL
-    battleType: 2
-    costBuy: 400
-    costSell: 200
-    size: 0.1
-    weight: 3
-    invWidth: 1
-    invHeight: 1
-    armor: 30
-    requiresBuy:
-      - STR_BULLGRYN_EQUIPMENT
-    listOrder: 11860
-#POWER
-    clipSize: 1
-    damageType: 3
-    power: 80
-    blastRadius: 2
-
-
-## GRENADIER GAUNTLET KRAK CARTRIDGE ##
-  - type: STR_KRAK_CARTRIDGE
-    categories: [STR_CAT_ROCKETL]
-#RESOURCES
-    bigSprite: 326
-    floorSprite: 284
-    handSprite: 768
-#GENERAL
-    battleType: 2
-    costBuy: 400
-    costSell: 200
-    size: 0.1
-    weight: 3
-    invWidth: 1
-    invHeight: 1
-    armor: 30
-    requiresBuy:
-      - STR_BULLGRYN_EQUIPMENT
-    listOrder: 11870
-#POWER
-    clipSize: 1
-    damageType: 3
-    power: 80
-    blastRadius: 1
-    damageAlter:
-      ToArmorPre: 0.2
-      ArmorEffectiveness: 0.7
-      ToArmor: 0.2
-
-## GRENADIER GAUNTLET INCENDIARY CARTRIDGE ##
-  - type: STR_INCENDIARY_CARTRIDGE
-    categories: [STR_CAT_ROCKETL]
-#RESOURCES
-    bigSprite: 327
-    floorSprite: 285
-    handSprite: 776
-#GENERAL
-    battleType: 2
-    costBuy: 400
-    costSell: 200
-    size: 0.1
-    weight: 3
-    invWidth: 1
-    invHeight: 1
-    armor: 30
-    requiresBuy:
-      - STR_BULLGRYN_EQUIPMENT
-    listOrder: 11870
-#POWER
-    clipSize: 1
-    power: 80
-    damageType: 2
-    blastRadius: 2
-    damageAlter:
-      RandomType: 2 #TFTD [50% - 150%]
-      ToHealth: 1.0
-      ToMorale: 0.5
-    damageType: 3
-
-## BRUTE SHIELD (BUCKLER) ##
-
-  - delete: STR_BUCKLER
-
-  - type: STR_BUCKLER
-#RESOURCES
-    bigSprite: 328
-    handSprite: 784
-    meleeHitSound: [1006, 1007, 1008, 1009, 1010]
-    meleeAnimation: 0
-#GENERAL
-    battleType: 3
-    weight: 15
-    invWidth: 2
-    invHeight: 3
-    fixedWeapon: true
-    fixedWeaponShow: true
-    recover: false
-    defaultInventorySlot: STR_LEFT_HAND
-#MELEE
-    clipSize: -1
-    power: 40
-    damageType: 6
-    damageBonus:
-      strength: 0.3
-      melee: 0.3
-    accuracyMelee: 100
-    meleeMultiplier:
-      strength: 0.5
-      melee: 0.5
-    tuMelee: 20
-    flatMelee:
-      time: false
-
-
-#######################
 
 ### IG BUFF ITEMS ###
 
@@ -1717,9 +1842,9 @@ items:
     bigSprite: 223
     floorSprite: 109
     handSprite: 240
-    fireSound: [758, 759, 760, 761, 762, 763]
-    hitAnimation: 121 #Morale
-    specialIconSprite: 207
+    fireSound: 758
+    hitAnimation: 191 #IG SERGEANT MORALE BUFF
+    specialIconSprite: 209
 #GENERAL
     battleType: 1
     categories: [ STR_CAT_EQUIPMENT]
@@ -1732,10 +1857,8 @@ items:
     experienceTrainingMode: 19
 #SHOOTING
     clipSize: -1
-    power: 10
+    power: 5
     damageType: 13 #SUPPORT
-#    damageBonus:
-#      bravery: 0.0
     damageAlter:
       RandomType: 3
       ArmorEffectiveness: 0.0
@@ -1754,12 +1877,15 @@ items:
       time: 35
       energy: 30
       mana: 50
-    confAimed:
-      shots: 1              
-      name: STR_RIGHTEOUS_FURY
-    flatRate: false
+    flatAimed:
+      time: false
+      energy: false
+      mana: false
+    confAimed:             
+      name: STR_MORALE_BOOST
     arcingShot: false
     maxRange: 16
+
 
 
 ## MINISTORUM PRIEST MORALE BUFF ##
@@ -1768,7 +1894,7 @@ items:
     bigSprite: 223
     floorSprite: 109
     handSprite: 240
-    fireSound: [758, 759, 760, 761, 762, 763]
+    fireSound: 758
     hitAnimation: 121 #Morale & Energy buff
     specialIconSprite: 207
 #GENERAL
@@ -1821,7 +1947,7 @@ items:
   - type: STR_NULL_ITEM_MEDKIT
     weight: 5
     invWidth: 3
-    invHeight: 3
+    invHeight: 2
     bigSprite: 231
     defaultInventorySlot: STR_BACK_PACK
     fixedWeapon: true
@@ -1866,12 +1992,24 @@ items:
     armor: 35
     recover: false
 
-## GUARD CORPSE (CARAPACE ARMOR) ##
+## GUARD CORPSE (CARAPACE ARMOR MEDIC) ##
 
   - type: STR_CARAPACE_ARMOR_MEDIC_CORPSE
     name: STR_GUARD_CORPSE
     weight: 25
     bigSprite: 157
+    floorSprite: 155
+    invWidth: 2
+    invHeight: 3
+    armor: 35
+    recover: false
+
+## GUARD CORPSE (CARAPACE ARMOR MEDIC) ##
+
+  - type: STR_CARAPACE_ARMOR_SERGEANT_CORPSE
+    name: STR_GUARD_CORPSE
+    weight: 25
+    bigSprite: 158
     floorSprite: 155
     invWidth: 2
     invHeight: 3
@@ -1987,18 +2125,33 @@ items:
     requiresBuy: []
     size: 0.2
     transferTime: 10
-    listOrder: 6661
+    listOrder: 6701
+
+## CARAPACE ARMOR (SERGEANT) ##
+  - type: STR_CARAPACE_ARMOR_SERGEANT
+#GENERAL
+    costBuy: 0
+    costSell: 12500
+    requiresBuy: []
+    size: 0.2
+    transferTime: 10
+    listOrder: 6702
+
 
 ## SENTINEL/LASCANNON ##
-  - type: STR_SENTINEL_ARMOR
+  - delete: STR_SENTINEL_ARMOR
+
+  - type: STR_SENTINEL_LASCANNON_ARMOR
 #GENERAL
-    requiresBuy: []
     size: 2
     costBuy: 0
     costSell: 140000
+    transferTime: 50
 
 ## SENTINEL/MISSLE LAUNCHER ##
-  - type: STR_GUARD_ARMORS_SENTINEL_MISSILE
+  - delete: STR_GUARD_ARMORS_SENTINEL_MISSILE
+
+  - type: STR_SENTINEL_MISSILE_LAUNCHER_ARMOR
 #GENERAL
     requiresBuy: []
     size: 2

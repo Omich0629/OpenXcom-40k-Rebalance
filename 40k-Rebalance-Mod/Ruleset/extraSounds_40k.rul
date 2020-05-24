@@ -26,17 +26,6 @@ extraSounds:
       708: Resources/Sound/BoltHit.wav
       710: Resources/Sound/PowerFist_Miss.wav
 
-#Marine death
-      713: Resources/Sound/DEATH_MARINE1.wav 
-      714: Resources/Sound/DEATH_MARINE2.wav
-      715: Resources/Sound/DEATH_MARINE3.wav
-      716: Resources/Sound/DEATH_MARINE4.wav
-      717: Resources/Sound/DEATH_MARINE5.wav
-      718: Resources/Sound/DEATH_MARINE6.wav
-      719: Resources/Sound/DEATH_MARINE7.wav
-      720: Resources/Sound/DEATH_MARINE8.wav
-      721: Resources/Sound/DEATH_MARINE9.wav
-      722: Resources/Sound/DEATH_MARINE10.wav
 #Chaos Marine death
       723: Resources/Sound/DEATH_CHAOS_MARINE1.wav
       724: Resources/Sound/DEATH_CHAOS_MARINE2.wav
@@ -51,23 +40,9 @@ extraSounds:
       739: Resources/Sound/Meltagun_fire.wav
       741: Resources/Sound/Lasgun_Fire.wav
 
-#Sororitas death
-      744: Resources/Sound/DEATH_SORORITAS1.wav 
-      745: Resources/Sound/DEATH_SORORITAS2.wav
-      746: Resources/Sound/DEATH_SORORITAS3.wav
-      747: Resources/Sound/DEATH_SORORITAS4.wav
-      748: Resources/Sound/DEATH_SORORITAS5.wav
-      749: Resources/Sound/DEATH_SORORITAS6.wav
-      750: Resources/Sound/DEATH_SORORITAS7.wav
-      751: Resources/Sound/DEATH_SORORITAS8.wav
-      752: Resources/Sound/DEATH_SORORITAS9.wav
 
-      758: Resources/Sound/chaplain_fire1.wav #chap fire
-      759: Resources/Sound/chaplain_fire2.wav
-      760: Resources/Sound/chaplain_fire3.wav
-      761: Resources/Sound/chaplain_fire4.wav
-      762: Resources/Sound/chaplain_fire5.wav
-      763: Resources/Sound/chaplain_fire6.wav
+      758: Resources/Sound/Abilities/Buff1_Hit.wav
+
       771: Resources/Sound/Flame_Hit.wav
       772: Resources/Sound/PowerFist_Hit.wav
       778: Resources/Sound/Mind.wav
@@ -134,3 +109,8 @@ extraSounds:
       1043: Resources/Sound/Bolt_Weapon/Bolt_Weapon_Fire2.wav
       1044: Resources/Sound/Bolt_Weapon/Bolt_Weapon_Hit.wav
 
+      1045: Resources/Sound/Grenade_Explosion/Grenade_Explosion1.wav
+      1046: Resources/Sound/Grenade_Explosion/Grenade_Explosion2.wav
+      1047: Resources/Sound/Grenade_Explosion/Grenade_Explosion3.wav
+      1048: Resources/Sound/Grenade_Explosion/Grenade_Explosion4.wav
+      1049: Resources/Sound/Grenade_Explosion/Grenade_Explosion5.wav

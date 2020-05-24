@@ -213,7 +213,7 @@ crafts:
     sprite: 1104
 #GENERAL
     requires:
-      - STR_CHIMERA_TECH
+      - STR_CHIMERA
     costBuy: 900000
     costSell: 450000
     costRent: 450000

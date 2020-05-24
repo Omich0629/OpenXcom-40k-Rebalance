@@ -2,6 +2,36 @@ extraStrings:
   - type: en-US
     strings:
 
+### ITEM CATEGORIES ###
+#By type
+      STR_CATEGORY_PISTOL: "Pistol"
+      STR_CATEGORY_ASSAULT: "Assault Weapon"
+      STR_CATEGORY_HEAVY: "Heavy Weapon"
+      STR_CATEGORY_GRENADE: "Hand Grenade"
+      STR_CATEGORY_MELEE: "Melee Weapon"
+      STR_CATEGORY_AMMO: "Ammo"
+      STR_CATEGORY_ARMOR: "Armor"
+
+#By technology
+      STR_CATEGORY_STUB: "Stub Weapon"
+      STR_CATEGORY_BOLT: "Bolt Weapon"
+      STR_CATEGORY_LAUNCHER: "Launcher Weapon"
+      STR_CATEGORY_LASER: "Laser Weapon"
+      STR_CATEGORY_PLASMA: "Plasma Weapon"
+      STR_CATEGORY_MELTA: "Melta Weapon"
+      STR_CATEGORY_GRAVITON: "Graviton Weapon"
+      STR_CATEGORY_CHAIN: "Chain Weapon"
+      STR_CATEGORY_POWER: "Power Weapon"
+      STR_CATEGORY_UTILITY: "Utility Item"
+#By user
+      STR_CATEGORY_GUARD: "Guard Weapon"
+      STR_CATEGORY_GUARD_VETERAN: "Guard Veteran Weapon"
+      STR_CATEGORY_SCOUT: "Scout Weapon"
+      STR_CATEGORY_MARINE: "Space Marine Weapon"
+      STR_CATEGORY_MARINE_VETERAN: "Marine Veteran Weapon"
+      STR_CATEGORY_TERMINATOR: "Terminator Weapon"
+
+
 ### DAMAGE TYPES ###
       STR_DAMAGE_NONE: "NONE"
       STR_DAMAGE_ARMOR_PIERCING: "ARMOR PIERCING"
@@ -19,224 +49,137 @@ extraStrings:
       STR_DAMAGE_13: "SUPPORT"
 
 ### INVENTORY SLOTS  ###
-      STR_RIGHT_HAND: " "
-      STR_LEFT_HAND: " "
+      STR_RIGHT_HAND: "R. Hand"
+      STR_LEFT_HAND: "L. Hand "
       STR_BEHIND_SHOLDER: " "
-      STR_BACK_PACK: " "
-      STR_BELT: " "
-      STR_RIGHT_LEG: " "
-      STR_LEFT_LEG: " "
-      STR_GROUND: " "
+      STR_BACK_PACK: "Back Pack"
+      STR_BELT: "Belt"
+      STR_RIGHT_LEG: "R. Leg"
+      STR_LEFT_LEG: "L. Leg"
+      STR_GROUND: "Ground"
 
-### NULL ITEMS ###
-      STR_NULL_ITEM_MEDKIT: "Medkit"
+
 
 ### SOLDIERS TYPES ###
+#SM soldiers
+      STR_SCOUT: "Scout"
+      STR_SPACE_MARINE: "Space Marine"
+      STR_VETERAN_MARINE: "Veteran Marine"
+      STR_DREADNOUGHT: "Dreadhought"
+
+#IG soldiers
       STR_GUARDSMAN: "Guardsman"
+      STR_OPERATOR: "Operator"
+      STR_COMMISSAR: "Commissar"
+      STR_ENGINSEER: "Enginseer"
+      STR_MINISTORUM_PRIEST: "Priest"
+
 
 ### SOLDIERS RANKS ###
+## SM RANKS ##
+#Scout ranks
+      STR_SCOUT_RANK_0: "Neophyte"
+      STR_SCOUT_RANK_1: "Scout"
 
-#Guardsman
+#Space Marine Ranks
+      STR_SM_RANK_0: "Battle Brother"
+      STR_SM_RANK_1: "Battle Brother"
+      STR_SM_RANK_2: "Battle Brother"
+      STR_SM_RANK_3: "Battle Brother"
+      STR_SM_RANK_4: "Battle Brother"
+
+#Space Marine Veteran Ranks
+      STR_SM_VETERAN_RANK_0: "Veteran Marine"
+      STR_SM_VETERAN_RANK_1: "Veteran Marine"
+      STR_SM_VETERAN_RANK_2: "Veteran Marine"
+      STR_SM_VETERAN_RANK_3: "Veteran Marine"
+      STR_SM_VETERAN_RANK_4: "Veteran Marine"
+
+#Dreadhought Ranks
+      STR_DREADNOUGHT_RANK_0: "Dreadnought"
+
+## IG RANKS ##
+
+#Guardsman Ranks
       STR_GUARDSMAN_RANK_0: "Recruit"
       STR_GUARDSMAN_RANK_1: "Guardsman"
       STR_GUARDSMAN_RANK_2: "Sergeant"
 
+#Operator Ranks
+      STR_OPERATOR_RANK_0: "Operator"
 
+### ARMORS ###
 
+## SM ARMORS ##
 
+#Scout Armor
+      STR_SCOUT_ARMOR: "Scout Armor"
 
-### ITEMS IDs ###
+#Advanced Scout Armor and it's variations
+      STR_ADV_SCOUT_ARMOR: "Advanced Scout Armor"
+      STR_ADV_SCOUT_ARMOR_GREEN: "Advanced Scout Armor (Green)"
+      STR_ADV_SCOUT_ARMOR_WHITE: "Advanced Scout Armor (White)"
+      STR_ADV_SCOUT_ARMOR_BLACK: "Advanced Scout Armor (Black)"
+      STR_ADV_SCOUT_ARMOR_RED: "Advanced Scout Armor (Red)"
+      STR_ADV_SCOUT_ARMOR_YELLOW: "Advanced Scout Armor (Yellow)"
 
-## STUB WEAPONS ##
+#Mk7 Power Armor
+      STR_MK7_ARMOR_SET: "Mk7 Armor Set"
+      STR_MK7_ARMOR: "Mk7 Power Armor"
 
-#Autopistol
-      STR_AUTOPISTOL_MAGAZINE: "Autopistol Magazine"
+#Assault Equipment for Mk7 Armor
+      STR_MK7_ASSAULT_EQUIPMENT: "Mk7 Assault Equipment"
 
-      STR_AUTOPISTOL: "Autopistol"
-      STR_AUTOPISTOL_CHAOS: "Chaos Autopistol"
+#Devastator Equipment for Mk7 Armor
+      STR_MK7_DEVASTATOR_EQUIPMENT: "Mk7 Devastator Equipment"
 
-#Autogun
-      STR_AUTOGUN_MAGAZINE: "Autogun Magazine"
+#Mk7 Sergeant Armor
+      STR_MK7_SERGEANT_ARMOR: "Mk7 Sergeant Armor"
 
-      STR_AUTOGUN: "Autogun"
-      STR_AUTOGUN_CHAOS: "Chaos Autogun"
+#Mk7 Apothecary Armor
+      STR_MK7_APOTHECARY_ARMOR: "Mk7 Apothecary Armor"
 
-#Heavy Stubber
-      STR_HEAVY_STUBBER_AMMO_BELT: "Heavy Stubber Ammo Belt"
+#Assault Bike
+      STR_ASSAULT_BIKE: "Assault Bike"
 
-      STR_HEAVY_STUBBER: "Heavy Stubber"
-      STR_HEAVY_STUBBER_CHAOS: "Chaos Heavy Stubber"
+#Dreadnought Armors
+      STR_DREADNOUGHT_BASIC_ARMOR: "Dreadnought (Basic Equipment)"
+      STR_DREADNOUGHT_LASCANNON_ARMOR: "Dreadnought (Lascannon)"
+      STR_DREADNOUGHT_MISSILE_LAUNCHER_ARMOR: "Dreadnought (Missile Launcher)"
+      STR_DREADNOUGHT_PLASMA_CANNON_ARMOR: "Dreadnought (Plasma Cannon)"
+      STR_DREADNOUGHT_ASSAULT_CANNON_ARMOR: "Dreadnought (Assault Cannon)"
 
-#Shotgun
-      STR_SHOTGUN_SHELLS: "Shotgun Shells"
-      STR_SHOTGUN_SLUGS: "Shotgun Slugs"
+## IG ARMORS ##
 
-      STR_SHOTGUN_SM: "Astartes Assault Shotgun"
-      STR_SHOTGUN_IG: "Guard Shotgun"
-      STR_SHOTGUN_CHAOS: "Chaos Shotgun"
+#Guard Flak Armor
+      STR_FLAK_ARMOR: "Flak Armor"
+      STR_FLAK_ARMOR_MEDIC: "Flak Armor (Medic)"
+      STR_FLAK_ARMOR_SERGEANT: "Flak Armor (Sergeant)"
 
-#Sniper Rifle
-      STR_SNIPER_RIFLE_AMMO_AP: "Sniper Rifle AP Ammo"
-      STR_SNIPER_RIFLE_AMMO_HE: "Sniper Rifle HE Ammo"
-      STR_SNIPER_RIFLE_AMMO_I: "Sniper Rifle I Ammo"
+#Guard Carapace Armor
+      STR_CARAPACE_ARMOR: "Carapace Armor"
+      STR_CARAPACE_ARMOR_MEDIC: "Carapace Armor (Medic)"
+      STR_CARAPACE_ARMOR_SERGEANT: "Carapace Armor (Sergeant)"
 
-      STR_SNIPER_RIFLE_SM: "Sniper Rifle (Astartes)"
+#Sentinel Armor
+      STR_SENTINEL_LASCANNON_ARMOR: "Sentinel (Lascannon)"
+      STR_SENTINEL_MISSILE_LAUNCHER_ARMOR: "Sentinel (Missile Launcher)"
+      STR_SENTINEL_FLAMER_ARMOR: "Sentinel (Heavy Flamer)"
+      STR_SENTINEL_MULTI_MELTA_ARMOR: "Sentinel (Multi-Melta)"
+      STR_SENTINEL_PLASMA_CANNON_ARMOR: "Sentinel (Plasma Cannon)"
+      STR_SENTINEL_AUTOCANNON_ARMOR: "Sentinel (Autocannon)"
 
+#Bullgryn Armor
+      STR_BULLGRYN_DEFENSIVE_EQUIPMENT: "Bullgryn Defensive Equipment"
+      STR_BULLGRYN_OFFENSIVE_EQUIPMENT: "Bullgryn Offensive Equipment"
 
 
-#Autocannon
-
-
-#Assault Cannon
-
-
-
-## FLAMER WEAPONS ##
-
-#Flamer
-      STR_FLAMER_FUEL: "Flamer Fuel"
-
-      STR_FLAMER_SM: "Astartes Flamer"
-      STR_FLAMER_IG: "Guard Flamer"
-      STR_FLAMER_RENEGADE: "Renegade Flamer"
-      STR_FLAMER_CHAOS: "Chaos Flamer"
-      STR_WARPFLAMER: "Warpflamer"
-
-#Heavy Flamer
-
-
-## LASER WEAPONS ##
-
-#Lasgun
-      STR_LASGUN_POWER_PACK: "Lasgun Power Pack"
-      STR_LASGUN_IG: "Lasgun"
-      STR_LASGUN_RENEGADE: "Renegade Lasgun"
-
-#Laspistol
-      STR_LASPISTOL_IG: "Laspistol"
-      STR_LASPISTOL_RENEGADE: "Renegade Laspistol"
-
-
-
-#Long-Las
-
-
-#Hotshot Laspistol
-
-
-#Hotshot Lasgun
-
-
-#Hotshot Volley Gun
-
-
-#Lascannon
-      STR_LASCANNON_POWER_PACK: "Lascannon Power Pack"
-
-      STR_LASCANNON_IG: "Lascannon"
-      STR_LASCANNON_RENEGADE: "Renegade Lascannon"
-
-
-
-## BOLT WEAPONS ##
-
-#Boltpistol
-      STR_BOLTPISTOL_MAGAZINE_EX: "Bolt Pistol Magazine"
-      STR_BOLTPISTOL_MAGAZINE_AP: "Bolt Pistol AP Magazine"
-      STR_BOLTPISTOL_MAGAZINE_I: "Bolt Pistol I Magazine"
-
-      STR_BOLTPISTOL_SM: "Astartes Bolt Pistol"
-      STR_BOLTPISTOL_MC: "Master Crafted Bolt Pistol"
-      STR_BOLTPISTOL_IG: "Guard Bolt Pistol"
-      STR_BOLTPISTOL_RENEGADE: "Renegade Guard Bolt"
-      STR_BOLTPISTOL_CHAOS: "Chaos Bolt Pistol"
-
-#Boltgun
-      STR_BOLTER_MAGAZINE_EX: "Bolter Magazine"
-      STR_BOLTER_MAGAZINE_AP: "Bolter AP Magazine"
-      STR_BOLTER_MAGAZINE_I: "Bolter I Magazine"
-
-      STR_BOLTER_SM: "Astartes Bolter"
-      STR_BOLTER_SM_SCOPED: "Astartes Bolter (Scoped)"
-      STR_BOLTER_MC: "Master Crafted Bolter"
-      STR_BOLTER_MC_SCOPED: "Master Crafted Bolter (Scoped)"
-      STR_BOLTER_IG: "Guard Bolter"
-      STR_BOLTER_CHAOS: "Chaos Bolter"
-
-#Heavy Bolter
-      STR_HEAVY_BOLTER_CASE_EX: "Heavy Bolter Case"
-      STR_HEAVY_BOLTER_CASE_AP: "Heavy Bolter AP Case"
-      STR_HEAVY_BOLTER_CASE_I: "Heavy Bolter I Case"
-
-      STR_HEAVY_BOLTER_SM: "Astartes Heavy Bolter"
-      STR_HEAVY_BOLTER_IG: "Guard Heavy Bolter"
-      STR_HEAVY_BOLTER_RENEGADE: "Renegade Heavy Bolter"
-      STR_HEAVY_BOLTER_CHAOS: "Chaos Heavy Bolter"
-
-#Storm Bolter
-      STR_STORM_BOLTER_MAGAZINE_EX: "Storm Bolter Magazine"
-      STR_STORM_BOLTER_MAGAZINE_AP: "Storm Bolter AP Magazine"
-      STR_STORM_BOLTER_MAGAZINE_I: "Storm Bolter I Magazine"
-
-      STR_STORM_BOLTER_SM: "Astartes Storm Bolter"
-      STR_STORM_BOLTER_CHAOS: "Chaos Storm Bolter"
-
-
-## LAUNCHER WEAPONS ##
-
-#Grenade Launcher
-      STR_FRAG_GRENADE_PACK: "Frag Grenade Pack"
-      STR_KRAK_GRENADE_PACK: "Krak Grenade Pack"
-      STR_INCENDIARY_GRENADE_PACK: "Incendiary Grenade Pack"
-
-      STR_GRENADE_LAUNCHER_IG: "Grenade Launcher (Guard)"
-      STR_GRENADE_LAUNCHER_RENEGADE: "Grenade Launcher (Renegade)"
-
-#Missile Launcher
-      STR_FRAG_MISSILE: "Frag Missile"
-      STR_KRAK_MISSILE: "Krak Missile"
-      STR_INCENDIARY_MISSILE: "Incendiary Missile"
-
-      STR_MISSILE_LAUNCHER_IG: "Missile Launcher (Guard)"
-      STR_MISSILE_LAUNCHER_RENEGADE: "Missile Launcher (Renegade)"
-      STR_MISSILE_LAUNCHER_SM: "Missile Launcher (Astartes)"
-
-
-
-## MELEE WEAPONS ##
-
-#Improvised Mace
-      STR_CULTIST_MACE: "Improvised Mace"
-
-#Improvised Sword
-      STR_CULTIST_SWORD: "Improvised Sword"
-
-#Chainsword
-      STR_CHAINSWORD_IG: "Chainsword (Guard)"
-      STR_CHAINSWORD_OFFICERS: "Chainsword (Officer's)"
-      STR_CHAINSWORD_RENEGADE: "Chainsword (Renegade)"
-
-
-
-### Global IDs ###
-      STR_GENERALLOCK: "General Lock"
-      STR_CHAOS_ONLY: "Chaos Only"
-      STR_GREENSKINS_ONLY: "Greenskins Only"
-      STR_ELDAR_ONLY: "Eldar Only"
-
-## Component manufacturing ##
-      STR_COMPONENT_MANUFACTURING: "Component Manufacturing"
-      STR_UFO_NAVIGATION: "Cogitator"
-      STR_ALIEN_ALLOYS: "Ceramite Component"
-      STR_UFO_CONSTRUCTION: "Adamantium Component"
-
-      STR_ADAMANTIUM_FORGE: "Adamantium Forge"
-
-      STR_FIRE_EXTINGUISHER: "Fire Extinguisher"
-## Custom attacks for special purposes ##
+## CUSTOM NAMES FOR ACTIONS ##
       STR_CUSTOM_DOUBLE_SHOT: "Double Shot"
       STR_CUSTOM_SNAPSHOT: "Snap Shot"
 
+      STR_MORALE_BOOST: "Morale Boost"
+      STR_RIGHTEOUS_FURY: "Righteous Fury"
 
 ## Crafts Weapon Types ##
       STR_CRAFT_SLOT_ASSAULT: "Assault Weapon"
@@ -276,12 +219,7 @@ extraStrings:
       STR_SLOT4_ENFORCED_PLATING: "Enforced Plating"
 
 
-### Space Marines IDs ###
-
-      STR_SPACE_MARINES_OPERATIONS: "Space Marines Operations"
-
 #SM Crafts
-      STR_CHAPTER_VEHICLES: "Chapter Vehicles"
 
       STR_LANDSPEEDER: "LANDSPEEDER"
       STR_DROPPODS: "DROP PODS"
@@ -292,89 +230,318 @@ extraStrings:
       STR_THUNDERHAWK: "THUNDERHAWK"
 
 
-#Soldier Types and ranks
-      STR_SCOUT_SOLDIER: "Scout"
+### ITEMS IDs ###
 
-      STR_SCOUT_RANK_0: "Neophyte"
-      STR_SCOUT_RANK_1: "Scout"
+## STUB WEAPONS ##
 
-      STR_SM_RANK_0: "Battle Brother"
-      STR_SM_RANK_1: "Battle Brother"
-      STR_SM_RANK_2: "Battle Brother"
-      STR_SM_RANK_3: "Battle Brother"
-      STR_SM_RANK_4: "Battle Brother"
+#Autopistol
+      STR_AUTOPISTOL_MAGAZINE: "Autopistol Magazine"
 
-      STR_DREADNOUGHT_RANK_0: "Dreadnought"
-      STR_DREADNOUGHT_RANK_1: "Dreadnought"
-      STR_DREADNOUGHT_RANK_2: "Dreadnought"
-      STR_DREADNOUGHT_RANK_3: "Dreadnought"
-      STR_DREADNOUGHT_RANK_4: "Dreadnought"
+      STR_AUTOPISTOL: "Autopistol"
+      STR_AUTOPISTOL_CHAOS: "Autopistol (Renegade)"
 
-## SM T1 ##
+#Autogun
+      STR_AUTOGUN_MAGAZINE: "Autogun Magazine"
 
-## T1 Armor related IDs ##
+      STR_AUTOGUN: "Autogun"
+      STR_AUTOGUN_CHAOS: "Autogun (Renegade)"
+
+#Heavy Stubber
+      STR_HEAVY_STUBBER_AMMO_BELT: "Heavy Stubber Ammo Belt"
+
+      STR_HEAVY_STUBBER: "Heavy Stubber"
+      STR_HEAVY_STUBBER_CHAOS: "Heavy Stubber (Renegade)"
+
+#Shotgun
+      STR_SHOTGUN_SHELLS: "Shotgun Shells"
+      STR_SHOTGUN_SLUGS: "Shotgun Slugs"
+
+      STR_SHOTGUN_SM: "Shotgun (Astartes)"
+      STR_SHOTGUN_IG: "Shotgun (Guard)"
+      STR_SHOTGUN_CHAOS: "Shotgun (Renegade)"
+
+#Sniper Rifle
+      STR_SNIPER_RIFLE_MAGAZINE: "Sniper Rifle Magazine"
+
+      STR_SNIPER_RIFLE_SM: "Sniper Rifle (Astartes)"
+
+
+
+#Autocannon
+
+
+#Assault Cannon
+
+
+
+## FLAMER WEAPONS ##
+
+#Flamer
+      STR_FLAMER_FUEL: "Flamer Fuel"
+
+      STR_FLAMER_SM: "Flamer (Astartes)"
+      STR_FLAMER_IG: "Flamer (Guard)"
+      STR_FLAMER_RENEGADE: "Flamer (Renegade)"
+      STR_FLAMER_CHAOS: "Flamer (Chaos)"
+      STR_WARPFLAMER: "Warpflamer"
+
+#Heavy Flamer
+
+
+## LASER WEAPONS ##
+
+#Lasgun
+      STR_LASGUN_POWER_PACK: "Lasgun Power Pack"
+      STR_LASGUN_IG: "Lasgun"
+      STR_LASGUN_RENEGADE: "Renegade Lasgun"
+
+#Laspistol
+      STR_LASPISTOL_IG: "Laspistol"
+      STR_LASPISTOL_RENEGADE: "Renegade Laspistol"
+
+#Long-Las
+      STR_LONG_LAS: "Long-Las"
+
+#Hellpistol
+
+
+#Hellgun
+
+
+#Hotshot Volley Gun
+
+
+#Lascannon
+      STR_LASCANNON_POWER_PACK: "Lascannon Power Pack"
+
+      STR_LASCANNON_IG: "Lascannon"
+      STR_LASCANNON_RENEGADE: "Lascannon (Renegade)"
+
+
+
+## BOLT WEAPONS ##
+
+#Boltpistol
+      STR_BOLTPISTOL_MAGAZINE_EX: "Bolt Pistol Magazine"
+      STR_BOLTPISTOL_MAGAZINE_AP: "Bolt Pistol AP Magazine"
+      STR_BOLTPISTOL_MAGAZINE_I: "Bolt Pistol I Magazine"
+
+      STR_BOLTPISTOL_SM: "Bolt Pistol (Astartes)"
+      STR_BOLTPISTOL_MC: "Bolt Pistol (Master Crafted)"
+      STR_BOLTPISTOL_IG: "Bolt Pistol (Guard)"
+      STR_BOLTPISTOL_RENEGADE: "Bolt Pistol (Renegade)"
+      STR_BOLTPISTOL_CHAOS: "Bolt Pistol (Chaos)"
+
+#Boltgun
+      STR_BOLTER_MAGAZINE_EX: "Bolter Magazine"
+      STR_BOLTER_MAGAZINE_AP: "Bolter AP Magazine"
+      STR_BOLTER_MAGAZINE_I: "Bolter I Magazine"
+
+      STR_BOLTER_SM: "Bolter (Astartes)"
+      STR_BOLTER_SM_SCOPED: "Scoped Bolter (Astartes)"
+      STR_BOLTER_MC: "Bolter (Master Crafted)"
+      STR_BOLTER_MC_SCOPED: "Bolter (Scoped, Master Crafted)"
+      STR_BOLTER_IG: "Bolter (Guard)"
+      STR_BOLTER_RENEGADE: "Bolter (Renegade)"
+      STR_BOLTER_CHAOS: "Bolter (Chaos)"
+
+#Heavy Bolter
+      STR_HEAVY_BOLTER_CASE_EX: "Heavy Bolter Case"
+      STR_HEAVY_BOLTER_CASE_AP: "Heavy Bolter AP Case"
+      STR_HEAVY_BOLTER_CASE_I: "Heavy Bolter I Case"
+
+      STR_HEAVY_BOLTER_SM: "Astartes Heavy Bolter"
+      STR_HEAVY_BOLTER_IG: "Guard Heavy Bolter"
+      STR_HEAVY_BOLTER_RENEGADE: "Renegade Heavy Bolter"
+      STR_HEAVY_BOLTER_CHAOS: "Chaos Heavy Bolter"
+
+#Storm Bolter
+      STR_STORM_BOLTER_MAGAZINE_EX: "Storm Bolter Magazine"
+      STR_STORM_BOLTER_MAGAZINE_AP: "Storm Bolter AP Magazine"
+      STR_STORM_BOLTER_MAGAZINE_I: "Storm Bolter I Magazine"
+
+      STR_STORM_BOLTER_SM: "Astartes Storm Bolter"
+      STR_STORM_BOLTER_CHAOS: "Chaos Storm Bolter"
+
+#Twin-Linked Bolter
+      AUX_BOLTER: "Twin-linked Bolter"
+
+## HAND GRENADES ##
+
+#Frag Grenade
+      STR_FRAG_HAND_GRENADE_IG: "Frag Grenade (Guard)"
+      STR_FRAG_HAND_GRENADE_SM: "Frag Grenade (Astartes)"
+      STR_FRAG_HAND_GRENADE_RENEGADE: "Frag Grenade (Renegade)"
+      STR_FRAG_HAND_GRENADE_CHAOS: "Frag Grenade (Chaos)"
+
+#Krak Grenade
+      STR_KRAK_HAND_GRENADE_IG: "Krak Grenade (Guard)"
+      STR_KRAK_HAND_GRENADE_SM: "Krak Grenade (Astartes)"
+      STR_KRAK_HAND_GRENADE_RENEGADE: "Krak Grenade (Renegade)"
+      STR_KRAK_HAND_GRENADE_CHAOS: "Krak Grenade (Chaos)"
+
+#Smoke Grenade
+      STR_SMOKE_HAND_GRENADE_IG: "Smoke Grenade (Guard)"
+      STR_SMOKE_HAND_GRENADE_SM: "Smoke Grenade (Astartes)"
+
+#Photon Flash Grenade 
+      STR_PHOTON_HAND_GRENADE_IG: "Photon Flash Grenade"
+
+
+## LAUNCHER WEAPONS ##
+
+#Grenade Launcher
+      STR_FRAG_GRENADE_PACK: "Frag Grenade Pack"
+      STR_KRAK_GRENADE_PACK: "Krak Grenade Pack"
+      STR_INCENDIARY_GRENADE_PACK: "Incendiary Grenade Pack"
+
+      STR_GRENADE_LAUNCHER_IG: "Grenade Launcher (Guard)"
+      STR_GRENADE_LAUNCHER_RENEGADE: "Grenade Launcher (Renegade)"
+
+#Missile Launcher
+      STR_FRAG_MISSILE: "Frag Missile"
+      STR_KRAK_MISSILE: "Krak Missile"
+      STR_INCENDIARY_MISSILE: "Incendiary Missile"
+
+      STR_MISSILE_LAUNCHER_IG: "Missile Launcher (Guard)"
+      STR_MISSILE_LAUNCHER_RENEGADE: "Missile Launcher (Renegade)"
+      STR_MISSILE_LAUNCHER_SM: "Missile Launcher (Astartes)"
+
+#Grenade Gauntlet
+      STR_GRENADIER_GAUNTLET: "Grenadier Gauntlet"
+      STR_FRAG_CARTRIDGE: "Frag Cartridge"
+      STR_KRAK_CARTRIDGE: "Krak Cartridge"
+
+      STR_INCENDIARY_CARTRIDGE: "Incendiary Cartridge"
+
+#Sentinel Missile Launcher
+      STR_SENTINEL_KRAK_MISSILES: "Sentinel Krak Missiles"
+
+      STR_SENTINEL_MISSILE_LAUNCHER_LEFT: "Sentinel Missile Launcher"
+      STR_SENTINEL_MISSILE_LAUNCHER_RIGHT: "Sentinel Missile Launcher"
+
+
+## MELEE WEAPONS ##
+
+#Improvised Mace
+      STR_CULTIST_MACE: "Improvised Mace"
+
+#Improvised Sword
+      STR_CULTIST_SWORD: "Improvised Sword"
+
+#Chainsword
+      STR_CHAINSWORD_IG: "Chainsword (Guard)"
+      STR_CHAINSWORD_OFFICERS: "Chainsword (Officer's)"
+      STR_CHAINSWORD_RENEGADE: "Chainsword (Renegade)"
+
+#Eviscerator
+      STR_EVISCERATOR: "Eviscerator"
+
+#Brute Shield
+      STR_BRUTE_SHIELD: "Brute Shield"
+
+#Crozius Arcanum
+      STR_CROZIUS_ARCANUM: "Crozius Arcanum"
+
+## UTILITY ITEMS ##
+
+      STR_FIRE_EXTINGUISHER: "Fire Extinguisher"
+      STR_FIRST_AID_KIT: "First Aid Kit"
+
+## NULL ITEMS ##
+      STR_NULL_ITEM_MEDKIT: "Medkit"
+
+
+### SOLDIERS TRANSFORMATIONS ###
+      STR_PROMOTE_TO_MARINE: "Promote to Marine"
+      STR_PROMOTION_MARINE: "Space Marine Transformation"
+      STR_CREATE_DREADNOUGHT: "Create Dreadnought"
+
+### FACILITY FUNCTIONS ###
+      MED: "Apothecarion"
+
+
+### RESEARCH IDs ##
+
+## Restricting IDs ##
+      STR_GENERALLOCK: "General Lock"
+      STR_CHAOS_ONLY: "Chaos Only"
+      STR_GREENSKINS_ONLY: "Greenskins Only"
+      STR_ELDAR_ONLY: "Eldar Only"
+
+
+## Component manufacturing IDs (same for all factions) ##
+      STR_COMPONENT_MANUFACTURING: "Component Manufacturing"
+      STR_UFO_NAVIGATION: "Cogitator"
+      STR_ALIEN_ALLOYS: "Ceramite Component"
+      STR_UFO_CONSTRUCTION: "Adamantium Component"
+
+      STR_ADAMANTIUM_FORGE: "Adamantium Forge"
+
+
+## Space Marines Tech Tree IDs ##
+
+# SM T1 Research #
+      STR_SPACE_MARINES_OPERATIONS: "Space Marines Operations"
+
+      STR_CHAPTER_VEHICLES: "Chapter Vehicles"
+      STR_DROPPODS: "Drop Pods"
+
       STR_CHAPTER_ARMORS: "Chapter Armors"
 
-#Advanced Scout Armor and it's transformations
-      STR_ADV_SCOUT_ARMOR: "Advanced Scout Armor"
 
-      STR_ADV_SCOUT_ARMOR_GREEN: "Advanced Scout Armor (Green)"
-      STR_ADV_SCOUT_ARMOR_WHITE: "Advanced Scout Armor (White)"
-      STR_ADV_SCOUT_ARMOR_BLACK: "Advanced Scout Armor (Black)"
-      STR_ADV_SCOUT_ARMOR_RED: "Advanced Scout Armor (Red)"
-      STR_ADV_SCOUT_ARMOR_YELLOW: "Advanced Scout Armor (Yellow)"
 
-#Standard Mk7 Armor
-      STR_MK7_ARMOR_SET: "Mk7 Armor Set"
-      STR_MK7_ARMOR: "Mk7 Power Armor"
 
-#Assault Equipment for Mk7 Armor
-      STR_MK7_ASSAULT_EQUIPMENT: "Mk7 Assault Equipment"
 
-#Devastator Equipment for Mk7 Armor
-      STR_MK7_DEVASTATOR_EQUIPMENT: "Mk7 Devastator Equipment"
-
-#Mk7 Sergeant Armor
-      STR_MK7_SERGEANT_ARMOR: "Mk7 Sergeant Armor"
-
-#Mk7 Apothecary Armor
-      STR_MK7_APOTHECARY_ARMOR: "Mk7 Apothecary Armor"
-
-#Assault Bike
-      STR_ASSAULT_BIKE: "Assault Bike"
-
-#Apothecarion stuff
       STR_APOTHECARION: "Apothecarion"
-      MED: "Apothecarion"
-      STR_FIRST_AID_KIT: "First Aid Kit"
 
       STR_CHAPTER_TRAINING: "Chapter Training"
 
-      STR_PROMOTE_TO_MARINE: "Promote to Marine"
-      STR_PROMOTION_MARINE: "Space Marine Transformation"
-
-
-## T1 Weapon Related IDS ##
       STR_CHAPTER_WEAPONS: "Chapter Weapons"
 
-#Weapon Requisitions
-      STR_BOLTPISTOL_TECH: "Bolt Pistol Requisition"
-      STR_BOLTER_TECH: "Bolter Requisition"
-      STR_SHOTGUN_TECH: "Shotgun Requisition"
-      STR_FLAMER_TECH: "Flamer Requisition"
-      STR_ROCKET_LAUNCHER_TECH: "Missile Launcher Requisition"
-      STR_HEAVY_BOLTER_TECH: "Heavy Bolter Requisition"
-      STR_POWERFIST_TECH: "Powerfist Requisition"
-      STR_CHAINSWORD_TECH: "Chainsword Requisition"
-      STR_SNIPER_RIFLE_TECH: "Sniper Rifle Requisition"
 
-#Astartes Bolt Weapons IDs
+# IG T1 Research ##
+      STR_IMPERIAL_GUARD_OPERATIONS: "Imperial Guard Operations"
+
+      STR_REGIMENTAL_VEHICLES: "Regimental Vehicles"
+      STR_CHIMERA: "Chimera APC"
 
 
-      AUX_BOLTER: "Twin-linked Bolter"
+      STR_REGIMENTAL_WEAPONS: "Regimental Weapons"
+
+      STR_MILITARY_PERSONNEL: "Military Personnel"
+      STR_REGIMENTAL_ARMOR: "Regimental Armors"
+
+
+
+
+
+#Weapon Technologies
+      STR_HAND_GRENADES_RESEARCH: "Hand Grenades"
+
+      STR_BOLTPISTOL_TECH: "Technology: Bolt Pistol"
+      STR_BOLTER_TECH: "Technology: Boltgun"
+      STR_SHOTGUN_TECH: "Technology: Shotgun"
+      STR_FLAMER_TECH: "Technology: Flamer"
+      STR_ROCKET_LAUNCHER_TECH: "Technology: Missile Launcher"
+      STR_HEAVY_BOLTER_TECH: "Technology: Heavy Bolter"
+      STR_POWERFIST_TECH: "Technology: Powerfist"
+      STR_CHAINSWORD_TECH: "Technology: Chainsword"
+      STR_SNIPER_RIFLE_TECH: "Technology: Sniper Rifle"
+      STR_LASCANNON_TECH: "Technology: Lascannon"
+
+
+
+
+
+
+
+
+
+
 
 #Lascannon related IDs
-      STR_LASCANNON_TECH: "Lascannon"
+
       STR_LASCAN: "Astartes Lascannon"
       STR_CRAFT_LASCANNON: "Craft Lascannon"
       STR_LASCANNON_DEFENSE: "Lascannon Defense"
@@ -382,9 +549,8 @@ extraStrings:
 
 
 
-#Astartes T1 Crafts IDs
-      STR_SPEEDR: "Chapter Vehicles"
-      STR_DROPPODS_TECH: "Drop Pods"
+
+
 
 
 
@@ -460,7 +626,7 @@ extraStrings:
 
       STR_MK7_VETERAN_ARMOR: "Mk7 Veteran Armor"
       STR_MK7_VANGUARD_ARMOR: "Mk7 Vanguard Armor"
-      STR_MK7_DEVASTATOR_VETERAN_ARMOR: "Mk7 Veteran Devastator Armor"
+      STR_MK7_VETERAN_DEVASTATOR_ARMOR: "Mk7 Veteran Devastator Armor"
       STR_MK7_VETERAN_SERGEANT_ARMOR: "Mk7 Veteran Sergeant Armor"
       STR_MK7_TECHMARINE_ARMOR: "Mk7 Techmarine Armor"
       STR_MK7_CHAPLAIN_ARMOR: "Mk7 Chaplain Armor"
@@ -476,13 +642,7 @@ extraStrings:
       STR_PROMOTE_TO_VETERAN_MARINE: "Promote to Veteran Marine"
 
 
-      STR_VETERAN_SOLDIER: "Veteran Marine"
 
-      STR_SM_VETERAN_RANK_0: "Veteran Marine"
-      STR_SM_VETERAN_RANK_1: "Veteran Marine"
-      STR_SM_VETERAN_RANK_2: "Veteran Marine"
-      STR_SM_VETERAN_RANK_3: "Veteran Marine"
-      STR_SM_VETERAN_RANK_4: "Veteran Marine"
 
 
 #Dreadnought Stuff
@@ -495,28 +655,9 @@ extraStrings:
       STR_DREAD_MISSILES: "Dreadhought Missiles"
       AUX_DREAD_ASSAULT_CANNON_AMMO: "Dreadhought Assault Cannon Ammo"
 
-      DREAD_ARMOR_UC: "Dreadnought/Flamer"
-      STR_DREAD1_ARMOR: "Dreadnought/Flamer"
-
-      DREAD_ARMOR2_UC: "Dreadnought/Plasma Cannon"
-      STR_DREAD2_ARMOR: "Dreadnought/Plasma Cannon"
-
-      DREAD_ARMOR3_UC: "Dreadnought/Missile Launcher"
-      STR_DREAD3_ARMOR: "Dreadnought/Missile Launcher"
-
-      DREAD_ARMOR4_UC: "Dreadnought/Lascannon"
-      STR_DREAD4_ARMOR: "Dreadnought/Lascannon"
-
-      DREAD_ARMOR5_UC: "Dreadnought/Assault Cannon"
-      STR_DREAD5_ARMOR: "Dreadnought/Assault Cannon"
 
 
-#Combi-Plasma. Test.
-      STR_COMBIPLASMA: "Combi-Plasma"
-      STR_MC_COMBIPLASMA: "Master Crafted Combi-Plasma"
-      STR_BOLT_SNAP_SHOT: "Snap Shot"
-      STR_BOLT_AUTO_SHOT: "Auto Shot"
-      STR_PLASMA_SNAP_SHOT: "Plasma Shot"
+
 
 
 
@@ -588,14 +729,7 @@ extraStrings:
 
 
 
-#Guard Armors
-      STR_FLAK_ARMOR: "Flak Armor"
-      STR_FLAK_ARMOR_MEDIC: "Flak Armor (Medic)"
-      STR_FLAK_ARMOR_SERGEANT: "Flak Armor (Sergeant)"
 
-      STR_CARAPACE_ARMOR: "Carapace Armor"
-      STR_CARAPACE_ARMOR_MEDIC: "Carapace Armor (Medic)"
-      STR_CARAPACE_ARMOR_SERGEANT: "Carapace Armor (Sergeant)"
 
 
 ## IG T1 ##
@@ -606,10 +740,7 @@ extraStrings:
 
 
 #T1 Header Technologies
-      STR_REGIMENTAL_VEHICLES: "Regimental Vehicles"
-      STR_REGIMENTAL_WEAPONS: "Regimental Weapons"
-      STR_MILITARY_PERSONNEL: "Military Personnel"
-      STR_REGIMENTAL_ARMOR: "Regimental Armors"
+
 
 #Regimental Weapons
 
@@ -619,10 +750,6 @@ extraStrings:
 #Guard Missile Launcher
       STR_IG_ROCKET_LAUNCHER: "Guard Missile Launcher"
 
-#Green Ammo containers for heavy bolter
-      STR_AC_AP_AMMO_GUARD: "Guard Heavy Bolter AP Case"
-      STR_AC_HE_AMMO_GUARD: "Guard Heavy Bolter HE Case"
-      STR_AC_I_AMMO_GUARD: "Guard Heavy Bolter I Case"
 
 #Medicine and Training
       STR_MEDICINE_TECH: "Military Medicine"
@@ -635,15 +762,10 @@ extraStrings:
       STR_CARAPACE_MEDIC_TECH: "Carapace Armor/Medic"
       STR_OGRYN_CARAPACE_TECH: "Ogryn Carapace Armor"
 
-#Sentinel IDs
-      STR_SENTINEL_LASCANNON: "Sentinel/Lascannon"
 
-      STR_SENTINEL_MISSILE: "Sentinel/Missile"
-      STR_SENTINEL_MISSILE_LAUNCHER_LEFT: "Sentinel Missile Launcher"
-      STR_SENTINEL_MISSILE_LAUNCHER_RIGHT: "Sentinel Missile Launcher"
 
 #T1 Guard Vehicles
-      STR_CHIMERA_TECH: "Chimera APC"
+
 
 
 ## IG T2 ##
@@ -657,20 +779,20 @@ extraStrings:
 #Mechanicus Bay
       STR_MECHANICUS_BAY: "Mechanicus Bay"
 #Enginseer stuff
-      STR_ENGINSEER: "Enginseer"
+
       STR_ENGINSEER_REQUISITION: "Enginseer Requisition"
       STR_ENGINSEER_CORPSE: "Enginseer Corpse"
       STR_ENGINSEER_ARMOR_UC: "Enginseer Power Armor"
       STR_OMNISSIAN_AXE: "Omnissian Axe"
 
 #Ministorum Priest
-      STR_MINISTORUM_PRIEST: "Priest"
+
       STR_MINISTORUM_PRIEST_REQUISITION: "Ministorum Priest Requisition"
       STR_MINISTORUM_PRIEST_CORPSE: "Priest Corpse"
       STR_MINISTORUM_PRIEST_ARMOR_UC: "Priest Robes"
 
-      STR_EVISCERATOR: "Eviscerator"
-      STR_RIGHTEOUS_FURY: "Righteous Fury"
+
+
 
 #Hotshot weapons
       STR_HOTSHOT_TECH: "Hotshot Laser Weapons"
@@ -685,12 +807,10 @@ extraStrings:
       STR_SPECIAL_PERSONNEL_AND_EQUIMPENT: "Special Personnel And Equipment"
       STR_SNIPER_ARMOR: "Sniper Flak Armor"
       STR_SNIPER_ARMOR_UC: "Sniper Flak Armor"
+
       STR_BULLGRYN_EQUIPMENT: "Bullgryn Equipment"
 
-      STR_GRENADIER_GAUNTLET: "Grenadier Gauntlet"
-      STR_FRAG_CARTRIDGE: "Frag Cartridge"
-      STR_KRAK_CARTRIDGE: "Krak Cartridge"
-      STR_INCENDIARY_CARTRIDGE: "Incendiary Cartridge"
+
 
       STR_GUARD_VETERANS: "Guard Veterans"
       STR_GUARD_BOLTGUNS: "Guard Boltguns"
@@ -715,9 +835,6 @@ extraStrings:
 #Regiment Officers facility
       STR_HEADQUARTERS: "Headquarters"
 
-#################
-### ENEMY IDs ###
-#################
 
 ## ENEMY RACES ##
       STR_CULTISTS: "Chaos Cultists"
@@ -756,14 +873,12 @@ extraStrings:
 #Cultists
       STR_CORPSE_CULTIST: "Cultist Corpse"
 
-## ENEMY ITEMS ##
-
-
+## ENEMY SPELLS ##
       STR_CULTIST_PANIC_SPELL: "Panic Spell"
 
 
 
-#Renegade Items
+
 
 
 

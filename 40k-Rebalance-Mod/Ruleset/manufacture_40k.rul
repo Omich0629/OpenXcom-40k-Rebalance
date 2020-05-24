@@ -541,23 +541,10 @@ manufacture:
       STR_UFO_CONSTRUCTION: 20
       STR_ALIEN_HABITAT: 1
 
-
-#Dreadnought / Plasma Cannon
-#Armed with plasma. So requires plasma technology.
-  - name: STR_DREAD2_ARMOR
-    category: STR_PERSONAL_ARMOR
-    requires:
-      - STR_DREADNOUGHT_TECH
-      - STR_PLASMA_CANNON
-    space: 30
-    time: 2000
-    cost: 300000
-    requiresBaseFunc: [TEC]
-    requiredItems:
-      STR_UFO_CONSTRUCTION: 20
-
 #Dreadnought / Lascannon
-  - name: STR_DREAD4_ARMOR
+  - delete: STR_DREAD4_ARMOR
+
+  - name: STR_DREADNOUGHT_LASCANNON_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_DREADNOUGHT_TECH
@@ -570,8 +557,10 @@ manufacture:
  
 #Dreadnought / Missile Launcher 
   - delete: STR_HWP_FUSION_BOMB
- 
-  - name: STR_DREAD3_ARMOR
+  - delete: STR_DREAD3_ARMOR 
+
+
+  - name: STR_DREADNOUGHT_MISSILE_LAUNCHER_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_DREADNOUGHT_TECH
@@ -582,8 +571,28 @@ manufacture:
     requiredItems:
       STR_UFO_CONSTRUCTION: 20
 
+
+#Dreadnought / Plasma Cannon
+#Armed with plasma. So requires plasma technology.
+  - delete: STR_DREAD2_ARMOR
+
+  - name: STR_DREADNOUGHT_PLASMA_CANNON_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_DREADNOUGHT_TECH
+      - STR_PLASMA_CANNON
+    space: 30
+    time: 2000
+    cost: 300000
+    requiresBaseFunc: [TEC]
+    requiredItems:
+      STR_UFO_CONSTRUCTION: 20
+
+
+
 #Dreadnought / Assault Cannon
-  - name: STR_DREAD5_ARMOR
+  - delete: STR_DREAD5_ARMOR
+  - name: STR_DREADNOUGHT_ASSAULT_CANNON_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_DREADNOUGHT_TECH

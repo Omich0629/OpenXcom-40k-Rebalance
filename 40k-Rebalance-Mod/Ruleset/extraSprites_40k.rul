@@ -275,6 +275,7 @@ extraSprites:
       206: Resources/SPICONS/SPICON_MECHANICAL_MELEE.png
       207: Resources/SPICONS/SPICON_MORALE_BUFF_IG.png
       208: Resources/SPICONS/SPICON_UTILITY.png
+      209: Resources/SPICONS/SPICON_IG_SERGEANT_BUFF.png
 
   - type: SMOKE.PCK
     width: 320
@@ -292,6 +293,7 @@ extraSprites:
       161: Resources/Animations/Plasma_hit.gif
       171: Resources/Animations/Heavy_Plasma_Hit.gif
       181: Resources/Animations/Bolt_Hit.png
+      191: Resources/Animations/IG_SERGEANT_BUFF.png #IG SERGEANT MORALE BUFF (10 frames)
 
 #RANKS
       300: Resources/Ranks/Enginseer_rankBattleSprite.png #Enginseer rank (1 frame)
@@ -340,6 +342,7 @@ extraSprites:
       155: Resources/Armor/IG/Flak_Armor_Medic/Flak_Armor_Medic_Corpse_Inv.png
       156: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Corpse_Inv.png
       157: Resources/Armor/IG/Carapace_Armor_Medic/Carapace_Armor_Medic_Corpse_Inv.png
+      158: Resources/Armor/IG/Carapace_Armor_Sergeant/Carapace_Armor_Sergeant_Corpse_Inv.png
 
 #ITEMS (201 - ?)
       220: Resources/Items/Common/Null_Objects/Null_Lefthand.png
@@ -361,9 +364,9 @@ extraSprites:
       236: Resources/Items/Enemy/Ork_Turrets/Ork_Turret_Inv.gif
       237: Resources/Items/Enemy/Chaos_Sentinel/C_Sentinel_Launcher_Inv.png
       238: Resources/Items/SM/First_Aid_Kit/FirstAidKit_Inv.GIF
-#      239: FREE
+      239: Resources/Items/IG/Frag_Grenade_IG/Frag_Grenade_IG_Inv.png
       240: Resources/Items/Common/NonLethal_Grav_Round/NonLethal_Grav_Round_Inv.gif
-#      241: 
+      241: Resources/Items/IG/Krak_Grenade_IG/Krak_Grenade_IG_Inv.png
       242: Resources/Items/SM/Crozius_Arcanum/Crozius_Arcanum_Inv.gif
       243: Resources/Items/SM/Narthecium/Narthecium_Inv.gif
       244: Resources/Items/SM/Stormraven_Turret_Lascannon/Stormraven_LeftTurret_Inv.png
@@ -400,10 +403,10 @@ extraSprites:
       275: Resources/Items/Enemy/Boltpistol_Chaos/Boltpistol_Chaos_Inv.png
 #      276: 
       277: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Ammo_Inv.gif
-      278: Resources/Items/Common/Frag_Grenade/Frag_Granade_Inv.gif
-      279: Resources/Items/Common/Krak_Grenade/Krak_Granade_Inv.gif
-      280: Resources/Items/Common/Smoke_Grenade/Smoke_Granade_Inv.gif
-      281: Resources/Items/Common/Proximity_Grenade/Proximity_Grenade_Inv.gif
+      278: Resources/Items/SM/Frag_Grenade_SM/Frag_Grenade_SM_Inv.png
+      279: Resources/Items/SM/Krak_Grenade_SM/Krak_Grenade_SM_Inv.png
+      280: Resources/Items/SM/Smoke_Grenade_SM/Smoke_Grenade_SM_Inv.png
+      281: Resources/Items/IG/Smoke_Grenade_IG/Smoke_Grenade_IG_Inv.png
       282: Resources/Items/SM/Dreadnought_Weapons/Dreadnought_Fist_Inv.png
       283: Resources/Items/SM/Dreadnought_Weapons/Dreadnought_Flamer_Inv.png
       284: Resources/Items/SM/Dreadnought_Weapons/Dreadnought_Plasma_Inv.png
@@ -578,9 +581,9 @@ extraSprites:
       233: Resources/Items/SM/Librarian_Staff/Librarian_Staf_Floor.gif
       234: Resources/Items/Common/Spellbooks/Spellbook_Floor.gif
       235: Resources/Items/SM/Lightning_Claws/Lightning_Claws_Floor.gif
-#      236: 
+      236: Resources/Items/IG/Frag_Grenade_IG/Frag_Grenade_IG_Floor.png
       237: Resources/Items/Common/Multimelta_Charge/Multimelta_Charge_Floor.png
-#      238: FREE
+      238: Resources/Items/IG/Krak_Grenade_IG/Krak_Grenade_IG_Floor.png
       239: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Floor.gif
       240: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_Floor.gif
       241: Resources/Items/SM/Sniper_Rifle/Sniper_Rifle_Clip_Floor.gif
@@ -598,8 +601,8 @@ extraSprites:
       253: Resources/Items/Enemy/Boltpistol_Chaos/Boltpistol_Chaos_Floor.png
 #      254: 
       255: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Ammo_Floor.gif
-      256: Resources/Items/Common/Krak_Grenade/Krak_Granade_Floor.png
-      257: Resources/Items/Common/Proximity_Grenade/Proximity_Grenade_Floor.gif
+      256: Resources/Items/SM/Krak_Grenade_SM/Krak_Grenade_SM_Floor.png
+      257: Resources/Items/SM/Smoke_Grenade_SM/Smoke_Grenade_SM_Floor.png
       258: Resources/Items/IG/Lasgun_IG/Lasgun_IG_Floor.png
       259: Resources/Items/IG/Lasgun_IG/Lasgun_Power_Pack_Floor.png
       260: Resources/Items/IG/Laspistol_IG/Laspistol_IG_Floor.png
@@ -683,8 +686,8 @@ extraSprites:
       338: Resources/Items/SM/Missile_Launcher_SM/Krak_Missile_Floor.png
       339: Resources/Items/SM/Missile_Launcher_SM/Incendiary_Missile_Floor.png
       340: Resources/Items/Renegade/Missile_Launcher_Renegade/Missile_Launcher_Renegade_Floor.png
-
-
+      341: Resources/Items/SM/Frag_Grenade_SM/Frag_Grenade_SM_Floor.png
+      342: Resources/Items/IG/Smoke_Grenade_IG/Smoke_Grenade_IG_Floor.png
 
 #ENEMY RELATED CORPSES
 #cultists
@@ -718,9 +721,9 @@ extraSprites:
       304: Resources/Items/SM/First_Aid_Kit/FirstAidKit_Hand.png
       312: Resources/Items/Enemy/Heavy_Bolter_Chaos/Heavy_Bolter_Chaos_Hand.png
       320: Resources/Items/Common/NonLethal_Grav_Round/NonLethal_Grav_Round_Hand.png
-#      328: 
+      328: Resources/Items/IG/Frag_Grenade_IG/Frag_Grenade_IG_Hand.png
       336: Resources/Items/SM/Crozius_Arcanum/Crozius_Arcanum_Hand.png
-#      344: 
+      344: Resources/Items/IG/Krak_Grenade_IG/Krak_Grenade_IG_Hand.png
       352: Resources/Items/Common/Multimelta_Charge/Multimelta_Charge_Hand.png
       360: Resources/Items/SM/Librarian_Staff/Librarian_Staff_Hand.png
       368: Resources/Items/Common/Spellbooks/Spellbook_Hand.gif
@@ -743,13 +746,13 @@ extraSprites:
       504: Resources/Items/Enemy/Boltpistol_Chaos/Boltpistol_Chaos_Hand.png
 #      512: 
       520: Resources/Items/SM/Heavy_Flamer/Heavy_Flamer_Ammo_Hand.png
-      528: Resources/Items/Common/Frag_Grenade/Frag_Granade_Hand.png
-      536: Resources/Items/Common/Krak_Grenade/Krak_Granade_Hand.png
-      544: Resources/Items/Common/Proximity_Grenade/Proximity_Grenade_Hand.png
+      528: Resources/Items/SM/Frag_Grenade_SM/Frag_Grenade_SM_Hand.png
+      536: Resources/Items/SM/Krak_Grenade_SM/Krak_Grenade_SM_Hand.png
+      544: Resources/Items/SM/Smoke_Grenade_SM/Smoke_Grenade_SM_Hand.png
       552: Resources/Items/IG/Lasgun_IG/Lasgun_IG_Hand.png
       560: Resources/Items/IG/Lasgun_IG/Lasgun_Power_Pack_Hand.png
       568: Resources/Items/IG/Laspistol_IG/Laspistol_IG_Hand.png
-#      576: 
+      576: Resources/Items/IG/Smoke_Grenade_IG/Smoke_Grenade_IG_Hand.png
       584: Resources/Items/Renegade/Lasgun_Renegade/Lasgun_Renegade_Hand.png
       592: Resources/Items/Renegade/Laspistol_Renegade/Laspistol_Renegade_Hand.png
       600: Resources/Items/Common/Fire_Extinguisher/Fire_Extinguisger_Hand.png
@@ -1282,13 +1285,21 @@ extraSprites:
     fileSingle: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Inv_F.png
 
 
-#Medic Carapace Armor (LAYER 4)
+#Carapace Armor (Medic) (LAYER 4)
 
   - typeSingle: CARAPACE_MEDIC__4__CARAPACE_MEDIC_M
     fileSingle: Resources/Armor/IG/Carapace_Armor_Medic/Carapace_Armor_Medic_Inv_M.png
 
   - typeSingle: CARAPACE_MEDIC__4__CARAPACE_MEDIC_F
     fileSingle: Resources/Armor/IG/Carapace_Armor_Medic/Carapace_Armor_Medic_Inv_F.png
+
+#Carapace Armor (Sergeant) (LAYER 4)
+
+  - typeSingle: CARAPACE_SERGEANT__4__CARAPACE_SERGEANT_M
+    fileSingle: Resources/Armor/IG/Carapace_Armor_Sergeant/Carapace_Armor_Sergeant_Inv_M.png
+
+  - typeSingle: CARAPACE_SERGEANT__4__CARAPACE_SERGEANT_F
+    fileSingle: Resources/Armor/IG/Carapace_Armor_Sergeant/Carapace_Armor_Sergeant_Inv_F.png
 
 #Commissar Greatcoat (LAYER 4)
 
@@ -1754,7 +1765,7 @@ extraSprites:
     files:
       0: Resources/Armor/IG/Flak_Armor/Flak_Armor_Battlescape.png
 
-#Medic Flak Armor
+#Flak Armor (Medic)
   - type: FLAK_ARMOR_MEDIC.PCK
     width: 512
     height: 720
@@ -1763,7 +1774,7 @@ extraSprites:
     files:
       0: Resources/Armor/IG/Flak_Armor_Medic/Flak_Armor_Medic_Battlescape.png
 
-#Flak Armor
+#Flak Armor (Sergeant)
   - type: FLAK_ARMOR_SERGEANT.PCK
     width: 512
     height: 720
@@ -1781,14 +1792,23 @@ extraSprites:
     files:
       0: Resources/Armor/IG/Carapace_Armor/Carapace_Armor_Battlescape.png
 
-#Medic Carapace Armor
-  - type: MEDIC_CARAPACE_ARMOR.PCK
+#Carapace Armor (Medic)
+  - type: CARAPACE_ARMOR_MEDIC.PCK
     width: 512
     height: 720
     subX: 32
     subY: 40
     files:
       0: Resources/Armor/IG/Carapace_Armor_Medic/Carapace_Armor_Medic_Battlescape.png
+
+#Carapace Armor (Sergeant)
+  - type: CARAPACE_ARMOR_SERGEANT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armor/IG/Carapace_Armor_Sergeant/Carapace_Armor_Sergeant_Battlescape.png
 
 #Commissar Greatcoat
   - type: COMMISSAR_GREATCOAT.PCK

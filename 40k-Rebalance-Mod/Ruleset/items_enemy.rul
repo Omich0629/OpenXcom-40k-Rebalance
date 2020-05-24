@@ -317,6 +317,74 @@ items:
     tuAimed: 70
     aimRange: 40
 
+### ENEMY HAND GRENADES ###
+## Frag Hand Grenade (Renegade) ##
+  - type: STR_FRAG_HAND_GRENADE_RENEGADE
+#RESOURCES
+    bigSprite: 278 #FIX IT
+    handSprite: 528 #FIX IT
+    floorSprite: 256 #FIX IT
+    hitAnimation: 184 #AOE Explosion
+    explosionHitSound: [1045, 1046, 1047, 1048, 1049] #Grenade explosion
+#GENERAL
+    battleType: 4
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 250
+    weight: 4
+    size: 0.1
+    invWidth: 1
+    invHeight: 1
+    recover: false
+    listOrder: 13600
+#THROWING
+    power: 70
+    damageType: 3
+    damageAlter:
+      FixRadius: 5
+    tuThrow: 30
+    tuPrime: 30
+    flatRate: false
+
+
+
+
+
+
+
+
+
+
+
+## Krak Hand Grenade (Renegade) ##
+  - type: STR_KRAK_HAND_GRENADE_RENEGADE
+#RESOURCES
+    bigSprite: 279 #FIX IT
+    floorSprite: 256 #FIX IT
+    handSprite: 536 #FIX IT
+#GENERAL
+    battleType: 4
+    requires:
+      - STR_CHAOS_ONLY
+    costSell: 500
+    size: 0.1
+    weight: 4
+    invWidth: 1
+    invHeight: 1
+    recover: false
+    listOrder: 13650
+#THROWING
+    power: 100
+    damageType: 3
+    damageAlter:
+      ToArmorPre: 0.2 #20% damage to target's armor
+      ArmorEffectiveness: 0.7 #Ignores 30% of target's armor
+      FixRadius: 1
+      RadiusReduction: 50 #Less effective outside of epicenter
+    tuThrow: 30
+    tuPrime: 30
+    flatRate: false
+
 
 ### ENEMY LAUNCHER WEAPONS ###
 

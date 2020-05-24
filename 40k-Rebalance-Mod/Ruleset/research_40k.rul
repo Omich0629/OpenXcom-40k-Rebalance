@@ -58,7 +58,7 @@ research:
     disables: []
 
 
-#
+#ID FOR RESTRICTING PURPOSES
   - name: STR_GENERALLOCK
     needItem: true
 
@@ -84,6 +84,7 @@ research:
       - STR_BOLTER_TECH
       - STR_SHOTGUN_TECH
       - STR_FLAMER_TECH
+      - STR_HAND_GRENADES_RESEARCH
       - STR_MARINES_STRATEGY
       - STR_CHAPTER_VEHICLES
       - STR_CHAPTER_ARMORS
@@ -215,7 +216,7 @@ research:
       - STR_LASCANNON_TECH
 
 
-#Boltpistol Requisition
+#Boltpistol Research ('Unlocks' only)
   - name: STR_BOLTPISTOL_TECH
     cost: 0
     points: 0
@@ -250,7 +251,7 @@ research:
 
 #Heavy Bolter Requisition
 #Same as for Imperial Guard. Opens by 'unlocks' instructions.
-#Unlocks different weapons and ammo
+#Unlocks different weapon
   - name: STR_HEAVY_BOLTER_TECH
     cost: 0
     points: 0
@@ -330,7 +331,7 @@ research:
       - STR_GENERALLOCK
 
 #Drop Pods
-  - name: STR_DROPPODS_TECH
+  - name: STR_DROPPODS
     cost: 150
     points: 10
     listOrder: 700
